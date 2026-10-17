@@ -1,170 +1,23 @@
 const O19_FALLBACK_BANK = {"word_en": {"metadata": {"project": "AG Typing Tutor", "developer": "Xtreme AG Apps", "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC", "module": "word", "language": "en", "file_id": "WORD_EN_001", "test_number": 1, "duration_minutes": 10, "full_marks": 50, "question_count": 15, "difficulty_breakdown": {"Easy": 3, "Medium": 7, "Hard": 5}, "document_structure": {"doc_type": "NOTICE", "org_name": "Govt. Sen. Sec. School, Jaipur", "date_line": "Date: 4th November 2026", "subject_line": "Debate Competition", "para1": "This is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.", "para2": "During the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.", "para3": "Strict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.", "events_list": "Key Items / Schedule: 100m Race, Long Jump, Shot Put.", "sign_role": "Sports Secretary", "sign_name": "Arjun Kumar", "table": [["Sr. No.", "Branch / Section", "Allocated Files", "Current Status"], ["01", "Establishment Section", "121", "Playground"], ["02", "Accounts & Audit Cell", "96", "Verified"], ["03", "Judicial Record Room", "151", "Completed"]]}}, "questions": [{"id": "WORD_EN_001-Q01", "question_number": 1, "marks": 3.0, "title": "Center align the top heading 'NOTICE' and make it Bold.", "category": "rssb_hc_ldc_word", "difficulty": "Easy", "target_part": "doc_type", "expected_action": "center", "instruction": "Center align the top heading 'NOTICE' and make it Bold.", "tasks": ["Center align the top heading 'NOTICE' and make it Bold."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Select the first line 'NOTICE' at the top of the document.", "2. Go to the 'Home' tab on the Ribbon -> look at the 'Font' group -> click the 'Bold (B)' button (or press Ctrl+B).", "3. In the 'Home' tab -> 'Paragraph' group -> click the 'Center' alignment button (or press Ctrl+E)."]}, {"id": "WORD_EN_001-Q02", "question_number": 2, "marks": 3.0, "title": "Make the Organization Name ('Govt. Sen. Sec. School, Jaipur') Bold, Underlined, and set its Font Size to 18 pt.", "category": "rssb_hc_ldc_word", "difficulty": "Easy", "target_part": "org_name", "expected_action": "font", "instruction": "Make the Organization Name ('Govt. Sen. Sec. School, Jaipur') Bold, Underlined, and set its Font Size to 18 pt.", "tasks": ["Make the Organization Name ('Govt. Sen. Sec. School, Jaipur') Bold, Underlined, and set its Font Size to 18 pt."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Select the second line 'Govt. Sen. Sec. School, Jaipur' in the document.", "2. Go to the 'Home' tab -> 'Font' group -> click the 'Bold (B)' icon and the 'Underline (U)' icon.", "3. In the 'Home' tab -> 'Font' group -> click the 'Font Size' dropdown arrow (▾) and select '18'."]}, {"id": "WORD_EN_001-Q03", "question_number": 3, "marks": 3.0, "title": "Right align the 'Date: 4th November 2026' line and make it Italic.", "category": "rssb_hc_ldc_word", "difficulty": "Easy", "target_part": "date_line", "expected_action": "justifyRight", "instruction": "Right align the 'Date: 4th November 2026' line and make it Italic.", "tasks": ["Right align the 'Date: 4th November 2026' line and make it Italic."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Select the third line ('Date: 4th November 2026').", "2. Go to the 'Home' tab -> 'Paragraph' group -> click the 'Align Right' button (or press Ctrl+R).", "3. In the 'Home' tab -> 'Font' group -> click the 'Italic (I)' button (or press Ctrl+I)."]}, {"id": "WORD_EN_001-Q04", "question_number": 4, "marks": 3.5, "title": "Make the Subject heading ('Debate Competition') Bold, change its font to 'Arial', and apply Yellow Text Highlight Color.", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "subject_line", "expected_action": "highlight", "instruction": "Make the Subject heading ('Debate Competition') Bold, change its font to 'Arial', and apply Yellow Text Highlight Color.", "tasks": ["Make the Subject heading ('Debate Competition') Bold, change its font to 'Arial', and apply Yellow Text Highlight Color."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Select the fourth line ('Debate Competition').", "2. Go to the 'Home' tab -> 'Font' group -> click 'Bold (B)' and select 'Arial' from the 'Font Family' dropdown (▾).", "3. In the 'Home' tab -> 'Font' group -> click the 'Text Highlight Color (ab)' button and choose 'Yellow'."]}, {"id": "WORD_EN_001-Q05", "question_number": 5, "marks": 3.5, "title": "Justify the First Paragraph ('This is to inform...') and set its Line Spacing to 2.0 lines.", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para1", "expected_action": "line-spacing", "instruction": "Justify the First Paragraph ('This is to inform...') and set its Line Spacing to 2.0 lines.", "tasks": ["Justify the First Paragraph ('This is to inform...') and set its Line Spacing to 2.0 lines."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Click anywhere inside the First Paragraph ('This is to inform...').", "2. Go to the 'Home' tab -> 'Paragraph' group -> click the 'Justify' alignment icon.", "3. In the same 'Paragraph' group -> click the 'Line and Paragraph Spacing (↕)' icon -> select '2.0 Lines' from the submenu."]}, {"id": "WORD_EN_001-Q06", "question_number": 6, "marks": 3.5, "title": "Apply a First-Line Indent of 0.75 inches to the Second Paragraph ('During the recent...').", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para2", "expected_action": "indent", "instruction": "Apply a First-Line Indent of 0.75 inches to the Second Paragraph ('During the recent...').", "tasks": ["Apply a First-Line Indent of 0.75 inches to the Second Paragraph ('During the recent...')."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Click inside the Second Paragraph ('During the recent administrative review...').", "2. Go to the 'Home' tab -> 'Paragraph' group -> click the 'Line and Paragraph Spacing (↕)' submenu (or click the Paragraph Dialog Launcher '↘').", "3. Under 'Paragraph Indentation', click 'First Line Indent (0.75\")' (or in the Paragraph dialog set Special: 'First line', By: '0.75\"' and click OK)."]}, {"id": "WORD_EN_001-Q07", "question_number": 7, "marks": 3.5, "title": "Add 6 pt Space After Paragraph to the Second Paragraph ('During the recent...').", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para2", "expected_action": "space-after", "instruction": "Add 6 pt Space After Paragraph to the Second Paragraph ('During the recent...').", "tasks": ["Add 6 pt Space After Paragraph to the Second Paragraph ('During the recent...')."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Click inside the Second Paragraph ('During the recent administrative review...').", "2. Go to the 'Layout' tab -> 'Paragraph' group (or 'Home' tab -> 'Line and Paragraph Spacing ↕' submenu).", "3. Set the 'Spacing After' box to '6 pt' and press Enter (or click 'Add Space After Paragraph (12 pt)' in the Line Spacing menu)."]}, {"id": "WORD_EN_001-Q08", "question_number": 8, "marks": 3.5, "title": "Apply a Hanging Indent of 0.5 inches and Justify alignment to the Third Paragraph ('Strict adherence...').", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para3", "expected_action": "hanging-indent", "instruction": "Apply a Hanging Indent of 0.5 inches and Justify alignment to the Third Paragraph ('Strict adherence...').", "tasks": ["Apply a Hanging Indent of 0.5 inches and Justify alignment to the Third Paragraph ('Strict adherence...')."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Click inside the Third Paragraph ('Strict adherence to the prescribed...').", "2. Go to the 'Home' tab -> 'Paragraph' group -> click the 'Justify' alignment button.", "3. Click the 'Line and Paragraph Spacing (↕)' icon (or Paragraph Dialog Launcher '↘') and select 'Hanging Indent (0.5\")'."]}, {"id": "WORD_EN_001-Q09", "question_number": 9, "marks": 3.5, "title": "Apply an Outside Border and light Background Shading to the Third Paragraph ('Strict adherence...').", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para3", "expected_action": "border", "instruction": "Apply an Outside Border and light Background Shading to the Third Paragraph ('Strict adherence...').", "tasks": ["Apply an Outside Border and light Background Shading to the Third Paragraph ('Strict adherence...')."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Click inside the Third Paragraph ('Strict adherence to the prescribed...').", "2. Go to the 'Home' tab -> 'Paragraph' group -> click the 'Shading' (paint bucket) dropdown (▾) and choose a light color.", "3. Next to Shading, click the 'Borders' dropdown (▾) and select 'Outside Borders'."]}, {"id": "WORD_EN_001-Q10", "question_number": 10, "marks": 3.5, "title": "Convert the Key Items line ('Key Items / Schedule: 100m Race, Long Jump, Shot Put.') to UPPERCASE and apply a Bulleted List.", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "events_list", "expected_action": "change-case", "instruction": "Convert the Key Items line ('Key Items / Schedule: 100m Race, Long Jump, Shot Put.') to UPPERCASE and apply a Bulleted List.", "tasks": ["Convert the Key Items line ('Key Items / Schedule: 100m Race, Long Jump, Shot Put.') to UPPERCASE and apply a Bulleted List."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Select the line 'Key Items / Schedule: 100m Race, Long Jump, Shot Put.'.", "2. Go to the 'Home' tab -> 'Font' group -> click the 'Change Case (Aa)' button -> select 'UPPERCASE' from the submenu.", "3. In the 'Home' tab -> 'Paragraph' group -> click the 'Bullets (•)' button."]}, {"id": "WORD_EN_001-Q11", "question_number": 11, "marks": 3.5, "title": "Right align the Signatory Designation ('Sports Secretary') and Signatory Name ('Arjun Kumar') and make them Bold.", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "sign_role", "expected_action": "justifyRight", "instruction": "Right align the Signatory Designation ('Sports Secretary') and Signatory Name ('Arjun Kumar') and make them Bold.", "tasks": ["Right align the Signatory Designation ('Sports Secretary') and Signatory Name ('Arjun Kumar') and make them Bold."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Select the signatory lines ('Sports Secretary' and 'Arjun Kumar') near the bottom of the notice.", "2. Go to the 'Home' tab -> 'Paragraph' group -> click the 'Align Right' button.", "3. In the 'Home' tab -> 'Font' group -> click the 'Bold (B)' button."]}, {"id": "WORD_EN_001-Q12", "question_number": 12, "marks": 3.5, "title": "Use Find & Replace to replace all occurrences of the word 'playground' with 'auditorium' in the document.", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "para1", "expected_action": "find-replace", "instruction": "Use Find & Replace to replace all occurrences of the word 'playground' with 'auditorium' in the document.", "tasks": ["Use Find & Replace to replace all occurrences of the word 'playground' with 'auditorium' in the document."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Go to the 'Home' tab -> look at the far-right 'Editing' group -> click the 'Replace' button to open the Find and Replace dialog.", "2. In the 'Find what:' box, type 'playground'. In the 'Replace with:' box, type 'auditorium'.", "3. Click the 'OK' button to replace all occurrences across the document."]}, {"id": "WORD_EN_001-Q13", "question_number": 13, "marks": 3.5, "title": "Set the document Page Margins to 'Moderate' and Page Orientation to 'Landscape'.", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "document", "expected_action": "margins", "instruction": "Set the document Page Margins to 'Moderate' and Page Orientation to 'Landscape'.", "tasks": ["Set the document Page Margins to 'Moderate' and Page Orientation to 'Landscape'."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Click the 'Layout' tab on the top Word 2019 Ribbon.", "2. In the 'Page Setup' group (left side), click the 'Margins' button -> select 'Moderate' from the dropdown menu.", "3. In the same 'Page Setup' group, click the 'Orientation' button -> select 'Landscape'."]}, {"id": "WORD_EN_001-Q14", "question_number": 14, "marks": 3.0, "title": "In the Reference Table at the bottom, make the Table Header row Bold, Center aligned, and apply Shading.", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "table", "expected_action": "center", "instruction": "In the Reference Table at the bottom, make the Table Header row Bold, Center aligned, and apply Shading.", "tasks": ["In the Reference Table at the bottom, make the Table Header row Bold, Center aligned, and apply Shading."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Click inside the first header row ('Sr. No. | Branch / Section | ...') of the Table at the bottom of the document.", "2. Go to the 'Home' tab -> 'Font' group -> click 'Bold (B)'.", "3. In the 'Home' tab -> 'Paragraph' group -> click 'Center' alignment and pick a fill color from the 'Shading' dropdown (▾)."]}, {"id": "WORD_EN_001-Q15", "question_number": 15, "marks": 3.0, "title": "Insert an Official Header & Page Number, and apply a 'CONFIDENTIAL' Watermark to the document.", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "document", "expected_action": "watermark", "instruction": "Insert an Official Header & Page Number, and apply a 'CONFIDENTIAL' Watermark to the document.", "tasks": ["Insert an Official Header & Page Number, and apply a 'CONFIDENTIAL' Watermark to the document."], "source_content": "NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 4th November 2026\nDebate Competition\nThis is to inform all concerned officers and staff members that the Debate Competition is scheduled to be conducted on the 21st of next month in the main playground hall. All branch heads must submit their verified compliance lists to the undersigned by the 10th of this month without fail.\nDuring the recent administrative review, it was noticed that several sections have not updated their daily dispatch registers and playground inspection logs. Every nodal officer shall personally inspect the pending files and ensure 100% digital entry on the official portal before Friday.\nStrict adherence to the prescribed office formatting standards, record indexing, and archival rules is mandatory for all subordinate establishments. Any delay or negligence in submitting the statutory returns will be viewed seriously by the competent authority.\nKey Items / Schedule: 100m Race, Long Jump, Shot Put.\nSports Secretary\nArjun Kumar", "solution_steps": ["1. Go to the 'Insert' tab -> 'Header & Footer' group -> click 'Header' -> 'Blank (Official Header)', and click 'Page Number' -> 'Bottom of Page'.", "2. Go to the 'Design' tab -> 'Page Background' group (far right) -> click 'Watermark' -> select 'CONFIDENTIAL'."]}]}, "word_hi": {"metadata": {"project": "AG Typing Tutor", "developer": "Xtreme AG Apps", "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC", "module": "word", "language": "hi", "file_id": "WORD_HI_001", "test_number": 1, "duration_minutes": 10, "full_marks": 50, "question_count": 15, "difficulty_breakdown": {"Easy": 3, "Medium": 7, "Hard": 5}, "document_structure": {"doc_type": "सूचना (NOTICE)", "org_name": "राजकीय उच्च माध्यमिक विद्यालय, जयपुर", "date_line": "दिनांक: 4 नवम्बर 2026", "subject_line": "वाद-विवाद एवं खेलकूद प्रतियोगिता", "para1": "समस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।", "para2": "विगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।", "para3": "समस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।", "events_list": "प्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।", "sign_role": "खेल सचिव", "sign_name": "अर्जुन कुमार", "table": [["क्र.सं.", "शाखा / अनुभाग का नाम", "आवंटित पत्रावलियाँ", "वर्तमान स्थिति"], ["01", "स्थापना अनुभाग", "121", "मैदान"], ["02", "लेखा एवं अंकेक्षण प्रकोष्ठ", "96", "सत्यापित"], ["03", "अभिलेख संधारण कक्ष", "151", "पूर्ण"]]}}, "questions": [{"id": "WORD_HI_001-Q01", "question_number": 1, "marks": 3.0, "title": "शीर्ष पंक्ति 'सूचना (NOTICE)' को सेंटर संरेखित (Center Align) करें और उसे बोल्ड (Bold) बनाएँ।", "category": "rssb_hc_ldc_word", "difficulty": "Easy", "target_part": "doc_type", "expected_action": "center", "instruction": "शीर्ष पंक्ति 'सूचना (NOTICE)' को सेंटर संरेखित (Center Align) करें और उसे बोल्ड (Bold) बनाएँ।", "tasks": ["शीर्ष पंक्ति 'सूचना (NOTICE)' को सेंटर संरेखित (Center Align) करें और उसे बोल्ड (Bold) बनाएँ।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. दस्तावेज़ की सबसे पहली पंक्ति 'सूचना (NOTICE)' को माउस से सिलेक्ट करें।", "2. ऊपर 'Home' टैब -> 'Font' ग्रुप में जाकर 'Bold (B)' बटन पर क्लिक करें (या Ctrl+B दबाएँ)।", "3. 'Home' टैब -> 'Paragraph' ग्रुप में 'Center' अलाइनमेंट बटन पर क्लिक करें (या Ctrl+E दबाएँ)।"]}, {"id": "WORD_HI_001-Q02", "question_number": 2, "marks": 3.0, "title": "कार्यालय/संस्थान के नाम ('राजकीय उच्च माध्यमिक विद्यालय, जयपुर') को Bold व Underline करें तथा उसका Font Size 18 pt सेट करें।", "category": "rssb_hc_ldc_word", "difficulty": "Easy", "target_part": "org_name", "expected_action": "font", "instruction": "कार्यालय/संस्थान के नाम ('राजकीय उच्च माध्यमिक विद्यालय, जयपुर') को Bold व Underline करें तथा उसका Font Size 18 pt सेट करें।", "tasks": ["कार्यालय/संस्थान के नाम ('राजकीय उच्च माध्यमिक विद्यालय, जयपुर') को Bold व Underline करें तथा उसका Font Size 18 pt सेट करें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. दूसरी पंक्ति 'राजकीय उच्च माध्यमिक विद्यालय, जयपुर' को सिलेक्ट करें।", "2. 'Home' टैब -> 'Font' ग्रुप में 'Bold (B)' और 'Underline (U)' आइकन पर क्लिक करें।", "3. 'Font' ग्रुप में 'Font Size' ड्रॉपडाउन (▾) पर क्लिक करके '18' चुनें।"]}, {"id": "WORD_HI_001-Q03", "question_number": 3, "marks": 3.0, "title": "दिनांक पंक्ति ('दिनांक: 4 नवम्बर 2026') को दाएँ संरेखित (Right Align) करें और उसे Italic बनाएँ।", "category": "rssb_hc_ldc_word", "difficulty": "Easy", "target_part": "date_line", "expected_action": "justifyRight", "instruction": "दिनांक पंक्ति ('दिनांक: 4 नवम्बर 2026') को दाएँ संरेखित (Right Align) करें और उसे Italic बनाएँ।", "tasks": ["दिनांक पंक्ति ('दिनांक: 4 नवम्बर 2026') को दाएँ संरेखित (Right Align) करें और उसे Italic बनाएँ।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. तीसरी पंक्ति ('दिनांक: 4 नवम्बर 2026') को सिलेक्ट करें।", "2. 'Home' टैब -> 'Paragraph' ग्रुप में 'Align Right' बटन पर क्लिक करें।", "3. 'Home' टैब -> 'Font' ग्रुप में 'Italic (I)' बटन पर क्लिक करें।"]}, {"id": "WORD_HI_001-Q04", "question_number": 4, "marks": 3.5, "title": "विषय शीर्षक ('वाद-विवाद एवं खेलकूद प्रतियोगिता') को Bold करें, उसका फ़ॉन्ट 'Calibri' करें तथा उस पर Yellow Highlight लगाएँ।", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "subject_line", "expected_action": "highlight", "instruction": "विषय शीर्षक ('वाद-विवाद एवं खेलकूद प्रतियोगिता') को Bold करें, उसका फ़ॉन्ट 'Calibri' करें तथा उस पर Yellow Highlight लगाएँ।", "tasks": ["विषय शीर्षक ('वाद-विवाद एवं खेलकूद प्रतियोगिता') को Bold करें, उसका फ़ॉन्ट 'Calibri' करें तथा उस पर Yellow Highlight लगाएँ।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. चौथी पंक्ति ('वाद-विवाद एवं खेलकूद प्रतियोगिता') को सिलेक्ट करें।", "2. 'Home' टैब -> 'Font' ग्रुप में 'Bold (B)' दबाएँ और Font Family ड्रॉपडाउन (▾) से 'Calibri' चुनें।", "3. 'Font' ग्रुप में 'Text Highlight Color (ab)' बटन पर क्लिक करके पीला (Yellow) रंग चुनें।"]}, {"id": "WORD_HI_001-Q05", "question_number": 5, "marks": 3.5, "title": "प्रथम पैराग्राफ ('समस्त संबंधित अधिकारियों...') को Justify करें और उसकी Line Spacing 2.0 सेट करें।", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para1", "expected_action": "line-spacing", "instruction": "प्रथम पैराग्राफ ('समस्त संबंधित अधिकारियों...') को Justify करें और उसकी Line Spacing 2.0 सेट करें।", "tasks": ["प्रथम पैराग्राफ ('समस्त संबंधित अधिकारियों...') को Justify करें और उसकी Line Spacing 2.0 सेट करें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. प्रथम पैराग्राफ ('समस्त संबंधित अधिकारियों...') में कहीं भी क्लिक करें।", "2. 'Home' टैब -> 'Paragraph' ग्रुप में 'Justify' संरेखण आइकन पर क्लिक करें।", "3. उसी 'Paragraph' ग्रुप में 'Line and Paragraph Spacing (↕)' आइकन पर क्लिक करें और सब-मेनू से '2.0 Lines' चुनें।"]}, {"id": "WORD_HI_001-Q06", "question_number": 6, "marks": 3.5, "title": "द्वितीय पैराग्राफ ('विगत प्रशासनिक समीक्षा...') में 0.75 इंच का First-Line Indent लागू करें।", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para2", "expected_action": "indent", "instruction": "द्वितीय पैराग्राफ ('विगत प्रशासनिक समीक्षा...') में 0.75 इंच का First-Line Indent लागू करें।", "tasks": ["द्वितीय पैराग्राफ ('विगत प्रशासनिक समीक्षा...') में 0.75 इंच का First-Line Indent लागू करें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. द्वितीय पैराग्राफ ('विगत प्रशासनिक समीक्षा...') में कर्सर रखें।", "2. 'Home' टैब -> 'Paragraph' ग्रुप में 'Line and Paragraph Spacing (↕)' मेनू (या कोने के Paragraph Dialog Launcher '↘') पर क्लिक करें।", "3. सब-मेनू के 'Paragraph Indentation' सेक्शन में 'First Line Indent (0.75\")' पर क्लिक करें।"]}, {"id": "WORD_HI_001-Q07", "question_number": 7, "marks": 3.5, "title": "द्वितीय पैराग्राफ ('विगत प्रशासनिक समीक्षा...') के बाद 6 pt का Space After Paragraph जोड़ें।", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para2", "expected_action": "space-after", "instruction": "द्वितीय पैराग्राफ ('विगत प्रशासनिक समीक्षा...') के बाद 6 pt का Space After Paragraph जोड़ें।", "tasks": ["द्वितीय पैराग्राफ ('विगत प्रशासनिक समीक्षा...') के बाद 6 pt का Space After Paragraph जोड़ें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. द्वितीय पैराग्राफ में कर्सर रखें।", "2. ऊपर 'Layout' टैब -> 'Paragraph' ग्रुप में जाएँ (या 'Home' -> 'Line Spacing ↕' सब-मेनू खोलें)।", "3. 'Spacing After' बॉक्स में '6 pt' दर्ज करके Enter दबाएँ (या 'Add Space After Paragraph' पर क्लिक करें)।"]}, {"id": "WORD_HI_001-Q08", "question_number": 8, "marks": 3.5, "title": "तृतीय पैराग्राफ ('समस्त अधीनस्थ कार्यालयों...') को Justify करें और उसमें 0.5 इंच का Hanging Indent लगाएँ।", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para3", "expected_action": "hanging-indent", "instruction": "तृतीय पैराग्राफ ('समस्त अधीनस्थ कार्यालयों...') को Justify करें और उसमें 0.5 इंच का Hanging Indent लगाएँ।", "tasks": ["तृतीय पैराग्राफ ('समस्त अधीनस्थ कार्यालयों...') को Justify करें और उसमें 0.5 इंच का Hanging Indent लगाएँ।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. तृतीय पैराग्राफ ('समस्त अधीनस्थ कार्यालयों...') में कर्सर रखें।", "2. 'Home' टैब -> 'Paragraph' ग्रुप में 'Justify' बटन दबाएँ।", "3. 'Line and Paragraph Spacing (↕)' सब-मेनू (या Paragraph Dialog '↘') खोलकर 'Hanging Indent (0.5\")' पर क्लिक करें।"]}, {"id": "WORD_HI_001-Q09", "question_number": 9, "marks": 3.5, "title": "तृतीय पैराग्राफ के चारों ओर Outside Border तथा हल्की पृष्ठभूमि शेडिंग (Shading) लागू करें।", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "para3", "expected_action": "border", "instruction": "तृतीय पैराग्राफ के चारों ओर Outside Border तथा हल्की पृष्ठभूमि शेडिंग (Shading) लागू करें।", "tasks": ["तृतीय पैराग्राफ के चारों ओर Outside Border तथा हल्की पृष्ठभूमि शेडिंग (Shading) लागू करें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. तृतीय पैराग्राफ में कर्सर रखें।", "2. 'Home' टैब -> 'Paragraph' ग्रुप में 'Shading' (रंग की बाल्टी) ड्रॉपडाउन (▾) से हल्का रंग चुनें।", "3. पास वाले 'Borders' ड्रॉपडाउन (▾) पर क्लिक करके 'Outside Borders' चुनें।"]}, {"id": "WORD_HI_001-Q10", "question_number": 10, "marks": 3.5, "title": "प्रमुख विवरण पंक्ति ('प्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।') पर Bulleted List (•) और Italic फॉर्मेटिंग लागू करें।", "category": "rssb_hc_ldc_word", "difficulty": "Medium", "target_part": "events_list", "expected_action": "bullets", "instruction": "प्रमुख विवरण पंक्ति ('प्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।') पर Bulleted List (•) और Italic फॉर्मेटिंग लागू करें।", "tasks": ["प्रमुख विवरण पंक्ति ('प्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।') पर Bulleted List (•) और Italic फॉर्मेटिंग लागू करें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. 'प्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।' पंक्ति में कर्सर रखें या उसे सिलेक्ट करें।", "2. 'Home' टैब -> 'Paragraph' ग्रुप में 'Bullets (•)' आइकन पर क्लिक करें।", "3. 'Home' टैब -> 'Font' ग्रुप में 'Italic (I)' बटन पर क्लिक करें।"]}, {"id": "WORD_HI_001-Q11", "question_number": 11, "marks": 3.5, "title": "हस्ताक्षरकर्ता पदनाम ('खेल सचिव') एवं नाम ('अर्जुन कुमार') को Right Align और Bold करें।", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "sign_role", "expected_action": "justifyRight", "instruction": "हस्ताक्षरकर्ता पदनाम ('खेल सचिव') एवं नाम ('अर्जुन कुमार') को Right Align और Bold करें।", "tasks": ["हस्ताक्षरकर्ता पदनाम ('खेल सचिव') एवं नाम ('अर्जुन कुमार') को Right Align और Bold करें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. नीचे दिए गए 'खेल सचिव' और 'अर्जुन कुमार' को सिलेक्ट करें।", "2. 'Home' टैब -> 'Paragraph' ग्रुप में 'Align Right' बटन पर क्लिक करें।", "3. 'Home' टैब -> 'Font' ग्रुप में 'Bold (B)' बटन पर क्लिक करें।"]}, {"id": "WORD_HI_001-Q12", "question_number": 12, "marks": 3.5, "title": "दस्तावेज़ में जहाँ भी 'मैदान' शब्द आया है, उसे Find & Replace द्वारा 'सभागार' से बदलें।", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "para1", "expected_action": "find-replace", "instruction": "दस्तावेज़ में जहाँ भी 'मैदान' शब्द आया है, उसे Find & Replace द्वारा 'सभागार' से बदलें।", "tasks": ["दस्तावेज़ में जहाँ भी 'मैदान' शब्द आया है, उसे Find & Replace द्वारा 'सभागार' से बदलें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. 'Home' टैब के सबसे दाएँ 'Editing' ग्रुप में 'Replace' बटन पर क्लिक करें।", "2. 'Find what:' बॉक्स में 'मैदान' लिखें और 'Replace with:' बॉक्स में 'सभागार' लिखें।", "3. 'OK' बटन पर क्लिक करें जिससे सभी स्थानों पर शब्द बदल जाए।"]}, {"id": "WORD_HI_001-Q13", "question_number": 13, "marks": 3.5, "title": "दस्तावेज़ का पेज मार्जिन 'Moderate' तथा पेज ओरिएंटेशन 'Landscape' सेट करें।", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "document", "expected_action": "margins", "instruction": "दस्तावेज़ का पेज मार्जिन 'Moderate' तथा पेज ओरिएंटेशन 'Landscape' सेट करें।", "tasks": ["दस्तावेज़ का पेज मार्जिन 'Moderate' तथा पेज ओरिएंटेशन 'Landscape' सेट करें।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. ऊपर 'Layout' टैब पर क्लिक करें।", "2. 'Page Setup' ग्रुप में 'Margins' बटन पर क्लिक करके सब-मेनू से 'Moderate' चुनें।", "3. उसी ग्रुप में 'Orientation' बटन पर क्लिक करके 'Landscape' चुनें।"]}, {"id": "WORD_HI_001-Q14", "question_number": 14, "marks": 3.0, "title": "नीचे दी गई सारणी (Table) की प्रथम हेडर पंक्ति को Bold, Center Aligned और Shading युक्त बनाएँ।", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "table", "expected_action": "center", "instruction": "नीचे दी गई सारणी (Table) की प्रथम हेडर पंक्ति को Bold, Center Aligned और Shading युक्त बनाएँ।", "tasks": ["नीचे दी गई सारणी (Table) की प्रथम हेडर पंक्ति को Bold, Center Aligned और Shading युक्त बनाएँ।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. दस्तावेज़ के नीचे दी गई सारणी की पहली पंक्ति ('क्र.सं. | शाखा / अनुभाग...') में क्लिक करें।", "2. 'Home' टैब -> 'Font' ग्रुप में 'Bold (B)' दबाएँ।", "3. 'Paragraph' ग्रुप में 'Center' अलाइनमेंट और 'Shading' से रंग चुनें।"]}, {"id": "WORD_HI_001-Q15", "question_number": 15, "marks": 3.0, "title": "दस्तावेज़ में राजकीय Header व Page Number जोड़ें तथा Design टैब से 'गोपनीय' Watermark लगाएँ।", "category": "rssb_hc_ldc_word", "difficulty": "Hard", "target_part": "document", "expected_action": "watermark", "instruction": "दस्तावेज़ में राजकीय Header व Page Number जोड़ें तथा Design टैब से 'गोपनीय' Watermark लगाएँ।", "tasks": ["दस्तावेज़ में राजकीय Header व Page Number जोड़ें तथा Design टैब से 'गोपनीय' Watermark लगाएँ।"], "source_content": "सूचना (NOTICE)\nराजकीय उच्च माध्यमिक विद्यालय, जयपुर\nदिनांक: 4 नवम्बर 2026\nवाद-विवाद एवं खेलकूद प्रतियोगिता\nसमस्त संबंधित अधिकारियों एवं कर्मचारियों को सूचित किया जाता है कि 'वाद-विवाद एवं खेलकूद प्रतियोगिता' का आयोजन आगामी माह की 21 तारीख को मुख्य मैदान परिसर में किया जाएगा। सभी शाखा प्रभारी अपनी सत्यापित सूचियाँ इस माह की 10 तारीख तक अधोहस्ताक्षरकर्ता को अनिवार्य रूप से प्रस्तुत करें।\nविगत प्रशासनिक समीक्षा के दौरान यह पाया गया कि कतिपय अनुभागों द्वारा दैनिक जावक पंजिका एवं मैदान निरीक्षण अभिलेखों का अद्यतन कार्य पूर्ण नहीं किया गया है। प्रत्येक नोडल अधिकारी लंबित पत्रावलियों की जांच कर शुक्रवार तक विभागीय पोर्टल पर शत-प्रतिशत प्रविष्टि सुनिश्चित करें।\nसमस्त अधीनस्थ कार्यालयों में पत्रावली संधारण, पैराग्राफ फॉर्मेटिंग एवं अभिलेख वर्गीकरण के निर्धारित मानकों का कड़ाई से पालन किया जाना अनिवार्य है। निर्धारित समय-सीमा में प्रतिवेदन प्राप्त नहीं होने पर संबंधित कार्मिक के विरुद्ध नियमानुसार अनुशासनात्मक कार्यवाही की जाएगी।\nप्रमुख विवरण / कार्यसूची: 100 मीटर दौड़, लंबी कूद, गोला फेंक।\nखेल सचिव\nअर्जुन कुमार", "solution_steps": ["1. 'Insert' टैब -> 'Header & Footer' ग्रुप में जाकर 'Header' और 'Page Number -> Bottom of Page' पर क्लिक करें।", "2. 'Design' टैब -> 'Page Background' ग्रुप में 'Watermark' पर क्लिक करके 'गोपनीय' चुनें।"]}]}, "excel_en": {"metadata": {"project": "AG Typing Tutor", "developer": "Xtreme AG Apps", "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC", "module": "excel", "language": "en", "file_id": "EXCEL_EN_001", "test_number": 1, "duration_minutes": 10, "full_marks": 50, "question_count": 15, "difficulty_breakdown": {"Easy": 3, "Medium": 7, "Hard": 5}, "master_dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]]}, "questions": [{"id": "EXCEL_EN_001-Q01", "question_number": 1, "marks": 3.0, "title": "Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color.", "category": "rssb_hc_ldc_excel", "difficulty": "Easy", "target_cells": "A2:H2", "expected_formula": "", "expected_action": "bold", "instruction": "Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color.", "tasks": ["Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell A2 (or select A2:H2) in Row 2 of the worksheet.", "2. Go to the 'Home' tab -> 'Font' group -> click the 'Bold (B)' button.", "3. In the same 'Font' group, click the 'Fill Color' (paint bucket) button to shade the header row."]}, {"id": "EXCEL_EN_001-Q02", "question_number": 2, "marks": 3.0, "title": "Center align the Employee ID cells in Column A (A3:A7).", "category": "rssb_hc_ldc_excel", "difficulty": "Easy", "target_cells": "A3:A7", "expected_formula": "", "expected_action": "center", "instruction": "Center align the Employee ID cells in Column A (A3:A7).", "tasks": ["Center align the Employee ID cells in Column A (A3:A7)."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Select cell A3 (or range A3:A7) in Column A.", "2. Go to the 'Home' tab -> 'Alignment' group -> click the 'Center' alignment icon."]}, {"id": "EXCEL_EN_001-Q03", "question_number": 3, "marks": 3.0, "title": "Apply 'All Borders' to the main employee data table (A2:H7).", "category": "rssb_hc_ldc_excel", "difficulty": "Easy", "target_cells": "A2:H7", "expected_formula": "", "expected_action": "border", "instruction": "Apply 'All Borders' to the main employee data table (A2:H7).", "tasks": ["Apply 'All Borders' to the main employee data table (A2:H7)."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click inside the table (e.g. cell A2).", "2. Go to the 'Home' tab -> 'Font' group -> click the 'Borders' dropdown arrow (▾) and select 'All Borders'."]}, {"id": "EXCEL_EN_001-Q04", "question_number": 4, "marks": 3.5, "title": "In cell F3, calculate the Gross Pay by adding Basic Pay and DA using =SUM(D3:E3).", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "F3", "expected_formula": "=SUM(D3:E3)", "expected_action": "formula", "instruction": "In cell F3, calculate the Gross Pay by adding Basic Pay and DA using =SUM(D3:E3).", "tasks": ["In cell F3, calculate the Gross Pay by adding Basic Pay and DA using =SUM(D3:E3)."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell F3 (Gross Pay column, first employee row).", "2. Type '=SUM(D3:E3)' in the Formula Bar (or click 'AutoSum Σ' on the Home tab) and press Enter."]}, {"id": "EXCEL_EN_001-Q05", "question_number": 5, "marks": 3.5, "title": "In cell D8 (TOTAL row), calculate the total Basic Pay of all employees using =SUM(D3:D7).", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D8", "expected_formula": "=SUM(D3:D7)", "expected_action": "formula", "instruction": "In cell D8 (TOTAL row), calculate the total Basic Pay of all employees using =SUM(D3:D7).", "tasks": ["In cell D8 (TOTAL row), calculate the total Basic Pay of all employees using =SUM(D3:D7)."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell D8 in Row 8 (TOTAL row).", "2. Type '=SUM(D3:D7)' in the Formula Bar and press Enter."]}, {"id": "EXCEL_EN_001-Q06", "question_number": 6, "marks": 3.5, "title": "In cell D9 (AVERAGE row), calculate the average Basic Pay using =AVERAGE(D3:D7).", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D9", "expected_formula": "=AVERAGE(D3:D7)", "expected_action": "formula", "instruction": "In cell D9 (AVERAGE row), calculate the average Basic Pay using =AVERAGE(D3:D7).", "tasks": ["In cell D9 (AVERAGE row), calculate the average Basic Pay using =AVERAGE(D3:D7)."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell D9 in Row 9 (AVERAGE row).", "2. Go to 'Home' -> 'Editing' -> 'AutoSum (Σ) ▾' -> select 'Average' (or type '=AVERAGE(D3:D7)') and press Enter."]}, {"id": "EXCEL_EN_001-Q07", "question_number": 7, "marks": 3.5, "title": "In cell D10 (MAXIMUM row), find the highest Basic Pay using =MAX(D3:D7).", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D10", "expected_formula": "=MAX(D3:D7)", "expected_action": "formula", "instruction": "In cell D10 (MAXIMUM row), find the highest Basic Pay using =MAX(D3:D7).", "tasks": ["In cell D10 (MAXIMUM row), find the highest Basic Pay using =MAX(D3:D7)."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell D10 in Row 10 (MAXIMUM row).", "2. Go to 'Home' -> 'AutoSum (Σ) ▾' -> select 'Max' (or type '=MAX(D3:D7)') and press Enter."]}, {"id": "EXCEL_EN_001-Q08", "question_number": 8, "marks": 3.5, "title": "In cell D11 (MINIMUM row), find the lowest Basic Pay using =MIN(D3:D7).", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D11", "expected_formula": "=MIN(D3:D7)", "expected_action": "formula", "instruction": "In cell D11 (MINIMUM row), find the lowest Basic Pay using =MIN(D3:D7).", "tasks": ["In cell D11 (MINIMUM row), find the lowest Basic Pay using =MIN(D3:D7)."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell D11 in Row 11 (MINIMUM row).", "2. Go to 'Home' -> 'AutoSum (Σ) ▾' -> select 'Min' (or type '=MIN(D3:D7)') and press Enter."]}, {"id": "EXCEL_EN_001-Q09", "question_number": 9, "marks": 3.5, "title": "Format the Basic Pay and DA numbers (D3:E7) as Currency (₹) from the Number group.", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D3:F7", "expected_formula": "", "expected_action": "number-format", "instruction": "Format the Basic Pay and DA numbers (D3:E7) as Currency (₹) from the Number group.", "tasks": ["Format the Basic Pay and DA numbers (D3:E7) as Currency (₹) from the Number group."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell D3 (or select D3:E7).", "2. Go to the 'Home' tab -> 'Number' group -> click the '₹' (Currency) button or select 'Currency' from the Number Format dropdown."]}, {"id": "EXCEL_EN_001-Q10", "question_number": 10, "marks": 3.5, "title": "Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold.", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "A1", "expected_formula": "", "expected_action": "merge", "instruction": "Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold.", "tasks": ["Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell A1 (the top report title row).", "2. Go to the 'Home' tab -> 'Alignment' group -> click the 'Merge & Center' button."]}, {"id": "EXCEL_EN_001-Q11", "question_number": 11, "marks": 3.5, "title": "In cell G3, calculate 10% Bonus on Basic Pay (D3) using the formula =D3*10%.", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "G3", "expected_formula": "=D3*10%", "expected_action": "formula", "instruction": "In cell G3, calculate 10% Bonus on Basic Pay (D3) using the formula =D3*10%.", "tasks": ["In cell G3, calculate 10% Bonus on Basic Pay (D3) using the formula =D3*10%."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell G3 (Bonus 10% column).", "2. Type '=D3*10%' (or '=D3*0.1') in the Formula Bar and press Enter."]}, {"id": "EXCEL_EN_001-Q12", "question_number": 12, "marks": 3.5, "title": "In cell H3, use the IF formula: if Basic Pay (D3) >= 30000, display \"Senior\", otherwise display \"Junior\".", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "H3", "expected_formula": "=IF(D3>=30000,\"Senior\",\"Junior\")", "expected_action": "formula", "instruction": "In cell H3, use the IF formula: if Basic Pay (D3) >= 30000, display \"Senior\", otherwise display \"Junior\".", "tasks": ["In cell H3, use the IF formula: if Basic Pay (D3) >= 30000, display \"Senior\", otherwise display \"Junior\"."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell H3 (Category column).", "2. Go to the 'Formulas' tab -> 'Logical' -> 'IF' (or type directly in the Formula Bar).", "3. Enter =IF(D3>=30000,\"Senior\",\"Junior\") and press Enter."]}, {"id": "EXCEL_EN_001-Q13", "question_number": 13, "marks": 3.5, "title": "In cell D12, count how many employees have Basic Pay >= 30000 using =COUNTIF(D3:D7,\">=30000\").", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "D12", "expected_formula": "=COUNTIF(D3:D7,\">=30000\")", "expected_action": "formula", "instruction": "In cell D12, count how many employees have Basic Pay >= 30000 using =COUNTIF(D3:D7,\">=30000\").", "tasks": ["In cell D12, count how many employees have Basic Pay >= 30000 using =COUNTIF(D3:D7,\">=30000\")."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Click cell D12 in Row 12.", "2. Type =COUNTIF(D3:D7,\">=30000\") in the Formula Bar and press Enter."]}, {"id": "EXCEL_EN_001-Q14", "question_number": 14, "marks": 3.0, "title": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the Basic Pay column (D3:D7).", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "D3:D7", "expected_formula": "", "expected_action": "conditional-format", "instruction": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the Basic Pay column (D3:D7).", "tasks": ["Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the Basic Pay column (D3:D7)."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Select cell D3 (or D3:D7).", "2. Go to the 'Home' tab -> 'Styles' group -> click 'Conditional Formatting'.", "3. Click 'Highlight Cells Rules — Greater Than...' from the submenu."]}, {"id": "EXCEL_EN_001-Q15", "question_number": 15, "marks": 3.0, "title": "Apply 'Wrap Text' to the column headers (Row 2) and enable 'Freeze Panes' from the View tab.", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "A2:H2", "expected_formula": "", "expected_action": "freeze-panes", "instruction": "Apply 'Wrap Text' to the column headers (Row 2) and enable 'Freeze Panes' from the View tab.", "tasks": ["Apply 'Wrap Text' to the column headers (Row 2) and enable 'Freeze Panes' from the View tab."], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Select cell A2 in the header row -> go to 'Home' tab -> 'Alignment' group -> click 'Wrap Text'.", "2. Click the 'View' tab on the Ribbon -> in the 'Window' group, click 'Freeze Panes'."]}]}, "excel_hi": {"metadata": {"project": "AG Typing Tutor", "developer": "Xtreme AG Apps", "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC", "module": "excel", "language": "hi", "file_id": "EXCEL_HI_001", "test_number": 1, "duration_minutes": 10, "full_marks": 50, "question_count": 15, "difficulty_breakdown": {"Easy": 3, "Medium": 7, "Hard": 5}, "master_dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]]}, "questions": [{"id": "EXCEL_HI_001-Q01", "question_number": 1, "marks": 3.0, "title": "कॉलम हेडर पंक्ति (Row 2: A2:H2) को बोल्ड (Bold) करें और उसमें हल्का Fill Color भरें।", "category": "rssb_hc_ldc_excel", "difficulty": "Easy", "target_cells": "A2:H2", "expected_formula": "", "expected_action": "bold", "instruction": "कॉलम हेडर पंक्ति (Row 2: A2:H2) को बोल्ड (Bold) करें और उसमें हल्का Fill Color भरें।", "tasks": ["कॉलम हेडर पंक्ति (Row 2: A2:H2) को बोल्ड (Bold) करें और उसमें हल्का Fill Color भरें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. वर्कशीट की दूसरी पंक्ति (Row 2, जैसे सेल A2) पर क्लिक करें।", "2. 'Home' टैब -> 'Font' ग्रुप में जाकर 'Bold (B)' बटन पर क्लिक करें।", "3. उसी 'Font' ग्रुप में 'Fill Color' (रंग की बाल्टी) बटन पर क्लिक करके रंग भरें।"]}, {"id": "EXCEL_HI_001-Q02", "question_number": 2, "marks": 3.0, "title": "कॉलम A में दिए गए Employee ID सेल्स (A3:A7) को सेंटर संरेखित (Center Align) करें।", "category": "rssb_hc_ldc_excel", "difficulty": "Easy", "target_cells": "A3:A7", "expected_formula": "", "expected_action": "center", "instruction": "कॉलम A में दिए गए Employee ID सेल्स (A3:A7) को सेंटर संरेखित (Center Align) करें।", "tasks": ["कॉलम A में दिए गए Employee ID सेल्स (A3:A7) को सेंटर संरेखित (Center Align) करें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. कॉलम A के सेल A3 को सिलेक्ट करें।", "2. 'Home' टैब -> 'Alignment' ग्रुप में 'Center' अलाइनमेंट बटन पर क्लिक करें।"]}, {"id": "EXCEL_HI_001-Q03", "question_number": 3, "marks": 3.0, "title": "मुख्य कर्मचारी डेटा टेबल (A2:H7) पर 'All Borders' लागू करें।", "category": "rssb_hc_ldc_excel", "difficulty": "Easy", "target_cells": "A2:H7", "expected_formula": "", "expected_action": "border", "instruction": "मुख्य कर्मचारी डेटा टेबल (A2:H7) पर 'All Borders' लागू करें।", "tasks": ["मुख्य कर्मचारी डेटा टेबल (A2:H7) पर 'All Borders' लागू करें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. टेबल के किसी सेल (जैसे A2) पर क्लिक करें।", "2. 'Home' टैब -> 'Font' ग्रुप में 'Borders' ड्रॉपडाउन तीर (▾) पर क्लिक करें और 'All Borders' चुनें।"]}, {"id": "EXCEL_HI_001-Q04", "question_number": 4, "marks": 3.5, "title": "सेल F3 में Basic Pay और DA का कुल योग (Gross Pay) निकालने के लिए =SUM(D3:E3) फॉर्मूला लगाएँ।", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "F3", "expected_formula": "=SUM(D3:E3)", "expected_action": "formula", "instruction": "सेल F3 में Basic Pay और DA का कुल योग (Gross Pay) निकालने के लिए =SUM(D3:E3) फॉर्मूला लगाएँ।", "tasks": ["सेल F3 में Basic Pay और DA का कुल योग (Gross Pay) निकालने के लिए =SUM(D3:E3) फॉर्मूला लगाएँ।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. सेल F3 पर क्लिक करें।", "2. फॉर्मूला बार में '=SUM(D3:E3)' टाइप करें (या Home टैब पर 'AutoSum Σ' दबाएँ) और Enter दबाएँ।"]}, {"id": "EXCEL_HI_001-Q05", "question_number": 5, "marks": 3.5, "title": "सेल D8 (TOTAL पंक्ति) में सभी कर्मचारियों के Basic Pay का योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D8", "expected_formula": "=SUM(D3:D7)", "expected_action": "formula", "instruction": "सेल D8 (TOTAL पंक्ति) में सभी कर्मचारियों के Basic Pay का योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।", "tasks": ["सेल D8 (TOTAL पंक्ति) में सभी कर्मचारियों के Basic Pay का योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Row 8 के सेल D8 पर क्लिक करें।", "2. फॉर्मूला बार में '=SUM(D3:D7)' लिखकर Enter दबाएँ।"]}, {"id": "EXCEL_HI_001-Q06", "question_number": 6, "marks": 3.5, "title": "सेल D9 (AVERAGE पंक्ति) में Basic Pay का औसत मान =AVERAGE(D3:D7) फंक्शन से ज्ञात करें।", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D9", "expected_formula": "=AVERAGE(D3:D7)", "expected_action": "formula", "instruction": "सेल D9 (AVERAGE पंक्ति) में Basic Pay का औसत मान =AVERAGE(D3:D7) फंक्शन से ज्ञात करें।", "tasks": ["सेल D9 (AVERAGE पंक्ति) में Basic Pay का औसत मान =AVERAGE(D3:D7) फंक्शन से ज्ञात करें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Row 9 के सेल D9 पर क्लिक करें।", "2. 'Home' -> 'Editing' -> 'AutoSum (Σ) ▾' मेनू से 'Average' चुनें (या '=AVERAGE(D3:D7)' लिखें) और Enter दबाएँ।"]}, {"id": "EXCEL_HI_001-Q07", "question_number": 7, "marks": 3.5, "title": "सेल D10 (MAXIMUM पंक्ति) में सर्वाधिक Basic Pay ज्ञात करने के लिए =MAX(D3:D7) फॉर्मूला लगाएँ।", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D10", "expected_formula": "=MAX(D3:D7)", "expected_action": "formula", "instruction": "सेल D10 (MAXIMUM पंक्ति) में सर्वाधिक Basic Pay ज्ञात करने के लिए =MAX(D3:D7) फॉर्मूला लगाएँ।", "tasks": ["सेल D10 (MAXIMUM पंक्ति) में सर्वाधिक Basic Pay ज्ञात करने के लिए =MAX(D3:D7) फॉर्मूला लगाएँ।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Row 10 के सेल D10 पर क्लिक करें।", "2. 'AutoSum (Σ) ▾' मेनू से 'Max' चुनें (या '=MAX(D3:D7)' टाइप करें) और Enter दबाएँ।"]}, {"id": "EXCEL_HI_001-Q08", "question_number": 8, "marks": 3.5, "title": "सेल D11 (MINIMUM पंक्ति) में न्यूनतम Basic Pay ज्ञात करने के लिए =MIN(D3:D7) फॉर्मूला लगाएँ।", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D11", "expected_formula": "=MIN(D3:D7)", "expected_action": "formula", "instruction": "सेल D11 (MINIMUM पंक्ति) में न्यूनतम Basic Pay ज्ञात करने के लिए =MIN(D3:D7) फॉर्मूला लगाएँ।", "tasks": ["सेल D11 (MINIMUM पंक्ति) में न्यूनतम Basic Pay ज्ञात करने के लिए =MIN(D3:D7) फॉर्मूला लगाएँ।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Row 11 के सेल D11 पर क्लिक करें।", "2. 'AutoSum (Σ) ▾' मेनू से 'Min' चुनें (या '=MIN(D3:D7)' टाइप करें) और Enter दबाएँ।"]}, {"id": "EXCEL_HI_001-Q09", "question_number": 9, "marks": 3.5, "title": "कॉलम D की वेतन राशियों (D3:D7) को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "D3:F7", "expected_formula": "", "expected_action": "number-format", "instruction": "कॉलम D की वेतन राशियों (D3:D7) को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।", "tasks": ["कॉलम D की वेतन राशियों (D3:D7) को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. सेल D3 को सिलेक्ट करें।", "2. 'Home' टैब -> 'Number' ग्रुप में जाकर '₹' (Currency) आइकन पर क्लिक करें या ड्रॉपडाउन से 'Currency' चुनें।"]}, {"id": "EXCEL_HI_001-Q10", "question_number": 10, "marks": 3.5, "title": "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center' तथा Bold लागू करें।", "category": "rssb_hc_ldc_excel", "difficulty": "Medium", "target_cells": "A1", "expected_formula": "", "expected_action": "merge", "instruction": "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center' तथा Bold लागू करें।", "tasks": ["प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center' तथा Bold लागू करें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. सेल A1 (शीर्षक पंक्ति) पर क्लिक करें।", "2. 'Home' टैब -> 'Alignment' ग्रुप में 'Merge & Center' बटन पर क्लिक करें।"]}, {"id": "EXCEL_HI_001-Q11", "question_number": 11, "marks": 3.5, "title": "सेल G3 में Basic Pay (D3) का 10% बोनस निकालने के लिए =D3*10% फॉर्मूला लगाएँ।", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "G3", "expected_formula": "=D3*10%", "expected_action": "formula", "instruction": "सेल G3 में Basic Pay (D3) का 10% बोनस निकालने के लिए =D3*10% फॉर्मूला लगाएँ।", "tasks": ["सेल G3 में Basic Pay (D3) का 10% बोनस निकालने के लिए =D3*10% फॉर्मूला लगाएँ।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. सेल G3 पर क्लिक करें।", "2. फॉर्मूला बार में '=D3*10%' (या '=D3*0.1') लिखकर Enter दबाएँ।"]}, {"id": "EXCEL_HI_001-Q12", "question_number": 12, "marks": 3.5, "title": "सेल H3 में IF फॉर्मूला लगाएँ: यदि Basic Pay (D3) >= 30000 हो तो \"Senior\", अन्यथा \"Junior\" आए।", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "H3", "expected_formula": "=IF(D3>=30000,\"Senior\",\"Junior\")", "expected_action": "formula", "instruction": "सेल H3 में IF फॉर्मूला लगाएँ: यदि Basic Pay (D3) >= 30000 हो तो \"Senior\", अन्यथा \"Junior\" आए।", "tasks": ["सेल H3 में IF फॉर्मूला लगाएँ: यदि Basic Pay (D3) >= 30000 हो तो \"Senior\", अन्यथा \"Junior\" आए।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. सेल H3 पर क्लिक करें।", "2. 'Formulas' टैब -> 'Logical' -> 'IF' चुनें (या सीधे फॉर्मूला बार में टाइप करें)।", "3. =IF(D3>=30000,\"Senior\",\"Junior\") लिखकर Enter दबाएँ।"]}, {"id": "EXCEL_HI_001-Q13", "question_number": 13, "marks": 3.5, "title": "सेल D12 में =COUNTIF(D3:D7,\">=30000\") का उपयोग करके ज्ञात करें कि कितने कर्मचारियों का वेतन 30000 या अधिक है।", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "D12", "expected_formula": "=COUNTIF(D3:D7,\">=30000\")", "expected_action": "formula", "instruction": "सेल D12 में =COUNTIF(D3:D7,\">=30000\") का उपयोग करके ज्ञात करें कि कितने कर्मचारियों का वेतन 30000 या अधिक है।", "tasks": ["सेल D12 में =COUNTIF(D3:D7,\">=30000\") का उपयोग करके ज्ञात करें कि कितने कर्मचारियों का वेतन 30000 या अधिक है।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. Row 12 के सेल D12 पर क्लिक करें।", "2. फॉर्मूला बार में =COUNTIF(D3:D7,\">=30000\") टाइप करके Enter दबाएँ।"]}, {"id": "EXCEL_HI_001-Q14", "question_number": 14, "marks": 3.0, "title": "Basic Pay कॉलम (D3:D7) पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "D3:D7", "expected_formula": "", "expected_action": "conditional-format", "instruction": "Basic Pay कॉलम (D3:D7) पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।", "tasks": ["Basic Pay कॉलम (D3:D7) पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. सेल D3 को सिलेक्ट करें।", "2. 'Home' टैब -> 'Styles' ग्रुप में 'Conditional Formatting' बटन पर क्लिक करें।", "3. सब-मेनू से 'Highlight Cells Rules — Greater Than...' पर क्लिक करें।"]}, {"id": "EXCEL_HI_001-Q15", "question_number": 15, "marks": 3.0, "title": "हेडर पंक्ति (Row 2) पर 'Wrap Text' लगाएँ और View टैब से 'Freeze Panes' सक्रिय करें।", "category": "rssb_hc_ldc_excel", "difficulty": "Hard", "target_cells": "A2:H2", "expected_formula": "", "expected_action": "freeze-panes", "instruction": "हेडर पंक्ति (Row 2) पर 'Wrap Text' लगाएँ और View टैब से 'Freeze Panes' सक्रिय करें।", "tasks": ["हेडर पंक्ति (Row 2) पर 'Wrap Text' लगाएँ और View टैब से 'Freeze Panes' सक्रिय करें।"], "sheet_name": "Payroll_Sheet", "dataset_range": "A1:H12", "dataset": [["RAJASTHAN STATE TREASURY PAYROLL STATEMENT — TEST #01", "", "", "", "", "", "", ""], ["Emp ID", "Employee Name", "Department", "Basic Pay", "DA Allowance", "Gross Pay", "Bonus (10%)", "Category"], ["E101", "Amit Kumar Sharma", "Judicial", 28000, 11200, "", "", ""], ["E102", "Priya Verma", "Establishment", 34000, 13600, "", "", ""], ["E103", "Rahul Meena", "Accounts", 26000, 10400, "", "", ""], ["E104", "Neha Gupta", "Audit Cell", 38000, 15200, "", "", ""], ["E105", "Vikram Singh Rathore", "Records", 31000, 12400, "", "", ""], ["TOTAL (SUM)", "", "", "", "", "", "", ""], ["AVERAGE", "", "", "", "", "", "", ""], ["MAXIMUM (MAX)", "", "", "", "", "", "", ""], ["MINIMUM (MIN)", "", "", "", "", "", "", ""], ["COUNT (>=30000)", "", "", "", "", "", "", ""]], "solution_steps": ["1. सेल A2 को सिलेक्ट करके 'Home' -> 'Alignment' ग्रुप में 'Wrap Text' पर क्लिक करें।", "2. ऊपर 'View' टैब पर क्लिक करें और 'Window' ग्रुप में 'Freeze Panes' पर क्लिक करें।"]}]}};
 
-// In-memory + IndexedDB/sessionStorage custom uploaded bank cache so newly uploaded files load immediately
-const O19_CUSTOM_UPLOADED_BANK = new Map()
-let O19_CACHE_BUST_VERSION = Date.now()
-
-function normalizeEfficiencyJsonData(raw, moduleName, language, fileNo, fileId) {
-  if (!raw || typeof raw !== 'object') throw new Error('Invalid JSON object')
-  const rawQuestions = Array.isArray(raw)
-    ? raw
-    : (raw.questions || raw.tasks || raw.items || raw.exercises || raw.data?.questions || raw.data?.tasks || [])
-  if (!Array.isArray(rawQuestions) || !rawQuestions.length) {
-    throw new Error('No questions array found in JSON')
-  }
-
-  const meta = (raw.metadata && typeof raw.metadata === 'object') ? { ...raw.metadata } : {}
-  meta.file_id = meta.file_id || raw.file_id || raw.id || fileId
-  meta.test_number = meta.test_number || raw.test_number || raw.testNo || fileNo
-  meta.module = meta.module || raw.module || moduleName
-  meta.language = meta.language || raw.language || language
-
-  // Normalize Word document structure across old and new JSON schemas
-  const rawDocStruct = meta.document_structure || raw.document_structure || raw.documentStructure || (raw.document && typeof raw.document === 'object' && !Array.isArray(raw.document) ? raw.document : null)
-  if (rawDocStruct && typeof rawDocStruct === 'object') {
-    const paras = Array.isArray(rawDocStruct.paragraphs) ? rawDocStruct.paragraphs : []
-    meta.document_structure = {
-      doc_type: rawDocStruct.doc_type || rawDocStruct.heading || rawDocStruct.title || rawDocStruct.header || '',
-      org_name: rawDocStruct.org_name || rawDocStruct.organization || rawDocStruct.subtitle || rawDocStruct.department || '',
-      date_line: rawDocStruct.date_line || rawDocStruct.date || '',
-      subject_line: rawDocStruct.subject_line || rawDocStruct.subject || '',
-      para1: rawDocStruct.para1 || paras[0] || rawDocStruct.body1 || rawDocStruct.paragraph1 || '',
-      para2: rawDocStruct.para2 || paras[1] || rawDocStruct.body2 || rawDocStruct.paragraph2 || '',
-      para3: rawDocStruct.para3 || paras[2] || rawDocStruct.body3 || rawDocStruct.paragraph3 || '',
-      events_list: rawDocStruct.events_list || paras[3] || rawDocStruct.schedule || rawDocStruct.list || '',
-      sign_role: rawDocStruct.sign_role || rawDocStruct.designation || rawDocStruct.footer_role || '',
-      sign_name: rawDocStruct.sign_name || rawDocStruct.signatory || rawDocStruct.footer_name || '',
-      table: Array.isArray(rawDocStruct.table) ? rawDocStruct.table : (Array.isArray(raw.table) ? raw.table : [])
-    }
-  }
-
-  // Normalize top-level passage/source_content if provided at root
-  const rootSourceContent = typeof raw.source_content === 'string' ? raw.source_content
-    : typeof raw.passage === 'string' ? raw.passage
-    : typeof raw.content === 'string' ? raw.content
-    : typeof raw.document === 'string' ? raw.document
-    : typeof raw.text === 'string' ? raw.text
-    : Array.isArray(raw.paragraphs) ? raw.paragraphs.join('\n')
-    : ''
-
-  // Normalize Excel master dataset across old and new JSON schemas
-  const rawDataset = meta.master_dataset || raw.master_dataset || raw.dataset || raw.table || raw.sheet_data || raw.rows || raw.grid || (Array.isArray(raw.data) ? raw.data : null)
-  if (Array.isArray(rawDataset) && rawDataset.length) {
-    meta.master_dataset = rawDataset
-  }
-
-  const normalizedQuestions = rawQuestions.map((q, idx) => {
-    const qNum = idx + 1
-    const instrText = q.instruction || q.title || q.question || q.task || q.prompt || q.text || (Array.isArray(q.tasks) && q.tasks[0]) || `Question ${qNum}`
-    const qTasks = Array.isArray(q.tasks) && q.tasks.length ? q.tasks : [instrText]
-    const qSteps = Array.isArray(q.solution_steps) && q.solution_steps.length
-      ? q.solution_steps
-      : Array.isArray(q.steps) && q.steps.length
-      ? q.steps
-      : typeof q.solution === 'string' && q.solution.trim()
-      ? q.solution.split(/\n+/)
-      : ['1. Select the target text or cell in the workspace.', '2. Go to the required Ribbon Tab and Group.', '3. Apply the formatting or formula as instructed.']
-
-    return {
-      ...q,
-      id: q.id || `${fileId}-Q${String(qNum).padStart(2, '0')}`,
-      question_number: q.question_number || qNum,
-      marks: Number(q.marks ?? q.points ?? (qNum <= 3 || qNum >= 14 ? 3.0 : 3.5)),
-      title: q.title || instrText,
-      instruction: instrText,
-      tasks: qTasks,
-      difficulty: q.difficulty || (qNum <= 3 ? 'Easy' : qNum <= 10 ? 'Medium' : 'Hard'),
-      target_part: q.target_part || q.targetPart || q.part || '',
-      target_cells: q.target_cells || q.targetCells || q.cell || q.range || '',
-      expected_formula: q.expected_formula || q.expectedFormula || q.formula || q.answer || '',
-      expected_action: q.expected_action || q.expectedAction || q.action || q.type || '',
-      source_content: q.source_content || q.passage || q.content || q.text || rootSourceContent || '',
-      dataset: Array.isArray(q.dataset) && q.dataset.length ? q.dataset : (meta.master_dataset || []),
-      sheet_name: q.sheet_name || raw.sheet_name || meta.sheet_name || 'Sheet1',
-      solution_steps: qSteps
-    }
-  })
-
-  if (!meta.master_dataset && Array.isArray(normalizedQuestions[0]?.dataset) && normalizedQuestions[0].dataset.length) {
-    meta.master_dataset = normalizedQuestions[0].dataset
-  }
-
-  return {
-    ...raw,
-    metadata: meta,
-    questions: normalizedQuestions,
-    _loadedFromDisk: true
-  }
-}
-
 async function efficiencyFetchFile(moduleName, language, fileNo) {
-  const modUpper = String(moduleName || 'word').toUpperCase()
-  const modLower = String(moduleName || 'word').toLowerCase()
-  const langUpper = String(language || 'en').toUpperCase()
-  const langLower = String(language || 'en').toLowerCase()
-  const prefixUpper = `${modUpper}_${langUpper}`
-  const prefixLower = `${modLower}_${langLower}`
-  const num3 = String(fileNo).padStart(3, '0')
-  const num2 = String(fileNo).padStart(2, '0')
-  const num1 = String(fileNo)
+  const prefix = `${moduleName.toUpperCase()}_${language.toUpperCase()}`
   const fileId = efficiencyFileId(moduleName, language, fileNo)
-
-  // 1. Check if user loaded/synced files via the in-app Folder Sync or session cache
-  if (O19_CUSTOM_UPLOADED_BANK.has(fileId)) {
-    return JSON.parse(JSON.stringify(O19_CUSTOM_UPLOADED_BANK.get(fileId)))
-  }
-
-  // Clear any stale old draft in localStorage so old exercises never stick
+  const url = `/efficiency-bank/${prefix}/${fileId}.json`
   try {
-    localStorage.removeItem('ag-eff-word-draft')
-    localStorage.removeItem('ag-eff-excel-draft')
-  } catch {}
-
-  const baseUrl = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL) ? import.meta.env.BASE_URL : '/'
-  const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`
-
-  // Try all common folder locations and naming conventions where new files may have been uploaded
-  const candidateRelativePaths = [
-    `efficiency-bank/${prefixUpper}/${prefixUpper}_${num3}.json`,
-    `efficiency-bank/${prefixUpper}/${prefixUpper}_${num2}.json`,
-    `efficiency-bank/${prefixUpper}/${prefixUpper}_${num1}.json`,
-    `efficiency-bank/${prefixLower}/${prefixLower}_${num3}.json`,
-    `efficiency-bank/${prefixUpper}_${num3}.json`,
-    `efficiency-bank/${prefixLower}_${num3}.json`,
-    `src/efficiency-bank/${prefixUpper}/${prefixUpper}_${num3}.json`,
-    `src/efficiency-bank/${prefixLower}/${prefixLower}_${num3}.json`,
-    `src/efficiency-bank/${prefixUpper}_${num3}.json`,
-    `public/efficiency-bank/${prefixUpper}/${prefixUpper}_${num3}.json`,
-    `efficiency/${prefixUpper}/${prefixUpper}_${num3}.json`,
-    `efficiency/${prefixUpper}_${num3}.json`,
-    `exercises/efficiency-bank/${prefixUpper}/${prefixUpper}_${num3}.json`,
-    `exercises/${prefixUpper}/${prefixUpper}_${num3}.json`
-  ]
-
-  for (const rel of candidateRelativePaths) {
-    const url = `${cleanBase}${rel}?v=${O19_CACHE_BUST_VERSION}`
-    try {
-      const response = await fetch(url, { cache: 'no-store', headers: { 'Cache-Control': 'no-cache', 'Pragma': 'no-cache' } })
-      if (!response.ok) continue
-      const contentType = response.headers.get('content-type') || ''
-      if (contentType.includes('text/html')) continue
-      const rawData = await response.json()
-      const normalized = normalizeEfficiencyJsonData(rawData, modLower, langLower, fileNo, fileId)
-      normalized._sourceUrl = rel
-      return normalized
-    } catch (err) {
-      // Try next candidate path
-    }
+    const response = await fetch(url, { cache: 'no-store' })
+    if (!response.ok) throw new Error('Not found')
+    const data = await response.json()
+    if (!Array.isArray(data.questions) || !data.questions.length) throw new Error('Empty')
+    return data
+  } catch (err) {
+    const tpl = O19_FALLBACK_BANK[`${moduleName}_${language}`] || O19_FALLBACK_BANK.word_en
+    const clone = JSON.parse(JSON.stringify(tpl))
+    clone.metadata.file_id = fileId
+    clone.metadata.test_number = fileNo
+    clone.questions.forEach((q, idx) => { q.id = `${fileId}-Q${String(idx + 1).padStart(2, '0')}` })
+    return clone
   }
-
-  // Fallback only if none of the paths exist
-  const tpl = O19_FALLBACK_BANK[`${modLower}_${langLower}`] || O19_FALLBACK_BANK.word_en
-  const clone = JSON.parse(JSON.stringify(tpl))
-  clone.metadata.file_id = fileId
-  clone.metadata.test_number = fileNo
-  clone._isFallback = true
-  clone.questions.forEach((q, idx) => { q.id = `${fileId}-Q${String(idx + 1).padStart(2, '0')}` })
-  return clone
 }
 
 function efficiencyShowLanguagePicker(page) {
@@ -175,7 +28,7 @@ function efficiencyShowLanguagePicker(page) {
   efficiencyState.module = isWord ? 'word' : 'excel'
   if (efficiencyState.timer) clearInterval(efficiencyState.timer)
   root.classList.remove('efficiency-fullscreen')
-  root.innerHTML = `<section class="efficiency-hub"><div class="efficiency-hub-hero"><span class="eyebrow">RAJASTHAN RSSB LDC &amp; HIGH COURT LDC EFFICIENCY</span><h2>${isWord ? 'MS Word 2019 Efficiency' : 'MS Excel 2019 Efficiency'}</h2><p>Choose your exercise language. Each test has 15 systematic questions (Full Marks: 25 · Qualifying: 9 · Duration: 10:00 Minutes).</p><div class="efficiency-hub-stats"><span><strong>40</strong><small>Tests per language</small></span><span><strong>15</strong><small>Questions (25 Marks)</small></span><span><strong>10:00</strong><small>Minutes Exam Time</small></span></div></div><div class="efficiency-language-grid"><button type="button" class="efficiency-language-card" data-eff-language="en"><span class="efficiency-language-icon">EN</span><span><strong>English Efficiency</strong><small>RSSB LDC Official Pattern (25 Marks · 15 Tasks)</small></span><span class="efficiency-card-arrow">›</span></button><button type="button" class="efficiency-language-card" data-eff-language="hi"><span class="efficiency-language-icon hindi">हि</span><span><strong>हिन्दी Efficiency</strong><small>राजस्थान RSSB LDC आधिकारिक पैटर्न (25 अंक · 15 प्रश्न)</small></span><span class="efficiency-card-arrow">›</span></button></div></section>`
+  root.innerHTML = `<section class="efficiency-hub"><div class="efficiency-hub-hero"><span class="eyebrow">RAJASTHAN RSSB LDC &amp; HIGH COURT LDC EFFICIENCY</span><h2>${isWord ? 'MS Word 2019 Efficiency' : 'MS Excel 2019 Efficiency'}</h2><p>Choose your exercise language. Each test has 15 systematic questions (Full Marks: 50 · Duration: 10:00 Minutes).</p><div class="efficiency-hub-stats"><span><strong>40</strong><small>Tests per language</small></span><span><strong>15</strong><small>Questions (50 Marks)</small></span><span><strong>10:00</strong><small>Minutes Exam Time</small></span></div></div><div class="efficiency-language-grid"><button type="button" class="efficiency-language-card" data-eff-language="en"><span class="efficiency-language-icon">EN</span><span><strong>English Efficiency</strong><small>RSSB LDC &amp; High Court LDC Pattern (50 Marks)</small></span><span class="efficiency-card-arrow">›</span></button><button type="button" class="efficiency-language-card" data-eff-language="hi"><span class="efficiency-language-icon hindi">हि</span><span><strong>हिन्दी Efficiency</strong><small>राजस्थान हाईकोर्ट एवं RSSB LDC पैटर्न (50 अंक)</small></span><span class="efficiency-card-arrow">›</span></button></div></section>`
   root.querySelectorAll('[data-eff-language]').forEach(button => button.addEventListener('click', () => efficiencyShowExerciseList(page, button.dataset.effLanguage)))
 }
 
@@ -195,40 +48,13 @@ async function efficiencyShowExerciseList(page, language) {
   }))
   if (!document.querySelector('#efficiency-simulator') || efficiencyState.activePage !== page) return
   const available = records.filter(r => r.data)
-  const diskLoadedCount = records.filter(r => r.data && !r.data._isFallback).length
-  root.innerHTML = `<section class="efficiency-catalog"><div class="efficiency-catalog-top"><button type="button" class="secondary-button" id="eff-back-languages">← Languages</button><div><span class="eyebrow">${language === 'hi' ? 'हिन्दी' : 'ENGLISH'} QUESTION BANK · RSSB &amp; HIGH COURT LDC</span><h2>${moduleName === 'word' ? 'MS Word' : 'MS Excel'} Efficiency Tests</h2><p>Select any exercise below to view the Test Instructions (10:00 Minutes · Full Marks: 50) and start the test.</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;align-items:center;"><button type="button" class="secondary-button" id="eff-force-reload-bank" style="padding:5px 12px;font-size:12px;">🔄 Force Reload New Files</button><label class="secondary-button" style="padding:5px 12px;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">📂 Select efficiency-bank Folder<input type="file" id="eff-folder-upload-input" webkitdirectory directory multiple accept=".json" style="display:none;"></label><small style="color:${diskLoadedCount > 0 ? '#15803d' : '#b45309'};font-weight:700;">${diskLoadedCount > 0 ? `✓ ${diskLoadedCount}/40 New JSON Files Active` : '⚠️ Using built-in bank — place JSONs in public/efficiency-bank/ or click Select Folder'}</small></div></div><div class="efficiency-catalog-count"><strong>${available.length}/40</strong><small>Available</small></div></div><div class="efficiency-exercise-grid">${records.map(record => {
+  root.innerHTML = `<section class="efficiency-catalog"><div class="efficiency-catalog-top"><button type="button" class="secondary-button" id="eff-back-languages">← Languages</button><div><span class="eyebrow">${language === 'hi' ? 'हिन्दी' : 'ENGLISH'} QUESTION BANK · RSSB &amp; HIGH COURT LDC</span><h2>${moduleName === 'word' ? 'MS Word' : 'MS Excel'} Efficiency Tests</h2><p>Select any exercise below to view the Test Instructions (10:00 Minutes · Full Marks: 50) and start the test.</p></div><div class="efficiency-catalog-count"><strong>${available.length}/40</strong><small>Available</small></div></div><div class="efficiency-exercise-grid">${records.map(record => {
     const data = record.data
     const st = data?.metadata?.document_structure
-    const title = (st && (st.doc_type || st.org_name)) ? `${st.doc_type || ''} ${st.org_name ? '— ' + st.org_name : ''}`.trim() : (data?.metadata?.title || data?.title || data?.questions?.[0]?.title || `Test #${String(record.fileNo).padStart(2,'0')}`)
-    return `<button type="button" class="efficiency-exercise-card" data-eff-file="${record.fileNo}"><span class="efficiency-exercise-number">${String(record.fileNo).padStart(2, '0')}</span><span class="efficiency-exercise-copy"><strong>${efficiencyEscape(title)}</strong><small>Test #${record.fileNo} · ${data?.questions?.length || 15} Questions · 25 Marks · 10:00 Min ${data?._isFallback ? '(Built-in)' : '✓'}</small></span><span class="eff-card-start-btn">Start</span></button>`
+    const title = st ? `${st.doc_type} — ${st.org_name}` : (data?.questions?.[0]?.title || `Test #${String(record.fileNo).padStart(2,'0')}`)
+    return `<button type="button" class="efficiency-exercise-card" data-eff-file="${record.fileNo}"><span class="efficiency-exercise-number">${String(record.fileNo).padStart(2, '0')}</span><span class="efficiency-exercise-copy"><strong>${efficiencyEscape(title)}</strong><small>Test #${record.fileNo} · 15 Questions · 50 Marks · 10:00 Min</small></span><span class="eff-card-start-btn">Start</span></button>`
   }).join('')}</div></section>`
   root.querySelector('#eff-back-languages')?.addEventListener('click', () => efficiencyShowLanguagePicker(page))
-  root.querySelector('#eff-force-reload-bank')?.addEventListener('click', () => {
-    O19_CACHE_BUST_VERSION = Date.now()
-    efficiencyShowExerciseList(page, language)
-  })
-  root.querySelector('#eff-folder-upload-input')?.addEventListener('change', async (ev) => {
-    const files = Array.from(ev.target.files || []).filter(f => f.name.toLowerCase().endsWith('.json'))
-    for (const f of files) {
-      try {
-        const txt = await f.text()
-        const raw = JSON.parse(txt)
-        const match = f.name.toUpperCase().match(/(WORD|EXCEL)_(EN|HI)_0*([1-9][0-9]*)/)
-        if (match) {
-          const mName = match[1].toLowerCase()
-          const lName = match[2].toLowerCase()
-          const fNo = Number(match[3])
-          const fId = efficiencyFileId(mName, lName, fNo)
-          const norm = normalizeEfficiencyJsonData(raw, mName, lName, fNo, fId)
-          O19_CUSTOM_UPLOADED_BANK.set(fId, norm)
-        }
-      } catch (e) {
-        console.warn('Skipped invalid JSON file:', f.name, e)
-      }
-    }
-    O19_CACHE_BUST_VERSION = Date.now()
-    efficiencyShowExerciseList(page, language)
-  })
   root.querySelectorAll('[data-eff-file]').forEach(button => button.addEventListener('click', () => {
     const record = records.find(item => item.fileNo === Number(button.dataset.effFile))
     if (record?.data) {
@@ -270,7 +96,7 @@ function efficiencyShowQuestionList(page, language, fileNo, fileData) {
         <article class="o19-inst-info-card">
           <span class="o19-inst-card-label">TEST DESCRIPTION</span>
           <strong class="o19-inst-card-val">${testDesc}</strong>
-          <small class="o19-inst-card-sub">(Full Marks: 25 · Qualifying: 9)</small>
+          <small class="o19-inst-card-sub">(Full Marks: 50)</small>
         </article>
         <article class="o19-inst-info-card">
           <span class="o19-inst-card-label">TEST ID</span>
@@ -286,7 +112,7 @@ function efficiencyShowQuestionList(page, language, fileNo, fileData) {
           <li>1. This is a computer proficiency &amp; efficiency test focusing on <strong>${isWord ? 'Document Formatting' : 'Spreadsheet Formulas &amp; Formatting'}</strong> (as per Rajasthan RSSB LDC &amp; High Court LDC syllabus).</li>
           <li>2. You will be given <strong>15 formatting tasks</strong> (3 Easy, 7 Medium, 5 Hard) on a single unified ${isWord ? 'document' : 'worksheet'} to complete within the time limit.</li>
           <li>3. Total duration of this test is <strong>10:00 minutes</strong>.</li>
-          <li>4. Total marks for this test is <strong>25</strong> (as per RSSB LDC pattern). All sub-tasks in a question must be completed accurately; marks and solutions are shown at the end on Submit.</li>
+          <li>4. Total marks for this test is <strong>50</strong>. Each task carries specific weightage (3.0 PTS / 3.5 PTS).</li>
           <li>5. The counting timer in the top right corner of the screen will display the remaining time.</li>
           <li>6. For Word: Ensure you follow the instructions for Font, Bold, Italic, Underline, Line Spacing, Paragraph Indentation, Borders/Shading, Find &amp; Replace, and Tables exactly as mentioned.</li>
           <li>7. For Excel: Accurately enter formulas (SUM, AVERAGE, MAX, MIN, IF, COUNTIF, 10%) and format cells in the specified columns and rows where required.</li>
@@ -312,57 +138,63 @@ function efficiencyShowQuestionList(page, language, fileNo, fileData) {
 }
 
 function efficiencyBuildCohesiveWordHTML(questions, fileData) {
-  const st = fileData?.metadata?.document_structure || fileData?.document_structure
-  const hasStructFields = st && [st.doc_type, st.org_name, st.date_line, st.subject_line, st.para1, st.para2, st.para3, st.events_list, st.sign_role, st.sign_name].some(Boolean)
-  if (hasStructFields) {
-    const tblRows = Array.isArray(st.table) ? st.table : (Array.isArray(fileData?.table) ? fileData.table : [])
+  const st = fileData?.metadata?.document_structure
+  if (st && st.doc_type) {
+    const tblRows = Array.isArray(st.table) ? st.table : []
     const tblHtml = tblRows.length ? `
       <table class="word-inserted-table" id="word-part-table" data-doc-part="table" style="margin-top:14pt;">
         <tbody>
-          ${tblRows.map((row) => `<tr data-doc-part="table">${row.map(cell => `<td data-doc-part="table">${efficiencyEscape(cell)}</td>`).join('')}</tr>`).join('')}
+          ${tblRows.map((row, rIdx) => `<tr data-doc-part="table">${row.map(cell => `<td data-doc-part="table" ${rIdx === 0 ? 'style="font-weight:600;"' : ''}>${efficiencyEscape(cell)}</td>`).join('')}</tr>`).join('')}
         </tbody>
       </table>` : ''
-    const orderedParts = [
-      ['doc_type', st.doc_type, 'word-doc-line'],
-      ['org_name', st.org_name, 'word-doc-line'],
-      ['date_line', st.date_line, 'word-doc-line'],
-      ['subject_line', st.subject_line, 'word-doc-line'],
-      ['para1', st.para1, 'word-doc-para'],
-      ['para2', st.para2, 'word-doc-para'],
-      ['para3', st.para3, 'word-doc-para'],
-      ['events_list', st.events_list, 'word-doc-line'],
-      ['sign_role', st.sign_role, 'word-doc-line'],
-      ['sign_name', st.sign_name, 'word-doc-line']
-    ].filter(([, val]) => Boolean(String(val || '').trim()))
-    return orderedParts.map(([pk, val, cls]) =>
-      `<p class="${cls}" id="word-part-${pk}" data-doc-part="${pk}">${efficiencyEscape(val)}</p>`
-    ).join('\n') + tblHtml
+    return `
+      <p class="word-doc-line is-active-doc-part" id="word-part-doc_type" data-doc-part="doc_type">${efficiencyEscape(st.doc_type)}</p>
+      <p class="word-doc-line" id="word-part-org_name" data-doc-part="org_name">${efficiencyEscape(st.org_name)}</p>
+      <p class="word-doc-line" id="word-part-date_line" data-doc-part="date_line">${efficiencyEscape(st.date_line)}</p>
+      <p class="word-doc-line" id="word-part-subject_line" data-doc-part="subject_line">${efficiencyEscape(st.subject_line)}</p>
+      <p class="word-doc-para" id="word-part-para1" data-doc-part="para1">${efficiencyEscape(st.para1)}</p>
+      <p class="word-doc-para" id="word-part-para2" data-doc-part="para2">${efficiencyEscape(st.para2)}</p>
+      <p class="word-doc-para" id="word-part-para3" data-doc-part="para3">${efficiencyEscape(st.para3)}</p>
+      <p class="word-doc-line" id="word-part-events_list" data-doc-part="events_list">${efficiencyEscape(st.events_list)}</p>
+      <p class="word-doc-line" id="word-part-sign_role" data-doc-part="sign_role">${efficiencyEscape(st.sign_role)}</p>
+      <p class="word-doc-line" id="word-part-sign_name" data-doc-part="sign_name">${efficiencyEscape(st.sign_name)}</p>
+      ${tblHtml}
+    `
   }
-  const rawSource = questions?.find(q => q?.source_content)?.source_content
-    || fileData?.source_content
-    || fileData?.passage
-    || fileData?.content
-    || fileData?.document
-    || (Array.isArray(fileData?.paragraphs) ? fileData.paragraphs.join('\n') : '')
-    || 'NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 21st Oct 2026\nDebate Competition\nThis is to inform all students that the Debate Competition will be held next month.'
-  const lines = String(rawSource).split(/\n+/).filter(Boolean)
+  const lines = String(questions?.[0]?.source_content || 'NOTICE\nGovt. Sen. Sec. School, Jaipur\nDate: 21st Oct 2026\nDebate Competition\nThis is to inform all students that the Debate Competition will be held next month.').split(/\n+/).filter(Boolean)
   const partKeys = ['doc_type', 'org_name', 'date_line', 'subject_line', 'para1', 'para2', 'para3', 'events_list', 'sign_role', 'sign_name']
-  const tblRows = Array.isArray(fileData?.table) ? fileData.table : (Array.isArray(questions?.[0]?.table) ? questions[0].table : [])
-  const tblHtml = tblRows.length ? `
-    <table class="word-inserted-table" id="word-part-table" data-doc-part="table" style="margin-top:14pt;">
-      <tbody>
-        ${tblRows.map((row) => `<tr data-doc-part="table">${row.map(cell => `<td data-doc-part="table">${efficiencyEscape(cell)}</td>`).join('')}</tr>`).join('')}
-      </tbody>
-    </table>` : ''
   return lines.map((line, idx) => {
     const pk = partKeys[idx] || `para${idx}`
-    const cls = pk.startsWith('para') ? 'word-doc-para' : 'word-doc-line'
-    return `<p class="${cls}" id="word-part-${pk}" data-doc-part="${pk}">${efficiencyEscape(line)}</p>`
-  }).join('') + tblHtml
+    return `<p class="word-doc-line ${idx === 0 ? 'is-active-doc-part' : ''}" id="word-part-${pk}" data-doc-part="${pk}">${efficiencyEscape(line)}</p>`
+  }).join('')
 }
 
-function efficiencyFocusUnifiedQuestion() {
-  // Disabled: clicking sidebar instructions must NEVER auto-select paragraphs or cells
+function efficiencyFocusUnifiedQuestion(qNum) {
+  const questions = Array.isArray(efficiencyState.fileData?.questions) ? efficiencyState.fileData.questions : []
+  const targetQ = questions[qNum - 1]
+  if (!targetQ) return
+  efficiencyState.questionIndex = qNum
+  efficiencyState.question = targetQ
+  document.querySelectorAll('.o19-nexus-q-card').forEach(card => {
+    card.classList.toggle('active', Number(card.dataset.effNavQuestion) + 1 === qNum)
+  })
+  if (efficiencyState.module === 'word') {
+    const part = targetQ.target_part || 'doc_type'
+    const editor = document.querySelector('#word-document')
+    if (editor) {
+      editor.querySelectorAll('.is-active-doc-part').forEach(el => el.classList.remove('is-active-doc-part'))
+      const targetEl = editor.querySelector(`#word-part-${part}`) || editor.querySelector('p')
+      if (targetEl) {
+        targetEl.classList.add('is-active-doc-part')
+        efficiencyState.lastActiveParagraph = targetEl.tagName === 'TABLE' ? (targetEl.querySelector('tr') || targetEl) : targetEl
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }
+    }
+  } else {
+    const rawTarget = String(targetQ.target_cells || 'A2').split(':')[0].trim() || 'A2'
+    const targetCell = document.querySelector(`#excel-grid .excel-cell[data-cell="${rawTarget}"]`)
+    if (targetCell) { targetCell.scrollIntoView({ behavior: 'smooth', block: 'center' }); targetCell.focus() }
+  }
 }
 
 // ============================================================================
@@ -2651,23 +2483,20 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
   const fileIdStr = efficiencyFileId(efficiencyState.module, language, fileNo)
   root.classList.add('efficiency-fullscreen')
 
-  const isExamHall = Boolean(efficiencyState.examHallMode)
-  const examMeta = efficiencyState.examHallMeta || {}
-  efficiencyState.selectedWordElements = []
-  efficiencyState.selectedExcelCells = []
   const topHeaderBar = `
     <header class="o19-nexus-topbar ${isWord ? 'word-theme' : 'excel-theme'}">
       <div class="o19-nexus-top-left">
-        <button type="button" class="o19-nexus-back-btn" id="efficiency-exit" title="${isExamHall ? 'Exit Exam Hall' : 'Back to Instructions'}">←</button>
+        <button type="button" class="o19-nexus-back-btn" id="efficiency-exit" title="Back to Instructions">←</button>
         <div class="o19-nexus-mod-title">
-          <strong>${isExamHall ? `${efficiencyEscape(examMeta.paperLabel || (isWord ? 'MS Word Efficiency' : 'MS Excel Efficiency'))} · Exercise #${String(fileNo).padStart(2, '0')}` : `${isWord ? 'Word' : 'Excel'} Module ${String(fileNo).padStart(2, '0')}`}</strong>
-          <span>${isExamHall ? `RSSB LDC EXAM HALL · ROLL NO: admin · NAME: admin · MAX MARKS: 25 (QUALIFYING: 9)` : `RSSB LDC OFFICIAL PATTERN · 15 QUESTIONS · FULL MARKS: 25 (MARKS AT END)`}</span>
+          <strong>${isWord ? 'Word' : 'Excel'} Module ${String(fileNo).padStart(2, '0')}</strong>
+          <span>PROFESSIONAL SUITE · RSSB LDC &amp; HIGH COURT LDC (50 MARKS)</span>
         </div>
       </div>
       <div class="o19-nexus-top-right">
-        ${isExamHall ? `<span class="o19-live-score-badge" style="background:rgba(255,255,255,0.16);color:#fff;">Roll No: admin · 25 Marks</span>` : `<button type="button" class="o19-nexus-pause-btn" id="o19-pause-btn">⏸ Pause</button>`}
+        <span class="o19-live-score-badge" id="efficiency-live-score">0 / 50 PTS</span>
+        <button type="button" class="o19-nexus-pause-btn" id="o19-pause-btn">⏸ Pause</button>
         <div class="o19-nexus-timer-pill" id="efficiency-timer">10:00</div>
-        <button type="button" class="o19-nexus-submit-top" id="efficiency-submit">${isExamHall ? 'Submit Paper →' : 'Submit Test'}</button>
+        <button type="button" class="o19-nexus-submit-top" id="efficiency-submit">Submit Test</button>
       </div>
     </header>
   `
@@ -2676,22 +2505,28 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
     <aside class="o19-nexus-sidebar" id="o19-nexus-sidebar">
       <div class="o19-nexus-sidebar-head ${isWord ? 'word-theme' : 'excel-theme'}">
         <div>
-          <h3>Formatting Instructions (प्रश्न-पत्र)</h3>
-          <span>${isWord ? `WORD EFFICIENCY EXAM (15 QUESTIONS · 25 MARKS)` : `EXCEL EFFICIENCY EXAM (15 QUESTIONS · 25 MARKS)`}</span>
+          <h3>Formatting Instructions</h3>
+          <span>${isWord ? 'WORD PRACTICAL EXAM (50 MARKS)' : 'EXCEL PRACTICAL EXAM (50 MARKS)'}</span>
         </div>
-        ${isExamHall ? `<span style="font-size:11px;font-weight:800;padding:4px 8px;border-radius:6px;background:rgba(255,255,255,0.18);color:#fff;">${language === 'hi' ? 'हिन्दी' : 'EN'}</span>` : `<button type="button" class="o19-lang-switch-btn" id="o19-sidebar-lang-toggle" title="Switch EN / HI">${language === 'hi' ? 'EN' : 'HI'}</button>`}
+        <button type="button" class="o19-lang-switch-btn" id="o19-sidebar-lang-toggle" title="Switch EN / HI">${language === 'hi' ? 'EN' : 'HI'}</button>
       </div>
 
       <div class="o19-nexus-q-list" id="o19-questions-scroll-area">
         ${questions.map((item, idx) => {
           const qNum = idx + 1
+          const pts = item.marks || (qNum <= 3 || qNum >= 14 ? 3.0 : 3.5)
+          const diff = item.difficulty || (qNum <= 3 ? 'Easy' : qNum <= 10 ? 'Medium' : 'Hard')
+          const diffCls = String(diff).toLowerCase()
           const instr = item.instruction || (Array.isArray(item.tasks) ? item.tasks[0] : '') || item.title
           return `
-            <article class="o19-nexus-q-card o19-readonly-q-card" id="o19-q-card-${qNum}">
+            <article class="o19-nexus-q-card ${qNum === questionIndex ? 'active' : ''}" data-eff-nav-question="${idx}" id="o19-q-card-${qNum}">
               <div class="o19-nexus-q-card-top">
                 <div class="o19-nexus-q-badges">
                   <span class="o19-nexus-q-num">Q${qNum}</span>
+                  <span class="o19-nexus-q-pts">${pts} PTS</span>
+                  <span class="o19-q-diff-tag ${diffCls}">${efficiencyEscape(diff)}</span>
                 </div>
+                <span class="o19-q-score-pill" id="efficiency-q-mark-${qNum}">0/${pts}</span>
               </div>
               <p class="o19-nexus-q-text">${efficiencyEscape(instr)}</p>
             </article>
@@ -2700,7 +2535,7 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
       </div>
 
       <div class="o19-nexus-sidebar-foot">
-        <button type="button" class="o19-nexus-submit-foot" id="efficiency-submit-foot">${isExamHall ? '✓ Submit Efficiency Paper &amp; Proceed' : '✓ Submit Test &amp; View Result'}</button>
+        <button type="button" class="o19-nexus-submit-foot" id="efficiency-submit-foot">✓ Submit &amp; View Step-by-Step Solutions</button>
       </div>
 
       <button type="button" class="o19-sidebar-collapse-handle" id="o19-sidebar-collapse-btn" title="Collapse / Expand Instructions">‹</button>
@@ -2806,58 +2641,10 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
     efficiencyAttachExcel([], question)
   }
 
-  // Store initial paragraph texts to check RSSB LDC rule against unauthorized text deletion/modification
-  efficiencyState.initialWordParts = {}
-  if (isWord) {
-    document.querySelectorAll('#word-document [data-doc-part]').forEach(el => {
-      efficiencyState.initialWordParts[el.dataset.docPart] = (el.textContent || '').trim()
-    })
-  }
-  efficiencyState.blockedShortcutAttempts = 0
-
-  // Enforce RSSB LDC Efficiency Exam Restrictions (Cut/Copy/Paste, Right-Click, Select All, Function Keys blocked; Ctrl+Z allowed)
-  const enforceRssbEfficiencyRestrictions = (container) => {
-    if (!container) return
-    const showBlockNotice = (msg) => {
-      efficiencyState.blockedShortcutAttempts = (efficiencyState.blockedShortcutAttempts || 0) + 1
-      const st = document.querySelector('#efficiency-save-status') || document.querySelector('#excel-status')
-      if (st) st.textContent = `⚠️ ${msg}`
-    }
-    ;['cut', 'copy', 'paste'].forEach(evtName => {
-      container.addEventListener(evtName, (ev) => {
-        ev.preventDefault()
-        showBlockNotice(`RSSB LDC Rule: ${evtName.toUpperCase()} is disabled in Efficiency Exam`)
-      })
-    })
-    container.addEventListener('contextmenu', (ev) => {
-      ev.preventDefault()
-      showBlockNotice('RSSB LDC Rule: Right Mouse Click is disabled in Efficiency Exam')
-    })
-    container.addEventListener('keydown', (ev) => {
-      if (/^F([1-9]|1[0-2])$/i.test(ev.key)) {
-        ev.preventDefault()
-        showBlockNotice(`RSSB LDC Rule: Function Key (${ev.key}) is disabled`)
-        return
-      }
-      if (ev.ctrlKey || ev.metaKey) {
-        const k = String(ev.key || '').toLowerCase()
-        if (['c', 'x', 'v', 'a'].includes(k)) {
-          ev.preventDefault()
-          showBlockNotice(`RSSB LDC Rule: Ctrl+${k.toUpperCase()} (Cut/Copy/Paste/Select All) is disabled`)
-        }
-      }
-    })
-  }
-  enforceRssbEfficiencyRestrictions(root)
-
   document.querySelector('#efficiency-exit')?.addEventListener('click', () => {
     o19CloseMenu()
     if (efficiencyState.timer) clearInterval(efficiencyState.timer)
     efficiencyState.timer = null
-    if (efficiencyState.examHallMode && typeof efficiencyState.examHallAbort === 'function') {
-      efficiencyState.examHallAbort()
-      return
-    }
     efficiencyShowExerciseList(page, language)
   })
 
@@ -2885,7 +2672,9 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
     e.currentTarget.textContent = efficiencyState.paused ? '▶ Resume' : '⏸ Pause'
   })
 
-  // Read-only question cards: clicking sidebar instructions does not select paragraphs/cells
+  document.querySelectorAll('[data-eff-nav-question]').forEach(card => card.addEventListener('click', () => {
+    efficiencyFocusUnifiedQuestion(Number(card.dataset.effNavQuestion) + 1)
+  }))
 
   // Official 10:00 Minute (600 seconds) RSSB LDC / High Court LDC Timer
   if (efficiencyState.timer) clearInterval(efficiencyState.timer)
@@ -2905,91 +2694,59 @@ function attachEfficiencySimulator(page) { efficiencyShowLanguagePicker(page) }
 function efficiencyAttachWord(tasks, question) {
   const root = document.querySelector('#efficiency-simulator')
   const editor = document.querySelector('#word-document')
-  efficiencyState.lastActiveParagraph = null
-  efficiencyState.selectedWordElements = []
-
-  const showSelectionHint = (msg) => {
-    const status = document.querySelector('#efficiency-save-status')
-    if (status) status.textContent = msg
-  }
-
-  const rememberActiveParagraph = () => {
-    if (!editor) return []
-    const sel = window.getSelection()
-    if (!sel || !sel.rangeCount) return efficiencyState.selectedWordElements || []
-    const anchor = sel.anchorNode
-    if (!anchor || !editor.contains(anchor)) return efficiencyState.selectedWordElements || []
-
-    const range = sel.getRangeAt(0)
-    const allParts = [...editor.querySelectorAll('p, table, tr')]
-    let matched = []
-    if (!sel.isCollapsed) {
-      matched = allParts.filter(el => {
-        try { return range.intersectsNode(el) } catch { return false }
-      }).map(el => el.closest('p, table') || el)
-      matched = [...new Set(matched)]
-    }
-    if (!matched.length) {
-      const baseEl = (anchor.nodeType === 1 ? anchor : anchor.parentElement)?.closest('p, table, tr, td, h1, h2, h3, li, blockquote')
-      if (baseEl && editor.contains(baseEl)) {
-        const blk = baseEl.closest('p, table') || baseEl
-        matched = [blk]
-      }
-    }
-    if (matched.length) {
-      efficiencyState.selectedWordElements = matched
-      efficiencyState.lastActiveParagraph = matched[0]
-      editor.querySelectorAll('.is-active-doc-part').forEach(x => x.classList.remove('is-active-doc-part'))
-      matched.forEach(blk => blk.classList.add('is-active-doc-part'))
-    }
-    return efficiencyState.selectedWordElements || []
-  }
-
-  const getActiveParagraphs = () => {
-    if (!editor) return []
-    const sel = window.getSelection()
-    if (sel && sel.rangeCount && sel.anchorNode && editor.contains(sel.anchorNode)) {
-      rememberActiveParagraph()
-    }
-    const valid = (efficiencyState.selectedWordElements || []).filter(el => el && editor.contains(el))
-    return valid
-  }
-
-  const getActiveParagraph = () => {
-    const list = getActiveParagraphs()
-    return list[0] || null
-  }
-
   const record = (...actions) => {
-    const activeList = getActiveParagraphs()
+    const activeEl = getActiveParagraph()
+    const partName = activeEl?.dataset?.docPart || activeEl?.closest('[data-doc-part]')?.dataset?.docPart || 'document'
+    const qNum = efficiencyState.questionIndex || 1
+    efficiencyState.perQuestionActions ||= {}
+    efficiencyState.perQuestionActions[qNum] ||= new Set()
     efficiencyState.partActions ||= {}
-    activeList.forEach(activeEl => {
-      const partName = activeEl?.dataset?.docPart || activeEl?.closest('[data-doc-part]')?.dataset?.docPart || 'document'
-      efficiencyState.partActions[partName] ||= new Set()
-      actions.forEach(a => { if (a) efficiencyState.partActions[partName].add(a) })
-    })
-    actions.forEach(a => { if (a) efficiencyState.wordActions.add(a) })
-    showSelectionHint('· Saved')
-  }
-
-  const applyToTargets = (fn) => {
-    const list = getActiveParagraphs()
-    if (!list.length) {
-      showSelectionHint('⚠️ पहले दस्तावेज़ में संबंधित पंक्ति/पैराग्राफ को माउस से सिलेक्ट या क्लिक करें')
-      return false
-    }
-    list.forEach(el => {
-      fn(el)
-      if (el.tagName === 'TABLE') {
-        const hdrCells = el.querySelectorAll('tr:first-child td, tr:first-child th')
-        hdrCells.forEach(td => fn(td, true))
+    efficiencyState.partActions[partName] ||= new Set()
+    actions.forEach(a => {
+      if (a) {
+        efficiencyState.wordActions.add(a)
+        efficiencyState.perQuestionActions[qNum].add(a)
+        efficiencyState.partActions[partName].add(a)
       }
     })
-    return true
+    const status = document.querySelector('#efficiency-save-status')
+    if (status) status.textContent = '· Saved'
+    efficiencyUpdateScore()
+  }
+
+  efficiencyState.lastActiveParagraph = editor?.querySelector('#word-part-doc_type') || editor?.querySelector('p')
+  const rememberActiveParagraph = () => {
+    const sel = window.getSelection()
+    const node = sel?.anchorNode
+    const el = (node?.nodeType === 1 ? node : node?.parentElement)?.closest('p,h1,h2,h3,li,blockquote,tr,td,table')
+    if (el && editor?.contains(el)) {
+      const blk = el.closest('p,tr,table') || el
+      efficiencyState.lastActiveParagraph = blk
+      editor.querySelectorAll('.is-active-doc-part').forEach(x => x.classList.remove('is-active-doc-part'))
+      blk.classList.add('is-active-doc-part')
+    }
+    return efficiencyState.lastActiveParagraph || editor?.querySelector('p') || editor
+  }
+  const getActiveParagraph = () => {
+    const sel = window.getSelection()
+    const node = sel?.anchorNode
+    const el = (node?.nodeType === 1 ? node : node?.parentElement)?.closest('p,h1,h2,h3,li,blockquote,tr,td,table')
+    if (el && editor?.contains(el)) {
+      const blk = el.closest('p,tr,table') || el
+      efficiencyState.lastActiveParagraph = blk
+      return blk
+    }
+    if (efficiencyState.lastActiveParagraph && editor?.contains(efficiencyState.lastActiveParagraph)) {
+      return efficiencyState.lastActiveParagraph
+    }
+    const tp = efficiencyState.question?.target_part
+    if (tp && editor?.querySelector(`#word-part-${tp}`)) return editor.querySelector(`#word-part-${tp}`)
+    return editor?.querySelector('p') || editor
   }
 
   const transformCase = (mode) => {
     if (!editor) return
+    const sel = window.getSelection()
     const convert = (str) => {
       if (mode === 'upper') return str.toUpperCase()
       if (mode === 'lower') return str.toLowerCase()
@@ -2997,23 +2754,20 @@ function efficiencyAttachWord(tasks, question) {
       if (mode === 'toggle') return [...str].map(ch => ch === ch.toUpperCase() ? ch.toLowerCase() : ch.toUpperCase()).join('')
       return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
     }
-    const ok = applyToTargets((p, isTableCell) => {
-      if (isTableCell) return
-      if (p.tagName === 'P') {
-        const hasBullet = p.dataset.fmtBullets === 'true' && p.textContent.trim().startsWith('• ')
-        const rawTxt = hasBullet ? p.textContent.trim().slice(2) : p.textContent
-        p.textContent = (hasBullet ? '• ' : '') + convert(rawTxt)
-      }
-      p.dataset.fmtCase = mode
-    })
-    if (ok) record(`case-${mode}`, 'change-case')
+    if (sel && sel.rangeCount && !sel.isCollapsed && editor.contains(sel.anchorNode)) {
+      const txt = sel.toString()
+      document.execCommand('insertText', false, convert(txt))
+    } else {
+      const p = getActiveParagraph()
+      if (p) p.textContent = convert(p.textContent)
+    }
+    record(`case-${mode}`, 'change-case', 'edit-text')
   }
 
   const insertWordTable = (rows = 3, cols = 3) => {
     if (!editor) return
     const table = document.createElement('table')
     table.className = 'word-inserted-table'
-    table.dataset.docPart = 'inserted_table'
     let html = '<tbody>'
     for (let r = 0; r < rows; r++) {
       html += '<tr>'
@@ -3025,7 +2779,6 @@ function efficiencyAttachWord(tasks, question) {
     html += '</tbody>'
     table.innerHTML = html
     editor.append(table)
-    editor.dataset.fmtInsertedTable = 'true'
     record('insert-table', `table-${rows}x${cols}`)
   }
 
@@ -3038,10 +2791,7 @@ function efficiencyAttachWord(tasks, question) {
       wm.contentEditable = 'false'
       wm.textContent = text
       editor.prepend(wm)
-      editor.dataset.fmtWatermark = text
       record('watermark', `watermark-${text.toLowerCase()}`)
-    } else {
-      delete editor.dataset.fmtWatermark
     }
   }
 
@@ -3049,138 +2799,120 @@ function efficiencyAttachWord(tasks, question) {
     if (!editor || !rawAction) return
     if (rawAction.startsWith('cmd:')) {
       const cmd = rawAction.slice(4)
-      handleWordCommand(cmd)
+      editor.focus()
+      try { document.execCommand(cmd, false, null) } catch {}
+      record(cmd)
       return
     }
     if (rawAction.startsWith('set-font:')) {
-      const font = rawAction.slice(9).replace(/ \(.*\)/, '').trim()
+      const font = rawAction.slice(9).replace(/ \(.*\)/, '')
       const input = document.querySelector('#word-font-family')
       if (input) input.value = font
-      const ok = applyToTargets((p) => {
-        p.style.fontFamily = `'${font}', sans-serif`
-        p.dataset.fmtFont = font.toLowerCase()
-      })
-      if (ok) record(`font-${font.toLowerCase()}`, 'font')
+      editor.focus()
+      try { document.execCommand('fontName', false, font) } catch {}
+      editor.style.fontFamily = `'${font}', sans-serif`
+      record(`font-${font.toLowerCase()}`, 'font')
       return
     }
     if (rawAction.startsWith('set-size:')) {
-      const size = String(rawAction.slice(9)).replace(/pt/i, '').trim()
+      const size = rawAction.slice(9)
       const input = document.querySelector('#word-font-size')
       if (input) input.value = size
-      const ok = applyToTargets((p) => {
-        p.style.fontSize = `${size}pt`
-        p.dataset.fmtSize = size
-      })
-      if (ok) record(`font-size-${size}`, 'font')
+      editor.focus()
+      try {
+        document.execCommand('fontSize', false, '7')
+        editor.querySelectorAll('font[size="7"]').forEach(f => { f.removeAttribute('size'); f.style.fontSize = `${size}pt` })
+      } catch {}
+      const p = getActiveParagraph()
+      if (p) p.style.fontSize = `${size}pt`
+      record(`font-size-${size}`, 'font')
       return
     }
     if (rawAction.startsWith('line-spacing:')) {
-      const val = rawAction.slice(13).trim()
-      const ok = applyToTargets((p) => {
-        p.style.lineHeight = val
-        p.dataset.fmtLineSpacing = val
-      })
-      if (ok) record('line-spacing', `line-spacing-${val}`)
+      const val = rawAction.slice(13)
+      const p = getActiveParagraph()
+      if (p) p.style.lineHeight = val
+      record('line-spacing', `line-spacing-${val}`)
       return
     }
     if (rawAction.startsWith('indent-first-line')) {
-      const inches = parseFloat(rawAction.split(':')[1]) || 0.75
-      const ok = applyToTargets((p) => {
-        p.style.textIndent = `${inches}in`
-        p.style.paddingLeft = '0in'
-        p.dataset.fmtIndentType = 'first-line'
-        p.dataset.fmtIndentVal = String(inches)
-      })
+      const inches = parseFloat(rawAction.split(':')[1]) || 0.5
+      const p = getActiveParagraph()
+      if (p) p.style.textIndent = `${inches}in`
       const box = document.querySelector('#word-indent-left')
       if (box) box.value = `${inches}"`
-      if (ok) record('indent', 'first-line-indent')
+      record('indent', 'first-line-indent')
       return
     }
     if (rawAction.startsWith('indent-hanging')) {
       const inches = parseFloat(rawAction.split(':')[1]) || 0.5
-      const ok = applyToTargets((p) => {
-        p.style.paddingLeft = `${inches}in`
-        p.style.textIndent = `-${inches}in`
-        p.dataset.fmtIndentType = 'hanging'
-        p.dataset.fmtIndentVal = String(inches)
-      })
+      const p = getActiveParagraph()
+      if (p) { p.style.paddingLeft = `${inches}in`; p.style.textIndent = `-${inches}in` }
       const box = document.querySelector('#word-indent-left')
       if (box) box.value = `${inches}"`
-      if (ok) record('indent', 'hanging-indent')
+      record('indent', 'hanging-indent')
       return
     }
     if (rawAction.startsWith('indent-left:')) {
-      const inches = parseFloat(rawAction.slice(12)) || 0.5
-      const ok = applyToTargets((p) => {
-        p.style.marginLeft = `${inches}in`
-        p.dataset.fmtIndentType = inches > 0 ? 'left' : 'none'
-        p.dataset.fmtIndentVal = String(inches)
-      })
+      const inches = parseFloat(rawAction.slice(12)) || 0
+      const p = getActiveParagraph()
+      if (p) p.style.marginLeft = `${inches}in`
       const box = document.querySelector('#word-indent-left')
       if (box) box.value = `${inches}"`
-      if (ok) record('indent', 'left-indent')
+      record('indent', 'left-indent')
       return
     }
     if (rawAction.startsWith('indent-right:')) {
-      const inches = parseFloat(rawAction.slice(13)) || 0.5
-      const ok = applyToTargets((p) => {
-        p.style.marginRight = `${inches}in`
-        p.dataset.fmtIndentRight = String(inches)
-      })
+      const inches = parseFloat(rawAction.slice(13)) || 0
+      const p = getActiveParagraph()
+      if (p) p.style.marginRight = `${inches}in`
       const box = document.querySelector('#word-indent-right')
       if (box) box.value = `${inches}"`
-      if (ok) record('indent', 'right-indent')
+      record('indent', 'right-indent')
       return
     }
     if (rawAction.startsWith('space-before:')) {
-      const pt = parseFloat(rawAction.slice(13)) || 0
-      const ok = applyToTargets((p) => {
-        p.style.marginTop = `${pt}pt`
-        p.dataset.fmtSpaceBefore = String(pt)
-      })
-      if (ok) record('line-spacing', 'space-before')
+      const pt = rawAction.slice(13)
+      const p = getActiveParagraph()
+      if (p) p.style.marginTop = `${pt}pt`
+      record('line-spacing', 'space-before')
       return
     }
     if (rawAction.startsWith('space-after:')) {
-      const pt = parseFloat(rawAction.slice(12)) || 0
-      const ok = applyToTargets((p) => {
-        p.style.marginBottom = `${pt}pt`
-        p.dataset.fmtSpaceAfter = String(pt)
-      })
-      if (ok) record('line-spacing', 'space-after')
+      const pt = rawAction.slice(12)
+      const p = getActiveParagraph()
+      if (p) p.style.marginBottom = `${pt}pt`
+      record('line-spacing', 'space-after')
       return
     }
     if (rawAction.startsWith('font-color:')) {
       const col = rawAction.slice(11)
-      const ok = applyToTargets((p) => {
-        p.style.color = col
-        p.dataset.fmtFontColor = col
-      })
-      if (ok) record('font-color')
+      editor.focus()
+      try { document.execCommand('foreColor', false, col) } catch {}
+      const p = getActiveParagraph()
+      if (p && window.getSelection()?.isCollapsed) p.style.color = col
+      record('font-color')
       return
     }
     if (rawAction.startsWith('highlight-color:')) {
       const col = rawAction.slice(16)
-      const ok = applyToTargets((p) => {
-        p.style.backgroundColor = col === 'transparent' ? '' : col
-        p.dataset.fmtHighlight = col === 'transparent' ? 'false' : 'true'
-      })
-      if (ok) record('highlight', 'paragraph-shading')
+      editor.focus()
+      try { document.execCommand('hiliteColor', false, col) } catch {}
+      const p = getActiveParagraph()
+      if (p && window.getSelection()?.isCollapsed) p.style.backgroundColor = col === 'transparent' ? '' : col
+      record('highlight', 'paragraph-shading')
       return
     }
     if (rawAction.startsWith('shading-color:')) {
       const col = rawAction.slice(14)
-      const ok = applyToTargets((p) => {
-        p.style.backgroundColor = col === 'transparent' ? '' : col
-        p.dataset.fmtShading = col === 'transparent' ? 'false' : 'true'
-      })
-      if (ok) record('paragraph-shading', 'shading')
+      const p = getActiveParagraph()
+      if (p) p.style.backgroundColor = col === 'transparent' ? '' : col
+      record('paragraph-shading', 'shading')
       return
     }
     if (rawAction.startsWith('page-color:')) {
       const col = rawAction.slice(11)
       editor.style.backgroundColor = col === 'transparent' ? '#ffffff' : col
-      editor.dataset.fmtPageColor = col === 'transparent' ? 'false' : 'true'
       record('page-color')
       return
     }
@@ -3195,26 +2927,23 @@ function efficiencyAttachWord(tasks, question) {
       return
     }
     if (rawAction.startsWith('margins:')) {
-      const type = rawAction.slice(8).toLowerCase()
+      const type = rawAction.slice(8)
       const map = { narrow: '36px 38px', moderate: '64px 48px', wide: '64px 110px', normal: '64px 66px' }
       editor.style.padding = map[type] || '64px 66px'
-      editor.dataset.fmtMargins = type
       record('margins', `margins-${type}`)
       return
     }
     if (rawAction.startsWith('orientation:')) {
-      const type = rawAction.slice(12).toLowerCase()
+      const type = rawAction.slice(12)
       editor.style.maxWidth = type === 'landscape' ? '1020px' : '780px'
       editor.style.minHeight = type === 'landscape' ? '560px' : '760px'
-      editor.dataset.fmtOrientation = type
       record('orientation', `orientation-${type}`)
       return
     }
     if (rawAction.startsWith('paper-size:')) {
-      const sz = rawAction.slice(11).toLowerCase()
+      const sz = rawAction.slice(11)
       const widths = { a4: '780px', letter: '790px', legal: '790px', a3: '980px', a5: '580px', executive: '680px' }
       editor.style.maxWidth = widths[sz] || '780px'
-      editor.dataset.fmtPaperSize = sz
       record('paper-size', `size-${sz}`, 'margins')
       return
     }
@@ -3222,86 +2951,72 @@ function efficiencyAttachWord(tasks, question) {
       const count = rawAction.slice(8)
       editor.style.columnCount = count
       editor.style.columnGap = count === '1' ? '0' : '28px'
-      editor.dataset.fmtColumns = String(count)
       record('columns', `columns-${count}`)
       return
     }
     if (rawAction.startsWith('page-border:')) {
       const [, style, color] = rawAction.split(':')
       editor.style.border = `3px ${style || 'double'} ${color || '#2b579a'}`
-      editor.dataset.fmtPageBorder = 'true'
       record('page-border')
       return
     }
     if (rawAction.startsWith('border-outside:')) {
       const [, style, color] = rawAction.split(':')
-      const ok = applyToTargets((p) => {
-        p.style.border = `1.5px ${style || 'solid'} ${color || '#252423'}`
-        p.style.padding = '6px 8px'
-        p.dataset.fmtBorder = 'true'
-      })
-      if (ok) record('page-border', 'border')
+      const p = getActiveParagraph()
+      if (p) p.style.border = `1.5px ${style || 'solid'} ${color || '#252423'}`
+      record('page-border', 'border')
       return
     }
     if (rawAction.startsWith('bullet-style:')) {
-      const ok = applyToTargets((p, isTableCell) => {
-        if (isTableCell) return
-        p.style.paddingLeft = '24px'
-        if (!p.textContent.trim().startsWith('•')) p.textContent = '• ' + p.textContent.trim()
-        p.dataset.fmtBullets = 'true'
-      })
-      if (ok) record('insertUnorderedList', 'bullets')
+      const st = rawAction.slice(13)
+      editor.focus()
+      try { document.execCommand('insertUnorderedList', false, null) } catch {}
+      editor.querySelectorAll('ul').forEach(ul => { ul.style.listStyleType = st === 'check' ? '"✓ "' : st === 'diamond' ? '"❖ "' : st })
+      record('insertUnorderedList', 'bullets')
       return
     }
     if (rawAction.startsWith('number-style:')) {
-      const ok = applyToTargets((p, isTableCell) => {
-        if (isTableCell) return
-        p.style.paddingLeft = '24px'
-        if (!/^\d+\./.test(p.textContent.trim())) p.textContent = '1. ' + p.textContent.trim()
-        p.dataset.fmtNumbering = 'true'
-      })
-      if (ok) record('insertOrderedList', 'numbering')
+      const st = rawAction.slice(13)
+      editor.focus()
+      try { document.execCommand('insertOrderedList', false, null) } catch {}
+      editor.querySelectorAll('ol').forEach(ol => { ol.style.listStyleType = st })
+      record('insertOrderedList', 'numbering')
       return
     }
     if (rawAction.startsWith('text-effect:')) {
       const fx = rawAction.slice(12)
-      const ok = applyToTargets((p) => {
+      const p = getActiveParagraph()
+      if (p) {
         if (fx === 'shadow') p.style.textShadow = '1px 2px 3px rgba(0,0,0,0.35)'
         else if (fx === 'glow') p.style.textShadow = '0 0 8px rgba(43,87,154,0.65)'
         else if (fx === 'outline') p.style.webkitTextStroke = '0.8px #2b579a'
         else { p.style.textShadow = ''; p.style.webkitTextStroke = '' }
-        p.dataset.fmtTextEffect = fx === 'none' ? '' : fx
-      })
-      if (ok) record('text-effects', 'font')
+      }
+      record('text-effects', 'font')
       return
     }
     if (rawAction.startsWith('insert-sym:') || rawAction.startsWith('insert-eq:')) {
       const val = rawAction.split(':').slice(1).join(':')
-      const p = getActiveParagraph() || editor
-      p.insertAdjacentHTML('beforeend', `<span>${efficiencyEscape(val)}</span>`)
-      editor.dataset.fmtSymbol = 'true'
+      editor.focus()
+      try { document.execCommand('insertText', false, val) } catch { editor.insertAdjacentHTML('beforeend', `<span>${efficiencyEscape(val)}</span>`) }
       record('symbol', 'insert-equation')
       return
     }
     if (rawAction.startsWith('exec-find-replace:')) {
       const parts = rawAction.slice(18).split(':::=')
-      const find = (parts[0] || '').trim()
-      const rep = (parts[1] || '').trim()
+      const find = parts[0]
+      const rep = parts[1] || ''
       const makeBold = parts.includes('bold=true')
       const makeHl = parts.includes('hl=true')
       if (find) {
-        editor.querySelectorAll('p, td, th').forEach(el => {
-          if (el.textContent.includes(find)) {
-            el.textContent = el.textContent.replaceAll(find, rep || find)
-            if (makeBold) { el.style.fontWeight = '700'; el.dataset.fmtBold = 'true' }
-            if (makeHl) { el.style.backgroundColor = '#ffff00'; el.dataset.fmtHighlight = 'true' }
-          }
-        })
-        editor.dataset.fmtFindReplace = 'true'
-        editor.dataset.fmtLastFind = find
-        editor.dataset.fmtLastReplace = rep
+        let repHtml = efficiencyEscape(rep || find)
+        if (makeBold) repHtml = `<b>${repHtml}</b>`
+        if (makeHl) repHtml = `<mark style="background:#ffff00;">${repHtml}</mark>`
+        editor.innerHTML = editor.innerHTML.replaceAll(find, repHtml)
       }
       record('find-replace')
+      if (makeBold) record('bold')
+      if (makeHl) record('highlight')
       return
     }
     if (rawAction.startsWith('zoom-set:')) {
@@ -3327,13 +3042,13 @@ function efficiencyAttachWord(tasks, question) {
 
       case 'font-grow': {
         const input = document.querySelector('#word-font-size')
-        const next = Math.min(72, (Number(input?.value) || 12) + 2)
+        const next = Math.min(72, (Number(input?.value) || 11) + 2)
         applyWordExtra(`set-size:${next}`)
         break
       }
       case 'font-shrink': {
         const input = document.querySelector('#word-font-size')
-        const next = Math.max(8, (Number(input?.value) || 12) - 1)
+        const next = Math.max(8, (Number(input?.value) || 11) - 1)
         applyWordExtra(`set-size:${next}`)
         break
       }
@@ -3343,16 +3058,11 @@ function efficiencyAttachWord(tasks, question) {
       case 'case-capitalize': transformCase('capitalize'); break
       case 'case-toggle': transformCase('toggle'); break
 
-      case 'clear-formatting': {
-        applyToTargets((p) => {
-          p.removeAttribute('style')
-          Object.keys(p.dataset).forEach(k => {
-            if (k.startsWith('fmt')) delete p.dataset[k]
-          })
-        })
+      case 'clear-formatting':
+        editor.focus()
+        try { document.execCommand('removeFormat', false, null) } catch {}
         record('clear-formatting')
         break
-      }
 
       case 'underline-single':
       case 'underline-double':
@@ -3361,73 +3071,85 @@ function efficiencyAttachWord(tasks, question) {
       case 'underline-dashed':
       case 'underline-wavy': {
         const style = rawAction.replace('underline-', '')
-        const ok = applyToTargets((p) => {
+        const p = getActiveParagraph()
+        if (p) {
           p.style.textDecoration = 'underline'
           p.style.textDecorationStyle = style === 'single' || style === 'thick' ? 'solid' : style
-          p.dataset.fmtUnderline = 'true'
-          p.dataset.fmtUnderlineStyle = style
-        })
-        if (ok) record('underline', rawAction)
+        }
+        record('underline', rawAction)
         break
       }
-      case 'strikethrough': {
-        const ok = applyToTargets((p) => {
-          const next = p.dataset.fmtStrike !== 'true'
-          p.dataset.fmtStrike = next ? 'true' : 'false'
-          p.style.textDecoration = next ? 'line-through' : (p.dataset.fmtUnderline === 'true' ? 'underline' : 'none')
-        })
-        if (ok) record('strikethrough')
+      case 'strikethrough':
+        editor.focus()
+        try { document.execCommand('strikeThrough', false, null) } catch {}
+        record('strikethrough')
         break
-      }
-      case 'subscript': {
-        const ok = applyToTargets((p) => {
-          const next = p.dataset.fmtSubscript !== 'true'
-          p.dataset.fmtSubscript = next ? 'true' : 'false'
-        })
-        if (ok) record('subscript')
+      case 'subscript':
+        editor.focus()
+        try { document.execCommand('subscript', false, null) } catch {}
+        record('subscript')
         break
-      }
-      case 'superscript': {
-        const ok = applyToTargets((p) => {
-          const next = p.dataset.fmtSuperscript !== 'true'
-          p.dataset.fmtSuperscript = next ? 'true' : 'false'
-        })
-        if (ok) record('superscript')
+      case 'superscript':
+        editor.focus()
+        try { document.execCommand('superscript', false, null) } catch {}
+        record('superscript')
         break
-      }
 
       case 'indent':
-      case 'indent-first-line':
-        applyWordExtra('indent-first-line:0.75')
-        break
-      case 'indent-hanging':
-        applyWordExtra('indent-hanging:0.5')
-        break
-      case 'decrease-indent': {
-        const ok = applyToTargets((p) => {
-          p.style.textIndent = '0in'
-          p.style.paddingLeft = '0in'
-          p.style.marginLeft = '0in'
-          p.dataset.fmtIndentType = 'none'
-          p.dataset.fmtIndentVal = '0'
-        })
+      case 'indent-first-line': {
+        const p = getActiveParagraph()
+        if (p) p.style.textIndent = '0.5in'
         const box = document.querySelector('#word-indent-left')
-        if (box) box.value = '0"'
-        if (ok) record('decrease-indent')
+        if (box) box.value = '0.5"'
+        record('indent')
         break
       }
-      case 'space-before-add':
-        applyWordExtra('space-before:12')
+      case 'indent-hanging': {
+        const p = getActiveParagraph()
+        if (p) { p.style.paddingLeft = '0.5in'; p.style.textIndent = '-0.5in' }
+        record('indent', 'hanging-indent')
         break
-      case 'space-before-remove':
-        applyWordExtra('space-before:0')
+      }
+      case 'decrease-indent': {
+        const p = getActiveParagraph()
+        if (p) { p.style.textIndent = '0in'; p.style.paddingLeft = '0in' }
+        const box = document.querySelector('#word-indent-left')
+        if (box) box.value = '0"'
+        record('decrease-indent')
         break
-      case 'space-after-add':
-        applyWordExtra('space-after:12')
+      }
+      case 'space-before-add': {
+        const p = getActiveParagraph()
+        if (p) p.style.marginTop = '12pt'
+        const box = document.querySelector('#word-space-before')
+        if (box) box.value = '12 pt'
+        record('line-spacing', 'space-before')
         break
-      case 'space-after-remove':
-        applyWordExtra('space-after:0')
+      }
+      case 'space-before-remove': {
+        const p = getActiveParagraph()
+        if (p) p.style.marginTop = '0pt'
+        const box = document.querySelector('#word-space-before')
+        if (box) box.value = '0 pt'
+        record('line-spacing')
         break
+      }
+      case 'space-after-add': {
+        const p = getActiveParagraph()
+        if (p) p.style.marginBottom = '12pt'
+        const box = document.querySelector('#word-space-after')
+        if (box) box.value = '12 pt'
+        record('line-spacing', 'space-after')
+        break
+      }
+      case 'space-after-remove': {
+        const p = getActiveParagraph()
+        if (p) p.style.marginBottom = '0pt'
+        const box = document.querySelector('#word-space-after')
+        if (box) box.value = '0 pt'
+        record('line-spacing', 'space-after')
+        break
+      }
       case 'toggle-pilcrow':
         editor.classList.toggle('show-pilcrow')
         record('pilcrow')
@@ -3437,94 +3159,86 @@ function efficiencyAttachWord(tasks, question) {
         const paras = [...editor.querySelectorAll('p')].filter(p => p.textContent.trim())
         const sorted = paras.map(p => p.outerHTML).sort((a, b) => a.localeCompare(b) * (rawAction === 'sort-desc' ? -1 : 1))
         if (sorted.length) editor.innerHTML = sorted.join('')
-        editor.dataset.fmtSorted = rawAction
         record('sort')
         break
       }
 
-      case 'border-bottom': { const ok = applyToTargets(p => { p.style.borderBottom = '1.5px solid #252423'; p.dataset.fmtBorder = 'true' }); if (ok) record('page-border', 'border'); break }
-      case 'border-top': { const ok = applyToTargets(p => { p.style.borderTop = '1.5px solid #252423'; p.dataset.fmtBorder = 'true' }); if (ok) record('page-border', 'border'); break }
-      case 'border-left': { const ok = applyToTargets(p => { p.style.borderLeft = '1.5px solid #252423'; p.dataset.fmtBorder = 'true' }); if (ok) record('page-border', 'border'); break }
-      case 'border-right': { const ok = applyToTargets(p => { p.style.borderRight = '1.5px solid #252423'; p.dataset.fmtBorder = 'true' }); if (ok) record('page-border', 'border'); break }
+      case 'border-bottom': { const p = getActiveParagraph(); if (p) p.style.borderBottom = '1.5px solid #252423'; record('page-border', 'border'); break }
+      case 'border-top': { const p = getActiveParagraph(); if (p) p.style.borderTop = '1.5px solid #252423'; record('page-border', 'border'); break }
+      case 'border-left': { const p = getActiveParagraph(); if (p) p.style.borderLeft = '1.5px solid #252423'; record('page-border', 'border'); break }
+      case 'border-right': { const p = getActiveParagraph(); if (p) p.style.borderRight = '1.5px solid #252423'; record('page-border', 'border'); break }
       case 'border-all':
-      case 'border-outside': { const ok = applyToTargets(p => { p.style.border = '1.5px solid #252423'; p.style.padding = '6px 8px'; p.dataset.fmtBorder = 'true' }); if (ok) record('page-border', 'border'); break }
-      case 'border-thick': { const ok = applyToTargets(p => { p.style.border = '2.5px solid #252423'; p.style.padding = '6px 8px'; p.dataset.fmtBorder = 'true' }); if (ok) record('page-border', 'border'); break }
-      case 'border-double': { const ok = applyToTargets(p => { p.style.borderBottom = '3px double #252423'; p.dataset.fmtBorder = 'true' }); if (ok) record('page-border', 'border'); break }
-      case 'border-none': { applyToTargets(p => { p.style.border = '0'; p.dataset.fmtBorder = 'false' }); editor.style.border = '1px solid #b3b0ad'; delete editor.dataset.fmtPageBorder; record('border-none'); break }
+      case 'border-outside': { const p = getActiveParagraph(); if (p) { p.style.border = '1.5px solid #252423'; p.style.padding = '6px 8px' } record('page-border', 'border'); break }
+      case 'border-thick': { const p = getActiveParagraph(); if (p) { p.style.border = '2.5px solid #252423'; p.style.padding = '6px 8px' } record('page-border', 'border'); break }
+      case 'border-double': { const p = getActiveParagraph(); if (p) p.style.borderBottom = '3px double #252423'; record('page-border', 'border'); break }
+      case 'border-none': { const p = getActiveParagraph(); if (p) p.style.border = '0'; editor.style.border = '1px solid #b3b0ad'; record('border-none'); break }
       case 'horizontal-line': editor.insertAdjacentHTML('beforeend', '<hr style="border:0;border-top:1.5px solid #8a8886;margin:10px 0;">'); record('border'); break
 
-      case 'style-normal': { applyToTargets(p => { p.style.fontSize = '11pt'; p.style.fontWeight = '400'; p.style.color = '#201f1e'; p.dataset.fmtBold = 'false'; p.dataset.fmtSize = '11' }); record('style-normal'); break }
-      case 'style-no-spacing': { applyToTargets(p => { p.style.margin = '0'; p.style.lineHeight = '1.0'; p.dataset.fmtLineSpacing = '1.0' }); record('line-spacing'); break }
-      case 'style-heading-1': { applyToTargets(p => { p.style.fontSize = '16pt'; p.style.fontWeight = '600'; p.style.color = '#2f5597'; p.dataset.fmtSize = '16'; p.dataset.fmtBold = 'true' }); record('style-heading-1', 'font-size-16'); break }
-      case 'style-heading-2': { applyToTargets(p => { p.style.fontSize = '14pt'; p.style.fontWeight = '600'; p.style.color = '#2f5597'; p.dataset.fmtSize = '14'; p.dataset.fmtBold = 'true' }); record('style-heading-2', 'font-size-14'); break }
-      case 'style-heading-3': { applyToTargets(p => { p.style.fontSize = '12pt'; p.style.fontWeight = '600'; p.style.color = '#1f3763'; p.dataset.fmtSize = '12'; p.dataset.fmtBold = 'true' }); record('style-heading-3', 'font-size-12'); break }
-      case 'style-title': { applyToTargets(p => { p.style.fontSize = '24pt'; p.style.fontWeight = '300'; p.style.color = '#201f1e'; p.dataset.fmtSize = '24' }); record('style-title'); break }
-      case 'style-subtitle': { applyToTargets(p => { p.style.fontSize = '12pt'; p.style.color = '#595959'; p.style.fontStyle = 'italic'; p.dataset.fmtItalic = 'true' }); record('italic'); break }
-      case 'style-quote': { applyToTargets(p => { p.style.borderLeft = '3px solid #2b579a'; p.style.paddingLeft = '10px'; p.style.fontStyle = 'italic'; p.dataset.fmtItalic = 'true'; p.dataset.fmtIndentType = 'left' }); record('indent'); break }
-      case 'style-strong': { applyToTargets(p => { p.style.fontWeight = '700'; p.dataset.fmtBold = 'true' }); record('bold'); break }
+      case 'style-normal': { const p = getActiveParagraph(); if (p) { p.style.fontSize = '11pt'; p.style.fontWeight = '400'; p.style.color = '#201f1e' } record('style-normal'); break }
+      case 'style-no-spacing': { const p = getActiveParagraph(); if (p) { p.style.margin = '0'; p.style.lineHeight = '1.0' } record('line-spacing'); break }
+      case 'style-heading-1': { const p = getActiveParagraph(); if (p) { p.style.fontSize = '16pt'; p.style.fontWeight = '600'; p.style.color = '#2f5597' } record('style-heading-1', 'font-size-16'); break }
+      case 'style-heading-2': { const p = getActiveParagraph(); if (p) { p.style.fontSize = '13pt'; p.style.fontWeight = '600'; p.style.color = '#2f5597' } record('style-heading-2', 'font-size-14'); break }
+      case 'style-heading-3': { const p = getActiveParagraph(); if (p) { p.style.fontSize = '12pt'; p.style.fontWeight = '600'; p.style.color = '#1f3763' } record('style-heading-3', 'font-size-12'); break }
+      case 'style-title': { const p = getActiveParagraph(); if (p) { p.style.fontSize = '24pt'; p.style.fontWeight = '300'; p.style.color = '#201f1e' } record('style-title'); break }
+      case 'style-subtitle': { const p = getActiveParagraph(); if (p) { p.style.fontSize = '12pt'; p.style.color = '#595959'; p.style.fontStyle = 'italic' } record('italic'); break }
+      case 'style-quote': { const p = getActiveParagraph(); if (p) { p.style.borderLeft = '3px solid #2b579a'; p.style.paddingLeft = '10px'; p.style.fontStyle = 'italic' } record('indent'); break }
+      case 'style-strong': { const p = getActiveParagraph(); if (p) p.style.fontWeight = '700'; record('bold'); break }
 
       case 'insert-table': insertWordTable(2, 2); break
-      case 'margins': applyWordExtra(editor.dataset.fmtMargins === 'narrow' ? 'margins:normal' : 'margins:Moderate'.toLowerCase()); break
-      case 'line-spacing': applyWordExtra('line-spacing:2.0'); break
+      case 'margins': applyWordExtra(editor.style.padding === '36px 38px' ? 'margins:normal' : 'margins:narrow'); break
+      case 'line-spacing': applyWordExtra(editor.style.lineHeight === '1.5' ? 'line-spacing:1.15' : 'line-spacing:1.5'); break
       case 'page-border': applyWordExtra('page-border:double:#2b579a'); break
       case 'drop-cap':
       case 'drop-cap-margin': {
-        const para = getActiveParagraph() || editor.querySelector('#word-part-para1') || editor.querySelector('p')
+        const para = editor.querySelectorAll('p')[1] || editor.querySelector('p')
         if (para && para.textContent.trim()) {
           para.style.setProperty('initial-letter', '3')
           para.style.setProperty('-webkit-initial-letter', '3')
-          editor.dataset.fmtDropCap = 'true'
-          para.dataset.fmtDropCap = 'true'
           record('drop-cap')
         }
         break
       }
       case 'drop-cap-none': {
-        const para = getActiveParagraph() || editor.querySelector('#word-part-para1') || editor.querySelector('p')
+        const para = editor.querySelectorAll('p')[1] || editor.querySelector('p')
         if (para) {
           para.style.removeProperty('initial-letter')
           para.style.removeProperty('-webkit-initial-letter')
-          delete para.dataset.fmtDropCap
         }
-        delete editor.dataset.fmtDropCap
         break
       }
       case 'watermark': setWatermark('CONFIDENTIAL'); break
       case 'watermark-remove': setWatermark(''); break
       case 'page-color': applyWordExtra('page-color:#fffef0'); break
-      case 'orientation': applyWordExtra(editor.dataset.fmtOrientation === 'landscape' ? 'orientation:portrait' : 'orientation:landscape'); break
-      case 'columns': applyWordExtra(editor.dataset.fmtColumns === '2' ? 'columns:1' : 'columns:2'); break
+      case 'orientation': applyWordExtra(editor.style.maxWidth === '1020px' ? 'orientation:portrait' : 'orientation:landscape'); break
+      case 'columns': applyWordExtra(editor.style.columnCount === '2' ? 'columns:1' : 'columns:2'); break
       case 'header':
       case 'header-3col':
       case 'header-austin':
       case 'header-custom': {
         editor.querySelector('.word-inserted-header')?.remove()
-        editor.insertAdjacentHTML('afterbegin', '<p class="word-inserted-header" contenteditable="false" style="border-top:0;border-bottom:1px solid #c8c6c4;padding-bottom:6px;margin-bottom:14px;">Official Document Header</p>')
-        editor.dataset.fmtHeader = 'true'
+        editor.insertAdjacentHTML('afterbegin', '<p class="word-inserted-header" style="border-top:0;border-bottom:1px solid #c8c6c4;padding-bottom:6px;margin-bottom:14px;">Official Document Header</p>')
         record('header')
         break
       }
-      case 'header-remove': editor.querySelector('.word-inserted-header')?.remove(); delete editor.dataset.fmtHeader; break
+      case 'header-remove': editor.querySelector('.word-inserted-header')?.remove(); break
       case 'footer':
       case 'footer-3col':
       case 'footer-austin':
       case 'footer-custom': {
         editor.querySelector('.word-inserted-footer')?.remove()
-        editor.insertAdjacentHTML('beforeend', '<p class="word-inserted-footer" contenteditable="false">Official Footer · Confidential</p>')
-        editor.dataset.fmtFooter = 'true'
+        editor.insertAdjacentHTML('beforeend', '<p class="word-inserted-footer">Official Footer · Confidential</p>')
         record('footer')
         break
       }
-      case 'footer-remove': editor.querySelector('.word-inserted-footer')?.remove(); delete editor.dataset.fmtFooter; break
+      case 'footer-remove': editor.querySelector('.word-inserted-footer')?.remove(); break
       case 'page-number':
       case 'page-number-top': {
         editor.querySelector('.word-page-number')?.remove()
-        editor.insertAdjacentHTML(rawAction === 'page-number-top' ? 'afterbegin' : 'beforeend', '<p class="word-page-number" contenteditable="false" style="text-align:right;">Page 1 of 1</p>')
-        editor.dataset.fmtPageNumber = 'true'
+        editor.insertAdjacentHTML(rawAction === 'page-number-top' ? 'afterbegin' : 'beforeend', '<p class="word-page-number" style="text-align:right;">Page 1 of 1</p>')
         record('page-number')
         break
       }
-      case 'page-number-remove': editor.querySelector('.word-page-number')?.remove(); delete editor.dataset.fmtPageNumber; break
+      case 'page-number-remove': editor.querySelector('.word-page-number')?.remove(); break
       case 'insert-textbox':
         editor.insertAdjacentHTML('beforeend', '<div style="border:1px solid #2b579a;padding:10px 12px;margin:10px 0;background:#f8fbff;">Text Box: Enter callout text here.</div>')
         record('textbox')
@@ -3627,6 +3341,7 @@ function efficiencyAttachWord(tasks, question) {
         break
       case 'save':
       case 'save-as':
+        try { localStorage.setItem('ag-eff-word-draft', editor.innerHTML) } catch {}
         record('save')
         break
       case 'print':
@@ -3648,91 +3363,7 @@ function efficiencyAttachWord(tasks, question) {
     }
   }
 
-  const handleWordCommand = (cmd) => {
-    const list = getActiveParagraphs()
-    if (!list.length) {
-      showSelectionHint('⚠️ पहले दस्तावेज़ में संबंधित पंक्ति/पैराग्राफ को माउस से सिलेक्ट या क्लिक करें')
-      return
-    }
-    const firstEl = list[0]
-    if (cmd === 'bold') {
-      const nextState = firstEl.dataset.fmtBold !== 'true'
-      applyToTargets((p) => {
-        p.dataset.fmtBold = nextState ? 'true' : 'false'
-        p.style.fontWeight = nextState ? '700' : '400'
-      })
-      record('bold')
-    } else if (cmd === 'italic') {
-      const nextState = firstEl.dataset.fmtItalic !== 'true'
-      applyToTargets((p) => {
-        p.dataset.fmtItalic = nextState ? 'true' : 'false'
-        p.style.fontStyle = nextState ? 'italic' : 'normal'
-      })
-      record('italic')
-    } else if (cmd === 'underline') {
-      const nextState = firstEl.dataset.fmtUnderline !== 'true'
-      applyToTargets((p) => {
-        p.dataset.fmtUnderline = nextState ? 'true' : 'false'
-        p.style.textDecoration = nextState ? 'underline' : (p.dataset.fmtStrike === 'true' ? 'line-through' : 'none')
-      })
-      record('underline')
-    } else if (cmd === 'justifyLeft') {
-      applyToTargets((p) => {
-        p.dataset.fmtAlign = 'left'
-        p.style.textAlign = 'left'
-      })
-      record('justifyLeft', 'align-left')
-    } else if (cmd === 'justifyCenter') {
-      applyToTargets((p) => {
-        p.dataset.fmtAlign = 'center'
-        p.style.textAlign = 'center'
-      })
-      record('justifyCenter', 'center')
-    } else if (cmd === 'justifyRight') {
-      applyToTargets((p) => {
-        p.dataset.fmtAlign = 'right'
-        p.style.textAlign = 'right'
-      })
-      record('justifyRight', 'align-right')
-    } else if (cmd === 'justifyFull') {
-      applyToTargets((p) => {
-        p.dataset.fmtAlign = 'justify'
-        p.style.textAlign = 'justify'
-      })
-      record('justifyFull')
-    } else if (cmd === 'insertUnorderedList') {
-      const nextState = firstEl.dataset.fmtBullets !== 'true'
-      applyToTargets((p, isTableCell) => {
-        if (isTableCell) return
-        p.dataset.fmtBullets = nextState ? 'true' : 'false'
-        if (nextState) {
-          p.style.paddingLeft = '24px'
-          if (!p.textContent.trim().startsWith('•')) p.textContent = '• ' + p.textContent.trim()
-        } else {
-          p.style.paddingLeft = ''
-          p.textContent = p.textContent.replace(/^\s*•\s*/, '')
-        }
-      })
-      record('bullets', cmd)
-    } else if (cmd === 'insertOrderedList') {
-      const nextState = firstEl.dataset.fmtNumbering !== 'true'
-      applyToTargets((p, isTableCell) => {
-        if (isTableCell) return
-        p.dataset.fmtNumbering = nextState ? 'true' : 'false'
-        if (nextState) {
-          p.style.paddingLeft = '24px'
-          if (!/^\d+\./.test(p.textContent.trim())) p.textContent = '1. ' + p.textContent.trim()
-        } else {
-          p.style.paddingLeft = ''
-          p.textContent = p.textContent.replace(/^\s*\d+\.\s*/, '')
-        }
-      })
-      record('numbering', cmd)
-    } else {
-      record(cmd)
-    }
-  }
-
+  // Event delegation on the whole Word app container
   const wordApp = root?.querySelector('.office-word')
   wordApp?.addEventListener('click', (event) => {
     const dialogBtn = event.target.closest('[data-o19-dialog]')
@@ -3765,7 +3396,26 @@ function efficiencyAttachWord(tasks, question) {
     const button = event.target.closest('button, [data-word-extra]')
     if (!button) return
     if (button.dataset.wordCommand) {
-      handleWordCommand(button.dataset.wordCommand)
+      const cmd = button.dataset.wordCommand
+      const p = getActiveParagraph()
+      const sel = window.getSelection()
+      const hasSel = sel && sel.rangeCount && !sel.isCollapsed && editor?.contains(sel.anchorNode)
+      if (hasSel) { editor?.focus(); try { document.execCommand(cmd, false, null) } catch {} }
+      if (p) {
+        if (cmd === 'bold') p.style.fontWeight = (p.style.fontWeight === '700' || p.style.fontWeight === 'bold') && !hasSel ? '400' : '700'
+        else if (cmd === 'italic') p.style.fontStyle = p.style.fontStyle === 'italic' && !hasSel ? 'normal' : 'italic'
+        else if (cmd === 'underline') p.style.textDecoration = p.style.textDecoration.includes('underline') && !hasSel ? 'none' : 'underline'
+        else if (cmd === 'justifyLeft') p.style.textAlign = 'left'
+        else if (cmd === 'justifyCenter') { p.style.textAlign = 'center'; record('center') }
+        else if (cmd === 'justifyRight') { p.style.textAlign = 'right'; record('justifyRight') }
+        else if (cmd === 'justifyFull') p.style.textAlign = 'justify'
+        else if (cmd === 'insertUnorderedList' || cmd === 'insertOrderedList') {
+          p.style.paddingLeft = '22px'
+          if (!p.textContent.trim().startsWith('•')) p.textContent = '• ' + p.textContent.trim()
+          record('bullets', cmd)
+        }
+      }
+      record(cmd)
       return
     }
     if (button.dataset.wordExtra) {
@@ -3788,10 +3438,10 @@ function efficiencyAttachWord(tasks, question) {
   editor?.addEventListener('keyup', () => rememberActiveParagraph())
   wordApp?.addEventListener('change', (e) => {
     const t = e.target
-    if (t.id === 'word-indent-left') applyWordExtra(`indent-first-line:${parseFloat(t.value) || 0.75}`)
+    if (t.id === 'word-indent-left') applyWordExtra(`indent-first-line:${parseFloat(t.value) || 0.5}`)
     else if (t.id === 'word-indent-right') applyWordExtra(`indent-right:${parseFloat(t.value) || 0.5}`)
-    else if (t.id === 'word-space-before') applyWordExtra(`space-before:${parseFloat(t.value) || 6}`)
-    else if (t.id === 'word-space-after') applyWordExtra(`space-after:${parseFloat(t.value) || 6}`)
+    else if (t.id === 'word-space-before') applyWordExtra(`space-before:${parseFloat(t.value) || 12}`)
+    else if (t.id === 'word-space-after') applyWordExtra(`space-after:${parseFloat(t.value) || 12}`)
     else if (t.id === 'word-font-family') applyWordExtra(`set-font:${t.value}`)
     else if (t.id === 'word-font-size') applyWordExtra(`set-size:${t.value}`)
   })
@@ -3799,6 +3449,7 @@ function efficiencyAttachWord(tasks, question) {
     const count = (editor.innerText.trim().match(/\S+/g) || []).length
     const target = document.querySelector('#word-word-count')
     if (target) target.textContent = `${count} words`
+    record('edit-text')
   })
 }
 
@@ -3854,11 +3505,12 @@ function efficiencyEvaluateFormula(formula) {
   const text = String(formula || '').trim()
   if (!text.startsWith('=')) return text
 
+  // Standard range functions: SUM, AVERAGE, MIN, MAX, COUNT, COUNTA, COUNTBLANK, PRODUCT, MEDIAN
   const fn = text.match(/^=(SUM|AVERAGE|MIN|MAX|COUNT|COUNTA|COUNTBLANK|PRODUCT|MEDIAN)\(([A-Z]+\d+(?::[A-Z]+\d+)?)\)$/i)
   if (fn) {
     const rawVals = efficiencyRangeValues(fn[2])
     const vals = rawVals.filter(v => v !== '' && v !== null && v !== undefined)
-    const nums = vals.map(v => Number(String(v).replace(/[^\d.-]/g, ''))).filter(v => Number.isFinite(v))
+    const nums = vals.map(Number).filter(v => Number.isFinite(v))
     switch (fn[1].toUpperCase()) {
       case 'SUM': return nums.reduce((a, b) => a + b, 0)
       case 'AVERAGE': return nums.length ? +(nums.reduce((a, b) => a + b, 0) / nums.length).toFixed(2) : 0
@@ -3877,6 +3529,7 @@ function efficiencyEvaluateFormula(formula) {
     }
   }
 
+  // Single-argument math/text functions: UPPER, LOWER, PROPER, LEN, TRIM, ABS, INT, SQRT
   const singleFn = text.match(/^=(UPPER|LOWER|PROPER|LEN|TRIM|ABS|INT|SQRT)\(([A-Z]+\d+|"[^"]*"|-?\d+(?:\.\d+)?)\)$/i)
   if (singleFn) {
     const fnName = singleFn[1].toUpperCase()
@@ -3895,20 +3548,20 @@ function efficiencyEvaluateFormula(formula) {
     }
   }
 
+  // IF(A2>=50, "Pass", "Fail")
   const ifFn = text.match(/^=IF\(([A-Z]+\d+)\s*(>=|<=|<>|=|>|<)\s*(-?\d+(?:\.\d+)?|"[^"]*")\s*,\s*(-?\d+(?:\.\d+)?|"[^"]*")\s*,\s*(-?\d+(?:\.\d+)?|"[^"]*")\)$/i)
   if (ifFn) {
     const lhsRaw = efficiencyCellValue(ifFn[1])
     const rhsRaw = ifFn[3].replace(/^"|"$/g, '')
-    const lhsNum = Number(String(lhsRaw).replace(/[^\d.-]/g, ''))
-    const rhsNum = Number(String(rhsRaw).replace(/[^\d.-]/g, ''))
-    const lhs = Number.isFinite(lhsNum) && String(lhsRaw) !== '' ? lhsNum : String(lhsRaw)
-    const rhs = Number.isFinite(rhsNum) && String(rhsRaw) !== '' ? rhsNum : String(rhsRaw)
+    const lhs = Number.isFinite(Number(lhsRaw)) && lhsRaw !== '' ? Number(lhsRaw) : String(lhsRaw)
+    const rhs = Number.isFinite(Number(rhsRaw)) && rhsRaw !== '' ? Number(rhsRaw) : String(rhsRaw)
     const ok = ({
       '>': lhs > rhs, '<': lhs < rhs, '>=': lhs >= rhs, '<=': lhs <= rhs, '=': lhs == rhs, '<>': lhs != rhs
     })[ifFn[2]]
     return (ok ? ifFn[4] : ifFn[5]).replace(/^"|"$/g, '')
   }
 
+  // COUNTIF(range, criteria) / SUMIF(range, criteria)
   const condFn = text.match(/^=(COUNTIF|SUMIF)\(([A-Z]+\d+:[A-Z]+\d+)\s*,\s*("[^"]*"|-?\d+(?:\.\d+)?)\)$/i)
   if (condFn) {
     const vals = efficiencyRangeValues(condFn[2])
@@ -3917,7 +3570,7 @@ function efficiencyEvaluateFormula(formula) {
       const m = /^(>=|<=|<>|>|<|=)?(.*)$/.exec(crit)
       const op = m?.[1] || '='
       const target = m?.[2] ?? ''
-      const nv = Number(String(v).replace(/[^\d.-]/g, '')), nt = Number(target)
+      const nv = Number(v), nt = Number(target)
       if (Number.isFinite(nv) && Number.isFinite(nt) && target !== '') {
         return ({ '>': nv > nt, '<': nv < nt, '>=': nv >= nt, '<=': nv <= nt, '=': nv === nt, '<>': nv !== nt })[op]
       }
@@ -3926,7 +3579,7 @@ function efficiencyEvaluateFormula(formula) {
     const matched = vals.filter(matchVal)
     return condFn[1].toUpperCase() === 'COUNTIF'
       ? matched.length
-      : matched.map(v => Number(String(v).replace(/[^\d.-]/g, ''))).filter(Number.isFinite).reduce((a, b) => a + b, 0)
+      : matched.map(Number).filter(Number.isFinite).reduce((a, b) => a + b, 0)
   }
 
   if (/^=TODAY\(\)$/i.test(text)) return new Date().toLocaleDateString('en-IN')
@@ -3945,10 +3598,15 @@ function efficiencyCommitExcelCell(cell) {
   const pos = efficiencyParseRef(cell.dataset.cell)
   if (!pos) return
   efficiencyState.excelDataset[pos.row] ||= []
-  const raw = cell.value.trim()
+  const raw = cell.value
   efficiencyState.excelDataset[pos.row][pos.col] = raw
   if (String(raw).startsWith('=')) {
     efficiencyState.excelFormulas[cell.dataset.cell] = raw
+    const qNum = efficiencyState.questionIndex || 1
+    efficiencyState.perQuestionActions ||= {}
+    efficiencyState.perQuestionActions[qNum] ||= new Set()
+    efficiencyState.perQuestionActions[qNum].add('formula')
+    efficiencyState.wordActions.add('formula')
     const result = efficiencyEvaluateFormula(raw)
     cell.title = `${raw} = ${result}`
     cell.classList.toggle('excel-formula-error', result === '#VALUE!')
@@ -3963,43 +3621,21 @@ function efficiencyCommitExcelCell(cell) {
   if (bar) bar.value = raw
   const status = document.querySelector('#excel-status')
   if (status) status.textContent = String(raw).startsWith('=') ? `${raw} = ${efficiencyEvaluateFormula(raw)}` : 'Ready'
+  efficiencyUpdateScore(Array.isArray(efficiencyState.question?.tasks) ? efficiencyState.question.tasks : [], efficiencyState.question)
 }
 
 function efficiencyAttachExcel(tasks, question) {
   const root = document.querySelector('#efficiency-simulator')
   const grid = document.querySelector('#excel-grid')
-  efficiencyState.selectedCell = 'A2'
-  efficiencyState.selectedExcelCells = []
+  const recordExcel = (...actions) => {
+    const qNum = efficiencyState.questionIndex || 1
+    efficiencyState.perQuestionActions ||= {}
+    efficiencyState.perQuestionActions[qNum] ||= new Set()
+    actions.forEach(a => { if (a) { efficiencyState.wordActions.add(a); efficiencyState.perQuestionActions[qNum].add(a) } })
+    efficiencyUpdateScore()
+  }
 
   const getActiveCellEl = () => document.querySelector(`[data-cell="${efficiencyState.selectedCell}"]`) || grid?.querySelector('.excel-cell')
-
-  const getSelectedCellElements = () => {
-    const list = (efficiencyState.selectedExcelCells || []).filter(c => c && grid?.contains(c))
-    if (list.length) return list
-    const single = getActiveCellEl()
-    return single ? [single] : []
-  }
-
-  const selectRangeFromAnchor = (startRef, endRef) => {
-    const a = efficiencyParseRef(startRef)
-    const b = efficiencyParseRef(endRef || startRef)
-    if (!a || !b || !grid) return
-    const selected = []
-    grid.querySelectorAll('.excel-cell.is-selected-range').forEach(el => el.classList.remove('is-selected-range'))
-    for (let r = Math.min(a.row, b.row); r <= Math.max(a.row, b.row); r++) {
-      for (let c = Math.min(a.col, b.col); c <= Math.max(a.col, b.col); c++) {
-        const ref = efficiencyCellRef(r, c)
-        const el = grid.querySelector(`.excel-cell[data-cell="${ref}"]`)
-        if (el) {
-          el.classList.add('is-selected-range')
-          selected.push(el)
-        }
-      }
-    }
-    efficiencyState.selectedExcelCells = selected
-    const name = document.querySelector('#excel-name-box')
-    if (name) name.textContent = startRef === endRef ? startRef : `${startRef}:${endRef}`
-  }
 
   const highlightActiveHeaders = (cellEl) => {
     if (!grid || !cellEl) return
@@ -4010,30 +3646,11 @@ function efficiencyAttachExcel(tasks, question) {
     grid.querySelector(`th[data-row-header="${r}"]`)?.classList.add('is-active-header')
   }
 
-  let isDraggingCells = false
-  let dragStartRef = null
-
   const bindCells = () => grid?.querySelectorAll('.excel-cell').forEach(cell => {
-    cell.addEventListener('mousedown', (ev) => {
-      if (ev.shiftKey && efficiencyState.selectedCell) {
-        selectRangeFromAnchor(efficiencyState.selectedCell, cell.dataset.cell)
-      } else {
-        isDraggingCells = true
-        dragStartRef = cell.dataset.cell
-        efficiencyState.selectedCell = cell.dataset.cell
-        selectRangeFromAnchor(cell.dataset.cell, cell.dataset.cell)
-      }
-    })
-    cell.addEventListener('mouseenter', () => {
-      if (isDraggingCells && dragStartRef) {
-        selectRangeFromAnchor(dragStartRef, cell.dataset.cell)
-      }
-    })
     cell.addEventListener('focus', () => {
       efficiencyState.selectedCell = cell.dataset.cell
-      if (!efficiencyState.selectedExcelCells?.length) {
-        selectRangeFromAnchor(cell.dataset.cell, cell.dataset.cell)
-      }
+      const name = document.querySelector('#excel-name-box')
+      if (name) name.textContent = cell.dataset.cell
       const bar = document.querySelector('#excel-formula-input')
       if (bar) bar.value = efficiencyState.excelFormulas[cell.dataset.cell] || cell.value
       highlightActiveHeaders(cell)
@@ -4048,7 +3665,6 @@ function efficiencyAttachExcel(tasks, question) {
       }
     })
   })
-  window.addEventListener('mouseup', () => { isDraggingCells = false })
   bindCells()
 
   const applyCellFromBar = () => {
@@ -4069,26 +3685,21 @@ function efficiencyAttachExcel(tasks, question) {
   })
 
   const insertExcelFormula = (fnName) => {
-    const pos = efficiencyParseRef(efficiencyState.selectedCell) || { row: 7, col: 3 }
+    const pos = efficiencyParseRef(efficiencyState.selectedCell) || { row: 1, col: 4 }
     const col = String.fromCharCode(65 + pos.col)
-    const endRow = Math.max(3, pos.row)
-    let formula = `=${fnName}(${col}3:${col}${endRow})`
-    if (pos.row === 2 && pos.col === 5) formula = `=SUM(D3:E3)`
-    else if (fnName === 'IF') formula = `=IF(D3>=30000,"Senior","Junior")`
-    else if (fnName === 'COUNTIF') formula = `=COUNTIF(D3:D7,">=30000")`
-    else if (fnName === 'SUMIF') formula = `=SUMIF(D3:D7,">=30000")`
-    else if (['UPPER', 'LOWER', 'PROPER', 'LEN', 'TRIM'].includes(fnName)) formula = `=${fnName}(B3)`
+    const row = Math.max(2, pos.row)
+    let formula = `=${fnName}(${col}2:${col}${row})`
+    if (fnName === 'IF') formula = `=IF(C2>=30000,"Senior","Junior")`
+    else if (fnName === 'COUNTIF') formula = `=COUNTIF(C2:C4,">=28000")`
+    else if (fnName === 'SUMIF') formula = `=SUMIF(C2:C4,">=28000")`
+    else if (['UPPER', 'LOWER', 'PROPER', 'LEN', 'TRIM'].includes(fnName)) formula = `=${fnName}(B2)`
     else if (fnName === 'TODAY' || fnName === 'NOW') formula = `=${fnName}()`
     const bar = document.querySelector('#excel-formula-input')
     if (bar) {
       bar.value = formula
       applyCellFromBar()
     }
-  }
-
-  const applyToSelectedExcelCells = (fn) => {
-    const cells = getSelectedCellElements()
-    cells.forEach(c => fn(c))
+    recordExcel(`formula-${fnName.toLowerCase()}`, 'formula')
   }
 
   const applyExcelExtra = (rawAction) => {
@@ -4101,91 +3712,82 @@ function efficiencyAttachExcel(tasks, question) {
       return
     }
     if (rawAction.startsWith('excel-set-font:')) {
-      const font = rawAction.slice(15).replace(/ \(.*\)/, '').trim()
+      const font = rawAction.slice(15).replace(/ \(.*\)/, '')
       const input = document.querySelector('#excel-font-family')
       if (input) input.value = font
-      applyToSelectedExcelCells(c => {
-        c.style.fontFamily = `'${font}', sans-serif`
-        c.dataset.fmtFont = font.toLowerCase()
-      })
+      if (cell) cell.style.fontFamily = `'${font}', sans-serif`
+      recordExcel('excel-font', `font-${font.toLowerCase()}`)
       return
     }
     if (rawAction.startsWith('excel-set-size:')) {
-      const sz = String(rawAction.slice(15)).replace(/pt/i, '').trim()
+      const sz = rawAction.slice(15)
       const input = document.querySelector('#excel-font-size')
       if (input) input.value = sz
-      applyToSelectedExcelCells(c => {
-        c.style.fontSize = `${sz}pt`
-        c.dataset.fmtSize = sz
-      })
+      if (cell) cell.style.fontSize = `${sz}pt`
+      recordExcel('excel-font-size', `font-size-${sz}`)
       return
     }
     if (rawAction.startsWith('shading-color:')) {
       const col = rawAction.slice(14)
-      applyToSelectedExcelCells(c => {
-        c.style.backgroundColor = col === 'transparent' ? '' : col
-        c.dataset.fmtFill = col === 'transparent' ? 'false' : 'true'
-      })
+      if (cell) cell.style.backgroundColor = col === 'transparent' ? '' : col
+      recordExcel('excel-fill', 'shading')
       return
     }
     if (rawAction.startsWith('font-color:')) {
       const col = rawAction.slice(11)
-      applyToSelectedExcelCells(c => {
-        c.style.color = col
-        c.dataset.fmtFontColor = col
-      })
+      if (cell) cell.style.color = col
+      recordExcel('excel-font-color', 'font-color')
       return
     }
     if (rawAction.startsWith('excel-numfmt:')) {
       const fmt = rawAction.slice(13)
       const sel = document.querySelector('#excel-number-format')
       if (sel) sel.value = fmt
-      applyToSelectedExcelCells(c => {
-        c.dataset.fmtNum = fmt.toLowerCase()
-        const num = Number(String(c.value).replace(/[^\d.-]/g, ''))
-        if (Number.isFinite(num) && c.value !== '' && !String(c.value).startsWith('=')) {
-          if (fmt === 'Currency' || fmt === 'Accounting') c.value = `₹${num.toFixed(2)}`
-          else if (fmt === 'Percent') c.value = `${num}%`
-          else if (fmt === 'Number') c.value = num.toFixed(2)
+      if (cell) {
+        cell.dataset.numberFormat = fmt
+        const num = Number(cell.value)
+        if (Number.isFinite(num) && cell.value !== '' && !String(cell.value).startsWith('=')) {
+          if (fmt === 'Currency' || fmt === 'Accounting') cell.value = `₹${num.toFixed(2)}`
+          else if (fmt === 'Percent') cell.value = `${num}%`
+          else if (fmt === 'Number') cell.value = num.toFixed(2)
         }
-      })
+      }
+      recordExcel(`numfmt-${fmt.toLowerCase()}`, 'number-format')
       return
     }
     if (rawAction.startsWith('excel-fmt-currency')) {
       const sym = rawAction.split(':')[1] || '₹'
-      applyToSelectedExcelCells(c => {
-        c.dataset.fmtNum = 'currency'
-        if (c.value && !String(c.value).startsWith('=')) {
-          const num = Number(String(c.value).replace(/[^\d.-]/g, ''))
-          if (Number.isFinite(num)) c.value = `${sym}${num.toFixed(2)}`
-        }
-      })
+      if (cell && cell.value && !String(cell.value).startsWith('=')) {
+        const num = Number(String(cell.value).replace(/[^\d.-]/g, ''))
+        if (Number.isFinite(num)) cell.value = `${sym}${num.toFixed(2)}`
+      }
+      recordExcel('excel-currency', 'number-format')
       return
     }
     if (rawAction.startsWith('excel-orient:')) {
       const mode = rawAction.slice(13)
-      applyToSelectedExcelCells(c => {
-        c.style.transform = mode === 'ccw' ? 'rotate(-15deg)' : mode === 'cw' ? 'rotate(15deg)' : 'none'
-        c.dataset.fmtOrient = mode
-      })
+      if (cell) {
+        cell.style.transform = mode === 'ccw' ? 'rotate(-15deg)' : mode === 'cw' ? 'rotate(15deg)' : 'none'
+      }
+      recordExcel('excel-orientation')
       return
     }
     if (rawAction.startsWith('cell-style:')) {
       const st = rawAction.slice(11)
-      const styles = {
-        bad: { bg: '#ffc7ce', col: '#9c0006' },
-        good: { bg: '#c6efce', col: '#006100' },
-        neutral: { bg: '#ffeb9c', col: '#9c6500' },
-        heading: { bg: '#d9e1f2', col: '#1f4e78' },
-        total: { bg: '#f2f2f2', col: '#000000' },
-        normal: { bg: '', col: '#201f1e' }
+      if (cell) {
+        const styles = {
+          bad: { bg: '#ffc7ce', col: '#9c0006' },
+          good: { bg: '#c6efce', col: '#006100' },
+          neutral: { bg: '#ffeb9c', col: '#9c6500' },
+          heading: { bg: '#d9e1f2', col: '#1f4e78' },
+          total: { bg: '#f2f2f2', col: '#000000' },
+          normal: { bg: '', col: '#201f1e' }
+        }
+        const s = styles[st] || styles.normal
+        cell.style.backgroundColor = s.bg
+        cell.style.color = s.col
       }
-      const s = styles[st] || styles.normal
-      applyToSelectedExcelCells(c => {
-        c.style.backgroundColor = s.bg
-        c.style.color = s.col
-        c.dataset.fmtFill = s.bg ? 'true' : 'false'
-      })
+      recordExcel('cell-style')
       return
     }
 
@@ -4194,92 +3796,31 @@ function efficiencyAttachExcel(tasks, question) {
       case 'open-function-dlg': o19OpenDialog('open-function-dlg', applyExcelExtra); break
       case 'open-sort-dialog': o19OpenDialog('open-sort-dialog', applyExcelExtra); break
       case 'autosum': insertExcelFormula('SUM'); break
-      case 'excel-bold': {
-        const next = cell?.dataset.fmtBold !== 'true'
-        applyToSelectedExcelCells(c => {
-          c.classList.toggle('excel-bold-cell', next)
-          c.style.fontWeight = next ? '700' : '400'
-          c.dataset.fmtBold = next ? 'true' : 'false'
-        })
-        break
-      }
-      case 'excel-italic': {
-        const next = cell?.dataset.fmtItalic !== 'true'
-        applyToSelectedExcelCells(c => {
-          c.style.fontStyle = next ? 'italic' : 'normal'
-          c.dataset.fmtItalic = next ? 'true' : 'false'
-        })
-        break
-      }
+      case 'excel-bold': cell?.classList.toggle('excel-bold-cell'); recordExcel('bold', 'excel-bold'); break
+      case 'excel-italic': if (cell) cell.style.fontStyle = cell.style.fontStyle === 'italic' ? 'normal' : 'italic'; recordExcel('italic'); break
       case 'excel-underline':
       case 'underline-single':
-      case 'underline-double': {
-        const next = cell?.dataset.fmtUnderline !== 'true'
-        applyToSelectedExcelCells(c => {
-          c.style.textDecoration = next ? 'underline' : 'none'
-          c.dataset.fmtUnderline = next ? 'true' : 'false'
-        })
+      case 'underline-double':
+        if (cell) cell.style.textDecoration = cell.style.textDecoration === 'underline' ? 'none' : 'underline'
+        recordExcel('underline')
         break
-      }
-      case 'excel-fill': {
-        const next = cell?.dataset.fmtFill !== 'true'
-        applyToSelectedExcelCells(c => {
-          c.classList.toggle('excel-fill-cell', next)
-          c.style.backgroundColor = next ? '#fef9c3' : ''
-          c.dataset.fmtFill = next ? 'true' : 'false'
-        })
-        break
-      }
+      case 'excel-fill': cell?.classList.toggle('excel-fill-cell'); recordExcel('excel-fill'); break
       case 'excel-border':
       case 'border-all':
       case 'border-outside':
       case 'border-bottom':
       case 'border-thick':
       case 'border-double':
-        applyToSelectedExcelCells(c => {
-          c.classList.add('excel-border-cell')
-          c.dataset.fmtBorder = 'true'
-        })
+        cell?.classList.toggle('excel-border-cell')
+        recordExcel('excel-border', 'border')
         break
-      case 'border-none':
-        applyToSelectedExcelCells(c => {
-          c.classList.remove('excel-border-cell')
-          c.dataset.fmtBorder = 'false'
-        })
-        break
-      case 'excel-merge': {
-        const next = cell?.dataset.fmtMerge !== 'true'
-        applyToSelectedExcelCells(c => {
-          c.classList.toggle('excel-merged-cell', next)
-          c.style.textAlign = next ? 'center' : ''
-          c.dataset.fmtMerge = next ? 'true' : 'false'
-          if (next) c.dataset.fmtAlign = 'center'
-        })
-        break
-      }
-      case 'excel-unmerge':
-        applyToSelectedExcelCells(c => {
-          c.classList.remove('excel-merged-cell')
-          c.dataset.fmtMerge = 'false'
-        })
-        break
-      case 'excel-wrap-text': {
-        const next = cell?.dataset.fmtWrap !== 'true'
-        applyToSelectedExcelCells(c => {
-          c.style.whiteSpace = next ? 'normal' : ''
-          c.dataset.fmtWrap = next ? 'true' : 'false'
-        })
-        break
-      }
-      case 'excel-align-left':
-        applyToSelectedExcelCells(c => { c.style.textAlign = 'left'; c.dataset.fmtAlign = 'left' })
-        break
-      case 'excel-align-center':
-        applyToSelectedExcelCells(c => { c.style.textAlign = 'center'; c.dataset.fmtAlign = 'center' })
-        break
-      case 'excel-align-right':
-        applyToSelectedExcelCells(c => { c.style.textAlign = 'right'; c.dataset.fmtAlign = 'right' })
-        break
+      case 'border-none': cell?.classList.remove('excel-border-cell'); break
+      case 'excel-merge': cell?.classList.toggle('excel-merged-cell'); if (cell) cell.style.textAlign = 'center'; recordExcel('excel-merge', 'merge'); break
+      case 'excel-unmerge': cell?.classList.remove('excel-merged-cell'); break
+      case 'excel-wrap-text': if (cell) cell.style.whiteSpace = 'normal'; recordExcel('wrap-text'); break
+      case 'excel-align-left': if (cell) cell.style.textAlign = 'left'; recordExcel('align-left'); break
+      case 'excel-align-center': if (cell) cell.style.textAlign = 'center'; recordExcel('align-center', 'center'); break
+      case 'excel-align-right': if (cell) cell.style.textAlign = 'right'; recordExcel('align-right'); break
       case 'excel-font-grow': {
         const inp = document.querySelector('#excel-font-size')
         applyExcelExtra(`excel-set-size:${Math.min(72, (Number(inp?.value) || 11) + 1)}`)
@@ -4294,14 +3835,11 @@ function efficiencyAttachExcel(tasks, question) {
       case 'excel-fmt-comma': applyExcelExtra('excel-numfmt:Number'); break
       case 'excel-decimal-inc':
       case 'excel-decimal-dec':
-        applyToSelectedExcelCells(c => {
-          const n = Number(String(c.value).replace(/[^\d.-]/g, ''))
-          if (Number.isFinite(n) && c.value !== '') {
-            const dec = rawAction === 'excel-decimal-inc' ? 2 : 0
-            c.value = n.toFixed(dec)
-            c.dataset.fmtNum = 'decimal'
-          }
-        })
+        if (cell && Number.isFinite(Number(cell.value))) {
+          const dec = rawAction === 'excel-decimal-inc' ? 2 : 0
+          cell.value = Number(cell.value).toFixed(dec)
+        }
+        recordExcel('decimal')
         break
       case 'conditional-format':
       case 'condfmt-gt':
@@ -4311,43 +3849,41 @@ function efficiencyAttachExcel(tasks, question) {
       case 'condfmt-top':
       case 'condfmt-bars':
       case 'condfmt-scales':
-        applyToSelectedExcelCells(c => {
-          c.dataset.fmtCond = 'true'
-          const n = Number(String(c.value).replace(/[^\d.-]/g, ''))
+        grid?.querySelectorAll('.excel-cell').forEach(c => {
+          const n = Number(c.value)
           if (Number.isFinite(n) && c.value !== '') {
-            c.style.backgroundColor = n >= 30000 ? '#c6efce' : '#ffeb9c'
+            c.style.backgroundColor = n >= 28000 ? '#c6efce' : '#ffeb9c'
           }
         })
-        if (grid) grid.dataset.fmtCond = 'true'
+        recordExcel('conditional-format')
         break
       case 'condfmt-clear':
-        grid?.querySelectorAll('.excel-cell').forEach(c => { c.style.backgroundColor = ''; delete c.dataset.fmtCond })
-        if (grid) delete grid.dataset.fmtCond
+        grid?.querySelectorAll('.excel-cell').forEach(c => { c.style.backgroundColor = '' })
         break
       case 'insert-row': {
         const pos = efficiencyParseRef(efficiencyState.selectedCell) || { row: 1, col: 0 }
         const colsCount = Math.max(9, ...efficiencyState.excelDataset.map(r => r.length))
         efficiencyState.excelDataset.splice(pos.row + 1, 0, Array.from({ length: colsCount }, () => ''))
         if (status) status.textContent = `Row inserted at ${pos.row + 2}`
-        if (grid) grid.dataset.fmtInsertRow = 'true'
+        recordExcel('insert-row')
         break
       }
       case 'delete-row': {
         const pos = efficiencyParseRef(efficiencyState.selectedCell) || { row: 1, col: 0 }
         if (efficiencyState.excelDataset.length > 2) efficiencyState.excelDataset.splice(pos.row, 1)
         if (status) status.textContent = `Row ${pos.row + 1} deleted`
-        if (grid) grid.dataset.fmtDeleteRow = 'true'
+        recordExcel('delete-row')
         break
       }
       case 'row-height':
       case 'autofit-row':
         grid?.querySelectorAll('td, .excel-cell').forEach(el => { el.style.height = '28px' })
-        if (grid) grid.dataset.fmtRowHeight = 'true'
+        recordExcel('row-height')
         break
       case 'col-width':
       case 'autofit-col':
         grid?.querySelectorAll('th:not(.excel-corner), td').forEach(el => { el.style.minWidth = '115px' })
-        if (grid) grid.dataset.fmtColWidth = 'true'
+        recordExcel('col-width')
         break
       case 'sort-asc':
       case 'sort-desc':
@@ -4362,35 +3898,38 @@ function efficiencyAttachExcel(tasks, question) {
             inp.value = efficiencyState.excelDataset[r]?.[c] ?? ''
           })
         })
-        if (grid) grid.dataset.fmtSorted = rawAction
         if (status) status.textContent = rawAction === 'sort-desc' ? 'Sorted Z to A' : 'Sorted A to Z'
+        recordExcel('sort', rawAction)
         break
       }
       case 'filter':
         grid?.classList.toggle('excel-filter-on')
-        if (grid) grid.dataset.fmtFilter = grid.classList.contains('excel-filter-on') ? 'true' : 'false'
         if (status) status.textContent = 'Filter toggled'
+        recordExcel('filter')
         break
-      case 'chart':
+      case 'table':
+        grid?.classList.toggle('excel-table-styled')
+        if (status) status.textContent = 'Table style applied'
+        recordExcel('table')
+        break
       case 'column-chart':
       case 'line-chart':
-      case 'pie-chart': {
-        grid?.parentElement?.querySelector('.excel-chart-preview')?.remove()
-        const chartDiv = document.createElement('div')
-        chartDiv.className = 'excel-chart-preview'
-        chartDiv.style.cssText = 'position:absolute;right:24px;bottom:36px;width:280px;background:#fff;border:1px solid #8a8886;box-shadow:0 4px 12px rgba(0,0,0,0.15);padding:12px;z-index:20;'
-        chartDiv.innerHTML = `<div style="display:flex;justify-content:space-between;font-size:11px;font-weight:700;margin-bottom:8px;"><span>📊 ${rawAction.toUpperCase()}</span><button type="button" onclick="this.closest('.excel-chart-preview').remove()" style="border:0;background:none;cursor:pointer;">✕</button></div><div style="display:flex;align-items:flex-end;gap:10px;height:90px;padding:8px;background:#f8fafc;border:1px solid #e1dfdd;"><div style="flex:1;background:#2b579a;height:65%;"></div><div style="flex:1;background:#217346;height:85%;"></div><div style="flex:1;background:#d24726;height:50%;"></div><div style="flex:1;background:#742774;height:95%;"></div></div>`
-        grid?.parentElement?.append(chartDiv)
-        if (grid) grid.dataset.fmtChart = 'true'
-        break
-      }
-      case 'freeze-panes':
-        grid?.classList.toggle('excel-frozen')
-        if (grid) grid.dataset.fmtFreezePanes = grid.classList.contains('excel-frozen') ? 'true' : 'false'
-        if (status) status.textContent = grid?.dataset.fmtFreezePanes === 'true' ? 'Freeze Panes active' : 'Freeze Panes off'
+      case 'pie-chart':
+      case 'pivot':
+        if (status) status.textContent = `${rawAction.replaceAll('-', ' ')} inserted`
+        recordExcel('chart', rawAction)
         break
       case 'gridlines':
-        grid?.classList.toggle('hide-gridlines')
+        grid?.classList.toggle('excel-hide-gridlines')
+        recordExcel('gridlines')
+        break
+      case 'formula-bar':
+        document.querySelector('.excel-formula-row')?.classList.toggle('is-hidden')
+        break
+      case 'freeze-panes':
+        grid?.classList.toggle('excel-freeze-first-row')
+        if (status) status.textContent = 'Freeze Panes active'
+        recordExcel('freeze-panes')
         break
       case 'zoom-in':
       case 'zoom-out':
@@ -4412,13 +3951,15 @@ function efficiencyAttachExcel(tasks, question) {
         document.querySelector('#excel-ribbon-content')?.classList.remove('is-collapsed')
         break
       case 'save':
-        if (status) status.textContent = 'Workbook saved'
+        try { localStorage.setItem('ag-eff-excel-draft', JSON.stringify(efficiencyState.excelDataset)) } catch {}
+        if (status) status.textContent = 'Workbook saved locally'
         break
       case 'print':
         window.print()
         break
       default:
         if (status) status.textContent = `${rawAction.replaceAll('-', ' ')} applied`
+        recordExcel(rawAction)
     }
   }
 
@@ -4443,38 +3984,49 @@ function efficiencyAttachExcel(tasks, question) {
     }
     const caretClick = event.target.closest('.o19-caret, .o19-combo-arrow')
     const menuTrigger = event.target.closest('[data-o19-menu]')
-    if (menuTrigger) {
-      const hasDirectExtra = menuTrigger.dataset.excelExtra
-      if (caretClick || !hasDirectExtra) {
+    if (menuTrigger && menuTrigger.tagName !== 'DIV') {
+      const hasDirectAction = menuTrigger.id === 'excel-border' || menuTrigger.id === 'excel-fill' || menuTrigger.id === 'excel-font-color-btn' || menuTrigger.id === 'excel-merge' || menuTrigger.id === 'excel-autosum'
+      if (caretClick || !hasDirectAction) {
         event.stopPropagation()
         o19OpenSubmenu(menuTrigger, menuTrigger.dataset.o19Menu, applyExcelExtra)
         return
       }
+    } else if (menuTrigger && menuTrigger.classList.contains('o19-combo') && menuTrigger.dataset.o19Menu !== 'excel-numfmt-menu') {
+      event.stopPropagation()
+      o19OpenSubmenu(menuTrigger, menuTrigger.dataset.o19Menu, applyExcelExtra)
+      return
     }
-    const extraBtn = event.target.closest('[data-excel-extra]')
-    if (extraBtn) {
-      applyExcelExtra(extraBtn.dataset.excelExtra)
+
+    const button = event.target.closest('button')
+    if (!button) return
+    if (button.id === 'excel-apply-cell') { applyCellFromBar(); return }
+    if (button.id === 'excel-cancel-cell') {
+      const cell = getActiveCellEl()
+      const bar = document.querySelector('#excel-formula-input')
+      if (cell && bar) bar.value = cell.value
+      return
+    }
+    if (button.id === 'excel-autosum') { insertExcelFormula('SUM'); return }
+    if (button.id === 'excel-add-sheet') {
+      const status = document.querySelector('#excel-status')
+      if (status) status.textContent = 'Sheet2 added'
+      return
+    }
+    if (button.dataset.excelFormula) {
+      insertExcelFormula(button.dataset.excelFormula)
+      return
+    }
+    if (button.dataset.excelExtra) {
+      applyExcelExtra(button.dataset.excelExtra)
     }
   })
 
-  document.querySelector('#excel-apply-cell')?.addEventListener('click', applyCellFromBar)
-  document.querySelector('#excel-cancel-cell')?.addEventListener('click', () => {
-    const cell = getActiveCellEl()
-    const bar = document.querySelector('#excel-formula-input')
-    if (cell && bar) bar.value = efficiencyState.excelFormulas[cell.dataset.cell] || cell.value
-  })
-  document.querySelector('#excel-add-sheet')?.addEventListener('click', () => {
-    const st = document.querySelector('#excel-status')
-    if (st) st.textContent = 'Sheet2 added'
+  excelApp?.addEventListener('change', (event) => {
+    if (event.target.id === 'excel-number-format') {
+      applyExcelExtra(`excel-numfmt:${event.target.value}`)
+    }
   })
 
-  excelApp?.querySelector('#excel-Font')?.addEventListener('change', e => applyExcelExtra(`excel-set-font:${e.target.value}`))
-  excelApp?.addEventListener('change', (e) => {
-    const t = e.target
-    if (t.id === 'excel-font-family') applyExcelExtra(`excel-set-font:${t.value}`)
-    else if (t.id === 'excel-font-size') applyExcelExtra(`excel-set-size:${t.value}`)
-    else if (t.id === 'excel-number-format') applyExcelExtra(`excel-numfmt:${t.value}`)
-  })
   excelApp?.querySelector('#excel-zoom-slider')?.addEventListener('input', (e) => {
     const pct = Number(e.target.value) || 100
     if (grid) grid.style.zoom = String(pct / 100)
@@ -4483,532 +4035,154 @@ function efficiencyAttachExcel(tasks, question) {
   })
 }
 
-/* ============================================================================
-   STRICT MULTI-REQUIREMENT DOM & STATE EVALUATOR
-   Every single task/requirement inside a question MUST be satisfied on the
-   exact target paragraph/table/cell, and no unrequested wrong formatting
-   may be applied. Evaluation & marks are shown ONLY at the end on Submit!
-   ============================================================================ */
-function efficiencyGetExcelRangeCells(rangeStr) {
-  const grid = document.querySelector('#excel-grid')
-  if (!grid || !rangeStr) return []
-  const parts = String(rangeStr).split(':')
-  const a = efficiencyParseRef(parts[0])
-  const b = efficiencyParseRef(parts[1] || parts[0])
-  if (!a || !b) return []
-  const out = []
-  for (let r = Math.min(a.row, b.row); r <= Math.max(a.row, b.row); r++) {
-    for (let c = Math.min(a.col, b.col); c <= Math.max(a.col, b.col); c++) {
-      const ref = efficiencyCellRef(r, c)
-      const el = grid.querySelector(`.excel-cell[data-cell="${ref}"]`)
-      if (el) out.push(el)
-    }
-  }
-  return out
-}
-
-function efficiencyEvaluateQuestionDetailed(q, qNum, allQuestions = []) {
-  const instr = String(q.instruction || (Array.isArray(q.tasks) ? q.tasks.join(' ') : '') || q.title || '')
-  const lower = instr.toLowerCase()
-  const checks = []
-
-  if (efficiencyState.module === 'word') {
-    const editor = document.querySelector('#word-document')
-    const partName = q.target_part || 'document'
-    const targetEl = partName === 'document'
-      ? editor
-      : (editor?.querySelector(`#word-part-${partName}`) || editor?.querySelector(`[data-doc-part="${partName}"]`))
-
-    // 1. Bold check
-    if (/\bbold\b|बोल्ड/i.test(instr)) {
-      checks.push({
-        label: 'Bold (बोल्ड)',
-        passed: targetEl?.dataset?.fmtBold === 'true'
-      })
-    }
-    // 2. Italic check
-    if (/\bitalic\b|इटैलिक|तिरछा/i.test(instr)) {
-      checks.push({
-        label: 'Italic (इटैलिक)',
-        passed: targetEl?.dataset?.fmtItalic === 'true'
-      })
-    }
-    // 3. Underline check
-    if (/\bunderlin\w*|अंडरलाइन|रेखांकित/i.test(instr)) {
-      checks.push({
-        label: 'Underline (अंडरलाइन)',
-        passed: targetEl?.dataset?.fmtUnderline === 'true'
-      })
-    }
-    // 4. Strikethrough check
-    if (/\bstrike\w*|स्ट्राइकथ्रू/i.test(instr)) {
-      checks.push({
-        label: 'Strikethrough',
-        passed: targetEl?.dataset?.fmtStrike === 'true'
-      })
-    }
-    // 5. Subscript / Superscript
-    if (/\bsubscript\b|सबस्क्रिप्ट/i.test(instr)) {
-      checks.push({ label: 'Subscript', passed: targetEl?.dataset?.fmtSubscript === 'true' })
-    }
-    if (/\bsuperscript\b|सुपरस्क्रिप्ट/i.test(instr)) {
-      checks.push({ label: 'Superscript', passed: targetEl?.dataset?.fmtSuperscript === 'true' })
-    }
-    // 6. Alignment checks
-    if (/\bcenter\b|सेंटर|मध्य\s*संरेखित|बीच\s*में/i.test(instr)) {
-      checks.push({
-        label: 'Center Align (सेंटर संरेखण)',
-        passed: targetEl?.dataset?.fmtAlign === 'center'
-      })
-    } else if (/\bright\s*align|align\s*right|दाएँ\s*संरेखित|दाईं\s*ओर/i.test(instr)) {
-      checks.push({
-        label: 'Right Align (दाएँ संरेखण)',
-        passed: targetEl?.dataset?.fmtAlign === 'right'
-      })
-    } else if (/\bjustif\w*|जस्टिफाई/i.test(instr)) {
-      checks.push({
-        label: 'Justify Align (जस्टिफाई)',
-        passed: targetEl?.dataset?.fmtAlign === 'justify'
-      })
-    } else if (/\bleft\s*align|align\s*left|बाएँ\s*संरेखित/i.test(instr)) {
-      checks.push({
-        label: 'Left Align (बाएँ संरेखण)',
-        passed: targetEl?.dataset?.fmtAlign === 'left'
-      })
-    }
-    // 7. Font Size check (only when font size is mentioned, not space after/before!)
-    const sizeMatch = instr.match(/(?:font\s*size|फ़ॉन्ट\s*(?:का\s*)?आकार|आकार)[^0-9]*(\d+(?:\.\d+)?)\s*(?:pt|पॉइंट)?/i)
-    if (sizeMatch) {
-      const expSize = sizeMatch[1]
-      checks.push({
-        label: `Font Size ${expSize} pt`,
-        passed: String(targetEl?.dataset?.fmtSize || '') === String(expSize)
-      })
-    }
-    // 8. Font Family check
-    const knownFonts = ['Calibri', 'Arial', 'Times New Roman', 'Cambria', 'Georgia', 'Verdana', 'Tahoma', 'Courier New', 'Garamond', 'Kruti Dev 010', 'DevLys 010', 'Mangal', 'Kokila', 'Aparajita']
-    for (const fName of knownFonts) {
-      if (new RegExp(`['"‘’]?\\b${fName.replace(/\s+/g, '\\s+')}\\b['"‘’]?`, 'i').test(instr)) {
-        checks.push({
-          label: `Font Family '${fName}'`,
-          passed: String(targetEl?.dataset?.fmtFont || '').toLowerCase() === fName.toLowerCase()
-        })
-        break
-      }
-    }
-    // 9. Text Highlight vs Shading
-    if (/\bhighlight\b|हाइलाइट/i.test(instr)) {
-      checks.push({
-        label: 'Text Highlight Color',
-        passed: targetEl?.dataset?.fmtHighlight === 'true'
-      })
-    }
-    if (/\bshad(?:ing|e)\b|शेडिंग|पृष्ठभूमि/i.test(instr)) {
-      checks.push({
-        label: 'Shading (पृष्ठभूमि रंग)',
-        passed: targetEl?.dataset?.fmtShading === 'true' || targetEl?.dataset?.fmtHighlight === 'true'
-      })
-    }
-    // 10. Line Spacing
-    if (/line\s*spacing|लाइन\s*स्पेसिंग/i.test(instr)) {
-      const spMatch = instr.match(/(?:line\s*spacing|लाइन\s*स्पेसिंग)[^0-9]*(\d+(?:\.\d+)?)/i)
-      const expSp = spMatch ? parseFloat(spMatch[1]) : null
-      const actualSp = parseFloat(targetEl?.dataset?.fmtLineSpacing || '0')
-      checks.push({
-        label: `Line Spacing ${expSp || ''}`.trim(),
-        passed: expSp ? Math.abs(actualSp - expSp) < 0.05 : actualSp > 0
-      })
-    }
-    // 11. Indentation (First-Line vs Hanging)
-    if (/first[-\s]*line\s*indent|फर्स्ट[-\s]*लाइन\s*इंडेंट|प्रथम\s*पंक्ति\s*इंडेंट/i.test(instr)) {
-      checks.push({
-        label: 'First-Line Indent',
-        passed: targetEl?.dataset?.fmtIndentType === 'first-line'
-      })
-    } else if (/hanging\s*indent|हैंगिंग\s*इंडेंट/i.test(instr)) {
-      checks.push({
-        label: 'Hanging Indent',
-        passed: targetEl?.dataset?.fmtIndentType === 'hanging'
-      })
-    } else if (/\bindent\b|इंडेंट/i.test(instr)) {
-      checks.push({
-        label: 'Paragraph Indent',
-        passed: Boolean(targetEl?.dataset?.fmtIndentType && targetEl?.dataset?.fmtIndentType !== 'none')
-      })
-    }
-    // 12. Space After / Before Paragraph
-    if (/space\s*after|spacing\s*after|के\s*बाद.*space/i.test(instr)) {
-      checks.push({
-        label: 'Space After Paragraph',
-        passed: parseFloat(targetEl?.dataset?.fmtSpaceAfter || '0') > 0
-      })
-    }
-    if (/space\s*before|spacing\s*before|से\s*पहले.*space/i.test(instr)) {
-      checks.push({
-        label: 'Space Before Paragraph',
-        passed: parseFloat(targetEl?.dataset?.fmtSpaceBefore || '0') > 0
-      })
-    }
-    // 13. Borders
-    if (/page\s*border|पेज\s*बॉर्डर/i.test(instr)) {
-      checks.push({
-        label: 'Page Border',
-        passed: editor?.dataset?.fmtPageBorder === 'true'
-      })
-    } else if (/\bborder\w*|बॉर्डर/i.test(instr)) {
-      checks.push({
-        label: 'Outside / Paragraph Border',
-        passed: targetEl?.dataset?.fmtBorder === 'true'
-      })
-    }
-    // 14. Bulleted / Numbered List
-    if (/\bbullet\w*|बुलेट/i.test(instr)) {
-      checks.push({
-        label: 'Bulleted List (•)',
-        passed: targetEl?.dataset?.fmtBullets === 'true'
-      })
-    }
-    if (/\bnumber(?:ed|ing)\s*list|क्रमांकित\s*सूची/i.test(instr)) {
-      checks.push({
-        label: 'Numbered List',
-        passed: targetEl?.dataset?.fmtNumbering === 'true'
-      })
-    }
-    // 15. Change Case
-    if (/\buppercase\b|अपरकेस|बड़े\s*अक्षरों/i.test(instr)) {
-      checks.push({ label: 'UPPERCASE', passed: targetEl?.dataset?.fmtCase === 'upper' })
-    } else if (/\blowercase\b|लोअरकेस|छोटे\s*अक्षरों/i.test(instr)) {
-      checks.push({ label: 'lowercase', passed: targetEl?.dataset?.fmtCase === 'lower' })
-    } else if (/\bcapitalize\s*each\s*word\b/i.test(instr)) {
-      checks.push({ label: 'Capitalize Each Word', passed: targetEl?.dataset?.fmtCase === 'capitalize' })
-    } else if (/\btoggle\s*case\b/i.test(instr)) {
-      checks.push({ label: 'tOGGLE cASE', passed: targetEl?.dataset?.fmtCase === 'toggle' })
-    }
-    // 16. Find & Replace
-    if (/find\s*(?:&|and)?\s*replace|replace\s*all|बदलें/i.test(instr)) {
-      checks.push({
-        label: 'Find & Replace Executed',
-        passed: editor?.dataset?.fmtFindReplace === 'true'
-      })
-    }
-    // 17. Page Margins & Orientation
-    if (/\bmargin\w*|मार्जिन/i.test(instr)) {
-      let expMargin = ''
-      if (/moderate/i.test(instr)) expMargin = 'moderate'
-      else if (/narrow/i.test(instr)) expMargin = 'narrow'
-      else if (/wide/i.test(instr)) expMargin = 'wide'
-      else if (/normal/i.test(instr)) expMargin = 'normal'
-      checks.push({
-        label: `Page Margins (${expMargin || 'Set'})`,
-        passed: expMargin ? editor?.dataset?.fmtMargins === expMargin : Boolean(editor?.dataset?.fmtMargins)
-      })
-    }
-    if (/\borientation\b|\blandscape\b|\bportrait\b|ओरिएंटेशन/i.test(instr)) {
-      const expOrient = /portrait|पोर्ट्रेट/i.test(instr) ? 'portrait' : 'landscape'
-      checks.push({
-        label: `Page Orientation (${expOrient})`,
-        passed: editor?.dataset?.fmtOrientation === expOrient
-      })
-    }
-    // 18. Header, Footer, Page Number, Watermark, Drop Cap
-    if (/\bheader\b|हेडर/i.test(instr) && !/table\s*header|column\s*header|हेडर\s*पंक्ति|सारणी/i.test(instr)) {
-      checks.push({
-        label: 'Document Header',
-        passed: Boolean(editor?.querySelector('.word-inserted-header'))
-      })
-    }
-    if (/\bfooter\b|फुटर/i.test(instr)) {
-      checks.push({
-        label: 'Document Footer',
-        passed: Boolean(editor?.querySelector('.word-inserted-footer'))
-      })
-    }
-    if (/page\s*number|पृष्ठ\s*संख्या/i.test(instr)) {
-      checks.push({
-        label: 'Page Number',
-        passed: Boolean(editor?.querySelector('.word-page-number'))
-      })
-    }
-    if (/\bwatermark\b|वाटरमार्क/i.test(instr)) {
-      checks.push({
-        label: 'Watermark',
-        passed: Boolean(editor?.querySelector('.word-watermark-layer'))
-      })
-    }
-    if (/drop\s*cap|ड्रॉप\s*कैप/i.test(instr)) {
-      checks.push({
-        label: 'Drop Cap',
-        passed: editor?.dataset?.fmtDropCap === 'true'
-      })
-    }
-
-    // Check against unrequested extra formatting on this target paragraph
-    if (targetEl && partName !== 'document') {
-      const samePartText = allQuestions
-        .filter(item => (item.target_part || 'document') === partName)
-        .map(item => item.instruction || item.title || '')
-        .join(' ')
-      const boldAllowed = /\bbold\b|बोल्ड/i.test(samePartText)
-      const italicAllowed = /\bitalic\b|इटैलिक|तिरछा/i.test(samePartText)
-      const underlineAllowed = /\bunderlin\w*|अंडरलाइन|रेखांकित/i.test(samePartText)
-      const strikeAllowed = /\bstrike\w*|स्ट्राइकथ्रू/i.test(samePartText)
-      if (!boldAllowed && targetEl.dataset.fmtBold === 'true') {
-        checks.push({ label: 'No Unrequested Bold (अनावश्यक बोल्ड निषेध)', passed: false })
-      }
-      if (!italicAllowed && targetEl.dataset.fmtItalic === 'true') {
-        checks.push({ label: 'No Unrequested Italic (अनावश्यक इटैलिक निषेध)', passed: false })
-      }
-      if (!underlineAllowed && targetEl.dataset.fmtUnderline === 'true') {
-        checks.push({ label: 'No Unrequested Underline (अनावश्यक अंडरलाइन निषेध)', passed: false })
-      }
-      if (!strikeAllowed && targetEl.dataset.fmtStrike === 'true') {
-        checks.push({ label: 'No Unrequested Strikethrough', passed: false })
-      }
-    }
-  } else {
-    // EXCEL MODULE STRICT MULTI-REQUIREMENT VALIDATION
-    const grid = document.querySelector('#excel-grid')
-    const rangeStr = q.target_cells || 'A2'
-    const rangeCells = efficiencyGetExcelRangeCells(rangeStr)
-    const firstRef = String(rangeStr).split(':')[0].trim().toUpperCase()
-    const firstCell = grid?.querySelector(`.excel-cell[data-cell="${firstRef}"]`) || rangeCells[0]
-    const targetHasFmt = (key, expectedVal) => {
-      if (firstCell?.dataset?.[key] === expectedVal) return true
-      return rangeCells.length > 0 && rangeCells.some(c => c.dataset?.[key] === expectedVal)
-    }
-
-    // 1. Formula Check
-    if (q.expected_formula || /=sum|=average|=max|=min|=count|=if|\bformula\b|फॉर्मूला/i.test(instr)) {
-      const actualRaw = String(efficiencyState.excelFormulas?.[firstRef] || '').replace(/\s+/g, '').toUpperCase()
-      const expRaw = String(q.expected_formula || '').replace(/\s+/g, '').toUpperCase()
-      let formulaOk = false
-      if (actualRaw.startsWith('=')) {
-        if (expRaw && actualRaw === expRaw) {
-          formulaOk = true
-        } else if (expRaw) {
-          const actualVal = efficiencyEvaluateFormula(actualRaw)
-          const expVal = efficiencyEvaluateFormula(expRaw)
-          const fnPrefix = expRaw.match(/^=([A-Z]+)/)?.[1]
-          const hasMatchingFn = !fnPrefix || actualRaw.startsWith(`=${fnPrefix}(`)
-          if (actualVal !== '#VALUE!' && String(actualVal) === String(expVal) && hasMatchingFn) {
-            formulaOk = true
-          }
-        }
-      }
-      checks.push({
-        label: `Formula ${q.expected_formula || ''} in ${firstRef}`.trim(),
-        passed: formulaOk
-      })
-    }
-    // 2. Bold
-    if (/\bbold\b|बोल्ड/i.test(instr)) {
-      checks.push({ label: `Bold on ${rangeStr}`, passed: targetHasFmt('fmtBold', 'true') })
-    }
-    // 3. Italic
-    if (/\bitalic\b|इटैलिक/i.test(instr)) {
-      checks.push({ label: `Italic on ${rangeStr}`, passed: targetHasFmt('fmtItalic', 'true') })
-    }
-    // 4. Underline
-    if (/\bunderlin\w*|अंडरलाइन/i.test(instr)) {
-      checks.push({ label: `Underline on ${rangeStr}`, passed: targetHasFmt('fmtUnderline', 'true') })
-    }
-    // 5. Fill Color
-    if ((/fill\s*color|fill|shading|रंग\s*भरें|शेडिंग/i.test(instr)) && !(/conditional\s*formatting|कंडीशनल/i.test(instr))) {
-      checks.push({ label: `Fill Color on ${rangeStr}`, passed: targetHasFmt('fmtFill', 'true') })
-    }
-    // 6. Merge & Center vs Center Align
-    if (/merge\s*(?:&|and)?\s*center|मर्ज/i.test(instr)) {
-      checks.push({ label: `Merge & Center on ${rangeStr}`, passed: targetHasFmt('fmtMerge', 'true') })
-    } else if (/\bcenter\b|सेंटर/i.test(instr)) {
-      checks.push({ label: `Center Align on ${rangeStr}`, passed: targetHasFmt('fmtAlign', 'center') })
-    } else if (/\bright\s*align|align\s*right|दाएँ/i.test(instr)) {
-      checks.push({ label: `Right Align on ${rangeStr}`, passed: targetHasFmt('fmtAlign', 'right') })
-    } else if (/\bleft\s*align|align\s*left|बाएँ/i.test(instr)) {
-      checks.push({ label: `Left Align on ${rangeStr}`, passed: targetHasFmt('fmtAlign', 'left') })
-    }
-    // 7. Borders
-    if (/\bborder\w*|बॉर्डर/i.test(instr)) {
-      checks.push({ label: `Borders on ${rangeStr}`, passed: targetHasFmt('fmtBorder', 'true') })
-    }
-    // 8. Currency / Number Format
-    if (/currency|₹|\$|करेंसी/i.test(instr)) {
-      checks.push({ label: `Currency Format (₹) on ${rangeStr}`, passed: targetHasFmt('fmtNum', 'currency') })
-    }
-    // 9. Conditional Formatting
-    if (/conditional\s*formatting|कंडीशनल\s*फॉर्मेटिंग/i.test(instr)) {
-      checks.push({ label: `Conditional Formatting on ${rangeStr}`, passed: targetHasFmt('fmtCond', 'true') || grid?.dataset?.fmtCond === 'true' })
-    }
-    // 10. Wrap Text
-    if (/wrap\s*text|रैप\s*टेक्स्ट/i.test(instr)) {
-      checks.push({ label: `Wrap Text on ${rangeStr}`, passed: targetHasFmt('fmtWrap', 'true') })
-    }
-    // 11. Freeze Panes
-    if (/freeze\s*panes|फ्रीज\s*पेन्स/i.test(instr)) {
-      checks.push({ label: 'Freeze Panes (View Tab)', passed: grid?.dataset?.fmtFreezePanes === 'true' })
-    }
-  }
-
-  const solved = checks.length > 0 && checks.every(c => c.passed)
-  return { solved, checks }
+function efficiencyMatchTaskActions(taskStr) {
+  const t = String(taskStr || "").toLowerCase()
+  const rules = []
+  if (/bold|बोल्ड/.test(t)) rules.push(["bold", "excel-bold"])
+  if (/italic|इटैलिक/.test(t)) rules.push(["italic"])
+  if (/underlin|अंडरलाइन/.test(t)) rules.push(["underline", "underline-single", "underline-double", "underline-thick", "underline-dotted", "underline-dashed", "underline-wavy"])
+  if (/center|बीच में|मध्य|merge/.test(t)) rules.push(["justifyCenter", "align-center", "center", "excel-merge", "merge"])
+  if (/right|दाएँ/.test(t)) rules.push(["justifyRight", "align-right"])
+  if (/left|बाएँ/.test(t)) rules.push(["justifyLeft", "align-left"])
+  if (/justif|जस्टिफाई/.test(t)) rules.push(["justifyFull", "justify-normal", "justify-low", "justify-medium", "justify-high"])
+  if (/font|size|फ़ॉन्ट|आकार|calibri|arial|times|mangal|kruti/.test(t)) rules.push(["font", "excel-font", "excel-font-size", "font-size-16", "font-size-14", "font-size-12", "font-arial", "font-times new roman", "font-calibri", "font-mangal", "font-kruti dev 010"])
+  if (/table|टेबल|सारणी/.test(t)) rules.push(["insert-table", "table"])
+  if (/spacing|स्पेसिंग|लाइन/.test(t)) rules.push(["line-spacing", "space-before", "space-after"])
+  if (/margin|मार्जिन/.test(t)) rules.push(["margins", "margins-narrow", "margins-wide", "margins-moderate", "margins-normal"])
+  if (/orient|landscape|portrait/.test(t)) rules.push(["orientation", "orientation-landscape", "orientation-portrait", "excel-orientation"])
+  if (/size|a4|legal|letter/.test(t)) rules.push(["paper-size", "size-a4", "size-letter", "size-legal", "margins"])
+  if (/column|कॉलम/.test(t)) rules.push(["columns", "col-width"])
+  if (/bullet|बुलेट/.test(t)) rules.push(["insertUnorderedList", "bullets"])
+  if (/number|क्रमांक|currency|percent|format|₹|\$/.test(t)) rules.push(["insertOrderedList", "numbering", "number-format", "excel-currency", "numfmt-currency", "numfmt-accounting", "numfmt-percent", "numfmt-number", "decimal"])
+  if (/drop cap|ड्रॉप कैप/.test(t)) rules.push(["drop-cap"])
+  if (/indent|इंडेंट/.test(t)) rules.push(["indent", "hanging-indent", "decrease-indent"])
+  if (/watermark|वाटरमार्क/.test(t)) rules.push(["watermark"])
+  if (/header|हेडर/.test(t)) rules.push(["header"])
+  if (/footer|फुटर/.test(t)) rules.push(["footer"])
+  if (/page number|पृष्ठ संख्या/.test(t)) rules.push(["page-number"])
+  if (/border|बॉर्डर/.test(t)) rules.push(["page-border", "border", "excel-border"])
+  if (/shad|highlight|fill|रंग|हाइलाइट|शेiडिंग/.test(t)) rules.push(["paragraph-shading", "shading", "highlight", "font-color", "page-color", "excel-fill", "excel-font-color", "conditional-format", "cell-style"])
+  if (/replace|find|बदलें|खोज/.test(t)) rules.push(["find-replace", "excel-find-replace"])
+  if (/upper|lower|case|केस|capital/.test(t)) rules.push(["change-case", "case-upper", "case-lower", "case-capitalize", "case-sentence", "case-toggle"])
+  if (/sub|super|घात/.test(t)) rules.push(["subscript", "superscript"])
+  if (/strike/.test(t)) rules.push(["strikethrough"])
+  if (/sort|सॉर्ट|क्रम/.test(t)) rules.push(["sort", "sort-asc", "sort-desc"])
+  if (/filter|फ़िल्टर/.test(t)) rules.push(["filter"])
+  if (/chart|चार्ट|graph/.test(t)) rules.push(["chart", "column-chart", "line-chart", "pie-chart"])
+  if (/wrap/.test(t)) rules.push(["wrap-text"])
+  if (/freeze/.test(t)) rules.push(["freeze-panes"])
+  if (/sum|average|min|max|count|if|formula|autosum|total|योग|औसत|फॉर्मूला/.test(t)) rules.push(["formula", "formula-sum", "formula-average", "formula-min", "formula-max", "formula-count", "formula-if"])
+  return rules
 }
 
 function efficiencyEvaluateQuestionSolved(q, qNum) {
-  const questions = Array.isArray(efficiencyState.fileData?.questions) ? efficiencyState.fileData.questions : []
-  return efficiencyEvaluateQuestionDetailed(q, qNum, questions).solved
+  const qSet = efficiencyState.perQuestionActions?.[qNum] || new Set()
+  const partSet = (q.target_part && efficiencyState.partActions?.[q.target_part]) || new Set()
+  const expected = q.expected_action || ''
+  if (efficiencyState.module === 'excel' && q.expected_formula && q.target_cells) {
+    const targetRef = String(q.target_cells).split(':')[0].trim().toUpperCase()
+    const cellFormula = String(efficiencyState.excelFormulas?.[targetRef] || '').replace(/\s+/g, '').toUpperCase()
+    const expClean = String(q.expected_formula).replace(/\s+/g, '').toUpperCase()
+    if (cellFormula && (cellFormula === expClean || cellFormula.startsWith(expClean.split('(')[0]))) return true
+    if (qSet.has('formula')) return true
+    return false
+  }
+  if (expected && (qSet.has(expected) || partSet.has(expected))) return true
+  const combinedText = (q.instruction || (Array.isArray(q.tasks) ? q.tasks.join(' ') : '') || q.title || '').toLowerCase()
+  const rules = efficiencyMatchTaskActions(combinedText)
+  if (rules.length && rules.some(group => group.some(a => qSet.has(a) || partSet.has(a)))) return true
+  return false
 }
 
-// During the active test, efficiencyUpdateScore is a no-op so no live marks or green status appear on screen!
 function efficiencyUpdateScore() {
-  // All evaluation and marks calculation happen strictly on Submit Test
+  const questions = Array.isArray(efficiencyState.fileData?.questions) && efficiencyState.fileData.questions.length ? efficiencyState.fileData.questions : (efficiencyState.question ? [efficiencyState.question] : [])
+  const totalMax = 50
+  let totalEarned = 0
+  questions.forEach((q, idx) => {
+    const qNum = idx + 1
+    const qMax = Number(q.marks) || (qNum <= 3 || qNum >= 14 ? 3.0 : 3.5)
+    const solved = efficiencyEvaluateQuestionSolved(q, qNum)
+    const qMarks = solved ? qMax : 0
+    totalEarned = +(totalEarned + qMarks).toFixed(1)
+    efficiencyState.questionMarks[qNum] = `${qMarks}/${qMax}`
+    const badge = document.querySelector(`#efficiency-q-mark-${qNum}`)
+    if (badge) badge.textContent = solved ? `✓ ${qMax}/${qMax}` : `0/${qMax}`
+    const card = document.querySelector(`#o19-q-card-${qNum}`)
+    if (card) card.classList.toggle('answered', solved)
+  })
+  efficiencyState.points = totalEarned
+  const scoreEl = document.querySelector('#efficiency-live-score')
+  if (scoreEl) scoreEl.textContent = `${totalEarned} / ${totalMax} PTS`
 }
 
 function efficiencySubmit(page, tasks, question, timedOut = false) {
   if (document.querySelector('#efficiency-result-modal')) return
   o19CloseMenu()
   if (efficiencyState.timer) { clearInterval(efficiencyState.timer); efficiencyState.timer = null }
+  efficiencyUpdateScore()
   const isWord = page === 'word-efficiency'
   const lang = efficiencyState.language || 'en'
   const questions = Array.isArray(efficiencyState.fileData?.questions) && efficiencyState.fileData.questions.length ? efficiencyState.fileData.questions : [question]
-  const total50 = 50
-
-  // Check RSSB LDC Rule: if default paragraph/table text was deleted or arbitrarily altered
-  const corruptedParts = new Set()
-  if (isWord && efficiencyState.initialWordParts) {
-    Object.entries(efficiencyState.initialWordParts).forEach(([partKey, initialTxt]) => {
-      const currentEl = document.querySelector(`#word-document [data-doc-part="${partKey}"]`)
-      const currentTxt = (currentEl?.textContent || '').trim()
-      if (!currentTxt || currentTxt.length < Math.floor(initialTxt.length * 0.45)) {
-        corruptedParts.add(partKey)
-      }
-    })
-  }
-
-  let adjustedRawPoints50 = 0
-  const questionBreakdown = questions.map((q, i) => {
-    const qNum = i + 1
-    const qMax50 = Number(q.marks) || (qNum <= 3 || qNum >= 14 ? 3.0 : 3.5)
-    const qMax25 = +(qMax50 * 0.5).toFixed(2)
-    const evalDetail = efficiencyEvaluateQuestionDetailed(q, qNum, questions)
-    const partDeletedPenalty = Boolean(isWord && q.target_part && corruptedParts.has(q.target_part))
-    const isOk = evalDetail.solved && !partDeletedPenalty
-    const earned50 = isOk ? qMax50 : 0
-    const earned25 = isOk ? qMax25 : 0
-    adjustedRawPoints50 = +(adjustedRawPoints50 + earned50).toFixed(2)
-    return {
-      qNum,
-      id: q.id || `Q${qNum}`,
-      title: q.instruction || (Array.isArray(q.tasks) ? q.tasks[0] : '') || q.title || `Question ${qNum}`,
-      difficulty: q.difficulty || (qNum <= 3 ? 'Easy' : qNum <= 10 ? 'Medium' : 'Hard'),
-      targetPart: q.target_part || q.target_cells || 'Document',
-      expectedAction: q.expected_action || '',
-      expectedFormula: q.expected_formula || '',
-      maxMarks50: qMax50,
-      maxMarks25: qMax25,
-      earnedMarks50: earned50,
-      earnedMarks25: earned25,
-      solved: isOk,
-      checks: evalDetail.checks,
-      partDeletedPenalty,
-      solutionSteps: Array.isArray(q.solution_steps) && q.solution_steps.length ? q.solution_steps : ['1. Select the target text or cell.', '2. Go to the appropriate Ribbon Tab and Group.', '3. Click the required command or submenu option.']
-    }
-  })
-
-  const earned50 = Math.min(total50, Math.max(0, +(adjustedRawPoints50 || 0).toFixed(1)))
-  const marksOutOf25 = Math.min(25, Math.max(0, +(earned50 * 0.5).toFixed(2)))
-  const percent = Math.round((marksOutOf25 / 25) * 100)
+  const total = 50
+  const earned = Math.min(total, Math.max(0, +(efficiencyState.points || 0).toFixed(1)))
+  const percent = Math.round((earned / total) * 100)
   const duration = Math.max(1, Math.round((Date.now() - (efficiencyState.startedAt || Date.now())) / 1000))
   const fileIdStr = efficiencyFileId(efficiencyState.module, lang, efficiencyState.fileNo || 1)
-  const solvedCount = questionBreakdown.filter(item => item.solved).length
+  const solvedCount = questions.filter((q, i) => {
+    const qMax = Number(q.marks) || (i + 1 <= 3 || i + 1 >= 14 ? 3.0 : 3.5)
+    return efficiencyState.questionMarks[i + 1] === `${qMax}/${qMax}`
+  }).length
   const wrongCount = questions.length - solvedCount
-
-  if (efficiencyState.examHallMode && typeof efficiencyState.examHallCallback === 'function') {
-    const editorEl = isWord ? document.querySelector('#word-document') : document.querySelector('#excel-grid')
-    const snapshotHtml = editorEl ? editorEl.outerHTML : ''
-    const cb = efficiencyState.examHallCallback
-    efficiencyState.examHallMode = false
-    efficiencyState.examHallCallback = null
-    efficiencyState.examHallAbort = null
-    cb({
-      module: efficiencyState.module,
-      language: lang,
-      fileNo: efficiencyState.fileNo || 1,
-      fileId: fileIdStr,
-      rawEarned50: earned50,
-      marksOutOf25,
-      maxMarks25: 25,
-      qualifyingMarks: 9.0,
-      scStQualifyingMarks: 7.75,
-      qualified: marksOutOf25 >= 9.0,
-      scStQualified: marksOutOf25 >= 7.75,
-      percent,
-      solvedCount,
-      wrongCount,
-      totalQuestions: questions.length,
-      durationSeconds: duration,
-      timedOut,
-      blockedShortcutAttempts: efficiencyState.blockedShortcutAttempts || 0,
-      corruptedPartsCount: corruptedParts.size,
-      snapshotHtml,
-      questionBreakdown
-    })
-    return
-  }
 
   const overlay = document.createElement('div')
   overlay.id = 'efficiency-result-modal'
   overlay.className = 'efficiency-result-overlay'
   overlay.innerHTML = `
-    <section class="efficiency-result-dialog" role="dialog" aria-modal="true" style="max-width:880px;width:95vw;">
+    <section class="efficiency-result-dialog" role="dialog" aria-modal="true" style="max-width:860px;width:95vw;">
       <div class="efficiency-result-brand">
         <span>${isWord ? 'W' : 'X'}</span>
         <div>
-          <small>RAJASTHAN RSSB LDC OFFICIAL 25-MARK EVALUATION &amp; STEP-BY-STEP SOLUTIONS</small>
-          <h2 id="efficiency-result-title">${timedOut ? 'Time Up (10:00) — Final Result & Solutions' : 'Efficiency Test Final Result & Step-by-Step Solutions'}</h2>
-          <p>Test #${efficiencyState.fileNo || 1} (${efficiencyEscape(fileIdStr)}) · Fully Solved: ${solvedCount}/15 · Incomplete/Missed: ${wrongCount}/15 · Qualifying: 9.00 / 25</p>
+          <small>RAJASTHAN RSSB LDC &amp; HIGH COURT LDC · STEP-BY-STEP SOLUTION REPORT</small>
+          <h2 id="efficiency-result-title">${timedOut ? 'Time Up (10:00) — Result & Solutions' : 'Efficiency Test Result & Step-by-Step Menu Solutions'}</h2>
+          <p>Test #${efficiencyState.fileNo || 1} (${efficiencyEscape(fileIdStr)}) · Solved: ${solvedCount}/15 · Missed: ${wrongCount}/15</p>
         </div>
         <button type="button" id="efficiency-result-close">×</button>
       </div>
       <div class="efficiency-result-score">
-        <div>
-          <small>Marks Obtained (RSSB LDC 25-Mark Scale)</small>
-          <strong>${marksOutOf25.toFixed(2)} <span>/ 25.00</span></strong>
-          <small style="display:block;margin-top:4px;font-weight:700;color:${marksOutOf25 >= 9 ? '#15803d' : '#b91c1c'};">
-            ${marksOutOf25 >= 9 ? '✓ QUALIFIED (उत्तीर्ण ≥ 9.00)' : '✗ NOT QUALIFIED (अनुत्तीर्ण < 9.00)'}
-          </small>
-        </div>
+        <div><small>Marks Obtained (Out of 50)</small><strong>${earned} <span>/ 50</span></strong></div>
         <div class="efficiency-score-ring" style="--eff-score:${percent}%"><strong>${percent}%</strong><small>Score</small></div>
       </div>
       <div class="efficiency-result-metrics">
         <article><small>Test ID</small><strong>Test #${String(efficiencyState.fileNo || 1).padStart(2, '0')}</strong></article>
-        <article><small>Fully Correct Tasks</small><strong style="color:#15803d;">${solvedCount} / 15</strong></article>
-        <article><small>Missed / Partial Tasks</small><strong style="color:#b91c1c;">${wrongCount} / 15</strong></article>
+        <article><small>Correct Tasks</small><strong style="color:#15803d;">${solvedCount} / 15</strong></article>
+        <article><small>Missed Tasks</small><strong style="color:#b91c1c;">${wrongCount} / 15</strong></article>
         <article><small>Time Taken</small><strong>${efficiencyFormatTime(duration)} / 10:00</strong></article>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:8px;">
-        <h3 style="margin:0;">Task-by-Task Verification &amp; Step-by-Step Solution Guide</h3>
+        <h3 style="margin:0;">Step-by-Step Solution Guide (Exact Menu, Tab, Group &amp; Submenu Path)</h3>
         <div class="o19-result-filter-bar">
           <button type="button" class="o19-res-filter-btn active" data-sol-filter="all">All (15)</button>
-          <button type="button" class="o19-res-filter-btn" data-sol-filter="wrong">✗ Missed / Incomplete (${wrongCount})</button>
+          <button type="button" class="o19-res-filter-btn" data-sol-filter="wrong">✗ Missed (${wrongCount})</button>
           <button type="button" class="o19-res-filter-btn" data-sol-filter="correct">✓ Correct (${solvedCount})</button>
         </div>
       </div>
       <div class="o19-solution-list" id="o19-solution-list">
-        ${questionBreakdown.map((item) => {
-          const checksHtml = (item.checks || []).map(chk =>
-            `<span style="display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:${chk.passed ? '#dcfce7' : '#fee2e2'};color:${chk.passed ? '#15803d' : '#b91c1c'};">${chk.passed ? '✓' : '✗'} ${efficiencyEscape(chk.label)}</span>`
-          ).join(' ')
+        ${questions.map((q, i) => {
+          const qNum = i + 1
+          const qMax = Number(q.marks) || (qNum <= 3 || qNum >= 14 ? 3.0 : 3.5)
+          const isOk = efficiencyState.questionMarks[qNum] === `${qMax}/${qMax}`
+          const diff = q.difficulty || (qNum <= 3 ? 'Easy' : qNum <= 10 ? 'Medium' : 'Hard')
+          const steps = Array.isArray(q.solution_steps) && q.solution_steps.length ? q.solution_steps : ['1. Select the target text or cell.', '2. Go to the appropriate Ribbon Tab and Group.', '3. Click the required command or submenu option.']
+          const instr = q.instruction || (Array.isArray(q.tasks) ? q.tasks[0] : '') || q.title
           return `
-            <div class="o19-solution-card ${item.solved ? 'is-correct' : 'is-wrong'}" data-sol-state="${item.solved ? 'correct' : 'wrong'}">
+            <div class="o19-solution-card ${isOk ? 'is-correct' : 'is-wrong'}" data-sol-state="${isOk ? 'correct' : 'wrong'}">
               <div class="o19-sol-head">
-                <span class="o19-sol-title">Q${item.qNum}. ${efficiencyEscape(item.title)} <small style="font-weight:700;color:#64748b;">[${item.maxMarks25} Marks]</small></span>
-                <span class="o19-sol-status ${item.solved ? 'pass' : 'fail'}">${item.solved ? `✓ ${item.earnedMarks25} / ${item.maxMarks25} Marks` : `✗ 0 / ${item.maxMarks25} Marks`}</span>
-              </div>
-              <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;">
-                ${checksHtml || '<span style="font-size:11px;color:#64748b;">Task verification completed</span>'}
+                <span class="o19-sol-title">Q${qNum}. ${efficiencyEscape(instr)} <small style="font-weight:700;color:#64748b;">[${efficiencyEscape(diff)} · ${qMax} PTS]</small></span>
+                <span class="o19-sol-status ${isOk ? 'pass' : 'fail'}">${isOk ? `✓ ${qMax}/${qMax} Correct` : `✗ 0/${qMax} Missed`}</span>
               </div>
               <div class="o19-sol-steps-box">
                 <span class="o19-sol-steps-title">💡 ${lang === 'hi' ? 'स्टेप-बाय-स्टेप समाधान (किस Tab -> Group -> Menu/Submenu में जाकर क्या करें):' : 'Step-by-Step Solution (Exact Tab -> Group -> Menu / Submenu Procedure):'}</span>
-                <div class="o19-sol-steps-ol">${item.solutionSteps.map(st => `<div style="margin-bottom:4px;">${efficiencyEscape(st)}</div>`).join('')}</div>
+                <div class="o19-sol-steps-ol">${steps.map(st => `<div style="margin-bottom:4px;">${efficiencyEscape(st)}</div>`).join('')}</div>
               </div>
             </div>
           `

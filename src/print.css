@@ -39,16 +39,3 @@
   #typing-report-modal .report-detail-grid { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
   #typing-report-modal .report-comparison { break-inside: avoid; }
 }
-
-@media print {
-  body.printing-rssb-report * { visibility: hidden !important; }
-  body.printing-rssb-report #rssb-exam-hall-fullscreen,
-  body.printing-rssb-report #rssb-exam-hall-fullscreen * { visibility: visible !important; }
-  body.printing-rssb-report #rssb-exam-hall-fullscreen {
-    position: absolute !important; inset: 0 !important; height: auto !important;
-    overflow: visible !important; background: #ffffff !important;
-  }
-  body.printing-rssb-report #rssb-printable-report-area { overflow: visible !important; padding: 0 !important; }
-  body.printing-rssb-report .screen-only { display: none !important; }
-  body.printing-rssb-report .rssb-paper-detail-card { display: flex !important; break-inside: avoid; page-break-inside: avoid; }
-}
