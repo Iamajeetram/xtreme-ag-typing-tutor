@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Build Vite App & Package Windows Installer (.exe)
-        run: npm run dist:win
+        run: npx electron-builder --win --x64 --publish never
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
 
