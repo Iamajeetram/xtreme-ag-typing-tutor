@@ -5847,3 +5847,21 @@ body.learn-modal-open{overflow:hidden}
   flex-direction: column;
   gap: 8px;
 }
+
+/* Read-only non-clickable sidebar question cards & Excel range highlight */
+.o19-nexus-q-card.o19-readonly-q-card {
+  cursor: default !important;
+  user-select: none;
+  border-color: #dbe3ee !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+}
+.o19-nexus-q-card.o19-readonly-q-card:hover {
+  border-color: #dbe3ee !important;
+  background: #ffffff !important;
+  transform: none !important;
+}
+.excel-cell.is-selected-range {
+  background-color: rgba(33, 115, 70, 0.08);
+  outline: 1.5px solid #217346;
+}
