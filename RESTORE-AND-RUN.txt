@@ -1,0 +1,14 @@
+AG Typing Tutor — COMPLETE PROJECT (English + Hindi + Learning)
+
+IMPORTANT: Extract this entire ZIP into a NEW folder. Do not extract over individual files and do not delete your existing project until you test this copy.
+
+Includes the full Vite project, existing Learning/Practice/Game modules, desktop Electron configuration, Android Capacitor project, GitHub Actions workflows (where present in the base repository), and all 300 English + 300 Hindi original exercise TXT files with manifests.
+
+Run locally on Mac:
+  cd path/to/extracted/project
+  npm install
+  npm run dev
+
+Open the Local URL printed by Vite (usually http://localhost:5173).
+
+Scope note: the integrated Hindi passages are Unicode Hindi. This package does not claim to implement DevLys 010 legacy-keyboard conversion unless that conversion is separately added and verified.

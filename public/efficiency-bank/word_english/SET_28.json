@@ -1,0 +1,201 @@
+{
+  "set_id": "SET_28",
+  "category": "word_english",
+  "total_questions": 15,
+  "total_marks": 25.0,
+  "content": {
+    "paragraphs": [
+      {
+        "paragraph_number": 1,
+        "text": "The expansion of secure blockchain systems introduces highly resilient methods for managing digital authentication and preserving the integrity of legal record databases."
+      },
+      {
+        "paragraph_number": 2,
+        "text": "Technological advancements in machine learning and artificial intelligence are revolutionizing modern healthcare systems, facilitating rapid diagnostics and customized patient treatment protocols."
+      },
+      {
+        "paragraph_number": 3,
+        "text": "Modern smart-city architectures focus heavily on building low-emission mass transit systems and optimizing municipal waste processing channels dynamically."
+      },
+      {
+        "paragraph_number": 4,
+        "text": "Modern smart-city architectures focus heavily on building low-emission mass transit systems and optimizing municipal waste processing channels dynamically."
+      },
+      {
+        "paragraph_number": 5,
+        "text": "Environmental sustainability demands a strategic global effort to reduce high industrial carbon outputs and systematically transition to renewable solar and wind energy grids."
+      },
+      {
+        "paragraph_number": 6,
+        "text": "Advanced logistic designs and automated warehousing mechanisms play a pivotal role in streamlining shipping pipelines and reducing international commerce overheads."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Change Paragraph 3 font size to 10pt and line spacing to 1.4000000000000001.",
+      "steps": [
+        "Select the complete body of text in Paragraph 3.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '10'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 2,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Change Paragraph 3 font size to 10pt and line spacing to 1.5.",
+      "steps": [
+        "Select the complete body of text in Paragraph 3.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '10'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 3,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Change Paragraph 2 font size to 11pt and line spacing to 1.4000000000000001.",
+      "steps": [
+        "Select the complete body of text in Paragraph 2.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '11'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 4,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Change Paragraph 1 font size to 12pt and line spacing to 1.2000000000000002.",
+      "steps": [
+        "Select the complete body of text in Paragraph 1.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '12'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 5,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Change Paragraph 3 font size to 10pt and line spacing to 1.3.",
+      "steps": [
+        "Select the complete body of text in Paragraph 3.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '10'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 6,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Change Paragraph 1 font size to 14pt and line spacing to 1.1.",
+      "steps": [
+        "Select the complete body of text in Paragraph 1.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '14'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 7,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Change Paragraph 2 font size to 11pt and line spacing to 1.1.",
+      "steps": [
+        "Select the complete body of text in Paragraph 2.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '11'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 8,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Change Paragraph 5 font size to 10pt and line spacing to 1.2000000000000002.",
+      "steps": [
+        "Select the complete body of text in Paragraph 5.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '10'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 9,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Change Paragraph 4 font size to 11pt and line spacing to 1.4000000000000001.",
+      "steps": [
+        "Select the complete body of text in Paragraph 4.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '11'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 10,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Change Paragraph 6 font size to 15pt and line spacing to 1.3.",
+      "steps": [
+        "Select the complete body of text in Paragraph 6.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '15'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 11,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Change Paragraph 2 font size to 13pt and line spacing to 1.5.",
+      "steps": [
+        "Select the complete body of text in Paragraph 2.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '13'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 12,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Change Paragraph 5 font size to 16pt and line spacing to 1.5.",
+      "steps": [
+        "Select the complete body of text in Paragraph 5.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '16'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 13,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Change Paragraph 2 font size to 11pt and line spacing to 1.4000000000000001.",
+      "steps": [
+        "Select the complete body of text in Paragraph 2.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '11'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 14,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Change Paragraph 6 font size to 17pt and line spacing to 1.2000000000000002.",
+      "steps": [
+        "Select the complete body of text in Paragraph 6.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '17'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    },
+    {
+      "question_number": 15,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Change Paragraph 2 font size to 11pt and line spacing to 1.3.",
+      "steps": [
+        "Select the complete body of text in Paragraph 2.",
+        "Navigate to the Home Ribbon tab and locate the Font command group to select size '11'.",
+        "Open paragraph customization box and update line spacing accordingly."
+      ]
+    }
+  ]
+}

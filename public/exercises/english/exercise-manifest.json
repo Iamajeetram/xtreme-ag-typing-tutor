@@ -1,0 +1,2107 @@
+{
+  "language": "en",
+  "displayName": "English Typing",
+  "count": 300,
+  "exercises": [
+    {
+      "id": "001",
+      "filename": "exercise_001.txt",
+      "title": "Exercise 001 — In the damp warmth of a modest machine shop in Milwaukee, Wisconsin, during the late…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "002",
+      "filename": "exercise_002.txt",
+      "title": "Exercise 002 — For centuries, the human impulse to record thought remained bound to the deliberate…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "003",
+      "filename": "exercise_003.txt",
+      "title": "Exercise 003 — The afternoon air hung thick with the scent of salt, roasted coffee, and melting tar…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "004",
+      "filename": "exercise_004.txt",
+      "title": "Exercise 004 — For centuries, the transcription of human thought relied entirely upon the slow,…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "005",
+      "filename": "exercise_005.txt",
+      "title": "Exercise 005 — In the humid summer of 1867, inside a modest machine shop in Milwaukee, Wisconsin, an…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "006",
+      "filename": "exercise_006.txt",
+      "title": "Exercise 006 — The gentle hum of the printing press in the dim workshop signaled the dawn of a…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "007",
+      "filename": "exercise_007.txt",
+      "title": "Exercise 007 — The sharp scent of roasted coffee beans has a remarkable way of grounding the human…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "008",
+      "filename": "exercise_008.txt",
+      "title": "Exercise 008 — The morning mist still clung to the cobblestone alleyages of early nineteenth century…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "009",
+      "filename": "exercise_009.txt",
+      "title": "Exercise 009 — The morning fog was still clinging to the cobblestone streets of lower Manhattan when…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "010",
+      "filename": "exercise_010.txt",
+      "title": "Exercise 010 — The autumn air in the northern reaches of the great continent carried the crisp,…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "011",
+      "filename": "exercise_011.txt",
+      "title": "Exercise 011 — The aroma of roasted malt and crushed juniper berries hung thick in the damp London…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "012",
+      "filename": "exercise_012.txt",
+      "title": "Exercise 012 — Long before the glowing screens of modern navigation devices directed our every turn,…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "013",
+      "filename": "exercise_013.txt",
+      "title": "Exercise 013 — Long before the sleek glass skyscrapers and neon lights defined the modern metropolis,…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "014",
+      "filename": "exercise_014.txt",
+      "title": "Exercise 014 — The early morning mist still clung to the cobblestones of lower Manhattan as the…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "015",
+      "filename": "exercise_015.txt",
+      "title": "Exercise 015 — The morning air of late autumn carried a crisp, biting chill across the sprawling…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "016",
+      "filename": "exercise_016.txt",
+      "title": "Exercise 016 — The salt mines of Wieliczka in southern Poland have long stood as a breathtaking…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "017",
+      "filename": "exercise_017.txt",
+      "title": "Exercise 017 — The golden age of cartography was an era defined by salt-crusted wooden galleons…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "018",
+      "filename": "exercise_018.txt",
+      "title": "Exercise 018 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "019",
+      "filename": "exercise_019.txt",
+      "title": "Exercise 019 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "020",
+      "filename": "exercise_020.txt",
+      "title": "Exercise 020 — Long before the neon glow of modern metropolises illuminated the nocturnal sky,…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "021",
+      "filename": "exercise_021.txt",
+      "title": "Exercise 021 — In the golden age of maritime exploration, the vast and unforgiving expanse of the…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "022",
+      "filename": "exercise_022.txt",
+      "title": "Exercise 022 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "023",
+      "filename": "exercise_023.txt",
+      "title": "Exercise 023 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "024",
+      "filename": "exercise_024.txt",
+      "title": "Exercise 024 — The crisp autumn wind swept through the narrow cobblestone alleyways of Florence…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "025",
+      "filename": "exercise_025.txt",
+      "title": "Exercise 025 — Long before the advent of modern refrigeration, the preservation of perishable foods…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "026",
+      "filename": "exercise_026.txt",
+      "title": "Exercise 026 — The morning air in the bustling port of fifteenth-century Venice carried the heavy…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "027",
+      "filename": "exercise_027.txt",
+      "title": "Exercise 027 — The midnight oil burned low in the dimly lit study of a modest London flat during the…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "028",
+      "filename": "exercise_028.txt",
+      "title": "Exercise 028 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "029",
+      "filename": "exercise_029.txt",
+      "title": "Exercise 029 — The gentle rustle of silk and the soft scraping of a quill against thick parchment…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "030",
+      "filename": "exercise_030.txt",
+      "title": "Exercise 030 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "031",
+      "filename": "exercise_031.txt",
+      "title": "Exercise 031 — The sun had barely begun to breach the jagged horizon of the Sierra Nevada mountains,…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "032",
+      "filename": "exercise_032.txt",
+      "title": "Exercise 032 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "033",
+      "filename": "exercise_033.txt",
+      "title": "Exercise 033 — The sun had barely begun to breach the jagged horizon of the rugged North Atlantic…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "034",
+      "filename": "exercise_034.txt",
+      "title": "Exercise 034 — The soft hum of a spinning vinyl record has accompanied human memories for over a…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "035",
+      "filename": "exercise_035.txt",
+      "title": "Exercise 035 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "036",
+      "filename": "exercise_036.txt",
+      "title": "Exercise 036 — In the late autumn of eighteen hundred and six, a biting fog rolled relentlessly over…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "037",
+      "filename": "exercise_037.txt",
+      "title": "Exercise 037 — The crisp autumn air of eighteen eighty-eight held a quiet tension as the steam…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "038",
+      "filename": "exercise_038.txt",
+      "title": "Exercise 038 — Long before the sleek glass skyscrapers of modern finance dominated the skyline of…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "039",
+      "filename": "exercise_039.txt",
+      "title": "Exercise 039 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "040",
+      "filename": "exercise_040.txt",
+      "title": "Exercise 040 — Long before the neon glow of modern metropolises illuminated the nocturnal skies, the…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "041",
+      "filename": "exercise_041.txt",
+      "title": "Exercise 041 — The biting autumn wind swept across the desolate expanse of the Salisbury Plain,…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "042",
+      "filename": "exercise_042.txt",
+      "title": "Exercise 042 — The relentless march of human progress has been fundamentally shaped by our insatiable…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "043",
+      "filename": "exercise_043.txt",
+      "title": "Exercise 043 — The morning mist still clung to the cobblestone streets of lower Manhattan in the late…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "044",
+      "filename": "exercise_044.txt",
+      "title": "Exercise 044 — The morning air in the small coastal village of Portishead was thick with the scent of…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "045",
+      "filename": "exercise_045.txt",
+      "title": "Exercise 045 — The crisp morning air of October nineteenth in the year eighteen hundred and fourteen…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "046",
+      "filename": "exercise_046.txt",
+      "title": "Exercise 046 — The crisp autumn wind swept through the narrow cobblestone alleyways of Florence,…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "047",
+      "filename": "exercise_047.txt",
+      "title": "Exercise 047 — The morning mist still clung to the ancient cobblestones of the harbor town as master…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "048",
+      "filename": "exercise_048.txt",
+      "title": "Exercise 048 — The salty Atlantic air whipped across the weathered wooden deck of the whaling ship as…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "049",
+      "filename": "exercise_049.txt",
+      "title": "Exercise 049 — The gentle chime of the old grandfather clock echoing through the hallway marked the…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "050",
+      "filename": "exercise_050.txt",
+      "title": "Exercise 050 — The early morning mist still clung tightly to the cobblestone streets of lower…",
+      "category": "Typing History & Inventions",
+      "language": "en"
+    },
+    {
+      "id": "051",
+      "filename": "exercise_051.txt",
+      "title": "Exercise 051 — The autumn wind whipped through the dense, towering canopy of the Black Forest,…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "052",
+      "filename": "exercise_052.txt",
+      "title": "Exercise 052 — The morning air of late autumn carried the sharp scent of damp earth and woodsmoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "053",
+      "filename": "exercise_053.txt",
+      "title": "Exercise 053 — The morning air of late autumn carried a sharp, crystalline bite that caused breath to…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "054",
+      "filename": "exercise_054.txt",
+      "title": "Exercise 054 — The morning mist still clung stubbornly to the emerald slopes of the Scottish…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "055",
+      "filename": "exercise_055.txt",
+      "title": "Exercise 055 — The ancient maritime trade route known historically as the Spice Route represents one…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "056",
+      "filename": "exercise_056.txt",
+      "title": "Exercise 056 — In the fading twilight of a brisk October evening in eighteen hundred and…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "057",
+      "filename": "exercise_057.txt",
+      "title": "Exercise 057 — The autumn air of eighteen eighty-eight carried a bitter chill across the cobblestone…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "058",
+      "filename": "exercise_058.txt",
+      "title": "Exercise 058 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "059",
+      "filename": "exercise_059.txt",
+      "title": "Exercise 059 — The golden age of cartography was an era defined by salt-crusted wooden sailing ships,…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "060",
+      "filename": "exercise_060.txt",
+      "title": "Exercise 060 — The afternoon sun cast a warm golden amber hue across the sprawling terracotta…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "061",
+      "filename": "exercise_061.txt",
+      "title": "Exercise 061 — The golden hour sunlight cast long, amber shadows across the cobblestones of…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "062",
+      "filename": "exercise_062.txt",
+      "title": "Exercise 062 — The twilight air over the ancient city of Alexandria hummed with the quiet rustute of…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "063",
+      "filename": "exercise_063.txt",
+      "title": "Exercise 063 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "064",
+      "filename": "exercise_064.txt",
+      "title": "Exercise 064 — The sharp winter wind whipped through the narrow cobblestone alleyways of Florence…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "065",
+      "filename": "exercise_065.txt",
+      "title": "Exercise 065 — The dawn of the twenty first century brought with it a quiet revolution that…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "066",
+      "filename": "exercise_066.txt",
+      "title": "Exercise 066 — The salt marshes of the ancient Suffolk coast have witnessed the quiet ebb and flow of…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "067",
+      "filename": "exercise_067.txt",
+      "title": "Exercise 067 — The salt flats of the high plateau in northwestern Bolivia stretch out as an…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "068",
+      "filename": "exercise_068.txt",
+      "title": "Exercise 068 — The relentless ticking of a mechanical timepiece has long governed the rhythms of…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "069",
+      "filename": "exercise_069.txt",
+      "title": "Exercise 069 — The relentless tick of the mechanical clock has governed human civilization for…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "070",
+      "filename": "exercise_070.txt",
+      "title": "Exercise 070 — The crisp dawn air of late October in eighteen hundred and sixty-three carried a sharp…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "071",
+      "filename": "exercise_071.txt",
+      "title": "Exercise 071 — Long before the digital hum of modern commerce and the endless scroll of glowing…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "072",
+      "filename": "exercise_072.txt",
+      "title": "Exercise 072 — The air inside the dimly lit laboratory was thick with the scent of ozone and the…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "073",
+      "filename": "exercise_073.txt",
+      "title": "Exercise 073 — Long before the advent of modern refrigeration, the preservation of perishable goods…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "074",
+      "filename": "exercise_074.txt",
+      "title": "Exercise 074 — The crisp autumn air of eighteen eighty-eight held a quiet chill that seemed to seep…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "075",
+      "filename": "exercise_075.txt",
+      "title": "Exercise 075 — The morning air over the Hudson River hung heavy with the damp chill of late autumn in…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "076",
+      "filename": "exercise_076.txt",
+      "title": "Exercise 076 — The salt air hung thick and heavy over the cobblestone docks of Bristol in the spring…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "077",
+      "filename": "exercise_077.txt",
+      "title": "Exercise 077 — Long before the advent of the internal combustion engine and the shimmering rails of…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "078",
+      "filename": "exercise_078.txt",
+      "title": "Exercise 078 — The salt trade is perhaps one of the most ancient and fascinating commercial…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "079",
+      "filename": "exercise_079.txt",
+      "title": "Exercise 079 — The morning air of late October in seventeen eighty-one hung heavy with the acrid…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "080",
+      "filename": "exercise_080.txt",
+      "title": "Exercise 080 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "081",
+      "filename": "exercise_081.txt",
+      "title": "Exercise 081 — The cold morning air of November in eighteen hundred and four bit sharply against the…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "082",
+      "filename": "exercise_082.txt",
+      "title": "Exercise 082 — The golden age of cartography was an era defined by salt-crusted wooden galleons,…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "083",
+      "filename": "exercise_083.txt",
+      "title": "Exercise 083 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "084",
+      "filename": "exercise_084.txt",
+      "title": "Exercise 084 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of burning coal…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "085",
+      "filename": "exercise_085.txt",
+      "title": "Exercise 085 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "086",
+      "filename": "exercise_086.txt",
+      "title": "Exercise 086 — The morning mist still clung to the cobblestone alleyages of Florence when a young…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "087",
+      "filename": "exercise_087.txt",
+      "title": "Exercise 087 — The salt marshes of England have long been places of haunting beauty and profound…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "088",
+      "filename": "exercise_088.txt",
+      "title": "Exercise 088 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "089",
+      "filename": "exercise_089.txt",
+      "title": "Exercise 089 — The early morning mist still clung to the cobblestones of lower Manhattan as a…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "090",
+      "filename": "exercise_090.txt",
+      "title": "Exercise 090 — The early morning mist still clung tightly to the glassy surface of the Seine when the…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "091",
+      "filename": "exercise_091.txt",
+      "title": "Exercise 091 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "092",
+      "filename": "exercise_092.txt",
+      "title": "Exercise 092 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "093",
+      "filename": "exercise_093.txt",
+      "title": "Exercise 093 — Long before the hum of neon signs and the endless glow of smartphone screens dominated…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "094",
+      "filename": "exercise_094.txt",
+      "title": "Exercise 094 — The early morning mist still clung to the cobblestones of lower Manhattan as a…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "095",
+      "filename": "exercise_095.txt",
+      "title": "Exercise 095 — The aroma of roasting coffee beans has a way of anchoring the human experience,…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "096",
+      "filename": "exercise_096.txt",
+      "title": "Exercise 096 — The morning mist still clung stubbornly to the cobbled streets of late eighteenth…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "097",
+      "filename": "exercise_097.txt",
+      "title": "Exercise 097 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "098",
+      "filename": "exercise_098.txt",
+      "title": "Exercise 098 — The gentle rustle of silk and the soft scraping of a reed pen against vellum once…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "099",
+      "filename": "exercise_099.txt",
+      "title": "Exercise 099 — The aroma of roasted cocoa beans has captivated the human imagination for thousands of…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "100",
+      "filename": "exercise_100.txt",
+      "title": "Exercise 100 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "People & National Contributions",
+      "language": "en"
+    },
+    {
+      "id": "101",
+      "filename": "exercise_101.txt",
+      "title": "Exercise 101 — Long before the gleaming glass skyscrapers of modern finance pierced the misty London…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "102",
+      "filename": "exercise_102.txt",
+      "title": "Exercise 102 — The early morning mist still clung to the cobblestones of the harbor district when the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "103",
+      "filename": "exercise_103.txt",
+      "title": "Exercise 103 — The salt air of the Aegean Sea carried the scent of burning olive wood and wet stone…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "104",
+      "filename": "exercise_104.txt",
+      "title": "Exercise 104 — In the heart of the bustling metropolis, where the relentless hum of modern…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "105",
+      "filename": "exercise_105.txt",
+      "title": "Exercise 105 — The winter of seventeen seventy seven settled over the rolling hills of Pennsylvania…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "106",
+      "filename": "exercise_106.txt",
+      "title": "Exercise 106 — The crisp dawn of the late eighteenth century heralded a quiet revolution across the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "107",
+      "filename": "exercise_107.txt",
+      "title": "Exercise 107 — The autumn air of eighteen eighty-eight carried a bitter chill across the cobblestone…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "108",
+      "filename": "exercise_108.txt",
+      "title": "Exercise 108 — The relentless pursuit of speed has defined human innovation for centuries, but few…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "109",
+      "filename": "exercise_109.txt",
+      "title": "Exercise 109 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "110",
+      "filename": "exercise_110.txt",
+      "title": "Exercise 110 — The ancient maritime Silk Road was not merely a commercial trading network of spices,…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "111",
+      "filename": "exercise_111.txt",
+      "title": "Exercise 111 — The dawn of the twenty first century brought with it a profound quiet revolution in…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "112",
+      "filename": "exercise_112.txt",
+      "title": "Exercise 112 — The vast expanse of the open ocean has always exerted a profound and mysterious pull…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "113",
+      "filename": "exercise_113.txt",
+      "title": "Exercise 113 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "114",
+      "filename": "exercise_114.txt",
+      "title": "Exercise 114 — The morning air of late autumn carried a sharp, crystalline bite that painted the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "115",
+      "filename": "exercise_115.txt",
+      "title": "Exercise 115 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "116",
+      "filename": "exercise_116.txt",
+      "title": "Exercise 116 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "117",
+      "filename": "exercise_117.txt",
+      "title": "Exercise 117 — The early morning mist still clung tightly to the cobblestone streets of London as a…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "118",
+      "filename": "exercise_118.txt",
+      "title": "Exercise 118 — The morning air of the early industrial age was thick with the scent of damp wool,…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "119",
+      "filename": "exercise_119.txt",
+      "title": "Exercise 119 — The brilliant glow of the gaslamps flickered against the damp cobblestones of…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "120",
+      "filename": "exercise_120.txt",
+      "title": "Exercise 120 — The morning air of late autumn carried a sharp, crystalline bite across the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "121",
+      "filename": "exercise_121.txt",
+      "title": "Exercise 121 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "122",
+      "filename": "exercise_122.txt",
+      "title": "Exercise 122 — The golden hour of late afternoon cast a long, amber glow across the bustling docks of…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "123",
+      "filename": "exercise_123.txt",
+      "title": "Exercise 123 — The crisp morning air of October nineteenth in the year seventeen eighty-one carried…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "124",
+      "filename": "exercise_124.txt",
+      "title": "Exercise 124 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "125",
+      "filename": "exercise_125.txt",
+      "title": "Exercise 125 — The crisp autumn wind swept across the cobblestone lanes of old Boston, carrying the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "126",
+      "filename": "exercise_126.txt",
+      "title": "Exercise 126 — The autumn wind swept fiercely across the rugged cliffs of the northern coast,…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "127",
+      "filename": "exercise_127.txt",
+      "title": "Exercise 127 — The pale morning light of an early spring in eighteen hundred and sixty-two filtered…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "128",
+      "filename": "exercise_128.txt",
+      "title": "Exercise 128 — The golden age of cartography was an era defined by salt-crusted wooden sailing ships…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "129",
+      "filename": "exercise_129.txt",
+      "title": "Exercise 129 — The golden autumn of eighteen eighty-eight cast long shadows across the cobblestones…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "130",
+      "filename": "exercise_130.txt",
+      "title": "Exercise 130 — The crisp dawn of October twenty fourth in the year nineteen hundred and twenty nine…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "131",
+      "filename": "exercise_131.txt",
+      "title": "Exercise 131 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "132",
+      "filename": "exercise_132.txt",
+      "title": "Exercise 132 — The early morning mist still clung to the cobblestones of lower Manhattan as a…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "133",
+      "filename": "exercise_133.txt",
+      "title": "Exercise 133 — The soft clatter of horse hooves against cobblestones echoed through the damp morning…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "134",
+      "filename": "exercise_134.txt",
+      "title": "Exercise 134 — The amber glow of a late afternoon sun filtered through the dense canopy of ancient…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "135",
+      "filename": "exercise_135.txt",
+      "title": "Exercise 135 — Long before the invention of the mechanical clock or the digital screen, humanity…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "136",
+      "filename": "exercise_136.txt",
+      "title": "Exercise 136 — The scent of ozone, roasted coffee beans, and damp wool always hung heavy in the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "137",
+      "filename": "exercise_137.txt",
+      "title": "Exercise 137 — The autumn air of eighteen eighty-eight carried a bitter chill across the cobblestone…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "138",
+      "filename": "exercise_138.txt",
+      "title": "Exercise 138 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "139",
+      "filename": "exercise_139.txt",
+      "title": "Exercise 139 — The midnight air of October twenty fourth in the year nineteen hundred and twenty nine…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "140",
+      "filename": "exercise_140.txt",
+      "title": "Exercise 140 — The sun crested the rugged horizon of the American frontier in the mid-nineteenth…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "141",
+      "filename": "exercise_141.txt",
+      "title": "Exercise 141 — The sun dipped below the rugged horizon of the Yorkshire Dales, casting a long, amber…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "142",
+      "filename": "exercise_142.txt",
+      "title": "Exercise 142 — Long before the neon lights of modern entertainment districts illuminated the night…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "143",
+      "filename": "exercise_143.txt",
+      "title": "Exercise 143 — The twilight air in seventeenth-century Amsterdam carried the unmistakable scent of…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "144",
+      "filename": "exercise_144.txt",
+      "title": "Exercise 144 — The flickering amber glow of the hearth cast long, dancing shadows across the rugged…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "145",
+      "filename": "exercise_145.txt",
+      "title": "Exercise 145 — The golden age of cartography was an era defined by salt-crusted wooden sailing ships,…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "146",
+      "filename": "exercise_146.txt",
+      "title": "Exercise 146 — The afternoon sun hung low and heavy over the dusty expanse of the central plains,…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "147",
+      "filename": "exercise_147.txt",
+      "title": "Exercise 147 — The brilliant morning sun cast long amber shadows across the dew-kissed cobblestones…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "148",
+      "filename": "exercise_148.txt",
+      "title": "Exercise 148 — The winter wind howled across the rugged coastline of northern France in the early…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "149",
+      "filename": "exercise_149.txt",
+      "title": "Exercise 149 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "150",
+      "filename": "exercise_150.txt",
+      "title": "Exercise 150 — Long before the neon glow of modern metropolises illuminated the nocturnal skies, the…",
+      "category": "Stories & Communication",
+      "language": "en"
+    },
+    {
+      "id": "151",
+      "filename": "exercise_151.txt",
+      "title": "Exercise 151 — The sun had barely crested the jagged horizon of the rugged North Atlantic when the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "152",
+      "filename": "exercise_152.txt",
+      "title": "Exercise 152 — The relentless pursuit of the impossible has always defined the human spirit, driving…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "153",
+      "filename": "exercise_153.txt",
+      "title": "Exercise 153 — The sun had barely begun to breach the jagged horizon of the rugged landscape when the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "154",
+      "filename": "exercise_154.txt",
+      "title": "Exercise 154 — In the shadow of the imposing Swiss Alps, the crisp morning air carried the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "155",
+      "filename": "exercise_155.txt",
+      "title": "Exercise 155 — The flickering amber glow of gaslamps pierced the foggy London twilight of 1888,…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "156",
+      "filename": "exercise_156.txt",
+      "title": "Exercise 156 — The early morning mist still clung tightly to the cobblestone streets of old London…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "157",
+      "filename": "exercise_157.txt",
+      "title": "Exercise 157 — The early morning mist still clung to the cobblestones of lower Manhattan as a…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "158",
+      "filename": "exercise_158.txt",
+      "title": "Exercise 158 — The salt marsh lay silent and sprawling beneath the pale expanse of an autumn sky,…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "159",
+      "filename": "exercise_159.txt",
+      "title": "Exercise 159 — The relentless pursuit of speed has long defined the human condition, driving us to…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "160",
+      "filename": "exercise_160.txt",
+      "title": "Exercise 160 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "161",
+      "filename": "exercise_161.txt",
+      "title": "Exercise 161 — The aroma of freshly roasted coffee beans is one of those sensory experiences that…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "162",
+      "filename": "exercise_162.txt",
+      "title": "Exercise 162 — The morning air in the bustling port of fifteenth century Genoa was thick with the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "163",
+      "filename": "exercise_163.txt",
+      "title": "Exercise 163 — The early morning mist still clung to the cobblestones of lower Manhattan as the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "164",
+      "filename": "exercise_164.txt",
+      "title": "Exercise 164 — The morning air of late autumn carried a sharp, biting frost that clung stubbornly to…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "165",
+      "filename": "exercise_165.txt",
+      "title": "Exercise 165 — The salty breeze of the North Atlantic carried the unmistakable scent of burning…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "166",
+      "filename": "exercise_166.txt",
+      "title": "Exercise 166 — The morning mist still clung to the cobblestones of the harbor as the skeletal frame…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "167",
+      "filename": "exercise_167.txt",
+      "title": "Exercise 167 — The relentless expansion of the early modern world was fueled not merely by the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "168",
+      "filename": "exercise_168.txt",
+      "title": "Exercise 168 — The morning air over the Hudson River hung heavy with a dense autumn mist that clung…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "169",
+      "filename": "exercise_169.txt",
+      "title": "Exercise 169 — Long before the gleaming glass skyscrapers of modern finance pierced the misty skies…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "170",
+      "filename": "exercise_170.txt",
+      "title": "Exercise 170 — Long before the gleaming glass skyscrapers and subterranean transit labyrinths came to…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "171",
+      "filename": "exercise_171.txt",
+      "title": "Exercise 171 — The winter of eighteen hundred and eighty-eight arrived in the American Great Plains…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "172",
+      "filename": "exercise_172.txt",
+      "title": "Exercise 172 — The persistent hum of the heavy brass engine filled the damp morning air as the first…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "173",
+      "filename": "exercise_173.txt",
+      "title": "Exercise 173 — The morning mist still clung to the cobblestones of lower Manhattan in the spring of…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "174",
+      "filename": "exercise_174.txt",
+      "title": "Exercise 174 — The morning mist still clung to the cobblestone alleyways of Florence as Leonardo da…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "175",
+      "filename": "exercise_175.txt",
+      "title": "Exercise 175 — The persistent rhythm of hoofbeats and the steady clatter of iron-rimmed wooden wheels…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "176",
+      "filename": "exercise_176.txt",
+      "title": "Exercise 176 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "177",
+      "filename": "exercise_177.txt",
+      "title": "Exercise 177 — Long before the modern era of automated weather forecasting satellites and…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "178",
+      "filename": "exercise_178.txt",
+      "title": "Exercise 178 — The early morning mist still clung tightly to the cobblestone streets of lower…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "179",
+      "filename": "exercise_179.txt",
+      "title": "Exercise 179 â \u0000\u0005\u0016\u0007\u0000\u0002\u0000\u0000Mac OS X \u0000\u0002\u0000\u0000\u0000â¦",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "180",
+      "filename": "exercise_180.txt",
+      "title": "Exercise 180 — Long before the advent of the internal combustion engine and the hustle of modern…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "181",
+      "filename": "exercise_181.txt",
+      "title": "Exercise 181 — The scent of roasted cocoa beans and damp earth hung heavy in the tropical air of…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "182",
+      "filename": "exercise_182.txt",
+      "title": "Exercise 182 — The golden autumn of eighteen eighty-eight cast a long, melancholy shadow across the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "183",
+      "filename": "exercise_183.txt",
+      "title": "Exercise 183 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "184",
+      "filename": "exercise_184.txt",
+      "title": "Exercise 184 — The morning air over the western plains of North America during the late nineteenth…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "185",
+      "filename": "exercise_185.txt",
+      "title": "Exercise 185 — The crisp morning air of October nineteenth in the year seventeen eighty-one carried…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "186",
+      "filename": "exercise_186.txt",
+      "title": "Exercise 186 — The morning sun crested the jagged peaks of the rugged Welsh countryside, casting a…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "187",
+      "filename": "exercise_187.txt",
+      "title": "Exercise 187 — The ancient incense route wound serpentine through the unforgiving Arabian desert, a…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "188",
+      "filename": "exercise_188.txt",
+      "title": "Exercise 188 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "189",
+      "filename": "exercise_189.txt",
+      "title": "Exercise 189 — The early morning mist still clung tightly to the cobblestone pathways of the bustling…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "190",
+      "filename": "exercise_190.txt",
+      "title": "Exercise 190 — The soft glow of gas lamps flickered across the cobbled stones of London on a chilly…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "191",
+      "filename": "exercise_191.txt",
+      "title": "Exercise 191 — The scent of burning coal and ozone hung thick over the damp cobblestones of…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "192",
+      "filename": "exercise_192.txt",
+      "title": "Exercise 192 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "193",
+      "filename": "exercise_193.txt",
+      "title": "Exercise 193 — The flickering gas lamps of Victorian London cast long, dancing shadows across the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "194",
+      "filename": "exercise_194.txt",
+      "title": "Exercise 194 — The morning air of late autumn carried a crisp, biting edge that seemed to nip at the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "195",
+      "filename": "exercise_195.txt",
+      "title": "Exercise 195 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "196",
+      "filename": "exercise_196.txt",
+      "title": "Exercise 196 — The soft hum of the morning air was suddenly pierced by a sharp, rhythmic tapping that…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "197",
+      "filename": "exercise_197.txt",
+      "title": "Exercise 197 — The history of human timekeeping is a fascinating journey that mirrors our relentless…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "198",
+      "filename": "exercise_198.txt",
+      "title": "Exercise 198 — The crisp dawn air of late autumn carried the scent of woodsmoke and damp earth across…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "199",
+      "filename": "exercise_199.txt",
+      "title": "Exercise 199 — The cold autumn wind whipped through the cobblestone alleys of Florence during the…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "200",
+      "filename": "exercise_200.txt",
+      "title": "Exercise 200 — The crisp dawn air of October nineteenth in the year seventeen hundred and eighty-one…",
+      "category": "Culture & Society",
+      "language": "en"
+    },
+    {
+      "id": "201",
+      "filename": "exercise_201.txt",
+      "title": "Exercise 201 — The morning mist still clung to the ancient stones of the harbor when the heavy wooden…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "202",
+      "filename": "exercise_202.txt",
+      "title": "Exercise 202 — The morning mist still clung to the cobblestones of lower Manhattan as the first rays…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "203",
+      "filename": "exercise_203.txt",
+      "title": "Exercise 203 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "204",
+      "filename": "exercise_204.txt",
+      "title": "Exercise 204 — The soft glow of gas lamps flickered against the damp cobblestones of nineteenth…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "205",
+      "filename": "exercise_205.txt",
+      "title": "Exercise 205 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "206",
+      "filename": "exercise_206.txt",
+      "title": "Exercise 206 — The morning air of late autumn carried a sharp, metallic bite across the rolling hills…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "207",
+      "filename": "exercise_207.txt",
+      "title": "Exercise 207 — The early morning mist still clung tightly to the rugged cobblestones of Florence as…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "208",
+      "filename": "exercise_208.txt",
+      "title": "Exercise 208 — The early morning fog still clung to the cobblestone streets of lower Manhattan in the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "209",
+      "filename": "exercise_209.txt",
+      "title": "Exercise 209 — The autumn wind whistled through the ancient oak trees of the Hudson River Valley,…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "210",
+      "filename": "exercise_210.txt",
+      "title": "Exercise 210 — The crisp autumn air of eighteen eighty-eight held a quiet tension as the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "211",
+      "filename": "exercise_211.txt",
+      "title": "Exercise 211 — The salt mines of Wieliczka, nestled quietly beneath the rolling green hills of…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "212",
+      "filename": "exercise_212.txt",
+      "title": "Exercise 212 — The salty breeze whipped across the rugged coast of Normandy in the predawn hours of…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "213",
+      "filename": "exercise_213.txt",
+      "title": "Exercise 213 — The crisp dawn of October twenty fourth in the year nineteen hundred and twenty nine…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "214",
+      "filename": "exercise_214.txt",
+      "title": "Exercise 214 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "215",
+      "filename": "exercise_215.txt",
+      "title": "Exercise 215 — The morning air was thick with the scent of damp earth and woodsmoke as the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "216",
+      "filename": "exercise_216.txt",
+      "title": "Exercise 216 — Long before the glow of electric streetlights tamed the nocturnal darkness, humanity…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "217",
+      "filename": "exercise_217.txt",
+      "title": "Exercise 217 — Long before the gleaming glass skyscrapers of modern finance dominated the Manhattan…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "218",
+      "filename": "exercise_218.txt",
+      "title": "Exercise 218 — Long before the neon lights of modern metropolises cast their artificial glow into the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "219",
+      "filename": "exercise_219.txt",
+      "title": "Exercise 219 — The morning air was thick with the scent of burning cedar and damp earth as the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "220",
+      "filename": "exercise_220.txt",
+      "title": "Exercise 220 — The sun was barely cresting the jagged peaks of the distant mountains when the ancient…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "221",
+      "filename": "exercise_221.txt",
+      "title": "Exercise 221 — Long before the neon glow of modern metropolises illuminated the nocturnal skies, the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "222",
+      "filename": "exercise_222.txt",
+      "title": "Exercise 222 — The relentless ticking of the grandfather clock in the dimly lit workshop seemed to…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "223",
+      "filename": "exercise_223.txt",
+      "title": "Exercise 223 — The relentless march of human progress has been guided by many forces, but few have…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "224",
+      "filename": "exercise_224.txt",
+      "title": "Exercise 224 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "225",
+      "filename": "exercise_225.txt",
+      "title": "Exercise 225 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "226",
+      "filename": "exercise_226.txt",
+      "title": "Exercise 226 — The gentle hum of the printing press echoed through the dimly lit workshop in Mainz,…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "227",
+      "filename": "exercise_227.txt",
+      "title": "Exercise 227 — The morning air in the early autumn of eighteen hundred and seven was biting and…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "228",
+      "filename": "exercise_228.txt",
+      "title": "Exercise 228 — The morning air of late autumn carried a sharp, crystalline bite across the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "229",
+      "filename": "exercise_229.txt",
+      "title": "Exercise 229 — Long before the towering glass monoliths of modern metropolises cast their long…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "230",
+      "filename": "exercise_230.txt",
+      "title": "Exercise 230 — The relentless ticking of the grandfather clock in the corner of the workshop seemed…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "231",
+      "filename": "exercise_231.txt",
+      "title": "Exercise 231 — The autumn air in the northern reaches of the European continent carried the bitter…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "232",
+      "filename": "exercise_232.txt",
+      "title": "Exercise 232 — The sharp crack of the starter's pistol pierced the crisp autumn air of October 1896,…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "233",
+      "filename": "exercise_233.txt",
+      "title": "Exercise 233 — The autumn wind whipped through the cobblestone alleys of Florence in the late…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "234",
+      "filename": "exercise_234.txt",
+      "title": "Exercise 234 — In the quiet twilight of a late autumn evening in eighteen eighty-eight, the narrow…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "235",
+      "filename": "exercise_235.txt",
+      "title": "Exercise 235 — Long before the neon lights of modern entertainment districts began to pulse against…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "236",
+      "filename": "exercise_236.txt",
+      "title": "Exercise 236 — The crisp autumn air of eighteen eighty-eight held a quiet tension as the steam…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "237",
+      "filename": "exercise_237.txt",
+      "title": "Exercise 237 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "238",
+      "filename": "exercise_238.txt",
+      "title": "Exercise 238 — The autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "239",
+      "filename": "exercise_239.txt",
+      "title": "Exercise 239 — The winter wind howled across the frozen expanse of the North Atlantic in early…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "240",
+      "filename": "exercise_240.txt",
+      "title": "Exercise 240 — The golden hour sunlight cast long, amber shadows across the cobblestones of the old…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "241",
+      "filename": "exercise_241.txt",
+      "title": "Exercise 241 — Long before the advent of modern refrigeration, the preservation of perishable goods…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "242",
+      "filename": "exercise_242.txt",
+      "title": "Exercise 242 — The dawn of the twenty first century brought with it a quiet yet profoundly…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "243",
+      "filename": "exercise_243.txt",
+      "title": "Exercise 243 — In the fading light of a crisp autumn evening in eighteen eighty-five, a solitary…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "244",
+      "filename": "exercise_244.txt",
+      "title": "Exercise 244 — The salt mines of Wieliczka in southern Poland present a subterranean labyrinth that…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "245",
+      "filename": "exercise_245.txt",
+      "title": "Exercise 245 — The flickering amber glow of the kerosene lantern cast long, dancing shadows across…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "246",
+      "filename": "exercise_246.txt",
+      "title": "Exercise 246 — The soft amber glow of gas lamps flickered against the damp cobblestones of…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "247",
+      "filename": "exercise_247.txt",
+      "title": "Exercise 247 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "248",
+      "filename": "exercise_248.txt",
+      "title": "Exercise 248 — The golden hour of late afternoon cast a long amber glow across the cobblestone…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "249",
+      "filename": "exercise_249.txt",
+      "title": "Exercise 249 — The morning mist still clung stubbornly to the emerald slopes of the Scottish…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "250",
+      "filename": "exercise_250.txt",
+      "title": "Exercise 250 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "language": "en"
+    },
+    {
+      "id": "251",
+      "filename": "exercise_251.txt",
+      "title": "Exercise 251 — The salty mist of the Atlantic Ocean clung heavily to the cobblestones of Bristol in…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "252",
+      "filename": "exercise_252.txt",
+      "title": "Exercise 252 — The relentless ticking of the clock in a dimly lit workshop in late eighteenth-century…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "253",
+      "filename": "exercise_253.txt",
+      "title": "Exercise 253 — The afternoon sun cast a warm golden amber glow across the cobblestone streets of…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "254",
+      "filename": "exercise_254.txt",
+      "title": "Exercise 254 — The ancient art of glassblowing stands as one of the most remarkable fusions of human…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "255",
+      "filename": "exercise_255.txt",
+      "title": "Exercise 255 — The relentless pursuit of speed has defined human innovation for centuries, but few…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "256",
+      "filename": "exercise_256.txt",
+      "title": "Exercise 256 — Long before the advent of modern refrigeration, humanity engaged in a relentless,…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "257",
+      "filename": "exercise_257.txt",
+      "title": "Exercise 257 — The morning mist still clung to the cobblestone streets of old London town when the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "258",
+      "filename": "exercise_258.txt",
+      "title": "Exercise 258 — The history of cartography is fundamentally a chronicle of human curiosity and the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "259",
+      "filename": "exercise_259.txt",
+      "title": "Exercise 259 — In the fading twilight of a brisk autumn evening in eighteen hundred and fifty-nine,…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "260",
+      "filename": "exercise_260.txt",
+      "title": "Exercise 260 — Long before the dawn of modern navigation technology and satellite guidance systems,…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "261",
+      "filename": "exercise_261.txt",
+      "title": "Exercise 261 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of burning…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "262",
+      "filename": "exercise_262.txt",
+      "title": "Exercise 262 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "263",
+      "filename": "exercise_263.txt",
+      "title": "Exercise 263 — The crisp autumn air of eighteen eighty-eight held a quiet tension as the steamship…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "264",
+      "filename": "exercise_264.txt",
+      "title": "Exercise 264 — The flickering amber glow of gas lamps once illuminated the fog-shrouded cobblestones…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "265",
+      "filename": "exercise_265.txt",
+      "title": "Exercise 265 — Long before the modern era of standardized time zones and atomic clocks, humanity…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "266",
+      "filename": "exercise_266.txt",
+      "title": "Exercise 266 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "267",
+      "filename": "exercise_267.txt",
+      "title": "Exercise 267 — The morning air in the early autumn of eighteen hundred and seven was biting and…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "268",
+      "filename": "exercise_268.txt",
+      "title": "Exercise 268 — The twilight air of autumn in the year fourteen hundred and ninety-two was crisp and…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "269",
+      "filename": "exercise_269.txt",
+      "title": "Exercise 269 — Long before the modern era of mechanized excavation and global maritime shipping…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "270",
+      "filename": "exercise_270.txt",
+      "title": "Exercise 270 — The crisp dawn of the industrial age was not heralded by a sudden explosion of…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "271",
+      "filename": "exercise_271.txt",
+      "title": "Exercise 271 — The amber glow of an afternoon sun filtered through the dusty windowpanes of the grand…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "272",
+      "filename": "exercise_272.txt",
+      "title": "Exercise 272 — The air inside the dimly lit laboratory was thick with the scent of ozone and heated…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "273",
+      "filename": "exercise_273.txt",
+      "title": "Exercise 273 — The scent of damp earth and roasting coffee beans has always hung heavy in the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "274",
+      "filename": "exercise_274.txt",
+      "title": "Exercise 274 — The autumn air of eighteen eighty-eight was unusually sharp in the foggy cobblestone…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "275",
+      "filename": "exercise_275.txt",
+      "title": "Exercise 275 — Long before the neon lights of modern entertainment districts illuminated the night…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "276",
+      "filename": "exercise_276.txt",
+      "title": "Exercise 276 — The relentless pursuit of speed has defined human innovation for centuries, but few…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "277",
+      "filename": "exercise_277.txt",
+      "title": "Exercise 277 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "278",
+      "filename": "exercise_278.txt",
+      "title": "Exercise 278 — Long before the hum of neon signs and the endless glow of smartphone screens defined…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "279",
+      "filename": "exercise_279.txt",
+      "title": "Exercise 279 — The morning mist still clung stubbornly to the emerald slopes of the Scottish…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "280",
+      "filename": "exercise_280.txt",
+      "title": "Exercise 280 — The gentle murmur of the riverbank was frequently punctuated by the rhythmic splash of…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "281",
+      "filename": "exercise_281.txt",
+      "title": "Exercise 281 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "282",
+      "filename": "exercise_282.txt",
+      "title": "Exercise 282 — The crisp morning air of October fourteenth in the year one thousand and sixty six…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "283",
+      "filename": "exercise_283.txt",
+      "title": "Exercise 283 — The salt flats of Utah stretch out in a dazzling, blinding expanse of white, creating…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "284",
+      "filename": "exercise_284.txt",
+      "title": "Exercise 284 — The afternoon sun beat down mercilessly upon the parched earth of the Sahara, casting…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "285",
+      "filename": "exercise_285.txt",
+      "title": "Exercise 285 — The brilliant afternoon sunlight filtered through the dense canopy of ancient oak and…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "286",
+      "filename": "exercise_286.txt",
+      "title": "Exercise 286 — The salty breeze of the North Atlantic carried the unmistakable scent of burning peat…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "287",
+      "filename": "exercise_287.txt",
+      "title": "Exercise 287 — The morning mist still clung to the cobblestone streets of Lower Manhattan as the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "288",
+      "filename": "exercise_288.txt",
+      "title": "Exercise 288 — The relentless industrial expansion of the nineteenth century left behind a sprawling…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "289",
+      "filename": "exercise_289.txt",
+      "title": "Exercise 289 — Long before the era of steam engines and iron tracks, the human desire to travel…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "290",
+      "filename": "exercise_290.txt",
+      "title": "Exercise 290 — The rhythmic clatter of hooves against cobblestones once signaled the heartbeat of an…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "291",
+      "filename": "exercise_291.txt",
+      "title": "Exercise 291 — The flickering amber glow of gas lamps once illuminated the fog-drenched cobblestone…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "292",
+      "filename": "exercise_292.txt",
+      "title": "Exercise 292 — Long before the hum of neon signs and the endless glow of smartphone screens dominated…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "293",
+      "filename": "exercise_293.txt",
+      "title": "Exercise 293 — The quiet hum of the workshop was broken only by the rhythmic scraping of a steel file…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "294",
+      "filename": "exercise_294.txt",
+      "title": "Exercise 294 — The early morning mist still clung to the cobblestones of lower Manhattan as the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "295",
+      "filename": "exercise_295.txt",
+      "title": "Exercise 295 — The salty wind whipped across the rugged coastline of northeastern England in the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "296",
+      "filename": "exercise_296.txt",
+      "title": "Exercise 296 — The morning air of late October in seventeen eighty-one hung heavy and damp over the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "297",
+      "filename": "exercise_297.txt",
+      "title": "Exercise 297 — The rhythmic clacking of hooves against cobblestones once signaled the heartbeat of…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "298",
+      "filename": "exercise_298.txt",
+      "title": "Exercise 298 — The golden age of cartography was an era defined by salt-crusted wooden sailing ships…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "299",
+      "filename": "exercise_299.txt",
+      "title": "Exercise 299 — In the waning years of the nineteenth century, a quiet revolution began to take shape…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    },
+    {
+      "id": "300",
+      "filename": "exercise_300.txt",
+      "title": "Exercise 300 — The dawn of the twenty-first century witnessed a quiet yet profound revolution in the…",
+      "category": "World History & Discoveries",
+      "language": "en"
+    }
+  ]
+}

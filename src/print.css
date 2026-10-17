@@ -1,0 +1,54 @@
+/* Print only the report, not the app navigation or controls. */
+@media print {
+  @page { size: A4 portrait; margin: 12mm; }
+  body * { visibility: hidden !important; }
+  #typing-result, #typing-result *, #saved-report, #saved-report * { visibility: visible !important; }
+  #typing-result, #saved-report { position: absolute !important; inset: 0 auto auto 0 !important; width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; border: 0 !important; box-shadow: none !important; background: #fff !important; color: #111 !important; }
+  #typing-result[hidden] { display: none !important; }
+  .screen-only, .report-actions, #clear-history, .text-button { display: none !important; }
+  .report-heading h3, .report-detail-grid strong, .report-comparison h4 { color: #111 !important; }
+  .report-heading p, .report-detail-grid span, .report-footnote { color: #444 !important; }
+  .report-detail-grid { border-color: #bbb !important; }
+  .report-detail-grid > div { border-color: #ddd !important; break-inside: avoid; }
+  .report-comparison, .report-passage { background: #fff !important; border-color: #bbb !important; }
+  .report-passage, .report-typed { color: #111 !important; }
+  .report-metrics { grid-template-columns: repeat(4, 1fr) !important; }
+  .typing-result { padding: 0 !important; }
+}
+
+@media print {
+  .word-legend, .lesson-list, .game-stage, .typing-workspace > :not(#typing-result) { display:none !important; }
+  .report-detail-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .report-comparison { break-inside: avoid; }
+  .word-status-correct { color:#16803d !important; }
+  .word-status-incorrect { color:#c62828 !important; }
+}
+
+@media print {
+  body * { visibility: hidden !important; }
+  #typing-report-modal, #typing-report-modal * { visibility: visible !important; }
+  #typing-report-modal { position: absolute !important; inset: 0 !important; display: block !important; padding: 0 !important; background: #fff !important; backdrop-filter: none !important; }
+  #typing-report-modal .typing-report-dialog { width: 100% !important; max-height: none !important; overflow: visible !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+  #typing-report-modal .typing-report-modal-header { position: static !important; padding: 0 0 12px !important; border-bottom: 1px solid #ccc !important; }
+  #typing-report-modal .typing-result { position: relative !important; overflow: visible !important; padding: 12px 0 !important; background: #fff !important; color: #111 !important; }
+  #typing-report-modal .report-watermark:before { color: rgba(36,100,177,.13) !important; z-index: 0 !important; }
+  #typing-report-modal .report-watermark:after { color: rgba(36,100,177,.12) !important; z-index: 0 !important; }
+  #typing-report-modal .typing-result > * { position: relative; z-index: 1; }
+  #typing-report-modal .report-actions, #typing-report-modal #typing-report-close, #typing-report-modal .screen-only { display: none !important; }
+  #typing-report-modal .report-heading h3, #typing-report-modal .report-detail-grid strong, #typing-report-modal .report-comparison h4 { color: #111 !important; }
+  #typing-report-modal .report-detail-grid { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+  #typing-report-modal .report-comparison { break-inside: avoid; }
+}
+
+@media print {
+  body.printing-rssb-report * { visibility: hidden !important; }
+  body.printing-rssb-report #rssb-exam-hall-fullscreen,
+  body.printing-rssb-report #rssb-exam-hall-fullscreen * { visibility: visible !important; }
+  body.printing-rssb-report #rssb-exam-hall-fullscreen {
+    position: absolute !important; inset: 0 !important; height: auto !important;
+    overflow: visible !important; background: #ffffff !important;
+  }
+  body.printing-rssb-report #rssb-printable-report-area { overflow: visible !important; padding: 0 !important; }
+  body.printing-rssb-report .screen-only { display: none !important; }
+  body.printing-rssb-report .rssb-paper-detail-card { display: flex !important; break-inside: avoid; page-break-inside: avoid; }
+}

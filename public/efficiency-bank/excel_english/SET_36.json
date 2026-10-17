@@ -1,0 +1,337 @@
+{
+  "set_id": "SET_36",
+  "category": "excel_english",
+  "total_questions": 15,
+  "total_marks": 25.0,
+  "content": {
+    "headers": [
+      "Roll No",
+      "Student Name",
+      "Maths",
+      "Science",
+      "English",
+      "Computer",
+      "Total",
+      "Result"
+    ],
+    "rows": [
+      {
+        "Roll No": 1001,
+        "Student Name": "Rahul",
+        "Maths": 93,
+        "Science": 41,
+        "English": 45,
+        "Computer": 48,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1002,
+        "Student Name": "Amit",
+        "Maths": 77,
+        "Science": 82,
+        "English": 83,
+        "Computer": 80,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1003,
+        "Student Name": "Priya",
+        "Maths": 91,
+        "Science": 84,
+        "English": 74,
+        "Computer": 59,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1004,
+        "Student Name": "Sneha",
+        "Maths": 83,
+        "Science": 57,
+        "English": 41,
+        "Computer": 99,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1005,
+        "Student Name": "Rohan",
+        "Maths": 89,
+        "Science": 81,
+        "English": 59,
+        "Computer": 92,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1006,
+        "Student Name": "Vikram",
+        "Maths": 99,
+        "Science": 81,
+        "English": 89,
+        "Computer": 71,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1007,
+        "Student Name": "Ananya",
+        "Maths": 84,
+        "Science": 75,
+        "English": 90,
+        "Computer": 62,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1008,
+        "Student Name": "Deepak",
+        "Maths": 83,
+        "Science": 54,
+        "English": 63,
+        "Computer": 93,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1009,
+        "Student Name": "Karan",
+        "Maths": 63,
+        "Science": 58,
+        "English": 93,
+        "Computer": 58,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1010,
+        "Student Name": "Neha",
+        "Maths": 47,
+        "Science": 83,
+        "English": 88,
+        "Computer": 76,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1011,
+        "Student Name": "Sanjay",
+        "Maths": 73,
+        "Science": 50,
+        "English": 60,
+        "Computer": 73,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1012,
+        "Student Name": "Kriti",
+        "Maths": 40,
+        "Science": 53,
+        "English": 86,
+        "Computer": 76,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1013,
+        "Student Name": "Rajesh",
+        "Maths": 51,
+        "Science": 95,
+        "English": 90,
+        "Computer": 69,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1014,
+        "Student Name": "Sunita",
+        "Maths": 63,
+        "Science": 55,
+        "English": 67,
+        "Computer": 81,
+        "Total": "",
+        "Result": ""
+      },
+      {
+        "Roll No": 1015,
+        "Student Name": "Vijay",
+        "Maths": 73,
+        "Science": 98,
+        "English": 64,
+        "Computer": 95,
+        "Total": "",
+        "Result": ""
+      }
+    ]
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Select active column 4 and change formatting code parameter to system type 17.",
+      "steps": [
+        "Select column range 4 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 2,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Select active column 7 and change formatting code parameter to system type 510.",
+      "steps": [
+        "Select column range 7 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 3,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Select active column 7 and change formatting code parameter to system type 132.",
+      "steps": [
+        "Select column range 7 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 4,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 1 and change formatting code parameter to system type 224.",
+      "steps": [
+        "Select column range 1 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 5,
+      "difficulty": "Hard",
+      "marks": 2.3,
+      "instruction": "Select active column 6 and change formatting code parameter to system type 593.",
+      "steps": [
+        "Select column range 6 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 6,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 6 and change formatting code parameter to system type 432.",
+      "steps": [
+        "Select column range 6 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 7,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 3 and change formatting code parameter to system type 331.",
+      "steps": [
+        "Select column range 3 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 8,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 1 and change formatting code parameter to system type 350.",
+      "steps": [
+        "Select column range 1 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 9,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 7 and change formatting code parameter to system type 265.",
+      "steps": [
+        "Select column range 7 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 10,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 1 and change formatting code parameter to system type 364.",
+      "steps": [
+        "Select column range 1 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 11,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 7 and change formatting code parameter to system type 202.",
+      "steps": [
+        "Select column range 7 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 12,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Select active column 7 and change formatting code parameter to system type 125.",
+      "steps": [
+        "Select column range 7 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 13,
+      "difficulty": "Easy",
+      "marks": 1.0,
+      "instruction": "Select active column 6 and change formatting code parameter to system type 131.",
+      "steps": [
+        "Select column range 6 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 14,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 1 and change formatting code parameter to system type 378.",
+      "steps": [
+        "Select column range 1 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    },
+    {
+      "question_number": 15,
+      "difficulty": "Medium",
+      "marks": 1.5,
+      "instruction": "Select active column 3 and change formatting code parameter to system type 303.",
+      "steps": [
+        "Select column range 3 using the top mouse header drag option.",
+        "Go to Home tab and locate number and border controls group.",
+        "Choose formatting profile from settings and apply to cells."
+      ]
+    }
+  ]
+}

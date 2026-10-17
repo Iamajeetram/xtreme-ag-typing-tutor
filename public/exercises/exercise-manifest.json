@@ -1,0 +1,4820 @@
+{
+  "version": 2,
+  "total": 600,
+  "languages": {
+    "english": {
+      "displayName": "English Typing",
+      "count": 300,
+      "path": "english/",
+      "manifest": "english/exercise-manifest.json"
+    },
+    "hindi": {
+      "displayName": "Hindi Typing",
+      "count": 300,
+      "path": "hindi/",
+      "manifest": "hindi/exercise-manifest.json"
+    }
+  },
+  "exercises": [
+    {
+      "id": "en-001",
+      "sourceId": "001",
+      "language": "en",
+      "title": "Exercise 001 — In the damp warmth of a modest machine shop in Milwaukee, Wisconsin, during the late…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_001.txt"
+    },
+    {
+      "id": "en-002",
+      "sourceId": "002",
+      "language": "en",
+      "title": "Exercise 002 — For centuries, the human impulse to record thought remained bound to the deliberate…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_002.txt"
+    },
+    {
+      "id": "en-003",
+      "sourceId": "003",
+      "language": "en",
+      "title": "Exercise 003 — The afternoon air hung thick with the scent of salt, roasted coffee, and melting tar…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_003.txt"
+    },
+    {
+      "id": "en-004",
+      "sourceId": "004",
+      "language": "en",
+      "title": "Exercise 004 — For centuries, the transcription of human thought relied entirely upon the slow,…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_004.txt"
+    },
+    {
+      "id": "en-005",
+      "sourceId": "005",
+      "language": "en",
+      "title": "Exercise 005 — In the humid summer of 1867, inside a modest machine shop in Milwaukee, Wisconsin, an…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_005.txt"
+    },
+    {
+      "id": "en-006",
+      "sourceId": "006",
+      "language": "en",
+      "title": "Exercise 006 — The gentle hum of the printing press in the dim workshop signaled the dawn of a…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_006.txt"
+    },
+    {
+      "id": "en-007",
+      "sourceId": "007",
+      "language": "en",
+      "title": "Exercise 007 — The sharp scent of roasted coffee beans has a remarkable way of grounding the human…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_007.txt"
+    },
+    {
+      "id": "en-008",
+      "sourceId": "008",
+      "language": "en",
+      "title": "Exercise 008 — The morning mist still clung to the cobblestone alleyages of early nineteenth century…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_008.txt"
+    },
+    {
+      "id": "en-009",
+      "sourceId": "009",
+      "language": "en",
+      "title": "Exercise 009 — The morning fog was still clinging to the cobblestone streets of lower Manhattan when…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_009.txt"
+    },
+    {
+      "id": "en-010",
+      "sourceId": "010",
+      "language": "en",
+      "title": "Exercise 010 — The autumn air in the northern reaches of the great continent carried the crisp,…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_010.txt"
+    },
+    {
+      "id": "en-011",
+      "sourceId": "011",
+      "language": "en",
+      "title": "Exercise 011 — The aroma of roasted malt and crushed juniper berries hung thick in the damp London…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_011.txt"
+    },
+    {
+      "id": "en-012",
+      "sourceId": "012",
+      "language": "en",
+      "title": "Exercise 012 — Long before the glowing screens of modern navigation devices directed our every turn,…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_012.txt"
+    },
+    {
+      "id": "en-013",
+      "sourceId": "013",
+      "language": "en",
+      "title": "Exercise 013 — Long before the sleek glass skyscrapers and neon lights defined the modern metropolis,…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_013.txt"
+    },
+    {
+      "id": "en-014",
+      "sourceId": "014",
+      "language": "en",
+      "title": "Exercise 014 — The early morning mist still clung to the cobblestones of lower Manhattan as the…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_014.txt"
+    },
+    {
+      "id": "en-015",
+      "sourceId": "015",
+      "language": "en",
+      "title": "Exercise 015 — The morning air of late autumn carried a crisp, biting chill across the sprawling…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_015.txt"
+    },
+    {
+      "id": "en-016",
+      "sourceId": "016",
+      "language": "en",
+      "title": "Exercise 016 — The salt mines of Wieliczka in southern Poland have long stood as a breathtaking…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_016.txt"
+    },
+    {
+      "id": "en-017",
+      "sourceId": "017",
+      "language": "en",
+      "title": "Exercise 017 — The golden age of cartography was an era defined by salt-crusted wooden galleons…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_017.txt"
+    },
+    {
+      "id": "en-018",
+      "sourceId": "018",
+      "language": "en",
+      "title": "Exercise 018 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_018.txt"
+    },
+    {
+      "id": "en-019",
+      "sourceId": "019",
+      "language": "en",
+      "title": "Exercise 019 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_019.txt"
+    },
+    {
+      "id": "en-020",
+      "sourceId": "020",
+      "language": "en",
+      "title": "Exercise 020 — Long before the neon glow of modern metropolises illuminated the nocturnal sky,…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_020.txt"
+    },
+    {
+      "id": "en-021",
+      "sourceId": "021",
+      "language": "en",
+      "title": "Exercise 021 — In the golden age of maritime exploration, the vast and unforgiving expanse of the…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_021.txt"
+    },
+    {
+      "id": "en-022",
+      "sourceId": "022",
+      "language": "en",
+      "title": "Exercise 022 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_022.txt"
+    },
+    {
+      "id": "en-023",
+      "sourceId": "023",
+      "language": "en",
+      "title": "Exercise 023 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_023.txt"
+    },
+    {
+      "id": "en-024",
+      "sourceId": "024",
+      "language": "en",
+      "title": "Exercise 024 — The crisp autumn wind swept through the narrow cobblestone alleyways of Florence…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_024.txt"
+    },
+    {
+      "id": "en-025",
+      "sourceId": "025",
+      "language": "en",
+      "title": "Exercise 025 — Long before the advent of modern refrigeration, the preservation of perishable foods…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_025.txt"
+    },
+    {
+      "id": "en-026",
+      "sourceId": "026",
+      "language": "en",
+      "title": "Exercise 026 — The morning air in the bustling port of fifteenth-century Venice carried the heavy…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_026.txt"
+    },
+    {
+      "id": "en-027",
+      "sourceId": "027",
+      "language": "en",
+      "title": "Exercise 027 — The midnight oil burned low in the dimly lit study of a modest London flat during the…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_027.txt"
+    },
+    {
+      "id": "en-028",
+      "sourceId": "028",
+      "language": "en",
+      "title": "Exercise 028 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_028.txt"
+    },
+    {
+      "id": "en-029",
+      "sourceId": "029",
+      "language": "en",
+      "title": "Exercise 029 — The gentle rustle of silk and the soft scraping of a quill against thick parchment…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_029.txt"
+    },
+    {
+      "id": "en-030",
+      "sourceId": "030",
+      "language": "en",
+      "title": "Exercise 030 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_030.txt"
+    },
+    {
+      "id": "en-031",
+      "sourceId": "031",
+      "language": "en",
+      "title": "Exercise 031 — The sun had barely begun to breach the jagged horizon of the Sierra Nevada mountains,…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_031.txt"
+    },
+    {
+      "id": "en-032",
+      "sourceId": "032",
+      "language": "en",
+      "title": "Exercise 032 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_032.txt"
+    },
+    {
+      "id": "en-033",
+      "sourceId": "033",
+      "language": "en",
+      "title": "Exercise 033 — The sun had barely begun to breach the jagged horizon of the rugged North Atlantic…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_033.txt"
+    },
+    {
+      "id": "en-034",
+      "sourceId": "034",
+      "language": "en",
+      "title": "Exercise 034 — The soft hum of a spinning vinyl record has accompanied human memories for over a…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_034.txt"
+    },
+    {
+      "id": "en-035",
+      "sourceId": "035",
+      "language": "en",
+      "title": "Exercise 035 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_035.txt"
+    },
+    {
+      "id": "en-036",
+      "sourceId": "036",
+      "language": "en",
+      "title": "Exercise 036 — In the late autumn of eighteen hundred and six, a biting fog rolled relentlessly over…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_036.txt"
+    },
+    {
+      "id": "en-037",
+      "sourceId": "037",
+      "language": "en",
+      "title": "Exercise 037 — The crisp autumn air of eighteen eighty-eight held a quiet tension as the steam…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_037.txt"
+    },
+    {
+      "id": "en-038",
+      "sourceId": "038",
+      "language": "en",
+      "title": "Exercise 038 — Long before the sleek glass skyscrapers of modern finance dominated the skyline of…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_038.txt"
+    },
+    {
+      "id": "en-039",
+      "sourceId": "039",
+      "language": "en",
+      "title": "Exercise 039 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_039.txt"
+    },
+    {
+      "id": "en-040",
+      "sourceId": "040",
+      "language": "en",
+      "title": "Exercise 040 — Long before the neon glow of modern metropolises illuminated the nocturnal skies, the…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_040.txt"
+    },
+    {
+      "id": "en-041",
+      "sourceId": "041",
+      "language": "en",
+      "title": "Exercise 041 — The biting autumn wind swept across the desolate expanse of the Salisbury Plain,…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_041.txt"
+    },
+    {
+      "id": "en-042",
+      "sourceId": "042",
+      "language": "en",
+      "title": "Exercise 042 — The relentless march of human progress has been fundamentally shaped by our insatiable…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_042.txt"
+    },
+    {
+      "id": "en-043",
+      "sourceId": "043",
+      "language": "en",
+      "title": "Exercise 043 — The morning mist still clung to the cobblestone streets of lower Manhattan in the late…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_043.txt"
+    },
+    {
+      "id": "en-044",
+      "sourceId": "044",
+      "language": "en",
+      "title": "Exercise 044 — The morning air in the small coastal village of Portishead was thick with the scent of…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_044.txt"
+    },
+    {
+      "id": "en-045",
+      "sourceId": "045",
+      "language": "en",
+      "title": "Exercise 045 — The crisp morning air of October nineteenth in the year eighteen hundred and fourteen…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_045.txt"
+    },
+    {
+      "id": "en-046",
+      "sourceId": "046",
+      "language": "en",
+      "title": "Exercise 046 — The crisp autumn wind swept through the narrow cobblestone alleyways of Florence,…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_046.txt"
+    },
+    {
+      "id": "en-047",
+      "sourceId": "047",
+      "language": "en",
+      "title": "Exercise 047 — The morning mist still clung to the ancient cobblestones of the harbor town as master…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_047.txt"
+    },
+    {
+      "id": "en-048",
+      "sourceId": "048",
+      "language": "en",
+      "title": "Exercise 048 — The salty Atlantic air whipped across the weathered wooden deck of the whaling ship as…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_048.txt"
+    },
+    {
+      "id": "en-049",
+      "sourceId": "049",
+      "language": "en",
+      "title": "Exercise 049 — The gentle chime of the old grandfather clock echoing through the hallway marked the…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_049.txt"
+    },
+    {
+      "id": "en-050",
+      "sourceId": "050",
+      "language": "en",
+      "title": "Exercise 050 — The early morning mist still clung tightly to the cobblestone streets of lower…",
+      "category": "Typing History & Inventions",
+      "file": "english/exercise_050.txt"
+    },
+    {
+      "id": "en-051",
+      "sourceId": "051",
+      "language": "en",
+      "title": "Exercise 051 — The autumn wind whipped through the dense, towering canopy of the Black Forest,…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_051.txt"
+    },
+    {
+      "id": "en-052",
+      "sourceId": "052",
+      "language": "en",
+      "title": "Exercise 052 — The morning air of late autumn carried the sharp scent of damp earth and woodsmoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_052.txt"
+    },
+    {
+      "id": "en-053",
+      "sourceId": "053",
+      "language": "en",
+      "title": "Exercise 053 — The morning air of late autumn carried a sharp, crystalline bite that caused breath to…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_053.txt"
+    },
+    {
+      "id": "en-054",
+      "sourceId": "054",
+      "language": "en",
+      "title": "Exercise 054 — The morning mist still clung stubbornly to the emerald slopes of the Scottish…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_054.txt"
+    },
+    {
+      "id": "en-055",
+      "sourceId": "055",
+      "language": "en",
+      "title": "Exercise 055 — The ancient maritime trade route known historically as the Spice Route represents one…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_055.txt"
+    },
+    {
+      "id": "en-056",
+      "sourceId": "056",
+      "language": "en",
+      "title": "Exercise 056 — In the fading twilight of a brisk October evening in eighteen hundred and…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_056.txt"
+    },
+    {
+      "id": "en-057",
+      "sourceId": "057",
+      "language": "en",
+      "title": "Exercise 057 — The autumn air of eighteen eighty-eight carried a bitter chill across the cobblestone…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_057.txt"
+    },
+    {
+      "id": "en-058",
+      "sourceId": "058",
+      "language": "en",
+      "title": "Exercise 058 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_058.txt"
+    },
+    {
+      "id": "en-059",
+      "sourceId": "059",
+      "language": "en",
+      "title": "Exercise 059 — The golden age of cartography was an era defined by salt-crusted wooden sailing ships,…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_059.txt"
+    },
+    {
+      "id": "en-060",
+      "sourceId": "060",
+      "language": "en",
+      "title": "Exercise 060 — The afternoon sun cast a warm golden amber hue across the sprawling terracotta…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_060.txt"
+    },
+    {
+      "id": "en-061",
+      "sourceId": "061",
+      "language": "en",
+      "title": "Exercise 061 — The golden hour sunlight cast long, amber shadows across the cobblestones of…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_061.txt"
+    },
+    {
+      "id": "en-062",
+      "sourceId": "062",
+      "language": "en",
+      "title": "Exercise 062 — The twilight air over the ancient city of Alexandria hummed with the quiet rustute of…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_062.txt"
+    },
+    {
+      "id": "en-063",
+      "sourceId": "063",
+      "language": "en",
+      "title": "Exercise 063 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_063.txt"
+    },
+    {
+      "id": "en-064",
+      "sourceId": "064",
+      "language": "en",
+      "title": "Exercise 064 — The sharp winter wind whipped through the narrow cobblestone alleyways of Florence…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_064.txt"
+    },
+    {
+      "id": "en-065",
+      "sourceId": "065",
+      "language": "en",
+      "title": "Exercise 065 — The dawn of the twenty first century brought with it a quiet revolution that…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_065.txt"
+    },
+    {
+      "id": "en-066",
+      "sourceId": "066",
+      "language": "en",
+      "title": "Exercise 066 — The salt marshes of the ancient Suffolk coast have witnessed the quiet ebb and flow of…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_066.txt"
+    },
+    {
+      "id": "en-067",
+      "sourceId": "067",
+      "language": "en",
+      "title": "Exercise 067 — The salt flats of the high plateau in northwestern Bolivia stretch out as an…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_067.txt"
+    },
+    {
+      "id": "en-068",
+      "sourceId": "068",
+      "language": "en",
+      "title": "Exercise 068 — The relentless ticking of a mechanical timepiece has long governed the rhythms of…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_068.txt"
+    },
+    {
+      "id": "en-069",
+      "sourceId": "069",
+      "language": "en",
+      "title": "Exercise 069 — The relentless tick of the mechanical clock has governed human civilization for…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_069.txt"
+    },
+    {
+      "id": "en-070",
+      "sourceId": "070",
+      "language": "en",
+      "title": "Exercise 070 — The crisp dawn air of late October in eighteen hundred and sixty-three carried a sharp…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_070.txt"
+    },
+    {
+      "id": "en-071",
+      "sourceId": "071",
+      "language": "en",
+      "title": "Exercise 071 — Long before the digital hum of modern commerce and the endless scroll of glowing…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_071.txt"
+    },
+    {
+      "id": "en-072",
+      "sourceId": "072",
+      "language": "en",
+      "title": "Exercise 072 — The air inside the dimly lit laboratory was thick with the scent of ozone and the…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_072.txt"
+    },
+    {
+      "id": "en-073",
+      "sourceId": "073",
+      "language": "en",
+      "title": "Exercise 073 — Long before the advent of modern refrigeration, the preservation of perishable goods…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_073.txt"
+    },
+    {
+      "id": "en-074",
+      "sourceId": "074",
+      "language": "en",
+      "title": "Exercise 074 — The crisp autumn air of eighteen eighty-eight held a quiet chill that seemed to seep…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_074.txt"
+    },
+    {
+      "id": "en-075",
+      "sourceId": "075",
+      "language": "en",
+      "title": "Exercise 075 — The morning air over the Hudson River hung heavy with the damp chill of late autumn in…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_075.txt"
+    },
+    {
+      "id": "en-076",
+      "sourceId": "076",
+      "language": "en",
+      "title": "Exercise 076 — The salt air hung thick and heavy over the cobblestone docks of Bristol in the spring…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_076.txt"
+    },
+    {
+      "id": "en-077",
+      "sourceId": "077",
+      "language": "en",
+      "title": "Exercise 077 — Long before the advent of the internal combustion engine and the shimmering rails of…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_077.txt"
+    },
+    {
+      "id": "en-078",
+      "sourceId": "078",
+      "language": "en",
+      "title": "Exercise 078 — The salt trade is perhaps one of the most ancient and fascinating commercial…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_078.txt"
+    },
+    {
+      "id": "en-079",
+      "sourceId": "079",
+      "language": "en",
+      "title": "Exercise 079 — The morning air of late October in seventeen eighty-one hung heavy with the acrid…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_079.txt"
+    },
+    {
+      "id": "en-080",
+      "sourceId": "080",
+      "language": "en",
+      "title": "Exercise 080 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_080.txt"
+    },
+    {
+      "id": "en-081",
+      "sourceId": "081",
+      "language": "en",
+      "title": "Exercise 081 — The cold morning air of November in eighteen hundred and four bit sharply against the…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_081.txt"
+    },
+    {
+      "id": "en-082",
+      "sourceId": "082",
+      "language": "en",
+      "title": "Exercise 082 — The golden age of cartography was an era defined by salt-crusted wooden galleons,…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_082.txt"
+    },
+    {
+      "id": "en-083",
+      "sourceId": "083",
+      "language": "en",
+      "title": "Exercise 083 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_083.txt"
+    },
+    {
+      "id": "en-084",
+      "sourceId": "084",
+      "language": "en",
+      "title": "Exercise 084 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of burning coal…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_084.txt"
+    },
+    {
+      "id": "en-085",
+      "sourceId": "085",
+      "language": "en",
+      "title": "Exercise 085 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_085.txt"
+    },
+    {
+      "id": "en-086",
+      "sourceId": "086",
+      "language": "en",
+      "title": "Exercise 086 — The morning mist still clung to the cobblestone alleyages of Florence when a young…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_086.txt"
+    },
+    {
+      "id": "en-087",
+      "sourceId": "087",
+      "language": "en",
+      "title": "Exercise 087 — The salt marshes of England have long been places of haunting beauty and profound…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_087.txt"
+    },
+    {
+      "id": "en-088",
+      "sourceId": "088",
+      "language": "en",
+      "title": "Exercise 088 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_088.txt"
+    },
+    {
+      "id": "en-089",
+      "sourceId": "089",
+      "language": "en",
+      "title": "Exercise 089 — The early morning mist still clung to the cobblestones of lower Manhattan as a…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_089.txt"
+    },
+    {
+      "id": "en-090",
+      "sourceId": "090",
+      "language": "en",
+      "title": "Exercise 090 — The early morning mist still clung tightly to the glassy surface of the Seine when the…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_090.txt"
+    },
+    {
+      "id": "en-091",
+      "sourceId": "091",
+      "language": "en",
+      "title": "Exercise 091 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_091.txt"
+    },
+    {
+      "id": "en-092",
+      "sourceId": "092",
+      "language": "en",
+      "title": "Exercise 092 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_092.txt"
+    },
+    {
+      "id": "en-093",
+      "sourceId": "093",
+      "language": "en",
+      "title": "Exercise 093 — Long before the hum of neon signs and the endless glow of smartphone screens dominated…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_093.txt"
+    },
+    {
+      "id": "en-094",
+      "sourceId": "094",
+      "language": "en",
+      "title": "Exercise 094 — The early morning mist still clung to the cobblestones of lower Manhattan as a…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_094.txt"
+    },
+    {
+      "id": "en-095",
+      "sourceId": "095",
+      "language": "en",
+      "title": "Exercise 095 — The aroma of roasting coffee beans has a way of anchoring the human experience,…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_095.txt"
+    },
+    {
+      "id": "en-096",
+      "sourceId": "096",
+      "language": "en",
+      "title": "Exercise 096 — The morning mist still clung stubbornly to the cobbled streets of late eighteenth…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_096.txt"
+    },
+    {
+      "id": "en-097",
+      "sourceId": "097",
+      "language": "en",
+      "title": "Exercise 097 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_097.txt"
+    },
+    {
+      "id": "en-098",
+      "sourceId": "098",
+      "language": "en",
+      "title": "Exercise 098 — The gentle rustle of silk and the soft scraping of a reed pen against vellum once…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_098.txt"
+    },
+    {
+      "id": "en-099",
+      "sourceId": "099",
+      "language": "en",
+      "title": "Exercise 099 — The aroma of roasted cocoa beans has captivated the human imagination for thousands of…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_099.txt"
+    },
+    {
+      "id": "en-100",
+      "sourceId": "100",
+      "language": "en",
+      "title": "Exercise 100 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "People & National Contributions",
+      "file": "english/exercise_100.txt"
+    },
+    {
+      "id": "en-101",
+      "sourceId": "101",
+      "language": "en",
+      "title": "Exercise 101 — Long before the gleaming glass skyscrapers of modern finance pierced the misty London…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_101.txt"
+    },
+    {
+      "id": "en-102",
+      "sourceId": "102",
+      "language": "en",
+      "title": "Exercise 102 — The early morning mist still clung to the cobblestones of the harbor district when the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_102.txt"
+    },
+    {
+      "id": "en-103",
+      "sourceId": "103",
+      "language": "en",
+      "title": "Exercise 103 — The salt air of the Aegean Sea carried the scent of burning olive wood and wet stone…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_103.txt"
+    },
+    {
+      "id": "en-104",
+      "sourceId": "104",
+      "language": "en",
+      "title": "Exercise 104 — In the heart of the bustling metropolis, where the relentless hum of modern…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_104.txt"
+    },
+    {
+      "id": "en-105",
+      "sourceId": "105",
+      "language": "en",
+      "title": "Exercise 105 — The winter of seventeen seventy seven settled over the rolling hills of Pennsylvania…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_105.txt"
+    },
+    {
+      "id": "en-106",
+      "sourceId": "106",
+      "language": "en",
+      "title": "Exercise 106 — The crisp dawn of the late eighteenth century heralded a quiet revolution across the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_106.txt"
+    },
+    {
+      "id": "en-107",
+      "sourceId": "107",
+      "language": "en",
+      "title": "Exercise 107 — The autumn air of eighteen eighty-eight carried a bitter chill across the cobblestone…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_107.txt"
+    },
+    {
+      "id": "en-108",
+      "sourceId": "108",
+      "language": "en",
+      "title": "Exercise 108 — The relentless pursuit of speed has defined human innovation for centuries, but few…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_108.txt"
+    },
+    {
+      "id": "en-109",
+      "sourceId": "109",
+      "language": "en",
+      "title": "Exercise 109 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_109.txt"
+    },
+    {
+      "id": "en-110",
+      "sourceId": "110",
+      "language": "en",
+      "title": "Exercise 110 — The ancient maritime Silk Road was not merely a commercial trading network of spices,…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_110.txt"
+    },
+    {
+      "id": "en-111",
+      "sourceId": "111",
+      "language": "en",
+      "title": "Exercise 111 — The dawn of the twenty first century brought with it a profound quiet revolution in…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_111.txt"
+    },
+    {
+      "id": "en-112",
+      "sourceId": "112",
+      "language": "en",
+      "title": "Exercise 112 — The vast expanse of the open ocean has always exerted a profound and mysterious pull…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_112.txt"
+    },
+    {
+      "id": "en-113",
+      "sourceId": "113",
+      "language": "en",
+      "title": "Exercise 113 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_113.txt"
+    },
+    {
+      "id": "en-114",
+      "sourceId": "114",
+      "language": "en",
+      "title": "Exercise 114 — The morning air of late autumn carried a sharp, crystalline bite that painted the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_114.txt"
+    },
+    {
+      "id": "en-115",
+      "sourceId": "115",
+      "language": "en",
+      "title": "Exercise 115 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_115.txt"
+    },
+    {
+      "id": "en-116",
+      "sourceId": "116",
+      "language": "en",
+      "title": "Exercise 116 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_116.txt"
+    },
+    {
+      "id": "en-117",
+      "sourceId": "117",
+      "language": "en",
+      "title": "Exercise 117 — The early morning mist still clung tightly to the cobblestone streets of London as a…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_117.txt"
+    },
+    {
+      "id": "en-118",
+      "sourceId": "118",
+      "language": "en",
+      "title": "Exercise 118 — The morning air of the early industrial age was thick with the scent of damp wool,…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_118.txt"
+    },
+    {
+      "id": "en-119",
+      "sourceId": "119",
+      "language": "en",
+      "title": "Exercise 119 — The brilliant glow of the gaslamps flickered against the damp cobblestones of…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_119.txt"
+    },
+    {
+      "id": "en-120",
+      "sourceId": "120",
+      "language": "en",
+      "title": "Exercise 120 — The morning air of late autumn carried a sharp, crystalline bite across the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_120.txt"
+    },
+    {
+      "id": "en-121",
+      "sourceId": "121",
+      "language": "en",
+      "title": "Exercise 121 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_121.txt"
+    },
+    {
+      "id": "en-122",
+      "sourceId": "122",
+      "language": "en",
+      "title": "Exercise 122 — The golden hour of late afternoon cast a long, amber glow across the bustling docks of…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_122.txt"
+    },
+    {
+      "id": "en-123",
+      "sourceId": "123",
+      "language": "en",
+      "title": "Exercise 123 — The crisp morning air of October nineteenth in the year seventeen eighty-one carried…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_123.txt"
+    },
+    {
+      "id": "en-124",
+      "sourceId": "124",
+      "language": "en",
+      "title": "Exercise 124 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_124.txt"
+    },
+    {
+      "id": "en-125",
+      "sourceId": "125",
+      "language": "en",
+      "title": "Exercise 125 — The crisp autumn wind swept across the cobblestone lanes of old Boston, carrying the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_125.txt"
+    },
+    {
+      "id": "en-126",
+      "sourceId": "126",
+      "language": "en",
+      "title": "Exercise 126 — The autumn wind swept fiercely across the rugged cliffs of the northern coast,…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_126.txt"
+    },
+    {
+      "id": "en-127",
+      "sourceId": "127",
+      "language": "en",
+      "title": "Exercise 127 — The pale morning light of an early spring in eighteen hundred and sixty-two filtered…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_127.txt"
+    },
+    {
+      "id": "en-128",
+      "sourceId": "128",
+      "language": "en",
+      "title": "Exercise 128 — The golden age of cartography was an era defined by salt-crusted wooden sailing ships…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_128.txt"
+    },
+    {
+      "id": "en-129",
+      "sourceId": "129",
+      "language": "en",
+      "title": "Exercise 129 — The golden autumn of eighteen eighty-eight cast long shadows across the cobblestones…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_129.txt"
+    },
+    {
+      "id": "en-130",
+      "sourceId": "130",
+      "language": "en",
+      "title": "Exercise 130 — The crisp dawn of October twenty fourth in the year nineteen hundred and twenty nine…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_130.txt"
+    },
+    {
+      "id": "en-131",
+      "sourceId": "131",
+      "language": "en",
+      "title": "Exercise 131 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_131.txt"
+    },
+    {
+      "id": "en-132",
+      "sourceId": "132",
+      "language": "en",
+      "title": "Exercise 132 — The early morning mist still clung to the cobblestones of lower Manhattan as a…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_132.txt"
+    },
+    {
+      "id": "en-133",
+      "sourceId": "133",
+      "language": "en",
+      "title": "Exercise 133 — The soft clatter of horse hooves against cobblestones echoed through the damp morning…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_133.txt"
+    },
+    {
+      "id": "en-134",
+      "sourceId": "134",
+      "language": "en",
+      "title": "Exercise 134 — The amber glow of a late afternoon sun filtered through the dense canopy of ancient…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_134.txt"
+    },
+    {
+      "id": "en-135",
+      "sourceId": "135",
+      "language": "en",
+      "title": "Exercise 135 — Long before the invention of the mechanical clock or the digital screen, humanity…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_135.txt"
+    },
+    {
+      "id": "en-136",
+      "sourceId": "136",
+      "language": "en",
+      "title": "Exercise 136 — The scent of ozone, roasted coffee beans, and damp wool always hung heavy in the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_136.txt"
+    },
+    {
+      "id": "en-137",
+      "sourceId": "137",
+      "language": "en",
+      "title": "Exercise 137 — The autumn air of eighteen eighty-eight carried a bitter chill across the cobblestone…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_137.txt"
+    },
+    {
+      "id": "en-138",
+      "sourceId": "138",
+      "language": "en",
+      "title": "Exercise 138 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_138.txt"
+    },
+    {
+      "id": "en-139",
+      "sourceId": "139",
+      "language": "en",
+      "title": "Exercise 139 — The midnight air of October twenty fourth in the year nineteen hundred and twenty nine…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_139.txt"
+    },
+    {
+      "id": "en-140",
+      "sourceId": "140",
+      "language": "en",
+      "title": "Exercise 140 — The sun crested the rugged horizon of the American frontier in the mid-nineteenth…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_140.txt"
+    },
+    {
+      "id": "en-141",
+      "sourceId": "141",
+      "language": "en",
+      "title": "Exercise 141 — The sun dipped below the rugged horizon of the Yorkshire Dales, casting a long, amber…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_141.txt"
+    },
+    {
+      "id": "en-142",
+      "sourceId": "142",
+      "language": "en",
+      "title": "Exercise 142 — Long before the neon lights of modern entertainment districts illuminated the night…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_142.txt"
+    },
+    {
+      "id": "en-143",
+      "sourceId": "143",
+      "language": "en",
+      "title": "Exercise 143 — The twilight air in seventeenth-century Amsterdam carried the unmistakable scent of…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_143.txt"
+    },
+    {
+      "id": "en-144",
+      "sourceId": "144",
+      "language": "en",
+      "title": "Exercise 144 — The flickering amber glow of the hearth cast long, dancing shadows across the rugged…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_144.txt"
+    },
+    {
+      "id": "en-145",
+      "sourceId": "145",
+      "language": "en",
+      "title": "Exercise 145 — The golden age of cartography was an era defined by salt-crusted wooden sailing ships,…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_145.txt"
+    },
+    {
+      "id": "en-146",
+      "sourceId": "146",
+      "language": "en",
+      "title": "Exercise 146 — The afternoon sun hung low and heavy over the dusty expanse of the central plains,…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_146.txt"
+    },
+    {
+      "id": "en-147",
+      "sourceId": "147",
+      "language": "en",
+      "title": "Exercise 147 — The brilliant morning sun cast long amber shadows across the dew-kissed cobblestones…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_147.txt"
+    },
+    {
+      "id": "en-148",
+      "sourceId": "148",
+      "language": "en",
+      "title": "Exercise 148 — The winter wind howled across the rugged coastline of northern France in the early…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_148.txt"
+    },
+    {
+      "id": "en-149",
+      "sourceId": "149",
+      "language": "en",
+      "title": "Exercise 149 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_149.txt"
+    },
+    {
+      "id": "en-150",
+      "sourceId": "150",
+      "language": "en",
+      "title": "Exercise 150 — Long before the neon glow of modern metropolises illuminated the nocturnal skies, the…",
+      "category": "Stories & Communication",
+      "file": "english/exercise_150.txt"
+    },
+    {
+      "id": "en-151",
+      "sourceId": "151",
+      "language": "en",
+      "title": "Exercise 151 — The sun had barely crested the jagged horizon of the rugged North Atlantic when the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_151.txt"
+    },
+    {
+      "id": "en-152",
+      "sourceId": "152",
+      "language": "en",
+      "title": "Exercise 152 — The relentless pursuit of the impossible has always defined the human spirit, driving…",
+      "category": "Culture & Society",
+      "file": "english/exercise_152.txt"
+    },
+    {
+      "id": "en-153",
+      "sourceId": "153",
+      "language": "en",
+      "title": "Exercise 153 — The sun had barely begun to breach the jagged horizon of the rugged landscape when the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_153.txt"
+    },
+    {
+      "id": "en-154",
+      "sourceId": "154",
+      "language": "en",
+      "title": "Exercise 154 — In the shadow of the imposing Swiss Alps, the crisp morning air carried the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_154.txt"
+    },
+    {
+      "id": "en-155",
+      "sourceId": "155",
+      "language": "en",
+      "title": "Exercise 155 — The flickering amber glow of gaslamps pierced the foggy London twilight of 1888,…",
+      "category": "Culture & Society",
+      "file": "english/exercise_155.txt"
+    },
+    {
+      "id": "en-156",
+      "sourceId": "156",
+      "language": "en",
+      "title": "Exercise 156 — The early morning mist still clung tightly to the cobblestone streets of old London…",
+      "category": "Culture & Society",
+      "file": "english/exercise_156.txt"
+    },
+    {
+      "id": "en-157",
+      "sourceId": "157",
+      "language": "en",
+      "title": "Exercise 157 — The early morning mist still clung to the cobblestones of lower Manhattan as a…",
+      "category": "Culture & Society",
+      "file": "english/exercise_157.txt"
+    },
+    {
+      "id": "en-158",
+      "sourceId": "158",
+      "language": "en",
+      "title": "Exercise 158 — The salt marsh lay silent and sprawling beneath the pale expanse of an autumn sky,…",
+      "category": "Culture & Society",
+      "file": "english/exercise_158.txt"
+    },
+    {
+      "id": "en-159",
+      "sourceId": "159",
+      "language": "en",
+      "title": "Exercise 159 — The relentless pursuit of speed has long defined the human condition, driving us to…",
+      "category": "Culture & Society",
+      "file": "english/exercise_159.txt"
+    },
+    {
+      "id": "en-160",
+      "sourceId": "160",
+      "language": "en",
+      "title": "Exercise 160 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "file": "english/exercise_160.txt"
+    },
+    {
+      "id": "en-161",
+      "sourceId": "161",
+      "language": "en",
+      "title": "Exercise 161 — The aroma of freshly roasted coffee beans is one of those sensory experiences that…",
+      "category": "Culture & Society",
+      "file": "english/exercise_161.txt"
+    },
+    {
+      "id": "en-162",
+      "sourceId": "162",
+      "language": "en",
+      "title": "Exercise 162 — The morning air in the bustling port of fifteenth century Genoa was thick with the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_162.txt"
+    },
+    {
+      "id": "en-163",
+      "sourceId": "163",
+      "language": "en",
+      "title": "Exercise 163 — The early morning mist still clung to the cobblestones of lower Manhattan as the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_163.txt"
+    },
+    {
+      "id": "en-164",
+      "sourceId": "164",
+      "language": "en",
+      "title": "Exercise 164 — The morning air of late autumn carried a sharp, biting frost that clung stubbornly to…",
+      "category": "Culture & Society",
+      "file": "english/exercise_164.txt"
+    },
+    {
+      "id": "en-165",
+      "sourceId": "165",
+      "language": "en",
+      "title": "Exercise 165 — The salty breeze of the North Atlantic carried the unmistakable scent of burning…",
+      "category": "Culture & Society",
+      "file": "english/exercise_165.txt"
+    },
+    {
+      "id": "en-166",
+      "sourceId": "166",
+      "language": "en",
+      "title": "Exercise 166 — The morning mist still clung to the cobblestones of the harbor as the skeletal frame…",
+      "category": "Culture & Society",
+      "file": "english/exercise_166.txt"
+    },
+    {
+      "id": "en-167",
+      "sourceId": "167",
+      "language": "en",
+      "title": "Exercise 167 — The relentless expansion of the early modern world was fueled not merely by the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_167.txt"
+    },
+    {
+      "id": "en-168",
+      "sourceId": "168",
+      "language": "en",
+      "title": "Exercise 168 — The morning air over the Hudson River hung heavy with a dense autumn mist that clung…",
+      "category": "Culture & Society",
+      "file": "english/exercise_168.txt"
+    },
+    {
+      "id": "en-169",
+      "sourceId": "169",
+      "language": "en",
+      "title": "Exercise 169 — Long before the gleaming glass skyscrapers of modern finance pierced the misty skies…",
+      "category": "Culture & Society",
+      "file": "english/exercise_169.txt"
+    },
+    {
+      "id": "en-170",
+      "sourceId": "170",
+      "language": "en",
+      "title": "Exercise 170 — Long before the gleaming glass skyscrapers and subterranean transit labyrinths came to…",
+      "category": "Culture & Society",
+      "file": "english/exercise_170.txt"
+    },
+    {
+      "id": "en-171",
+      "sourceId": "171",
+      "language": "en",
+      "title": "Exercise 171 — The winter of eighteen hundred and eighty-eight arrived in the American Great Plains…",
+      "category": "Culture & Society",
+      "file": "english/exercise_171.txt"
+    },
+    {
+      "id": "en-172",
+      "sourceId": "172",
+      "language": "en",
+      "title": "Exercise 172 — The persistent hum of the heavy brass engine filled the damp morning air as the first…",
+      "category": "Culture & Society",
+      "file": "english/exercise_172.txt"
+    },
+    {
+      "id": "en-173",
+      "sourceId": "173",
+      "language": "en",
+      "title": "Exercise 173 — The morning mist still clung to the cobblestones of lower Manhattan in the spring of…",
+      "category": "Culture & Society",
+      "file": "english/exercise_173.txt"
+    },
+    {
+      "id": "en-174",
+      "sourceId": "174",
+      "language": "en",
+      "title": "Exercise 174 — The morning mist still clung to the cobblestone alleyways of Florence as Leonardo da…",
+      "category": "Culture & Society",
+      "file": "english/exercise_174.txt"
+    },
+    {
+      "id": "en-175",
+      "sourceId": "175",
+      "language": "en",
+      "title": "Exercise 175 — The persistent rhythm of hoofbeats and the steady clatter of iron-rimmed wooden wheels…",
+      "category": "Culture & Society",
+      "file": "english/exercise_175.txt"
+    },
+    {
+      "id": "en-176",
+      "sourceId": "176",
+      "language": "en",
+      "title": "Exercise 176 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_176.txt"
+    },
+    {
+      "id": "en-177",
+      "sourceId": "177",
+      "language": "en",
+      "title": "Exercise 177 — Long before the modern era of automated weather forecasting satellites and…",
+      "category": "Culture & Society",
+      "file": "english/exercise_177.txt"
+    },
+    {
+      "id": "en-178",
+      "sourceId": "178",
+      "language": "en",
+      "title": "Exercise 178 — The early morning mist still clung tightly to the cobblestone streets of lower…",
+      "category": "Culture & Society",
+      "file": "english/exercise_178.txt"
+    },
+    {
+      "id": "en-179",
+      "sourceId": "179",
+      "language": "en",
+      "title": "Exercise 179 â \u0000\u0005\u0016\u0007\u0000\u0002\u0000\u0000Mac OS X \u0000\u0002\u0000\u0000\u0000â¦",
+      "category": "Culture & Society",
+      "file": "english/exercise_179.txt"
+    },
+    {
+      "id": "en-180",
+      "sourceId": "180",
+      "language": "en",
+      "title": "Exercise 180 — Long before the advent of the internal combustion engine and the hustle of modern…",
+      "category": "Culture & Society",
+      "file": "english/exercise_180.txt"
+    },
+    {
+      "id": "en-181",
+      "sourceId": "181",
+      "language": "en",
+      "title": "Exercise 181 — The scent of roasted cocoa beans and damp earth hung heavy in the tropical air of…",
+      "category": "Culture & Society",
+      "file": "english/exercise_181.txt"
+    },
+    {
+      "id": "en-182",
+      "sourceId": "182",
+      "language": "en",
+      "title": "Exercise 182 — The golden autumn of eighteen eighty-eight cast a long, melancholy shadow across the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_182.txt"
+    },
+    {
+      "id": "en-183",
+      "sourceId": "183",
+      "language": "en",
+      "title": "Exercise 183 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "file": "english/exercise_183.txt"
+    },
+    {
+      "id": "en-184",
+      "sourceId": "184",
+      "language": "en",
+      "title": "Exercise 184 — The morning air over the western plains of North America during the late nineteenth…",
+      "category": "Culture & Society",
+      "file": "english/exercise_184.txt"
+    },
+    {
+      "id": "en-185",
+      "sourceId": "185",
+      "language": "en",
+      "title": "Exercise 185 — The crisp morning air of October nineteenth in the year seventeen eighty-one carried…",
+      "category": "Culture & Society",
+      "file": "english/exercise_185.txt"
+    },
+    {
+      "id": "en-186",
+      "sourceId": "186",
+      "language": "en",
+      "title": "Exercise 186 — The morning sun crested the jagged peaks of the rugged Welsh countryside, casting a…",
+      "category": "Culture & Society",
+      "file": "english/exercise_186.txt"
+    },
+    {
+      "id": "en-187",
+      "sourceId": "187",
+      "language": "en",
+      "title": "Exercise 187 — The ancient incense route wound serpentine through the unforgiving Arabian desert, a…",
+      "category": "Culture & Society",
+      "file": "english/exercise_187.txt"
+    },
+    {
+      "id": "en-188",
+      "sourceId": "188",
+      "language": "en",
+      "title": "Exercise 188 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "file": "english/exercise_188.txt"
+    },
+    {
+      "id": "en-189",
+      "sourceId": "189",
+      "language": "en",
+      "title": "Exercise 189 — The early morning mist still clung tightly to the cobblestone pathways of the bustling…",
+      "category": "Culture & Society",
+      "file": "english/exercise_189.txt"
+    },
+    {
+      "id": "en-190",
+      "sourceId": "190",
+      "language": "en",
+      "title": "Exercise 190 — The soft glow of gas lamps flickered across the cobbled stones of London on a chilly…",
+      "category": "Culture & Society",
+      "file": "english/exercise_190.txt"
+    },
+    {
+      "id": "en-191",
+      "sourceId": "191",
+      "language": "en",
+      "title": "Exercise 191 — The scent of burning coal and ozone hung thick over the damp cobblestones of…",
+      "category": "Culture & Society",
+      "file": "english/exercise_191.txt"
+    },
+    {
+      "id": "en-192",
+      "sourceId": "192",
+      "language": "en",
+      "title": "Exercise 192 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "file": "english/exercise_192.txt"
+    },
+    {
+      "id": "en-193",
+      "sourceId": "193",
+      "language": "en",
+      "title": "Exercise 193 — The flickering gas lamps of Victorian London cast long, dancing shadows across the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_193.txt"
+    },
+    {
+      "id": "en-194",
+      "sourceId": "194",
+      "language": "en",
+      "title": "Exercise 194 — The morning air of late autumn carried a crisp, biting edge that seemed to nip at the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_194.txt"
+    },
+    {
+      "id": "en-195",
+      "sourceId": "195",
+      "language": "en",
+      "title": "Exercise 195 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Culture & Society",
+      "file": "english/exercise_195.txt"
+    },
+    {
+      "id": "en-196",
+      "sourceId": "196",
+      "language": "en",
+      "title": "Exercise 196 — The soft hum of the morning air was suddenly pierced by a sharp, rhythmic tapping that…",
+      "category": "Culture & Society",
+      "file": "english/exercise_196.txt"
+    },
+    {
+      "id": "en-197",
+      "sourceId": "197",
+      "language": "en",
+      "title": "Exercise 197 — The history of human timekeeping is a fascinating journey that mirrors our relentless…",
+      "category": "Culture & Society",
+      "file": "english/exercise_197.txt"
+    },
+    {
+      "id": "en-198",
+      "sourceId": "198",
+      "language": "en",
+      "title": "Exercise 198 — The crisp dawn air of late autumn carried the scent of woodsmoke and damp earth across…",
+      "category": "Culture & Society",
+      "file": "english/exercise_198.txt"
+    },
+    {
+      "id": "en-199",
+      "sourceId": "199",
+      "language": "en",
+      "title": "Exercise 199 — The cold autumn wind whipped through the cobblestone alleys of Florence during the…",
+      "category": "Culture & Society",
+      "file": "english/exercise_199.txt"
+    },
+    {
+      "id": "en-200",
+      "sourceId": "200",
+      "language": "en",
+      "title": "Exercise 200 — The crisp dawn air of October nineteenth in the year seventeen hundred and eighty-one…",
+      "category": "Culture & Society",
+      "file": "english/exercise_200.txt"
+    },
+    {
+      "id": "en-201",
+      "sourceId": "201",
+      "language": "en",
+      "title": "Exercise 201 — The morning mist still clung to the ancient stones of the harbor when the heavy wooden…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_201.txt"
+    },
+    {
+      "id": "en-202",
+      "sourceId": "202",
+      "language": "en",
+      "title": "Exercise 202 — The morning mist still clung to the cobblestones of lower Manhattan as the first rays…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_202.txt"
+    },
+    {
+      "id": "en-203",
+      "sourceId": "203",
+      "language": "en",
+      "title": "Exercise 203 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_203.txt"
+    },
+    {
+      "id": "en-204",
+      "sourceId": "204",
+      "language": "en",
+      "title": "Exercise 204 — The soft glow of gas lamps flickered against the damp cobblestones of nineteenth…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_204.txt"
+    },
+    {
+      "id": "en-205",
+      "sourceId": "205",
+      "language": "en",
+      "title": "Exercise 205 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_205.txt"
+    },
+    {
+      "id": "en-206",
+      "sourceId": "206",
+      "language": "en",
+      "title": "Exercise 206 — The morning air of late autumn carried a sharp, metallic bite across the rolling hills…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_206.txt"
+    },
+    {
+      "id": "en-207",
+      "sourceId": "207",
+      "language": "en",
+      "title": "Exercise 207 — The early morning mist still clung tightly to the rugged cobblestones of Florence as…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_207.txt"
+    },
+    {
+      "id": "en-208",
+      "sourceId": "208",
+      "language": "en",
+      "title": "Exercise 208 — The early morning fog still clung to the cobblestone streets of lower Manhattan in the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_208.txt"
+    },
+    {
+      "id": "en-209",
+      "sourceId": "209",
+      "language": "en",
+      "title": "Exercise 209 — The autumn wind whistled through the ancient oak trees of the Hudson River Valley,…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_209.txt"
+    },
+    {
+      "id": "en-210",
+      "sourceId": "210",
+      "language": "en",
+      "title": "Exercise 210 — The crisp autumn air of eighteen eighty-eight held a quiet tension as the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_210.txt"
+    },
+    {
+      "id": "en-211",
+      "sourceId": "211",
+      "language": "en",
+      "title": "Exercise 211 — The salt mines of Wieliczka, nestled quietly beneath the rolling green hills of…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_211.txt"
+    },
+    {
+      "id": "en-212",
+      "sourceId": "212",
+      "language": "en",
+      "title": "Exercise 212 — The salty breeze whipped across the rugged coast of Normandy in the predawn hours of…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_212.txt"
+    },
+    {
+      "id": "en-213",
+      "sourceId": "213",
+      "language": "en",
+      "title": "Exercise 213 — The crisp dawn of October twenty fourth in the year nineteen hundred and twenty nine…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_213.txt"
+    },
+    {
+      "id": "en-214",
+      "sourceId": "214",
+      "language": "en",
+      "title": "Exercise 214 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_214.txt"
+    },
+    {
+      "id": "en-215",
+      "sourceId": "215",
+      "language": "en",
+      "title": "Exercise 215 — The morning air was thick with the scent of damp earth and woodsmoke as the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_215.txt"
+    },
+    {
+      "id": "en-216",
+      "sourceId": "216",
+      "language": "en",
+      "title": "Exercise 216 — Long before the glow of electric streetlights tamed the nocturnal darkness, humanity…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_216.txt"
+    },
+    {
+      "id": "en-217",
+      "sourceId": "217",
+      "language": "en",
+      "title": "Exercise 217 — Long before the gleaming glass skyscrapers of modern finance dominated the Manhattan…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_217.txt"
+    },
+    {
+      "id": "en-218",
+      "sourceId": "218",
+      "language": "en",
+      "title": "Exercise 218 — Long before the neon lights of modern metropolises cast their artificial glow into the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_218.txt"
+    },
+    {
+      "id": "en-219",
+      "sourceId": "219",
+      "language": "en",
+      "title": "Exercise 219 — The morning air was thick with the scent of burning cedar and damp earth as the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_219.txt"
+    },
+    {
+      "id": "en-220",
+      "sourceId": "220",
+      "language": "en",
+      "title": "Exercise 220 — The sun was barely cresting the jagged peaks of the distant mountains when the ancient…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_220.txt"
+    },
+    {
+      "id": "en-221",
+      "sourceId": "221",
+      "language": "en",
+      "title": "Exercise 221 — Long before the neon glow of modern metropolises illuminated the nocturnal skies, the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_221.txt"
+    },
+    {
+      "id": "en-222",
+      "sourceId": "222",
+      "language": "en",
+      "title": "Exercise 222 — The relentless ticking of the grandfather clock in the dimly lit workshop seemed to…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_222.txt"
+    },
+    {
+      "id": "en-223",
+      "sourceId": "223",
+      "language": "en",
+      "title": "Exercise 223 — The relentless march of human progress has been guided by many forces, but few have…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_223.txt"
+    },
+    {
+      "id": "en-224",
+      "sourceId": "224",
+      "language": "en",
+      "title": "Exercise 224 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_224.txt"
+    },
+    {
+      "id": "en-225",
+      "sourceId": "225",
+      "language": "en",
+      "title": "Exercise 225 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_225.txt"
+    },
+    {
+      "id": "en-226",
+      "sourceId": "226",
+      "language": "en",
+      "title": "Exercise 226 — The gentle hum of the printing press echoed through the dimly lit workshop in Mainz,…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_226.txt"
+    },
+    {
+      "id": "en-227",
+      "sourceId": "227",
+      "language": "en",
+      "title": "Exercise 227 — The morning air in the early autumn of eighteen hundred and seven was biting and…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_227.txt"
+    },
+    {
+      "id": "en-228",
+      "sourceId": "228",
+      "language": "en",
+      "title": "Exercise 228 — The morning air of late autumn carried a sharp, crystalline bite across the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_228.txt"
+    },
+    {
+      "id": "en-229",
+      "sourceId": "229",
+      "language": "en",
+      "title": "Exercise 229 — Long before the towering glass monoliths of modern metropolises cast their long…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_229.txt"
+    },
+    {
+      "id": "en-230",
+      "sourceId": "230",
+      "language": "en",
+      "title": "Exercise 230 — The relentless ticking of the grandfather clock in the corner of the workshop seemed…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_230.txt"
+    },
+    {
+      "id": "en-231",
+      "sourceId": "231",
+      "language": "en",
+      "title": "Exercise 231 — The autumn air in the northern reaches of the European continent carried the bitter…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_231.txt"
+    },
+    {
+      "id": "en-232",
+      "sourceId": "232",
+      "language": "en",
+      "title": "Exercise 232 — The sharp crack of the starter's pistol pierced the crisp autumn air of October 1896,…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_232.txt"
+    },
+    {
+      "id": "en-233",
+      "sourceId": "233",
+      "language": "en",
+      "title": "Exercise 233 — The autumn wind whipped through the cobblestone alleys of Florence in the late…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_233.txt"
+    },
+    {
+      "id": "en-234",
+      "sourceId": "234",
+      "language": "en",
+      "title": "Exercise 234 — In the quiet twilight of a late autumn evening in eighteen eighty-eight, the narrow…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_234.txt"
+    },
+    {
+      "id": "en-235",
+      "sourceId": "235",
+      "language": "en",
+      "title": "Exercise 235 — Long before the neon lights of modern entertainment districts began to pulse against…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_235.txt"
+    },
+    {
+      "id": "en-236",
+      "sourceId": "236",
+      "language": "en",
+      "title": "Exercise 236 — The crisp autumn air of eighteen eighty-eight held a quiet tension as the steam…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_236.txt"
+    },
+    {
+      "id": "en-237",
+      "sourceId": "237",
+      "language": "en",
+      "title": "Exercise 237 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_237.txt"
+    },
+    {
+      "id": "en-238",
+      "sourceId": "238",
+      "language": "en",
+      "title": "Exercise 238 — The autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_238.txt"
+    },
+    {
+      "id": "en-239",
+      "sourceId": "239",
+      "language": "en",
+      "title": "Exercise 239 — The winter wind howled across the frozen expanse of the North Atlantic in early…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_239.txt"
+    },
+    {
+      "id": "en-240",
+      "sourceId": "240",
+      "language": "en",
+      "title": "Exercise 240 — The golden hour sunlight cast long, amber shadows across the cobblestones of the old…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_240.txt"
+    },
+    {
+      "id": "en-241",
+      "sourceId": "241",
+      "language": "en",
+      "title": "Exercise 241 — Long before the advent of modern refrigeration, the preservation of perishable goods…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_241.txt"
+    },
+    {
+      "id": "en-242",
+      "sourceId": "242",
+      "language": "en",
+      "title": "Exercise 242 — The dawn of the twenty first century brought with it a quiet yet profoundly…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_242.txt"
+    },
+    {
+      "id": "en-243",
+      "sourceId": "243",
+      "language": "en",
+      "title": "Exercise 243 — In the fading light of a crisp autumn evening in eighteen eighty-five, a solitary…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_243.txt"
+    },
+    {
+      "id": "en-244",
+      "sourceId": "244",
+      "language": "en",
+      "title": "Exercise 244 — The salt mines of Wieliczka in southern Poland present a subterranean labyrinth that…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_244.txt"
+    },
+    {
+      "id": "en-245",
+      "sourceId": "245",
+      "language": "en",
+      "title": "Exercise 245 — The flickering amber glow of the kerosene lantern cast long, dancing shadows across…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_245.txt"
+    },
+    {
+      "id": "en-246",
+      "sourceId": "246",
+      "language": "en",
+      "title": "Exercise 246 — The soft amber glow of gas lamps flickered against the damp cobblestones of…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_246.txt"
+    },
+    {
+      "id": "en-247",
+      "sourceId": "247",
+      "language": "en",
+      "title": "Exercise 247 — The crisp autumn air of October nineteenth in the year eighteen hundred and…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_247.txt"
+    },
+    {
+      "id": "en-248",
+      "sourceId": "248",
+      "language": "en",
+      "title": "Exercise 248 — The golden hour of late afternoon cast a long amber glow across the cobblestone…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_248.txt"
+    },
+    {
+      "id": "en-249",
+      "sourceId": "249",
+      "language": "en",
+      "title": "Exercise 249 — The morning mist still clung stubbornly to the emerald slopes of the Scottish…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_249.txt"
+    },
+    {
+      "id": "en-250",
+      "sourceId": "250",
+      "language": "en",
+      "title": "Exercise 250 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "Science & Modern Innovations",
+      "file": "english/exercise_250.txt"
+    },
+    {
+      "id": "en-251",
+      "sourceId": "251",
+      "language": "en",
+      "title": "Exercise 251 — The salty mist of the Atlantic Ocean clung heavily to the cobblestones of Bristol in…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_251.txt"
+    },
+    {
+      "id": "en-252",
+      "sourceId": "252",
+      "language": "en",
+      "title": "Exercise 252 — The relentless ticking of the clock in a dimly lit workshop in late eighteenth-century…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_252.txt"
+    },
+    {
+      "id": "en-253",
+      "sourceId": "253",
+      "language": "en",
+      "title": "Exercise 253 — The afternoon sun cast a warm golden amber glow across the cobblestone streets of…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_253.txt"
+    },
+    {
+      "id": "en-254",
+      "sourceId": "254",
+      "language": "en",
+      "title": "Exercise 254 — The ancient art of glassblowing stands as one of the most remarkable fusions of human…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_254.txt"
+    },
+    {
+      "id": "en-255",
+      "sourceId": "255",
+      "language": "en",
+      "title": "Exercise 255 — The relentless pursuit of speed has defined human innovation for centuries, but few…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_255.txt"
+    },
+    {
+      "id": "en-256",
+      "sourceId": "256",
+      "language": "en",
+      "title": "Exercise 256 — Long before the advent of modern refrigeration, humanity engaged in a relentless,…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_256.txt"
+    },
+    {
+      "id": "en-257",
+      "sourceId": "257",
+      "language": "en",
+      "title": "Exercise 257 — The morning mist still clung to the cobblestone streets of old London town when the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_257.txt"
+    },
+    {
+      "id": "en-258",
+      "sourceId": "258",
+      "language": "en",
+      "title": "Exercise 258 — The history of cartography is fundamentally a chronicle of human curiosity and the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_258.txt"
+    },
+    {
+      "id": "en-259",
+      "sourceId": "259",
+      "language": "en",
+      "title": "Exercise 259 — In the fading twilight of a brisk autumn evening in eighteen hundred and fifty-nine,…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_259.txt"
+    },
+    {
+      "id": "en-260",
+      "sourceId": "260",
+      "language": "en",
+      "title": "Exercise 260 — Long before the dawn of modern navigation technology and satellite guidance systems,…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_260.txt"
+    },
+    {
+      "id": "en-261",
+      "sourceId": "261",
+      "language": "en",
+      "title": "Exercise 261 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of burning…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_261.txt"
+    },
+    {
+      "id": "en-262",
+      "sourceId": "262",
+      "language": "en",
+      "title": "Exercise 262 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_262.txt"
+    },
+    {
+      "id": "en-263",
+      "sourceId": "263",
+      "language": "en",
+      "title": "Exercise 263 — The crisp autumn air of eighteen eighty-eight held a quiet tension as the steamship…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_263.txt"
+    },
+    {
+      "id": "en-264",
+      "sourceId": "264",
+      "language": "en",
+      "title": "Exercise 264 — The flickering amber glow of gas lamps once illuminated the fog-shrouded cobblestones…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_264.txt"
+    },
+    {
+      "id": "en-265",
+      "sourceId": "265",
+      "language": "en",
+      "title": "Exercise 265 — Long before the modern era of standardized time zones and atomic clocks, humanity…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_265.txt"
+    },
+    {
+      "id": "en-266",
+      "sourceId": "266",
+      "language": "en",
+      "title": "Exercise 266 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_266.txt"
+    },
+    {
+      "id": "en-267",
+      "sourceId": "267",
+      "language": "en",
+      "title": "Exercise 267 — The morning air in the early autumn of eighteen hundred and seven was biting and…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_267.txt"
+    },
+    {
+      "id": "en-268",
+      "sourceId": "268",
+      "language": "en",
+      "title": "Exercise 268 — The twilight air of autumn in the year fourteen hundred and ninety-two was crisp and…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_268.txt"
+    },
+    {
+      "id": "en-269",
+      "sourceId": "269",
+      "language": "en",
+      "title": "Exercise 269 — Long before the modern era of mechanized excavation and global maritime shipping…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_269.txt"
+    },
+    {
+      "id": "en-270",
+      "sourceId": "270",
+      "language": "en",
+      "title": "Exercise 270 — The crisp dawn of the industrial age was not heralded by a sudden explosion of…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_270.txt"
+    },
+    {
+      "id": "en-271",
+      "sourceId": "271",
+      "language": "en",
+      "title": "Exercise 271 — The amber glow of an afternoon sun filtered through the dusty windowpanes of the grand…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_271.txt"
+    },
+    {
+      "id": "en-272",
+      "sourceId": "272",
+      "language": "en",
+      "title": "Exercise 272 — The air inside the dimly lit laboratory was thick with the scent of ozone and heated…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_272.txt"
+    },
+    {
+      "id": "en-273",
+      "sourceId": "273",
+      "language": "en",
+      "title": "Exercise 273 — The scent of damp earth and roasting coffee beans has always hung heavy in the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_273.txt"
+    },
+    {
+      "id": "en-274",
+      "sourceId": "274",
+      "language": "en",
+      "title": "Exercise 274 — The autumn air of eighteen eighty-eight was unusually sharp in the foggy cobblestone…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_274.txt"
+    },
+    {
+      "id": "en-275",
+      "sourceId": "275",
+      "language": "en",
+      "title": "Exercise 275 — Long before the neon lights of modern entertainment districts illuminated the night…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_275.txt"
+    },
+    {
+      "id": "en-276",
+      "sourceId": "276",
+      "language": "en",
+      "title": "Exercise 276 — The relentless pursuit of speed has defined human innovation for centuries, but few…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_276.txt"
+    },
+    {
+      "id": "en-277",
+      "sourceId": "277",
+      "language": "en",
+      "title": "Exercise 277 — The crisp autumn air of eighteen eighty-eight carried a distinct chill through the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_277.txt"
+    },
+    {
+      "id": "en-278",
+      "sourceId": "278",
+      "language": "en",
+      "title": "Exercise 278 — Long before the hum of neon signs and the endless glow of smartphone screens defined…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_278.txt"
+    },
+    {
+      "id": "en-279",
+      "sourceId": "279",
+      "language": "en",
+      "title": "Exercise 279 — The morning mist still clung stubbornly to the emerald slopes of the Scottish…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_279.txt"
+    },
+    {
+      "id": "en-280",
+      "sourceId": "280",
+      "language": "en",
+      "title": "Exercise 280 — The gentle murmur of the riverbank was frequently punctuated by the rhythmic splash of…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_280.txt"
+    },
+    {
+      "id": "en-281",
+      "sourceId": "281",
+      "language": "en",
+      "title": "Exercise 281 — The crisp autumn air of eighteen eighty-eight carried the sharp scent of coal smoke…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_281.txt"
+    },
+    {
+      "id": "en-282",
+      "sourceId": "282",
+      "language": "en",
+      "title": "Exercise 282 — The crisp morning air of October fourteenth in the year one thousand and sixty six…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_282.txt"
+    },
+    {
+      "id": "en-283",
+      "sourceId": "283",
+      "language": "en",
+      "title": "Exercise 283 — The salt flats of Utah stretch out in a dazzling, blinding expanse of white, creating…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_283.txt"
+    },
+    {
+      "id": "en-284",
+      "sourceId": "284",
+      "language": "en",
+      "title": "Exercise 284 — The afternoon sun beat down mercilessly upon the parched earth of the Sahara, casting…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_284.txt"
+    },
+    {
+      "id": "en-285",
+      "sourceId": "285",
+      "language": "en",
+      "title": "Exercise 285 — The brilliant afternoon sunlight filtered through the dense canopy of ancient oak and…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_285.txt"
+    },
+    {
+      "id": "en-286",
+      "sourceId": "286",
+      "language": "en",
+      "title": "Exercise 286 — The salty breeze of the North Atlantic carried the unmistakable scent of burning peat…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_286.txt"
+    },
+    {
+      "id": "en-287",
+      "sourceId": "287",
+      "language": "en",
+      "title": "Exercise 287 — The morning mist still clung to the cobblestone streets of Lower Manhattan as the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_287.txt"
+    },
+    {
+      "id": "en-288",
+      "sourceId": "288",
+      "language": "en",
+      "title": "Exercise 288 — The relentless industrial expansion of the nineteenth century left behind a sprawling…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_288.txt"
+    },
+    {
+      "id": "en-289",
+      "sourceId": "289",
+      "language": "en",
+      "title": "Exercise 289 — Long before the era of steam engines and iron tracks, the human desire to travel…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_289.txt"
+    },
+    {
+      "id": "en-290",
+      "sourceId": "290",
+      "language": "en",
+      "title": "Exercise 290 — The rhythmic clatter of hooves against cobblestones once signaled the heartbeat of an…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_290.txt"
+    },
+    {
+      "id": "en-291",
+      "sourceId": "291",
+      "language": "en",
+      "title": "Exercise 291 — The flickering amber glow of gas lamps once illuminated the fog-drenched cobblestone…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_291.txt"
+    },
+    {
+      "id": "en-292",
+      "sourceId": "292",
+      "language": "en",
+      "title": "Exercise 292 — Long before the hum of neon signs and the endless glow of smartphone screens dominated…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_292.txt"
+    },
+    {
+      "id": "en-293",
+      "sourceId": "293",
+      "language": "en",
+      "title": "Exercise 293 — The quiet hum of the workshop was broken only by the rhythmic scraping of a steel file…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_293.txt"
+    },
+    {
+      "id": "en-294",
+      "sourceId": "294",
+      "language": "en",
+      "title": "Exercise 294 — The early morning mist still clung to the cobblestones of lower Manhattan as the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_294.txt"
+    },
+    {
+      "id": "en-295",
+      "sourceId": "295",
+      "language": "en",
+      "title": "Exercise 295 — The salty wind whipped across the rugged coastline of northeastern England in the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_295.txt"
+    },
+    {
+      "id": "en-296",
+      "sourceId": "296",
+      "language": "en",
+      "title": "Exercise 296 — The morning air of late October in seventeen eighty-one hung heavy and damp over the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_296.txt"
+    },
+    {
+      "id": "en-297",
+      "sourceId": "297",
+      "language": "en",
+      "title": "Exercise 297 — The rhythmic clacking of hooves against cobblestones once signaled the heartbeat of…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_297.txt"
+    },
+    {
+      "id": "en-298",
+      "sourceId": "298",
+      "language": "en",
+      "title": "Exercise 298 — The golden age of cartography was an era defined by salt-crusted wooden sailing ships…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_298.txt"
+    },
+    {
+      "id": "en-299",
+      "sourceId": "299",
+      "language": "en",
+      "title": "Exercise 299 — In the waning years of the nineteenth century, a quiet revolution began to take shape…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_299.txt"
+    },
+    {
+      "id": "en-300",
+      "sourceId": "300",
+      "language": "en",
+      "title": "Exercise 300 — The dawn of the twenty-first century witnessed a quiet yet profound revolution in the…",
+      "category": "World History & Discoveries",
+      "file": "english/exercise_300.txt"
+    },
+    {
+      "id": "hi-001",
+      "sourceId": "001",
+      "language": "hi",
+      "title": "सिंधु घाटी सभ्यता का नगर नियोजन और स्वच्छता प्रबंधन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_001.txt"
+    },
+    {
+      "id": "hi-002",
+      "sourceId": "002",
+      "language": "hi",
+      "title": "लोथल गोदीवाड़ा और प्राचीन भारत का समुद्री व्यापार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_002.txt"
+    },
+    {
+      "id": "hi-003",
+      "sourceId": "003",
+      "language": "hi",
+      "title": "वैदिक काल और उपनिषदों का दार्शनिक चिंतन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_003.txt"
+    },
+    {
+      "id": "hi-004",
+      "sourceId": "004",
+      "language": "hi",
+      "title": "चंद्रगुप्त मौर्य का शासनकाल और प्रशासनिक व्यवस्था",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_004.txt"
+    },
+    {
+      "id": "hi-005",
+      "sourceId": "005",
+      "language": "hi",
+      "title": "आचार्य चाणक्य और कौटिल्य के अर्थशास्त्र की नीतियां",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_005.txt"
+    },
+    {
+      "id": "hi-006",
+      "sourceId": "006",
+      "language": "hi",
+      "title": "सम्राट अशोक का धम्म और उसका वैश्विक प्रसार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_006.txt"
+    },
+    {
+      "id": "hi-007",
+      "sourceId": "007",
+      "language": "hi",
+      "title": "गुप्त साम्राज्य का स्वर्ण युग और संस्कृत साहित्य का उत्कर्ष",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_007.txt"
+    },
+    {
+      "id": "hi-008",
+      "sourceId": "008",
+      "language": "hi",
+      "title": "आर्यभट्ट के गणितीय सिद्धांत और खगोलीय गणनाएं",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_008.txt"
+    },
+    {
+      "id": "hi-009",
+      "sourceId": "009",
+      "language": "hi",
+      "title": "वराहमिहिर की खगोल विद्या और पंचसिद्धांतिका",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_009.txt"
+    },
+    {
+      "id": "hi-010",
+      "sourceId": "010",
+      "language": "hi",
+      "title": "नालंदा महाविहार: ज्ञान का वैश्विक केंद्र",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_010.txt"
+    },
+    {
+      "id": "hi-011",
+      "sourceId": "011",
+      "language": "hi",
+      "title": "तक्षशिला विश्वविद्यालय की शिक्षा और आचार्य परंपरा",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_011.txt"
+    },
+    {
+      "id": "hi-012",
+      "sourceId": "012",
+      "language": "hi",
+      "title": "राजेंद्र चोल का नौसैनिक अभियान और दक्षिण-पूर्व एशिया",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_012.txt"
+    },
+    {
+      "id": "hi-013",
+      "sourceId": "013",
+      "language": "hi",
+      "title": "तंजावुर के बृहदेश्वर मंदिर की वास्तुकला और इंजीनियरिंग",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_013.txt"
+    },
+    {
+      "id": "hi-014",
+      "sourceId": "014",
+      "language": "hi",
+      "title": "पल्लव राजवंश और महाबलीपुरम के एकाश्मक रथ मंदिर",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_014.txt"
+    },
+    {
+      "id": "hi-015",
+      "sourceId": "015",
+      "language": "hi",
+      "title": "सातवाहन साम्राज्य और प्राचीन दक्कन का व्यापार मार्ग",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_015.txt"
+    },
+    {
+      "id": "hi-016",
+      "sourceId": "016",
+      "language": "hi",
+      "title": "बादामी के चालुक्य और उनकी गुफा वास्तुकला",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_016.txt"
+    },
+    {
+      "id": "hi-017",
+      "sourceId": "017",
+      "language": "hi",
+      "title": "राष्ट्रकूट साम्राज्य और एलोरा का कैलाश मंदिर",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_017.txt"
+    },
+    {
+      "id": "hi-018",
+      "sourceId": "018",
+      "language": "hi",
+      "title": "विजयनगर साम्राज्य का वैभव और हम्पी का स्थापत्य",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_018.txt"
+    },
+    {
+      "id": "hi-019",
+      "sourceId": "019",
+      "language": "hi",
+      "title": "सम्राट कृष्णदेवराय की शासन नीति और साहित्य प्रेम",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_019.txt"
+    },
+    {
+      "id": "hi-020",
+      "sourceId": "020",
+      "language": "hi",
+      "title": "असम का अहोम साम्राज्य और उनकी अखंड संप्रभुता",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_020.txt"
+    },
+    {
+      "id": "hi-021",
+      "sourceId": "021",
+      "language": "hi",
+      "title": "लचित बोरफुकन और सरायघाट का ऐतिहासिक जल युद्ध",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_021.txt"
+    },
+    {
+      "id": "hi-022",
+      "sourceId": "022",
+      "language": "hi",
+      "title": "छत्रपति शिवाजी महाराज और हिंदवी स्वराज्य की संकल्पना",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_022.txt"
+    },
+    {
+      "id": "hi-023",
+      "sourceId": "023",
+      "language": "hi",
+      "title": "शिवाजी महाराज की गुरिल्ला युद्ध नीति और नौसेना निर्माण",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_023.txt"
+    },
+    {
+      "id": "hi-024",
+      "sourceId": "024",
+      "language": "hi",
+      "title": "पुण्यश्लोक अहिल्याबाई होल्कर का लोककल्याण और मंदिर जीर्णोद्धार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_024.txt"
+    },
+    {
+      "id": "hi-025",
+      "sourceId": "025",
+      "language": "hi",
+      "title": "महाराणा प्रताप का त्याग और मेवाड़ का स्वाभिमान",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_025.txt"
+    },
+    {
+      "id": "hi-026",
+      "sourceId": "026",
+      "language": "hi",
+      "title": "हल्दीघाटी का युद्ध और चेतक की अद्वितीय स्वामिभक्ति",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_026.txt"
+    },
+    {
+      "id": "hi-027",
+      "sourceId": "027",
+      "language": "hi",
+      "title": "उत्तरमेरूर शिलालेख और चोल कालीन ग्रामीण लोकतंत्र",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_027.txt"
+    },
+    {
+      "id": "hi-028",
+      "sourceId": "028",
+      "language": "hi",
+      "title": "काकतीय राजवंश और रामप्पा मंदिर का वास्तुकला चमत्कार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_028.txt"
+    },
+    {
+      "id": "hi-029",
+      "sourceId": "029",
+      "language": "hi",
+      "title": "रानी रुद्रमा देवी का शौर्य और दक्कन पर शासन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_029.txt"
+    },
+    {
+      "id": "hi-030",
+      "sourceId": "030",
+      "language": "hi",
+      "title": "होयसल स्थापत्य कला और बेलूर-हलेबिडु के मंदिर",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_030.txt"
+    },
+    {
+      "id": "hi-031",
+      "sourceId": "031",
+      "language": "hi",
+      "title": "कलिंग साम्राज्य और प्राचीन साधब नाविकों की समुद्री यात्राएं",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_031.txt"
+    },
+    {
+      "id": "hi-032",
+      "sourceId": "032",
+      "language": "hi",
+      "title": "सम्राट खारवेल और हाथीगुंफा का ऐतिहासिक अभिलेख",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_032.txt"
+    },
+    {
+      "id": "hi-033",
+      "sourceId": "033",
+      "language": "hi",
+      "title": "प्राचीन भारतीय धातु विज्ञान और दिल्ली का लौह स्तंभ",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_033.txt"
+    },
+    {
+      "id": "hi-034",
+      "sourceId": "034",
+      "language": "hi",
+      "title": "महर्षि सुश्रुत और प्राचीन भारत की शल्य चिकित्सा",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_034.txt"
+    },
+    {
+      "id": "hi-035",
+      "sourceId": "035",
+      "language": "hi",
+      "title": "महर्षि चरक और आयुर्वेद का समग्र स्वास्थ्य विज्ञान",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_035.txt"
+    },
+    {
+      "id": "hi-036",
+      "sourceId": "036",
+      "language": "hi",
+      "title": "चेर राजवंश और प्राचीन रोमन साम्राज्य से मसालों का व्यापार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_036.txt"
+    },
+    {
+      "id": "hi-037",
+      "sourceId": "037",
+      "language": "hi",
+      "title": "पांड्य साम्राज्य और मन्नार की खाड़ी का मोती व्यापार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_037.txt"
+    },
+    {
+      "id": "hi-038",
+      "sourceId": "038",
+      "language": "hi",
+      "title": "सम्राट हर्षवर्धन की दानशीलता और कन्नौज की धर्मसभा",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_038.txt"
+    },
+    {
+      "id": "hi-039",
+      "sourceId": "039",
+      "language": "hi",
+      "title": "गोंडवाना की वीरांगना रानी दुर्गावती का अमर बलिदान",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_039.txt"
+    },
+    {
+      "id": "hi-040",
+      "sourceId": "040",
+      "language": "hi",
+      "title": "उल्लाल की रानी अब्बक्का चौटा और पुर्तगालियों का दमन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_040.txt"
+    },
+    {
+      "id": "hi-041",
+      "sourceId": "041",
+      "language": "hi",
+      "title": "सांची का महान स्तूप और मौर्यकालीन पाषाण कला",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_041.txt"
+    },
+    {
+      "id": "hi-042",
+      "sourceId": "042",
+      "language": "hi",
+      "title": "अजंता की गुफाएं: बौद्ध भित्तिचित्र और शिल्पकला",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_042.txt"
+    },
+    {
+      "id": "hi-043",
+      "sourceId": "043",
+      "language": "hi",
+      "title": "दक्षिण भारत के महापाषाण कालीन समाधि स्थल और डोलमेन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_043.txt"
+    },
+    {
+      "id": "hi-044",
+      "sourceId": "044",
+      "language": "hi",
+      "title": "भारत की पारंपरिक जल संचयन प्रणालियां: बावड़ियां और जोहड़",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_044.txt"
+    },
+    {
+      "id": "hi-045",
+      "sourceId": "045",
+      "language": "hi",
+      "title": "करिकाल चोल का कल्लाणई बांध: विश्व का प्राचीनतम कार्यरत बांध",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_045.txt"
+    },
+    {
+      "id": "hi-046",
+      "sourceId": "046",
+      "language": "hi",
+      "title": "पाटन की रानी की वाव: जल मंदिर की बेजोड़ वास्तुकला",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_046.txt"
+    },
+    {
+      "id": "hi-047",
+      "sourceId": "047",
+      "language": "hi",
+      "title": "परमार राजवंश और राजा भोज की विद्याप्रियता",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_047.txt"
+    },
+    {
+      "id": "hi-048",
+      "sourceId": "048",
+      "language": "hi",
+      "title": "कान्होजी आंग्रे और मराठा नौसेना का पश्चिमी तट पर आधिपत्य",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_048.txt"
+    },
+    {
+      "id": "hi-049",
+      "sourceId": "049",
+      "language": "hi",
+      "title": "कश्मीर का मार्तंड सूर्य मंदिर और कर्कोट साम्राज्य",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_049.txt"
+    },
+    {
+      "id": "hi-050",
+      "sourceId": "050",
+      "language": "hi",
+      "title": "ललितादित्य मुक्तापीड़ और प्राचीन कश्मीर का विस्तार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "file": "hindi/hindi_exercise_050.txt"
+    },
+    {
+      "id": "hi-051",
+      "sourceId": "051",
+      "language": "hi",
+      "title": "नेताजी सुभाष चंद्र बोस और आजाद हिंद फौज का संघर्ष",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_051.txt"
+    },
+    {
+      "id": "hi-052",
+      "sourceId": "052",
+      "language": "hi",
+      "title": "कोहिमा और इंफाल का युद्ध: आईएनए का सैन्य अभियान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_052.txt"
+    },
+    {
+      "id": "hi-053",
+      "sourceId": "053",
+      "language": "hi",
+      "title": "शहीद भगत सिंह के वैचारिक लेख और सर्वोच्च बलिदान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_053.txt"
+    },
+    {
+      "id": "hi-054",
+      "sourceId": "054",
+      "language": "hi",
+      "title": "चंद्रशेखर आजाद और हिंदुस्तान सोशलिस्ट रिपब्लिकन एसोसिएशन",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_054.txt"
+    },
+    {
+      "id": "hi-055",
+      "sourceId": "055",
+      "language": "hi",
+      "title": "सरदार वल्लभभाई पटेल और 565 रियासतों का ऐतिहासिक एकीकरण",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_055.txt"
+    },
+    {
+      "id": "hi-056",
+      "sourceId": "056",
+      "language": "hi",
+      "title": "बारडोली सत्याग्रह और किसानों का संगठित नेतृत्व",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_056.txt"
+    },
+    {
+      "id": "hi-057",
+      "sourceId": "057",
+      "language": "hi",
+      "title": "झांसी की रानी लक्ष्मीबाई और 1857 का प्रथम स्वतंत्रता संग्राम",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_057.txt"
+    },
+    {
+      "id": "hi-058",
+      "sourceId": "058",
+      "language": "hi",
+      "title": "झलकारी बाई: रानी लक्ष्मीबाई की ढाल और असाधारण सेनापति",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_058.txt"
+    },
+    {
+      "id": "hi-059",
+      "sourceId": "059",
+      "language": "hi",
+      "title": "तात्या टोपे का छापामार युद्ध और ब्रिटिश सेना से संघर्ष",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_059.txt"
+    },
+    {
+      "id": "hi-060",
+      "sourceId": "060",
+      "language": "hi",
+      "title": "मंगल पांडे का विद्रोह और बैरकपुर की ऐतिहासिक चिंगारी",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_060.txt"
+    },
+    {
+      "id": "hi-061",
+      "sourceId": "061",
+      "language": "hi",
+      "title": "वीर सावरकर: अंडमान की सेलुलर जेल और वैचारिक संघर्ष",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_061.txt"
+    },
+    {
+      "id": "hi-062",
+      "sourceId": "062",
+      "language": "hi",
+      "title": "बटुकेश्वर दत्त और केंद्रीय असेंबली में बम विस्फोट की घटना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_062.txt"
+    },
+    {
+      "id": "hi-063",
+      "sourceId": "063",
+      "language": "hi",
+      "title": "अशफाक उल्ला खां और रामप्रसाद बिस्मिल की अमर मित्रता",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_063.txt"
+    },
+    {
+      "id": "hi-064",
+      "sourceId": "064",
+      "language": "hi",
+      "title": "भगवान बिरसा मुंडा और छोटानागपुर का उलगुलान आंदोलन",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_064.txt"
+    },
+    {
+      "id": "hi-065",
+      "sourceId": "065",
+      "language": "hi",
+      "title": "अल्लूरी सीताराम राजू और आंध्र प्रदेश का रंपा विद्रोह",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_065.txt"
+    },
+    {
+      "id": "hi-066",
+      "sourceId": "066",
+      "language": "hi",
+      "title": "रानी वेलु नाचियार: अंग्रेजों को परास्त करने वाली वीरांगना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_066.txt"
+    },
+    {
+      "id": "hi-067",
+      "sourceId": "067",
+      "language": "hi",
+      "title": "कित्तूर की रानी चेन्नम्मा और अंग्रेजों के विरुद्ध विद्रोह",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_067.txt"
+    },
+    {
+      "id": "hi-068",
+      "sourceId": "068",
+      "language": "hi",
+      "title": "संगोली रायन्ना: कित्तूर के स्वाधीनता रक्षक और वीर नायक",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_068.txt"
+    },
+    {
+      "id": "hi-069",
+      "sourceId": "069",
+      "language": "hi",
+      "title": "यू तिरोत सिंग और मेघालय की खासी पहाड़ियों का प्रतिरोध",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_069.txt"
+    },
+    {
+      "id": "hi-070",
+      "sourceId": "070",
+      "language": "hi",
+      "title": "रानी गाइदिनल्यू: पूर्वोत्तर की नागा क्रांतिकारी और आध्यात्मिक नेत्री",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_070.txt"
+    },
+    {
+      "id": "hi-071",
+      "sourceId": "071",
+      "language": "hi",
+      "title": "सुब्रमण्य भारती की ओजस्वी राष्ट्रीय कविताएं",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_071.txt"
+    },
+    {
+      "id": "hi-072",
+      "sourceId": "072",
+      "language": "hi",
+      "title": "लाल-बाल-पाल की त्रिमूर्ति और स्वदेशी आंदोलन का आह्वान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_072.txt"
+    },
+    {
+      "id": "hi-073",
+      "sourceId": "073",
+      "language": "hi",
+      "title": "लाला लाजपत राय और साइमन कमीशन के विरुद्ध ऐतिहासिक विरोध",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_073.txt"
+    },
+    {
+      "id": "hi-074",
+      "sourceId": "074",
+      "language": "hi",
+      "title": "बाल गंगाधर तिलक: स्वराज्य मेरा जन्मसिद्ध अधिकार है",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_074.txt"
+    },
+    {
+      "id": "hi-075",
+      "sourceId": "075",
+      "language": "hi",
+      "title": "श्री अरविंद घोष: क्रांतिकारी मार्ग से महर्षि बनने की यात्रा",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_075.txt"
+    },
+    {
+      "id": "hi-076",
+      "sourceId": "076",
+      "language": "hi",
+      "title": "मैडम भीकाजी कामा और स्टटगार्ट में भारतीय ध्वज फहराना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_076.txt"
+    },
+    {
+      "id": "hi-077",
+      "sourceId": "077",
+      "language": "hi",
+      "title": "मातंगिनी हाजरा: तिरंगा थामे गोली खाने वाली वीरांगना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_077.txt"
+    },
+    {
+      "id": "hi-078",
+      "sourceId": "078",
+      "language": "hi",
+      "title": "प्रीतिलता वाद्देदार और पहाड़तली यूरोपियन क्लब पर आक्रमण",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_078.txt"
+    },
+    {
+      "id": "hi-079",
+      "sourceId": "079",
+      "language": "hi",
+      "title": "मास्टर दा सूर्य सेन और 1930 का चटगांव शस्त्रागार छापा",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_079.txt"
+    },
+    {
+      "id": "hi-080",
+      "sourceId": "080",
+      "language": "hi",
+      "title": "करतार सिंह सराभा और गदर आंदोलन का वैश्विक ताना-बाना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_080.txt"
+    },
+    {
+      "id": "hi-081",
+      "sourceId": "081",
+      "language": "hi",
+      "title": "कामागाटामारू घटना और भारतीय प्रवासियों का अदम्य साहस",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_081.txt"
+    },
+    {
+      "id": "hi-082",
+      "sourceId": "082",
+      "language": "hi",
+      "title": "केलादी की रानी चेन्नम्मा और छत्रपति राजाराम को आश्रय",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_082.txt"
+    },
+    {
+      "id": "hi-083",
+      "sourceId": "083",
+      "language": "hi",
+      "title": "बाबा बंदा सिंह बहादुर और सरहिंद पर सिख विजय",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_083.txt"
+    },
+    {
+      "id": "hi-084",
+      "sourceId": "084",
+      "language": "hi",
+      "title": "सरदार हरी सिंह नलवा: पेशावर और खैबर दर्रे के रक्षक",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_084.txt"
+    },
+    {
+      "id": "hi-085",
+      "sourceId": "085",
+      "language": "hi",
+      "title": "महाराजा रणजीत सिंह का विशाल साम्राज्य और न्याय व्यवस्था",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_085.txt"
+    },
+    {
+      "id": "hi-086",
+      "sourceId": "086",
+      "language": "hi",
+      "title": "कुयिली: भारत की पहली आत्मघाती वीरांगना का बलिदान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_086.txt"
+    },
+    {
+      "id": "hi-087",
+      "sourceId": "087",
+      "language": "hi",
+      "title": "पसुमपोन मुथुरामलिंग थेवर और नेताजी के प्रति निष्ठा",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_087.txt"
+    },
+    {
+      "id": "hi-088",
+      "sourceId": "088",
+      "language": "hi",
+      "title": "वी. ओ. चिदंबरम पिल्लई और स्वदेशी स्टीम नेविगेशन कंपनी",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_088.txt"
+    },
+    {
+      "id": "hi-089",
+      "sourceId": "089",
+      "language": "hi",
+      "title": "खुदीराम बोस: सबसे कम उम्र में फांसी चढ़ने वाले क्रांतिकारी",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_089.txt"
+    },
+    {
+      "id": "hi-090",
+      "sourceId": "090",
+      "language": "hi",
+      "title": "जतिंद्र नाथ दास की 63 दिनों की ऐतिहासिक भूख हड़ताल",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_090.txt"
+    },
+    {
+      "id": "hi-091",
+      "sourceId": "091",
+      "language": "hi",
+      "title": "बाबू कुंवर सिंह: 80 वर्ष की उम्र में जगदीशपुर की क्रांति",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_091.txt"
+    },
+    {
+      "id": "hi-092",
+      "sourceId": "092",
+      "language": "hi",
+      "title": "चौधरी शाह मल और 1857 में बागपत के किसानों का विद्रोह",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_092.txt"
+    },
+    {
+      "id": "hi-093",
+      "sourceId": "093",
+      "language": "hi",
+      "title": "पीर अली खान और पटना में 1857 का क्रांतिकारी संघर्ष",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_093.txt"
+    },
+    {
+      "id": "hi-094",
+      "sourceId": "094",
+      "language": "hi",
+      "title": "तात्या टोपे का मध्य भारत के वनों में छापामार अभियान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_094.txt"
+    },
+    {
+      "id": "hi-095",
+      "sourceId": "095",
+      "language": "hi",
+      "title": "1946 का मुंबई नौसेना विद्रोह और आजादी की निर्णायक घड़ी",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_095.txt"
+    },
+    {
+      "id": "hi-096",
+      "sourceId": "096",
+      "language": "hi",
+      "title": "लाल किला ट्रायल: आजाद हिंद फौज के जनरलों का मुकदमा",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_096.txt"
+    },
+    {
+      "id": "hi-097",
+      "sourceId": "097",
+      "language": "hi",
+      "title": "अमृता देवी बिश्नोई और खेजड़ी के वृक्षों की रक्षा में बलिदान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_097.txt"
+    },
+    {
+      "id": "hi-098",
+      "sourceId": "098",
+      "language": "hi",
+      "title": "संथाल हूल विद्रोह: सिद्धू और कान्हू मुर्मू का नेतृत्व",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_098.txt"
+    },
+    {
+      "id": "hi-099",
+      "sourceId": "099",
+      "language": "hi",
+      "title": "राजा देवी बख्श सिंह और अवध का प्रथम स्वतंत्रता संग्राम",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_099.txt"
+    },
+    {
+      "id": "hi-100",
+      "sourceId": "100",
+      "language": "hi",
+      "title": "मातंगिनी हाजरा और भारत छोड़ो आंदोलन का संकल्प",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "file": "hindi/hindi_exercise_100.txt"
+    },
+    {
+      "id": "hi-101",
+      "sourceId": "101",
+      "language": "hi",
+      "title": "पंचतंत्र: ब्राह्मण और स्वामीभक्त नेवले की मार्मिक कथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_101.txt"
+    },
+    {
+      "id": "hi-102",
+      "sourceId": "102",
+      "language": "hi",
+      "title": "पंचतंत्र: बंदर और मगरमच्छ की नदी किनारे की चतुराई",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_102.txt"
+    },
+    {
+      "id": "hi-103",
+      "sourceId": "103",
+      "language": "hi",
+      "title": "पंचतंत्र: चार मित्र और शेर को जीवित करने का परिणाम",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_103.txt"
+    },
+    {
+      "id": "hi-104",
+      "sourceId": "104",
+      "language": "hi",
+      "title": "हितोपदेश: वृद्ध बाघ और सोने के कंगन का लालच",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_104.txt"
+    },
+    {
+      "id": "hi-105",
+      "sourceId": "105",
+      "language": "hi",
+      "title": "जातक कथा: न्यग्रोध मृग राजा और करुणा का आदर्श",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_105.txt"
+    },
+    {
+      "id": "hi-106",
+      "sourceId": "106",
+      "language": "hi",
+      "title": "जातक कथा: तपती रेत का रेगिस्तान और धैर्यवान व्यापारी",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_106.txt"
+    },
+    {
+      "id": "hi-107",
+      "sourceId": "107",
+      "language": "hi",
+      "title": "नचिकेता और यमराज का अमर संवाद: आत्मज्ञान की खोज",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_107.txt"
+    },
+    {
+      "id": "hi-108",
+      "sourceId": "108",
+      "language": "hi",
+      "title": "भक्त प्रहलाद की अटूट आस्था और नृसिंह अवतार",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_108.txt"
+    },
+    {
+      "id": "hi-109",
+      "sourceId": "109",
+      "language": "hi",
+      "title": "सत्यवान और सावित्री: यमराज से पति के प्राण लौटाने का संकल्प",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_109.txt"
+    },
+    {
+      "id": "hi-110",
+      "sourceId": "110",
+      "language": "hi",
+      "title": "राजा हरिश्चंद्र की सत्यनिष्ठा और श्मशान की कठिन परीक्षा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_110.txt"
+    },
+    {
+      "id": "hi-111",
+      "sourceId": "111",
+      "language": "hi",
+      "title": "एकलव्य की गुरुभक्ति और साधना से धनुर्विद्या की सिद्धि",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_111.txt"
+    },
+    {
+      "id": "hi-112",
+      "sourceId": "112",
+      "language": "hi",
+      "title": "दानवीर कर्ण का चरित्र: दान, मित्रता और भाग्य की विडंबना",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_112.txt"
+    },
+    {
+      "id": "hi-113",
+      "sourceId": "113",
+      "language": "hi",
+      "title": "विदुर नीति: हस्तिनापुर राजदरबार में नीति और धर्म का उपदेश",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_113.txt"
+    },
+    {
+      "id": "hi-114",
+      "sourceId": "114",
+      "language": "hi",
+      "title": "हंस और कछुए की कथा: असमय बोलने का दुष्परिणाम",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_114.txt"
+    },
+    {
+      "id": "hi-115",
+      "sourceId": "115",
+      "language": "hi",
+      "title": "बालक ध्रुव की कठिन तपस्या और ध्रुव तारे का स्थान",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_115.txt"
+    },
+    {
+      "id": "hi-116",
+      "sourceId": "116",
+      "language": "hi",
+      "title": "बीरबल की खिचड़ी: धैर्य और प्रत्यक्ष अनुभव का पाठ",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_116.txt"
+    },
+    {
+      "id": "hi-117",
+      "sourceId": "117",
+      "language": "hi",
+      "title": "तेनालीराम और राजा का स्वप्न: चाटुकारिता पर तीखा प्रहार",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_117.txt"
+    },
+    {
+      "id": "hi-118",
+      "sourceId": "118",
+      "language": "hi",
+      "title": "तेनालीराम और खेत में चोरों से सिंचाई करवाने की युक्ति",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_118.txt"
+    },
+    {
+      "id": "hi-119",
+      "sourceId": "119",
+      "language": "hi",
+      "title": "विक्रम और बेताल: न्यायप्रिय राजा और पेचीदा पहेलियां",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_119.txt"
+    },
+    {
+      "id": "hi-120",
+      "sourceId": "120",
+      "language": "hi",
+      "title": "सिंहासन बत्तीसी: राजा विक्रमादित्य के बत्तीस दिव्य गुण",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_120.txt"
+    },
+    {
+      "id": "hi-121",
+      "sourceId": "121",
+      "language": "hi",
+      "title": "ईसप की कहानी: गड़ेरिया और भेड़िया: झूठ का अंत",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_121.txt"
+    },
+    {
+      "id": "hi-122",
+      "sourceId": "122",
+      "language": "hi",
+      "title": "ईसप की कहानी: कछुआ और खरगोश: निरंतर प्रयास की विजय",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_122.txt"
+    },
+    {
+      "id": "hi-123",
+      "sourceId": "123",
+      "language": "hi",
+      "title": "ईसप की कहानी: उत्तर की बर्फीली हवा और कोमल सूर्य",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_123.txt"
+    },
+    {
+      "id": "hi-124",
+      "sourceId": "124",
+      "language": "hi",
+      "title": "ईसप की कहानी: चींटी और टिड्डा: भविष्य की तैयारी का महत्व",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_124.txt"
+    },
+    {
+      "id": "hi-125",
+      "sourceId": "125",
+      "language": "hi",
+      "title": "अमर पक्षी फीनिक्स की राख से पुनः जीवित होने की कथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_125.txt"
+    },
+    {
+      "id": "hi-126",
+      "sourceId": "126",
+      "language": "hi",
+      "title": "राजा मिदास और स्वर्णिम स्पर्श का विनाशकारी वरदान",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_126.txt"
+    },
+    {
+      "id": "hi-127",
+      "sourceId": "127",
+      "language": "hi",
+      "title": "डेडलस और इकारस: सीमाओं का उल्लंघन और मोम के पंख",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_127.txt"
+    },
+    {
+      "id": "hi-128",
+      "sourceId": "128",
+      "language": "hi",
+      "title": "अंधे और हाथी की बोधकथा: सत्य के विभिन्न दृष्टिकोण",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_128.txt"
+    },
+    {
+      "id": "hi-129",
+      "sourceId": "129",
+      "language": "hi",
+      "title": "दामोक्लेस की तलवार: सत्ता के साथ बंधी अनिश्चितता",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_129.txt"
+    },
+    {
+      "id": "hi-130",
+      "sourceId": "130",
+      "language": "hi",
+      "title": "थॉर और विशालकाय दानवों की परीक्षा: नॉर्स गाथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_130.txt"
+    },
+    {
+      "id": "hi-131",
+      "sourceId": "131",
+      "language": "hi",
+      "title": "ट्रोजन हॉर्स: लकड़ी के घोड़े से अभेद्य किले पर विजय",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_131.txt"
+    },
+    {
+      "id": "hi-132",
+      "sourceId": "132",
+      "language": "hi",
+      "title": "गिलगमेश का महाकाव्य: अमरता की व्यर्थ खोज और कर्म का महत्व",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_132.txt"
+    },
+    {
+      "id": "hi-133",
+      "sourceId": "133",
+      "language": "hi",
+      "title": "उराशिमा तारो: जापानी लोककथा और समय का रहस्यमय पहिया",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_133.txt"
+    },
+    {
+      "id": "hi-134",
+      "sourceId": "134",
+      "language": "hi",
+      "title": "मोमोतारो: जापानी आड़ू बालक और दानवों का संहार",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_134.txt"
+    },
+    {
+      "id": "hi-135",
+      "sourceId": "135",
+      "language": "hi",
+      "title": "सफेद सारस की कृतज्ञता: वचन निभाने की जापानी कथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_135.txt"
+    },
+    {
+      "id": "hi-136",
+      "sourceId": "136",
+      "language": "hi",
+      "title": "पहाड़ हिलाने वाला वृद्ध व्यक्ति: चीनी लोककथा का संकल्प",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_136.txt"
+    },
+    {
+      "id": "hi-137",
+      "sourceId": "137",
+      "language": "hi",
+      "title": "खाली प्याला: जेन मास्टर और अहंकारी विद्वान की बोधकथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_137.txt"
+    },
+    {
+      "id": "hi-138",
+      "sourceId": "138",
+      "language": "hi",
+      "title": "राजा आर्थर और पत्थर में गड़ी जादुई तलवार एक्सकैलिबर",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_138.txt"
+    },
+    {
+      "id": "hi-139",
+      "sourceId": "139",
+      "language": "hi",
+      "title": "रेगिस्तान में सौदागर और जिन्न की अरेबियन नाइट्स कथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_139.txt"
+    },
+    {
+      "id": "hi-140",
+      "sourceId": "140",
+      "language": "hi",
+      "title": "नाविक सिंदबाद की यात्राएं: हीरों की रहस्यमयी घाटी",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_140.txt"
+    },
+    {
+      "id": "hi-141",
+      "sourceId": "141",
+      "language": "hi",
+      "title": "मकड़ी अनांसी और संसार के संपूर्ण ज्ञान का घड़ा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_141.txt"
+    },
+    {
+      "id": "hi-142",
+      "sourceId": "142",
+      "language": "hi",
+      "title": "दो भेड़ियों की कहानी: मन के अंदर चलने वाला सतत युद्ध",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_142.txt"
+    },
+    {
+      "id": "hi-143",
+      "sourceId": "143",
+      "language": "hi",
+      "title": "रूसी लोककथा: जादुई अग्नि-पक्षी और राजकुमार इवान",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_143.txt"
+    },
+    {
+      "id": "hi-144",
+      "sourceId": "144",
+      "language": "hi",
+      "title": "मछुआरा और सोने की मछली: असीमित तृष्णा का पतन",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_144.txt"
+    },
+    {
+      "id": "hi-145",
+      "sourceId": "145",
+      "language": "hi",
+      "title": "हैमेलिन का बांसुरीवाला: वचन तोड़ने का भारी परिणाम",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_145.txt"
+    },
+    {
+      "id": "hi-146",
+      "sourceId": "146",
+      "language": "hi",
+      "title": "घर लौटा मुसाफिर: भटके हुए बेटे की वापसी का सबक",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_146.txt"
+    },
+    {
+      "id": "hi-147",
+      "sourceId": "147",
+      "language": "hi",
+      "title": "भस्मासुर की कथा: अहंकार और अपने ही वरदान से अंत",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_147.txt"
+    },
+    {
+      "id": "hi-148",
+      "sourceId": "148",
+      "language": "hi",
+      "title": "गजेंद्र मोक्ष: अहंकार त्याग और पूर्ण समर्पण की शक्ति",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_148.txt"
+    },
+    {
+      "id": "hi-149",
+      "sourceId": "149",
+      "language": "hi",
+      "title": "भागीरथ की कठोर तपस्या और पतित-पावनी गंगा का अवतरण",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_149.txt"
+    },
+    {
+      "id": "hi-150",
+      "sourceId": "150",
+      "language": "hi",
+      "title": "माता शबरी के जूठे बेर: निश्छल भक्ति और प्रभु मिलन",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "file": "hindi/hindi_exercise_150.txt"
+    },
+    {
+      "id": "hi-151",
+      "sourceId": "151",
+      "language": "hi",
+      "title": "श्रीमद्भगवद्गीता का निष्काम कर्मयोग और जीवन दृष्टि",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_151.txt"
+    },
+    {
+      "id": "hi-152",
+      "sourceId": "152",
+      "language": "hi",
+      "title": "षड्दर्शन: न्याय, वैशेषिक, सांख्य, योग, मीमांसा और वेदांत",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_152.txt"
+    },
+    {
+      "id": "hi-153",
+      "sourceId": "153",
+      "language": "hi",
+      "title": "पुरुषार्थ चतुष्टय: धर्म, अर्थ, काम और मोक्ष का संतुलन",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_153.txt"
+    },
+    {
+      "id": "hi-154",
+      "sourceId": "154",
+      "language": "hi",
+      "title": "महर्षि पतंजलि का अष्टांग योग: चित्तवृत्ति निरोध का मार्ग",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_154.txt"
+    },
+    {
+      "id": "hi-155",
+      "sourceId": "155",
+      "language": "hi",
+      "title": "जैन परंपरा में अहिंसा परमो धर्म: भगवान महावीर की देशना",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_155.txt"
+    },
+    {
+      "id": "hi-156",
+      "sourceId": "156",
+      "language": "hi",
+      "title": "तथागत गौतम बुद्ध का मध्यम मार्ग और चार आर्य सत्य",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_156.txt"
+    },
+    {
+      "id": "hi-157",
+      "sourceId": "157",
+      "language": "hi",
+      "title": "आदि शंकराचार्य और अद्वैत वेदांत दर्शन का दिग्विजय",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_157.txt"
+    },
+    {
+      "id": "hi-158",
+      "sourceId": "158",
+      "language": "hi",
+      "title": "रामानुजाचार्य और समतामूलक विशिष्टाद्वैत वेदांत",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_158.txt"
+    },
+    {
+      "id": "hi-159",
+      "sourceId": "159",
+      "language": "hi",
+      "title": "मध्वाचार्य का द्वैत दर्शन और भक्ति का तात्विक आधार",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_159.txt"
+    },
+    {
+      "id": "hi-160",
+      "sourceId": "160",
+      "language": "hi",
+      "title": "संत कबीर के दोहे: सामाजिक पाखंड पर प्रहार और प्रेम तत्व",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_160.txt"
+    },
+    {
+      "id": "hi-161",
+      "sourceId": "161",
+      "language": "hi",
+      "title": "मीराबाई की अनन्य कृष्ण भक्ति और राजसी वैभव का त्याग",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_161.txt"
+    },
+    {
+      "id": "hi-162",
+      "sourceId": "162",
+      "language": "hi",
+      "title": "संत तुकाराम के अभंग और विट्ठल भक्ति की निर्मल धारा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_162.txt"
+    },
+    {
+      "id": "hi-163",
+      "sourceId": "163",
+      "language": "hi",
+      "title": "संत ज्ञानेश्वर और प्राकृत भाषा में भावार्थ दीपिका",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_163.txt"
+    },
+    {
+      "id": "hi-164",
+      "sourceId": "164",
+      "language": "hi",
+      "title": "गोस्वामी तुलसीदास और जनभाषा में रामचरितमानस का सृजन",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_164.txt"
+    },
+    {
+      "id": "hi-165",
+      "sourceId": "165",
+      "language": "hi",
+      "title": "गुरु नानक देव जी की शिक्षाएं: एक ओंकार और वंड छको",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_165.txt"
+    },
+    {
+      "id": "hi-166",
+      "sourceId": "166",
+      "language": "hi",
+      "title": "गुरु गोबिंद सिंह जी और खालसा पंथ की स्थापना का इतिहास",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_166.txt"
+    },
+    {
+      "id": "hi-167",
+      "sourceId": "167",
+      "language": "hi",
+      "title": "श्री गुरु ग्रंथ साहिब: सार्वभौमिक मानवता का मार्गदर्शक ग्रंथ",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_167.txt"
+    },
+    {
+      "id": "hi-168",
+      "sourceId": "168",
+      "language": "hi",
+      "title": "लंगर परंपरा: जाति और ऊंच-नीच मिटाती समरसता की मिसाल",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_168.txt"
+    },
+    {
+      "id": "hi-169",
+      "sourceId": "169",
+      "language": "hi",
+      "title": "कालिदास का अभिज्ञानशाकुंतलम् और प्राचीन भारतीय नाट्यकला",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_169.txt"
+    },
+    {
+      "id": "hi-170",
+      "sourceId": "170",
+      "language": "hi",
+      "title": "भरत मुनि का नाट्यशास्त्र और नवरसों का गहन विश्लेषण",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_170.txt"
+    },
+    {
+      "id": "hi-171",
+      "sourceId": "171",
+      "language": "hi",
+      "title": "भारतीय शास्त्रीय संगीत: राग, ताल और नाद ब्रह्म की साधना",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_171.txt"
+    },
+    {
+      "id": "hi-172",
+      "sourceId": "172",
+      "language": "hi",
+      "title": "ध्रुपद गायन परंपरा: भारतीय संगीत की प्राचीनतम शैली",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_172.txt"
+    },
+    {
+      "id": "hi-173",
+      "sourceId": "173",
+      "language": "hi",
+      "title": "कर्नाटक संगीत की त्रिमूर्ति: त्यागराज, मुथुस्वामी और श्यामा शास्त्री",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_173.txt"
+    },
+    {
+      "id": "hi-174",
+      "sourceId": "174",
+      "language": "hi",
+      "title": "प्राचीन भारतीय वास्तु शास्त्र और मंदिरों का ज्यामितीय विज्ञान",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_174.txt"
+    },
+    {
+      "id": "hi-175",
+      "sourceId": "175",
+      "language": "hi",
+      "title": "कुंभ मेला: भारत का विशालतम खगोलीय और आध्यात्मिक समागम",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_175.txt"
+    },
+    {
+      "id": "hi-176",
+      "sourceId": "176",
+      "language": "hi",
+      "title": "भारत की पवित्र नदियां और उनके तटों पर विकसित सभ्यताएं",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_176.txt"
+    },
+    {
+      "id": "hi-177",
+      "sourceId": "177",
+      "language": "hi",
+      "title": "पश्चिमी घाट: जैव विविधता की वैश्विक धरोहर और मानसून रक्षक",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_177.txt"
+    },
+    {
+      "id": "hi-178",
+      "sourceId": "178",
+      "language": "hi",
+      "title": "हिमालय पर्वतमाला: भारत का प्रहरी और जल सुरक्षा का स्रोत",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_178.txt"
+    },
+    {
+      "id": "hi-179",
+      "sourceId": "179",
+      "language": "hi",
+      "title": "वैदिक गणित: सोलह सूत्र और तीव्र मानसिक गणना की विधि",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_179.txt"
+    },
+    {
+      "id": "hi-180",
+      "sourceId": "180",
+      "language": "hi",
+      "title": "प्राचीन भारतीय धातु शिल्प: चोल कांस्य नटराज की प्रतिमा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_180.txt"
+    },
+    {
+      "id": "hi-181",
+      "sourceId": "181",
+      "language": "hi",
+      "title": "वुट्ज़ स्टील: प्राचीन दक्षिण भारत की विश्वप्रसिद्ध इस्पात कला",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_181.txt"
+    },
+    {
+      "id": "hi-182",
+      "sourceId": "182",
+      "language": "hi",
+      "title": "भारतीय हथकरघा की समृद्ध परंपरा: बनारसी, कांजीवरम और चंदेरी",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_182.txt"
+    },
+    {
+      "id": "hi-183",
+      "sourceId": "183",
+      "language": "hi",
+      "title": "नील की खेती का संकट और भारतीय बुनकरों की जिजीविषा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_183.txt"
+    },
+    {
+      "id": "hi-184",
+      "sourceId": "184",
+      "language": "hi",
+      "title": "पारंपरिक गुरुकुल शिक्षा पद्धति: स्मृति, तर्क और चरित्र निर्माण",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_184.txt"
+    },
+    {
+      "id": "hi-185",
+      "sourceId": "185",
+      "language": "hi",
+      "title": "प्राचीन भारतीय नौपरिवहन: नक्षत्रों के आधार पर सागर यात्राएं",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_185.txt"
+    },
+    {
+      "id": "hi-186",
+      "sourceId": "186",
+      "language": "hi",
+      "title": "भारतीय मसालों का इतिहास: काली मिर्च और वैश्विक व्यापार मार्ग",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_186.txt"
+    },
+    {
+      "id": "hi-187",
+      "sourceId": "187",
+      "language": "hi",
+      "title": "आयुर्वेदिक दिनचर्या और ऋतुचर्या: स्वस्थ दीर्घायु के नियम",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_187.txt"
+    },
+    {
+      "id": "hi-188",
+      "sourceId": "188",
+      "language": "hi",
+      "title": "भारतीय खानपान में सात्विक आहार और अहिंसा की अवधारणा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_188.txt"
+    },
+    {
+      "id": "hi-189",
+      "sourceId": "189",
+      "language": "hi",
+      "title": "भारत के पवित्र उपवन: प्रकृति संरक्षण की आस्था",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_189.txt"
+    },
+    {
+      "id": "hi-190",
+      "sourceId": "190",
+      "language": "hi",
+      "title": "राजस्थान की पारंपरिक जल संरचनाएं: टांका, कुंडी और बेरी",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_190.txt"
+    },
+    {
+      "id": "hi-191",
+      "sourceId": "191",
+      "language": "hi",
+      "title": "राजस्थान के गिरि दुर्ग: चित्तौड़गढ़, कुंभलगढ़ और मेहरानगढ़",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_191.txt"
+    },
+    {
+      "id": "hi-192",
+      "sourceId": "192",
+      "language": "hi",
+      "title": "कुंभलगढ़ की प्राचीर: चीन की दीवार के बाद विश्व की दूसरी सबसे लंबी दीवार",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_192.txt"
+    },
+    {
+      "id": "hi-193",
+      "sourceId": "193",
+      "language": "hi",
+      "title": "हाड़ी रानी का बलिदान: कर्तव्य पथ पर शीश काटकर देना",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_193.txt"
+    },
+    {
+      "id": "hi-194",
+      "sourceId": "194",
+      "language": "hi",
+      "title": "पृथ्वीराज चौहान का शौर्य और तराइन का ऐतिहासिक युद्ध",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_194.txt"
+    },
+    {
+      "id": "hi-195",
+      "sourceId": "195",
+      "language": "hi",
+      "title": "राजा हेमचंद्र विक्रमादित्य: नमक व्यापारी से दिल्ली का सम्राट",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_195.txt"
+    },
+    {
+      "id": "hi-196",
+      "sourceId": "196",
+      "language": "hi",
+      "title": "राजा सुहेलदेव और उत्तर भारत की ऐतिहासिक रक्षा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_196.txt"
+    },
+    {
+      "id": "hi-197",
+      "sourceId": "197",
+      "language": "hi",
+      "title": "मराठा परिसंघ की प्रशासनिक प्रणाली और चौथ-सरदेशमुखी",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_197.txt"
+    },
+    {
+      "id": "hi-198",
+      "sourceId": "198",
+      "language": "hi",
+      "title": "बाजीराव प्रथम: चालीस युद्धों में अजेय रहने वाले सेनापति",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_198.txt"
+    },
+    {
+      "id": "hi-199",
+      "sourceId": "199",
+      "language": "hi",
+      "title": "भारतीय कठपुतली कला की परंपरा और लोक रंजन",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_199.txt"
+    },
+    {
+      "id": "hi-200",
+      "sourceId": "200",
+      "language": "hi",
+      "title": "शास्त्रीय नृत्य परंपराएं: भरतनाट्यम, कथक, कथकली और ओडिसी",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "file": "hindi/hindi_exercise_200.txt"
+    },
+    {
+      "id": "hi-201",
+      "sourceId": "201",
+      "language": "hi",
+      "title": "जगदीश चंद्र बोस: सूक्ष्म तरंगों और पौधों में जीवन के अन्वेषक",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_201.txt"
+    },
+    {
+      "id": "hi-202",
+      "sourceId": "202",
+      "language": "hi",
+      "title": "श्रीनिवास रामानुजन: संख्याओं के जादूगर और अनंत सूत्र",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_202.txt"
+    },
+    {
+      "id": "hi-203",
+      "sourceId": "203",
+      "language": "hi",
+      "title": "सर सी. वी. रमन और प्रकाश प्रकीर्णन का ऐतिहासिक रमन प्रभाव",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_203.txt"
+    },
+    {
+      "id": "hi-204",
+      "sourceId": "204",
+      "language": "hi",
+      "title": "होमी जहांगीर भाभा और भारत का त्रि-चरणीय परमाणु कार्यक्रम",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_204.txt"
+    },
+    {
+      "id": "hi-205",
+      "sourceId": "205",
+      "language": "hi",
+      "title": "विक्रम साराभाई: भारतीय अंतरिक्ष अनुसंधान के दूरदर्शी जनक",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_205.txt"
+    },
+    {
+      "id": "hi-206",
+      "sourceId": "206",
+      "language": "hi",
+      "title": "थुंबा रॉकेट प्रक्षेपण केंद्र: नारियल के बगीचे से अंतरिक्ष यात्रा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_206.txt"
+    },
+    {
+      "id": "hi-207",
+      "sourceId": "207",
+      "language": "hi",
+      "title": "आर्यभट्ट उपग्रह: 1975 में भारत का पहला अंतरिक्षीय कदम",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_207.txt"
+    },
+    {
+      "id": "hi-208",
+      "sourceId": "208",
+      "language": "hi",
+      "title": "चंद्रयान-1 मिशन: चंद्रमा की सतह पर जल अणुओं की ऐतिहासिक खोज",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_208.txt"
+    },
+    {
+      "id": "hi-209",
+      "sourceId": "209",
+      "language": "hi",
+      "title": "चंद्रयान-3 की सफलता: चंद्रमा के दक्षिणी ध्रुव पर ऐतिहासिक लैंडिंग",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_209.txt"
+    },
+    {
+      "id": "hi-210",
+      "sourceId": "210",
+      "language": "hi",
+      "title": "मंगलयान: पहले ही प्रयास में मंगल की कक्षा में प्रवेश",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_210.txt"
+    },
+    {
+      "id": "hi-211",
+      "sourceId": "211",
+      "language": "hi",
+      "title": "आदित्य-एल1 मिशन: सूर्य के रहस्य सुलझाने अंतरिक्ष में भारत",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_211.txt"
+    },
+    {
+      "id": "hi-212",
+      "sourceId": "212",
+      "language": "hi",
+      "title": "ध्रुवीय उपग्रह प्रक्षेपण यान: इसरो का भरोसेमंद वर्कहॉर्स",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_212.txt"
+    },
+    {
+      "id": "hi-213",
+      "sourceId": "213",
+      "language": "hi",
+      "title": "भू-समकालिक उपग्रह प्रक्षेपण यान और क्रायोजेनिक तकनीक",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_213.txt"
+    },
+    {
+      "id": "hi-214",
+      "sourceId": "214",
+      "language": "hi",
+      "title": "एस. एस. अभ्यंकर: उच्च-आयामी बीजगणितीय ज्यामिति में योगदान",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_214.txt"
+    },
+    {
+      "id": "hi-215",
+      "sourceId": "215",
+      "language": "hi",
+      "title": "डॉ. हरगोविंद खुराना और आनुवंशिक कोड की सफल व्याख्या",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_215.txt"
+    },
+    {
+      "id": "hi-216",
+      "sourceId": "216",
+      "language": "hi",
+      "title": "सुब्रह्मण्यन चंद्रशेखर और तारों के द्रव्यमान की चंद्रशेखर सीमा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_216.txt"
+    },
+    {
+      "id": "hi-217",
+      "sourceId": "217",
+      "language": "hi",
+      "title": "आचार्य प्रफुल्ल चंद्र राय: भारतीय रसायन उद्योग के पितामह",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_217.txt"
+    },
+    {
+      "id": "hi-218",
+      "sourceId": "218",
+      "language": "hi",
+      "title": "सर एम. विश्वेश्वरैया: महान अभियंता और केआरएस बांध का निर्माण",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_218.txt"
+    },
+    {
+      "id": "hi-219",
+      "sourceId": "219",
+      "language": "hi",
+      "title": "हरित क्रांति: उन्नत बीजों से देश को खाद्यान्न में आत्मनिर्भर बनाना",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_219.txt"
+    },
+    {
+      "id": "hi-220",
+      "sourceId": "220",
+      "language": "hi",
+      "title": "श्वेत क्रांति और ऑपरेशन फ्लड: भारत बना दुग्ध उत्पादन में अग्रणी",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_220.txt"
+    },
+    {
+      "id": "hi-221",
+      "sourceId": "221",
+      "language": "hi",
+      "title": "स्वर्णिम चतुर्भुज परियोजना: भारत के चारों कोनों को जोड़ते राष्ट्रीय राजमार्ग",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_221.txt"
+    },
+    {
+      "id": "hi-222",
+      "sourceId": "222",
+      "language": "hi",
+      "title": "कोंकण रेलवे: पश्चिमी घाट की दुर्गम पहाड़ियों में इंजीनियरिंग चमत्कार",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_222.txt"
+    },
+    {
+      "id": "hi-223",
+      "sourceId": "223",
+      "language": "hi",
+      "title": "वंदे भारत एक्सप्रेस: भारत की स्वदेशी सेमी-हाई-स्पीड रेल क्रांति",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_223.txt"
+    },
+    {
+      "id": "hi-224",
+      "sourceId": "224",
+      "language": "hi",
+      "title": "चिनाब रेल पुल: विश्व के सबसे ऊंचे रेलवे आर्च ब्रिज का निर्माण",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_224.txt"
+    },
+    {
+      "id": "hi-225",
+      "sourceId": "225",
+      "language": "hi",
+      "title": "अटल टनल रोहतांग: हिमालय के पीर पंजाल में बनी विश्वस्तरीय सुरंग",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_225.txt"
+    },
+    {
+      "id": "hi-226",
+      "sourceId": "226",
+      "language": "hi",
+      "title": "यूनिफाइड पेमेंट्स इंटरफेस: वैश्विक डिजिटल भुगतान का सिरमौर",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_226.txt"
+    },
+    {
+      "id": "hi-227",
+      "sourceId": "227",
+      "language": "hi",
+      "title": "आधार प्रणाली: विश्व का सबसे बड़ा डिजिटल पहचान ढांचा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_227.txt"
+    },
+    {
+      "id": "hi-228",
+      "sourceId": "228",
+      "language": "hi",
+      "title": "इंडिया स्टैक: पेपरलेस और कैशलेस डिजिटल शासन की नींव",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_228.txt"
+    },
+    {
+      "id": "hi-229",
+      "sourceId": "229",
+      "language": "hi",
+      "title": "भारतीय सॉफ्टवेयर उद्योग: बेंगलुरु से लेकर वैश्विक तकनीकी नेतृत्व",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_229.txt"
+    },
+    {
+      "id": "hi-230",
+      "sourceId": "230",
+      "language": "hi",
+      "title": "भड़ला सोलर पार्क: थार के रेगिस्तान में विश्व का सबसे बड़ा सौर संयंत्र",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_230.txt"
+    },
+    {
+      "id": "hi-231",
+      "sourceId": "231",
+      "language": "hi",
+      "title": "तमिलनाडु और गुजरात के तटीय पवन ऊर्जा गलियारे",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_231.txt"
+    },
+    {
+      "id": "hi-232",
+      "sourceId": "232",
+      "language": "hi",
+      "title": "परम सुपरकंप्यूटर श्रृंखला: सी-डैक पुणे की स्वदेशी कंप्यूटिंग विजय",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_232.txt"
+    },
+    {
+      "id": "hi-233",
+      "sourceId": "233",
+      "language": "hi",
+      "title": "भाभा परमाणु अनुसंधान केंद्र: चिकित्सा और कृषि में रेडियोआइसोटोप",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_233.txt"
+    },
+    {
+      "id": "hi-234",
+      "sourceId": "234",
+      "language": "hi",
+      "title": "प्रोजेक्ट टाइगर: आधी सदी में बाघों के संरक्षण की वैश्विक गाथा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_234.txt"
+    },
+    {
+      "id": "hi-235",
+      "sourceId": "235",
+      "language": "hi",
+      "title": "काजीरंगा राष्ट्रीय उद्यान: एक सींग वाले गैंडों का सुरक्षित बसेरा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_235.txt"
+    },
+    {
+      "id": "hi-236",
+      "sourceId": "236",
+      "language": "hi",
+      "title": "सुंदरवन का मैंग्रोव डेल्टा: बंगाल टाइगर और तटीय रक्षा का कवच",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_236.txt"
+    },
+    {
+      "id": "hi-237",
+      "sourceId": "237",
+      "language": "hi",
+      "title": "लद्दाख के आइस स्तूप: सोनम वांगचुक का कृत्रिम ग्लेशियर आविष्कार",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_237.txt"
+    },
+    {
+      "id": "hi-238",
+      "sourceId": "238",
+      "language": "hi",
+      "title": "मेघालय के जीवित जड़ पुल: खासी जनजाति का अनूठा बायो-इंजीनियरिंग",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_238.txt"
+    },
+    {
+      "id": "hi-239",
+      "sourceId": "239",
+      "language": "hi",
+      "title": "पारंपरिक बीज बैंक: देशी फसलों और पोषक बीजों का संरक्षण",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_239.txt"
+    },
+    {
+      "id": "hi-240",
+      "sourceId": "240",
+      "language": "hi",
+      "title": "सूक्ष्म सिंचाई तकनीक: बूंद-बूंद और फव्वारा सिंचाई से जल बचत",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_240.txt"
+    },
+    {
+      "id": "hi-241",
+      "sourceId": "241",
+      "language": "hi",
+      "title": "बायोगैस संयंत्र: ग्रामीण भारत में स्वच्छ ईंधन और जैविक खाद",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_241.txt"
+    },
+    {
+      "id": "hi-242",
+      "sourceId": "242",
+      "language": "hi",
+      "title": "हिंद महासागर सुनामी चेतावनी प्रणाली: गहरे समुद्र में लगे अर्ली सेंसर",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_242.txt"
+    },
+    {
+      "id": "hi-243",
+      "sourceId": "243",
+      "language": "hi",
+      "title": "डीप ओशन मिशन: समुद्रयान द्वारा गहरे महासागर की खोज",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_243.txt"
+    },
+    {
+      "id": "hi-244",
+      "sourceId": "244",
+      "language": "hi",
+      "title": "हल्का लड़ाकू विमान तेजस: स्वदेशी एयरोस्पेस इंजीनियरिंग का गौरव",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_244.txt"
+    },
+    {
+      "id": "hi-245",
+      "sourceId": "245",
+      "language": "hi",
+      "title": "आईएनएस विक्रांत: भारत निर्मित पहला स्वदेशी विमानवाहक पोत",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_245.txt"
+    },
+    {
+      "id": "hi-246",
+      "sourceId": "246",
+      "language": "hi",
+      "title": "ब्रह्मोस सुपरसोनिक क्रूज मिसाइल: अचूक मारक क्षमता की मिसाल",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_246.txt"
+    },
+    {
+      "id": "hi-247",
+      "sourceId": "247",
+      "language": "hi",
+      "title": "ग्रामीण भारत में डिजिटल साक्षरता: कॉमन सर्विस सेंटर की भूमिका",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_247.txt"
+    },
+    {
+      "id": "hi-248",
+      "sourceId": "248",
+      "language": "hi",
+      "title": "भारतीय डाक विभाग का रूपांतरण: डाकियों से लेकर इंडिया पोस्ट पेमेंट्स बैंक",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_248.txt"
+    },
+    {
+      "id": "hi-249",
+      "sourceId": "249",
+      "language": "hi",
+      "title": "पारंपरिक आयुर्वेदिक औषधियों पर आधुनिक फार्मास्यूटिकल शोध",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_249.txt"
+    },
+    {
+      "id": "hi-250",
+      "sourceId": "250",
+      "language": "hi",
+      "title": "भारत में निजी स्पेस स्टार्टअप्स: निजी उपग्रह और क्रायोजेनिक रॉकेट",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "file": "hindi/hindi_exercise_250.txt"
+    },
+    {
+      "id": "hi-251",
+      "sourceId": "251",
+      "language": "hi",
+      "title": "मिस्र के गीजा का महान पिरामिड: प्राचीन वास्तु और खगोलीय संरेखण",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_251.txt"
+    },
+    {
+      "id": "hi-252",
+      "sourceId": "252",
+      "language": "hi",
+      "title": "सिकंदरिया का प्राचीन पुस्तकालय: भूमध्यसागरीय ज्ञान का भंडार",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_252.txt"
+    },
+    {
+      "id": "hi-253",
+      "sourceId": "253",
+      "language": "hi",
+      "title": "मेसोपोटामिया की देन: कुम्हार का चाक, कीलाक्षर लिपि और 60 मिनट का घंटा",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_253.txt"
+    },
+    {
+      "id": "hi-254",
+      "sourceId": "254",
+      "language": "hi",
+      "title": "हम्मुराबी की विधि संहिता: विश्व की सबसे प्राचीन लिखित न्याय व्यवस्था",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_254.txt"
+    },
+    {
+      "id": "hi-255",
+      "sourceId": "255",
+      "language": "hi",
+      "title": "क्रीट की मिनोअन सभ्यता और नोसोस का भूलभुलैया जैसा राजमहल",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_255.txt"
+    },
+    {
+      "id": "hi-256",
+      "sourceId": "256",
+      "language": "hi",
+      "title": "प्राचीन एथेंस का लोकतंत्र: जनसभा, नागरिक अधिकार और दार्शनिक विचार",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_256.txt"
+    },
+    {
+      "id": "hi-257",
+      "sourceId": "257",
+      "language": "hi",
+      "title": "मैराथन का ऐतिहासिक युद्ध और लंबी दूरी की दौड़ की शुरुआत",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_257.txt"
+    },
+    {
+      "id": "hi-258",
+      "sourceId": "258",
+      "language": "hi",
+      "title": "सुकरात की संवाद पद्धति: निरंतर प्रश्न पूछने और आत्मनिरीक्षण का दर्शन",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_258.txt"
+    },
+    {
+      "id": "hi-259",
+      "sourceId": "259",
+      "language": "hi",
+      "title": "प्लेटो की गुफा का रूपक: भ्रम की दुनिया और सत्य का अन्वेषण",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_259.txt"
+    },
+    {
+      "id": "hi-260",
+      "sourceId": "260",
+      "language": "hi",
+      "title": "अरस्तू और प्राकृतिक विज्ञान के वर्गीकरण की नींव",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_260.txt"
+    },
+    {
+      "id": "hi-261",
+      "sourceId": "261",
+      "language": "hi",
+      "title": "रोमन एक्वाडक्ट्स: सैकड़ों मील तक गुरुत्वाकर्षण से बहता पेयजल",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_261.txt"
+    },
+    {
+      "id": "hi-262",
+      "sourceId": "262",
+      "language": "hi",
+      "title": "रोम का कोलोसियम: भव्य अखाड़ा, भूमिगत यंत्र और इतिहास",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_262.txt"
+    },
+    {
+      "id": "hi-263",
+      "sourceId": "263",
+      "language": "hi",
+      "title": "एपियन वे: प्राचीन रोम की हर मौसम में काम करने वाली सैन्य सड़कें",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_263.txt"
+    },
+    {
+      "id": "hi-264",
+      "sourceId": "264",
+      "language": "hi",
+      "title": "सिल्क रूट: रेशम, मसाले, दर्शन और संस्कृतियों का संगम",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_264.txt"
+    },
+    {
+      "id": "hi-265",
+      "sourceId": "265",
+      "language": "hi",
+      "title": "बायजेंटाइन साम्राज्य और हागिया सोफिया का भव्य गुंबद स्थापत्य",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_265.txt"
+    },
+    {
+      "id": "hi-266",
+      "sourceId": "266",
+      "language": "hi",
+      "title": "माया सभ्यता: चित्रलिपि और अत्यंत सटीक खगोलीय पंचांग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_266.txt"
+    },
+    {
+      "id": "hi-267",
+      "sourceId": "267",
+      "language": "hi",
+      "title": "इंका साम्राज्य की राजमार्ग प्रणाली और एंडीज के घास के रस्सियों के पुल",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_267.txt"
+    },
+    {
+      "id": "hi-268",
+      "sourceId": "268",
+      "language": "hi",
+      "title": "माचू पिच्चू: बिना गारे के विशाल पत्थरों से बना पर्वतीय नगर",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_268.txt"
+    },
+    {
+      "id": "hi-269",
+      "sourceId": "269",
+      "language": "hi",
+      "title": "इटली का पुनर्जागरण काल: फ्लोरेंस का कलात्मक और बौद्धिक उत्थान",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_269.txt"
+    },
+    {
+      "id": "hi-270",
+      "sourceId": "270",
+      "language": "hi",
+      "title": "लियोनार्डो दा विंची: चित्रकला, शरीर विज्ञान और इंजीनियरिंग के महानायक",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_270.txt"
+    },
+    {
+      "id": "hi-271",
+      "sourceId": "271",
+      "language": "hi",
+      "title": "माइकल एंजेलो और सिस्टिन चैपल की छत पर अमर भित्तिचित्र",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_271.txt"
+    },
+    {
+      "id": "hi-272",
+      "sourceId": "272",
+      "language": "hi",
+      "title": "गुटेनबर्ग का छापाखाना: मुद्रण क्रांति और ज्ञान का लोकतांत्रीकरण",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_272.txt"
+    },
+    {
+      "id": "hi-273",
+      "sourceId": "273",
+      "language": "hi",
+      "title": "निकोलस कोपरनिकस और सूर्यकेंद्रीय ब्रह्मांड का क्रांतिकारी सिद्धांत",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_273.txt"
+    },
+    {
+      "id": "hi-274",
+      "sourceId": "274",
+      "language": "hi",
+      "title": "गैलिलियो गैलीली और दूरबीन से बृहस्पति के चंद्रमाओं की खोज",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_274.txt"
+    },
+    {
+      "id": "hi-275",
+      "sourceId": "275",
+      "language": "hi",
+      "title": "जोहान्स केप्लर और ग्रहों की गति के तीन मौलिक नियम",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_275.txt"
+    },
+    {
+      "id": "hi-276",
+      "sourceId": "276",
+      "language": "hi",
+      "title": "सर आइजैक न्यूटन: गुरुत्वाकर्षण का सार्वभौमिक नियम और गति के सिद्धांत",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_276.txt"
+    },
+    {
+      "id": "hi-277",
+      "sourceId": "277",
+      "language": "hi",
+      "title": "फर्डिनेंड मैगलन की समुद्री यात्रा: पृथ्वी की पहली सफल परिक्रमा",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_277.txt"
+    },
+    {
+      "id": "hi-278",
+      "sourceId": "278",
+      "language": "hi",
+      "title": "डच ईस्ट इंडिया कंपनी और आधुनिक संयुक्त पूंजी निगम का जन्म",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_278.txt"
+    },
+    {
+      "id": "hi-279",
+      "sourceId": "279",
+      "language": "hi",
+      "title": "औद्योगिक क्रांति: जेम्स वाट का भाप इंजन और कारखानों का युग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_279.txt"
+    },
+    {
+      "id": "hi-280",
+      "sourceId": "280",
+      "language": "hi",
+      "title": "जॉर्ज स्टीफेंसन और शुरुआती रेलवे इंजनों का सफर",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_280.txt"
+    },
+    {
+      "id": "hi-281",
+      "sourceId": "281",
+      "language": "hi",
+      "title": "टेलीग्राफ और मोर्स कोड: संदेशों की तात्कालिक यात्रा का आरंभ",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_281.txt"
+    },
+    {
+      "id": "hi-282",
+      "sourceId": "282",
+      "language": "hi",
+      "title": "माइकल फैराडे: विद्युत चुंबकीय प्रेरण और जनरेटर का आविष्कार",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_282.txt"
+    },
+    {
+      "id": "hi-283",
+      "sourceId": "283",
+      "language": "hi",
+      "title": "जेम्स क्लर्क मैक्सवेल: विद्युत, चुंबकत्व और प्रकाश तरंगों का एकीकरण",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_283.txt"
+    },
+    {
+      "id": "hi-284",
+      "sourceId": "284",
+      "language": "hi",
+      "title": "थॉमस एल्वा एडिसन: विद्युत बल्ब और आधुनिक विद्युत ग्रिड",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_284.txt"
+    },
+    {
+      "id": "hi-285",
+      "sourceId": "285",
+      "language": "hi",
+      "title": "निकोला टेस्ला: प्रत्यावर्ती धारा, इंडक्शन मोटर और वायरलेस सपना",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_285.txt"
+    },
+    {
+      "id": "hi-286",
+      "sourceId": "286",
+      "language": "hi",
+      "title": "मैरी क्यूरी: रेडियम और पोलोनियम की खोज तथा रेडियोधर्मिता पर शोध",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_286.txt"
+    },
+    {
+      "id": "hi-287",
+      "sourceId": "287",
+      "language": "hi",
+      "title": "राइट बंधु और किट्टी हॉक पर मानव की पहली सफल उड़ान",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_287.txt"
+    },
+    {
+      "id": "hi-288",
+      "sourceId": "288",
+      "language": "hi",
+      "title": "पनामा नहर का निर्माण: अटलांटिक और प्रशांत महासागर का संगम",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_288.txt"
+    },
+    {
+      "id": "hi-289",
+      "sourceId": "289",
+      "language": "hi",
+      "title": "स्वेज नहर: यूरोप और एशिया के बीच समुद्री दूरी घटाने वाला जलमार्ग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_289.txt"
+    },
+    {
+      "id": "hi-290",
+      "sourceId": "290",
+      "language": "hi",
+      "title": "गोल्डन गेट ब्रिज: सैन फ्रांसिस्को की खाड़ी पर झूलता इंजीनियरिंग अजूबा",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_290.txt"
+    },
+    {
+      "id": "hi-291",
+      "sourceId": "291",
+      "language": "hi",
+      "title": "अलेक्जेंडर फ्लेमिंग और पेनिसिलिन की खोज: एंटीबायोटिक दवाओं का युग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_291.txt"
+    },
+    {
+      "id": "hi-292",
+      "sourceId": "292",
+      "language": "hi",
+      "title": "ट्रांसअटलांटिक टेलीग्राफ केबल: समुद्र के नीचे जुड़े दो महाद्वीप",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_292.txt"
+    },
+    {
+      "id": "hi-293",
+      "sourceId": "293",
+      "language": "hi",
+      "title": "अंतरराष्ट्रीय अंतरिक्ष स्टेशन: पृथ्वी की कक्षा में वैश्विक प्रयोगशाला",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_293.txt"
+    },
+    {
+      "id": "hi-294",
+      "sourceId": "294",
+      "language": "hi",
+      "title": "इंटरनेट और वर्ल्ड वाइड वेब का विकास: सूचना क्रांति का युग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_294.txt"
+    },
+    {
+      "id": "hi-295",
+      "sourceId": "295",
+      "language": "hi",
+      "title": "आर्टिफिशियल इंटेलिजेंस और मशीन लर्निंग का उद्भव एवं भविष्य",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_295.txt"
+    },
+    {
+      "id": "hi-296",
+      "sourceId": "296",
+      "language": "hi",
+      "title": "क्वांटम कंप्यूटिंग: कंप्यूटेशनल विज्ञान का नया क्षितिज",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_296.txt"
+    },
+    {
+      "id": "hi-297",
+      "sourceId": "297",
+      "language": "hi",
+      "title": "जीनोम प्रोजेक्ट और आधुनिक जैव प्रौद्योगिकी की खोजें",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_297.txt"
+    },
+    {
+      "id": "hi-298",
+      "sourceId": "298",
+      "language": "hi",
+      "title": "नवीकरणीय ऊर्जा: सौर एवं पवन ऊर्जा से वैश्विक पर्यावरण संतुलन",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_298.txt"
+    },
+    {
+      "id": "hi-299",
+      "sourceId": "299",
+      "language": "hi",
+      "title": "अंतरिक्ष अन्वेषण: मानव का मंगल ग्रह और बाह्य अंतरिक्ष का सपना",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_299.txt"
+    },
+    {
+      "id": "hi-300",
+      "sourceId": "300",
+      "language": "hi",
+      "title": "मानव सभ्यता का विकास और भविष्य की तकनीकी चुनौतियां",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "file": "hindi/hindi_exercise_300.txt"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/* AG Typing Tutor: header logo + icon-only WhatsApp support button */
+.learn-brand { display:flex; align-items:center; gap:10px; }
+.learn-brand-logo { display:block; width:42px; height:42px; object-fit:contain; flex:0 0 auto; }
+.learn-topbar-actions { display:flex; align-items:center; justify-content:flex-end; gap:10px; margin-left:auto; }
+.learn-whatsapp-support { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:42px; padding:0 14px; border:1px solid rgba(37,211,102,.5); border-radius:13px; background:linear-gradient(135deg,#25d366,#0eaa55); color:#fff; text-decoration:none; font:600 13px/1 system-ui,-apple-system,sans-serif; box-shadow:0 5px 16px rgba(37,211,102,.22); transition:transform .18s ease,box-shadow .18s ease; white-space:nowrap; }
+.learn-whatsapp-support:hover { transform:translateY(-1px); box-shadow:0 8px 22px rgba(37,211,102,.32); }
+.learn-whatsapp-support svg { width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.learn-whatsapp-support svg path:last-child { fill:currentColor; stroke:none; }
+@media(max-width:760px) { .learn-brand-logo { width:34px; height:34px; } .learn-whatsapp-support { width:42px; min-width:42px; padding:0; } .learn-whatsapp-support span { display:none; } .learn-whatsapp-support svg { width:23px; height:23px; } .learn-topbar-actions { gap:6px; } }

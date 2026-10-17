@@ -1,0 +1,3639 @@
+{
+  "language": "hi",
+  "displayName": "Hindi Typing",
+  "count": 300,
+  "categories": [
+    {
+      "title": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "start": 1,
+      "end": 50
+    },
+    {
+      "title": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "start": 51,
+      "end": 100
+    },
+    {
+      "title": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "start": 101,
+      "end": 150
+    },
+    {
+      "title": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "start": 151,
+      "end": 200
+    },
+    {
+      "title": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "start": 201,
+      "end": 250
+    },
+    {
+      "title": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "start": 251,
+      "end": 300
+    }
+  ],
+  "exercises": [
+    {
+      "id": "001",
+      "filename": "hindi_exercise_001.txt",
+      "title": "सिंधु घाटी सभ्यता का नगर नियोजन और स्वच्छता प्रबंधन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "002",
+      "filename": "hindi_exercise_002.txt",
+      "title": "लोथल गोदीवाड़ा और प्राचीन भारत का समुद्री व्यापार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "003",
+      "filename": "hindi_exercise_003.txt",
+      "title": "वैदिक काल और उपनिषदों का दार्शनिक चिंतन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "004",
+      "filename": "hindi_exercise_004.txt",
+      "title": "चंद्रगुप्त मौर्य का शासनकाल और प्रशासनिक व्यवस्था",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "005",
+      "filename": "hindi_exercise_005.txt",
+      "title": "आचार्य चाणक्य और कौटिल्य के अर्थशास्त्र की नीतियां",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "006",
+      "filename": "hindi_exercise_006.txt",
+      "title": "सम्राट अशोक का धम्म और उसका वैश्विक प्रसार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "007",
+      "filename": "hindi_exercise_007.txt",
+      "title": "गुप्त साम्राज्य का स्वर्ण युग और संस्कृत साहित्य का उत्कर्ष",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "008",
+      "filename": "hindi_exercise_008.txt",
+      "title": "आर्यभट्ट के गणितीय सिद्धांत और खगोलीय गणनाएं",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "009",
+      "filename": "hindi_exercise_009.txt",
+      "title": "वराहमिहिर की खगोल विद्या और पंचसिद्धांतिका",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "010",
+      "filename": "hindi_exercise_010.txt",
+      "title": "नालंदा महाविहार: ज्ञान का वैश्विक केंद्र",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "011",
+      "filename": "hindi_exercise_011.txt",
+      "title": "तक्षशिला विश्वविद्यालय की शिक्षा और आचार्य परंपरा",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "012",
+      "filename": "hindi_exercise_012.txt",
+      "title": "राजेंद्र चोल का नौसैनिक अभियान और दक्षिण-पूर्व एशिया",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "013",
+      "filename": "hindi_exercise_013.txt",
+      "title": "तंजावुर के बृहदेश्वर मंदिर की वास्तुकला और इंजीनियरिंग",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "014",
+      "filename": "hindi_exercise_014.txt",
+      "title": "पल्लव राजवंश और महाबलीपुरम के एकाश्मक रथ मंदिर",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "015",
+      "filename": "hindi_exercise_015.txt",
+      "title": "सातवाहन साम्राज्य और प्राचीन दक्कन का व्यापार मार्ग",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "016",
+      "filename": "hindi_exercise_016.txt",
+      "title": "बादामी के चालुक्य और उनकी गुफा वास्तुकला",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "017",
+      "filename": "hindi_exercise_017.txt",
+      "title": "राष्ट्रकूट साम्राज्य और एलोरा का कैलाश मंदिर",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "018",
+      "filename": "hindi_exercise_018.txt",
+      "title": "विजयनगर साम्राज्य का वैभव और हम्पी का स्थापत्य",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "019",
+      "filename": "hindi_exercise_019.txt",
+      "title": "सम्राट कृष्णदेवराय की शासन नीति और साहित्य प्रेम",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "020",
+      "filename": "hindi_exercise_020.txt",
+      "title": "असम का अहोम साम्राज्य और उनकी अखंड संप्रभुता",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "021",
+      "filename": "hindi_exercise_021.txt",
+      "title": "लचित बोरफुकन और सरायघाट का ऐतिहासिक जल युद्ध",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "022",
+      "filename": "hindi_exercise_022.txt",
+      "title": "छत्रपति शिवाजी महाराज और हिंदवी स्वराज्य की संकल्पना",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "023",
+      "filename": "hindi_exercise_023.txt",
+      "title": "शिवाजी महाराज की गुरिल्ला युद्ध नीति और नौसेना निर्माण",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "024",
+      "filename": "hindi_exercise_024.txt",
+      "title": "पुण्यश्लोक अहिल्याबाई होल्कर का लोककल्याण और मंदिर जीर्णोद्धार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "025",
+      "filename": "hindi_exercise_025.txt",
+      "title": "महाराणा प्रताप का त्याग और मेवाड़ का स्वाभिमान",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "026",
+      "filename": "hindi_exercise_026.txt",
+      "title": "हल्दीघाटी का युद्ध और चेतक की अद्वितीय स्वामिभक्ति",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "027",
+      "filename": "hindi_exercise_027.txt",
+      "title": "उत्तरमेरूर शिलालेख और चोल कालीन ग्रामीण लोकतंत्र",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "028",
+      "filename": "hindi_exercise_028.txt",
+      "title": "काकतीय राजवंश और रामप्पा मंदिर का वास्तुकला चमत्कार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "029",
+      "filename": "hindi_exercise_029.txt",
+      "title": "रानी रुद्रमा देवी का शौर्य और दक्कन पर शासन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "030",
+      "filename": "hindi_exercise_030.txt",
+      "title": "होयसल स्थापत्य कला और बेलूर-हलेबिडु के मंदिर",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "031",
+      "filename": "hindi_exercise_031.txt",
+      "title": "कलिंग साम्राज्य और प्राचीन साधब नाविकों की समुद्री यात्राएं",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "032",
+      "filename": "hindi_exercise_032.txt",
+      "title": "सम्राट खारवेल और हाथीगुंफा का ऐतिहासिक अभिलेख",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "033",
+      "filename": "hindi_exercise_033.txt",
+      "title": "प्राचीन भारतीय धातु विज्ञान और दिल्ली का लौह स्तंभ",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "034",
+      "filename": "hindi_exercise_034.txt",
+      "title": "महर्षि सुश्रुत और प्राचीन भारत की शल्य चिकित्सा",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "035",
+      "filename": "hindi_exercise_035.txt",
+      "title": "महर्षि चरक और आयुर्वेद का समग्र स्वास्थ्य विज्ञान",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "036",
+      "filename": "hindi_exercise_036.txt",
+      "title": "चेर राजवंश और प्राचीन रोमन साम्राज्य से मसालों का व्यापार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "037",
+      "filename": "hindi_exercise_037.txt",
+      "title": "पांड्य साम्राज्य और मन्नार की खाड़ी का मोती व्यापार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "038",
+      "filename": "hindi_exercise_038.txt",
+      "title": "सम्राट हर्षवर्धन की दानशीलता और कन्नौज की धर्मसभा",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "039",
+      "filename": "hindi_exercise_039.txt",
+      "title": "गोंडवाना की वीरांगना रानी दुर्गावती का अमर बलिदान",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "040",
+      "filename": "hindi_exercise_040.txt",
+      "title": "उल्लाल की रानी अब्बक्का चौटा और पुर्तगालियों का दमन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "041",
+      "filename": "hindi_exercise_041.txt",
+      "title": "सांची का महान स्तूप और मौर्यकालीन पाषाण कला",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "042",
+      "filename": "hindi_exercise_042.txt",
+      "title": "अजंता की गुफाएं: बौद्ध भित्तिचित्र और शिल्पकला",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "043",
+      "filename": "hindi_exercise_043.txt",
+      "title": "दक्षिण भारत के महापाषाण कालीन समाधि स्थल और डोलमेन",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "044",
+      "filename": "hindi_exercise_044.txt",
+      "title": "भारत की पारंपरिक जल संचयन प्रणालियां: बावड़ियां और जोहड़",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "045",
+      "filename": "hindi_exercise_045.txt",
+      "title": "करिकाल चोल का कल्लाणई बांध: विश्व का प्राचीनतम कार्यरत बांध",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "046",
+      "filename": "hindi_exercise_046.txt",
+      "title": "पाटन की रानी की वाव: जल मंदिर की बेजोड़ वास्तुकला",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "047",
+      "filename": "hindi_exercise_047.txt",
+      "title": "परमार राजवंश और राजा भोज की विद्याप्रियता",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "048",
+      "filename": "hindi_exercise_048.txt",
+      "title": "कान्होजी आंग्रे और मराठा नौसेना का पश्चिमी तट पर आधिपत्य",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "049",
+      "filename": "hindi_exercise_049.txt",
+      "title": "कश्मीर का मार्तंड सूर्य मंदिर और कर्कोट साम्राज्य",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "050",
+      "filename": "hindi_exercise_050.txt",
+      "title": "ललितादित्य मुक्तापीड़ और प्राचीन कश्मीर का विस्तार",
+      "category": "प्राचीन भारतीय इतिहास एवं संस्कृति",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "051",
+      "filename": "hindi_exercise_051.txt",
+      "title": "नेताजी सुभाष चंद्र बोस और आजाद हिंद फौज का संघर्ष",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "052",
+      "filename": "hindi_exercise_052.txt",
+      "title": "कोहिमा और इंफाल का युद्ध: आईएनए का सैन्य अभियान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "053",
+      "filename": "hindi_exercise_053.txt",
+      "title": "शहीद भगत सिंह के वैचारिक लेख और सर्वोच्च बलिदान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "054",
+      "filename": "hindi_exercise_054.txt",
+      "title": "चंद्रशेखर आजाद और हिंदुस्तान सोशलिस्ट रिपब्लिकन एसोसिएशन",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "055",
+      "filename": "hindi_exercise_055.txt",
+      "title": "सरदार वल्लभभाई पटेल और 565 रियासतों का ऐतिहासिक एकीकरण",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "056",
+      "filename": "hindi_exercise_056.txt",
+      "title": "बारडोली सत्याग्रह और किसानों का संगठित नेतृत्व",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "057",
+      "filename": "hindi_exercise_057.txt",
+      "title": "झांसी की रानी लक्ष्मीबाई और 1857 का प्रथम स्वतंत्रता संग्राम",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "058",
+      "filename": "hindi_exercise_058.txt",
+      "title": "झलकारी बाई: रानी लक्ष्मीबाई की ढाल और असाधारण सेनापति",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "059",
+      "filename": "hindi_exercise_059.txt",
+      "title": "तात्या टोपे का छापामार युद्ध और ब्रिटिश सेना से संघर्ष",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "060",
+      "filename": "hindi_exercise_060.txt",
+      "title": "मंगल पांडे का विद्रोह और बैरकपुर की ऐतिहासिक चिंगारी",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "061",
+      "filename": "hindi_exercise_061.txt",
+      "title": "वीर सावरकर: अंडमान की सेलुलर जेल और वैचारिक संघर्ष",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "062",
+      "filename": "hindi_exercise_062.txt",
+      "title": "बटुकेश्वर दत्त और केंद्रीय असेंबली में बम विस्फोट की घटना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "063",
+      "filename": "hindi_exercise_063.txt",
+      "title": "अशफाक उल्ला खां और रामप्रसाद बिस्मिल की अमर मित्रता",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "064",
+      "filename": "hindi_exercise_064.txt",
+      "title": "भगवान बिरसा मुंडा और छोटानागपुर का उलगुलान आंदोलन",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "065",
+      "filename": "hindi_exercise_065.txt",
+      "title": "अल्लूरी सीताराम राजू और आंध्र प्रदेश का रंपा विद्रोह",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "066",
+      "filename": "hindi_exercise_066.txt",
+      "title": "रानी वेलु नाचियार: अंग्रेजों को परास्त करने वाली वीरांगना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "067",
+      "filename": "hindi_exercise_067.txt",
+      "title": "कित्तूर की रानी चेन्नम्मा और अंग्रेजों के विरुद्ध विद्रोह",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "068",
+      "filename": "hindi_exercise_068.txt",
+      "title": "संगोली रायन्ना: कित्तूर के स्वाधीनता रक्षक और वीर नायक",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "069",
+      "filename": "hindi_exercise_069.txt",
+      "title": "यू तिरोत सिंग और मेघालय की खासी पहाड़ियों का प्रतिरोध",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "070",
+      "filename": "hindi_exercise_070.txt",
+      "title": "रानी गाइदिनल्यू: पूर्वोत्तर की नागा क्रांतिकारी और आध्यात्मिक नेत्री",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "071",
+      "filename": "hindi_exercise_071.txt",
+      "title": "सुब्रमण्य भारती की ओजस्वी राष्ट्रीय कविताएं",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "072",
+      "filename": "hindi_exercise_072.txt",
+      "title": "लाल-बाल-पाल की त्रिमूर्ति और स्वदेशी आंदोलन का आह्वान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "073",
+      "filename": "hindi_exercise_073.txt",
+      "title": "लाला लाजपत राय और साइमन कमीशन के विरुद्ध ऐतिहासिक विरोध",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "074",
+      "filename": "hindi_exercise_074.txt",
+      "title": "बाल गंगाधर तिलक: स्वराज्य मेरा जन्मसिद्ध अधिकार है",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "075",
+      "filename": "hindi_exercise_075.txt",
+      "title": "श्री अरविंद घोष: क्रांतिकारी मार्ग से महर्षि बनने की यात्रा",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "076",
+      "filename": "hindi_exercise_076.txt",
+      "title": "मैडम भीकाजी कामा और स्टटगार्ट में भारतीय ध्वज फहराना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "077",
+      "filename": "hindi_exercise_077.txt",
+      "title": "मातंगिनी हाजरा: तिरंगा थामे गोली खाने वाली वीरांगना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "078",
+      "filename": "hindi_exercise_078.txt",
+      "title": "प्रीतिलता वाद्देदार और पहाड़तली यूरोपियन क्लब पर आक्रमण",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "079",
+      "filename": "hindi_exercise_079.txt",
+      "title": "मास्टर दा सूर्य सेन और 1930 का चटगांव शस्त्रागार छापा",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "080",
+      "filename": "hindi_exercise_080.txt",
+      "title": "करतार सिंह सराभा और गदर आंदोलन का वैश्विक ताना-बाना",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "081",
+      "filename": "hindi_exercise_081.txt",
+      "title": "कामागाटामारू घटना और भारतीय प्रवासियों का अदम्य साहस",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "082",
+      "filename": "hindi_exercise_082.txt",
+      "title": "केलादी की रानी चेन्नम्मा और छत्रपति राजाराम को आश्रय",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "083",
+      "filename": "hindi_exercise_083.txt",
+      "title": "बाबा बंदा सिंह बहादुर और सरहिंद पर सिख विजय",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "084",
+      "filename": "hindi_exercise_084.txt",
+      "title": "सरदार हरी सिंह नलवा: पेशावर और खैबर दर्रे के रक्षक",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "085",
+      "filename": "hindi_exercise_085.txt",
+      "title": "महाराजा रणजीत सिंह का विशाल साम्राज्य और न्याय व्यवस्था",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "086",
+      "filename": "hindi_exercise_086.txt",
+      "title": "कुयिली: भारत की पहली आत्मघाती वीरांगना का बलिदान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "087",
+      "filename": "hindi_exercise_087.txt",
+      "title": "पसुमपोन मुथुरामलिंग थेवर और नेताजी के प्रति निष्ठा",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "088",
+      "filename": "hindi_exercise_088.txt",
+      "title": "वी. ओ. चिदंबरम पिल्लई और स्वदेशी स्टीम नेविगेशन कंपनी",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "089",
+      "filename": "hindi_exercise_089.txt",
+      "title": "खुदीराम बोस: सबसे कम उम्र में फांसी चढ़ने वाले क्रांतिकारी",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "090",
+      "filename": "hindi_exercise_090.txt",
+      "title": "जतिंद्र नाथ दास की 63 दिनों की ऐतिहासिक भूख हड़ताल",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "091",
+      "filename": "hindi_exercise_091.txt",
+      "title": "बाबू कुंवर सिंह: 80 वर्ष की उम्र में जगदीशपुर की क्रांति",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "092",
+      "filename": "hindi_exercise_092.txt",
+      "title": "चौधरी शाह मल और 1857 में बागपत के किसानों का विद्रोह",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "093",
+      "filename": "hindi_exercise_093.txt",
+      "title": "पीर अली खान और पटना में 1857 का क्रांतिकारी संघर्ष",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "094",
+      "filename": "hindi_exercise_094.txt",
+      "title": "तात्या टोपे का मध्य भारत के वनों में छापामार अभियान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "095",
+      "filename": "hindi_exercise_095.txt",
+      "title": "1946 का मुंबई नौसेना विद्रोह और आजादी की निर्णायक घड़ी",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "096",
+      "filename": "hindi_exercise_096.txt",
+      "title": "लाल किला ट्रायल: आजाद हिंद फौज के जनरलों का मुकदमा",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "097",
+      "filename": "hindi_exercise_097.txt",
+      "title": "अमृता देवी बिश्नोई और खेजड़ी के वृक्षों की रक्षा में बलिदान",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "098",
+      "filename": "hindi_exercise_098.txt",
+      "title": "संथाल हूल विद्रोह: सिद्धू और कान्हू मुर्मू का नेतृत्व",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "099",
+      "filename": "hindi_exercise_099.txt",
+      "title": "राजा देवी बख्श सिंह और अवध का प्रथम स्वतंत्रता संग्राम",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "100",
+      "filename": "hindi_exercise_100.txt",
+      "title": "मातंगिनी हाजरा और भारत छोड़ो आंदोलन का संकल्प",
+      "category": "अमर स्वतंत्रता सेनानी एवं जननायक",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "101",
+      "filename": "hindi_exercise_101.txt",
+      "title": "पंचतंत्र: ब्राह्मण और स्वामीभक्त नेवले की मार्मिक कथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "102",
+      "filename": "hindi_exercise_102.txt",
+      "title": "पंचतंत्र: बंदर और मगरमच्छ की नदी किनारे की चतुराई",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "103",
+      "filename": "hindi_exercise_103.txt",
+      "title": "पंचतंत्र: चार मित्र और शेर को जीवित करने का परिणाम",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "104",
+      "filename": "hindi_exercise_104.txt",
+      "title": "हितोपदेश: वृद्ध बाघ और सोने के कंगन का लालच",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "105",
+      "filename": "hindi_exercise_105.txt",
+      "title": "जातक कथा: न्यग्रोध मृग राजा और करुणा का आदर्श",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "106",
+      "filename": "hindi_exercise_106.txt",
+      "title": "जातक कथा: तपती रेत का रेगिस्तान और धैर्यवान व्यापारी",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "107",
+      "filename": "hindi_exercise_107.txt",
+      "title": "नचिकेता और यमराज का अमर संवाद: आत्मज्ञान की खोज",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "108",
+      "filename": "hindi_exercise_108.txt",
+      "title": "भक्त प्रहलाद की अटूट आस्था और नृसिंह अवतार",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "109",
+      "filename": "hindi_exercise_109.txt",
+      "title": "सत्यवान और सावित्री: यमराज से पति के प्राण लौटाने का संकल्प",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "110",
+      "filename": "hindi_exercise_110.txt",
+      "title": "राजा हरिश्चंद्र की सत्यनिष्ठा और श्मशान की कठिन परीक्षा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "111",
+      "filename": "hindi_exercise_111.txt",
+      "title": "एकलव्य की गुरुभक्ति और साधना से धनुर्विद्या की सिद्धि",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "112",
+      "filename": "hindi_exercise_112.txt",
+      "title": "दानवीर कर्ण का चरित्र: दान, मित्रता और भाग्य की विडंबना",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "113",
+      "filename": "hindi_exercise_113.txt",
+      "title": "विदुर नीति: हस्तिनापुर राजदरबार में नीति और धर्म का उपदेश",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "114",
+      "filename": "hindi_exercise_114.txt",
+      "title": "हंस और कछुए की कथा: असमय बोलने का दुष्परिणाम",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "115",
+      "filename": "hindi_exercise_115.txt",
+      "title": "बालक ध्रुव की कठिन तपस्या और ध्रुव तारे का स्थान",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "116",
+      "filename": "hindi_exercise_116.txt",
+      "title": "बीरबल की खिचड़ी: धैर्य और प्रत्यक्ष अनुभव का पाठ",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "117",
+      "filename": "hindi_exercise_117.txt",
+      "title": "तेनालीराम और राजा का स्वप्न: चाटुकारिता पर तीखा प्रहार",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "118",
+      "filename": "hindi_exercise_118.txt",
+      "title": "तेनालीराम और खेत में चोरों से सिंचाई करवाने की युक्ति",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "119",
+      "filename": "hindi_exercise_119.txt",
+      "title": "विक्रम और बेताल: न्यायप्रिय राजा और पेचीदा पहेलियां",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "120",
+      "filename": "hindi_exercise_120.txt",
+      "title": "सिंहासन बत्तीसी: राजा विक्रमादित्य के बत्तीस दिव्य गुण",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "121",
+      "filename": "hindi_exercise_121.txt",
+      "title": "ईसप की कहानी: गड़ेरिया और भेड़िया: झूठ का अंत",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "122",
+      "filename": "hindi_exercise_122.txt",
+      "title": "ईसप की कहानी: कछुआ और खरगोश: निरंतर प्रयास की विजय",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "123",
+      "filename": "hindi_exercise_123.txt",
+      "title": "ईसप की कहानी: उत्तर की बर्फीली हवा और कोमल सूर्य",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "124",
+      "filename": "hindi_exercise_124.txt",
+      "title": "ईसप की कहानी: चींटी और टिड्डा: भविष्य की तैयारी का महत्व",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "125",
+      "filename": "hindi_exercise_125.txt",
+      "title": "अमर पक्षी फीनिक्स की राख से पुनः जीवित होने की कथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "126",
+      "filename": "hindi_exercise_126.txt",
+      "title": "राजा मिदास और स्वर्णिम स्पर्श का विनाशकारी वरदान",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "127",
+      "filename": "hindi_exercise_127.txt",
+      "title": "डेडलस और इकारस: सीमाओं का उल्लंघन और मोम के पंख",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "128",
+      "filename": "hindi_exercise_128.txt",
+      "title": "अंधे और हाथी की बोधकथा: सत्य के विभिन्न दृष्टिकोण",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "129",
+      "filename": "hindi_exercise_129.txt",
+      "title": "दामोक्लेस की तलवार: सत्ता के साथ बंधी अनिश्चितता",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "130",
+      "filename": "hindi_exercise_130.txt",
+      "title": "थॉर और विशालकाय दानवों की परीक्षा: नॉर्स गाथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "131",
+      "filename": "hindi_exercise_131.txt",
+      "title": "ट्रोजन हॉर्स: लकड़ी के घोड़े से अभेद्य किले पर विजय",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "132",
+      "filename": "hindi_exercise_132.txt",
+      "title": "गिलगमेश का महाकाव्य: अमरता की व्यर्थ खोज और कर्म का महत्व",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "133",
+      "filename": "hindi_exercise_133.txt",
+      "title": "उराशिमा तारो: जापानी लोककथा और समय का रहस्यमय पहिया",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "134",
+      "filename": "hindi_exercise_134.txt",
+      "title": "मोमोतारो: जापानी आड़ू बालक और दानवों का संहार",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "135",
+      "filename": "hindi_exercise_135.txt",
+      "title": "सफेद सारस की कृतज्ञता: वचन निभाने की जापानी कथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "136",
+      "filename": "hindi_exercise_136.txt",
+      "title": "पहाड़ हिलाने वाला वृद्ध व्यक्ति: चीनी लोककथा का संकल्प",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "137",
+      "filename": "hindi_exercise_137.txt",
+      "title": "खाली प्याला: जेन मास्टर और अहंकारी विद्वान की बोधकथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "138",
+      "filename": "hindi_exercise_138.txt",
+      "title": "राजा आर्थर और पत्थर में गड़ी जादुई तलवार एक्सकैलिबर",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "139",
+      "filename": "hindi_exercise_139.txt",
+      "title": "रेगिस्तान में सौदागर और जिन्न की अरेबियन नाइट्स कथा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "140",
+      "filename": "hindi_exercise_140.txt",
+      "title": "नाविक सिंदबाद की यात्राएं: हीरों की रहस्यमयी घाटी",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "141",
+      "filename": "hindi_exercise_141.txt",
+      "title": "मकड़ी अनांसी और संसार के संपूर्ण ज्ञान का घड़ा",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "142",
+      "filename": "hindi_exercise_142.txt",
+      "title": "दो भेड़ियों की कहानी: मन के अंदर चलने वाला सतत युद्ध",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "143",
+      "filename": "hindi_exercise_143.txt",
+      "title": "रूसी लोककथा: जादुई अग्नि-पक्षी और राजकुमार इवान",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "144",
+      "filename": "hindi_exercise_144.txt",
+      "title": "मछुआरा और सोने की मछली: असीमित तृष्णा का पतन",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "145",
+      "filename": "hindi_exercise_145.txt",
+      "title": "हैमेलिन का बांसुरीवाला: वचन तोड़ने का भारी परिणाम",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "146",
+      "filename": "hindi_exercise_146.txt",
+      "title": "घर लौटा मुसाफिर: भटके हुए बेटे की वापसी का सबक",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "147",
+      "filename": "hindi_exercise_147.txt",
+      "title": "भस्मासुर की कथा: अहंकार और अपने ही वरदान से अंत",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "148",
+      "filename": "hindi_exercise_148.txt",
+      "title": "गजेंद्र मोक्ष: अहंकार त्याग और पूर्ण समर्पण की शक्ति",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "149",
+      "filename": "hindi_exercise_149.txt",
+      "title": "भागीरथ की कठोर तपस्या और पतित-पावनी गंगा का अवतरण",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "150",
+      "filename": "hindi_exercise_150.txt",
+      "title": "माता शबरी के जूठे बेर: निश्छल भक्ति और प्रभु मिलन",
+      "category": "प्रेरक कहानियां, लोककथाएं एवं बोधकथाएं",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "151",
+      "filename": "hindi_exercise_151.txt",
+      "title": "श्रीमद्भगवद्गीता का निष्काम कर्मयोग और जीवन दृष्टि",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "152",
+      "filename": "hindi_exercise_152.txt",
+      "title": "षड्दर्शन: न्याय, वैशेषिक, सांख्य, योग, मीमांसा और वेदांत",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "153",
+      "filename": "hindi_exercise_153.txt",
+      "title": "पुरुषार्थ चतुष्टय: धर्म, अर्थ, काम और मोक्ष का संतुलन",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "154",
+      "filename": "hindi_exercise_154.txt",
+      "title": "महर्षि पतंजलि का अष्टांग योग: चित्तवृत्ति निरोध का मार्ग",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "155",
+      "filename": "hindi_exercise_155.txt",
+      "title": "जैन परंपरा में अहिंसा परमो धर्म: भगवान महावीर की देशना",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "156",
+      "filename": "hindi_exercise_156.txt",
+      "title": "तथागत गौतम बुद्ध का मध्यम मार्ग और चार आर्य सत्य",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "157",
+      "filename": "hindi_exercise_157.txt",
+      "title": "आदि शंकराचार्य और अद्वैत वेदांत दर्शन का दिग्विजय",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "158",
+      "filename": "hindi_exercise_158.txt",
+      "title": "रामानुजाचार्य और समतामूलक विशिष्टाद्वैत वेदांत",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "159",
+      "filename": "hindi_exercise_159.txt",
+      "title": "मध्वाचार्य का द्वैत दर्शन और भक्ति का तात्विक आधार",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "160",
+      "filename": "hindi_exercise_160.txt",
+      "title": "संत कबीर के दोहे: सामाजिक पाखंड पर प्रहार और प्रेम तत्व",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "161",
+      "filename": "hindi_exercise_161.txt",
+      "title": "मीराबाई की अनन्य कृष्ण भक्ति और राजसी वैभव का त्याग",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "162",
+      "filename": "hindi_exercise_162.txt",
+      "title": "संत तुकाराम के अभंग और विट्ठल भक्ति की निर्मल धारा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "163",
+      "filename": "hindi_exercise_163.txt",
+      "title": "संत ज्ञानेश्वर और प्राकृत भाषा में भावार्थ दीपिका",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "164",
+      "filename": "hindi_exercise_164.txt",
+      "title": "गोस्वामी तुलसीदास और जनभाषा में रामचरितमानस का सृजन",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "165",
+      "filename": "hindi_exercise_165.txt",
+      "title": "गुरु नानक देव जी की शिक्षाएं: एक ओंकार और वंड छको",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "166",
+      "filename": "hindi_exercise_166.txt",
+      "title": "गुरु गोबिंद सिंह जी और खालसा पंथ की स्थापना का इतिहास",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "167",
+      "filename": "hindi_exercise_167.txt",
+      "title": "श्री गुरु ग्रंथ साहिब: सार्वभौमिक मानवता का मार्गदर्शक ग्रंथ",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "168",
+      "filename": "hindi_exercise_168.txt",
+      "title": "लंगर परंपरा: जाति और ऊंच-नीच मिटाती समरसता की मिसाल",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "169",
+      "filename": "hindi_exercise_169.txt",
+      "title": "कालिदास का अभिज्ञानशाकुंतलम् और प्राचीन भारतीय नाट्यकला",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "170",
+      "filename": "hindi_exercise_170.txt",
+      "title": "भरत मुनि का नाट्यशास्त्र और नवरसों का गहन विश्लेषण",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "171",
+      "filename": "hindi_exercise_171.txt",
+      "title": "भारतीय शास्त्रीय संगीत: राग, ताल और नाद ब्रह्म की साधना",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "172",
+      "filename": "hindi_exercise_172.txt",
+      "title": "ध्रुपद गायन परंपरा: भारतीय संगीत की प्राचीनतम शैली",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "173",
+      "filename": "hindi_exercise_173.txt",
+      "title": "कर्नाटक संगीत की त्रिमूर्ति: त्यागराज, मुथुस्वामी और श्यामा शास्त्री",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "174",
+      "filename": "hindi_exercise_174.txt",
+      "title": "प्राचीन भारतीय वास्तु शास्त्र और मंदिरों का ज्यामितीय विज्ञान",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "175",
+      "filename": "hindi_exercise_175.txt",
+      "title": "कुंभ मेला: भारत का विशालतम खगोलीय और आध्यात्मिक समागम",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "176",
+      "filename": "hindi_exercise_176.txt",
+      "title": "भारत की पवित्र नदियां और उनके तटों पर विकसित सभ्यताएं",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "177",
+      "filename": "hindi_exercise_177.txt",
+      "title": "पश्चिमी घाट: जैव विविधता की वैश्विक धरोहर और मानसून रक्षक",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "178",
+      "filename": "hindi_exercise_178.txt",
+      "title": "हिमालय पर्वतमाला: भारत का प्रहरी और जल सुरक्षा का स्रोत",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "179",
+      "filename": "hindi_exercise_179.txt",
+      "title": "वैदिक गणित: सोलह सूत्र और तीव्र मानसिक गणना की विधि",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "180",
+      "filename": "hindi_exercise_180.txt",
+      "title": "प्राचीन भारतीय धातु शिल्प: चोल कांस्य नटराज की प्रतिमा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "181",
+      "filename": "hindi_exercise_181.txt",
+      "title": "वुट्ज़ स्टील: प्राचीन दक्षिण भारत की विश्वप्रसिद्ध इस्पात कला",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "182",
+      "filename": "hindi_exercise_182.txt",
+      "title": "भारतीय हथकरघा की समृद्ध परंपरा: बनारसी, कांजीवरम और चंदेरी",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "183",
+      "filename": "hindi_exercise_183.txt",
+      "title": "नील की खेती का संकट और भारतीय बुनकरों की जिजीविषा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "184",
+      "filename": "hindi_exercise_184.txt",
+      "title": "पारंपरिक गुरुकुल शिक्षा पद्धति: स्मृति, तर्क और चरित्र निर्माण",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "185",
+      "filename": "hindi_exercise_185.txt",
+      "title": "प्राचीन भारतीय नौपरिवहन: नक्षत्रों के आधार पर सागर यात्राएं",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "186",
+      "filename": "hindi_exercise_186.txt",
+      "title": "भारतीय मसालों का इतिहास: काली मिर्च और वैश्विक व्यापार मार्ग",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "187",
+      "filename": "hindi_exercise_187.txt",
+      "title": "आयुर्वेदिक दिनचर्या और ऋतुचर्या: स्वस्थ दीर्घायु के नियम",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "188",
+      "filename": "hindi_exercise_188.txt",
+      "title": "भारतीय खानपान में सात्विक आहार और अहिंसा की अवधारणा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "189",
+      "filename": "hindi_exercise_189.txt",
+      "title": "भारत के पवित्र उपवन: प्रकृति संरक्षण की आस्था",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "190",
+      "filename": "hindi_exercise_190.txt",
+      "title": "राजस्थान की पारंपरिक जल संरचनाएं: टांका, कुंडी और बेरी",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "191",
+      "filename": "hindi_exercise_191.txt",
+      "title": "राजस्थान के गिरि दुर्ग: चित्तौड़गढ़, कुंभलगढ़ और मेहरानगढ़",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "192",
+      "filename": "hindi_exercise_192.txt",
+      "title": "कुंभलगढ़ की प्राचीर: चीन की दीवार के बाद विश्व की दूसरी सबसे लंबी दीवार",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "193",
+      "filename": "hindi_exercise_193.txt",
+      "title": "हाड़ी रानी का बलिदान: कर्तव्य पथ पर शीश काटकर देना",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "194",
+      "filename": "hindi_exercise_194.txt",
+      "title": "पृथ्वीराज चौहान का शौर्य और तराइन का ऐतिहासिक युद्ध",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "195",
+      "filename": "hindi_exercise_195.txt",
+      "title": "राजा हेमचंद्र विक्रमादित्य: नमक व्यापारी से दिल्ली का सम्राट",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "196",
+      "filename": "hindi_exercise_196.txt",
+      "title": "राजा सुहेलदेव और उत्तर भारत की ऐतिहासिक रक्षा",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "197",
+      "filename": "hindi_exercise_197.txt",
+      "title": "मराठा परिसंघ की प्रशासनिक प्रणाली और चौथ-सरदेशमुखी",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "198",
+      "filename": "hindi_exercise_198.txt",
+      "title": "बाजीराव प्रथम: चालीस युद्धों में अजेय रहने वाले सेनापति",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "199",
+      "filename": "hindi_exercise_199.txt",
+      "title": "भारतीय कठपुतली कला की परंपरा और लोक रंजन",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "200",
+      "filename": "hindi_exercise_200.txt",
+      "title": "शास्त्रीय नृत्य परंपराएं: भरतनाट्यम, कथक, कथकली और ओडिसी",
+      "category": "भारतीय दर्शन, परंपराएं एवं जीवन मूल्य",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "201",
+      "filename": "hindi_exercise_201.txt",
+      "title": "जगदीश चंद्र बोस: सूक्ष्म तरंगों और पौधों में जीवन के अन्वेषक",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "202",
+      "filename": "hindi_exercise_202.txt",
+      "title": "श्रीनिवास रामानुजन: संख्याओं के जादूगर और अनंत सूत्र",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "203",
+      "filename": "hindi_exercise_203.txt",
+      "title": "सर सी. वी. रमन और प्रकाश प्रकीर्णन का ऐतिहासिक रमन प्रभाव",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "204",
+      "filename": "hindi_exercise_204.txt",
+      "title": "होमी जहांगीर भाभा और भारत का त्रि-चरणीय परमाणु कार्यक्रम",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "205",
+      "filename": "hindi_exercise_205.txt",
+      "title": "विक्रम साराभाई: भारतीय अंतरिक्ष अनुसंधान के दूरदर्शी जनक",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "206",
+      "filename": "hindi_exercise_206.txt",
+      "title": "थुंबा रॉकेट प्रक्षेपण केंद्र: नारियल के बगीचे से अंतरिक्ष यात्रा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "207",
+      "filename": "hindi_exercise_207.txt",
+      "title": "आर्यभट्ट उपग्रह: 1975 में भारत का पहला अंतरिक्षीय कदम",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "208",
+      "filename": "hindi_exercise_208.txt",
+      "title": "चंद्रयान-1 मिशन: चंद्रमा की सतह पर जल अणुओं की ऐतिहासिक खोज",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "209",
+      "filename": "hindi_exercise_209.txt",
+      "title": "चंद्रयान-3 की सफलता: चंद्रमा के दक्षिणी ध्रुव पर ऐतिहासिक लैंडिंग",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "210",
+      "filename": "hindi_exercise_210.txt",
+      "title": "मंगलयान: पहले ही प्रयास में मंगल की कक्षा में प्रवेश",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "211",
+      "filename": "hindi_exercise_211.txt",
+      "title": "आदित्य-एल1 मिशन: सूर्य के रहस्य सुलझाने अंतरिक्ष में भारत",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "212",
+      "filename": "hindi_exercise_212.txt",
+      "title": "ध्रुवीय उपग्रह प्रक्षेपण यान: इसरो का भरोसेमंद वर्कहॉर्स",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "213",
+      "filename": "hindi_exercise_213.txt",
+      "title": "भू-समकालिक उपग्रह प्रक्षेपण यान और क्रायोजेनिक तकनीक",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "214",
+      "filename": "hindi_exercise_214.txt",
+      "title": "एस. एस. अभ्यंकर: उच्च-आयामी बीजगणितीय ज्यामिति में योगदान",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "215",
+      "filename": "hindi_exercise_215.txt",
+      "title": "डॉ. हरगोविंद खुराना और आनुवंशिक कोड की सफल व्याख्या",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "216",
+      "filename": "hindi_exercise_216.txt",
+      "title": "सुब्रह्मण्यन चंद्रशेखर और तारों के द्रव्यमान की चंद्रशेखर सीमा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "217",
+      "filename": "hindi_exercise_217.txt",
+      "title": "आचार्य प्रफुल्ल चंद्र राय: भारतीय रसायन उद्योग के पितामह",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "218",
+      "filename": "hindi_exercise_218.txt",
+      "title": "सर एम. विश्वेश्वरैया: महान अभियंता और केआरएस बांध का निर्माण",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "219",
+      "filename": "hindi_exercise_219.txt",
+      "title": "हरित क्रांति: उन्नत बीजों से देश को खाद्यान्न में आत्मनिर्भर बनाना",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "220",
+      "filename": "hindi_exercise_220.txt",
+      "title": "श्वेत क्रांति और ऑपरेशन फ्लड: भारत बना दुग्ध उत्पादन में अग्रणी",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "221",
+      "filename": "hindi_exercise_221.txt",
+      "title": "स्वर्णिम चतुर्भुज परियोजना: भारत के चारों कोनों को जोड़ते राष्ट्रीय राजमार्ग",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "222",
+      "filename": "hindi_exercise_222.txt",
+      "title": "कोंकण रेलवे: पश्चिमी घाट की दुर्गम पहाड़ियों में इंजीनियरिंग चमत्कार",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "223",
+      "filename": "hindi_exercise_223.txt",
+      "title": "वंदे भारत एक्सप्रेस: भारत की स्वदेशी सेमी-हाई-स्पीड रेल क्रांति",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "224",
+      "filename": "hindi_exercise_224.txt",
+      "title": "चिनाब रेल पुल: विश्व के सबसे ऊंचे रेलवे आर्च ब्रिज का निर्माण",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "225",
+      "filename": "hindi_exercise_225.txt",
+      "title": "अटल टनल रोहतांग: हिमालय के पीर पंजाल में बनी विश्वस्तरीय सुरंग",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "226",
+      "filename": "hindi_exercise_226.txt",
+      "title": "यूनिफाइड पेमेंट्स इंटरफेस: वैश्विक डिजिटल भुगतान का सिरमौर",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "227",
+      "filename": "hindi_exercise_227.txt",
+      "title": "आधार प्रणाली: विश्व का सबसे बड़ा डिजिटल पहचान ढांचा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "228",
+      "filename": "hindi_exercise_228.txt",
+      "title": "इंडिया स्टैक: पेपरलेस और कैशलेस डिजिटल शासन की नींव",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "229",
+      "filename": "hindi_exercise_229.txt",
+      "title": "भारतीय सॉफ्टवेयर उद्योग: बेंगलुरु से लेकर वैश्विक तकनीकी नेतृत्व",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "230",
+      "filename": "hindi_exercise_230.txt",
+      "title": "भड़ला सोलर पार्क: थार के रेगिस्तान में विश्व का सबसे बड़ा सौर संयंत्र",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "231",
+      "filename": "hindi_exercise_231.txt",
+      "title": "तमिलनाडु और गुजरात के तटीय पवन ऊर्जा गलियारे",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "232",
+      "filename": "hindi_exercise_232.txt",
+      "title": "परम सुपरकंप्यूटर श्रृंखला: सी-डैक पुणे की स्वदेशी कंप्यूटिंग विजय",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "233",
+      "filename": "hindi_exercise_233.txt",
+      "title": "भाभा परमाणु अनुसंधान केंद्र: चिकित्सा और कृषि में रेडियोआइसोटोप",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "234",
+      "filename": "hindi_exercise_234.txt",
+      "title": "प्रोजेक्ट टाइगर: आधी सदी में बाघों के संरक्षण की वैश्विक गाथा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "235",
+      "filename": "hindi_exercise_235.txt",
+      "title": "काजीरंगा राष्ट्रीय उद्यान: एक सींग वाले गैंडों का सुरक्षित बसेरा",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "236",
+      "filename": "hindi_exercise_236.txt",
+      "title": "सुंदरवन का मैंग्रोव डेल्टा: बंगाल टाइगर और तटीय रक्षा का कवच",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "237",
+      "filename": "hindi_exercise_237.txt",
+      "title": "लद्दाख के आइस स्तूप: सोनम वांगचुक का कृत्रिम ग्लेशियर आविष्कार",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "238",
+      "filename": "hindi_exercise_238.txt",
+      "title": "मेघालय के जीवित जड़ पुल: खासी जनजाति का अनूठा बायो-इंजीनियरिंग",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "239",
+      "filename": "hindi_exercise_239.txt",
+      "title": "पारंपरिक बीज बैंक: देशी फसलों और पोषक बीजों का संरक्षण",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "240",
+      "filename": "hindi_exercise_240.txt",
+      "title": "सूक्ष्म सिंचाई तकनीक: बूंद-बूंद और फव्वारा सिंचाई से जल बचत",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "241",
+      "filename": "hindi_exercise_241.txt",
+      "title": "बायोगैस संयंत्र: ग्रामीण भारत में स्वच्छ ईंधन और जैविक खाद",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "242",
+      "filename": "hindi_exercise_242.txt",
+      "title": "हिंद महासागर सुनामी चेतावनी प्रणाली: गहरे समुद्र में लगे अर्ली सेंसर",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "243",
+      "filename": "hindi_exercise_243.txt",
+      "title": "डीप ओशन मिशन: समुद्रयान द्वारा गहरे महासागर की खोज",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "244",
+      "filename": "hindi_exercise_244.txt",
+      "title": "हल्का लड़ाकू विमान तेजस: स्वदेशी एयरोस्पेस इंजीनियरिंग का गौरव",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "245",
+      "filename": "hindi_exercise_245.txt",
+      "title": "आईएनएस विक्रांत: भारत निर्मित पहला स्वदेशी विमानवाहक पोत",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "246",
+      "filename": "hindi_exercise_246.txt",
+      "title": "ब्रह्मोस सुपरसोनिक क्रूज मिसाइल: अचूक मारक क्षमता की मिसाल",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "247",
+      "filename": "hindi_exercise_247.txt",
+      "title": "ग्रामीण भारत में डिजिटल साक्षरता: कॉमन सर्विस सेंटर की भूमिका",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "248",
+      "filename": "hindi_exercise_248.txt",
+      "title": "भारतीय डाक विभाग का रूपांतरण: डाकियों से लेकर इंडिया पोस्ट पेमेंट्स बैंक",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "249",
+      "filename": "hindi_exercise_249.txt",
+      "title": "पारंपरिक आयुर्वेदिक औषधियों पर आधुनिक फार्मास्यूटिकल शोध",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "250",
+      "filename": "hindi_exercise_250.txt",
+      "title": "भारत में निजी स्पेस स्टार्टअप्स: निजी उपग्रह और क्रायोजेनिक रॉकेट",
+      "category": "भारतीय विज्ञान, अंतरिक्ष एवं आधुनिक उपलब्धियां",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "251",
+      "filename": "hindi_exercise_251.txt",
+      "title": "मिस्र के गीजा का महान पिरामिड: प्राचीन वास्तु और खगोलीय संरेखण",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "252",
+      "filename": "hindi_exercise_252.txt",
+      "title": "सिकंदरिया का प्राचीन पुस्तकालय: भूमध्यसागरीय ज्ञान का भंडार",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "253",
+      "filename": "hindi_exercise_253.txt",
+      "title": "मेसोपोटामिया की देन: कुम्हार का चाक, कीलाक्षर लिपि और 60 मिनट का घंटा",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "254",
+      "filename": "hindi_exercise_254.txt",
+      "title": "हम्मुराबी की विधि संहिता: विश्व की सबसे प्राचीन लिखित न्याय व्यवस्था",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "255",
+      "filename": "hindi_exercise_255.txt",
+      "title": "क्रीट की मिनोअन सभ्यता और नोसोस का भूलभुलैया जैसा राजमहल",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "256",
+      "filename": "hindi_exercise_256.txt",
+      "title": "प्राचीन एथेंस का लोकतंत्र: जनसभा, नागरिक अधिकार और दार्शनिक विचार",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "257",
+      "filename": "hindi_exercise_257.txt",
+      "title": "मैराथन का ऐतिहासिक युद्ध और लंबी दूरी की दौड़ की शुरुआत",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "258",
+      "filename": "hindi_exercise_258.txt",
+      "title": "सुकरात की संवाद पद्धति: निरंतर प्रश्न पूछने और आत्मनिरीक्षण का दर्शन",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "259",
+      "filename": "hindi_exercise_259.txt",
+      "title": "प्लेटो की गुफा का रूपक: भ्रम की दुनिया और सत्य का अन्वेषण",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "260",
+      "filename": "hindi_exercise_260.txt",
+      "title": "अरस्तू और प्राकृतिक विज्ञान के वर्गीकरण की नींव",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "261",
+      "filename": "hindi_exercise_261.txt",
+      "title": "रोमन एक्वाडक्ट्स: सैकड़ों मील तक गुरुत्वाकर्षण से बहता पेयजल",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "262",
+      "filename": "hindi_exercise_262.txt",
+      "title": "रोम का कोलोसियम: भव्य अखाड़ा, भूमिगत यंत्र और इतिहास",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "263",
+      "filename": "hindi_exercise_263.txt",
+      "title": "एपियन वे: प्राचीन रोम की हर मौसम में काम करने वाली सैन्य सड़कें",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "264",
+      "filename": "hindi_exercise_264.txt",
+      "title": "सिल्क रूट: रेशम, मसाले, दर्शन और संस्कृतियों का संगम",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "265",
+      "filename": "hindi_exercise_265.txt",
+      "title": "बायजेंटाइन साम्राज्य और हागिया सोफिया का भव्य गुंबद स्थापत्य",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "266",
+      "filename": "hindi_exercise_266.txt",
+      "title": "माया सभ्यता: चित्रलिपि और अत्यंत सटीक खगोलीय पंचांग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "267",
+      "filename": "hindi_exercise_267.txt",
+      "title": "इंका साम्राज्य की राजमार्ग प्रणाली और एंडीज के घास के रस्सियों के पुल",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "268",
+      "filename": "hindi_exercise_268.txt",
+      "title": "माचू पिच्चू: बिना गारे के विशाल पत्थरों से बना पर्वतीय नगर",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "269",
+      "filename": "hindi_exercise_269.txt",
+      "title": "इटली का पुनर्जागरण काल: फ्लोरेंस का कलात्मक और बौद्धिक उत्थान",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "270",
+      "filename": "hindi_exercise_270.txt",
+      "title": "लियोनार्डो दा विंची: चित्रकला, शरीर विज्ञान और इंजीनियरिंग के महानायक",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "271",
+      "filename": "hindi_exercise_271.txt",
+      "title": "माइकल एंजेलो और सिस्टिन चैपल की छत पर अमर भित्तिचित्र",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "272",
+      "filename": "hindi_exercise_272.txt",
+      "title": "गुटेनबर्ग का छापाखाना: मुद्रण क्रांति और ज्ञान का लोकतांत्रीकरण",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "273",
+      "filename": "hindi_exercise_273.txt",
+      "title": "निकोलस कोपरनिकस और सूर्यकेंद्रीय ब्रह्मांड का क्रांतिकारी सिद्धांत",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "274",
+      "filename": "hindi_exercise_274.txt",
+      "title": "गैलिलियो गैलीली और दूरबीन से बृहस्पति के चंद्रमाओं की खोज",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "275",
+      "filename": "hindi_exercise_275.txt",
+      "title": "जोहान्स केप्लर और ग्रहों की गति के तीन मौलिक नियम",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "276",
+      "filename": "hindi_exercise_276.txt",
+      "title": "सर आइजैक न्यूटन: गुरुत्वाकर्षण का सार्वभौमिक नियम और गति के सिद्धांत",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "277",
+      "filename": "hindi_exercise_277.txt",
+      "title": "फर्डिनेंड मैगलन की समुद्री यात्रा: पृथ्वी की पहली सफल परिक्रमा",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "278",
+      "filename": "hindi_exercise_278.txt",
+      "title": "डच ईस्ट इंडिया कंपनी और आधुनिक संयुक्त पूंजी निगम का जन्म",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "279",
+      "filename": "hindi_exercise_279.txt",
+      "title": "औद्योगिक क्रांति: जेम्स वाट का भाप इंजन और कारखानों का युग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "280",
+      "filename": "hindi_exercise_280.txt",
+      "title": "जॉर्ज स्टीफेंसन और शुरुआती रेलवे इंजनों का सफर",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "281",
+      "filename": "hindi_exercise_281.txt",
+      "title": "टेलीग्राफ और मोर्स कोड: संदेशों की तात्कालिक यात्रा का आरंभ",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "282",
+      "filename": "hindi_exercise_282.txt",
+      "title": "माइकल फैराडे: विद्युत चुंबकीय प्रेरण और जनरेटर का आविष्कार",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "283",
+      "filename": "hindi_exercise_283.txt",
+      "title": "जेम्स क्लर्क मैक्सवेल: विद्युत, चुंबकत्व और प्रकाश तरंगों का एकीकरण",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "284",
+      "filename": "hindi_exercise_284.txt",
+      "title": "थॉमस एल्वा एडिसन: विद्युत बल्ब और आधुनिक विद्युत ग्रिड",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "285",
+      "filename": "hindi_exercise_285.txt",
+      "title": "निकोला टेस्ला: प्रत्यावर्ती धारा, इंडक्शन मोटर और वायरलेस सपना",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "286",
+      "filename": "hindi_exercise_286.txt",
+      "title": "मैरी क्यूरी: रेडियम और पोलोनियम की खोज तथा रेडियोधर्मिता पर शोध",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "287",
+      "filename": "hindi_exercise_287.txt",
+      "title": "राइट बंधु और किट्टी हॉक पर मानव की पहली सफल उड़ान",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "288",
+      "filename": "hindi_exercise_288.txt",
+      "title": "पनामा नहर का निर्माण: अटलांटिक और प्रशांत महासागर का संगम",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "289",
+      "filename": "hindi_exercise_289.txt",
+      "title": "स्वेज नहर: यूरोप और एशिया के बीच समुद्री दूरी घटाने वाला जलमार्ग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "290",
+      "filename": "hindi_exercise_290.txt",
+      "title": "गोल्डन गेट ब्रिज: सैन फ्रांसिस्को की खाड़ी पर झूलता इंजीनियरिंग अजूबा",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "291",
+      "filename": "hindi_exercise_291.txt",
+      "title": "अलेक्जेंडर फ्लेमिंग और पेनिसिलिन की खोज: एंटीबायोटिक दवाओं का युग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "292",
+      "filename": "hindi_exercise_292.txt",
+      "title": "ट्रांसअटलांटिक टेलीग्राफ केबल: समुद्र के नीचे जुड़े दो महाद्वीप",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "293",
+      "filename": "hindi_exercise_293.txt",
+      "title": "अंतरराष्ट्रीय अंतरिक्ष स्टेशन: पृथ्वी की कक्षा में वैश्विक प्रयोगशाला",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "294",
+      "filename": "hindi_exercise_294.txt",
+      "title": "इंटरनेट और वर्ल्ड वाइड वेब का विकास: सूचना क्रांति का युग",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "295",
+      "filename": "hindi_exercise_295.txt",
+      "title": "आर्टिफिशियल इंटेलिजेंस और मशीन लर्निंग का उद्भव एवं भविष्य",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "296",
+      "filename": "hindi_exercise_296.txt",
+      "title": "क्वांटम कंप्यूटिंग: कंप्यूटेशनल विज्ञान का नया क्षितिज",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "297",
+      "filename": "hindi_exercise_297.txt",
+      "title": "जीनोम प्रोजेक्ट और आधुनिक जैव प्रौद्योगिकी की खोजें",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "298",
+      "filename": "hindi_exercise_298.txt",
+      "title": "नवीकरणीय ऊर्जा: सौर एवं पवन ऊर्जा से वैश्विक पर्यावरण संतुलन",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "299",
+      "filename": "hindi_exercise_299.txt",
+      "title": "अंतरिक्ष अन्वेषण: मानव का मंगल ग्रह और बाह्य अंतरिक्ष का सपना",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    },
+    {
+      "id": "300",
+      "filename": "hindi_exercise_300.txt",
+      "title": "मानव सभ्यता का विकास और भविष्य की तकनीकी चुनौतियां",
+      "category": "वैश्विक सभ्यताएं, ऐतिहासिक खोजें एवं विज्ञान",
+      "language": "hi",
+      "script": "Devanagari",
+      "fontModes": [
+        "Mangal (Unicode)",
+        "DevLys 010 (legacy)"
+      ]
+    }
+  ]
+}
