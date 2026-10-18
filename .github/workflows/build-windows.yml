@@ -218,7 +218,7 @@ jobs:
             "scripts": {
               "dev": "vite",
               "build": "vite build && node scripts/prepare-dist.cjs",
-              "dist:win": "npm run build && electron-builder --win --x64"
+              "dist:win": "npm run build && electron-builder --win --x64 --publish never"
             },
             "devDependencies": {
               "electron": "^31.0.0",
@@ -228,6 +228,7 @@ jobs:
             "build": {
               "appId": "com.xtremeag.typingtutor",
               "productName": "AG Typing Tutor",
+              "publish": null,
               "asar": false,
               "directories": { "output": "release" },
               "files": [
@@ -269,6 +270,7 @@ jobs:
         run: npm run dist:win
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Windows Installer (.exe) Artifact
         uses: actions/upload-artifact@v4
