@@ -18,15 +18,52 @@ jobs:
         with:
           node-version: 20
 
-      - name: Prepare Electron & Vite Configs
+      - name: Setup Python & Generate Multi-Size App Icon
         shell: bash
         run: |
-          mkdir -p electron scripts
+          pip install pillow
+          mkdir -p build scripts electron
+          cat << 'EOICON' > scripts/make-icon.py
+          import os
+          from PIL import Image
+
+          candidates = [
+              "src/assets/AG-Typing-Tutor-App-Icon.png",
+              "src/assets/AG-Typing-Tutor-Icon-512.png"
+          ]
+          icon_src = None
+          for c in candidates:
+              if os.path.exists(c):
+                  icon_src = c
+                  break
+
+          if icon_src:
+              img = Image.open(icon_src).convert("RGBA")
+              img.save("build/icon.png", format="PNG")
+              img.save(
+                  "build/icon.ico",
+                  format="ICO",
+                  sizes=[(256, 256), (128, 128), (64, 64), (48, 48), (32, 32), (16, 16)]
+              )
+              print(f"Generated build/icon.ico from {icon_src}")
+          else:
+              print("No icon image found, skipping icon conversion")
+          EOICON
+          python scripts/make-icon.py
+
+      - name: Prepare Electron & Fast Startup Configs
+        shell: bash
+        run: |
           cat << 'EOMAIN' > electron/main.cjs
           const { app, BrowserWindow, shell } = require('electron');
           const path = require('path');
           const http = require('http');
           const fs = require('fs');
+
+          // Winlator / Wine me blank aur white screen lag hatane ke liye
+          app.disableHardwareAcceleration();
+          app.commandLine.appendSwitch('disable-gpu');
+          app.commandLine.appendSwitch('disable-software-rasterizer');
 
           let mainWindow = null;
           let localServer = null;
@@ -92,7 +129,7 @@ jobs:
 
                   if (!foundFile) {
                     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-                    res.end('File not found: ' + safeRelPath + '\nSearched roots:\n' + roots.join('\n'));
+                    res.end('File not found: ' + safeRelPath);
                     return;
                   }
 
@@ -102,8 +139,10 @@ jobs:
                     'Access-Control-Allow-Origin': '*'
                   };
                   if (ext === '.json') headers['Cache-Control'] = 'no-store, no-cache, must-revalidate';
+
+                  const fileBuffer = fs.readFileSync(foundFile);
                   res.writeHead(200, headers);
-                  fs.createReadStream(foundFile).pipe(res);
+                  res.end(fileBuffer);
                 } catch (err) {
                   res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
                   res.end('Server error: ' + err.message);
@@ -118,13 +157,20 @@ jobs:
             const { server, port } = await startStaticServer();
             localServer = server;
 
+            let iconPath = path.join(__dirname, '..', 'build', 'icon.png');
+            if (!fs.existsSync(iconPath)) {
+              iconPath = path.join(__dirname, '..', 'src', 'assets', 'AG-Typing-Tutor-Icon-512.png');
+            }
+
             mainWindow = new BrowserWindow({
               width: 1366,
               height: 860,
               minWidth: 1024,
               minHeight: 700,
+              show: false,
+              backgroundColor: '#0f172a',
               title: 'AG Typing Tutor — Xtreme AG Apps',
-              icon: path.join(__dirname, '..', 'src', 'assets', 'AG-Typing-Tutor-Icon-512.png'),
+              icon: iconPath,
               autoHideMenuBar: true,
               webPreferences: {
                 contextIsolation: true,
@@ -133,8 +179,12 @@ jobs:
               }
             });
 
-            mainWindow.maximize();
             await mainWindow.loadURL(`http://127.0.0.1:${port}/index.html`);
+
+            mainWindow.once('ready-to-show', () => {
+              mainWindow.maximize();
+              mainWindow.show();
+            });
 
             mainWindow.webContents.setWindowOpenHandler(({ url }) => {
               if ((url.startsWith('https://') || url.startsWith('http://')) && !url.startsWith('http://127.0.0.1')) {
@@ -187,12 +237,7 @@ jobs:
           }
 
           copyRecursiveSync(distDir, appDistDir);
-
-          if (!fs.existsSync(path.join(appDistDir, 'index.html'))) {
-            console.error('ERROR: app_dist/index.html is missing after build!');
-            process.exit(1);
-          }
-          console.log('Successfully prepared app_dist with files:', fs.readdirSync(appDistDir));
+          console.log('Successfully prepared app_dist and dist');
           EOPREP
 
           rm -f vite.config.ts vite.config.mjs vite.config.cjs
@@ -229,28 +274,28 @@ jobs:
               "appId": "com.xtremeag.typingtutor",
               "productName": "AG Typing Tutor",
               "publish": null,
-              "asar": false,
+              "asar": true,
               "directories": { "output": "release" },
               "files": [
                 "app_dist/**/*",
                 "dist/**/*",
                 "electron/**/*",
+                "build/**/*",
+                "src/assets/AG-Typing-Tutor-App-Icon.png",
                 "src/assets/AG-Typing-Tutor-Icon-512.png",
                 "package.json"
               ],
-              "extraResources": [
-                { "from": "app_dist", "to": "app_dist" }
-              ],
               "win": {
-                "icon": "src/assets/AG-Typing-Tutor-Icon-512.png",
+                "icon": "build/icon.ico",
                 "target": [
                   { "target": "nsis", "arch": ["x64"] },
                   { "target": "portable", "arch": ["x64"] }
                 ]
               },
               "nsis": {
-                "oneClick": false,
-                "allowToChangeInstallationDirectory": true,
+                "oneClick": true,
+                "perMachine": false,
+                "allowElevation": false,
                 "createDesktopShortcut": true,
                 "createStartMenuShortcut": true,
                 "shortcutName": "AG Typing Tutor",
