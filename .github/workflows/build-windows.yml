@@ -8,6 +8,7 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -17,11 +18,255 @@ jobs:
         with:
           node-version: 20
 
+      - name: Prepare Electron & Vite Configs
+        shell: bash
+        run: |
+          mkdir -p electron scripts
+          cat << 'EOMAIN' > electron/main.cjs
+          const { app, BrowserWindow, shell } = require('electron');
+          const path = require('path');
+          const http = require('http');
+          const fs = require('fs');
+
+          let mainWindow = null;
+          let localServer = null;
+
+          const MIME_TYPES = {
+            '.html': 'text/html; charset=utf-8',
+            '.js': 'application/javascript; charset=utf-8',
+            '.mjs': 'application/javascript; charset=utf-8',
+            '.css': 'text/css; charset=utf-8',
+            '.json': 'application/json; charset=utf-8',
+            '.png': 'image/png',
+            '.jpg': 'image/jpeg',
+            '.jpeg': 'image/jpeg',
+            '.gif': 'image/gif',
+            '.svg': 'image/svg+xml',
+            '.ico': 'image/x-icon',
+            '.woff': 'font/woff',
+            '.woff2': 'font/woff2',
+            '.ttf': 'font/ttf',
+            '.txt': 'text/plain; charset=utf-8'
+          };
+
+          function getSearchRoots() {
+            const appPath = app.getAppPath();
+            const resPath = process.resourcesPath || path.join(__dirname, '..', '..');
+            return [
+              path.join(__dirname, '..', 'app_dist'),
+              path.join(__dirname, '..', 'dist'),
+              path.join(appPath, 'app_dist'),
+              path.join(appPath, 'dist'),
+              path.join(resPath, 'app_dist'),
+              path.join(resPath, 'app', 'app_dist'),
+              path.join(resPath, 'app', 'dist'),
+              path.join(__dirname, '..'),
+              appPath
+            ];
+          }
+
+          function startStaticServer() {
+            const roots = getSearchRoots();
+            return new Promise((resolve, reject) => {
+              const server = http.createServer((req, res) => {
+                try {
+                  const parsedUrl = new URL(req.url || '/', 'http://127.0.0.1');
+                  let pathname = decodeURIComponent(parsedUrl.pathname);
+                  if (pathname === '/' || pathname === '') pathname = '/index.html';
+                  const safeRelPath = pathname.replace(/^[/\\]+/, '');
+
+                  let foundFile = null;
+                  for (const rootDir of roots) {
+                    const candidates = [
+                      path.join(rootDir, safeRelPath),
+                      path.join(rootDir, 'public', safeRelPath)
+                    ];
+                    for (const candidate of candidates) {
+                      if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) {
+                        foundFile = candidate;
+                        break;
+                      }
+                    }
+                    if (foundFile) break;
+                  }
+
+                  if (!foundFile) {
+                    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+                    res.end('File not found: ' + safeRelPath + '\nSearched roots:\n' + roots.join('\n'));
+                    return;
+                  }
+
+                  const ext = path.extname(foundFile).toLowerCase();
+                  const headers = {
+                    'Content-Type': MIME_TYPES[ext] || 'application/octet-stream',
+                    'Access-Control-Allow-Origin': '*'
+                  };
+                  if (ext === '.json') headers['Cache-Control'] = 'no-store, no-cache, must-revalidate';
+                  res.writeHead(200, headers);
+                  fs.createReadStream(foundFile).pipe(res);
+                } catch (err) {
+                  res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
+                  res.end('Server error: ' + err.message);
+                }
+              });
+              server.listen(0, '127.0.0.1', () => resolve({ server, port: server.address().port }));
+              server.on('error', reject);
+            });
+          }
+
+          async function createWindow() {
+            const { server, port } = await startStaticServer();
+            localServer = server;
+
+            mainWindow = new BrowserWindow({
+              width: 1366,
+              height: 860,
+              minWidth: 1024,
+              minHeight: 700,
+              title: 'AG Typing Tutor — Xtreme AG Apps',
+              icon: path.join(__dirname, '..', 'src', 'assets', 'AG-Typing-Tutor-Icon-512.png'),
+              autoHideMenuBar: true,
+              webPreferences: {
+                contextIsolation: true,
+                nodeIntegration: false,
+                spellcheck: false
+              }
+            });
+
+            mainWindow.maximize();
+            await mainWindow.loadURL(`http://127.0.0.1:${port}/index.html`);
+
+            mainWindow.webContents.setWindowOpenHandler(({ url }) => {
+              if ((url.startsWith('https://') || url.startsWith('http://')) && !url.startsWith('http://127.0.0.1')) {
+                shell.openExternal(url);
+                return { action: 'deny' };
+              }
+              return { action: 'allow' };
+            });
+          }
+
+          app.whenReady().then(createWindow);
+          app.on('window-all-closed', () => {
+            if (localServer) { try { localServer.close(); } catch (e) {} }
+            if (process.platform !== 'darwin') app.quit();
+          });
+          EOMAIN
+
+          cat << 'EOPREP' > scripts/prepare-dist.cjs
+          const fs = require('fs');
+          const path = require('path');
+          const rootDir = process.cwd();
+          const distDir = path.join(rootDir, 'dist');
+          const appDistDir = path.join(rootDir, 'app_dist');
+
+          function copyRecursiveSync(src, dest) {
+            if (!fs.existsSync(src)) return;
+            if (fs.statSync(src).isDirectory()) {
+              if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+              for (const child of fs.readdirSync(src)) {
+                copyRecursiveSync(path.join(src, child), path.join(dest, child));
+              }
+            } else {
+              fs.mkdirSync(path.dirname(dest), { recursive: true });
+              fs.copyFileSync(src, dest);
+            }
+          }
+
+          const extraFolders = [
+            ['public/efficiency-bank', 'efficiency-bank'],
+            ['src/efficiency-bank', 'efficiency-bank'],
+            ['efficiency-bank', 'efficiency-bank'],
+            ['public/exercises', 'exercises'],
+            ['src/exercises', 'exercises'],
+            ['exercises', 'exercises']
+          ];
+
+          for (const [srcRel, destRel] of extraFolders) {
+            const srcPath = path.join(rootDir, srcRel);
+            if (fs.existsSync(srcPath)) copyRecursiveSync(srcPath, path.join(distDir, destRel));
+          }
+
+          copyRecursiveSync(distDir, appDistDir);
+
+          if (!fs.existsSync(path.join(appDistDir, 'index.html'))) {
+            console.error('ERROR: app_dist/index.html is missing after build!');
+            process.exit(1);
+          }
+          console.log('Successfully prepared app_dist with files:', fs.readdirSync(appDistDir));
+          EOPREP
+
+          rm -f vite.config.ts vite.config.mjs vite.config.cjs
+          cat << 'EOVITE' > vite.config.js
+          import { defineConfig } from 'vite'
+          export default defineConfig({
+            base: './',
+            publicDir: 'public',
+            build: { outDir: 'dist', emptyOutDir: true, assetsInlineLimit: 0 }
+          })
+          EOVITE
+
+          cat << 'EOPKG' > package.json
+          {
+            "name": "ag-typing-tutor",
+            "productName": "AG Typing Tutor",
+            "version": "1.0.0",
+            "description": "AG Typing Tutor & RSSB LDC Exam Simulator by Xtreme AG Apps",
+            "author": "Xtreme AG Apps",
+            "private": true,
+            "type": "module",
+            "main": "electron/main.cjs",
+            "scripts": {
+              "dev": "vite",
+              "build": "vite build && node scripts/prepare-dist.cjs",
+              "dist:win": "npm run build && electron-builder --win --x64"
+            },
+            "devDependencies": {
+              "electron": "^31.0.0",
+              "electron-builder": "^24.13.3",
+              "vite": "^5.4.0"
+            },
+            "build": {
+              "appId": "com.xtremeag.typingtutor",
+              "productName": "AG Typing Tutor",
+              "asar": false,
+              "directories": { "output": "release" },
+              "files": [
+                "app_dist/**/*",
+                "dist/**/*",
+                "electron/**/*",
+                "src/assets/AG-Typing-Tutor-Icon-512.png",
+                "package.json"
+              ],
+              "extraResources": [
+                { "from": "app_dist", "to": "app_dist" }
+              ],
+              "win": {
+                "icon": "src/assets/AG-Typing-Tutor-Icon-512.png",
+                "target": [
+                  { "target": "nsis", "arch": ["x64"] },
+                  { "target": "portable", "arch": ["x64"] }
+                ]
+              },
+              "nsis": {
+                "oneClick": false,
+                "allowToChangeInstallationDirectory": true,
+                "createDesktopShortcut": true,
+                "createStartMenuShortcut": true,
+                "shortcutName": "AG Typing Tutor",
+                "artifactName": "AG-Typing-Tutor-Setup-${version}.${ext}"
+              },
+              "portable": {
+                "artifactName": "AG-Typing-Tutor-Portable-${version}.${ext}"
+              }
+            }
+          }
+          EOPKG
+
       - name: Install Dependencies
         run: npm install
 
       - name: Build Vite App & Package Windows Installer (.exe)
-        run: npx electron-builder --win --x64 --publish never
+        run: npm run dist:win
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
 
@@ -33,3 +278,4 @@ jobs:
             release/*.exe
           if-no-files-found: error
           retention-days: 30
+          
