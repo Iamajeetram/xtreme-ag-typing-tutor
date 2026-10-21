@@ -301,6 +301,7 @@ jobs:
               ],
               "win": {
                 "icon": "build/icon.ico",
+                "publisherName": "Xtreme AG Apps",
                 "target": [
                   { "target": "nsis", "arch": ["x64"] },
                   { "target": "portable", "arch": ["x64"] }
@@ -308,10 +309,9 @@ jobs:
               },
               "nsis": {
                 "include": "build/installer.nsh",
-                "oneClick": false,
-                "perMachine": false,
+                "oneClick": true,
+                "perMachine": true,
                 "allowElevation": true,
-                "allowToChangeInstallationDirectory": true,
                 "createDesktopShortcut": true,
                 "createStartMenuShortcut": true,
                 "shortcutName": "AG Typing Tutor",
