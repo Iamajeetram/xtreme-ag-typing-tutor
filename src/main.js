@@ -8,10 +8,16 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.0.0';
-let APP_RUNTIME_INFO = { version: '1.0.0', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.1.0';
+let APP_RUNTIME_INFO = { version: '1.1.0', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
+const GITHUB_REPO_CANDIDATES = [
+  'Iamajeetram/xtreme-ag-typing-tutor',
+  'ashishgarg95826-create/xtreme-ag-typing-tutor',
+  'ashishgarg95826-create/ag-typing-tutor',
+  'Iamajeetram/ag-typing-tutor'
+];
 
 async function loadAppRuntimeInfo() {
   try {
@@ -60,19 +66,22 @@ function pickBestReleaseAsset(release) {
 async function checkAppUpdates(isManual = false) {
   await loadAppRuntimeInfo();
   try {
-    const url = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest`;
-    const resp = await fetch(url, { cache: 'no-store' });
-    if (!resp.ok) {
-      if (isManual) {
-        if (resp.status === 404) {
-          alert(`You are using AG Typing Tutor v${APP_CURRENT_VERSION} (Latest Version).\n\nNote for Admin: To broadcast new updates to all users, make sure repository '${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}' is Public and has a published Release.`);
-        } else {
-          alert(`Version check complete. You are on v${APP_CURRENT_VERSION}.`);
+    let release = null;
+    for (const repoSlug of GITHUB_REPO_CANDIDATES) {
+      try {
+        const resp = await fetch(`https://api.github.com/repos/${repoSlug}/releases/latest`, { cache: 'no-store' });
+        if (resp.ok) {
+          release = await resp.json();
+          if (release && (release.tag_name || release.name)) break;
         }
+      } catch {}
+    }
+    if (!release) {
+      if (isManual) {
+        alert(`You are using AG Typing Tutor v${APP_CURRENT_VERSION} (Latest Version).\n\nNote for Admin: Make sure your GitHub repository ('${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}') is set to PUBLIC (not Private 🔒) and GitHub Actions has finished publishing the Release.`);
       }
       return;
     }
-    const release = await resp.json();
     const latestTag = release.tag_name || release.name || '';
     if (compareVersions(latestTag, APP_CURRENT_VERSION) > 0) {
       showUpdateModal(release);
