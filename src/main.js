@@ -8,8 +8,8 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.1.0';
-let APP_RUNTIME_INFO = { version: '1.1.0', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.2.0';
+let APP_RUNTIME_INFO = { version: '1.2.0', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 const GITHUB_REPO_CANDIDATES = [
@@ -763,6 +763,7 @@ function buildDetailedReportHTML(result, stats) {
   const typedText = String(result.typedText || '')
   const passageText = String(result.passage || '')
   return `
+    ${buildAgWatermarkGridHTML(8, 'ag-result-watermark-layer')}
     <div class="report-heading">
       <div><span class="eyebrow">AG TYPING TUTOR · RESULT REPORT</span><h3>Typing test report</h3><p>${safe(result.completedAt)} · ${safe(result.mode)}</p></div>
       <span class="performance-band" style="color:${getPerformanceBand(stats.netWpm).color}">${safe(getPerformanceBand(stats.netWpm).label)}</span>
@@ -1186,6 +1187,30 @@ function setAppLanguage(language) {
   else renderSection(currentSection)
 }
 
+
+function buildAgWatermarkGridHTML(count = 8, extraClass = '') {
+  const stamps = Array.from({ length: count }, (_, idx) => `
+    <div class="ag-wm-stamp" data-wm-idx="${idx + 1}">
+      <strong>AG Typing Tutor</strong>
+      <span>by Xtreme AG Apps</span>
+    </div>
+  `).join('')
+  return `<div class="ag-watermark-grid-8 ${extraClass}" aria-hidden="true">${stamps}</div>`
+}
+
+function buildOnlinePortalSidebarBtnHTML(isHi = false) {
+  return `
+    <a class="nav-button nav-online-portal-btn" href="https://typing.xtremeagapps.in" target="_blank" rel="noopener noreferrer" data-external-url="https://typing.xtremeagapps.in">
+      <span class="nav-online-icon">🌐</span>
+      <span class="nav-online-copy">
+        <strong>${isHi ? 'ऑनलाइन टाइपिंग पोर्टल' : 'Online Typing Portal'}</strong>
+        <small>typing.xtremeagapps.in ↗</small>
+      </span>
+      <span class="nav-new-badge">NEW</span>
+    </a>
+  `
+}
+
 function renderHome() {
   if (!userProfile) { renderOnboarding(); return }
   const isHi = appLanguage === 'hi'
@@ -1215,6 +1240,7 @@ function renderHome() {
               `,
             )
             .join('')}
+          ${buildOnlinePortalSidebarBtnHTML(isHi)}
         </nav>
 
         <div class="sidebar-bottom sidebar-profile-bottom">
@@ -1226,7 +1252,8 @@ function renderHome() {
         </div>
       </aside>
 
-      <main class="main-area">
+      <main class="main-area has-ag-bg-watermarks">
+        ${buildAgWatermarkGridHTML(8, "ag-bg-watermark-layer")}
         <header class="topbar">
           <div>
             <span class="eyebrow">YOUR PERSONAL TYPING STUDIO</span>
@@ -1250,21 +1277,28 @@ function renderHome() {
           <div class="hero-art" aria-hidden="true">
             <div class="art-orbit orbit-one"></div>
             <div class="art-orbit orbit-two"></div>
-            <div class="keyboard-card">
+            <div class="keyboard-card qwerty-hero-keyboard">
               <div class="keyboard-top">
                 <span></span><span></span><span></span>
+                <small style="margin-left:auto;font-size:9px;font-weight:800;color:#64748b;letter-spacing:0.06em;">QWERTY KEYBOARD</small>
               </div>
-              <div class="keyboard-keys">
-                ${'QWERTYUIOPASDFGHJKLZXCVBNM'
-                  .split('')
-                  .map((letter, index) => `
-                    <span class="${index % 7 === 0 ? 'key-highlight' : ''}">
-                      ${letter}
-                    </span>
-                  `)
-                  .join('')}
+              <div class="qwerty-rows-wrap">
+                <div class="qwerty-row qwerty-row-1">
+                  ${['Q','W','E','R','T','Y','U','I','O','P'].map(k => `<span class="${k === 'Q' || k === 'E' || k === 'I' ? 'key-highlight' : ''}">${k}</span>`).join('')}
+                </div>
+                <div class="qwerty-row qwerty-row-2">
+                  ${['A','S','D','F','G','H','J','K','L'].map(k => `<span class="${k === 'F' || k === 'J' ? 'key-highlight key-home-bump' : ''}">${k}</span>`).join('')}
+                </div>
+                <div class="qwerty-row qwerty-row-3">
+                  ${['Z','X','C','V','B','N','M'].map(k => `<span class="${k === 'C' || k === 'M' ? 'key-highlight' : ''}">${k}</span>`).join('')}
+                </div>
+                <div class="qwerty-row qwerty-row-space">
+                  <span class="qwerty-mod-key">Ctrl</span>
+                  <span class="qwerty-mod-key">Alt</span>
+                  <span class="qwerty-spacebar">SPACE</span>
+                  <span class="qwerty-mod-key">Alt</span>
+                </div>
               </div>
-              <div class="space-key"></div>
             </div>
             <div class="floating-badge">⌨ Type smarter</div>
           </div>
@@ -1278,38 +1312,61 @@ function renderHome() {
               <p>${isHi ? 'वर्तमान में RSSB LDC (80 Full Tests · MS Office 2013) एवं Daily 8:00 AM Live Test सक्रिय हैं। अन्य परीक्षाएँ जल्द आ रही हैं।' : 'RSSB LDC (80 Full Tests · MS Office 2013) and Daily 8:00 AM Live Rank Test are active. Other exams are coming soon.'}</p>
             </div>
           </div>
-          <div class="exam-tile-grid">
-            <button type="button" class="exam-tile exam-tile-active-primary" data-exam-tile="RSSB LDC" style="border:2px solid #2563eb; background:linear-gradient(135deg,#eff6ff 0%,#ffffff 100%); position:relative;">
-              <span style="position:absolute; top:10px; right:10px; background:#16a34a; color:#fff; font-size:10px; font-weight:800; padding:3px 8px; border-radius:999px;">✓ ACTIVE · 80 TESTS</span>
-              <span>🏛️</span>
-              <strong>RSSB LDC (Exam Hall)</strong>
-              <small>${isHi ? '80 फुल मॉक टेस्ट · MS Office 2013 पैटर्न →' : '80 Full Mock Tests · MS Office 2013 Pattern →'}</small>
-            </button>
-
-            <button type="button" class="exam-tile exam-tile-daily-live" data-exam-tile="RSSB LDC DAILY LIVE" style="border:2px solid #dc2626; background:linear-gradient(135deg,#fef2f2 0%,#ffffff 100%); position:relative;">
-              <span style="position:absolute; top:10px; right:10px; background:#dc2626; color:#fff; font-size:10px; font-weight:800; padding:3px 8px; border-radius:999px;">🔴 LIVE 8:00 AM · RANK</span>
-              <span>🔥</span>
-              <strong>RSSB LDC Daily Live Test</strong>
-              <small>${isHi ? 'रोज़ सुबह 8:00 बजे · 4 पेपर्स + Live All-Raj Rank →' : 'Daily 8:00 AM · 4 Papers + Live All-Raj Rank →'}</small>
-            </button>
-
-            ${[
-              ['Rajasthan High Court LDC','⚖️'],
-              ['RRB','🚆'],
-              ['SSC','🎯'],
-              ['DSSSB','🏫'],
-              ['KVS / NVS','📚'],
-              ['EMRS','🏫'],
-              ['Banking','🏦'],
-              ['Other Exams','＋']
-            ].map(([name,icon])=>`
-              <button type="button" class="exam-tile exam-tile-coming-soon" data-exam-tile="${escapeHtml(name)}" style="opacity:0.86; position:relative;">
-                <span style="position:absolute; top:10px; right:10px; background:#f59e0b; color:#fff; font-size:10px; font-weight:800; padding:2px 7px; border-radius:999px;">⏳ Coming Soon</span>
-                <span>${icon}</span>
-                <strong>${escapeHtml(name)}</strong>
-                <small style="color:#b45309; font-weight:700;">${isHi ? 'Coming Soon · कस्टम डिमांड हेतु WhatsApp करें →' : 'Coming Soon · Request via WhatsApp →'}</small>
+          <div class="exam-layout-rows">
+            <!-- Row 1: Two Large Featured RSSB LDC Tiles -->
+            <div class="exam-featured-row-2">
+              <button type="button" class="exam-tile exam-tile-large-ldc exam-tile-active-primary" data-exam-tile="RSSB LDC">
+                <span class="exam-tile-badge badge-active">✓ ACTIVE · 80 TESTS</span>
+                <div class="exam-tile-large-head">
+                  <span class="exam-tile-large-icon">🏛️</span>
+                  <div>
+                    <strong>RSSB LDC (Exam Hall)</strong>
+                    <p>${isHi ? '80 फुल मॉक टेस्ट (4 पेपर्स: हिन्दी + अंग्रेजी + MS Word 2013 + MS Excel 2013)' : '80 Full Mock Tests (4 Papers: Hindi + English + MS Word 2013 + MS Excel 2013)'}</p>
+                  </div>
+                </div>
+                <small class="exam-tile-cta-blue">${isHi ? 'अभी परीक्षा हॉल शुरू करें (MS Office 2013 पैटर्न) →' : 'Launch Official Exam Hall (MS Office 2013 Pattern) →'}</small>
               </button>
-            `).join('')}
+
+              <button type="button" class="exam-tile exam-tile-large-ldc exam-tile-daily-live" data-exam-tile="RSSB LDC DAILY LIVE">
+                <span class="exam-tile-badge badge-live">🔴 LIVE 8:00 AM · RANK</span>
+                <div class="exam-tile-large-head">
+                  <span class="exam-tile-large-icon">🔥</span>
+                  <div>
+                    <strong>RSSB LDC Daily Live Test</strong>
+                    <p>${isHi ? 'रोज़ सुबह 8:00 बजे नया लाइव टेस्ट · चारों पेपर्स के नंबर और Live All-Rajasthan Rank' : 'Daily 8:00 AM Live Test · All 4 Paper Marks & Live All-Rajasthan Rank Leaderboard'}</p>
+                  </div>
+                </div>
+                <small class="exam-tile-cta-red">${isHi ? 'डेली लाइव टेस्ट एवं रैंक लीडरबोर्ड खोलें →' : 'Open Daily Live Test & Rank Leaderboard →'}</small>
+              </button>
+            </div>
+
+            <!-- Row 2: Only High Court LDC, SSC, and RRB -->
+            <div class="exam-coming-row-3">
+              ${[
+                ['Rajasthan High Court LDC', '⚖️'],
+                ['SSC', '🎯'],
+                ['RRB', '🚆']
+              ].map(([name, icon]) => `
+                <button type="button" class="exam-tile exam-tile-coming-soon" data-exam-tile="${escapeHtml(name)}">
+                  <span class="exam-tile-badge badge-soon">⏳ Coming Soon</span>
+                  <span class="exam-tile-icon">${icon}</span>
+                  <strong>${escapeHtml(name)}</strong>
+                  <small class="exam-tile-whatsapp-note">Coming Soon, Request on WhatsApp →</small>
+                </button>
+              `).join('')}
+            </div>
+
+            <!-- Row 3: Single Other Exams Tile -->
+            <div class="exam-other-row-1">
+              <button type="button" class="exam-tile exam-tile-coming-soon exam-tile-other-wide" data-exam-tile="Other Exams">
+                <span class="exam-tile-badge badge-soon">⏳ Coming Soon</span>
+                <span class="exam-tile-icon">＋</span>
+                <div>
+                  <strong>Other Exams</strong>
+                  <small class="exam-tile-whatsapp-note">Coming Soon, Request on WhatsApp (WhatsApp: 7878025556) →</small>
+                </div>
+              </button>
+            </div>
           </div>
 
           <div style="margin-top:14px; padding:14px 18px; background:linear-gradient(90deg,#f0fdf4,#eff6ff); border:1px solid #bbf7d0; border-radius:14px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
@@ -1688,6 +1745,7 @@ function renderSection(page) {
               `,
             )
             .join('')}
+          ${buildOnlinePortalSidebarBtnHTML(appLanguage === 'hi')}
         </nav>
 
         <div class="sidebar-bottom sidebar-profile-bottom">
@@ -1699,7 +1757,8 @@ function renderSection(page) {
         </div>
       </aside>
 
-      <main class="main-area">
+      <main class="main-area has-ag-bg-watermarks">
+        ${buildAgWatermarkGridHTML(8, "ag-bg-watermark-layer")}
         <header class="topbar">
           <div>
             <button class="back-button" data-page="home">← Home</button>
@@ -7052,7 +7111,8 @@ function efficiencySubmit(page, tasks, question, timedOut = false) {
   overlay.id = 'efficiency-result-modal'
   overlay.className = 'efficiency-result-overlay'
   overlay.innerHTML = `
-    <section class="efficiency-result-dialog" role="dialog" aria-modal="true" style="max-width:880px;width:95vw;">
+    <section class="efficiency-result-dialog has-ag-result-watermarks" role="dialog" aria-modal="true" style="max-width:880px;width:95vw;position:relative;overflow-x:hidden;">
+      ${buildAgWatermarkGridHTML(8, 'ag-result-watermark-layer')}
       <div class="efficiency-result-brand">
         <span>${isWord ? 'W' : 'X'}</span>
         <div>
@@ -8714,7 +8774,8 @@ function buildRssbTypingPaperDetailHTML(paper, paperNumber) {
   const wrongWordItems = words.filter(w => w.status === 'wrong').slice(0, 40)
 
   return `
-    <section class="rssb-paper-detail-card" id="rssb-report-paper-${paperNumber}">
+    <section class="rssb-paper-detail-card has-ag-result-watermarks" id="rssb-report-paper-${paperNumber}" style="position:relative;overflow:hidden;">
+      ${buildAgWatermarkGridHTML(6, 'ag-result-watermark-layer ag-card-watermark-layer')}
       <div class="rssb-paper-detail-head">
         <div>
           <span class="rssb-paper-tag">PAPER ${paperNumber} OF 4 · TYPING SPEED TEST (10 MINUTES · 25 MARKS)</span>
@@ -8840,7 +8901,8 @@ function buildRssbTypingPaperDetailHTML(paper, paperNumber) {
 function buildRssbEfficiencyPaperDetailHTML(eff, paperNumber) {
   const breakdown = Array.isArray(eff.questionBreakdown) ? eff.questionBreakdown : []
   return `
-    <section class="rssb-paper-detail-card" id="rssb-report-paper-${paperNumber}">
+    <section class="rssb-paper-detail-card has-ag-result-watermarks" id="rssb-report-paper-${paperNumber}" style="position:relative;overflow:hidden;">
+      ${buildAgWatermarkGridHTML(6, 'ag-result-watermark-layer ag-card-watermark-layer')}
       <div class="rssb-paper-detail-head">
         <div>
           <span class="rssb-paper-tag">PAPER ${paperNumber} OF 4 · EFFICIENCY TEST (10 MINUTES · 15 QUESTIONS · 25 MARKS)</span>
@@ -8918,15 +8980,16 @@ function buildRssbCompleteReportMarkup(record) {
     </header>
 
     <div class="rssb-hall-scroll-body" id="rssb-printable-report-area">
-      <div class="rssb-final-report-container">
+      <div class="rssb-final-report-container has-ag-result-watermarks" style="position:relative;">
+        ${buildAgWatermarkGridHTML(8, 'ag-result-watermark-layer')}
         <section class="rssb-final-uploading-banner">
           <div class="rssb-upload-left">
             <span class="rssb-upload-tag">FINAL UPLOADING SCREEN · राजस्थान कर्मचारी चयन बोर्ड, जयपुर</span>
             <h2>Your Files Uploaded Successfully · चारों प्रश्न पत्र सफलतापूर्वक सबमिट हो गए हैं</h2>
             <div class="rssb-upload-ident">
-              <span><strong>Name :</strong> <code>admin</code></span>
-              <span><strong>Roll No. :</strong> <code>admin</code></span>
-              <span><strong>User ID :</strong> <code>admin</code></span>
+              <span><strong>Name :</strong> <code>${escapeHtml(record.candidateName || getRssbCandidateName())}</code></span>
+              <span><strong>Roll No. :</strong> <code>${escapeHtml(record.rollNumber || getRssbCandidateRoll())}</code></span>
+              <span><strong>User ID :</strong> <code>${escapeHtml(record.candidateName || getRssbCandidateName())}</code></span>
               <span><strong>Password :</strong> <code>admin</code></span>
               <span><strong>Mock Exam :</strong> <code>#${String(record.testNo).padStart(2, '0')} (${escapeHtml(record.setCode || '')})</code></span>
             </div>
@@ -9015,7 +9078,7 @@ function buildRssbCompleteReportMarkup(record) {
                 <td colspan="3"><strong>कुल योग (GRAND TOTAL — ALL 4 PAPERS)</strong></td>
                 <td><strong>100.00</strong></td>
                 <td><strong>36.00 (9×4)</strong></td>
-                <td><strong>Roll No.: admin · Candidate: admin</strong></td>
+                <td><strong>Roll No.: ${escapeHtml(record.rollNumber || getRssbCandidateRoll())} · Candidate: ${escapeHtml(record.candidateName || getRssbCandidateName())}</strong></td>
                 <td><strong style="font-size:18px;color:#0f172a;">${Number(record.totalMarksOutOf100 || 0).toFixed(2)} / 100.00</strong></td>
                 <td><span class="rssb-status-pill ${record.overallQualified ? 'pass' : 'fail'}">${record.overallQualified ? '✓ QUALIFIED' : '✗ NOT QUALIFIED'}</span></td>
               </tr>

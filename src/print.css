@@ -52,3 +52,21 @@
   body.printing-rssb-report .screen-only { display: none !important; }
   body.printing-rssb-report .rssb-paper-detail-card { display: flex !important; break-inside: avoid; page-break-inside: avoid; }
 }
+
+
+@media print {
+  .ag-watermark-grid-8,
+  .ag-result-watermark-layer {
+    visibility: visible !important;
+    display: grid !important;
+    z-index: 999 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .ag-result-watermark-layer .ag-wm-stamp strong {
+    color: rgba(30, 64, 175, 0.14) !important;
+  }
+  .ag-result-watermark-layer .ag-wm-stamp span {
+    color: rgba(30, 64, 175, 0.13) !important;
+  }
+}
