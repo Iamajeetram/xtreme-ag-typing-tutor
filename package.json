@@ -1,7 +1,7 @@
 {
   "name": "ag-typing-tutor",
   "productName": "AG Typing Tutor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AG Typing Tutor & RSSB LDC Exam Simulator by Xtreme AG Apps",
   "author": "Xtreme AG Apps",
   "private": true,
@@ -24,7 +24,9 @@
     "productName": "AG Typing Tutor",
     "publish": null,
     "asar": true,
-    "directories": { "output": "release" },
+    "directories": {
+      "output": "release"
+    },
     "files": [
       "app_dist/**/*",
       "dist/**/*",
@@ -39,8 +41,18 @@
       "hardenedRuntime": false,
       "gatekeeperAssess": false,
       "target": [
-        { "target": "dmg", "arch": ["arm64"] },
-        { "target": "zip", "arch": ["arm64"] }
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "arm64"
+          ]
+        }
       ],
       "artifactName": "AG-Typing-Tutor-Mac-${version}-${arch}.${ext}"
     },
@@ -48,8 +60,18 @@
       "icon": "build/icon.ico",
       "publisherName": "Xtreme AG Apps",
       "target": [
-        { "target": "nsis", "arch": ["x64"] },
-        { "target": "portable", "arch": ["x64"] }
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
       ]
     },
     "nsis": {
