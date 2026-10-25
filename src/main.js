@@ -361,6 +361,17 @@ try {
   }
 } catch { userProfile = null }
 
+function persistAgProfileLocally(profile) {
+  if (!profile || !String(profile.name || '').trim()) return false
+  try {
+    localStorage.setItem('ag-user-profile', JSON.stringify(profile))
+    return true
+  } catch (error) {
+    console.warn('Could not persist AG profile in this browser:', error)
+    return false
+  }
+}
+
 function getRssbCandidateName() {
   return (userProfile && userProfile.name && userProfile.id !== 'ag-default-admin') ? userProfile.name : 'Candidate'
 }
@@ -1425,7 +1436,27 @@ function buildOnlinePortalSidebarBtnHTML(isHi = false) {
   `;
 }
 
+function ensureAgWhatsAppSupport() {
+  if (document.getElementById('ag-whatsapp-support')) return
+  const link = document.createElement('a')
+  link.id = 'ag-whatsapp-support'
+  link.href = 'https://wa.me/917878025556?text=Hello%20Xtreme%20AG%20Apps%2C%20I%20need%20support%20for%20AG%20Typing%20Tutor.'
+  link.target = '_blank'
+  link.rel = 'noopener noreferrer'
+  link.setAttribute('aria-label', 'WhatsApp support at 7878025556')
+  link.innerHTML = '<span style="display:grid;place-items:center;width:25px;height:25px;border-radius:50%;background:#ffffff24;font-size:17px">✆</span><span style="display:flex;flex-direction:column;gap:3px"><strong>WhatsApp Support</strong><small style="font-size:12px;font-weight:600;opacity:.95">7878025556</small></span>'
+  Object.assign(link.style, {
+    position:'fixed', right:'16px', bottom:'16px', zIndex:'99999',
+    display:'flex', alignItems:'center', gap:'10px', padding:'11px 15px',
+    borderRadius:'999px', background:'#168447', color:'#fff',
+    boxShadow:'0 8px 24px #102b1b35', font:'700 14px/1.2 system-ui,sans-serif',
+    textDecoration:'none', border:'1px solid #ffffff35'
+  })
+  document.body.appendChild(link)
+}
+
 function renderHome() {
+  ensureAgWhatsAppSupport()
   if (!userProfile) { renderOnboarding(); return }
   const isHi = appLanguage === 'hi'
   app.innerHTML = `
@@ -1474,7 +1505,7 @@ function renderHome() {
           </div>
           <div class="topbar-actions topbar-only-three">
             ${themeButton()}
-            <a class="support-button topbar-pill-btn" href="https://wa.me/917878025556" target="_blank" rel="noreferrer">💬 WhatsApp Support</a>
+            <a class="support-button topbar-pill-btn" href="https://wa.me/917878025556?text=Hello%20Xtreme%20AG%20Apps%2C%20I%20need%20support%20for%20AG%20Typing%20Tutor." target="_blank" rel="noreferrer">💬 WhatsApp Support · 7878025556</a>
             <button type="button" id="check-app-update-btn" class="topbar-update-pill-btn">🔄 Update</button>
           </div>
         </header>
@@ -1972,7 +2003,7 @@ function renderSection(page) {
             <h1>${section.title}</h1>
             <p>${section.description}</p>
           </div>
-          <div class="topbar-actions topbar-only-three">${themeButton()}<a class="support-button topbar-pill-btn" href="https://wa.me/917878025556" target="_blank" rel="noreferrer">💬 WhatsApp Support</a><button type="button" id="check-app-update-btn" class="topbar-update-pill-btn">🔄 Update</button></div>
+          <div class="topbar-actions topbar-only-three">${themeButton()}<a class="support-button topbar-pill-btn" href="https://wa.me/917878025556?text=Hello%20Xtreme%20AG%20Apps%2C%20I%20need%20support%20for%20AG%20Typing%20Tutor." target="_blank" rel="noreferrer">💬 WhatsApp Support · 7878025556</a><button type="button" id="check-app-update-btn" class="topbar-update-pill-btn">🔄 Update</button></div>
         </header>
 
         <section class="section-page">
