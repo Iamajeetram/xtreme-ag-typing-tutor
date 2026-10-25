@@ -8,8 +8,8 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.2.0';
-let APP_RUNTIME_INFO = { version: '1.2.0', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.3.0';
+let APP_RUNTIME_INFO = { version: '1.3.0', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 const GITHUB_REPO_CANDIDATES = [
@@ -277,6 +277,16 @@ function getRssbCandidateRoll() {
   if (userProfile && userProfile.rollNumber) return String(userProfile.rollNumber)
   if (userProfile && userProfile.mobile) return String(userProfile.mobile)
   return '248001'
+}
+
+function maskRollOrMobileForDisplay(rawVal) {
+  const s = String(rawVal || '').trim()
+  if (!s || s === '—') return '—'
+  if (s.length <= 4) return s.slice(0, 1) + '**' + s.slice(-1)
+  const first2 = s.slice(0, 2)
+  const last2 = s.slice(-2)
+  const stars = '*'.repeat(Math.max(5, s.length - 4))
+  return `${first2}${stars}${last2}`
 }
 
 async function syncUserProfileWithDisk(profileToSave = null) {
@@ -4567,7 +4577,7 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
       <div class="o19-nexus-top-left">
         <button type="button" class="o19-nexus-back-btn" id="efficiency-exit" title="${isExamHall ? 'Exit Exam Hall' : 'Back to Instructions'}">←</button>
         <div class="o19-nexus-mod-title">
-          <strong>${isExamHall ? `${efficiencyEscape(examMeta.paperLabel || (isWord ? 'MS Word 2013 Efficiency' : 'MS Excel 2013 Efficiency'))} · Exercise #${String(fileNo).padStart(2, '0')}` : `MS ${isWord ? 'Word' : 'Excel'} ${edYear} — Module ${String(fileNo).padStart(2, '0')}`}</strong>
+          <strong>${isExamHall ? `${efficiencyEscape(examMeta.paperLabel || (isWord ? 'MS Word 2013 Efficiency' : 'MS Excel 2013 Efficiency'))}` : `MS ${isWord ? 'Word' : 'Excel'} ${edYear} — Module ${String(fileNo).padStart(2, '0')}`}</strong>
           <span>${isExamHall ? `RSSB LDC EXAM HALL (MS OFFICE 2013) · ROLL NO: ${efficiencyEscape(candRoll)} · NAME: ${efficiencyEscape(candName)} · MAX MARKS: 25` : `MS OFFICE ${edYear} EDITION · 15 QUESTIONS · FULL MARKS: 25 (MARKS AT END)`}</span>
         </div>
       </div>
@@ -7304,22 +7314,22 @@ function getRssbMockExamSpec(testNo) {
   const eff1Lang = isSetA ? 'hi' : 'en'
   const eff1FileId = `WORD_${eff1Lang.toUpperCase()}_${String(effFileNo).padStart(3, '0')}`
   const eff1Title = isSetA
-    ? `हिन्दी दक्षता परीक्षण (MS Word Hindi · Ex #${String(effFileNo).padStart(2, '0')})`
-    : `अंग्रेजी दक्षता परीक्षण (MS Word English · Ex #${String(effFileNo).padStart(2, '0')})`
-  const eff1ShortTitle = isSetA ? `MS Word Hindi #${String(effFileNo).padStart(2, '0')}` : `MS Word English #${String(effFileNo).padStart(2, '0')}`
+    ? 'हिन्दी दक्षता परीक्षण (MS Word 2013 — Hindi)'
+    : 'अंग्रेजी दक्षता परीक्षण (MS Word 2013 — English)'
+  const eff1ShortTitle = isSetA ? 'MS Word 2013 (Hindi)' : 'MS Word 2013 (English)'
 
   const eff2Module = 'excel'
   const eff2Lang = isSetA ? 'en' : 'hi'
   const eff2FileId = `EXCEL_${eff2Lang.toUpperCase()}_${String(effFileNo).padStart(3, '0')}`
   const eff2Title = isSetA
-    ? `अंग्रेजी दक्षता परीक्षण (MS Excel English · Ex #${String(effFileNo).padStart(2, '0')})`
-    : `हिन्दी दक्षता परीक्षण (MS Excel Hindi · Ex #${String(effFileNo).padStart(2, '0')})`
-  const eff2ShortTitle = isSetA ? `MS Excel English #${String(effFileNo).padStart(2, '0')}` : `MS Excel Hindi #${String(effFileNo).padStart(2, '0')}`
+    ? 'अंग्रेजी दक्षता परीक्षण (MS Excel 2013 — English)'
+    : 'हिन्दी दक्षता परीक्षण (MS Excel 2013 — Hindi)'
+  const eff2ShortTitle = isSetA ? 'MS Excel 2013 (English)' : 'MS Excel 2013 (Hindi)'
 
   return {
     testNo: n,
     setCode: isSetA ? 'SET-A' : 'SET-B',
-    setTitle: isSetA ? 'Set A (Tests 1–40: Word Hindi 40→1 + Excel English 40→1)' : 'Set B (Tests 41–80: Word English 40→1 + Excel Hindi 40→1)',
+    setTitle: isSetA ? 'Set A (Tests 1–40: MS Word Hindi + MS Excel English)' : 'Set B (Tests 41–80: MS Word English + MS Excel Hindi)',
     typingExNo,
     hindiTypingId: `hi-${String(typingExNo).padStart(3, '0')}`,
     englishTypingId: `en-${String(typingExNo).padStart(3, '0')}`,
@@ -7610,7 +7620,7 @@ function openRssbLdcEntryPopup() {
               यह सेक्शन <strong>राजस्थान कर्मचारी चयन बोर्ड (RSSB) लिपिक ग्रेड-II / कनिष्ठ सहायक फेज-II</strong> के <strong>वास्तविक परीक्षा हॉल (Exam Hall Experience)</strong> के अभ्यास के लिए बनाया गया है। इसमें बोर्ड की आधिकारिक प्रक्रिया के अनुसार:
             </p>
             <ul>
-              <li>सभी जगह <strong>Roll No., Name, User ID व Password = <code>admin</code></strong> स्वतः भरा हुआ (Auto-filled) रहेगा।</li>
+              <li>सभी जगह आपका <strong>Name (<code>${escapeHtml(getRssbCandidateName())}</code>) एवं Roll No. / Contact No. (<code>${escapeHtml(getRssbCandidateRoll())}</code>)</strong> स्वतः भरा हुआ (Auto-filled) रहेगा।</li>
               <li>पहले <strong>2 मिनट</strong> की-बोर्ड एवं माउस परीक्षण (Practice Test), फिर <strong>10 मिनट हिन्दी टाइपिंग</strong> → <strong>2 मिनट ब्रेक/कन्फर्मेशन</strong> → <strong>10 मिनट अंग्रेजी टाइपिंग</strong> → <strong>2 मिनट ब्रेक</strong> → <strong>10 मिनट दक्षता-1</strong> → <strong>2 मिनट ब्रेक</strong> → <strong>10 मिनट दक्षता-2</strong> क्रमानुसार चलेंगे।</li>
               <li>परीक्षा नियमों के अनुसार <strong>Backspace पूर्णतः बंद</strong> और <strong>Text Highlight पूर्णतः बंद</strong> रहेगा।</li>
             </ul>
@@ -7623,10 +7633,10 @@ function openRssbLdcEntryPopup() {
             <span class="rssb-lang-pill">ENGLISH NOTICE · EXAM HALL GUIDELINES</span>
             <h3>Strictly for Real Exam Hall Pattern &amp; Environment Practice</h3>
             <p>
-              This module is exclusively designed to simulate the <strong>Official RSSB LDC Phase-II Exam Hall Experience</strong> across <strong>80 Full Mock Tests</strong> (mapped in reverse order from Exercise #300 and Efficiency #40):
+              This module is exclusively designed to simulate the <strong>Official RSSB LDC Phase-II Exam Hall Experience</strong> across <strong>80 Full Mock Tests</strong>:
             </p>
             <ul>
-              <li><strong>Auto-Filled Credentials:</strong> Roll No., Candidate Name, User ID, and Password are set to <strong><code>admin</code></strong> everywhere automatically.</li>
+              <li><strong>Auto-Filled Credentials:</strong> Your Profile Name (<strong><code>${escapeHtml(getRssbCandidateName())}</code></strong>) and Roll / Contact Number (<strong><code>${escapeHtml(getRssbCandidateRoll())}</code></strong>) are auto-filled everywhere automatically.</li>
               <li><strong>Sequential 4-Paper Flow:</strong> <strong>2 Min</strong> Keyboard Check → <strong>10 Min</strong> Hindi Speed Test → <strong>2 Min</strong> Break/Confirm → <strong>10 Min</strong> English Speed Test → <strong>2 Min</strong> Break → <strong>10 Min</strong> Efficiency 1 → <strong>2 Min</strong> Break → <strong>10 Min</strong> Final Efficiency 2.</li>
               <li><strong>Strict RSSB Rules:</strong> <strong>Backspace Not Allowed</strong>, <strong>Text Highlight Not Allowed</strong>, <strong>5 Characters = 1 Word</strong> keystroke metric, and separate 25-mark evaluation for all 4 papers.</li>
             </ul>
@@ -7638,7 +7648,7 @@ function openRssbLdcEntryPopup() {
 
         <div class="rssb-entry-summary-strip">
           <span><strong>80 Full Mock Exams</strong> (Set A: 1–40 · Set B: 41–80)</span>
-          <span><strong>Login / Roll No / Password:</strong> <code>admin</code></span>
+          <span><strong>Candidate:</strong> <code>${escapeHtml(getRssbCandidateName())} (${escapeHtml(getRssbCandidateRoll())})</code></span>
           <span><strong>4 Papers × 25 Marks = 100 Marks</strong> (Min 9/25 Each)</span>
         </div>
 
@@ -7703,25 +7713,14 @@ function renderRssbLdcExamHub() {
             प्रत्येक मॉक टेस्ट में बोर्ड के आधिकारिक पैटर्न के अनुसार <strong>2 मिनट की-बोर्ड जाँच</strong> + <strong>4 प्रश्न पत्र (10-10 मिनट · 25-25 अंक)</strong> + <strong>2-2 मिनट ब्रेक एवं पासवर्ड पुष्टिकरण</strong> शामिल हैं।
           </p>
           <div class="rssb-admin-cred-banner">
-            <span>🔑 <strong>Default Roll No. / User ID / Candidate Name / Password:</strong> <code>admin</code> (सभी स्थानों पर स्वतः भरा हुआ / Auto-filled everywhere in Hindi &amp; English)</span>
+            <span>👤 <strong>Candidate Name:</strong> <code>${escapeHtml(getRssbCandidateName())}</code> &nbsp;|&nbsp; 🆔 <strong>Roll No. / Contact No.:</strong> <code>${escapeHtml(getRssbCandidateRoll())}</code> (सभी स्थानों पर स्वतः भरा हुआ / Auto-filled everywhere)</span>
           </div>
         </div>
         <div class="rssb-hub-metrics">
-          <article><span>Total Mock Tests</span><strong>80</strong><small>Reverse Bank Order</small></article>
+          <article><span>Total Mock Tests</span><strong>80</strong><small>Official Exam Pattern</small></article>
           <article><span>Attempted (पूर्ण)</span><strong style="color:#2563eb;">${attemptedCount} / 80</strong><small>${80 - attemptedCount} Remaining</small></article>
           <article><span>Qualified (उत्तीर्ण)</span><strong style="color:#15803d;">${qualifiedCount}</strong><small>≥ 9/25 in all 4</small></article>
           <article><span>Best Score</span><strong style="color:#7c3aed;">${bestOverall ? bestOverall.toFixed(2) : '0.00'} / 100</strong><small>Max 100 Marks</small></article>
-        </div>
-      </section>
-
-      <section class="rssb-mapping-explainer">
-        <div class="rssb-mapping-box">
-          <strong>📋 Tests 1 to 40 (Set A — Reverse Order):</strong>
-          <span>Hindi Typing <code>#300 → #261</code> · English Typing <code>#300 → #261</code> · <strong>MS Word Hindi <code>#40 → #01</code></strong> · <strong>MS Excel English <code>#40 → #01</code></strong></span>
-        </div>
-        <div class="rssb-mapping-box">
-          <strong>📋 Tests 41 to 80 (Set B — Reverse Order):</strong>
-          <span>Hindi Typing <code>#260 → #221</code> · English Typing <code>#260 → #221</code> · <strong>MS Word English <code>#40 → #01</code></strong> · <strong>MS Excel Hindi <code>#40 → #01</code></strong></span>
         </div>
       </section>
 
@@ -7758,8 +7757,8 @@ function renderRssbLdcExamHub() {
               </div>
 
               <div class="rssb-test-papers-list">
-                <div><span>1. हिन्दी टंकण गति (10m · 25M):</span><strong>Hindi Exercise #${spec.typingExNo}</strong></div>
-                <div><span>2. अंग्रेजी टंकण गति (10m · 25M):</span><strong>English Exercise #${spec.typingExNo}</strong></div>
+                <div><span>1. हिन्दी टंकण गति (10m · 25M):</span><strong>हिन्दी टंकण (DevLys 010)</strong></div>
+                <div><span>2. अंग्रेजी टंकण गति (10m · 25M):</span><strong>English Typing (Standard)</strong></div>
                 <div><span>3. दक्षता प्रथम (10m · 25M):</span><strong>${escapeHtml(spec.eff1ShortTitle)}</strong></div>
                 <div><span>4. दक्षता द्वितीय (10m · 25M):</span><strong>${escapeHtml(spec.eff2ShortTitle)}</strong></div>
               </div>
@@ -7780,7 +7779,7 @@ function renderRssbLdcExamHub() {
                 </div>
               ` : `
                 <div class="rssb-test-unattempted-strip">
-                  <small>Duration: 46 Mins Total (2m Check + 4×10m Papers + 3×2m Breaks) · Roll No/Pass: <code>admin</code></small>
+                  <small>Duration: 46 Mins Total (2m Check + 4×10m Papers + 3×2m Breaks) · Candidate: <code>${escapeHtml(getRssbCandidateName())}</code></small>
                 </div>
               `}
 
@@ -7926,7 +7925,7 @@ function renderRssbLoginScreen(spec) {
         <span>Roll No. / रोल नं.: <strong>${escapeHtml(getRssbCandidateRoll())}</strong></span>
         <span>Name / नाम: <strong>${escapeHtml(getRssbCandidateName())}</strong></span>
         <span>User ID: <strong>${escapeHtml(getRssbCandidateRoll())}</strong></span>
-        <span>Password: <strong>admin</strong></span>
+        <span>Password: <strong>${escapeHtml(getRssbCandidateRoll())}</strong></span>
         <button type="button" class="rssb-abort-btn" id="rssb-abort-exam">✕ Exit Exam Hall</button>
       </div>
     </header>
@@ -7936,7 +7935,7 @@ function renderRssbLoginScreen(spec) {
         <section class="rssb-official-login-box">
           <h2>Login / अभ्यर्थी लॉगिन</h2>
           <p class="rssb-auto-admin-note">
-            <strong>सूचना / Note:</strong> आपका प्रोफ़ाइल नाम (<strong>${escapeHtml(getRssbCandidateName())}</strong>), रोल नं. (<code>${escapeHtml(getRssbCandidateRoll())}</code>) तथा पासवर्ड (<code>admin</code>) स्वतः भरा हुआ (Auto-filled) है।
+            <strong>सूचना / Note:</strong> आपका नाम (<strong>${escapeHtml(getRssbCandidateName())}</strong>) एवं रोल नं. / मोबाइल नं. (<code>${escapeHtml(getRssbCandidateRoll())}</code>) स्वतः भरा हुआ (Auto-filled) है।
           </p>
           <div class="rssb-login-form-row">
             <label for="rssb-userid-input">User Id / रोल नं.</label>
@@ -7944,7 +7943,7 @@ function renderRssbLoginScreen(spec) {
           </div>
           <div class="rssb-login-form-row">
             <label for="rssb-password-input">Password / पासवर्ड</label>
-            <input id="rssb-password-input" type="text" value="admin" readonly />
+            <input id="rssb-password-input" type="text" value="${escapeHtml(getRssbCandidateRoll())}" readonly />
           </div>
           <label class="rssb-guidelines-check">
             <input type="checkbox" id="rssb-guidelines-ack" checked />
@@ -7976,7 +7975,7 @@ function renderRssbLoginScreen(spec) {
                 <tr>
                   <td>1</td>
                   <td>हिन्दी टंकण गति परीक्षण (Hindi Typing Speed Test)</td>
-                  <td>Hindi Ex #${spec.typingExNo} (~400 Words)</td>
+                  <td>Hindi Passage (~400 Words · DevLys 010)</td>
                   <td>10 मिनट</td>
                   <td>25 अंक</td>
                   <td>9 अंक (SC/ST: 7.75)</td>
@@ -7984,7 +7983,7 @@ function renderRssbLoginScreen(spec) {
                 <tr>
                   <td>2</td>
                   <td>अंग्रेजी टंकण गति परीक्षण (English Typing Speed Test)</td>
-                  <td>English Ex #${spec.typingExNo} (~500 Words)</td>
+                  <td>English Passage (~500 Words · Standard)</td>
                   <td>10 मिनट</td>
                   <td>25 अंक</td>
                   <td>9 अंक (SC/ST: 7.75)</td>
@@ -7992,7 +7991,7 @@ function renderRssbLoginScreen(spec) {
                 <tr>
                   <td>3</td>
                   <td>${escapeHtml(spec.eff1Title)}</td>
-                  <td>${escapeHtml(spec.eff1FileId)} (15 Questions)</td>
+                  <td>15 Formatting Questions (MS Office 2013)</td>
                   <td>10 मिनट</td>
                   <td>25 अंक</td>
                   <td>9 अंक (SC/ST: 7.75)</td>
@@ -8000,7 +7999,7 @@ function renderRssbLoginScreen(spec) {
                 <tr>
                   <td>4</td>
                   <td>${escapeHtml(spec.eff2Title)}</td>
-                  <td>${escapeHtml(spec.eff2FileId)} (15 Questions)</td>
+                  <td>15 Formula &amp; Sheet Questions (MS Office 2013)</td>
                   <td>10 मिनट</td>
                   <td>25 अंक</td>
                   <td>9 अंक (SC/ST: 7.75)</td>
@@ -8026,7 +8025,7 @@ function renderRssbLoginScreen(spec) {
                   <li>दक्षता परीक्षा के दौरान <strong>Cut-Copy-Paste (Ctrl+X/C/V), Right Mouse Click, Select All (Ctrl+A) तथा सभी Function Keys (F1–F12)</strong> बंद रहेंगी।</li>
                   <li><strong>CTRL+Z</strong> कुंजी एवं <strong>Back-Space</strong> का उपयोग दक्षता परीक्षण में सुधार हेतु किया जा सकता है।</li>
                   <li>पहले से उपलब्ध पैराग्राफ व टेबल की सामग्री में पूछे गए टास्क के अलावा बदलाव करने या हटाने (DELETE) पर उस पैराग्राफ के किसी भी कार्य के अंक नहीं दिए जाएंगे।</li>
-                  <li>प्रत्येक चरण के पश्चात 2 मिनट के अंतराल में पासवर्ड (<code>admin</code> — स्वतः भरा हुआ) से कार्य को सत्यापित (Confirm/Approve) करना होगा।</li>
+                  <li>प्रत्येक चरण के पश्चात 2 मिनट के अंतराल में आपके रोल नं./पासवर्ड (<code>${escapeHtml(getRssbCandidateRoll())}</code> — स्वतः भरा हुआ) से कार्य को सत्यापित (Confirm/Approve) करना होगा।</li>
                 </ul>
               </div>
             </div>
@@ -8059,7 +8058,7 @@ function renderRssbKeyboardCheckScreen(spec) {
         <span class="rssb-hall-badge">STEP 1 OF 5 · PERIPHERAL TEST</span>
         <div>
           <strong>Practice Test / अभ्यास परीक्षण (Keyboard &amp; Mouse Accessories Check)</strong>
-          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Pass: admin · Mock Exam #${String(spec.testNo).padStart(2, '0')}</small>
+          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · ID: ${escapeHtml(getRssbCandidateRoll())} · Mock Exam #${String(spec.testNo).padStart(2, '0')}</small>
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
@@ -8194,7 +8193,7 @@ async function renderRssbTypingSpeedStage(spec, lang) {
   rssbExamState.speedSamples = []
 
   const root = ensureRssbExamOverlay()
-  root.innerHTML = `<div class="rssb-loading-screen"><h3>Loading ${isHi ? 'Hindi' : 'English'} Typing Speed Test (Exercise #${spec.typingExNo})...</h3></div>`
+  root.innerHTML = `<div class="rssb-loading-screen"><h3>Loading ${isHi ? 'Hindi' : 'English'} Typing Speed Test...</h3></div>`
 
   let passage = isHi ? rssbExamState.hindiPassage : rssbExamState.englishPassage
   if (!passage) {
@@ -8214,7 +8213,7 @@ async function renderRssbTypingSpeedStage(spec, lang) {
       <div class="rssb-hall-brand">
         <span class="rssb-hall-badge">${stepBadge}</span>
         <div>
-          <strong>${paperTitle} — Exercise #${spec.typingExNo}</strong>
+          <strong>${paperTitle}</strong>
           <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Full Marks: 25 · Qualifying: 9</small>
         </div>
       </div>
@@ -8459,7 +8458,7 @@ function renderRssbTypingBreakConfirmation(spec, lang, evalResult) {
         <span class="rssb-hall-badge">${isHi ? '2-MINUTE BREAK & CONFIRMATION (AFTER PAPER 1)' : '2-MINUTE BREAK & CONFIRMATION (AFTER PAPER 2)'}</span>
         <div>
           <strong>${previewHeading}</strong>
-          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Test Id: ${spec.testNo} · Password: admin</small>
+          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Test Id: ${spec.testNo} · ID: ${escapeHtml(getRssbCandidateRoll())}</small>
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
@@ -8495,10 +8494,10 @@ function renderRssbTypingBreakConfirmation(spec, lang, evalResult) {
           <div class="rssb-confirmation-card-header">CONFIRMATION / पुष्टिकरण</div>
           <div class="rssb-confirmation-card-body">
             <p><strong>Please enter your password and confirm your typed content.</strong></p>
-            <p class="rssb-note-italic"><em>Note : Here editing is not permitted. (यहाँ संपादन की अनुमति नहीं है। पासवर्ड <code>admin</code> स्वतः भरा हुआ है।)</em></p>
+            <p class="rssb-note-italic"><em>Note : Here editing is not permitted. (यहाँ संपादन की अनुमति नहीं है। आपका रोल नं./पासवर्ड स्वतः भरा हुआ है।)</em></p>
             <div class="rssb-confirm-pass-row">
               <label for="rssb-confirm-pass-input">Enter Password :</label>
-              <input id="rssb-confirm-pass-input" type="text" value="admin" readonly />
+              <input id="rssb-confirm-pass-input" type="text" value="${escapeHtml(getRssbCandidateRoll())}" readonly />
               <button type="button" class="rssb-win-btn primary" id="rssb-approve-confirm-btn">
                 Click to Approve &amp; ${nextStageLabel}
               </button>
@@ -8602,7 +8601,7 @@ function renderRssbEfficiencyConfirmation(spec, effStageNumber, effResult) {
         <span class="rssb-hall-badge">${isFirstEff ? '2-MINUTE BREAK & EFFICIENCY-1 CONFIRMATION' : 'FINAL EFFICIENCY-2 CONFIRMATION'}</span>
         <div>
           <strong>${headingHi} Confirmation Screen / Efficiency Exam Confirmation Screen</strong>
-          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Password: admin (Auto-filled)</small>
+          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Roll/ID: ${escapeHtml(getRssbCandidateRoll())} (Auto-filled)</small>
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
@@ -8617,14 +8616,14 @@ function renderRssbEfficiencyConfirmation(spec, effStageNumber, effResult) {
       <section class="rssb-classic-exam-frame">
         <div class="rssb-eff-confirm-header">
           <h2>${headingHi} Confirmation Screen</h2>
-          <h3>Efficiency Exam Confirmation Screen (${escapeHtml(effResult.shortTitle)} · ${escapeHtml(effResult.fileId)})</h3>
+          <h3>Efficiency Exam Confirmation Screen (${escapeHtml(effResult.shortTitle)})</h3>
           <p>Please enter your password and confirm your work. &nbsp;|&nbsp; <em>Note: Here editing is not permitted.</em></p>
           <div class="rssb-eff-confirm-bar">
             <span>Remaining Time: <strong id="rssb-eff-confirm-timer-inline">00:02:00</strong></span>
             <span>Roll No.: <strong>${escapeHtml(getRssbCandidateRoll())}</strong></span>
             <span>Name: <strong>${escapeHtml(getRssbCandidateName())}</strong></span>
             <label for="rssb-eff-pass-input">Enter Password:</label>
-            <input id="rssb-eff-pass-input" type="text" value="admin" readonly />
+            <input id="rssb-eff-pass-input" type="text" value="${escapeHtml(getRssbCandidateRoll())}" readonly />
             <button type="button" class="rssb-win-btn primary" id="rssb-eff-confirm-btn">${nextBtnLabel}</button>
           </div>
         </div>
@@ -8741,7 +8740,7 @@ function finalizeAndRenderRssbCompleteExamResult(spec) {
     rollNumber: getRssbCandidateRoll(),
     candidateName: getRssbCandidateName(),
     userId: getRssbCandidateRoll(),
-    password: 'admin',
+    password: getRssbCandidateRoll(),
     completedAt: new Date().toLocaleString(),
     totalMarksOutOf100,
     overallQualified,
@@ -8780,7 +8779,7 @@ function buildRssbTypingPaperDetailHTML(paper, paperNumber) {
         <div>
           <span class="rssb-paper-tag">PAPER ${paperNumber} OF 4 · TYPING SPEED TEST (10 MINUTES · 25 MARKS)</span>
           <h3>${escapeHtml(paper.paperTitle)}</h3>
-          <p>Exercise ID: <code>${escapeHtml(paper.exerciseId)}</code> (#${paper.exerciseNo}) · Roll No.: <code>${escapeHtml(getRssbCandidateRoll())}</code> · Candidate: <code>${escapeHtml(getRssbCandidateName())}</code></p>
+          <p>Candidate Name: <code>${escapeHtml(getRssbCandidateName())}</code> · Roll / Contact No.: <code>${escapeHtml(getRssbCandidateRoll())}</code></p>
         </div>
         <div class="rssb-paper-score-box ${paper.qualified ? 'pass' : 'fail'}">
           <small>Official Marks (प्राप्तांक)</small>
@@ -8907,7 +8906,7 @@ function buildRssbEfficiencyPaperDetailHTML(eff, paperNumber) {
         <div>
           <span class="rssb-paper-tag">PAPER ${paperNumber} OF 4 · EFFICIENCY TEST (10 MINUTES · 15 QUESTIONS · 25 MARKS)</span>
           <h3>${escapeHtml(eff.paperTitle)}</h3>
-          <p>Module: <code>${escapeHtml((eff.module || '').toUpperCase())}</code> · File ID: <code>${escapeHtml(eff.fileId)}</code> (#${eff.fileNo}) · Roll No.: <code>${escapeHtml(getRssbCandidateRoll())}</code> · Candidate: <code>${escapeHtml(getRssbCandidateName())}</code></p>
+          <p>Module: <code>MS ${escapeHtml((eff.module || '').toUpperCase())} 2013</code> · Candidate Name: <code>${escapeHtml(getRssbCandidateName())}</code> · Roll / Contact No.: <code>${escapeHtml(getRssbCandidateRoll())}</code></p>
         </div>
         <div class="rssb-paper-score-box ${eff.qualified ? 'pass' : 'fail'}">
           <small>Official Marks (प्राप्तांक)</small>
@@ -8990,15 +8989,15 @@ function buildRssbCompleteReportMarkup(record) {
               <span><strong>Name :</strong> <code>${escapeHtml(record.candidateName || getRssbCandidateName())}</code></span>
               <span><strong>Roll No. :</strong> <code>${escapeHtml(record.rollNumber || getRssbCandidateRoll())}</code></span>
               <span><strong>User ID :</strong> <code>${escapeHtml(record.candidateName || getRssbCandidateName())}</code></span>
-              <span><strong>Password :</strong> <code>admin</code></span>
+              <span><strong>Contact / Roll No. :</strong> <code>${escapeHtml(record.rollNumber || getRssbCandidateRoll())}</code></span>
               <span><strong>Mock Exam :</strong> <code>#${String(record.testNo).padStart(2, '0')} (${escapeHtml(record.setCode || '')})</code></span>
             </div>
           </div>
           <ul class="rssb-upload-checklist">
-            <li><span>✓</span> <strong>Hindi Typing Speed Test</strong> (हिन्दी टंकण गति परीक्षण — Ex #${p1.exerciseNo || (301 - record.testNo)})</li>
-            <li><span>✓</span> <strong>English Typing Speed Test</strong> (अंग्रेजी टंकण गति परीक्षण — Ex #${p2.exerciseNo || (301 - record.testNo)})</li>
-            <li><span>✓</span> <strong>${escapeHtml(p3.shortTitle || 'Efficiency Test 1')}</strong> (${escapeHtml(p3.fileId || '')})</li>
-            <li><span>✓</span> <strong>${escapeHtml(p4.shortTitle || 'Efficiency Test 2')}</strong> (${escapeHtml(p4.fileId || '')})</li>
+            <li><span>✓</span> <strong>Hindi Typing Speed Test</strong> (हिन्दी टंकण गति परीक्षण — DevLys 010)</li>
+            <li><span>✓</span> <strong>English Typing Speed Test</strong> (अंग्रेजी टंकण गति परीक्षण — Standard)</li>
+            <li><span>✓</span> <strong>${escapeHtml(p3.shortTitle || 'Efficiency Test 1')}</strong> (MS Office 2013)</li>
+            <li><span>✓</span> <strong>${escapeHtml(p4.shortTitle || 'Efficiency Test 2')}</strong> (MS Office 2013)</li>
           </ul>
         </section>
 
@@ -9034,7 +9033,7 @@ function buildRssbCompleteReportMarkup(record) {
             <tbody>
               <tr>
                 <td><strong>1</strong></td>
-                <td><strong>हिन्दी टंकण गति परीक्षण (Hindi Speed Test)</strong><br><small>Exercise #${p1.exerciseNo || ''} (${escapeHtml(p1.exerciseId || '')})</small></td>
+                <td><strong>हिन्दी टंकण गति परीक्षण (Hindi Speed Test)</strong><br><small>Official 10-Min Passage (DevLys 010)</small></td>
                 <td>${formatDuration(p1.durationSeconds || 0)} / 10m</td>
                 <td>25.00</td>
                 <td>9.00 <small>(SC/ST: 7.75)</small></td>
@@ -9044,7 +9043,7 @@ function buildRssbCompleteReportMarkup(record) {
               </tr>
               <tr>
                 <td><strong>2</strong></td>
-                <td><strong>अंग्रेजी टंकण गति परीक्षण (English Speed Test)</strong><br><small>Exercise #${p2.exerciseNo || ''} (${escapeHtml(p2.exerciseId || '')})</small></td>
+                <td><strong>अंग्रेजी टंकण गति परीक्षण (English Speed Test)</strong><br><small>Official 10-Min Passage (Standard)</small></td>
                 <td>${formatDuration(p2.durationSeconds || 0)} / 10m</td>
                 <td>25.00</td>
                 <td>9.00 <small>(SC/ST: 7.75)</small></td>
@@ -9054,7 +9053,7 @@ function buildRssbCompleteReportMarkup(record) {
               </tr>
               <tr>
                 <td><strong>3</strong></td>
-                <td><strong>${escapeHtml(p3.paperTitle || 'Paper 3: Efficiency Test 1')}</strong><br><small>File: ${escapeHtml(p3.fileId || '')}</small></td>
+                <td><strong>${escapeHtml(p3.paperTitle || 'Paper 3: Efficiency Test 1')}</strong><br><small>MS Office 2013 (15 Questions)</small></td>
                 <td>${formatDuration(p3.durationSeconds || 0)} / 10m</td>
                 <td>25.00</td>
                 <td>9.00 <small>(SC/ST: 7.75)</small></td>
@@ -9064,7 +9063,7 @@ function buildRssbCompleteReportMarkup(record) {
               </tr>
               <tr>
                 <td><strong>4</strong></td>
-                <td><strong>${escapeHtml(p4.paperTitle || 'Paper 4: Efficiency Test 2')}</strong><br><small>File: ${escapeHtml(p4.fileId || '')}</small></td>
+                <td><strong>${escapeHtml(p4.paperTitle || 'Paper 4: Efficiency Test 2')}</strong><br><small>MS Office 2013 (15 Questions)</small></td>
                 <td>${formatDuration(p4.durationSeconds || 0)} / 10m</td>
                 <td>25.00</td>
                 <td>9.00 <small>(SC/ST: 7.75)</small></td>
@@ -9200,10 +9199,10 @@ function openComingSoonExamModal(examName) {
 }
 
 /* ============================================================================
-   RSSB LDC DAILY LIVE PRACTICE (8:00 AM IST · GITHUB SYNC · LIVE LEADERBOARD)
+   RSSB LDC DAILY LIVE PRACTICE (8:00 AM IST · 70-DAY SERIAL GITHUB BANK · LIVE LEADERBOARD)
    ============================================================================ */
 const DAILY_LIVE_STORAGE_KEY = 'ag-rssb-daily-live-leaderboard-v1'
-const DAILY_LIVE_GITHUB_RAW_URL = `https://raw.githubusercontent.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/main/public/daily-live/daily-exam.json`
+const DAILY_LIVE_EPOCH_START_IST = '2026-10-25'
 
 const dailyLiveState = {
   loading: false,
@@ -9240,16 +9239,34 @@ function getISTHoursAndMinutes() {
   }
 }
 
-function getDefaultDailyLiveConfig() {
-  const today = getTodayISTDateString()
-  // Deterministically pick daily exercise numbers based on date if not overridden
-  const daySeed = Number(today.replace(/-/g, '')) || 20261024
-  const typingEx = 300 - (daySeed % 40)
-  const effFile = 40 - (daySeed % 40)
+function getSerialDayNumber70(dateStr = getTodayISTDateString(), startEpochStr = DAILY_LIVE_EPOCH_START_IST) {
+  try {
+    const [y1, m1, d1] = String(startEpochStr).split('-').map(Number)
+    const [y2, m2, d2] = String(dateStr).split('-').map(Number)
+    const utc1 = Date.UTC(y1, (m1 || 1) - 1, d1 || 1)
+    const utc2 = Date.UTC(y2, (m2 || 1) - 1, d2 || 1)
+    const diffDays = Math.floor((utc2 - utc1) / (24 * 3600 * 1000))
+    return (((diffDays % 70) + 70) % 70) + 1
+  } catch {
+    return 1
+  }
+}
+
+function buildSerialDayDefaultConfig(serialDayNo, today = getTodayISTDateString()) {
+  const d = Math.max(1, Math.min(70, Number(serialDayNo) || 1))
+  // Serial 1..70 mapping across the 300 typing passages and 40x2 Word/Excel efficiency sets
+  const typingEx = d // Serial Exercise 1 to 70 (or custom passage from GitHub day-XX.json)
+  const effFile = ((d - 1) % 40) + 1 // Serial Set 1 to 40, then 1 to 30
+  const isFirstHalf = d <= 35
+  const wordLang = isFirstHalf ? 'hi' : 'en'
+  const excelLang = isFirstHalf ? 'en' : 'hi'
+
   return {
-    testId: `DAILY-LDC-${today}`,
+    serialDayNo: d,
+    totalDaysInCycle: 70,
+    testId: `DAILY-LDC-${today}-DAY${String(d).padStart(2, '0')}`,
     testDate: today,
-    title: `RSSB LDC Daily Live All-Rajasthan Test (${today})`,
+    title: `RSSB LDC Daily Live All-Rajasthan Test — ${today}`,
     unlockTimeIST: '08:00',
     enforce8AMSchedule: true,
     hindiTyping: {
@@ -9262,54 +9279,154 @@ function getDefaultDailyLiveConfig() {
     },
     efficiency1: {
       module: 'word',
-      language: 'hi',
+      language: wordLang,
       fileNo: effFile,
-      title: `MS Word 2013 Hindi Efficiency (Set #${effFile})`
+      title: `MS Word 2013 (${wordLang === 'hi' ? 'Hindi' : 'English'}) Efficiency`
     },
     efficiency2: {
       module: 'excel',
-      language: 'en',
+      language: excelLang,
       fileNo: effFile,
-      title: `MS Excel 2013 English Efficiency (Set #${effFile})`
+      title: `MS Excel 2013 (${excelLang === 'en' ? 'English' : 'Hindi'}) Efficiency`
     },
     leaderboardWebhookUrl: ''
   }
 }
 
+function getDefaultDailyLiveConfig() {
+  const today = getTodayISTDateString()
+  const serialDayNo = getSerialDayNumber70(today, DAILY_LIVE_EPOCH_START_IST)
+  return buildSerialDayDefaultConfig(serialDayNo, today)
+}
+
 async function fetchDailyLiveConfigFromGitHub() {
-  const urls = [
-    `${DAILY_LIVE_GITHUB_RAW_URL}?t=${Date.now()}`,
-    `./daily-live/daily-exam.json?t=${Date.now()}`,
-    `/daily-live/daily-exam.json?t=${Date.now()}`
+  const today = getTodayISTDateString()
+  let serialDayNo = getSerialDayNumber70(today, DAILY_LIVE_EPOCH_START_IST)
+  const def = buildSerialDayDefaultConfig(serialDayNo, today)
+  const dayPad = String(serialDayNo).padStart(2, '0')
+
+  // 1. Try 70-day schedule index (public/daily-live/schedule-70days.json) on GitHub & local
+  const scheduleUrls = [
+    ...GITHUB_REPO_CANDIDATES.map(slug => `https://raw.githubusercontent.com/${slug}/main/public/daily-live/schedule-70days.json?t=${Date.now()}`),
+    `./daily-live/schedule-70days.json?t=${Date.now()}`,
+    `/daily-live/schedule-70days.json?t=${Date.now()}`
   ]
-  for (const url of urls) {
+
+  let scheduleMeta = null
+  for (const sUrl of scheduleUrls) {
     try {
-      const res = await fetch(url, { cache: 'no-store' })
+      const res = await fetch(sUrl, { cache: 'no-store' })
       if (!res.ok) continue
       const ct = res.headers.get('content-type') || ''
       if (ct.includes('text/html')) continue
-      const data = await res.json()
-      if (data && typeof data === 'object') {
-        const def = getDefaultDailyLiveConfig()
-        return {
-          ...def,
-          ...data,
-          testDate: (!data.testDate || data.testDate === 'auto') ? def.testDate : data.testDate,
-          hindiTyping: { ...def.hindiTyping, ...(data.hindiTyping || {}) },
-          englishTyping: { ...def.englishTyping, ...(data.englishTyping || {}) },
-          efficiency1: { ...def.efficiency1, ...(data.efficiency1 || {}) },
-          efficiency2: { ...def.efficiency2, ...(data.efficiency2 || {}) }
+      const sJson = await res.json()
+      if (sJson && typeof sJson === 'object') {
+        scheduleMeta = sJson
+        if (sJson.startDateIST) {
+          serialDayNo = getSerialDayNumber70(today, sJson.startDateIST)
         }
+        break
       }
     } catch {}
   }
-  return getDefaultDailyLiveConfig()
+
+  const resolvedDayPad = String(serialDayNo).padStart(2, '0')
+  const baseCfg = buildSerialDayDefaultConfig(serialDayNo, today)
+  if (scheduleMeta?.leaderboardWebhookUrl) {
+    baseCfg.leaderboardWebhookUrl = scheduleMeta.leaderboardWebhookUrl
+  }
+  if (scheduleMeta?.unlockTimeIST) {
+    baseCfg.unlockTimeIST = scheduleMeta.unlockTimeIST
+  }
+  if (typeof scheduleMeta?.enforce8AMSchedule === 'boolean') {
+    baseCfg.enforce8AMSchedule = scheduleMeta.enforce8AMSchedule
+  }
+
+  // Check if schedule-70days.json has an entry for today's serialDayNo
+  const scheduleDayEntry = Array.isArray(scheduleMeta?.days)
+    ? scheduleMeta.days.find(item => Number(item.dayNumber) === Number(serialDayNo) || item.date === today)
+    : null
+
+  // 2. Also check individual day file (public/daily-live/days/day-XX.json) on GitHub & local
+  const dayFileUrls = [
+    ...GITHUB_REPO_CANDIDATES.map(slug => `https://raw.githubusercontent.com/${slug}/main/public/daily-live/days/day-${resolvedDayPad}.json?t=${Date.now()}`),
+    `./daily-live/days/day-${resolvedDayPad}.json?t=${Date.now()}`,
+    `/daily-live/days/day-${resolvedDayPad}.json?t=${Date.now()}`
+  ]
+
+  let dayFileData = null
+  for (const dUrl of dayFileUrls) {
+    try {
+      const res = await fetch(dUrl, { cache: 'no-store' })
+      if (!res.ok) continue
+      const ct = res.headers.get('content-type') || ''
+      if (ct.includes('text/html')) continue
+      const dJson = await res.json()
+      if (dJson && typeof dJson === 'object') {
+        dayFileData = dJson
+        break
+      }
+    } catch {}
+  }
+
+  // 3. Also check daily-exam.json for global settings (like leaderboardWebhookUrl)
+  const dailyExamUrls = [
+    ...GITHUB_REPO_CANDIDATES.map(slug => `https://raw.githubusercontent.com/${slug}/main/public/daily-live/daily-exam.json?t=${Date.now()}`),
+    `./daily-live/daily-exam.json?t=${Date.now()}`,
+    `/daily-live/daily-exam.json?t=${Date.now()}`
+  ]
+  let globalExamData = null
+  for (const gUrl of dailyExamUrls) {
+    try {
+      const res = await fetch(gUrl, { cache: 'no-store' })
+      if (!res.ok) continue
+      const ct = res.headers.get('content-type') || ''
+      if (ct.includes('text/html')) continue
+      const gJson = await res.json()
+      if (gJson && typeof gJson === 'object') {
+        globalExamData = gJson
+        break
+      }
+    } catch {}
+  }
+
+  const mergedSource = {
+    ...(scheduleDayEntry || {}),
+    ...(dayFileData || {})
+  }
+
+  return {
+    ...baseCfg,
+    serialDayNo,
+    testDate: today,
+    title: mergedSource.title || `RSSB LDC Daily Live All-Rajasthan Test — ${today}`,
+    unlockTimeIST: mergedSource.unlockTimeIST || globalExamData?.unlockTimeIST || baseCfg.unlockTimeIST || '08:00',
+    enforce8AMSchedule: typeof mergedSource.enforce8AMSchedule === 'boolean'
+      ? mergedSource.enforce8AMSchedule
+      : (typeof globalExamData?.enforce8AMSchedule === 'boolean' ? globalExamData.enforce8AMSchedule : true),
+    leaderboardWebhookUrl: mergedSource.leaderboardWebhookUrl || globalExamData?.leaderboardWebhookUrl || baseCfg.leaderboardWebhookUrl || '',
+    hindiTyping: {
+      ...baseCfg.hindiTyping,
+      ...(mergedSource.hindiTyping || {})
+    },
+    englishTyping: {
+      ...baseCfg.englishTyping,
+      ...(mergedSource.englishTyping || {})
+    },
+    efficiency1: {
+      ...baseCfg.efficiency1,
+      ...(mergedSource.efficiency1 || {})
+    },
+    efficiency2: {
+      ...baseCfg.efficiency2,
+      ...(mergedSource.efficiency2 || {})
+    }
+  }
 }
 
 function isDailyLiveUnlockedNow(cfg) {
   if (!cfg || cfg.enforce8AMSchedule === false) return { unlocked: true, secondsUntil8AM: 0 }
   const today = getTodayISTDateString()
-  // If testDate is from an earlier date, it is already unlocked
   if (cfg.testDate && cfg.testDate < today) return { unlocked: true, secondsUntil8AM: 0 }
   const [unlockH, unlockM] = String(cfg.unlockTimeIST || '08:00').split(':').map(n => parseInt(n, 10) || 0)
   const ist = getISTHoursAndMinutes()
@@ -9324,7 +9441,7 @@ function isDailyLiveUnlockedNow(cfg) {
 async function fetchLiveLeaderboardEntries(cfg) {
   const testDate = cfg?.testDate || getTodayISTDateString()
   let remoteList = []
-  // 1. If a Google Apps Script / Cloud Webhook URL is configured in daily-exam.json, fetch live global entries
+  // 1. If a Google Apps Script / Cloud Webhook URL is configured, fetch live global entries
   if (cfg?.leaderboardWebhookUrl) {
     try {
       const res = await fetch(`${cfg.leaderboardWebhookUrl}?date=${encodeURIComponent(testDate)}&t=${Date.now()}`, { cache: 'no-store' })
@@ -9336,15 +9453,18 @@ async function fetchLiveLeaderboardEntries(cfg) {
     } catch {}
   }
   // 2. Also fetch from GitHub Raw daily-leaderboard.json if published
-  try {
-    const ghRes = await fetch(`https://raw.githubusercontent.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/main/public/daily-live/daily-leaderboard.json?t=${Date.now()}`, { cache: 'no-store' })
-    if (ghRes.ok) {
-      const ghData = await ghRes.json()
-      if (Array.isArray(ghData?.entries)) {
-        remoteList = [...remoteList, ...ghData.entries.filter(e => !e.testDate || e.testDate === testDate)]
+  for (const slug of GITHUB_REPO_CANDIDATES) {
+    try {
+      const ghRes = await fetch(`https://raw.githubusercontent.com/${slug}/main/public/daily-live/daily-leaderboard.json?t=${Date.now()}`, { cache: 'no-store' })
+      if (ghRes.ok) {
+        const ghData = await ghRes.json()
+        if (Array.isArray(ghData?.entries)) {
+          remoteList = [...remoteList, ...ghData.entries.filter(e => !e.testDate || e.testDate === testDate)]
+          break
+        }
       }
-    }
-  } catch {}
+    } catch {}
+  }
 
   // 3. Merge with local attempts submitted on this machine for today's test
   let localAll = {}
@@ -9376,6 +9496,7 @@ async function fetchLiveLeaderboardEntries(cfg) {
 
 async function submitRssbDailyLiveAttempt(fullRecord, spec) {
   const testDate = spec.dailyTestDate || getTodayISTDateString()
+  // Note: full unmasked rollNumber is sent to the Admin's Google Sheet, while UI masks it with *****
   const entry = {
     testDate,
     testId: spec.dailyTestId || `DAILY-${testDate}`,
@@ -9394,7 +9515,6 @@ async function submitRssbDailyLiveAttempt(fullRecord, spec) {
     fullRecord
   }
 
-  // Save locally for this date
   try {
     const all = JSON.parse(localStorage.getItem(DAILY_LIVE_STORAGE_KEY) || '{}')
     if (!Array.isArray(all[testDate])) all[testDate] = []
@@ -9402,7 +9522,6 @@ async function submitRssbDailyLiveAttempt(fullRecord, spec) {
     localStorage.setItem(DAILY_LIVE_STORAGE_KEY, JSON.stringify(all))
   } catch {}
 
-  // Post to live cloud webhook if configured
   const webhookUrl = dailyLiveState.config?.leaderboardWebhookUrl
   if (webhookUrl && navigator.onLine) {
     try {
@@ -9419,6 +9538,7 @@ function renderRssbDailyLiveHub() {
   const isOnline = navigator.onLine
   const candName = getRssbCandidateName()
   const candRoll = getRssbCandidateRoll()
+  const maskedCandRoll = maskRollOrMobileForDisplay(candRoll)
   const cfg = dailyLiveState.config || getDefaultDailyLiveConfig()
   const unlockInfo = isDailyLiveUnlockedNow(cfg)
   const board = dailyLiveState.leaderboard || []
@@ -9456,11 +9576,11 @@ function renderRssbDailyLiveHub() {
           </div>
           <h2 style="color:#fff;margin:0 0 6px;font-size:24px;">${escapeHtml(cfg.title || 'RSSB LDC Daily Live All-Rajasthan Test')}</h2>
           <p style="color:#cbd5e1;margin:0 0 12px;font-size:13.5px;line-height:1.6;">
-            प्रतिदिन <strong>सुबह ${escapeHtml(cfg.unlockTimeIST || '08:00')} बजे</strong> GitHub से नया लाइव टेस्ट (हिन्दी टाइपिंग + अंग्रेजी टाइपिंग + MS Word 2013 दक्षता + MS Excel 2013 दक्षता) स्वतः सक्रिय होता है।
+            प्रतिदिन <strong>सुबह ${escapeHtml(cfg.unlockTimeIST || '08:00')} बजे (IST)</strong> नया लाइव टेस्ट (हिन्दी टाइपिंग + अंग्रेजी टाइपिंग + MS Word 2013 दक्षता + MS Excel 2013 दक्षता) स्वतः सक्रिय होता है।
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;background:rgba(15,23,42,0.55);padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);font-size:12.5px;">
             <span>👤 <strong>Candidate Name:</strong> <code style="color:#fde047;font-size:13px;">${escapeHtml(candName)}</code></span>
-            <span>🆔 <strong>Roll No. / ID:</strong> <code style="color:#93c5fd;">${escapeHtml(candRoll)}</code></span>
+            <span>🔒 <strong>Roll / Mobile (Secured):</strong> <code style="color:#93c5fd;">${escapeHtml(maskedCandRoll)}</code></span>
             <span>📅 <strong>Test Date:</strong> <code>${escapeHtml(cfg.testDate)}</code></span>
             <button type="button" id="daily-live-edit-name-btn" style="background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.3);padding:3px 9px;border-radius:6px;font-size:11.5px;font-weight:700;cursor:pointer;">✏️ Change Name</button>
           </div>
@@ -9485,11 +9605,10 @@ function renderRssbDailyLiveHub() {
         <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
           <div>
             <h3 style="margin:0;font-size:18px;color:#0f172a;">📋 आज के लाइव टेस्ट के चारों प्रश्न-पत्र (Today's 4 Live Papers — 100 Marks)</h3>
-            <small style="color:#64748b;font-weight:600;">Synced live from GitHub · Exact RSSB LDC Exam Hall Flow (MS Office 2013)</small>
+            <small style="color:#64748b;font-weight:600;">Automatic Daily 08:00 AM IST Test · Exact RSSB LDC Exam Hall Flow (MS Office 2013)</small>
           </div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;">
-            <button type="button" class="secondary-button" id="daily-live-sync-github-btn" style="padding:7px 13px;font-size:12px;font-weight:700;border-radius:8px;">🔄 Sync Latest from GitHub</button>
-            <button type="button" class="secondary-button" id="daily-live-admin-gen-btn" style="padding:7px 13px;font-size:12px;font-weight:700;border-radius:8px;background:#f8fafc;">⚙️ Admin: Daily GitHub File Generator</button>
+            <button type="button" class="primary-button" id="daily-live-sync-github-btn" style="padding:8px 16px;font-size:12.5px;font-weight:800;border-radius:9px;">🔄 Sync Today's Test</button>
           </div>
         </div>
 
@@ -9497,22 +9616,22 @@ function renderRssbDailyLiveHub() {
           <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;">
             <small style="color:#2563eb;font-weight:800;font-size:11px;">PAPER 1 · 10 MIN · 25 MARKS</small>
             <strong style="display:block;font-size:14px;color:#0f172a;margin-top:3px;">हिन्दी टंकण गति (DevLys 010)</strong>
-            <span style="font-size:12px;color:#64748b;">${cfg.hindiTyping?.customPassage ? 'Custom GitHub Live Passage' : `Exercise #${cfg.hindiTyping?.exerciseNo || 300}`}</span>
+            <span style="font-size:12px;color:#64748b;">Today's Official Hindi Passage</span>
           </div>
           <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;">
             <small style="color:#2563eb;font-weight:800;font-size:11px;">PAPER 2 · 10 MIN · 25 MARKS</small>
             <strong style="display:block;font-size:14px;color:#0f172a;margin-top:3px;">English Typing Speed Test</strong>
-            <span style="font-size:12px;color:#64748b;">${cfg.englishTyping?.customPassage ? 'Custom GitHub Live Passage' : `Exercise #${cfg.englishTyping?.exerciseNo || 300}`}</span>
+            <span style="font-size:12px;color:#64748b;">Today's Official English Passage</span>
           </div>
           <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;">
             <small style="color:#1e40af;font-weight:800;font-size:11px;">PAPER 3 · 10 MIN · 25 MARKS</small>
             <strong style="display:block;font-size:14px;color:#0f172a;margin-top:3px;">MS Word 2013 Efficiency</strong>
-            <span style="font-size:12px;color:#64748b;">Set #${cfg.efficiency1?.fileNo || 40} (${(cfg.efficiency1?.language || 'hi').toUpperCase()})</span>
+            <span style="font-size:12px;color:#64748b;">15 Tasks (${(cfg.efficiency1?.language || 'hi') === 'hi' ? 'Hindi' : 'English'} Formatting)</span>
           </div>
           <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;">
             <small style="color:#15803d;font-weight:800;font-size:11px;">PAPER 4 · 10 MIN · 25 MARKS</small>
             <strong style="display:block;font-size:14px;color:#0f172a;margin-top:3px;">MS Excel 2013 Efficiency</strong>
-            <span style="font-size:12px;color:#64748b;">Set #${cfg.efficiency2?.fileNo || 40} (${(cfg.efficiency2?.language || 'en').toUpperCase()})</span>
+            <span style="font-size:12px;color:#64748b;">15 Tasks (${(cfg.efficiency2?.language || 'en') === 'en' ? 'English' : 'Hindi'} Worksheet)</span>
           </div>
         </div>
 
@@ -9544,30 +9663,31 @@ function renderRssbDailyLiveHub() {
         <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
           <div>
             <h3 style="margin:0;font-size:18px;color:#0f172a;">🏆 Live Rank Leaderboard — ${escapeHtml(cfg.testDate)} (रैंक-वाइज परिणाम तालिका)</h3>
-            <small style="color:#64748b;font-weight:600;">Sorted by Total Marks (out of 100) · Shows Candidate Name &amp; All 4 Separate Paper Scores</small>
+            <small style="color:#64748b;font-weight:600;">Sorted by Total Marks (out of 100) · Candidate Roll/Contact Number is Privacy-Protected (xx******xx)</small>
           </div>
           <button type="button" class="secondary-button" id="daily-live-refresh-rank-btn" style="padding:7px 14px;font-size:12.5px;font-weight:700;border-radius:8px;">🔄 Refresh Live Ranks</button>
         </div>
 
         <div style="overflow-x:auto;">
-          <table class="rssb-audit-table" style="width:100%;border-collapse:collapse;font-size:13px;">
+          <table class="rssb-audit-table daily-live-rank-table" style="width:100%;border-collapse:collapse;font-size:13px;">
             <thead>
-              <tr style="background:#0f172a;color:#ffffff;">
-                <th style="padding:10px 12px;text-align:center;">Rank</th>
-                <th style="padding:10px 12px;text-align:left;">Candidate Name (अभ्यर्थी का नाम)</th>
-                <th style="padding:10px 12px;text-align:left;">Roll No. / ID</th>
-                <th style="padding:10px 12px;text-align:center;">1. Hindi Typing<br><small>(25 Marks)</small></th>
-                <th style="padding:10px 12px;text-align:center;">2. English Typing<br><small>(25 Marks)</small></th>
-                <th style="padding:10px 12px;text-align:center;">3. Word 2013 Eff.<br><small>(25 Marks)</small></th>
-                <th style="padding:10px 12px;text-align:center;">4. Excel 2013 Eff.<br><small>(25 Marks)</small></th>
-                <th style="padding:10px 12px;text-align:center;">Total Marks<br><small>(Out of 100)</small></th>
-                <th style="padding:10px 12px;text-align:center;">Result / Action</th>
+              <tr style="background:#0f172a !important;color:#ffffff !important;">
+                <th style="padding:10px 12px;text-align:center;background:#0f172a !important;color:#ffffff !important;">Rank</th>
+                <th style="padding:10px 12px;text-align:left;background:#0f172a !important;color:#ffffff !important;">Candidate Name (अभ्यर्थी का नाम)</th>
+                <th style="padding:10px 12px;text-align:left;background:#0f172a !important;color:#ffffff !important;">Roll / ID (Secured)</th>
+                <th style="padding:10px 12px;text-align:center;background:#0f172a !important;color:#ffffff !important;">1. Hindi Typing<br><small style="color:#cbd5e1;">(25 Marks)</small></th>
+                <th style="padding:10px 12px;text-align:center;background:#0f172a !important;color:#ffffff !important;">2. English Typing<br><small style="color:#cbd5e1;">(25 Marks)</small></th>
+                <th style="padding:10px 12px;text-align:center;background:#0f172a !important;color:#ffffff !important;">3. Word 2013 Eff.<br><small style="color:#cbd5e1;">(25 Marks)</small></th>
+                <th style="padding:10px 12px;text-align:center;background:#0f172a !important;color:#ffffff !important;">4. Excel 2013 Eff.<br><small style="color:#cbd5e1;">(25 Marks)</small></th>
+                <th style="padding:10px 12px;text-align:center;background:#0f172a !important;color:#ffffff !important;">Total Marks<br><small style="color:#cbd5e1;">(Out of 100)</small></th>
+                <th style="padding:10px 12px;text-align:center;background:#0f172a !important;color:#ffffff !important;">Result / Action</th>
               </tr>
             </thead>
             <tbody>
               ${board.length ? board.map((row, idx) => {
                 const isMe = String(row.candidateName).toLowerCase() === String(candName).toLowerCase() && String(row.rollNumber) === String(candRoll)
                 const medal = row.rank === 1 ? '🥇 #1' : row.rank === 2 ? '🥈 #2' : row.rank === 3 ? '🥉 #3' : `#${row.rank}`
+                const safeMaskedRoll = maskRollOrMobileForDisplay(row.rollNumber)
                 return `
                   <tr style="background:${isMe ? '#eff6ff' : (idx % 2 === 0 ? '#ffffff' : '#f8fafc')};font-weight:${isMe ? '700' : '500'};border-bottom:1px solid #e2e8f0;">
                     <td style="padding:10px 12px;text-align:center;font-weight:800;color:${row.rank <= 3 ? '#b45309' : '#1e293b'};">${medal}</td>
@@ -9575,7 +9695,7 @@ function renderRssbDailyLiveHub() {
                       <strong>${escapeHtml(row.candidateName)}</strong>
                       ${isMe ? `<span style="background:#2563eb;color:#fff;font-size:10px;padding:2px 6px;border-radius:999px;margin-left:6px;">YOU</span>` : ''}
                     </td>
-                    <td style="padding:10px 12px;font-family:monospace;">${escapeHtml(row.rollNumber || '—')}</td>
+                    <td style="padding:10px 12px;font-family:monospace;color:#475569;">${escapeHtml(safeMaskedRoll)}</td>
                     <td style="padding:10px 12px;text-align:center;"><strong>${Number(row.hindiMarks || 0).toFixed(2)}</strong> <small style="color:#64748b;">(${Number(row.hindiWpm || 0).toFixed(0)} WPM)</small></td>
                     <td style="padding:10px 12px;text-align:center;"><strong>${Number(row.englishMarks || 0).toFixed(2)}</strong> <small style="color:#64748b;">(${Number(row.englishWpm || 0).toFixed(0)} WPM)</small></td>
                     <td style="padding:10px 12px;text-align:center;"><strong>${Number(row.wordEffMarks || 0).toFixed(2)}</strong> / 25</td>
@@ -9614,7 +9734,6 @@ async function attachRssbDailyLiveHub() {
 
   if (!navigator.onLine) return
 
-  // Fetch latest config & leaderboard on open if not recently fetched
   if (!dailyLiveState.config || !dailyLiveState.lastFetchedAt || (Date.now() - dailyLiveState.lastFetchedAt > 15000)) {
     dailyLiveState.lastFetchedAt = Date.now()
     fetchDailyLiveConfigFromGitHub().then(async (cfg) => {
@@ -9629,7 +9748,6 @@ async function attachRssbDailyLiveHub() {
     })
   }
 
-  // If waiting for 8:00 AM unlock, run live countdown timer
   const cfg = dailyLiveState.config || getDefaultDailyLiveConfig()
   const unlockInfo = isDailyLiveUnlockedNow(cfg)
   if (!unlockInfo.unlocked) {
@@ -9648,7 +9766,7 @@ async function attachRssbDailyLiveHub() {
 
   document.querySelector('#daily-live-sync-github-btn')?.addEventListener('click', async (e) => {
     const btn = e.currentTarget
-    btn.textContent = '⏳ Syncing from GitHub...'
+    btn.textContent = "⏳ Syncing Today's Test..."
     dailyLiveState.config = await fetchDailyLiveConfigFromGitHub()
     dailyLiveState.leaderboard = await fetchLiveLeaderboardEntries(dailyLiveState.config)
     dailyLiveState.lastFetchedAt = Date.now()
@@ -9665,7 +9783,7 @@ async function attachRssbDailyLiveHub() {
   document.querySelector('#daily-live-edit-name-btn')?.addEventListener('click', () => {
     const nextName = prompt('Enter your Candidate Name (अभ्यर्थी का नाम — यही नाम Exam और Live Rank में दिखेगा):', getRssbCandidateName())
     if (!nextName || !nextName.trim()) return
-    const nextRoll = prompt('Enter your Roll Number / Mobile ID:', getRssbCandidateRoll()) || getRssbCandidateRoll()
+    const nextRoll = prompt('Enter your Roll Number / Mobile Number:', getRssbCandidateRoll()) || getRssbCandidateRoll()
     userProfile = {
       ...(userProfile || {}),
       id: userProfile?.id || `ag-${Date.now()}`,
@@ -9676,10 +9794,6 @@ async function attachRssbDailyLiveHub() {
     }
     syncUserProfileWithDisk(userProfile)
     renderSection('rssb-daily-live')
-  })
-
-  document.querySelector('#daily-live-admin-gen-btn')?.addEventListener('click', () => {
-    openDailyLiveAdminGeneratorModal()
   })
 
   document.querySelectorAll('[data-daily-view-idx]').forEach(btn => {
@@ -9702,14 +9816,14 @@ async function attachRssbDailyLiveHub() {
 
 async function launchRssbDailyLiveExamSession(cfg) {
   stopRssbExamTimer()
-  const hiEx = Number(cfg.hindiTyping?.exerciseNo) || 300
-  const enEx = Number(cfg.englishTyping?.exerciseNo) || 300
+  const hiEx = Number(cfg.hindiTyping?.exerciseNo) || 1
+  const enEx = Number(cfg.englishTyping?.exerciseNo) || 1
   const eff1Mod = cfg.efficiency1?.module || 'word'
   const eff1Lang = cfg.efficiency1?.language || 'hi'
-  const eff1No = Number(cfg.efficiency1?.fileNo) || 40
+  const eff1No = Number(cfg.efficiency1?.fileNo) || 1
   const eff2Mod = cfg.efficiency2?.module || 'excel'
   const eff2Lang = cfg.efficiency2?.language || 'en'
-  const eff2No = Number(cfg.efficiency2?.fileNo) || 40
+  const eff2No = Number(cfg.efficiency2?.fileNo) || 1
 
   const spec = {
     testNo: 81,
@@ -9725,13 +9839,13 @@ async function launchRssbDailyLiveExamSession(cfg) {
     eff1Module: eff1Mod,
     eff1Lang: eff1Lang,
     eff1FileId: efficiencyFileId(eff1Mod, eff1Lang, eff1No),
-    eff1Title: cfg.efficiency1?.title || `MS Word 2013 (${eff1Lang.toUpperCase()}) Efficiency #${eff1No}`,
-    eff1ShortTitle: `MS ${eff1Mod === 'word' ? 'Word' : 'Excel'} 2013 (${eff1Lang.toUpperCase()}) #${eff1No}`,
+    eff1Title: `MS Word 2013 (${eff1Lang === 'hi' ? 'Hindi' : 'English'}) Efficiency`,
+    eff1ShortTitle: `MS ${eff1Mod === 'word' ? 'Word' : 'Excel'} 2013 (${eff1Lang === 'hi' ? 'Hindi' : 'English'})`,
     eff2Module: eff2Mod,
     eff2Lang: eff2Lang,
     eff2FileId: efficiencyFileId(eff2Mod, eff2Lang, eff2No),
-    eff2Title: cfg.efficiency2?.title || `MS Excel 2013 (${eff2Lang.toUpperCase()}) Efficiency #${eff2No}`,
-    eff2ShortTitle: `MS ${eff2Mod === 'word' ? 'Word' : 'Excel'} 2013 (${eff2Lang.toUpperCase()}) #${eff2No}`
+    eff2Title: `MS Excel 2013 (${eff2Lang === 'en' ? 'English' : 'Hindi'}) Efficiency`,
+    eff2ShortTitle: `MS ${eff2Mod === 'word' ? 'Word' : 'Excel'} 2013 (${eff2Lang === 'en' ? 'English' : 'Hindi'})`
   }
 
   rssbExamState.activeTestNo = spec.testNo
@@ -9755,106 +9869,4 @@ async function launchRssbDailyLiveExamSession(cfg) {
   } else {
     loadRssbTypingPassage('en', enEx).then(txt => { rssbExamState.englishPassage = txt })
   }
-}
-
-function openDailyLiveAdminGeneratorModal() {
-  document.querySelector('#ag-daily-admin-modal')?.remove()
-  const cfg = dailyLiveState.config || getDefaultDailyLiveConfig()
-  const overlay = document.createElement('div')
-  overlay.id = 'ag-daily-admin-modal'
-  overlay.className = 'rssb-modal-overlay'
-  overlay.innerHTML = `
-    <section class="rssb-entry-dialog" role="dialog" aria-modal="true" style="max-width:760px;">
-      <div class="rssb-entry-top-banner">
-        <span class="rssb-crest-icon">⚙️</span>
-        <div>
-          <small>ADMIN PANEL · GITHUB DAILY LIVE TEST PUBLISHER</small>
-          <h2>Prepare Daily Live Test JSON (public/daily-live/daily-exam.json)</h2>
-        </div>
-        <button type="button" class="rssb-modal-close-x" id="ag-da-close-x">×</button>
-      </div>
-      <div class="rssb-entry-body" style="padding:20px 24px;max-height:80vh;overflow-y:auto;">
-        <p style="margin:0 0 12px;font-size:13px;color:#334155;">
-          यहाँ से आप प्रतिदिन के <strong>चारों पेपर्स (Hindi Passage, English Passage, Word 2013 Efficiency, Excel 2013 Efficiency)</strong> और <strong>सुबह 08:00 बजे</strong> का समय सेट करके JSON कॉपी कर सकते हैं और सीधे अपने GitHub के <code>public/daily-live/daily-exam.json</code> में पेस्ट कर सकते हैं:
-        </p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px;">
-          <label style="font-size:12px;font-weight:700;">Test Date (YYYY-MM-DD or auto)<input id="da-date" type="text" value="${escapeHtml(cfg.testDate || getTodayISTDateString())}" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"></label>
-          <label style="font-size:12px;font-weight:700;">Unlock Time (IST)<input id="da-time" type="text" value="${escapeHtml(cfg.unlockTimeIST || '08:00')}" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"></label>
-          <label style="font-size:12px;font-weight:700;">Enforce 8:00 AM Lock<select id="da-lock" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"><option value="true" ${cfg.enforce8AMSchedule !== false ? 'selected' : ''}>Yes (Unlock at 8:00 AM)</option><option value="false" ${cfg.enforce8AMSchedule === false ? 'selected' : ''}>No (Unlock Immediately)</option></select></label>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px;">
-          <label style="font-size:12px;font-weight:700;">Paper 1: Hindi Exercise # (1-300)<input id="da-hi-no" type="number" min="1" max="300" value="${cfg.hindiTyping?.exerciseNo || 300}" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"></label>
-          <label style="font-size:12px;font-weight:700;">Paper 2: English Exercise # (1-300)<input id="da-en-no" type="number" min="1" max="300" value="${cfg.englishTyping?.exerciseNo || 300}" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"></label>
-        </div>
-        <label style="font-size:12px;font-weight:700;display:block;margin-bottom:10px;">Optional Custom Hindi Passage (यदि खाली छोड़ेंगे तो Exercise # का पैसेज चलेगा):
-          <textarea id="da-hi-txt" rows="3" class="hindi-devlys-font" placeholder="यहाँ आज का नया हिन्दी पैसेज पेस्ट करें..." style="width:100%;padding:8px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;">${escapeHtml(cfg.hindiTyping?.customPassage || '')}</textarea>
-        </label>
-        <label style="font-size:12px;font-weight:700;display:block;margin-bottom:10px;">Optional Custom English Passage (Leave blank to use Exercise #):
-          <textarea id="da-en-txt" rows="3" placeholder="Paste today's custom English passage here..." style="width:100%;padding:8px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;">${escapeHtml(cfg.englishTyping?.customPassage || '')}</textarea>
-        </label>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px;">
-          <label style="font-size:12px;font-weight:700;">Paper 3 (MS Word 2013 Set # 1-40 &amp; Lang)
-            <div style="display:flex;gap:6px;margin-top:4px;">
-              <select id="da-w-lang" style="padding:7px;border:1px solid #cbd5e1;border-radius:6px;"><option value="hi" ${cfg.efficiency1?.language !== 'en' ? 'selected' : ''}>Hindi</option><option value="en" ${cfg.efficiency1?.language === 'en' ? 'selected' : ''}>English</option></select>
-              <input id="da-w-no" type="number" min="1" max="40" value="${cfg.efficiency1?.fileNo || 40}" style="flex:1;padding:7px;border:1px solid #cbd5e1;border-radius:6px;">
-            </div>
-          </label>
-          <label style="font-size:12px;font-weight:700;">Paper 4 (MS Excel 2013 Set # 1-40 &amp; Lang)
-            <div style="display:flex;gap:6px;margin-top:4px;">
-              <select id="da-x-lang" style="padding:7px;border:1px solid #cbd5e1;border-radius:6px;"><option value="en" ${cfg.efficiency2?.language !== 'hi' ? 'selected' : ''}>English</option><option value="hi" ${cfg.efficiency2?.language === 'hi' ? 'selected' : ''}>Hindi</option></select>
-              <input id="da-x-no" type="number" min="1" max="40" value="${cfg.efficiency2?.fileNo || 40}" style="flex:1;padding:7px;border:1px solid #cbd5e1;border-radius:6px;">
-            </div>
-          </label>
-        </div>
-        <label style="font-size:12px;font-weight:700;display:block;margin-bottom:14px;">Live Leaderboard Google Apps Script Web App URL (for global live rank sync across all students):
-          <input id="da-webhook" type="text" value="${escapeHtml(cfg.leaderboardWebhookUrl || '')}" placeholder="https://script.google.com/macros/s/.../exec" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;">
-        </label>
-        <div style="display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
-          <button type="button" class="secondary-button" id="ag-da-close-btn">Close</button>
-          <button type="button" class="primary-button" id="ag-da-copy-btn">📋 Copy JSON for GitHub (daily-exam.json)</button>
-        </div>
-      </div>
-    </section>
-  `
-  document.body.appendChild(overlay)
-  const close = () => overlay.remove()
-  overlay.querySelector('#ag-da-close-x')?.addEventListener('click', close)
-  overlay.querySelector('#ag-da-close-btn')?.addEventListener('click', close)
-  overlay.querySelector('#ag-da-copy-btn')?.addEventListener('click', async () => {
-    const dVal = overlay.querySelector('#da-date').value.trim() || 'auto'
-    const newJson = {
-      testId: `DAILY-LDC-${dVal}`,
-      testDate: dVal,
-      title: `RSSB LDC Daily Live All-Rajasthan Test (${dVal})`,
-      unlockTimeIST: overlay.querySelector('#da-time').value.trim() || '08:00',
-      enforce8AMSchedule: overlay.querySelector('#da-lock').value === 'true',
-      hindiTyping: {
-        exerciseNo: Number(overlay.querySelector('#da-hi-no').value) || 300,
-        customPassage: overlay.querySelector('#da-hi-txt').value.trim()
-      },
-      englishTyping: {
-        exerciseNo: Number(overlay.querySelector('#da-en-no').value) || 300,
-        customPassage: overlay.querySelector('#da-en-txt').value.trim()
-      },
-      efficiency1: {
-        module: 'word',
-        language: overlay.querySelector('#da-w-lang').value,
-        fileNo: Number(overlay.querySelector('#da-w-no').value) || 40,
-        title: `MS Word 2013 Efficiency Set #${overlay.querySelector('#da-w-no').value}`
-      },
-      efficiency2: {
-        module: 'excel',
-        language: overlay.querySelector('#da-x-lang').value,
-        fileNo: Number(overlay.querySelector('#da-x-no').value) || 40,
-        title: `MS Excel 2013 Efficiency Set #${overlay.querySelector('#da-x-no').value}`
-      },
-      leaderboardWebhookUrl: overlay.querySelector('#da-webhook').value.trim()
-    }
-    dailyLiveState.config = newJson
-    const str = JSON.stringify(newJson, null, 2)
-    try { await navigator.clipboard.writeText(str) } catch {}
-    alert('Copied JSON to clipboard! Paste this into public/daily-live/daily-exam.json on GitHub.')
-    close()
-    renderSection('rssb-daily-live')
-  })
 }

@@ -1,0 +1,27 @@
+{
+  "dayNumber": 2,
+  "date": "2026-10-26",
+  "unlockTimeIST": "08:00",
+  "enforce8AMSchedule": true,
+  "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-10-26",
+  "hindiTyping": {
+    "exerciseNo": 2,
+    "customPassage": ""
+  },
+  "englishTyping": {
+    "exerciseNo": 2,
+    "customPassage": ""
+  },
+  "efficiency1": {
+    "module": "word",
+    "language": "hi",
+    "fileNo": 2,
+    "title": "MS Word 2013 (Hindi) Efficiency"
+  },
+  "efficiency2": {
+    "module": "excel",
+    "language": "en",
+    "fileNo": 2,
+    "title": "MS Excel 2013 (English) Efficiency"
+  }
+}

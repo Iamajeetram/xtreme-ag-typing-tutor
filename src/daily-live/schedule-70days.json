@@ -1,0 +1,1900 @@
+{
+  "startDateIST": "2026-10-25",
+  "totalDays": 70,
+  "unlockTimeIST": "08:00",
+  "enforce8AMSchedule": true,
+  "leaderboardWebhookUrl": "",
+  "note": "70-Day Automated Serial Schedule for RSSB LDC Daily Live Test (08:00 AM IST). Edit any day in days/day-01.json .. day-70.json to put custom passages.",
+  "days": [
+    {
+      "dayNumber": 1,
+      "date": "2026-10-25",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-10-25",
+      "hindiTyping": {
+        "exerciseNo": 1,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 1,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 1,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 1,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 2,
+      "date": "2026-10-26",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-10-26",
+      "hindiTyping": {
+        "exerciseNo": 2,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 2,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 2,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 2,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 3,
+      "date": "2026-10-27",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-10-27",
+      "hindiTyping": {
+        "exerciseNo": 3,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 3,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 3,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 3,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 4,
+      "date": "2026-10-28",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-10-28",
+      "hindiTyping": {
+        "exerciseNo": 4,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 4,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 4,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 4,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 5,
+      "date": "2026-10-29",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-10-29",
+      "hindiTyping": {
+        "exerciseNo": 5,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 5,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 5,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 5,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 6,
+      "date": "2026-10-30",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-10-30",
+      "hindiTyping": {
+        "exerciseNo": 6,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 6,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 6,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 6,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 7,
+      "date": "2026-10-31",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-10-31",
+      "hindiTyping": {
+        "exerciseNo": 7,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 7,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 7,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 7,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 8,
+      "date": "2026-11-01",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-01",
+      "hindiTyping": {
+        "exerciseNo": 8,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 8,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 8,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 8,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 9,
+      "date": "2026-11-02",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-02",
+      "hindiTyping": {
+        "exerciseNo": 9,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 9,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 9,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 9,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 10,
+      "date": "2026-11-03",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-03",
+      "hindiTyping": {
+        "exerciseNo": 10,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 10,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 10,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 10,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 11,
+      "date": "2026-11-04",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-04",
+      "hindiTyping": {
+        "exerciseNo": 11,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 11,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 11,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 11,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 12,
+      "date": "2026-11-05",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-05",
+      "hindiTyping": {
+        "exerciseNo": 12,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 12,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 12,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 12,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 13,
+      "date": "2026-11-06",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-06",
+      "hindiTyping": {
+        "exerciseNo": 13,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 13,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 13,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 13,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 14,
+      "date": "2026-11-07",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-07",
+      "hindiTyping": {
+        "exerciseNo": 14,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 14,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 14,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 14,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 15,
+      "date": "2026-11-08",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-08",
+      "hindiTyping": {
+        "exerciseNo": 15,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 15,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 15,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 15,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 16,
+      "date": "2026-11-09",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-09",
+      "hindiTyping": {
+        "exerciseNo": 16,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 16,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 16,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 16,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 17,
+      "date": "2026-11-10",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-10",
+      "hindiTyping": {
+        "exerciseNo": 17,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 17,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 17,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 17,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 18,
+      "date": "2026-11-11",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-11",
+      "hindiTyping": {
+        "exerciseNo": 18,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 18,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 18,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 18,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 19,
+      "date": "2026-11-12",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-12",
+      "hindiTyping": {
+        "exerciseNo": 19,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 19,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 19,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 19,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 20,
+      "date": "2026-11-13",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-13",
+      "hindiTyping": {
+        "exerciseNo": 20,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 20,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 20,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 20,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 21,
+      "date": "2026-11-14",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-14",
+      "hindiTyping": {
+        "exerciseNo": 21,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 21,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 21,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 21,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 22,
+      "date": "2026-11-15",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-15",
+      "hindiTyping": {
+        "exerciseNo": 22,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 22,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 22,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 22,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 23,
+      "date": "2026-11-16",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-16",
+      "hindiTyping": {
+        "exerciseNo": 23,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 23,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 23,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 23,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 24,
+      "date": "2026-11-17",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-17",
+      "hindiTyping": {
+        "exerciseNo": 24,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 24,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 24,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 24,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 25,
+      "date": "2026-11-18",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-18",
+      "hindiTyping": {
+        "exerciseNo": 25,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 25,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 25,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 25,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 26,
+      "date": "2026-11-19",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-19",
+      "hindiTyping": {
+        "exerciseNo": 26,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 26,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 26,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 26,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 27,
+      "date": "2026-11-20",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-20",
+      "hindiTyping": {
+        "exerciseNo": 27,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 27,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 27,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 27,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 28,
+      "date": "2026-11-21",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-21",
+      "hindiTyping": {
+        "exerciseNo": 28,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 28,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 28,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 28,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 29,
+      "date": "2026-11-22",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-22",
+      "hindiTyping": {
+        "exerciseNo": 29,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 29,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 29,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 29,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 30,
+      "date": "2026-11-23",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-23",
+      "hindiTyping": {
+        "exerciseNo": 30,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 30,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 30,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 30,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 31,
+      "date": "2026-11-24",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-24",
+      "hindiTyping": {
+        "exerciseNo": 31,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 31,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 31,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 31,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 32,
+      "date": "2026-11-25",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-25",
+      "hindiTyping": {
+        "exerciseNo": 32,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 32,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 32,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 32,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 33,
+      "date": "2026-11-26",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-26",
+      "hindiTyping": {
+        "exerciseNo": 33,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 33,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 33,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 33,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 34,
+      "date": "2026-11-27",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-27",
+      "hindiTyping": {
+        "exerciseNo": 34,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 34,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 34,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 34,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 35,
+      "date": "2026-11-28",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-28",
+      "hindiTyping": {
+        "exerciseNo": 35,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 35,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "hi",
+        "fileNo": 35,
+        "title": "MS Word 2013 (Hindi) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "en",
+        "fileNo": 35,
+        "title": "MS Excel 2013 (English) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 36,
+      "date": "2026-11-29",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-29",
+      "hindiTyping": {
+        "exerciseNo": 36,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 36,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 36,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 36,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 37,
+      "date": "2026-11-30",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-11-30",
+      "hindiTyping": {
+        "exerciseNo": 37,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 37,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 37,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 37,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 38,
+      "date": "2026-12-01",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-01",
+      "hindiTyping": {
+        "exerciseNo": 38,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 38,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 38,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 38,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 39,
+      "date": "2026-12-02",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-02",
+      "hindiTyping": {
+        "exerciseNo": 39,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 39,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 39,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 39,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 40,
+      "date": "2026-12-03",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-03",
+      "hindiTyping": {
+        "exerciseNo": 40,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 40,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 40,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 40,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 41,
+      "date": "2026-12-04",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-04",
+      "hindiTyping": {
+        "exerciseNo": 41,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 41,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 1,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 1,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 42,
+      "date": "2026-12-05",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-05",
+      "hindiTyping": {
+        "exerciseNo": 42,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 42,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 2,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 2,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 43,
+      "date": "2026-12-06",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-06",
+      "hindiTyping": {
+        "exerciseNo": 43,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 43,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 3,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 3,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 44,
+      "date": "2026-12-07",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-07",
+      "hindiTyping": {
+        "exerciseNo": 44,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 44,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 4,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 4,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 45,
+      "date": "2026-12-08",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-08",
+      "hindiTyping": {
+        "exerciseNo": 45,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 45,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 5,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 5,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 46,
+      "date": "2026-12-09",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-09",
+      "hindiTyping": {
+        "exerciseNo": 46,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 46,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 6,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 6,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 47,
+      "date": "2026-12-10",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-10",
+      "hindiTyping": {
+        "exerciseNo": 47,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 47,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 7,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 7,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 48,
+      "date": "2026-12-11",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-11",
+      "hindiTyping": {
+        "exerciseNo": 48,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 48,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 8,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 8,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 49,
+      "date": "2026-12-12",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-12",
+      "hindiTyping": {
+        "exerciseNo": 49,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 49,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 9,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 9,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 50,
+      "date": "2026-12-13",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-13",
+      "hindiTyping": {
+        "exerciseNo": 50,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 50,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 10,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 10,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 51,
+      "date": "2026-12-14",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-14",
+      "hindiTyping": {
+        "exerciseNo": 51,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 51,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 11,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 11,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 52,
+      "date": "2026-12-15",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-15",
+      "hindiTyping": {
+        "exerciseNo": 52,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 52,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 12,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 12,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 53,
+      "date": "2026-12-16",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-16",
+      "hindiTyping": {
+        "exerciseNo": 53,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 53,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 13,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 13,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 54,
+      "date": "2026-12-17",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-17",
+      "hindiTyping": {
+        "exerciseNo": 54,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 54,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 14,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 14,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 55,
+      "date": "2026-12-18",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-18",
+      "hindiTyping": {
+        "exerciseNo": 55,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 55,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 15,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 15,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 56,
+      "date": "2026-12-19",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-19",
+      "hindiTyping": {
+        "exerciseNo": 56,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 56,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 16,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 16,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 57,
+      "date": "2026-12-20",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-20",
+      "hindiTyping": {
+        "exerciseNo": 57,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 57,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 17,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 17,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 58,
+      "date": "2026-12-21",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-21",
+      "hindiTyping": {
+        "exerciseNo": 58,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 58,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 18,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 18,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 59,
+      "date": "2026-12-22",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-22",
+      "hindiTyping": {
+        "exerciseNo": 59,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 59,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 19,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 19,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 60,
+      "date": "2026-12-23",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-23",
+      "hindiTyping": {
+        "exerciseNo": 60,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 60,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 20,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 20,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 61,
+      "date": "2026-12-24",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-24",
+      "hindiTyping": {
+        "exerciseNo": 61,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 61,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 21,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 21,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 62,
+      "date": "2026-12-25",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-25",
+      "hindiTyping": {
+        "exerciseNo": 62,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 62,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 22,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 22,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 63,
+      "date": "2026-12-26",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-26",
+      "hindiTyping": {
+        "exerciseNo": 63,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 63,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 23,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 23,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 64,
+      "date": "2026-12-27",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-27",
+      "hindiTyping": {
+        "exerciseNo": 64,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 64,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 24,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 24,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 65,
+      "date": "2026-12-28",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-28",
+      "hindiTyping": {
+        "exerciseNo": 65,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 65,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 25,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 25,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 66,
+      "date": "2026-12-29",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-29",
+      "hindiTyping": {
+        "exerciseNo": 66,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 66,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 26,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 26,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 67,
+      "date": "2026-12-30",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-30",
+      "hindiTyping": {
+        "exerciseNo": 67,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 67,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 27,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 27,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 68,
+      "date": "2026-12-31",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2026-12-31",
+      "hindiTyping": {
+        "exerciseNo": 68,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 68,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 28,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 28,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 69,
+      "date": "2027-01-01",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2027-01-01",
+      "hindiTyping": {
+        "exerciseNo": 69,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 69,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 29,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 29,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    },
+    {
+      "dayNumber": 70,
+      "date": "2027-01-02",
+      "unlockTimeIST": "08:00",
+      "enforce8AMSchedule": true,
+      "title": "RSSB LDC Daily Live All-Rajasthan Test — 2027-01-02",
+      "hindiTyping": {
+        "exerciseNo": 70,
+        "customPassage": ""
+      },
+      "englishTyping": {
+        "exerciseNo": 70,
+        "customPassage": ""
+      },
+      "efficiency1": {
+        "module": "word",
+        "language": "en",
+        "fileNo": 30,
+        "title": "MS Word 2013 (English) Efficiency"
+      },
+      "efficiency2": {
+        "module": "excel",
+        "language": "hi",
+        "fileNo": 30,
+        "title": "MS Excel 2013 (Hindi) Efficiency"
+      }
+    }
+  ]
+}

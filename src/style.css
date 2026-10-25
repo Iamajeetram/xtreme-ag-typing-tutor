@@ -6416,3 +6416,15 @@ body.learn-modal-open{overflow:hidden}
   z-index: 30 !important;
   color: rgba(30, 64, 175, 0.11) !important;
 }
+
+
+/* Fix Live Rank Leaderboard table header contrast */
+.daily-live-rank-table thead tr,
+.daily-live-rank-table thead th {
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border-color: #1e293b !important;
+}
+.daily-live-rank-table thead th small {
+  color: #cbd5e1 !important;
+}
