@@ -6,15 +6,29 @@ import { renderGames, bindGameActions } from './typing-games.js'
 import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-exercises.js'
 
 /* ============================================================================
-   IN-APP GITHUB AUTO-UPDATE CHECKER
+   IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-const APP_CURRENT_VERSION = '1.0.0';
+let APP_CURRENT_VERSION = '1.0.0';
+let APP_RUNTIME_INFO = { version: '1.0.0', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 
+async function loadAppRuntimeInfo() {
+  try {
+    const res = await fetch('/__ag_app_info', { cache: 'no-store' });
+    if (res.ok) {
+      const info = await res.json();
+      if (info && info.version) {
+        APP_CURRENT_VERSION = info.version;
+        APP_RUNTIME_INFO = info;
+      }
+    }
+  } catch {}
+}
+
 function compareVersions(v1, v2) {
-  const p1 = (v1 || '').replace(/^v/i, '').split('.').map(n => parseInt(n, 10) || 0);
-  const p2 = (v2 || '').replace(/^v/i, '').split('.').map(n => parseInt(n, 10) || 0);
+  const p1 = String(v1 || '').replace(/^[^0-9]*/, '').split('.').map(n => parseInt(n, 10) || 0);
+  const p2 = String(v2 || '').replace(/^[^0-9]*/, '').split('.').map(n => parseInt(n, 10) || 0);
   for (let i = 0; i < Math.max(p1.length, p2.length); i++) {
     const a = p1[i] || 0;
     const b = p2[i] || 0;
@@ -24,16 +38,36 @@ function compareVersions(v1, v2) {
   return 0;
 }
 
+function pickBestReleaseAsset(release) {
+  const assets = Array.isArray(release?.assets) ? release.assets : [];
+  const plat = APP_RUNTIME_INFO.platform;
+  const arch = APP_RUNTIME_INFO.arch || 'arm64';
+
+  if (plat === 'darwin' || /Mac/i.test(navigator.platform || '')) {
+    const archDmg = assets.find(a => a.name && a.name.endsWith('.dmg') && a.name.includes(arch));
+    if (archDmg) return archDmg;
+    const anyDmg = assets.find(a => a.name && a.name.endsWith('.dmg'));
+    if (anyDmg) return anyDmg;
+  } else {
+    const setupExe = assets.find(a => a.name && a.name.endsWith('.exe') && /Setup/i.test(a.name));
+    if (setupExe) return setupExe;
+    const anyExe = assets.find(a => a.name && a.name.endsWith('.exe'));
+    if (anyExe) return anyExe;
+  }
+  return assets[0] || null;
+}
+
 async function checkAppUpdates(isManual = false) {
+  await loadAppRuntimeInfo();
   try {
     const url = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest`;
     const resp = await fetch(url, { cache: 'no-store' });
     if (!resp.ok) {
       if (isManual) {
         if (resp.status === 404) {
-          alert(`Great! You are already using the latest official version of AG Typing Tutor (v${APP_CURRENT_VERSION}). No newer release published yet.`);
+          alert(`You are using AG Typing Tutor v${APP_CURRENT_VERSION} (Latest Version).\n\nNote for Admin: To broadcast new updates to all users, make sure repository '${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}' is Public and has a published Release.`);
         } else {
-          alert(`Version check complete. You are on version ${APP_CURRENT_VERSION}.`);
+          alert(`Version check complete. You are on v${APP_CURRENT_VERSION}.`);
         }
       }
       return;
@@ -46,39 +80,44 @@ async function checkAppUpdates(isManual = false) {
       alert(`Great! You are already using the latest version of AG Typing Tutor (v${APP_CURRENT_VERSION}).`);
     }
   } catch (err) {
-    if (isManual) alert(`You are using AG Typing Tutor v${APP_CURRENT_VERSION}. No newer updates found.`);
+    if (isManual) alert(`You are using AG Typing Tutor v${APP_CURRENT_VERSION}. Could not reach update server.`);
   }
 }
 
 function showUpdateModal(release) {
   document.querySelector('#ag-update-modal')?.remove();
   const latestTag = release.tag_name || release.name || 'Latest';
-  
-  let downloadUrl = release.html_url;
-  if (Array.isArray(release.assets)) {
-    const exeAsset = release.assets.find(a => a.name && a.name.endsWith('.exe'));
-    if (exeAsset && exeAsset.browser_download_url) {
-      downloadUrl = exeAsset.browser_download_url;
-    }
-  }
+  const bestAsset = pickBestReleaseAsset(release);
+  const downloadUrl = bestAsset?.browser_download_url || release.html_url;
+  const assetName = bestAsset?.name || 'Update Package';
 
   const modal = document.createElement('div');
   modal.id = 'ag-update-modal';
-  modal.style.cssText = 'position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(15,23,42,0.8); display:flex; align-items:center; justify-content:center; z-index:999999; backdrop-filter:blur(5px); font-family:inherit;';
-  
+  modal.style.cssText = 'position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(15,23,42,0.82); display:flex; align-items:center; justify-content:center; z-index:999999; backdrop-filter:blur(5px); font-family:inherit;';
+
   modal.innerHTML = `
-    <div style="background:#ffffff; border-radius:22px; padding:32px; max-width:500px; width:92%; box-shadow:0 25px 60px rgba(0,0,0,0.3); text-align:center; border:1px solid #cbd5e1;">
+    <div style="background:#ffffff; border-radius:22px; padding:32px; max-width:520px; width:92%; box-shadow:0 25px 60px rgba(0,0,0,0.35); text-align:center; border:1px solid #cbd5e1;">
       <div style="font-size:46px; margin-bottom:8px;">🚀</div>
-      <h2 style="font-size:22px; font-weight:800; color:#0f172a; margin:0 0 6px 0;">New Update Available!</h2>
-      <p style="font-size:13.5px; color:#64748b; margin:0 0 16px 0;">
-        AG Typing Tutor version <strong>${escapeHtml(latestTag)}</strong> is ready for download.
+      <h2 style="font-size:22px; font-weight:800; color:#0f172a; margin:0 0 6px 0;">New Update Available (${escapeHtml(latestTag)})!</h2>
+      <p style="font-size:13.5px; color:#64748b; margin:0 0 14px 0;">
+        Installed: <strong>v${escapeHtml(APP_CURRENT_VERSION)}</strong> &nbsp;→&nbsp; New: <strong>${escapeHtml(latestTag)}</strong> (${escapeHtml(assetName)})
       </p>
-      
-      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px; font-size:12.5px; color:#334155; text-align:left; max-height:140px; overflow-y:auto; margin-bottom:22px; line-height:1.6; white-space:pre-wrap;">${escapeHtml(release.body || 'Includes latest exercise additions, RSSB LDC exam pattern improvements, and performance enhancements.')}</div>
-      
-      <div style="display:flex; gap:12px;">
-        <a href="${escapeHtml(downloadUrl)}" target="_blank" id="ag-confirm-update-btn" class="primary-button" style="flex:1; padding:12px; font-size:15px; font-weight:700; text-decoration:none; text-align:center; border-radius:10px; box-shadow:0 4px 14px rgba(37,99,235,0.35); display:inline-block;">⬇️ Download & Update Now</a>
-        <button type="button" id="ag-dismiss-update-btn" class="secondary-button" style="padding:12px 18px; font-size:14px; font-weight:600; border-radius:10px;">Later</button>
+
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px; font-size:12.5px; color:#334155; text-align:left; max-height:140px; overflow-y:auto; margin-bottom:18px; line-height:1.6; white-space:pre-wrap;">${escapeHtml(release.body || 'Includes latest exercise additions, RSSB LDC exam pattern improvements, and performance enhancements.')}</div>
+
+      <div id="ag-update-progress-wrap" style="display:none; margin-bottom:18px; text-align:left;">
+        <div style="display:flex; justify-content:space-between; font-size:12.5px; font-weight:700; color:#1e293b; margin-bottom:6px;">
+          <span id="ag-update-status-text">Downloading update...</span>
+          <span id="ag-update-percent-text">0%</span>
+        </div>
+        <div style="width:100%; height:10px; background:#e2e8f0; border-radius:999px; overflow:hidden;">
+          <div id="ag-update-progress-bar" style="width:0%; height:100%; background:linear-gradient(90deg, #2563eb, #16a34a); transition:width 0.25s ease;"></div>
+        </div>
+      </div>
+
+      <div id="ag-update-btn-row" style="display:flex; gap:12px;">
+        <button type="button" id="ag-start-auto-update-btn" class="primary-button" style="flex:1; padding:12px; font-size:15px; font-weight:700; border-radius:10px; box-shadow:0 4px 14px rgba(37,99,235,0.35); cursor:pointer;">⚡ Auto-Update &amp; Restart Now</button>
+        <button type="button" id="ag-dismiss-update-btn" class="secondary-button" style="padding:12px 18px; font-size:14px; font-weight:600; border-radius:10px; cursor:pointer;">Later</button>
       </div>
     </div>
   `;
@@ -87,6 +126,47 @@ function showUpdateModal(release) {
 
   modal.querySelector('#ag-dismiss-update-btn')?.addEventListener('click', () => {
     modal.remove();
+  });
+
+  modal.querySelector('#ag-start-auto-update-btn')?.addEventListener('click', async () => {
+    if (!APP_RUNTIME_INFO.isElectron || !bestAsset?.browser_download_url) {
+      window.open(downloadUrl, '_blank');
+      return;
+    }
+    const btnRow = modal.querySelector('#ag-update-btn-row');
+    const progWrap = modal.querySelector('#ag-update-progress-wrap');
+    const statusTxt = modal.querySelector('#ag-update-status-text');
+    const pctTxt = modal.querySelector('#ag-update-percent-text');
+    const progBar = modal.querySelector('#ag-update-progress-bar');
+
+    if (btnRow) btnRow.style.display = 'none';
+    if (progWrap) progWrap.style.display = 'block';
+
+    try {
+      const startRes = await fetch(`/__ag_perform_update?url=${encodeURIComponent(bestAsset.browser_download_url)}&name=${encodeURIComponent(bestAsset.name)}`, { method: 'POST' });
+      if (!startRes.ok) throw new Error('Update start failed');
+
+      const poll = setInterval(async () => {
+        try {
+          const stRes = await fetch('/__ag_update_status', { cache: 'no-store' });
+          const st = await stRes.json();
+          if (progBar) progBar.style.width = `${st.percent || 0}%`;
+          if (pctTxt) pctTxt.textContent = `${st.percent || 0}%`;
+          if (statusTxt && st.message) statusTxt.textContent = st.message;
+          if (st.state === 'error') {
+            clearInterval(poll);
+            alert('Auto-update error: ' + st.message + '\nOpening direct download link instead.');
+            window.open(downloadUrl, '_blank');
+            modal.remove();
+          } else if (st.state === 'done') {
+            clearInterval(poll);
+          }
+        } catch {}
+      }, 400);
+    } catch (e) {
+      window.open(downloadUrl, '_blank');
+      modal.remove();
+    }
   });
 }
 
@@ -173,7 +253,153 @@ const app = document.querySelector('#app')
 let currentSection = 'home'
 let appLanguage = localStorage.getItem('ag-language') === 'hi' ? 'hi' : 'en'
 let userProfile = null
-try { userProfile = JSON.parse(localStorage.getItem('ag-user-profile') || 'null') } catch { userProfile = null }
+try {
+  const parsed = JSON.parse(localStorage.getItem('ag-user-profile') || 'null')
+  if (parsed && parsed.name && parsed.id !== 'ag-default-admin') {
+    userProfile = parsed
+  }
+} catch { userProfile = null }
+
+function getRssbCandidateName() {
+  return (userProfile && userProfile.name && userProfile.id !== 'ag-default-admin') ? userProfile.name : 'Candidate'
+}
+
+function getRssbCandidateRoll() {
+  if (userProfile && userProfile.rollNumber) return String(userProfile.rollNumber)
+  if (userProfile && userProfile.mobile) return String(userProfile.mobile)
+  return '248001'
+}
+
+async function syncUserProfileWithDisk(profileToSave = null) {
+  try {
+    if (profileToSave) {
+      localStorage.setItem('ag-user-profile', JSON.stringify(profileToSave))
+      await fetch('/__ag_profile', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(profileToSave)
+      }).catch(() => {})
+      return profileToSave
+    }
+    if (!userProfile) {
+      const res = await fetch('/__ag_profile', { cache: 'no-store' })
+      if (res.ok) {
+        const diskProf = await res.json()
+        if (diskProf && diskProf.name && diskProf.id !== 'ag-default-admin') {
+          userProfile = diskProf
+          localStorage.setItem('ag-user-profile', JSON.stringify(diskProf))
+          if (currentSection === 'home') renderHome()
+        }
+      }
+    }
+  } catch {}
+  return userProfile
+}
+syncUserProfileWithDisk()
+
+/* ============================================================================
+   SMART DEVLYS 010 / KRUTI DEV 010 REMINGTON-TO-UNICODE COMPOSER
+   ============================================================================ */
+const AG_DEVLYS_NORMAL_MAP = {
+  '`': 'ृ', '1': '१', '2': '२', '3': '३', '4': '४', '5': '५', '6': '६', '7': '७', '8': '८', '9': '९', '0': '०', '-': '.', '=': 'त्र',
+  q: 'ु', w: 'ू', e: 'म', r: 'त', t: 'ज', y: 'ल', u: 'न', i: 'प', o: 'व', p: 'च', '[': 'ख्', ']': ',', '\\': '?',
+  a: 'ं', s: 'े', d: 'क', f: 'ि', g: 'ह', h: 'ी', j: 'र', k: 'ा', l: 'स', ';': 'य', "'": 'श्',
+  z: '्र', x: 'ग', c: 'ब', v: 'अ', b: 'इ', n: 'द', m: 'उ', ',': 'ए', '.': 'ण', '/': 'ध्'
+};
+
+const AG_DEVLYS_SHIFT_MAP = {
+  '~': '्', '!': '!', '@': '/', '#': 'रु', '$': '+', '%': ':', '^': "'", '&': '-', '*': '"', '(': ';', ')': 'द्ध', '_': 'ऋ', '+': '.',
+  Q: 'फ', W: 'ँ', E: 'म्', R: 'त्', T: 'ज्', Y: 'ल्', U: 'न्', I: 'प्', O: 'व्', P: 'च्', '{': 'क्ष्', '}': 'द्व', '|': 'द्य',
+  A: '।', S: 'ै', D: 'क्', F: 'थ्', G: 'ळ', H: 'भ्', J: 'श्र', K: 'ज्ञ', L: 'स्', ':': 'रू', '"': 'ष्',
+  Z: 'र्', X: 'ग्', C: 'ठ', V: 'ट', B: 'ठ', N: 'छ', M: 'ड', '<': 'ढ', '>': 'झ', '?': 'घ्'
+};
+
+function reorderPendingDevLysChhotiEE(str) {
+  return str.replace(/\u200Bि((?:[\u0915-\u0939\u0958-\u095F]\u094D)*[\u0915-\u0939\u0958-\u095F])$/u, '$1ि');
+}
+
+function applyDevLysKeystrokeToText(currentText, rawKey, shiftKey = false, targetPassage = '') {
+  if (!rawKey || rawKey.length !== 1 || rawKey === ' ') return null;
+  const lowerKey = rawKey.toLowerCase();
+  const isShifted = Boolean(shiftKey || (rawKey !== lowerKey && rawKey === rawKey.toUpperCase()));
+
+  let mapped = isShifted
+    ? (AG_DEVLYS_SHIFT_MAP[rawKey] || AG_DEVLYS_NORMAL_MAP[lowerKey])
+    : AG_DEVLYS_NORMAL_MAP[lowerKey];
+
+  if (!mapped) return null;
+
+  let text = String(currentText || '');
+  const cleanLen = text.replace(/\u200B/g, '').length;
+
+  if (rawKey === 'Q' && text.endsWith('उ')) return text.slice(0, -1) + 'ऊ';
+  if (rawKey === 'Z' && text.endsWith('इ')) return text.slice(0, -1) + 'ई';
+
+  if (!isShifted && lowerKey === 'k') {
+    if (text.endsWith('अ')) return text.slice(0, -1) + 'आ';
+    if (text.endsWith('्')) {
+      return reorderPendingDevLysChhotiEE(text.slice(0, -1));
+    }
+  }
+
+  if (!isShifted && lowerKey === 's') {
+    if (text.endsWith('आ') || text.endsWith('अ')) return text.slice(0, -1) + 'ओ';
+    if (text.endsWith('ए')) return text.slice(0, -1) + 'ऐ';
+    if (text.endsWith('ा')) return text.slice(0, -1) + 'ो';
+  }
+
+  if (isShifted && rawKey === 'S') {
+    if (text.endsWith('आ') || text.endsWith('अ')) return text.slice(0, -1) + 'औ';
+    if (text.endsWith('ा')) return text.slice(0, -1) + 'ौ';
+  }
+
+  if (isShifted && rawKey === 'Z') {
+    const m = text.match(/((?:[\u0915-\u0939\u0958-\u095F]\u094D)*[\u0915-\u0939\u0958-\u095F][\u093E-\u094C\u0901\u0902\u0903]*)$/u);
+    if (m) {
+      const idx = text.length - m[1].length;
+      return text.slice(0, idx) + 'र्' + m[1];
+    }
+  }
+
+  if (rawKey === "'" && !isShifted && targetPassage) {
+    const nextExpected = targetPassage.slice(cleanLen, cleanLen + 2);
+    if (nextExpected.startsWith('श') && !nextExpected.startsWith('श्')) {
+      mapped = 'श';
+    }
+  }
+
+  if (!isShifted && lowerKey === 'f') {
+    const lastChar = text.slice(-1);
+    const prevIsBareConsonant = /[\u0915-\u0939\u0958-\u095F]/u.test(lastChar);
+    const targetExpectsLogicalI = targetPassage && targetPassage[cleanLen] === 'ि' && prevIsBareConsonant;
+    if (!targetExpectsLogicalI) {
+      return text + '\u200Bि';
+    }
+    return text + 'ि';
+  }
+
+  let nextText = text + mapped;
+  if (!nextText.endsWith('्')) {
+    nextText = reorderPendingDevLysChhotiEE(nextText);
+  }
+  return nextText;
+}
+
+function sanitizeTrailingAsciiInHindiBox(inputEl, targetPassage = '') {
+  if (!inputEl) return;
+  const rawVal = inputEl.value;
+  if (!rawVal) return;
+  const lastChar = rawVal.slice(-1);
+  if (/^[a-zA-Z0-9`\-=\[\]\\;',./~!@#$%^&*()_+{}|:"<>?]$/.test(lastChar)) {
+    const prefix = rawVal.slice(0, -1);
+    const isShift = (lastChar !== lastChar.toLowerCase() && lastChar === lastChar.toUpperCase()) || '~!@#$%^&*()_+{}|:"<>?'.includes(lastChar);
+    const converted = applyDevLysKeystrokeToText(prefix, lastChar, isShift, targetPassage);
+    if (converted !== null) {
+      inputEl.value = converted;
+    }
+  }
+}
+
 let selectedExam = 'SSC'
 let typingTimer = null
 let typingStartedAt = null
@@ -257,30 +483,58 @@ function calculateTypingStats(value, elapsedSeconds) {
 function renderTypingPassage(value) {
   const target = document.querySelector('#typing-passage')
   if (!target) return
-  const wordAnalysis = analyzeWords(value, typingPassage)
+  const cleanValue = String(value ?? '').replace(/\u200B/g, '')
+  const wordAnalysis = analyzeWords(cleanValue, typingPassage)
+  const wordByStart = new Map(wordAnalysis.words.map((w) => [w.start, w]))
   const tokens = [...typingPassage.matchAll(/\S+|\s+/g)]
   target.innerHTML = tokens.map((match) => {
     const token = match[0]
     const start = match.index
     if (/^\s+$/.test(token)) return escapeHtml(token).replace(/\n/g, '<br>')
-    const end = start + token.length
-    const word = wordAnalysis.words.find((item) => item.start === start)
+    const word = wordByStart.get(start)
+    const status = word?.status || 'untyped'
+    const isActiveUntyped = (status === 'untyped' && word?.index === wordAnalysis.activeWordIndex)
     let wordClass = 'typing-word'
     if (practiceOptions.wordHighlight) {
-      if (value.length >= end) wordClass += word?.correct ? ' word-correct' : ' word-incorrect'
-      else if (value.length > start && value.length < end) wordClass += ' word-in-progress'
+      if (status === 'correct') wordClass += ' word-correct'
+      else if (status === 'wrong' || status === 'omitted') wordClass += ' word-incorrect'
+      else if (status === 'in-progress' || (isActiveUntyped && cleanValue.length > 0)) wordClass += ' word-in-progress'
     }
+    const typedChars = [...String(word?.typed || '')]
     const chars = [...token].map((char, offset) => {
-      const index = start + offset
       let charClass = 'typing-char'
       if (practiceOptions.textHighlight) {
-        if (index < value.length) charClass += value[index] === char ? ' correct' : ' incorrect'
-        else if (index === value.length) charClass += ' current'
+        if (status === 'correct') {
+          charClass += ' correct'
+        } else if (status === 'omitted') {
+          charClass += ' incorrect'
+        } else if (status === 'wrong') {
+          charClass += (offset < typedChars.length && typedChars[offset] === char) ? ' correct' : ' incorrect'
+        } else if (status === 'in-progress') {
+          if (offset < typedChars.length) {
+            charClass += typedChars[offset] === char ? ' correct' : ' incorrect'
+          } else if (offset === typedChars.length) {
+            charClass += ' current'
+          }
+        } else if (isActiveUntyped && offset === 0) {
+          charClass += ' current'
+        }
       }
       return `<span class="${charClass}">${escapeHtml(char)}</span>`
     }).join('')
     return `<span class="${wordClass}">${chars}</span>`
   }).join('')
+
+  // Auto-scroll active word into view smoothly
+  const activeEl = target.querySelector('.word-in-progress, .typing-char.current')
+  if (activeEl && target.scrollHeight > target.clientHeight) {
+    const topPos = activeEl.offsetTop - target.offsetTop
+    const desiredScroll = Math.max(0, topPos - target.clientHeight * 0.4)
+    if (Math.abs(target.scrollTop - desiredScroll) > 28) {
+      target.scrollTop = desiredScroll
+    }
+  }
+
   const correctWords = document.querySelector('#typing-correct-words')
   const incorrectWords = document.querySelector('#typing-incorrect-words')
   if (correctWords) correctWords.textContent = String(wordAnalysis.correctWords)
@@ -332,18 +586,23 @@ function getTypingExtraMetrics(result, stats) {
   const pairErrors = {}
   const rowErrors = { top: 0, home: 0, bottom: 0, other: 0 }
   const rows = { top: 'qwertyuiop[]', home: 'asdfghjkl;\'', bottom: 'zxcvbnm,./' }
-  for (let i = 0; i < Math.min(typed.length, target.length); i++) {
-    if (typed[i] === target[i]) continue
-    const key = target[i].toLocaleLowerCase()
-    keyErrors[key] = (keyErrors[key] || 0) + 1
-    const pair = target.slice(Math.max(0, i - 1), Math.min(target.length, i + 1)).toLocaleLowerCase()
-    if (pair.trim().length > 1) pairErrors[pair] = (pairErrors[pair] || 0) + 1
-    const row = Object.keys(rows).find((name) => rows[name].includes(key)) || 'other'
-    rowErrors[row] += 1
-  }
   let transpositions = 0
-  for (let i = 0; i < Math.min(typed.length, target.length) - 1; i++) {
-    if (typed[i] !== target[i] && typed[i] === target[i + 1] && typed[i + 1] === target[i]) transpositions += 1
+  for (const w of wordStats.words) {
+    if (w.status === 'untyped' || w.status === 'correct') continue
+    const tChars = [...String(w.typed || '')]
+    const eChars = [...String(w.text || '')]
+    for (let i = 0; i < eChars.length; i++) {
+      if (tChars[i] === eChars[i]) continue
+      const key = eChars[i].toLocaleLowerCase()
+      keyErrors[key] = (keyErrors[key] || 0) + 1
+      const pair = eChars.slice(Math.max(0, i - 1), Math.min(eChars.length, i + 1)).join('').toLocaleLowerCase()
+      if (pair.trim().length > 1) pairErrors[pair] = (pairErrors[pair] || 0) + 1
+      const row = Object.keys(rows).find((name) => rows[name].includes(key)) || 'other'
+      rowErrors[row] += 1
+    }
+    for (let i = 0; i < Math.min(tChars.length, eChars.length) - 1; i++) {
+      if (tChars[i] !== eChars[i] && tChars[i] === eChars[i + 1] && tChars[i + 1] === eChars[i]) transpositions += 1
+    }
   }
   const samples = Array.isArray(result.speedSamples) ? result.speedSamples : []
   const burstWpm = samples.reduce((best, sample, index) => {
@@ -385,7 +644,10 @@ function finishTypingTest() {
   const input = document.querySelector('#typing-input')
   if (input) input.disabled = true
   const endedAt = new Date()
-  const elapsed = Math.max(1, Math.round((Date.now() - (typingStartedAt || Date.now())) / 1000))
+  const maxAllowedSec = Math.max(1, Math.round((Number(typingDuration) || 10) * 60))
+  const timerElapsed = maxAllowedSec - Math.max(0, Math.min(maxAllowedSec, Number(typingRemaining ?? 0)))
+  const wallElapsed = Math.round((Date.now() - (typingStartedAt || Date.now())) / 1000)
+  const elapsed = Math.max(1, Math.min(maxAllowedSec, timerElapsed > 0 ? timerElapsed : wallElapsed))
   const stats = calculateTypingStats(typingInputValue, elapsed)
   const wordStats = analyzeWords(typingInputValue, typingPassage)
   const result = {
@@ -482,16 +744,7 @@ function showTypingReportPopup(result, stats) {
   overlay.querySelector('#typing-report-practice')?.addEventListener('click', close)
   attachTypingReviewPractice();
 
-  // Auto-enable typing in fullscreen
-  const fsInput = modal.querySelector('#typing-input');
-  if (fsInput) {
-    fsInput.disabled = false;
-    fsInput.addEventListener('focus', () => {
-      if (!typingStartedAt && typeof startTypingTest === 'function') {
-        try { startTypingTest(); } catch {}
-      }
-    }, { once: true });
-  }
+
 
   overlay.querySelector('#typing-review-words')?.addEventListener('click', () => overlay.querySelector('#typing-error-practice')?.scrollIntoView({ behavior: 'smooth', block: 'center' }))
 }
@@ -527,7 +780,7 @@ function buildDetailedReportHTML(result, stats) {
       <div><span>Session ID</span><strong>${safe(result.id)}</strong></div>
     </div>
     ${(() => { const m = getTypingExtraMetrics(result, stats); const samples = m ? (result.speedSamples || []) : []; const chart = samples.map((sample) => `<span class="report-chart-bar" title="${sample.second}s, ${sample.netWpm} WPM" style="height:${Math.max(3, Math.min(100, Number(sample.netWpm || 0) * 1.5))}%"><i>${sample.second}s</i></span>`).join(''); const keys = m.keyRows.length ? m.keyRows.map(([key, count]) => `<span class="key-heat-item"><kbd>${safe(key === ' ' ? 'Space' : key)}</kbd><strong>${count}</strong></span>`).join('') : '<span class="helper-text">No character mismatch recorded in the typed section.</span>'; return `<section class="report-section"><h4>Identity and session</h4><div class="report-detail-grid"><div><span>Candidate</span><strong>${safe(result.userName || 'Guest')}</strong></div><div><span>Roll number</span><strong>${safe(result.rollNumber || 'Not provided')}</strong></div><div><span>Exam</span><strong>${safe(result.exam || 'General Practice')}</strong></div><div><span>Language</span><strong>${safe(result.language || 'English')}</strong></div><div><span>Test mode</span><strong>${safe(result.typingMode || 'Correction allowed')}</strong></div><div><span>Speed method</span><strong>${safe(result.speedMethod || 'Standard, 5 characters per word')}</strong></div><div><span>Device</span><strong>${safe(result.device || 'Unknown device')}</strong></div><div><span>Keyboard layout</span><strong>${safe(result.keyboardLayout || 'Not detectable in browser')}</strong></div></div></section><section class="report-section"><h4>Speed analysis</h4><div class="report-detail-grid"><div><span>Standard speed, 5-char</span><strong>${stats.netWpm} WPM</strong></div><div><span>Word-based net speed</span><strong>${m.wordBasedNet} WPM</strong></div><div><span>Word-based gross speed</span><strong>${m.wordBasedGross} WPM</strong></div><div><span>Target speed result</span><strong>${Number(result.targetWpm || 0) > 0 ? (getSelectedNetWpm(stats, result.elapsedSeconds, result.typedText, result.passage) >= Number(result.targetWpm) ? 'PASS' : 'BELOW TARGET') : 'Not set'}</strong></div><div><span>Target speed</span><strong>${Number(result.targetWpm || 0) > 0 ? `${result.targetWpm} WPM` : 'Not set'}</strong></div><div><span>CPM</span><strong>${m.cpM}</strong></div><div><span>KSPM</span><strong>${m.kspm}</strong></div><div><span>KPH / KDPH estimate</span><strong>${m.kph}</strong></div><div><span>Adjusted WPM</span><strong>${m.adjustedWpm}</strong></div><div><span>Fastest sampled 5-sec burst</span><strong>${m.burstWpm} WPM</strong></div><div><span>Consistency score</span><strong>${m.consistency}/100</strong></div><div><span>Median sampled WPM</span><strong>${m.medianWpm}</strong></div><div><span>Lower quartile WPM</span><strong>${m.p25Wpm}</strong></div></div>${Number(result.targetWpm || 0) > 0 ? `<div class="target-progress-wrap"><div><strong>Target goal progress</strong><span>${Math.min(100, Math.round((getSelectedNetWpm(stats, result.elapsedSeconds, result.typedText, result.passage) / Number(result.targetWpm)) * 100))}% of target</span></div><div class="target-progress-track"><span style="width:${Math.min(100, Math.round((getSelectedNetWpm(stats, result.elapsedSeconds, result.typedText, result.passage) / Number(result.targetWpm)) * 100))}%"></span></div></div>` : ''}${chart ? `<div class="report-speed-chart"><span class="report-chart-caption">Sampled speed, each 5 seconds</span><div class="report-chart-bars">${chart}</div></div><div class="report-speed-chart report-accuracy-chart"><span class="report-chart-caption">Accuracy trend, each 5 seconds</span><div class="report-chart-bars">${samples.map((sample) => `<span class="report-chart-bar" title="${sample.second}s, ${sample.accuracy}% accuracy" style="height:${Math.max(3, Math.min(100, Number(sample.accuracy || 0)))}%"><i>${sample.second}s</i></span>`).join('')}</div></div>` : '<p class="helper-text">Speed and accuracy graphs appear after enough typing time has been recorded.</p>'}</section><section class="report-section"><h4>Progress tracking</h4><div class="report-detail-grid"><div><span>Attempt number</span><strong>${result.attemptNumber || 1}</strong></div><div><span>Best previous speed</span><strong>${result.personalBestBefore || 0} WPM</strong></div><div><span>Previous average speed</span><strong>${result.averageWpmBefore || 0} WPM</strong></div><div><span>Change from last attempt</span><strong>${result.previousAttempt ? `${(Number(result.netWpm ?? result.wpm ?? 0) - Number(result.previousAttempt.netWpm ?? result.previousAttempt.wpm ?? 0)) >= 0 ? '+' : ''}${Number(result.netWpm ?? result.wpm ?? 0) - Number(result.previousAttempt.netWpm ?? result.previousAttempt.wpm ?? 0)} WPM` : 'First attempt'}</strong></div></div><p class="helper-text">Percentile and official marks are not shown unless a verified comparison group and the selected exam's exact marking scheme are available.</p></section><section class="report-section"><h4>Keystroke and error analysis</h4><div class="report-detail-grid"><div><span>Total keystrokes</span><strong>${m.keyCount}</strong></div><div><span>Backspace presses</span><strong>${result.backspaces || 0}</strong></div><div><span>Immediate corrections</span><strong>${result.immediateBackspaces || 0}</strong></div><div><span>Delayed corrections</span><strong>${result.delayedBackspaces || 0}</strong></div><div><span>Corrected error rate, estimated</span><strong>${result.typed ? Math.round((Number(result.backspaces || 0) / Math.max(1, result.typed)) * 1000) / 10 : 0}%</strong></div><div><span>Uncorrected error rate</span><strong>${m.errorRate}%</strong></div><div><span>Delete presses</span><strong>${result.deletePresses || 0}</strong></div><div><span>Shift / Caps presses</span><strong>${result.shiftCapsPresses || 0}</strong></div><div><span>KSPC</span><strong>${m.kspc}</strong></div><div><span>Levenshtein distance, typed portion</span><strong>${m.msd}</strong></div><div><span>MSD error rate, typed portion</span><strong>${m.chars ? Math.round((m.msd / m.chars) * 1000) / 10 : 0}%</strong></div><div><span>Transposition pairs detected</span><strong>${m.transpositions}</strong></div><div><span>Pause / hesitation count, over 2 sec</span><strong>${result.pauseCount || 0}</strong></div><div><span>Longest pause</span><strong>${formatDuration(Math.round((result.longestPauseMs || 0)/1000))}</strong></div><div><span>Average inter-key interval</span><strong>${m.avgIki} ms</strong></div><div><span>Average key hold</span><strong>${m.avgKeyHold} ms</strong></div><div><span>Corrected errors</span><strong>${Math.min(Number(result.backspaces || 0), Number(result.keystrokes || 0))} estimated via backspaces</strong></div><div><span>Uncorrected character errors</span><strong>${m.incorrectChars}</strong></div><div><span>Untyped passage characters</span><strong>${Math.max(0, m.targetChars - m.chars)}</strong></div></div><h5>QWERTY key error heatmap</h5><div class="keyboard-heatmap">${['qwertyuiop','asdfghjkl','zxcvbnm'].map((row) => `<div class="keyboard-heat-row">${[...row].map((key) => { const count = Number(m.keyErrorMap[key] || 0); const intensity = count ? Math.min(.88, .18 + count * .12) : .05; return `<span class="keyboard-heat-key" title="${key.toUpperCase()}: ${count} position mismatch(es)" style="--heat:${intensity}">${key.toUpperCase()}<small>${count || ''}</small></span>` }).join('')}</div>`).join('')}</div><h5>Most error-prone expected keys</h5><div class="key-heatmap">${keys}</div><div class="report-detail-grid"><div><span>Top row errors</span><strong>${m.rowErrors.top}</strong></div><div><span>Home row errors</span><strong>${m.rowErrors.home}</strong></div><div><span>Bottom row errors</span><strong>${m.rowErrors.bottom}</strong></div><div><span>Other / punctuation errors</span><strong>${m.rowErrors.other}</strong></div></div><h5>Most mistyped words</h5><div class="report-mistake-list">${m.mistypedWords.length ? m.mistypedWords.map((word) => `<span><strong>${safe(word.text)}</strong><span>typed as</span><em>${safe(word.typed)}</em></span>`).join('') : '<span class="helper-text">No fully typed incorrect words were found.</span>'}</div><h5>Common character pairs near errors</h5><div class="key-heatmap">${m.pairRows.length ? m.pairRows.map(([pair,count]) => `<span class="key-heat-item"><kbd>${safe(pair)}</kbd><strong>${count}</strong></span>`).join('') : '<span class="helper-text">No pair errors detected.</span>'}</div><p class="helper-text">Key errors are estimated by comparing typed characters with the passage at matching positions. Physical finger, hand alternation, true typing percentile, and actual keyboard layout cannot be reliably identified without a dedicated keyboard event recorder or a comparison cohort.</p></section>` })()}
-    <div class="report-comparison"><h4>Passage review</h4><p class="report-passage">${safe(passageText)}</p><p class="report-typed"><strong>Your typed text:</strong> ${safe(typedText || '(No text entered)')}</p><p class="helper-text">Green = correct typed character, red = wrong typed character, untyped characters are not counted as typing errors. Completion: ${stats.completion}%.</p><div class="character-review">${[...passageText].map((char, i) => { const cls = i >= typedText.length ? 'char-untyped' : typedText[i] === char ? 'char-match' : 'char-mismatch'; const state = i >= typedText.length ? 'untyped' : typedText[i] === char ? 'correct' : 'incorrect'; return `<span class="${cls}" title="Position ${i + 1}: ${state}, expected ${safe(char)}, typed ${safe(typedText[i] || 'nothing')}">${safe(char === ' ' ? '·' : char)}</span>` }).join('')}</div></div>
+    <div class="report-comparison"><h4>Passage review</h4><p class="report-passage">${safe(passageText)}</p><p class="report-typed"><strong>Your typed text:</strong> ${safe(typedText || '(No text entered)')}</p><p class="helper-text">Green = correct typed character, red = wrong typed character, untyped characters are not counted as typing errors. Completion: ${stats.completion}%.</p><div class="character-review">${(() => { const aligned = analyzeWords(typedText, passageText); return aligned.words.map((w, wIdx) => { const eChars = [...w.text]; const tChars = [...String(w.typed || '')]; const wordSpans = eChars.map((ch, cIdx) => { let cls = 'char-untyped'; let state = 'untyped'; if (w.status === 'correct') { cls = 'char-match'; state = 'correct'; } else if (w.status === 'omitted') { cls = 'char-mismatch'; state = 'omitted (skipped word)'; } else if (w.status === 'wrong' || w.status === 'in-progress') { if (cIdx < tChars.length) { cls = tChars[cIdx] === ch ? 'char-match' : 'char-mismatch'; state = tChars[cIdx] === ch ? 'correct' : 'incorrect'; } else if (w.status === 'wrong') { cls = 'char-mismatch'; state = 'missing char'; } } return `<span class="${cls}" title="Word ${wIdx + 1} (${safe(w.text)}): ${state}, expected ${safe(ch)}, typed ${safe(tChars[cIdx] || 'nothing')}">${safe(ch)}</span>`; }).join(''); const spaceCls = w.status === 'untyped' ? 'char-untyped' : 'char-match'; return wordSpans + (wIdx < aligned.words.length - 1 ? `<span class="${spaceCls}">·</span>` : ''); }).join(''); })()}</div></div>
     <div class="report-actions screen-only"><button class="secondary-button" id="typing-result-print" type="button">Print / Save PDF</button><button class="secondary-button" id="typing-review-words" type="button">Practise error words (10×)</button></div>
     ${result.previousAttempt ? `<section class="attempt-comparison"><h4>Compared with your last attempt</h4><div><span>Net WPM: ${result.previousAttempt.netWpm} → ${result.netWpm} (${result.netWpm-result.previousAttempt.netWpm>=0?'+':''}${result.netWpm-result.previousAttempt.netWpm})</span><span>Accuracy: ${result.previousAttempt.accuracy}% → ${result.accuracy}%</span><span>Errors: ${result.previousAttempt.errors} → ${result.errors}</span></div></section>` : '<p class="helper-text">This is your first recorded attempt for this exercise. Your next attempt will be compared with it.</p>'}<div id="typing-error-practice" class="typing-error-practice" hidden></div>
     <p class="report-footnote">WPM is based on five characters per word. Net WPM subtracts the uncorrected error rate from gross WPM. Results are stored locally in this browser.</p>
@@ -535,7 +788,8 @@ function buildDetailedReportHTML(result, stats) {
 }
 
 function updateTypingStats() {
-  const elapsed = typingStartedAt ? Math.max(1, Math.round((Date.now() - typingStartedAt) / 1000)) : 0
+  const maxAllowedSec = Math.max(1, Math.round((Number(typingDuration) || 10) * 60))
+  const elapsed = typingStartedAt ? Math.max(1, Math.min(maxAllowedSec, Math.round((Date.now() - typingStartedAt) / 1000))) : 0
   const stats = calculateTypingStats(typingInputValue, elapsed || 1)
   const time = document.querySelector('#typing-time')
   const wpm = document.querySelector('#typing-wpm')
@@ -641,12 +895,82 @@ async function startTypingTest() {
   openTypingFullscreen()
 }
 
+async function preparePracticePassageReady() {
+  if (!practiceExerciseData || !practiceExerciseData.length) {
+    try { practiceExerciseData = await loadPracticeExerciseData() } catch {}
+  }
+  const selectedExercise = practiceExerciseData.find((item) => String(item.id) === String(selectedExerciseId))
+  const allAvailable = practiceExerciseData.filter((item) => item.language === selectedPracticeLanguage && (selectedPracticeCategory === 'All topics' || item.category === selectedPracticeCategory))
+  const selectedFirst = selectedExercise ? [selectedExercise, ...allAvailable.filter((item) => String(item.id) !== String(selectedExercise.id))] : allAvailable
+  if (customPassage) {
+    typingPassage = customPassage
+  } else if (selectedFirst.length) {
+    const parts = []
+    let words = 0
+    const targetWords = Math.max(850, (typingDuration || 1) * 35)
+    const seenSentences = new Set()
+    try {
+      for (const exercise of selectedFirst) {
+        if (words >= targetWords) break
+        const passage = await loadPracticeExerciseText(exercise)
+        const sentences = passage.split(/(?<=[.!?।])\s+/u)
+        for (const sentence of sentences) {
+          const key = sentence.toLocaleLowerCase().replace(/\s+/g, ' ').trim()
+          if (!key || seenSentences.has(key)) continue
+          seenSentences.add(key)
+          if (words >= targetWords) break
+          const remaining = targetWords - words
+          const sentenceWords = sentence.trim().split(/\s+/)
+          if (!sentence.trim()) continue
+          parts.push(sentenceWords.length > remaining ? sentenceWords.slice(0, remaining).join(' ') : sentence.trim())
+          words += Math.min(sentenceWords.length, remaining)
+        }
+      }
+      if (parts.length) typingPassage = parts.join(' ')
+    } catch {}
+  }
+  const isHiActive = selectedPracticeLanguage === 'hi' || /[\u0900-\u097F]/.test(typingPassage || '')
+  const passageEl = document.querySelector('#typing-passage')
+  const inputEl = document.querySelector('#typing-input')
+  if (passageEl) passageEl.classList.toggle('hindi-devlys-font', isHiActive)
+  if (inputEl) {
+    inputEl.classList.toggle('hindi-devlys-font', isHiActive)
+    inputEl.disabled = false
+  }
+  if (typingPassage) {
+    renderTypingPassage(typingInputValue || '')
+    updateTypingStats()
+  }
+}
+
 function attachTypingEngine() {
   const start = document.querySelector('#typing-start')
   const input = document.querySelector('#typing-input')
   if (!start || !input) return
   start.addEventListener('click', startTypingTest)
   document.querySelector('#typing-submit')?.addEventListener('click', () => { if (!typingStartedAt) typingStartedAt = Date.now(); finishTypingTest() })
+
+  // Auto-prepare the selected passage immediately so the user can click and type right away
+  preparePracticePassageReady()
+
+  // Language switcher buttons inside Practice / Speed screen
+  document.querySelectorAll('[data-practice-lang-switch]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const nextLang = btn.dataset.practiceLangSwitch === 'hi' ? 'hi' : 'en'
+      selectedPracticeLanguage = nextLang
+      appLanguage = nextLang
+      localStorage.setItem('ag-language', nextLang)
+      selectedExerciseId = practiceExerciseData.find((item) => item.language === nextLang)?.id || (nextLang === 'hi' ? 'hi-001' : 'en-001')
+      typingPassage = ''
+      typingInputValue = ''
+      typingStartedAt = null
+      typingFinished = false
+      stopTypingTimer()
+      document.querySelector('#typing-fullscreen')?.remove()
+      renderSection(currentSection)
+    })
+  })
+
   input.addEventListener('keydown', (event) => {
     if (event.repeat || typingFinished) return
     const now = Date.now()
@@ -662,17 +986,33 @@ function attachTypingEngine() {
     if (event.key === 'Shift' || event.key === 'CapsLock') { typingShiftCapsPresses += 1; typingKeystrokes += 1 }
     else if (event.key.length === 1 || ['Backspace', 'Delete', 'Enter', 'Tab'].includes(event.key)) typingKeystrokes += 1
     typingKeyDownAt.set(event.code || event.key, now)
-    if (event.key === 'Backspace') { if (!practiceOptions.backspace || input.dataset.noBackspace === 'true') event.preventDefault(); else { typingBackspaces += 1; if (previousKeyAt !== null && now - previousKeyAt <= 1500) typingImmediateBackspaces += 1; else typingDelayedBackspaces += 1 }; return }
+    if (event.key === 'Backspace') {
+      if (!practiceOptions.backspace || input.dataset.noBackspace === 'true') {
+        event.preventDefault()
+      } else {
+        typingBackspaces += 1
+        if (previousKeyAt !== null && now - previousKeyAt <= 1500) typingImmediateBackspaces += 1
+        else typingDelayedBackspaces += 1
+        if (input.value.endsWith('\u200Bि')) {
+          event.preventDefault()
+          input.value = input.value.slice(0, -2)
+          input.dispatchEvent(new Event('input', { bubbles: true }))
+        }
+      }
+      return
+    }
     if (event.key === 'Delete') typingDeletePresses += 1
-    if (event.code === 'Space' || event.key === ' ') {
-      if (typingFinished || !typingPassage) return
-      const currentValue = input.value
-      const caret = input.selectionStart ?? currentValue.length
-      if (caret !== currentValue.length) return
-      const typedStart = currentValue.lastIndexOf(' ') + 1
-      const typedWord = currentValue.slice(typedStart)
-      const targetWordMatch = typingPassage.slice(typedStart).match(/^([^\s]+)/)
-      if (targetWordMatch && typedWord.length > 0 && targetWordMatch[1].toLowerCase() !== typedWord.toLowerCase()) return
+
+    // Automatic Hindi DevLys 010 Remington Keymapping in Practice & Speed Test
+    const isHiMode = selectedPracticeLanguage === 'hi' || /[\u0900-\u097F]/.test(typingPassage || '')
+    if (isHiMode && !event.ctrlKey && !event.metaKey && !event.altKey && event.key.length === 1 && event.key !== ' ') {
+      const nextVal = applyDevLysKeystrokeToText(input.value, event.key, event.shiftKey, typingPassage)
+      if (nextVal !== null) {
+        event.preventDefault()
+        input.value = nextVal
+        input.dispatchEvent(new Event('input', { bubbles: true }))
+        return
+      }
     }
   })
   input.addEventListener('keyup', (event) => {
@@ -682,13 +1022,18 @@ function attachTypingEngine() {
   })
   input.addEventListener('input', () => {
     if (typingFinished || !typingPassage) return
-    typingInputValue = input.value.slice(0, typingPassage.length)
+    const isHiMode = selectedPracticeLanguage === 'hi' || /[\u0900-\u097F]/.test(typingPassage || '')
+    if (isHiMode) {
+      sanitizeTrailingAsciiInHindiBox(input, typingPassage)
+    }
+    typingInputValue = input.value.replace(/\u200B/g, '').slice(0, typingPassage.length)
     if (!typingStartedAt && typingInputValue.length) {
       typingStartedAt = Date.now()
       typingTimer = setInterval(() => {
         if (typingFinished) { stopTypingTimer(); return }
-        typingRemaining = Math.max(0, typingRemaining - 1)
-        const elapsedSeconds = Math.max(1, Math.round((Date.now() - typingStartedAt) / 1000))
+        const maxAllowedSec = Math.max(1, Math.round((Number(typingDuration) || 10) * 60))
+        const elapsedSeconds = Math.max(1, Math.min(maxAllowedSec, Math.floor((Date.now() - typingStartedAt) / 1000)))
+        typingRemaining = Math.max(0, maxAllowedSec - elapsedSeconds)
         if (elapsedSeconds % 5 === 0 && typingSpeedSamples.at(-1)?.second !== elapsedSeconds) {
           const snap = calculateTypingStats(typingInputValue, elapsedSeconds)
           const previousSample = typingSpeedSamples.at(-1)
@@ -793,7 +1138,7 @@ function renderOnboarding() {
           <label for="profile-exam">${isHi ? 'आप किस परीक्षा की तैयारी कर रहे हैं?' : 'Which exam are you preparing for?'}</label>
           <select id="profile-exam" name="exam" required>
             <option value="">${isHi ? 'परीक्षा चुनें' : 'Select an exam'}</option>
-            <option>RSSB LDC</option><option>Rajasthan High Court LDC</option><option>RRB</option><option>SSC</option><option>DSSSB</option><option>KVS / NVS</option><option>EMRS</option><option>Banking</option><option value="Other">${isHi ? 'अन्य (Other)' : 'Other'}</option>
+            <option selected>RSSB LDC</option><option>Rajasthan High Court LDC</option><option>RRB</option><option>SSC</option><option>DSSSB</option><option>KVS / NVS</option><option>EMRS</option><option>Banking</option><option value="Other">${isHi ? 'अन्य (Other)' : 'Other'}</option>
           </select>
           <div id="other-exam-wrap" hidden><label for="profile-other-exam">${isHi ? 'परीक्षा का नाम' : 'Exam name'}</label><input id="profile-other-exam" name="otherExam" maxlength="120" placeholder="${isHi ? 'परीक्षा का नाम लिखें' : 'Enter exam name'}" /></div>
           <p class="onboarding-error" id="onboarding-error" role="alert"></p>
@@ -814,7 +1159,9 @@ function renderOnboarding() {
     const error = document.querySelector('#onboarding-error')
     if (!name || !/^[+0-9]{10,15}$/.test(mobile) || !exam) { error.textContent = isHi ? 'कृपया नाम, सही मोबाइल नंबर और परीक्षा भरें।' : 'Please enter your name, a valid mobile number and exam.'; return }
     const profile = { id: (globalThis.crypto?.randomUUID?.() || `ag-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`), name, mobile, exam, language: appLanguage, createdAt: new Date().toISOString(), syncStatus: 'pending' }
+    profile.rollNumber = mobile
     localStorage.setItem('ag-user-profile', JSON.stringify(profile))
+    syncUserProfileWithDisk(profile)
     const queue = (() => { try { return JSON.parse(localStorage.getItem('ag-profile-sync-queue') || '[]') } catch { return [] } })()
     if (!queue.some((item) => item.id === profile.id)) queue.push(profile)
     localStorage.setItem('ag-profile-sync-queue', JSON.stringify(queue))
@@ -915,10 +1262,54 @@ function renderHome() {
         </section>
 
         <section class="section-block exam-tile-section">
-          <div class="section-title"><div><span class="eyebrow">${isHi ? 'परीक्षा के अनुसार तैयारी' : 'PREPARE FOR YOUR EXAM'}</span><h2>${isHi ? 'अपनी परीक्षा चुनें' : 'Choose your exam'}</h2><p>${isHi ? 'ये परीक्षा विकल्प हिन्दी और English दोनों में हमेशा उपलब्ध रहेंगे।' : 'Exam tiles stay available in both English and Hindi.'}</p></div></div>
-          <div class="exam-tile-grid">${[
-            ['RSSB LDC','⌨️'],['Rajasthan High Court LDC','⚖️'],['RRB','🚆'],['SSC','🎯'],['DSSSB','🏫'],['KVS / NVS','📚'],['EMRS','🏫'],['Banking','🏦'],['Other Exams','＋']
-          ].map(([name,icon])=>`<button type="button" class="exam-tile" data-exam-tile="${escapeHtml(name)}"><span>${icon}</span><strong>${escapeHtml(name)}</strong><small>${isHi ? 'परीक्षा विकल्प देखें' : 'Explore exam options'} →</small></button>`).join('')}</div>
+          <div class="section-title">
+            <div>
+              <span class="eyebrow">${isHi ? 'परीक्षा के अनुसार तैयारी' : 'PREPARE FOR YOUR EXAM'}</span>
+              <h2>${isHi ? 'अपनी परीक्षा चुनें (RSSB LDC & Daily Live)' : 'Choose your exam (RSSB LDC & Daily Live)'}</h2>
+              <p>${isHi ? 'वर्तमान में RSSB LDC (80 Full Tests · MS Office 2013) एवं Daily 8:00 AM Live Test सक्रिय हैं। अन्य परीक्षाएँ जल्द आ रही हैं।' : 'RSSB LDC (80 Full Tests · MS Office 2013) and Daily 8:00 AM Live Rank Test are active. Other exams are coming soon.'}</p>
+            </div>
+          </div>
+          <div class="exam-tile-grid">
+            <button type="button" class="exam-tile exam-tile-active-primary" data-exam-tile="RSSB LDC" style="border:2px solid #2563eb; background:linear-gradient(135deg,#eff6ff 0%,#ffffff 100%); position:relative;">
+              <span style="position:absolute; top:10px; right:10px; background:#16a34a; color:#fff; font-size:10px; font-weight:800; padding:3px 8px; border-radius:999px;">✓ ACTIVE · 80 TESTS</span>
+              <span>🏛️</span>
+              <strong>RSSB LDC (Exam Hall)</strong>
+              <small>${isHi ? '80 फुल मॉक टेस्ट · MS Office 2013 पैटर्न →' : '80 Full Mock Tests · MS Office 2013 Pattern →'}</small>
+            </button>
+
+            <button type="button" class="exam-tile exam-tile-daily-live" data-exam-tile="RSSB LDC DAILY LIVE" style="border:2px solid #dc2626; background:linear-gradient(135deg,#fef2f2 0%,#ffffff 100%); position:relative;">
+              <span style="position:absolute; top:10px; right:10px; background:#dc2626; color:#fff; font-size:10px; font-weight:800; padding:3px 8px; border-radius:999px;">🔴 LIVE 8:00 AM · RANK</span>
+              <span>🔥</span>
+              <strong>RSSB LDC Daily Live Test</strong>
+              <small>${isHi ? 'रोज़ सुबह 8:00 बजे · 4 पेपर्स + Live All-Raj Rank →' : 'Daily 8:00 AM · 4 Papers + Live All-Raj Rank →'}</small>
+            </button>
+
+            ${[
+              ['Rajasthan High Court LDC','⚖️'],
+              ['RRB','🚆'],
+              ['SSC','🎯'],
+              ['DSSSB','🏫'],
+              ['KVS / NVS','📚'],
+              ['EMRS','🏫'],
+              ['Banking','🏦'],
+              ['Other Exams','＋']
+            ].map(([name,icon])=>`
+              <button type="button" class="exam-tile exam-tile-coming-soon" data-exam-tile="${escapeHtml(name)}" style="opacity:0.86; position:relative;">
+                <span style="position:absolute; top:10px; right:10px; background:#f59e0b; color:#fff; font-size:10px; font-weight:800; padding:2px 7px; border-radius:999px;">⏳ Coming Soon</span>
+                <span>${icon}</span>
+                <strong>${escapeHtml(name)}</strong>
+                <small style="color:#b45309; font-weight:700;">${isHi ? 'Coming Soon · कस्टम डिमांड हेतु WhatsApp करें →' : 'Coming Soon · Request via WhatsApp →'}</small>
+              </button>
+            `).join('')}
+          </div>
+
+          <div style="margin-top:14px; padding:14px 18px; background:linear-gradient(90deg,#f0fdf4,#eff6ff); border:1px solid #bbf7d0; border-radius:14px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+            <div style="font-size:13px; color:#1e293b; line-height:1.55;">
+              <strong>💬 ${isHi ? 'क्या आपको किसी अन्य परीक्षा या व्यक्तिगत प्रैक्टिस के लिए कस्टम टेस्ट चाहिए?' : 'Need a Custom Exam Pattern or Personal Practice Module?'}</strong><br>
+              <span>${isHi ? 'अन्य सभी परीक्षाएँ जल्द आ रही हैं (Coming Soon)। यदि आपको किसी विशेष एग्जाम के लिए पर्सनल पैटर्न बनवाना हो तो हमें WhatsApp करें — अगले Auto-Update में वह सीधे आपके ऐप में जुड़ जाएगा!' : 'Other exams are Coming Soon. If you need a specific exam pattern built personally for you, message us on WhatsApp and receive it directly in the next Auto-Update!'}</span>
+            </div>
+            <a href="https://wa.me/917878025556?text=Hello%20Xtreme%20AG%20Apps%2C%20mujhe%20AG%20Typing%20Tutor%20me%20custom%20exam%20pattern%20chahiye." target="_blank" rel="noreferrer" class="primary-button" style="background:#16a34a; border-color:#15803d; padding:9px 16px; font-size:13px; font-weight:800; border-radius:10px; text-decoration:none; white-space:nowrap;">💬 WhatsApp करें · 7878025556</a>
+          </div>
         </section>
 
         <section class="section-block">
@@ -969,10 +1360,11 @@ function renderHome() {
       openRssbLdcEntryPopup()
       return
     }
-    if (selectedExam === 'Other Exams') { renderSection('exams'); return }
-    renderSection('exams')
-    const select = document.querySelector('#exam-select')
-    if (select) { const option = [...select.options].find((item) => item.value === selectedExam || item.textContent === selectedExam); if (option) select.value = option.value; select.dispatchEvent(new Event('change')) }
+    if (selectedExam === 'RSSB LDC DAILY LIVE') {
+      renderSection('rssb-daily-live')
+      return
+    }
+    openComingSoonExamModal(selectedExam)
   }))
 }
 
@@ -1066,16 +1458,7 @@ function openTypingFullscreen() {
   modal.querySelector('#speedometer-toggle')?.addEventListener('click', () => { const gauge = modal.querySelector('.speedometer-card'); if (gauge) { gauge.classList.toggle('is-collapsed'); modal.querySelector('#speedometer-toggle').textContent = gauge.classList.contains('is-collapsed') ? 'Show speedometer' : 'Hide speedometer' } })
   attachTypingReviewPractice();
 
-  // Auto-enable typing in fullscreen
-  const fsInput = modal.querySelector('#typing-input');
-  if (fsInput) {
-    fsInput.disabled = false;
-    fsInput.addEventListener('focus', () => {
-      if (!typingStartedAt && typeof startTypingTest === 'function') {
-        try { startTypingTest(); } catch {}
-      }
-    }, { once: true });
-  }
+
 
 }
 
@@ -1105,7 +1488,7 @@ function attachTypingReviewPractice() {
 
 function renderSection(page) {
   if (page === 'performance' || page === 'settings') page = 'profile'
-  if (page === 'practice') { selectedPracticeLanguage = appLanguage === 'hi' ? 'hi' : 'en'; selectedPracticeCategory = 'All topics'; if (!practiceExerciseData.some((item) => String(item.id) === String(selectedExerciseId) && item.language === selectedPracticeLanguage)) selectedExerciseId = practiceExerciseData.find((item) => item.language === selectedPracticeLanguage)?.id || (selectedPracticeLanguage === 'hi' ? 'hi-001' : 'en-001') }
+  if (page === 'practice' || page === 'speed') { selectedPracticeLanguage = appLanguage === 'hi' ? 'hi' : 'en'; selectedPracticeCategory = 'All topics'; if (!practiceExerciseData.some((item) => String(item.id) === String(selectedExerciseId) && item.language === selectedPracticeLanguage)) selectedExerciseId = practiceExerciseData.find((item) => item.language === selectedPracticeLanguage)?.id || (selectedPracticeLanguage === 'hi' ? 'hi-001' : 'en-001') }
   currentSection = page
 
   if (page === 'home') {
@@ -1113,7 +1496,7 @@ function renderSection(page) {
     return
   }
 
-  const section = sections.find((item) => item.id === page) || (page === 'profile' ? { id: 'profile', icon: '👤', title: appLanguage === 'hi' ? 'मेरी प्रोफ़ाइल' : 'My Profile', description: appLanguage === 'hi' ? 'आपके टेस्ट रिकॉर्ड, रिपोर्ट और सेटिंग्स।' : 'Your test records, reports and settings.' } : page === 'rssb-ldc-exam' ? { id: 'rssb-ldc-exam', icon: '🏛️', title: 'RSSB LDC Phase-II Exam Hall (80 Mock Tests)', description: 'राजस्थान कर्मचारी चयन बोर्ड लिपिक ग्रेड-II / कनिष्ठ सहायक फेज-II — टंकण गति एवं दक्षता परीक्षण (Exam Hall Simulation)' } : null)
+  const section = sections.find((item) => item.id === page) || (page === 'profile' ? { id: 'profile', icon: '👤', title: appLanguage === 'hi' ? 'मेरी प्रोफ़ाइल' : 'My Profile', description: appLanguage === 'hi' ? 'आपके टेस्ट रिकॉर्ड, रिपोर्ट और सेटिंग्स।' : 'Your test records, reports and settings.' } : page === 'rssb-ldc-exam' ? { id: 'rssb-ldc-exam', icon: '🏛️', title: 'RSSB LDC Phase-II Exam Hall (80 Mock Tests)', description: 'राजस्थान कर्मचारी चयन बोर्ड लिपिक ग्रेड-II / कनिष्ठ सहायक फेज-II — टंकण गति एवं दक्षता परीक्षण (MS Office 2013 Exam Hall)' } : page === 'rssb-daily-live' ? { id: 'rssb-daily-live', icon: '🔴', title: 'RSSB LDC Daily Live Practice (8:00 AM · All-Rajasthan Live Rank)', description: 'प्रतिदिन सुबह 8:00 बजे नया लाइव टेस्ट (4 प्रश्न पत्र: हिन्दी/अंग्रेजी टाइपिंग + MS Office 2013 दक्षता) एवं लाइव रैंक लीडरबोर्ड' } : null)
 
   if (!section) {
     renderHome()
@@ -1169,9 +1552,15 @@ function renderSection(page) {
         </div>
         <div class="word-legend"><span><i class="legend-dot correct-dot"></i> Correct word</span><span><i class="legend-dot incorrect-dot"></i> Incorrect word</span><span><i class="legend-dot progress-dot"></i> In progress</span></div>
         <div class="typing-test-card">
-          <div class="typing-card-heading"><h3>Type the passage</h3><span>${selectedPracticeLanguage === 'hi' ? 'हिन्दी · अभ्यास' : 'English · Practice'}</span></div>
-          <div class="typing-passage" id="typing-passage">${escapeHtml(typingPassage || 'Press “Start Typing Test” to load a passage. The passage will appear here, and you can begin typing in the box below.')}</div>
-          <textarea id="typing-input" class="typing-input" rows="5" placeholder="${selectedPracticeLanguage === 'hi' ? 'यहाँ टाइप करना शुरू करें (DevLys 010 स्वतः चालू है)...' : 'Type the passage here (timer starts on your first keystroke)...'}" ${typingFinished ? 'disabled' : ''} spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+          <div class="typing-card-heading" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+            <h3>${selectedPracticeLanguage === 'hi' ? 'नीचे दिए गए बॉक्स में टाइप करें (DevLys 010 स्वतः चालू)' : 'Type the passage below'}</h3>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <button type="button" class="language-switch ${selectedPracticeLanguage !== 'hi' ? 'active' : ''}" data-practice-lang-switch="en" style="padding:5px 12px; font-size:12.5px; font-weight:700; border-radius:8px; cursor:pointer;">🇬🇧 English</button>
+              <button type="button" class="language-switch ${selectedPracticeLanguage === 'hi' ? 'active' : ''}" data-practice-lang-switch="hi" style="padding:5px 12px; font-size:12.5px; font-weight:700; border-radius:8px; cursor:pointer;">🇮🇳 हिन्दी (DevLys 010)</button>
+            </div>
+          </div>
+          <div class="typing-passage ${selectedPracticeLanguage === 'hi' ? 'hindi-devlys-font' : ''}" id="typing-passage">${escapeHtml(typingPassage || 'Loading passage...')}</div>
+          <textarea id="typing-input" class="typing-input ${selectedPracticeLanguage === 'hi' ? 'hindi-devlys-font' : ''}" rows="5" placeholder="${selectedPracticeLanguage === 'hi' ? 'यहाँ सीधे टाइप करना शुरू करें (DevLys 010 हिन्दी की-मैप स्वतः चालू है — पहले अक्षर के साथ टाइमर शुरू होगा)...' : 'Start typing here directly (Timer starts automatically on your first keystroke)...'}" ${typingFinished ? 'disabled' : ''} spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
           <div class="typing-submit-row"><span id="typing-submit-status">Submit when you finish, or wait for the timer.</span><button class="primary-button" type="button" id="typing-submit">Submit Test</button></div>
           <div id="typing-result" class="typing-result" ${typingFinished ? '' : 'hidden'}></div>
         </div>
@@ -1213,6 +1602,8 @@ function renderSection(page) {
     `
   } else if (page === 'rssb-ldc-exam') {
     content = renderRssbLdcExamHub()
+  } else if (page === 'rssb-daily-live') {
+    content = renderRssbDailyLiveHub()
   } else if (page === 'profile') {
     const history = getTypingHistory()
     const bestWpm = history.length ? Math.max(...history.map((item) => Number(item.netWpm ?? item.wpm) || 0)) : 0
@@ -1326,6 +1717,7 @@ function renderSection(page) {
   attachSectionActions()
   if (page === 'word-efficiency' || page === 'excel-efficiency') attachEfficiencySimulator(page)
   if (page === 'rssb-ldc-exam') attachRssbLdcExamHub()
+  if (page === 'rssb-daily-live') attachRssbDailyLiveHub()
   document.querySelector('#open-rssb-ldc-hall-btn')?.addEventListener('click', () => openRssbLdcEntryPopup())
 }
 
@@ -1340,7 +1732,7 @@ function attachNavigation() {
 
 function attachSectionActions() {
   document.querySelector('#edit-profile-toggle')?.addEventListener('click', () => { const panel = document.querySelector('#profile-edit-card'); if (panel) panel.hidden = !panel.hidden })
-  document.querySelector('#profile-edit-form')?.addEventListener('submit', (event) => { event.preventDefault(); const next = { ...userProfile, name: document.querySelector('#edit-name').value.trim(), mobile: document.querySelector('#edit-mobile').value.trim(), exam: document.querySelector('#edit-exam').value.trim() }; if (!next.name || !next.mobile || !next.exam) return; userProfile = next; localStorage.setItem('ag-user-profile', JSON.stringify(userProfile)); renderSection('profile') })
+  document.querySelector('#profile-edit-form')?.addEventListener('submit', (event) => { event.preventDefault(); const next = { ...userProfile, name: document.querySelector('#edit-name').value.trim(), mobile: document.querySelector('#edit-mobile').value.trim(), exam: document.querySelector('#edit-exam').value.trim() }; if (!next.name || !next.mobile || !next.exam) return; userProfile = next; localStorage.setItem('ag-user-profile', JSON.stringify(userProfile)); syncUserProfileWithDisk(userProfile); renderSection('profile') })
   document.querySelector('#profile-language')?.addEventListener('change', (event) => { appLanguage = event.target.value; localStorage.setItem('ag-language', appLanguage); renderSection('profile') })
   document.querySelector('#profile-theme')?.addEventListener('change', (event) => { document.documentElement.dataset.theme = event.target.value; localStorage.setItem('ag-typing-theme', event.target.value) })
   document.querySelector('#save-profile-settings')?.addEventListener('click', () => { localStorage.setItem('ag-user-settings', JSON.stringify({ backspace: document.querySelector('#profile-backspace')?.checked !== false, highlights: document.querySelector('#profile-highlights')?.checked !== false })); const status = document.createElement('p'); status.className = 'helper-text'; status.textContent = appLanguage === 'hi' ? 'सेटिंग्स इस डिवाइस पर सेव हो गईं।' : 'Settings saved on this device.'; document.querySelector('.profile-settings-grid')?.append(status) })
@@ -1403,7 +1795,7 @@ function attachSectionActions() {
 const efficiencyState = {
   module: '', question: null, questionIndex: 1, startedAt: 0, timer: null, secondsLeft: 900,
   points: 0, wordActions: new Set(), excelDataset: [], excelFormulas: {}, selectedCell: 'A1', history: [],
-  language: 'en', fileNo: 1, fileData: null, activePage: '', lastResult: null, started: false, questionMarks: {}
+  language: 'en', fileNo: 1, fileData: null, activePage: '', lastResult: null, started: false, questionMarks: {}, officeEdition: localStorage.getItem('ag-office-edition') || '2013'
 }
 
 function efficiencyEscape(value) {
@@ -1594,7 +1986,14 @@ function efficiencyShowLanguagePicker(page) {
   efficiencyState.module = isWord ? 'word' : 'excel'
   if (efficiencyState.timer) clearInterval(efficiencyState.timer)
   root.classList.remove('efficiency-fullscreen')
-  root.innerHTML = `<section class="efficiency-hub"><div class="efficiency-hub-hero"><span class="eyebrow">RAJASTHAN RSSB LDC &amp; HIGH COURT LDC EFFICIENCY</span><h2>${isWord ? 'MS Word 2019 Efficiency' : 'MS Excel 2019 Efficiency'}</h2><p>Choose your exercise language. Each test has 15 systematic questions (Full Marks: 25 · Qualifying: 9 · Duration: 10:00 Minutes).</p><div class="efficiency-hub-stats"><span><strong>40</strong><small>Tests per language</small></span><span><strong>15</strong><small>Questions (25 Marks)</small></span><span><strong>10:00</strong><small>Minutes Exam Time</small></span></div></div><div class="efficiency-language-grid"><button type="button" class="efficiency-language-card" data-eff-language="en"><span class="efficiency-language-icon">EN</span><span><strong>English Efficiency</strong><small>RSSB LDC Official Pattern (25 Marks · 15 Tasks)</small></span><span class="efficiency-card-arrow">›</span></button><button type="button" class="efficiency-language-card" data-eff-language="hi"><span class="efficiency-language-icon hindi">हि</span><span><strong>हिन्दी Efficiency</strong><small>राजस्थान RSSB LDC आधिकारिक पैटर्न (25 अंक · 15 प्रश्न)</small></span><span class="efficiency-card-arrow">›</span></button></div></section>`
+  const curEd = efficiencyState.officeEdition || localStorage.getItem('ag-office-edition') || '2013'
+  efficiencyState.officeEdition = curEd
+  root.innerHTML = `<section class="efficiency-hub"><div class="efficiency-hub-hero"><span class="eyebrow">RAJASTHAN RSSB LDC (MS OFFICE 2013) &amp; OTHER EXAMS (2013 + 2019)</span><h2>${isWord ? `MS Word ${curEd} Efficiency` : `MS Excel ${curEd} Efficiency`}</h2><p>Choose your Office Interface Edition (2013 or 2019) and Exercise Language. Each test has 15 systematic questions (Full Marks: 25 · Qualifying: 9 · Duration: 10:00 Minutes).</p><div style="display:flex;justify-content:center;gap:10px;margin:14px 0;flex-wrap:wrap;"><button type="button" class="${curEd === '2013' ? 'primary-button' : 'secondary-button'}" data-eff-edition-pick="2013" style="padding:9px 18px;font-size:13px;font-weight:800;border-radius:10px;">🏛️ MS Office 2013 Interface (RSSB LDC Official)</button><button type="button" class="${curEd === '2019' ? 'primary-button' : 'secondary-button'}" data-eff-edition-pick="2019" style="padding:9px 18px;font-size:13px;font-weight:800;border-radius:10px;">💻 MS Office 2019 Interface (Other Exams / Modern)</button></div><div class="efficiency-hub-stats"><span><strong>40</strong><small>Tests per language</small></span><span><strong>15</strong><small>Questions (25 Marks)</small></span><span><strong>2 Editions</strong><small>Office 2013 &amp; 2019</small></span></div></div><div class="efficiency-language-grid"><button type="button" class="efficiency-language-card" data-eff-language="en"><span class="efficiency-language-icon">EN</span><span><strong>English Efficiency (MS ${isWord ? 'Word' : 'Excel'} ${curEd})</strong><small>RSSB LDC Official Pattern (25 Marks · 15 Tasks)</small></span><span class="efficiency-card-arrow">›</span></button><button type="button" class="efficiency-language-card" data-eff-language="hi"><span class="efficiency-language-icon hindi">हि</span><span><strong>हिन्दी Efficiency (MS ${isWord ? 'Word' : 'Excel'} ${curEd})</strong><small>राजस्थान RSSB LDC आधिकारिक पैटर्न (25 अंक · 15 प्रश्न)</small></span><span class="efficiency-card-arrow">›</span></button></div></section>`
+  root.querySelectorAll('[data-eff-edition-pick]').forEach(btn => btn.addEventListener('click', () => {
+    efficiencyState.officeEdition = btn.dataset.effEditionPick === '2019' ? '2019' : '2013'
+    localStorage.setItem('ag-office-edition', efficiencyState.officeEdition)
+    efficiencyShowLanguagePicker(page)
+  }))
   root.querySelectorAll('[data-eff-language]').forEach(button => button.addEventListener('click', () => efficiencyShowExerciseList(page, button.dataset.effLanguage)))
 }
 
@@ -1712,14 +2111,26 @@ function efficiencyShowQuestionList(page, language, fileNo, fileData) {
           <li>8. Click <strong>'Submit'</strong> when you have finished all tasks. Assessment and step-by-step menu solutions are automatic.</li>
         </ol>
 
+        <div style="margin:14px 0;padding:12px 16px;background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+          <strong style="font-size:13px;color:#1e293b;">🖥️ Select Office Interface Edition (इंटरफ़ेस चुनें):</strong>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button type="button" class="${efficiencyState.officeEdition !== '2019' ? 'primary-button' : 'secondary-button'}" data-inst-edition="2013" style="padding:7px 14px;font-size:12.5px;font-weight:800;border-radius:8px;">🏛️ MS Office 2013 (RSSB LDC Official)</button>
+            <button type="button" class="${efficiencyState.officeEdition === '2019' ? 'primary-button' : 'secondary-button'}" data-inst-edition="2019" style="padding:7px 14px;font-size:12.5px;font-weight:800;border-radius:8px;">💻 MS Office 2019 (Modern Edition)</button>
+          </div>
+        </div>
         <div class="o19-inst-actions">
-          <button type="button" class="o19-inst-start-btn" id="o19-start-exam-now">Start Efficiency Test</button>
+          <button type="button" class="o19-inst-start-btn" id="o19-start-exam-now">Start Efficiency Test (MS Office ${efficiencyState.officeEdition === '2019' ? '2019' : '2013'})</button>
           <button type="button" class="secondary-button" id="o19-back-to-exercises">← Back to Exercises</button>
         </div>
       </div>
     </section>
   `
 
+  root.querySelectorAll('[data-inst-edition]').forEach(btn => btn.addEventListener('click', () => {
+    efficiencyState.officeEdition = btn.dataset.instEdition === '2019' ? '2019' : '2013'
+    localStorage.setItem('ag-office-edition', efficiencyState.officeEdition)
+    efficiencyShowQuestionList(page, language, fileNo, fileData)
+  }))
   root.querySelector('#o19-back-to-exercises')?.addEventListener('click', () => {
     efficiencyShowExerciseList(page, language)
   })
@@ -4071,20 +4482,32 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
   root.classList.add('efficiency-fullscreen')
 
   const isExamHall = Boolean(efficiencyState.examHallMode)
+  if (isExamHall) {
+    efficiencyState.officeEdition = '2013'
+  } else if (!efficiencyState.officeEdition) {
+    efficiencyState.officeEdition = localStorage.getItem('ag-office-edition') || '2013'
+  }
+  const is2013 = efficiencyState.officeEdition !== '2019'
+  const edYear = is2013 ? '2013' : '2019'
   const examMeta = efficiencyState.examHallMeta || {}
+  const candName = getRssbCandidateName()
+  const candRoll = getRssbCandidateRoll()
   efficiencyState.selectedWordElements = []
   efficiencyState.selectedExcelCells = []
   const topHeaderBar = `
-    <header class="o19-nexus-topbar ${isWord ? 'word-theme' : 'excel-theme'}">
+    <header class="o19-nexus-topbar ${isWord ? 'word-theme' : 'excel-theme'} ${is2013 ? 'topbar-2013' : 'topbar-2019'}">
       <div class="o19-nexus-top-left">
         <button type="button" class="o19-nexus-back-btn" id="efficiency-exit" title="${isExamHall ? 'Exit Exam Hall' : 'Back to Instructions'}">←</button>
         <div class="o19-nexus-mod-title">
-          <strong>${isExamHall ? `${efficiencyEscape(examMeta.paperLabel || (isWord ? 'MS Word Efficiency' : 'MS Excel Efficiency'))} · Exercise #${String(fileNo).padStart(2, '0')}` : `${isWord ? 'Word' : 'Excel'} Module ${String(fileNo).padStart(2, '0')}`}</strong>
-          <span>${isExamHall ? `RSSB LDC EXAM HALL · ROLL NO: admin · NAME: admin · MAX MARKS: 25 (QUALIFYING: 9)` : `RSSB LDC OFFICIAL PATTERN · 15 QUESTIONS · FULL MARKS: 25 (MARKS AT END)`}</span>
+          <strong>${isExamHall ? `${efficiencyEscape(examMeta.paperLabel || (isWord ? 'MS Word 2013 Efficiency' : 'MS Excel 2013 Efficiency'))} · Exercise #${String(fileNo).padStart(2, '0')}` : `MS ${isWord ? 'Word' : 'Excel'} ${edYear} — Module ${String(fileNo).padStart(2, '0')}`}</strong>
+          <span>${isExamHall ? `RSSB LDC EXAM HALL (MS OFFICE 2013) · ROLL NO: ${efficiencyEscape(candRoll)} · NAME: ${efficiencyEscape(candName)} · MAX MARKS: 25` : `MS OFFICE ${edYear} EDITION · 15 QUESTIONS · FULL MARKS: 25 (MARKS AT END)`}</span>
         </div>
       </div>
       <div class="o19-nexus-top-right">
-        ${isExamHall ? `<span class="o19-live-score-badge" style="background:rgba(255,255,255,0.16);color:#fff;">Roll No: admin · 25 Marks</span>` : `<button type="button" class="o19-nexus-pause-btn" id="o19-pause-btn">⏸ Pause</button>`}
+        ${isExamHall ? `<span class="o19-live-score-badge" style="background:rgba(255,255,255,0.16);color:#fff;">${efficiencyEscape(candName)} (${efficiencyEscape(candRoll)}) · Office 2013</span>` : `
+          <button type="button" class="o19-nexus-pause-btn" id="o19-edition-switch-btn" title="Switch between MS Office 2013 (RSSB LDC) and MS Office 2019">${is2013 ? '🏛️ Office 2013 (Switch to 2019)' : '💻 Office 2019 (Switch to 2013)'}</button>
+          <button type="button" class="o19-nexus-pause-btn" id="o19-pause-btn">⏸ Pause</button>
+        `}
         <div class="o19-nexus-timer-pill" id="efficiency-timer">10:00</div>
         <button type="button" class="o19-nexus-submit-top" id="efficiency-submit">${isExamHall ? 'Submit Paper →' : 'Submit Test'}</button>
       </div>
@@ -4130,19 +4553,27 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
     const cohesiveWordHTML = efficiencyBuildCohesiveWordHTML(questions, efficiencyState.fileData)
     const plain = cohesiveWordHTML.replace(/<[^>]+>/g, ' ').trim()
     const totalWordsCount = plain ? plain.split(/\s+/).length : 0
-    const wordTabs = ['File', 'Home', 'Insert', 'Design', 'Layout', 'References', 'Mailings', 'Review', 'View', 'Developer', 'Help']
+    const wordTabs = is2013
+      ? ['File', 'Home', 'Insert', 'Design', 'Layout', 'References', 'Mailings', 'Review', 'View']
+      : ['File', 'Home', 'Insert', 'Design', 'Layout', 'References', 'Mailings', 'Review', 'View', 'Developer', 'Help']
 
     root.innerHTML = `
       ${topHeaderBar}
-      <section class="office-app office-word o19-full-suite-layout">
+      <section class="office-app office-word o19-full-suite-layout ${is2013 ? 'office-edition-2013' : 'office-edition-2019'}">
         <nav class="office-tabs">
-          ${wordTabs.map((tab, i) => `<button type="button" class="${i === 1 ? 'active' : ''} ${i === 0 ? 'office-file-tab' : ''}" data-word-tab="${tab}">${tab}</button>`).join('')}
+          ${wordTabs.map((tab, i) => {
+            const label = is2013 ? (tab === 'Layout' ? 'PAGE LAYOUT' : tab.toUpperCase()) : tab
+            return `<button type="button" class="${i === 1 ? 'active' : ''} ${i === 0 ? 'office-file-tab' : ''}" data-word-tab="${tab}">${label}</button>`
+          }).join('')}
           <div class="o19-qat-inline">
             <button type="button" class="o19-qat-btn" data-word-extra="save" title="Save (Ctrl+S)">${O19_ICONS.save}</button>
             <button type="button" class="o19-qat-btn" data-word-extra="undo-cmd" title="Undo (Ctrl+Z)">${O19_ICONS.undo}</button>
             <button type="button" class="o19-qat-btn" data-word-extra="redo-cmd" title="Redo (Ctrl+Y)">${O19_ICONS.redo}</button>
           </div>
-          <label class="o19-tell-me"><span class="o19-tell-me-icon">💡</span><input type="text" id="word-tell-me" placeholder="Tell me what you want to do"></label>
+          ${is2013
+            ? `<span class="o13-title-badge">Document1 - Microsoft Word 2013</span>`
+            : `<label class="o19-tell-me"><span class="o19-tell-me-icon">💡</span><input type="text" id="word-tell-me" placeholder="Tell me what you want to do"></label>`
+          }
         </nav>
         <div class="office-ribbon" id="word-ribbon-content">${efficiencyWordRibbon('Home')}</div>
 
@@ -4164,7 +4595,7 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
               </div>
             </div>
             <div class="office-statusbar">
-              <div class="o19-status-left"><span class="o19-status-item">Page 1 of 1</span><span class="o19-status-item" id="word-word-count">${totalWordsCount} words</span><span class="o19-status-item" id="efficiency-save-status">· Saved</span></div>
+              <div class="o19-status-left"><span class="o19-status-item">${is2013 ? 'PAGE 1 OF 1' : 'Page 1 of 1'}</span><span class="o19-status-item" id="word-word-count">${is2013 ? `${totalWordsCount} WORDS` : `${totalWordsCount} words`}</span><span class="o19-status-item" id="efficiency-save-status">· ${is2013 ? 'MICROSOFT WORD 2013' : 'Saved'}</span></div>
               <div class="o19-status-right">
                 <div class="o19-zoom-controls"><button type="button" class="o19-zoom-btn" data-word-extra="zoom-out">−</button><input type="range" class="o19-zoom-slider" id="word-zoom-slider" min="50" max="200" value="100"><button type="button" class="o19-zoom-btn" data-word-extra="zoom-in">+</button><span id="word-zoom-status">100%</span></div>
               </div>
@@ -4179,14 +4610,22 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
     const cols = 9
     efficiencyState.excelDataset = master.map(r => { const c = r.map(v => v ?? ''); while (c.length < cols) c.push(''); return c })
     while (efficiencyState.excelDataset.length < 18) efficiencyState.excelDataset.push(Array.from({ length: cols }, () => ''))
-    const excelTabs = ['File', 'Home', 'Insert', 'Page Layout', 'Formulas', 'Data', 'Review', 'View', 'Developer', 'Help']
+    const excelTabs = is2013
+      ? ['File', 'Home', 'Insert', 'Page Layout', 'Formulas', 'Data', 'Review', 'View']
+      : ['File', 'Home', 'Insert', 'Page Layout', 'Formulas', 'Data', 'Review', 'View', 'Developer', 'Help']
 
     root.innerHTML = `
       ${topHeaderBar}
-      <section class="office-app office-excel o19-full-suite-layout">
+      <section class="office-app office-excel o19-full-suite-layout ${is2013 ? 'office-edition-2013' : 'office-edition-2019'}">
         <nav class="office-tabs">
-          ${excelTabs.map((tab, i) => `<button type="button" class="${i === 1 ? 'active' : ''} ${i === 0 ? 'office-file-tab' : ''}" data-excel-tab="${tab}">${tab}</button>`).join('')}
-          <label class="o19-tell-me"><span class="o19-tell-me-icon">💡</span><input type="text" id="excel-tell-me" placeholder="Tell me what you want to do"></label>
+          ${excelTabs.map((tab, i) => {
+            const label = is2013 ? tab.toUpperCase() : tab
+            return `<button type="button" class="${i === 1 ? 'active' : ''} ${i === 0 ? 'office-file-tab' : ''}" data-excel-tab="${tab}">${label}</button>`
+          }).join('')}
+          ${is2013
+            ? `<span class="o13-title-badge">Book1 - Microsoft Excel 2013 (Click &amp; Drag Cells e.g. A2:H2 to Select · Double-Click or F2 to Edit)</span>`
+            : `<label class="o19-tell-me"><span class="o19-tell-me-icon">💡</span><input type="text" id="excel-tell-me" placeholder="Tell me what you want to do"></label>`
+          }
         </nav>
         <div class="office-ribbon" id="excel-ribbon-content">${efficiencyExcelRibbon('Home')}</div>
 
@@ -4194,18 +4633,21 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
           ${sidebarPanel}
           <div class="o19-doc-stage-col">
             <div class="excel-formula-row">
-              <div class="o19-name-box-wrap"><span id="excel-name-box">A2</span><span style="font-size:8px;color:#605e5c;">▾</span></div>
+              <div class="o19-name-box-wrap" title="Click & drag cells in sheet OR type range like A2:H2 here and press Enter">
+                <input id="excel-name-box" type="text" value="A2" style="width:68px;border:none;outline:none;font-size:12px;font-weight:700;color:#1e293b;background:transparent;" />
+                <span style="font-size:8px;color:#605e5c;">▾</span>
+              </div>
               <div class="o19-formula-btns"><button type="button" id="excel-cancel-cell">✕</button><button type="button" id="excel-apply-cell">✓</button><button type="button" class="fx-btn" data-excel-extra="open-function-dlg">fx</button></div>
-              <input id="excel-formula-input" placeholder="Enter a value or formula (e.g. =SUM(D3:E3), =AVERAGE(D3:D7), =IF(D3>=30000,&quot;Senior&quot;,&quot;Junior&quot;))">
+              <input id="excel-formula-input" placeholder="Select cell(s) by dragging (e.g. A2:H2) · Double-click cell or type formula here (e.g. =SUM(D3:E3))">
             </div>
             <div class="excel-grid-wrap">
               <table class="excel-grid" id="excel-grid">
-                <thead><tr><th class="excel-corner">◢</th>${Array.from({ length: cols }, (_, i) => `<th data-col-header="${i}">${String.fromCharCode(65 + i)}</th>`).join('')}</tr></thead>
+                <thead><tr><th class="excel-corner" title="Select All">◢</th>${Array.from({ length: cols }, (_, i) => `<th data-col-header="${i}" title="Click to select Column ${String.fromCharCode(65 + i)}">${String.fromCharCode(65 + i)}</th>`).join('')}</tr></thead>
                 <tbody>
                   ${efficiencyState.excelDataset.map((row, r) => `
                     <tr>
-                      <th data-row-header="${r}">${r + 1}</th>
-                      ${Array.from({ length: cols }, (_, c) => `<td><input class="excel-cell ${r === 0 && c === 0 ? 'excel-q-banner-cell' : ''} ${r === 1 && (row[c] ?? '') !== '' ? 'excel-heading-cell' : ''}" data-row="${r}" data-col="${c}" data-cell="${efficiencyCellRef(r, c)}" value="${efficiencyEscape(row[c] ?? '')}"></td>`).join('')}
+                      <th data-row-header="${r}" title="Click to select Row ${r + 1}">${r + 1}</th>
+                      ${Array.from({ length: cols }, (_, c) => `<td data-td-cell="${efficiencyCellRef(r, c)}"><input class="excel-cell ${r === 0 && c === 0 ? 'excel-q-banner-cell' : ''} ${r === 1 && (row[c] ?? '') !== '' ? 'excel-heading-cell' : ''}" data-row="${r}" data-col="${c}" data-cell="${efficiencyCellRef(r, c)}" value="${efficiencyEscape(row[c] ?? '')}" readonly="readonly"></td>`).join('')}
                     </tr>
                   `).join('')}
                 </tbody>
@@ -4299,8 +4741,22 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
     efficiencyRender(page, newData.questions[0], nextLang, 1, false)
   })
 
+  document.querySelector('#o19-edition-switch-btn')?.addEventListener('click', () => {
+    efficiencyState.officeEdition = efficiencyState.officeEdition === '2019' ? '2013' : '2019'
+    localStorage.setItem('ag-office-edition', efficiencyState.officeEdition)
+    efficiencyRender(page, efficiencyState.question, efficiencyState.language, efficiencyState.questionIndex, false)
+  })
+  efficiencyState.paused = false
+  efficiencyState.pausedMs = 0
+  efficiencyState.pauseStartedAt = 0
   document.querySelector('#o19-pause-btn')?.addEventListener('click', (e) => {
     efficiencyState.paused = !efficiencyState.paused
+    if (efficiencyState.paused) {
+      efficiencyState.pauseStartedAt = Date.now()
+    } else if (efficiencyState.pauseStartedAt) {
+      efficiencyState.pausedMs = (efficiencyState.pausedMs || 0) + Math.max(0, Date.now() - efficiencyState.pauseStartedAt)
+      efficiencyState.pauseStartedAt = 0
+    }
     e.currentTarget.textContent = efficiencyState.paused ? '▶ Resume' : '⏸ Pause'
   })
 
@@ -4313,11 +4769,12 @@ function efficiencyRender(page, question, language, questionIndex = 1, preserveS
   efficiencyState.secondsLeft = 600
   efficiencyState.timer = setInterval(() => {
     if (efficiencyState.paused) return
-    efficiencyState.secondsLeft = Math.max(0, efficiencyState.secondsLeft - 1)
+    const activeElapsedSec = Math.min(600, Math.max(0, Math.floor(((Date.now() - efficiencyState.startedAt) - (efficiencyState.pausedMs || 0)) / 1000)))
+    efficiencyState.secondsLeft = Math.max(0, 600 - activeElapsedSec)
     const t = document.querySelector('#efficiency-timer')
     if (t) t.textContent = efficiencyFormatTime(efficiencyState.secondsLeft)
     if (efficiencyState.secondsLeft <= 0) efficiencySubmit(page, [], efficiencyState.question, true)
-  }, 1000)
+  }, 250)
 }
 function attachEfficiencySimulator(page) { efficiencyShowLanguagePicker(page) }
 
@@ -5377,11 +5834,14 @@ function efficiencyCommitExcelCell(cell) {
     delete cell.dataset.calculated
   }
   const name = document.querySelector('#excel-name-box')
-  if (name) name.textContent = cell.dataset.cell
+  if (name) {
+    if ('value' in name) name.value = cell.dataset.cell
+    else name.textContent = cell.dataset.cell
+  }
   const bar = document.querySelector('#excel-formula-input')
   if (bar) bar.value = raw
   const status = document.querySelector('#excel-status')
-  if (status) status.textContent = String(raw).startsWith('=') ? `${raw} = ${efficiencyEvaluateFormula(raw)}` : 'Ready'
+  if (status) status.textContent = String(raw).startsWith('=') ? `${raw} = ${efficiencyEvaluateFormula(raw)}` : 'READY'
 }
 
 function efficiencyAttachExcel(tasks, question) {
@@ -5399,76 +5859,279 @@ function efficiencyAttachExcel(tasks, question) {
     return single ? [single] : []
   }
 
+  const updateNameBoxDisplay = (txt) => {
+    const name = document.querySelector('#excel-name-box')
+    if (!name) return
+    if ('value' in name) name.value = txt
+    else name.textContent = txt
+  }
+
+  const exitAllCellEditModes = (commitActive = true) => {
+    grid?.querySelectorAll('.excel-cell.is-editing-cell').forEach(el => {
+      if (commitActive) efficiencyCommitExcelCell(el)
+      el.classList.remove('is-editing-cell')
+      el.setAttribute('readonly', 'readonly')
+    })
+    try { window.getSelection()?.removeAllRanges() } catch {}
+  }
+
+  const enterCellEditMode = (cell, initialTypedChar = null) => {
+    if (!cell) return
+    exitAllCellEditModes(true)
+    efficiencyState.selectedCell = cell.dataset.cell
+    cell.removeAttribute('readonly')
+    cell.classList.add('is-editing-cell')
+    cell.dataset.beforeEditValue = cell.value
+    if (initialTypedChar !== null) {
+      cell.value = initialTypedChar
+    } else if (efficiencyState.excelFormulas[cell.dataset.cell]) {
+      cell.value = efficiencyState.excelFormulas[cell.dataset.cell]
+    }
+    const bar = document.querySelector('#excel-formula-input')
+    if (bar) bar.value = cell.value
+    const status = document.querySelector('#excel-status')
+    if (status) status.textContent = 'EDIT'
+    cell.focus({ preventScroll: true })
+    try {
+      const len = cell.value.length
+      cell.setSelectionRange(len, len)
+    } catch {}
+  }
+
+  const highlightActiveHeaders = (startRef, endRef) => {
+    if (!grid) return
+    const a = efficiencyParseRef(startRef)
+    const b = efficiencyParseRef(endRef || startRef)
+    grid.querySelectorAll('th.is-active-header').forEach(th => th.classList.remove('is-active-header'))
+    if (!a || !b) return
+    for (let r = Math.min(a.row, b.row); r <= Math.max(a.row, b.row); r++) {
+      grid.querySelector(`th[data-row-header="${r}"]`)?.classList.add('is-active-header')
+    }
+    for (let c = Math.min(a.col, b.col); c <= Math.max(a.col, b.col); c++) {
+      grid.querySelector(`th[data-col-header="${c}"]`)?.classList.add('is-active-header')
+    }
+  }
+
   const selectRangeFromAnchor = (startRef, endRef) => {
     const a = efficiencyParseRef(startRef)
     const b = efficiencyParseRef(endRef || startRef)
     if (!a || !b || !grid) return
     const selected = []
-    grid.querySelectorAll('.excel-cell.is-selected-range').forEach(el => el.classList.remove('is-selected-range'))
+    grid.querySelectorAll('.excel-cell.is-selected-range, .excel-cell.is-primary-active-cell').forEach(el => {
+      el.classList.remove('is-selected-range', 'is-primary-active-cell')
+    })
     for (let r = Math.min(a.row, b.row); r <= Math.max(a.row, b.row); r++) {
       for (let c = Math.min(a.col, b.col); c <= Math.max(a.col, b.col); c++) {
         const ref = efficiencyCellRef(r, c)
         const el = grid.querySelector(`.excel-cell[data-cell="${ref}"]`)
         if (el) {
           el.classList.add('is-selected-range')
+          if (ref === startRef) el.classList.add('is-primary-active-cell')
           selected.push(el)
         }
       }
     }
     efficiencyState.selectedExcelCells = selected
-    const name = document.querySelector('#excel-name-box')
-    if (name) name.textContent = startRef === endRef ? startRef : `${startRef}:${endRef}`
-  }
-
-  const highlightActiveHeaders = (cellEl) => {
-    if (!grid || !cellEl) return
-    const r = cellEl.dataset.row
-    const c = cellEl.dataset.col
-    grid.querySelectorAll('th.is-active-header').forEach(th => th.classList.remove('is-active-header'))
-    grid.querySelector(`th[data-col-header="${c}"]`)?.classList.add('is-active-header')
-    grid.querySelector(`th[data-row-header="${r}"]`)?.classList.add('is-active-header')
+    const topLeftRef = efficiencyCellRef(Math.min(a.row, b.row), Math.min(a.col, b.col))
+    const bottomRightRef = efficiencyCellRef(Math.max(a.row, b.row), Math.max(a.col, b.col))
+    updateNameBoxDisplay(topLeftRef === bottomRightRef ? topLeftRef : `${topLeftRef}:${bottomRightRef}`)
+    highlightActiveHeaders(startRef, endRef || startRef)
+    const countEl = document.querySelector('#excel-cell-count')
+    if (countEl) {
+      countEl.textContent = selected.length > 1 ? `Selected: ${topLeftRef}:${bottomRightRef} (${selected.length} cells)` : `Cell ${topLeftRef}`
+    }
   }
 
   let isDraggingCells = false
-  let dragStartRef = null
+  let dragStartRef = 'A2'
 
-  const bindCells = () => grid?.querySelectorAll('.excel-cell').forEach(cell => {
-    cell.addEventListener('mousedown', (ev) => {
-      if (ev.shiftKey && efficiencyState.selectedCell) {
-        selectRangeFromAnchor(efficiencyState.selectedCell, cell.dataset.cell)
-      } else {
-        isDraggingCells = true
-        dragStartRef = cell.dataset.cell
-        efficiencyState.selectedCell = cell.dataset.cell
-        selectRangeFromAnchor(cell.dataset.cell, cell.dataset.cell)
-      }
-    })
-    cell.addEventListener('mouseenter', () => {
-      if (isDraggingCells && dragStartRef) {
-        selectRangeFromAnchor(dragStartRef, cell.dataset.cell)
-      }
-    })
-    cell.addEventListener('focus', () => {
+  const handleCellPointerDown = (cell, ev) => {
+    if (!cell || ev.button !== 0) return
+    if (cell.classList.contains('is-editing-cell')) {
+      return
+    }
+    ev.preventDefault()
+    exitAllCellEditModes(true)
+    if (ev.shiftKey && efficiencyState.selectedCell) {
+      selectRangeFromAnchor(efficiencyState.selectedCell, cell.dataset.cell)
+    } else {
+      isDraggingCells = true
+      dragStartRef = cell.dataset.cell
       efficiencyState.selectedCell = cell.dataset.cell
-      if (!efficiencyState.selectedExcelCells?.length) {
-        selectRangeFromAnchor(cell.dataset.cell, cell.dataset.cell)
+      selectRangeFromAnchor(cell.dataset.cell, cell.dataset.cell)
+    }
+    const bar = document.querySelector('#excel-formula-input')
+    if (bar) bar.value = efficiencyState.excelFormulas[cell.dataset.cell] || cell.value
+    cell.focus({ preventScroll: true })
+  }
+
+  const handleCellPointerEnter = (cell, ev) => {
+    if (!cell) return
+    if (isDraggingCells && dragStartRef) {
+      if (ev && ev.buttons === 0) {
+        isDraggingCells = false
+        return
       }
-      const bar = document.querySelector('#excel-formula-input')
-      if (bar) bar.value = efficiencyState.excelFormulas[cell.dataset.cell] || cell.value
-      highlightActiveHeaders(cell)
+      selectRangeFromAnchor(dragStartRef, cell.dataset.cell)
+    }
+  }
+
+  const bindCells = () => {
+    grid?.querySelectorAll('td[data-td-cell]').forEach(td => {
+      const cell = td.querySelector('.excel-cell')
+      if (!cell) return
+      td.addEventListener('mousedown', (ev) => handleCellPointerDown(cell, ev))
+      td.addEventListener('mouseenter', (ev) => handleCellPointerEnter(cell, ev))
+      td.addEventListener('mousemove', (ev) => {
+        if (isDraggingCells) handleCellPointerEnter(cell, ev)
+      })
+      td.addEventListener('dblclick', (ev) => {
+        ev.preventDefault()
+        isDraggingCells = false
+        enterCellEditMode(cell, null)
+      })
+
+      cell.addEventListener('input', () => {
+        const bar = document.querySelector('#excel-formula-input')
+        if (bar && cell.classList.contains('is-editing-cell')) {
+          bar.value = cell.value
+        }
+      })
+
+      cell.addEventListener('change', () => efficiencyCommitExcelCell(cell))
+
+      cell.addEventListener('keydown', (event) => {
+        const isEditing = cell.classList.contains('is-editing-cell') && !cell.hasAttribute('readonly')
+        if (isEditing) {
+          if (event.key === 'Enter') {
+            event.preventDefault()
+            exitAllCellEditModes(true)
+            const nextRow = Math.min(17, Number(cell.dataset.row) + 1)
+            const nextCell = grid.querySelector(`.excel-cell[data-row="${nextRow}"][data-col="${cell.dataset.col}"]`)
+            if (nextCell) {
+              efficiencyState.selectedCell = nextCell.dataset.cell
+              selectRangeFromAnchor(nextCell.dataset.cell, nextCell.dataset.cell)
+              nextCell.focus({ preventScroll: true })
+            }
+          } else if (event.key === 'Escape') {
+            event.preventDefault()
+            if (cell.dataset.beforeEditValue !== undefined) cell.value = cell.dataset.beforeEditValue
+            exitAllCellEditModes(false)
+            selectRangeFromAnchor(cell.dataset.cell, cell.dataset.cell)
+            cell.focus({ preventScroll: true })
+          } else if (event.key === 'Tab') {
+            event.preventDefault()
+            exitAllCellEditModes(true)
+            const nextCol = Math.min(8, Number(cell.dataset.col) + (event.shiftKey ? -1 : 1))
+            const nextCell = grid.querySelector(`.excel-cell[data-row="${cell.dataset.row}"][data-col="${Math.max(0, nextCol)}"]`)
+            if (nextCell) {
+              efficiencyState.selectedCell = nextCell.dataset.cell
+              selectRangeFromAnchor(nextCell.dataset.cell, nextCell.dataset.cell)
+              nextCell.focus({ preventScroll: true })
+            }
+          }
+          return
+        }
+
+        // SELECTION MODE KEYBOARD HANDLING (Real MS Excel behavior)
+        if (event.key === 'F2') {
+          event.preventDefault()
+          enterCellEditMode(cell, null)
+          return
+        }
+        if (event.key === 'Backspace' || event.key === 'Delete') {
+          event.preventDefault()
+          applyToSelectedExcelCells(c => {
+            c.value = ''
+            delete efficiencyState.excelFormulas[c.dataset.cell]
+            efficiencyCommitExcelCell(c)
+          })
+          return
+        }
+        if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Enter', 'Tab'].includes(event.key)) {
+          event.preventDefault()
+          const curPos = efficiencyParseRef(efficiencyState.selectedCell) || { row: 1, col: 0 }
+          let nr = curPos.row
+          let nc = curPos.col
+          if (event.key === 'ArrowUp') nr = Math.max(0, nr - 1)
+          else if (event.key === 'ArrowDown' || event.key === 'Enter') nr = Math.min(17, nr + 1)
+          else if (event.key === 'ArrowLeft') nc = Math.max(0, nc - 1)
+          else if (event.key === 'ArrowRight' || event.key === 'Tab') nc = Math.min(8, nc + (event.shiftKey && event.key === 'Tab' ? -1 : 1))
+          const targetRef = efficiencyCellRef(Math.max(0, nr), Math.max(0, nc))
+          const nextCell = grid.querySelector(`.excel-cell[data-cell="${targetRef}"]`)
+          if (nextCell) {
+            if (event.shiftKey && event.key.startsWith('Arrow')) {
+              selectRangeFromAnchor(efficiencyState.selectedCell, targetRef)
+            } else {
+              efficiencyState.selectedCell = targetRef
+              selectRangeFromAnchor(targetRef, targetRef)
+              const bar = document.querySelector('#excel-formula-input')
+              if (bar) bar.value = efficiencyState.excelFormulas[targetRef] || nextCell.value
+              nextCell.focus({ preventScroll: true })
+            }
+          }
+          return
+        }
+        // Typing any printable character/number/'=' on a selected cell starts editing immediately!
+        if (event.key.length === 1 && !event.ctrlKey && !event.metaKey && !event.altKey) {
+          event.preventDefault()
+          enterCellEditMode(cell, event.key)
+        }
+      })
     })
-    cell.addEventListener('change', () => efficiencyCommitExcelCell(cell))
-    cell.addEventListener('keydown', event => {
-      if (event.key === 'Enter') {
-        event.preventDefault()
-        efficiencyCommitExcelCell(cell)
-        const next = Number(cell.dataset.row) + 1
-        grid.querySelector(`[data-row="${next}"][data-col="${cell.dataset.col}"]`)?.focus()
+
+    // Row Header Click -> Select Entire Row (A..I)
+    grid?.querySelectorAll('th[data-row-header]').forEach(th => {
+      th.style.cursor = 'pointer'
+      th.addEventListener('mousedown', (ev) => {
+        ev.preventDefault()
+        exitAllCellEditModes(true)
+        const r = Number(th.dataset.rowHeader)
+        const startRef = efficiencyCellRef(r, 0)
+        const endRef = efficiencyCellRef(r, 7)
+        efficiencyState.selectedCell = startRef
+        selectRangeFromAnchor(startRef, endRef)
+      })
+    })
+
+    // Column Header Click -> Select Entire Column (Row 1..12)
+    grid?.querySelectorAll('th[data-col-header]').forEach(th => {
+      th.style.cursor = 'pointer'
+      th.addEventListener('mousedown', (ev) => {
+        ev.preventDefault()
+        exitAllCellEditModes(true)
+        const c = Number(th.dataset.colHeader)
+        const startRef = efficiencyCellRef(0, c)
+        const endRef = efficiencyCellRef(11, c)
+        efficiencyState.selectedCell = startRef
+        selectRangeFromAnchor(startRef, endRef)
+      })
+    })
+
+    // Name Box Range Entry (e.g. type A2:H2 and press Enter)
+    const nameBoxInput = document.querySelector('#excel-name-box')
+    nameBoxInput?.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Enter') {
+        ev.preventDefault()
+        const rawRange = String(nameBoxInput.value || '').trim().toUpperCase()
+        if (rawRange.includes(':')) {
+          const [sRef, eRef] = rawRange.split(':')
+          if (efficiencyParseRef(sRef) && efficiencyParseRef(eRef)) {
+            efficiencyState.selectedCell = sRef
+            selectRangeFromAnchor(sRef, eRef)
+          }
+        } else if (efficiencyParseRef(rawRange)) {
+          efficiencyState.selectedCell = rawRange
+          selectRangeFromAnchor(rawRange, rawRange)
+        }
       }
     })
-  })
+  }
+
   window.addEventListener('mouseup', () => { isDraggingCells = false })
   bindCells()
+  // Highlight initial A2 cell in Selection Mode
+  selectRangeFromAnchor('A2', 'A2')
 
   const applyCellFromBar = () => {
     const cell = getActiveCellEl()
@@ -5476,7 +6139,8 @@ function efficiencyAttachExcel(tasks, question) {
     if (cell && bar) {
       cell.value = bar.value
       efficiencyCommitExcelCell(cell)
-      cell.focus()
+      exitAllCellEditModes(false)
+      cell.focus({ preventScroll: true })
     }
   }
 
@@ -6335,7 +6999,9 @@ function efficiencySubmit(page, tasks, question, timedOut = false) {
   const earned50 = Math.min(total50, Math.max(0, +(adjustedRawPoints50 || 0).toFixed(1)))
   const marksOutOf25 = Math.min(25, Math.max(0, +(earned50 * 0.5).toFixed(2)))
   const percent = Math.round((marksOutOf25 / 25) * 100)
-  const duration = Math.max(1, Math.round((Date.now() - (efficiencyState.startedAt || Date.now())) / 1000))
+  const timerElapsedSec = timedOut ? 600 : (600 - Math.max(0, Math.min(600, Number(efficiencyState.secondsLeft ?? 0))))
+  const wallActiveSec = Math.round(((Date.now() - (efficiencyState.startedAt || Date.now())) - (efficiencyState.pausedMs || 0)) / 1000)
+  const duration = Math.max(1, Math.min(600, timerElapsedSec > 0 ? timerElapsedSec : wallActiveSec))
   const fileIdStr = efficiencyFileId(efficiencyState.module, lang, efficiencyState.fileNo || 1)
   const solvedCount = questionBreakdown.filter(item => item.solved).length
   const wrongCount = questions.length - solvedCount
@@ -6721,14 +7387,12 @@ function evaluateRssbTypingPaper({
   const durationSec = Math.max(1, Number(elapsedSeconds) || 600)
   const minutes = durationSec / 60
 
-  const targetTokens = [...rawTarget.matchAll(/\S+/g)].map(m => m[0])
-  const typedTokens = [...rawTyped.matchAll(/\S+/g)].map(m => m[0])
-
+  const aligned = analyzeWords(rawTyped, rawTarget)
   let correctWords = 0
   let wrongWords = 0
   let caseErrors = 0
   let punctuationErrors = 0
-  let repeatedWordErrors = 0
+  let repeatedWordErrors = aligned.extraInsertedWords ? aligned.extraInsertedWords.length : 0
   let matraWordErrors = 0
 
   const stripPunct = (str) => str.replace(/[.,!?;:'"()[\]{}\-–—।]/g, '')
@@ -6737,44 +7401,48 @@ function evaluateRssbTypingPaper({
     return a !== b && stripMatras(a) === stripMatras(b)
   }
 
-  const wordReviewList = targetTokens.map((expectedWord, idx) => {
-    const actualWord = typedTokens[idx] ?? ''
-    if (!actualWord) {
-      return { index: idx + 1, expected: expectedWord, typed: '', status: 'omitted', errorType: 'Omitted Word (छूटा हुआ शब्द)' }
+  const wordReviewList = aligned.words.map((w, idx) => {
+    const expectedWord = w.text
+    const actualWord = w.typed || ''
+    if (w.status === 'untyped' || w.status === 'omitted') {
+      return {
+        index: idx + 1,
+        expected: expectedWord,
+        typed: '',
+        status: 'omitted',
+        errorType: w.status === 'omitted' ? 'Skipped/Omitted Word (छूटा हुआ शब्द)' : 'Untyped Word (अपूर्ण शब्द)'
+      }
     }
-    if (actualWord === expectedWord) {
+    if (w.correct) {
       correctWords += 1
       return { index: idx + 1, expected: expectedWord, typed: actualWord, status: 'correct', errorType: 'Correct (सही)' }
     }
     wrongWords += 1
-    let errorType = isHi ? 'Wrong Word/Char (गलत शब्द/वर्ण)' : 'Wrong Word/Spelling'
-    if (idx > 0 && actualWord === typedTokens[idx - 1] && expectedWord !== targetTokens[idx - 1]) {
-      repeatedWordErrors += 1
-      errorType = 'Repeated Word (शब्द की पुनरावृत्ति)'
-    } else if (!isHi && actualWord.toLowerCase() === expectedWord.toLowerCase()) {
-      caseErrors += 1
-      errorType = 'Capital/Small Case Error (कैपिटल/स्माल त्रुटि)'
-    } else if (stripPunct(actualWord) === stripPunct(expectedWord) && stripPunct(expectedWord).length > 0) {
-      punctuationErrors += 1
-      errorType = 'Punctuation Error (विराम चिह्न त्रुटि)'
-    } else if (isHi && hasDevanagariMatraDiff(actualWord, expectedWord)) {
-      matraWordErrors += 1
-      errorType = 'Matra Error (मात्रा प्रयोग त्रुटि)'
+    let errorType = w.errorType || (isHi ? 'Wrong Word/Char (गलत शब्द/वर्ण)' : 'Wrong Word/Spelling')
+    if (!w.errorType) {
+      if (!isHi && actualWord.toLowerCase() === expectedWord.toLowerCase()) {
+        caseErrors += 1
+        errorType = 'Capital/Small Case Error (कैपिटल/स्माल त्रुटि)'
+      } else if (stripPunct(actualWord) === stripPunct(expectedWord) && stripPunct(expectedWord).length > 0) {
+        punctuationErrors += 1
+        errorType = 'Punctuation Error (विराम चिह्न त्रुटि)'
+      } else if (isHi && hasDevanagariMatraDiff(actualWord, expectedWord)) {
+        matraWordErrors += 1
+        errorType = 'Matra Error (मात्रा प्रयोग त्रुटि)'
+      }
     }
     return { index: idx + 1, expected: expectedWord, typed: actualWord, status: 'wrong', errorType }
   })
 
-  const attemptedWords = typedTokens.length
-  const omittedWords = Math.max(0, targetTokens.length - attemptedWords)
+  wrongWords += repeatedWordErrors
+  const attemptedWords = aligned.attemptedWords
+  const omittedWords = aligned.omittedWords + aligned.untypedWords
   const extraSpaceMatches = rawTyped.match(/  +/g)
   const spacingErrors = extraSpaceMatches ? extraSpaceMatches.length : 0
 
-  let correctChars = 0
-  for (let i = 0; i < rawTyped.length; i++) {
-    if (rawTyped[i] === rawTarget[i]) correctChars += 1
-  }
   const typedChars = rawTyped.length
-  const errorChars = Math.max(0, typedChars - correctChars)
+  const correctChars = aligned.correctChars
+  const errorChars = aligned.errorChars
   const effectiveKeystrokes = Math.max(typedChars, Number(keystrokes) || typedChars)
 
   const standardWordsGross = +(effectiveKeystrokes / 5).toFixed(2)
@@ -6825,7 +7493,7 @@ function evaluateRssbTypingPaper({
     wordBasedNetWpm,
     accuracy,
     wordAccuracy,
-    totalPassageWords: targetTokens.length,
+    totalPassageWords: aligned.totalWords,
     attemptedWords,
     correctWords,
     wrongWords,
@@ -6905,12 +7573,15 @@ function openRssbLdcEntryPopup() {
           <span><strong>4 Papers × 25 Marks = 100 Marks</strong> (Min 9/25 Each)</span>
         </div>
 
-        <div class="rssb-entry-actions">
+        <div class="rssb-entry-actions" style="flex-wrap:wrap;">
           <button type="button" class="secondary-button rssb-btn-close" id="rssb-entry-close">
-            ← Close &amp; Return to Home Screen (होम स्क्रीन पर वापस जाएँ)
+            ← Close &amp; Return to Home
+          </button>
+          <button type="button" class="primary-button" id="rssb-entry-daily-live" style="background:#dc2626;border-color:#b91c1c;">
+            🔴 Daily Live Practice (8:00 AM · Live Rank) →
           </button>
           <button type="button" class="primary-button rssb-btn-start" id="rssb-entry-start">
-            🏛️ Start Exam Hall Practice (परीक्षा हॉल अभ्यास शुरू करें) →
+            🏛️ Start 80 Mock Exam Hall (MS Office 2013) →
           </button>
         </div>
       </div>
@@ -6925,6 +7596,10 @@ function openRssbLdcEntryPopup() {
   overlay.querySelector('#rssb-entry-close')?.addEventListener('click', closeToHome)
   overlay.querySelector('#rssb-entry-close-x')?.addEventListener('click', closeToHome)
   overlay.addEventListener('click', (e) => { if (e.target === overlay) closeToHome() })
+  overlay.querySelector('#rssb-entry-daily-live')?.addEventListener('click', () => {
+    overlay.remove()
+    renderSection('rssb-daily-live')
+  })
   overlay.querySelector('#rssb-entry-start')?.addEventListener('click', () => {
     overlay.remove()
     rssbExamState.stage = 'hub'
@@ -7179,9 +7854,9 @@ function renderRssbLoginScreen(spec) {
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
-        <span>Roll No. / रोल नं.: <strong>admin</strong></span>
-        <span>Name / नाम: <strong>admin</strong></span>
-        <span>User ID: <strong>admin</strong></span>
+        <span>Roll No. / रोल नं.: <strong>${escapeHtml(getRssbCandidateRoll())}</strong></span>
+        <span>Name / नाम: <strong>${escapeHtml(getRssbCandidateName())}</strong></span>
+        <span>User ID: <strong>${escapeHtml(getRssbCandidateRoll())}</strong></span>
         <span>Password: <strong>admin</strong></span>
         <button type="button" class="rssb-abort-btn" id="rssb-abort-exam">✕ Exit Exam Hall</button>
       </div>
@@ -7192,11 +7867,11 @@ function renderRssbLoginScreen(spec) {
         <section class="rssb-official-login-box">
           <h2>Login / अभ्यर्थी लॉगिन</h2>
           <p class="rssb-auto-admin-note">
-            <strong>सूचना / Note:</strong> रोल नंबर, नाम, User ID तथा Password सभी स्थानों पर <code>admin</code> निर्धारित है एवं स्वतः भरा हुआ (Auto-filled) है।
+            <strong>सूचना / Note:</strong> आपका प्रोफ़ाइल नाम (<strong>${escapeHtml(getRssbCandidateName())}</strong>), रोल नं. (<code>${escapeHtml(getRssbCandidateRoll())}</code>) तथा पासवर्ड (<code>admin</code>) स्वतः भरा हुआ (Auto-filled) है।
           </p>
           <div class="rssb-login-form-row">
             <label for="rssb-userid-input">User Id / रोल नं.</label>
-            <input id="rssb-userid-input" type="text" value="admin" readonly />
+            <input id="rssb-userid-input" type="text" value="${escapeHtml(getRssbCandidateName())} (${escapeHtml(getRssbCandidateRoll())})" readonly />
           </div>
           <div class="rssb-login-form-row">
             <label for="rssb-password-input">Password / पासवर्ड</label>
@@ -7315,7 +7990,7 @@ function renderRssbKeyboardCheckScreen(spec) {
         <span class="rssb-hall-badge">STEP 1 OF 5 · PERIPHERAL TEST</span>
         <div>
           <strong>Practice Test / अभ्यास परीक्षण (Keyboard &amp; Mouse Accessories Check)</strong>
-          <small>Roll No.: admin · Name: admin · User ID: admin · Mock Exam #${String(spec.testNo).padStart(2, '0')}</small>
+          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Pass: admin · Mock Exam #${String(spec.testNo).padStart(2, '0')}</small>
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
@@ -7402,12 +8077,10 @@ function renderRssbKeyboardCheckScreen(spec) {
     const lastKeyEl = root.querySelector('#rssb-kb-last-key')
     if (lastKeyEl) lastKeyEl.textContent = `${event.key} (${event.code})`
     if (rssbExamState.kbCheckLang === 'hi' && !event.ctrlKey && !event.metaKey && !event.altKey && event.key.length === 1 && event.key !== ' ') {
-      const mapped = event.shiftKey
-        ? (RSSB_DEVLYS_SHIFT_MAP[event.key] || RSSB_DEVLYS_NORMAL_MAP[event.key.toLowerCase()])
-        : RSSB_DEVLYS_NORMAL_MAP[event.key.toLowerCase()]
-      if (mapped) {
+      const nextVal = applyDevLysKeystrokeToText(kbInput.value, event.key, event.shiftKey, '')
+      if (nextVal !== null) {
         event.preventDefault()
-        kbInput.value += mapped
+        kbInput.value = nextVal.replace(/\u200B/g, '')
       }
     }
   })
@@ -7420,7 +8093,8 @@ function renderRssbKeyboardCheckScreen(spec) {
   root.querySelector('#rssb-skip-practice-btn')?.addEventListener('click', startPaper1)
 
   rssbExamState.timer = setInterval(() => {
-    rssbExamState.secondsLeft = Math.max(0, rssbExamState.secondsLeft - 1)
+    const realElapsed = Math.min(600, Math.max(0, Math.floor((Date.now() - rssbExamState.stageStartedAt) / 1000)))
+    rssbExamState.secondsLeft = Math.max(0, 600 - realElapsed)
     const formatted = formatRssbClock(rssbExamState.secondsLeft)
     const t1 = root.querySelector('#rssb-kb-timer')
     const t2 = root.querySelector('#rssb-kb-timer-inline')
@@ -7472,7 +8146,7 @@ async function renderRssbTypingSpeedStage(spec, lang) {
         <span class="rssb-hall-badge">${stepBadge}</span>
         <div>
           <strong>${paperTitle} — Exercise #${spec.typingExNo}</strong>
-          <small>Roll No.: admin · Name: admin · User ID: admin · Full Marks: 25 · Qualifying: 9</small>
+          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Full Marks: 25 · Qualifying: 9</small>
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
@@ -7498,7 +8172,7 @@ async function renderRssbTypingSpeedStage(spec, lang) {
         </div>
 
         <div class="rssb-strict-rules-strip">
-          <span>🔒 <strong>Roll No. &amp; Name:</strong> <code>admin</code></span>
+          <span>🔒 <strong>Candidate:</strong> <code>${escapeHtml(getRssbCandidateName())} (${escapeHtml(getRssbCandidateRoll())})</code></span>
           <span>🚫 <strong>Backspace:</strong> Strictly Disabled (पूर्णतः बंद)</span>
           <span>🚫 <strong>Text / Word Highlight:</strong> Strictly Disabled (पूर्णतः बंद)</span>
           <span>⌨️ <strong>Font:</strong> ${isHi ? 'DevLys 010 / Kruti-Remington' : 'English Standard'}</span>
@@ -7616,22 +8290,13 @@ async function renderRssbTypingSpeedStage(spec, lang) {
       }
       rssbExamState.lastPhysicalKey = rawKey
 
-      const curLen = inputEl.value.length
-      const expectedChar = passage[curLen] || ''
-      let mapped = event.shiftKey
-        ? (RSSB_DEVLYS_SHIFT_MAP[rawKey] || RSSB_DEVLYS_NORMAL_MAP[lowerKey])
-        : RSSB_DEVLYS_NORMAL_MAP[lowerKey]
-
-      if (mapped) {
+      const nextVal = applyDevLysKeystrokeToText(inputEl.value, rawKey, event.shiftKey, passage)
+      if (nextVal !== null) {
         event.preventDefault()
-        if (expectedChar && expectedChar !== ' ' && (mapped === expectedChar || (mapped.length > 1 && mapped.startsWith(expectedChar)))) {
-          inputEl.value += expectedChar
-        } else {
-          inputEl.value += mapped
-        }
-        rssbExamState.typingBuffer = inputEl.value
+        inputEl.value = nextVal
+        rssbExamState.typingBuffer = inputEl.value.replace(/\u200B/g, '')
         lockCursorToEnd()
-        const ratio = Math.min(1, inputEl.value.length / Math.max(1, passage.length))
+        const ratio = Math.min(1, rssbExamState.typingBuffer.length / Math.max(1, passage.length))
         if (passageBox) {
           passageBox.scrollTop = Math.max(0, (passageBox.scrollHeight - passageBox.clientHeight) * ratio)
         }
@@ -7642,7 +8307,8 @@ async function renderRssbTypingSpeedStage(spec, lang) {
   })
 
   inputEl?.addEventListener('input', () => {
-    rssbExamState.typingBuffer = inputEl.value
+    if (isHi) sanitizeTrailingAsciiInHindiBox(inputEl, passage)
+    rssbExamState.typingBuffer = inputEl.value.replace(/\u200B/g, '')
     lockCursorToEnd()
     const ratio = Math.min(1, inputEl.value.length / Math.max(1, passage.length))
     if (passageBox) {
@@ -7652,7 +8318,9 @@ async function renderRssbTypingSpeedStage(spec, lang) {
 
   const completeTypingStage = () => {
     stopRssbExamTimer()
-    const elapsed = Math.max(1, Math.min(600, Math.round((Date.now() - rssbExamState.stageStartedAt) / 1000)))
+    const timerUsed = 600 - Math.max(0, Math.min(600, Number(rssbExamState.secondsLeft ?? 0)))
+    const wallUsed = Math.round((Date.now() - rssbExamState.stageStartedAt) / 1000)
+    const elapsed = Math.max(1, Math.min(600, timerUsed > 0 ? timerUsed : wallUsed))
     const evalResult = evaluateRssbTypingPaper({
       lang,
       exerciseId: isHi ? spec.hindiTypingId : spec.englishTypingId,
@@ -7722,7 +8390,7 @@ function renderRssbTypingBreakConfirmation(spec, lang, evalResult) {
         <span class="rssb-hall-badge">${isHi ? '2-MINUTE BREAK & CONFIRMATION (AFTER PAPER 1)' : '2-MINUTE BREAK & CONFIRMATION (AFTER PAPER 2)'}</span>
         <div>
           <strong>${previewHeading}</strong>
-          <small>Roll No.: admin · Name: admin · Test Id: ${spec.testNo} · Password: admin (Auto-filled)</small>
+          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Test Id: ${spec.testNo} · Password: admin</small>
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
@@ -7737,9 +8405,9 @@ function renderRssbTypingBreakConfirmation(spec, lang, evalResult) {
       <section class="rssb-classic-exam-frame">
         <div class="rssb-preview-meta-row">
           <div>
-            <p><strong>Roll No. :</strong> <code>admin</code></p>
+            <p><strong>Roll No. :</strong> <code>${escapeHtml(getRssbCandidateRoll())}</code></p>
             <p><strong>Test Id :</strong> <code>${spec.testNo}</code></p>
-            <p><strong>Name :</strong> <code>admin</code></p>
+            <p><strong>Name :</strong> <code>${escapeHtml(getRssbCandidateName())}</code></p>
           </div>
           <div class="rssb-preview-center-head">
             <h2>${previewHeading}</h2>
@@ -7865,7 +8533,7 @@ function renderRssbEfficiencyConfirmation(spec, effStageNumber, effResult) {
         <span class="rssb-hall-badge">${isFirstEff ? '2-MINUTE BREAK & EFFICIENCY-1 CONFIRMATION' : 'FINAL EFFICIENCY-2 CONFIRMATION'}</span>
         <div>
           <strong>${headingHi} Confirmation Screen / Efficiency Exam Confirmation Screen</strong>
-          <small>Roll No.: admin · Name: admin · User ID: admin · Password: admin (Auto-filled)</small>
+          <small>Roll No.: ${escapeHtml(getRssbCandidateRoll())} · Name: ${escapeHtml(getRssbCandidateName())} · Password: admin (Auto-filled)</small>
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
@@ -7884,8 +8552,8 @@ function renderRssbEfficiencyConfirmation(spec, effStageNumber, effResult) {
           <p>Please enter your password and confirm your work. &nbsp;|&nbsp; <em>Note: Here editing is not permitted.</em></p>
           <div class="rssb-eff-confirm-bar">
             <span>Remaining Time: <strong id="rssb-eff-confirm-timer-inline">00:02:00</strong></span>
-            <span>Roll No.: <strong>admin</strong></span>
-            <span>Name: <strong>admin</strong></span>
+            <span>Roll No.: <strong>${escapeHtml(getRssbCandidateRoll())}</strong></span>
+            <span>Name: <strong>${escapeHtml(getRssbCandidateName())}</strong></span>
             <label for="rssb-eff-pass-input">Enter Password:</label>
             <input id="rssb-eff-pass-input" type="text" value="admin" readonly />
             <button type="button" class="rssb-win-btn primary" id="rssb-eff-confirm-btn">${nextBtnLabel}</button>
@@ -8001,9 +8669,9 @@ function finalizeAndRenderRssbCompleteExamResult(spec) {
     testNo: spec.testNo,
     setCode: spec.setCode,
     setTitle: spec.setTitle,
-    rollNumber: 'admin',
-    candidateName: 'admin',
-    userId: 'admin',
+    rollNumber: getRssbCandidateRoll(),
+    candidateName: getRssbCandidateName(),
+    userId: getRssbCandidateRoll(),
     password: 'admin',
     completedAt: new Date().toLocaleString(),
     totalMarksOutOf100,
@@ -8015,7 +8683,11 @@ function finalizeAndRenderRssbCompleteExamResult(spec) {
     efficiency2: { ...p4, snapshotHtml: undefined }
   }
 
-  saveRssbExamRecord(spec.testNo, fullRecord)
+  if (spec.isDailyLive) {
+    submitRssbDailyLiveAttempt(fullRecord, spec)
+  } else {
+    saveRssbExamRecord(spec.testNo, fullRecord)
+  }
   const root = ensureRssbExamOverlay()
   root.innerHTML = buildRssbCompleteReportMarkup(fullRecord)
   bindRssbCompleteReportEvents(root, fullRecord, true)
@@ -8038,7 +8710,7 @@ function buildRssbTypingPaperDetailHTML(paper, paperNumber) {
         <div>
           <span class="rssb-paper-tag">PAPER ${paperNumber} OF 4 · TYPING SPEED TEST (10 MINUTES · 25 MARKS)</span>
           <h3>${escapeHtml(paper.paperTitle)}</h3>
-          <p>Exercise ID: <code>${escapeHtml(paper.exerciseId)}</code> (#${paper.exerciseNo}) · Roll No.: <code>admin</code> · Candidate: <code>admin</code></p>
+          <p>Exercise ID: <code>${escapeHtml(paper.exerciseId)}</code> (#${paper.exerciseNo}) · Roll No.: <code>${escapeHtml(getRssbCandidateRoll())}</code> · Candidate: <code>${escapeHtml(getRssbCandidateName())}</code></p>
         </div>
         <div class="rssb-paper-score-box ${paper.qualified ? 'pass' : 'fail'}">
           <small>Official Marks (प्राप्तांक)</small>
@@ -8164,7 +8836,7 @@ function buildRssbEfficiencyPaperDetailHTML(eff, paperNumber) {
         <div>
           <span class="rssb-paper-tag">PAPER ${paperNumber} OF 4 · EFFICIENCY TEST (10 MINUTES · 15 QUESTIONS · 25 MARKS)</span>
           <h3>${escapeHtml(eff.paperTitle)}</h3>
-          <p>Module: <code>${escapeHtml((eff.module || '').toUpperCase())}</code> · File ID: <code>${escapeHtml(eff.fileId)}</code> (#${eff.fileNo}) · Roll No.: <code>admin</code> · Candidate: <code>admin</code></p>
+          <p>Module: <code>${escapeHtml((eff.module || '').toUpperCase())}</code> · File ID: <code>${escapeHtml(eff.fileId)}</code> (#${eff.fileNo}) · Roll No.: <code>${escapeHtml(getRssbCandidateRoll())}</code> · Candidate: <code>${escapeHtml(getRssbCandidateName())}</code></p>
         </div>
         <div class="rssb-paper-score-box ${eff.qualified ? 'pass' : 'fail'}">
           <small>Official Marks (प्राप्तांक)</small>
@@ -8225,7 +8897,7 @@ function buildRssbCompleteReportMarkup(record) {
         <span class="rssb-hall-badge">FINAL EXAM HALL SCORECARD · 4 PAPERS</span>
         <div>
           <strong>RSSB LDC Phase-II Complete Exam Result — Mock Exam #${String(record.testNo).padStart(2, '0')}</strong>
-          <small>Roll No.: admin · Candidate Name: admin · User ID: admin · Completed: ${escapeHtml(record.completedAt || '')}</small>
+          <small>Roll No.: ${escapeHtml(record.rollNumber || getRssbCandidateRoll())} · Candidate Name: ${escapeHtml(record.candidateName || getRssbCandidateName())} · Completed: ${escapeHtml(record.completedAt || '')}</small>
         </div>
       </div>
       <div class="rssb-hall-candidate-strip">
@@ -8405,3 +9077,712 @@ loadPracticeExerciseData().then((exercises) => {
     if (status) status.textContent = `Exercise list could not be loaded: ${error.message || error}`
   }
 })
+
+
+/* ============================================================================
+   COMING SOON EXAM MODAL (WITH WHATSAPP CUSTOM REQUEST)
+   ============================================================================ */
+function openComingSoonExamModal(examName) {
+  document.querySelector('#ag-coming-soon-modal')?.remove()
+  const isHi = appLanguage === 'hi'
+  const waMsg = encodeURIComponent(`नमस्ते Xtreme AG Apps! मुझे AG Typing Tutor में "${examName}" परीक्षा पैटर्न / पर्सनल प्रैक्टिस मॉड्यूल बनवाना है। मेरा नाम: ${getRssbCandidateName()}`)
+  const overlay = document.createElement('div')
+  overlay.id = 'ag-coming-soon-modal'
+  overlay.className = 'rssb-modal-overlay'
+  overlay.innerHTML = `
+    <section class="rssb-entry-dialog" role="dialog" aria-modal="true" style="max-width:620px;">
+      <div class="rssb-entry-top-banner" style="background:linear-gradient(135deg,#b45309 0%,#d97706 100%);">
+        <span class="rssb-crest-icon">⏳</span>
+        <div>
+          <small>XTREME AG APPS · EXAM PATTERN UPDATE</small>
+          <h2>${escapeHtml(examName)} — Coming Soon!</h2>
+        </div>
+        <button type="button" class="rssb-modal-close-x" id="ag-cs-close-x">×</button>
+      </div>
+      <div class="rssb-entry-body" style="padding:24px;">
+        <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:16px;margin-bottom:16px;font-size:14px;line-height:1.65;color:#1e293b;">
+          <p style="margin:0 0 10px 0;">
+            <strong>🇮🇳 हिन्दी सूचना:</strong> वर्तमान में <strong>RSSB LDC (80 Full Mock Tests — MS Office 2013 Pattern)</strong> एवं <strong>RSSB LDC Daily 8:00 AM Live Test</strong> पूर्णतः सक्रिय हैं। <strong>${escapeHtml(examName)}</strong> का परीक्षा पैटर्न जल्द आ रहा है (<strong>Coming Soon</strong>)।
+          </p>
+          <p style="margin:0;color:#92400e;font-weight:700;">
+            💬 यदि आपको <strong>${escapeHtml(examName)}</strong> या किसी व्यक्तिगत ऐप/परीक्षा के लिए कस्टम पैटर्न बनवाना हो, तो नीचे दिए गए बटन से हमें <strong>WhatsApp</strong> करें — आपकी आवश्यकता के अनुसार अगले <strong>Auto-Update</strong> में यह सीधे आपके ऐप में मिल जाएगा!
+          </p>
+        </div>
+        <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin-bottom:20px;font-size:13px;line-height:1.6;color:#475569;">
+          <strong>🇬🇧 English Notice:</strong> Currently <strong>RSSB LDC (MS Office 2013 Pattern)</strong> and <strong>Daily Live Practice</strong> are active. <strong>${escapeHtml(examName)}</strong> is <em>Coming Soon</em>. Need a custom exam pattern built personally for you? Contact us on WhatsApp below and receive it directly via in-app Auto-Update!
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;">
+          <button type="button" class="secondary-button" id="ag-cs-close-btn" style="padding:10px 18px;font-weight:700;border-radius:10px;">← Back to Home</button>
+          <a href="https://wa.me/917878025556?text=${waMsg}" target="_blank" rel="noreferrer" class="primary-button" style="background:#16a34a;border-color:#15803d;padding:10px 20px;font-weight:800;border-radius:10px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
+            💬 WhatsApp पर संपर्क करें · 7878025556 →
+          </a>
+        </div>
+      </div>
+    </section>
+  `
+  document.body.appendChild(overlay)
+  const close = () => overlay.remove()
+  overlay.querySelector('#ag-cs-close-x')?.addEventListener('click', close)
+  overlay.querySelector('#ag-cs-close-btn')?.addEventListener('click', close)
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close() })
+}
+
+/* ============================================================================
+   RSSB LDC DAILY LIVE PRACTICE (8:00 AM IST · GITHUB SYNC · LIVE LEADERBOARD)
+   ============================================================================ */
+const DAILY_LIVE_STORAGE_KEY = 'ag-rssb-daily-live-leaderboard-v1'
+const DAILY_LIVE_GITHUB_RAW_URL = `https://raw.githubusercontent.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/main/public/daily-live/daily-exam.json`
+
+const dailyLiveState = {
+  loading: false,
+  online: navigator.onLine,
+  config: null,
+  leaderboard: [],
+  countdownTimer: null,
+  lastFetchedAt: null
+}
+
+function getTodayISTDateString() {
+  try {
+    const now = new Date()
+    const istOffsetMs = 5.5 * 60 * 60 * 1000
+    const istDate = new Date(now.getTime() + (now.getTimezoneOffset() * 60000) + istOffsetMs)
+    const y = istDate.getFullYear()
+    const m = String(istDate.getMonth() + 1).padStart(2, '0')
+    const d = String(istDate.getDate()).padStart(2, '0')
+    return `${y}-${m}-${d}`
+  } catch {
+    return new Date().toISOString().slice(0, 10)
+  }
+}
+
+function getISTHoursAndMinutes() {
+  const now = new Date()
+  const istOffsetMs = 5.5 * 60 * 60 * 1000
+  const istDate = new Date(now.getTime() + (now.getTimezoneOffset() * 60000) + istOffsetMs)
+  return {
+    hours: istDate.getHours(),
+    minutes: istDate.getMinutes(),
+    seconds: istDate.getSeconds(),
+    formattedTime: istDate.toTimeString().slice(0, 8)
+  }
+}
+
+function getDefaultDailyLiveConfig() {
+  const today = getTodayISTDateString()
+  // Deterministically pick daily exercise numbers based on date if not overridden
+  const daySeed = Number(today.replace(/-/g, '')) || 20261024
+  const typingEx = 300 - (daySeed % 40)
+  const effFile = 40 - (daySeed % 40)
+  return {
+    testId: `DAILY-LDC-${today}`,
+    testDate: today,
+    title: `RSSB LDC Daily Live All-Rajasthan Test (${today})`,
+    unlockTimeIST: '08:00',
+    enforce8AMSchedule: true,
+    hindiTyping: {
+      exerciseNo: typingEx,
+      customPassage: ''
+    },
+    englishTyping: {
+      exerciseNo: typingEx,
+      customPassage: ''
+    },
+    efficiency1: {
+      module: 'word',
+      language: 'hi',
+      fileNo: effFile,
+      title: `MS Word 2013 Hindi Efficiency (Set #${effFile})`
+    },
+    efficiency2: {
+      module: 'excel',
+      language: 'en',
+      fileNo: effFile,
+      title: `MS Excel 2013 English Efficiency (Set #${effFile})`
+    },
+    leaderboardWebhookUrl: ''
+  }
+}
+
+async function fetchDailyLiveConfigFromGitHub() {
+  const urls = [
+    `${DAILY_LIVE_GITHUB_RAW_URL}?t=${Date.now()}`,
+    `./daily-live/daily-exam.json?t=${Date.now()}`,
+    `/daily-live/daily-exam.json?t=${Date.now()}`
+  ]
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, { cache: 'no-store' })
+      if (!res.ok) continue
+      const ct = res.headers.get('content-type') || ''
+      if (ct.includes('text/html')) continue
+      const data = await res.json()
+      if (data && typeof data === 'object') {
+        const def = getDefaultDailyLiveConfig()
+        return {
+          ...def,
+          ...data,
+          testDate: (!data.testDate || data.testDate === 'auto') ? def.testDate : data.testDate,
+          hindiTyping: { ...def.hindiTyping, ...(data.hindiTyping || {}) },
+          englishTyping: { ...def.englishTyping, ...(data.englishTyping || {}) },
+          efficiency1: { ...def.efficiency1, ...(data.efficiency1 || {}) },
+          efficiency2: { ...def.efficiency2, ...(data.efficiency2 || {}) }
+        }
+      }
+    } catch {}
+  }
+  return getDefaultDailyLiveConfig()
+}
+
+function isDailyLiveUnlockedNow(cfg) {
+  if (!cfg || cfg.enforce8AMSchedule === false) return { unlocked: true, secondsUntil8AM: 0 }
+  const today = getTodayISTDateString()
+  // If testDate is from an earlier date, it is already unlocked
+  if (cfg.testDate && cfg.testDate < today) return { unlocked: true, secondsUntil8AM: 0 }
+  const [unlockH, unlockM] = String(cfg.unlockTimeIST || '08:00').split(':').map(n => parseInt(n, 10) || 0)
+  const ist = getISTHoursAndMinutes()
+  const nowSec = ist.hours * 3600 + ist.minutes * 60 + ist.seconds
+  const targetSec = unlockH * 3600 + unlockM * 60
+  if (nowSec >= targetSec) {
+    return { unlocked: true, secondsUntil8AM: 0 }
+  }
+  return { unlocked: false, secondsUntil8AM: targetSec - nowSec }
+}
+
+async function fetchLiveLeaderboardEntries(cfg) {
+  const testDate = cfg?.testDate || getTodayISTDateString()
+  let remoteList = []
+  // 1. If a Google Apps Script / Cloud Webhook URL is configured in daily-exam.json, fetch live global entries
+  if (cfg?.leaderboardWebhookUrl) {
+    try {
+      const res = await fetch(`${cfg.leaderboardWebhookUrl}?date=${encodeURIComponent(testDate)}&t=${Date.now()}`, { cache: 'no-store' })
+      if (res.ok) {
+        const json = await res.json()
+        if (Array.isArray(json?.entries)) remoteList = json.entries
+        else if (Array.isArray(json)) remoteList = json
+      }
+    } catch {}
+  }
+  // 2. Also fetch from GitHub Raw daily-leaderboard.json if published
+  try {
+    const ghRes = await fetch(`https://raw.githubusercontent.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/main/public/daily-live/daily-leaderboard.json?t=${Date.now()}`, { cache: 'no-store' })
+    if (ghRes.ok) {
+      const ghData = await ghRes.json()
+      if (Array.isArray(ghData?.entries)) {
+        remoteList = [...remoteList, ...ghData.entries.filter(e => !e.testDate || e.testDate === testDate)]
+      }
+    }
+  } catch {}
+
+  // 3. Merge with local attempts submitted on this machine for today's test
+  let localAll = {}
+  try { localAll = JSON.parse(localStorage.getItem(DAILY_LIVE_STORAGE_KEY) || '{}') } catch { localAll = {} }
+  const localToday = Array.isArray(localAll[testDate]) ? localAll[testDate] : []
+
+  // Deduplicate by candidateName + rollNo (keeping highest totalMarksOutOf100)
+  const byCandidate = new Map()
+  for (const item of [...remoteList, ...localToday]) {
+    if (!item || !item.candidateName) continue
+    const key = `${String(item.candidateName).trim().toLowerCase()}__${String(item.rollNumber || '').trim().toLowerCase()}`
+    const prev = byCandidate.get(key)
+    if (!prev || Number(item.totalMarksOutOf100 || 0) >= Number(prev.totalMarksOutOf100 || 0)) {
+      byCandidate.set(key, item)
+    }
+  }
+
+  const sorted = [...byCandidate.values()].sort((a, b) => {
+    const diff = Number(b.totalMarksOutOf100 || 0) - Number(a.totalMarksOutOf100 || 0)
+    if (Math.abs(diff) > 0.001) return diff
+    return Number(b.avgAccuracy || 0) - Number(a.avgAccuracy || 0)
+  })
+
+  return sorted.map((entry, idx) => ({
+    ...entry,
+    rank: idx + 1
+  }))
+}
+
+async function submitRssbDailyLiveAttempt(fullRecord, spec) {
+  const testDate = spec.dailyTestDate || getTodayISTDateString()
+  const entry = {
+    testDate,
+    testId: spec.dailyTestId || `DAILY-${testDate}`,
+    candidateName: getRssbCandidateName(),
+    rollNumber: getRssbCandidateRoll(),
+    hindiMarks: Number(fullRecord.hindiTyping?.marksOutOf25 || 0),
+    hindiWpm: Number(fullRecord.hindiTyping?.netWpm5Char || 0),
+    englishMarks: Number(fullRecord.englishTyping?.marksOutOf25 || 0),
+    englishWpm: Number(fullRecord.englishTyping?.netWpm5Char || 0),
+    wordEffMarks: Number(fullRecord.efficiency1?.marksOutOf25 || 0),
+    excelEffMarks: Number(fullRecord.efficiency2?.marksOutOf25 || 0),
+    totalMarksOutOf100: Number(fullRecord.totalMarksOutOf100 || 0),
+    overallQualified: Boolean(fullRecord.overallQualified),
+    avgAccuracy: +(((Number(fullRecord.hindiTyping?.accuracy || 0) + Number(fullRecord.englishTyping?.accuracy || 0)) / 2).toFixed(1)),
+    completedAt: fullRecord.completedAt || new Date().toLocaleTimeString(),
+    fullRecord
+  }
+
+  // Save locally for this date
+  try {
+    const all = JSON.parse(localStorage.getItem(DAILY_LIVE_STORAGE_KEY) || '{}')
+    if (!Array.isArray(all[testDate])) all[testDate] = []
+    all[testDate].push(entry)
+    localStorage.setItem(DAILY_LIVE_STORAGE_KEY, JSON.stringify(all))
+  } catch {}
+
+  // Post to live cloud webhook if configured
+  const webhookUrl = dailyLiveState.config?.leaderboardWebhookUrl
+  if (webhookUrl && navigator.onLine) {
+    try {
+      await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(entry)
+      })
+    } catch {}
+  }
+}
+
+function renderRssbDailyLiveHub() {
+  const isOnline = navigator.onLine
+  const candName = getRssbCandidateName()
+  const candRoll = getRssbCandidateRoll()
+  const cfg = dailyLiveState.config || getDefaultDailyLiveConfig()
+  const unlockInfo = isDailyLiveUnlockedNow(cfg)
+  const board = dailyLiveState.leaderboard || []
+  const myEntry = board.find(e =>
+    String(e.candidateName).toLowerCase() === String(candName).toLowerCase() &&
+    String(e.rollNumber) === String(candRoll)
+  )
+
+  if (!isOnline) {
+    return `
+      <div class="rssb-exam-hub" style="max-width:960px;margin:24px auto;">
+        <section class="notice-card" style="text-align:center;padding:42px 28px;border:2px solid #fca5a5;background:#fef2f2;border-radius:18px;">
+          <div style="font-size:54px;margin-bottom:12px;">🌐</div>
+          <h2 style="font-size:24px;color:#991b1b;margin:0 0 10px;">Internet Connection Required (इंटरनेट चालू होना आवश्यक है)</h2>
+          <p style="font-size:14.5px;color:#7f1d1d;max-width:640px;margin:0 auto 22px;line-height:1.65;">
+            <strong>RSSB LDC Daily Live Practice (सुबह 8:00 बजे)</strong> एवं <strong>Live All-Rajasthan Rank Leaderboard</strong> केवल इंटरनेट चालू होने पर ही कार्य करता है ताकि सभी अभ्यर्थियों का पेपर और रैंक रियल-टाइम में सिंक हो सके।
+          </p>
+          <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+            <button type="button" class="primary-button" id="daily-live-retry-net">🔄 Reconnect &amp; Check Internet</button>
+            <button type="button" class="secondary-button" data-page="rssb-ldc-exam">🏛️ Go to 80 Offline Mock Tests</button>
+          </div>
+        </section>
+      </div>
+    `
+  }
+
+  return `
+    <div class="rssb-exam-hub" id="rssb-daily-live-root">
+      <section class="rssb-hub-hero" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);color:#fff;border-radius:18px;padding:24px 28px;margin-bottom:18px;">
+        <div class="rssb-hub-hero-left">
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px;">
+            <span style="background:#dc2626;color:#fff;font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;letter-spacing:0.5px;">🔴 LIVE DAILY EXAM · 08:00 AM IST</span>
+            <span style="background:rgba(255,255,255,0.15);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">🌐 Online Live Rank Enabled</span>
+            <span style="background:rgba(255,255,255,0.15);color:#fde047;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;">🏛️ MS Office 2013 Interface</span>
+          </div>
+          <h2 style="color:#fff;margin:0 0 6px;font-size:24px;">${escapeHtml(cfg.title || 'RSSB LDC Daily Live All-Rajasthan Test')}</h2>
+          <p style="color:#cbd5e1;margin:0 0 12px;font-size:13.5px;line-height:1.6;">
+            प्रतिदिन <strong>सुबह ${escapeHtml(cfg.unlockTimeIST || '08:00')} बजे</strong> GitHub से नया लाइव टेस्ट (हिन्दी टाइपिंग + अंग्रेजी टाइपिंग + MS Word 2013 दक्षता + MS Excel 2013 दक्षता) स्वतः सक्रिय होता है।
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;background:rgba(15,23,42,0.55);padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);font-size:12.5px;">
+            <span>👤 <strong>Candidate Name:</strong> <code style="color:#fde047;font-size:13px;">${escapeHtml(candName)}</code></span>
+            <span>🆔 <strong>Roll No. / ID:</strong> <code style="color:#93c5fd;">${escapeHtml(candRoll)}</code></span>
+            <span>📅 <strong>Test Date:</strong> <code>${escapeHtml(cfg.testDate)}</code></span>
+            <button type="button" id="daily-live-edit-name-btn" style="background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.3);padding:3px 9px;border-radius:6px;font-size:11.5px;font-weight:700;cursor:pointer;">✏️ Change Name</button>
+          </div>
+        </div>
+
+        <div class="rssb-hub-metrics">
+          <article style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:#fff;">
+            <span style="color:#cbd5e1;">Live Participants</span>
+            <strong style="color:#fff;">${board.length}</strong>
+            <small style="color:#93c5fd;">Ranked Today</small>
+          </article>
+          <article style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);color:#fff;">
+            <span style="color:#cbd5e1;">Your Live Rank</span>
+            <strong style="color:#fde047;">${myEntry ? `#${myEntry.rank}` : '—'}</strong>
+            <small style="color:#cbd5e1;">${myEntry ? `Score: ${Number(myEntry.totalMarksOutOf100).toFixed(2)}/100` : 'Not Attempted Yet'}</small>
+          </article>
+        </div>
+      </section>
+
+      <!-- Today's 4 Live Papers Card -->
+      <section style="background:#ffffff;border:2px solid #cbd5e1;border-radius:16px;padding:20px 24px;margin-bottom:20px;box-shadow:0 8px 24px rgba(15,23,42,0.05);">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+          <div>
+            <h3 style="margin:0;font-size:18px;color:#0f172a;">📋 आज के लाइव टेस्ट के चारों प्रश्न-पत्र (Today's 4 Live Papers — 100 Marks)</h3>
+            <small style="color:#64748b;font-weight:600;">Synced live from GitHub · Exact RSSB LDC Exam Hall Flow (MS Office 2013)</small>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button type="button" class="secondary-button" id="daily-live-sync-github-btn" style="padding:7px 13px;font-size:12px;font-weight:700;border-radius:8px;">🔄 Sync Latest from GitHub</button>
+            <button type="button" class="secondary-button" id="daily-live-admin-gen-btn" style="padding:7px 13px;font-size:12px;font-weight:700;border-radius:8px;background:#f8fafc;">⚙️ Admin: Daily GitHub File Generator</button>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-bottom:18px;">
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;">
+            <small style="color:#2563eb;font-weight:800;font-size:11px;">PAPER 1 · 10 MIN · 25 MARKS</small>
+            <strong style="display:block;font-size:14px;color:#0f172a;margin-top:3px;">हिन्दी टंकण गति (DevLys 010)</strong>
+            <span style="font-size:12px;color:#64748b;">${cfg.hindiTyping?.customPassage ? 'Custom GitHub Live Passage' : `Exercise #${cfg.hindiTyping?.exerciseNo || 300}`}</span>
+          </div>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;">
+            <small style="color:#2563eb;font-weight:800;font-size:11px;">PAPER 2 · 10 MIN · 25 MARKS</small>
+            <strong style="display:block;font-size:14px;color:#0f172a;margin-top:3px;">English Typing Speed Test</strong>
+            <span style="font-size:12px;color:#64748b;">${cfg.englishTyping?.customPassage ? 'Custom GitHub Live Passage' : `Exercise #${cfg.englishTyping?.exerciseNo || 300}`}</span>
+          </div>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;">
+            <small style="color:#1e40af;font-weight:800;font-size:11px;">PAPER 3 · 10 MIN · 25 MARKS</small>
+            <strong style="display:block;font-size:14px;color:#0f172a;margin-top:3px;">MS Word 2013 Efficiency</strong>
+            <span style="font-size:12px;color:#64748b;">Set #${cfg.efficiency1?.fileNo || 40} (${(cfg.efficiency1?.language || 'hi').toUpperCase()})</span>
+          </div>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;">
+            <small style="color:#15803d;font-weight:800;font-size:11px;">PAPER 4 · 10 MIN · 25 MARKS</small>
+            <strong style="display:block;font-size:14px;color:#0f172a;margin-top:3px;">MS Excel 2013 Efficiency</strong>
+            <span style="font-size:12px;color:#64748b;">Set #${cfg.efficiency2?.fileNo || 40} (${(cfg.efficiency2?.language || 'en').toUpperCase()})</span>
+          </div>
+        </div>
+
+        ${unlockInfo.unlocked ? `
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;background:#f0fdf4;border:1px solid #86efac;padding:14px 18px;border-radius:12px;">
+            <div>
+              <strong style="color:#15803d;font-size:15px;">🟢 Today's Daily Live Test is ACTIVE (सुबह ${escapeHtml(cfg.unlockTimeIST || '08:00')} बजे से प्रारंभ)</strong>
+              <p style="margin:3px 0 0;font-size:12.5px;color:#166534;">आपका नाम (<strong>${escapeHtml(candName)}</strong>) और चारों पेपर्स के अलग-अलग अंक सबमिट होते ही नीचे <strong>Live Rank Table</strong> में जुड़ जाएंगे।</p>
+            </div>
+            <button type="button" class="primary-button" id="daily-live-start-exam-btn" style="background:#dc2626;border-color:#b91c1c;padding:12px 24px;font-size:15px;font-weight:800;border-radius:12px;box-shadow:0 6px 20px rgba(220,38,38,0.3);">
+              ▶ Start Daily Live Exam Now (चारों पेपर प्रारंभ करें) →
+            </button>
+          </div>
+        ` : `
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;background:#fffbeb;border:1px solid #fde68a;padding:14px 18px;border-radius:12px;">
+            <div>
+              <strong style="color:#b45309;font-size:15px;">⏰ आज का Daily Live Test सुबह ${escapeHtml(cfg.unlockTimeIST || '08:00')} बजे खुलेगा!</strong>
+              <p style="margin:3px 0 0;font-size:12.5px;color:#92400e;">शेष समय (Time Remaining until 08:00 AM IST): <strong id="daily-live-8am-countdown" style="font-family:monospace;font-size:15px;">${formatRssbClock(unlockInfo.secondsUntil8AM)}</strong></p>
+            </div>
+            <button type="button" class="secondary-button" disabled style="opacity:0.65;padding:12px 22px;font-size:14px;font-weight:800;border-radius:12px;">
+              🔒 Unlocks at ${escapeHtml(cfg.unlockTimeIST || '08:00')} AM
+            </button>
+          </div>
+        `}
+      </section>
+
+      <!-- Live Rank Leaderboard Table -->
+      <section style="background:#ffffff;border:2px solid #cbd5e1;border-radius:16px;padding:20px 24px;box-shadow:0 8px 24px rgba(15,23,42,0.05);">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+          <div>
+            <h3 style="margin:0;font-size:18px;color:#0f172a;">🏆 Live Rank Leaderboard — ${escapeHtml(cfg.testDate)} (रैंक-वाइज परिणाम तालिका)</h3>
+            <small style="color:#64748b;font-weight:600;">Sorted by Total Marks (out of 100) · Shows Candidate Name &amp; All 4 Separate Paper Scores</small>
+          </div>
+          <button type="button" class="secondary-button" id="daily-live-refresh-rank-btn" style="padding:7px 14px;font-size:12.5px;font-weight:700;border-radius:8px;">🔄 Refresh Live Ranks</button>
+        </div>
+
+        <div style="overflow-x:auto;">
+          <table class="rssb-audit-table" style="width:100%;border-collapse:collapse;font-size:13px;">
+            <thead>
+              <tr style="background:#0f172a;color:#ffffff;">
+                <th style="padding:10px 12px;text-align:center;">Rank</th>
+                <th style="padding:10px 12px;text-align:left;">Candidate Name (अभ्यर्थी का नाम)</th>
+                <th style="padding:10px 12px;text-align:left;">Roll No. / ID</th>
+                <th style="padding:10px 12px;text-align:center;">1. Hindi Typing<br><small>(25 Marks)</small></th>
+                <th style="padding:10px 12px;text-align:center;">2. English Typing<br><small>(25 Marks)</small></th>
+                <th style="padding:10px 12px;text-align:center;">3. Word 2013 Eff.<br><small>(25 Marks)</small></th>
+                <th style="padding:10px 12px;text-align:center;">4. Excel 2013 Eff.<br><small>(25 Marks)</small></th>
+                <th style="padding:10px 12px;text-align:center;">Total Marks<br><small>(Out of 100)</small></th>
+                <th style="padding:10px 12px;text-align:center;">Result / Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${board.length ? board.map((row, idx) => {
+                const isMe = String(row.candidateName).toLowerCase() === String(candName).toLowerCase() && String(row.rollNumber) === String(candRoll)
+                const medal = row.rank === 1 ? '🥇 #1' : row.rank === 2 ? '🥈 #2' : row.rank === 3 ? '🥉 #3' : `#${row.rank}`
+                return `
+                  <tr style="background:${isMe ? '#eff6ff' : (idx % 2 === 0 ? '#ffffff' : '#f8fafc')};font-weight:${isMe ? '700' : '500'};border-bottom:1px solid #e2e8f0;">
+                    <td style="padding:10px 12px;text-align:center;font-weight:800;color:${row.rank <= 3 ? '#b45309' : '#1e293b'};">${medal}</td>
+                    <td style="padding:10px 12px;">
+                      <strong>${escapeHtml(row.candidateName)}</strong>
+                      ${isMe ? `<span style="background:#2563eb;color:#fff;font-size:10px;padding:2px 6px;border-radius:999px;margin-left:6px;">YOU</span>` : ''}
+                    </td>
+                    <td style="padding:10px 12px;font-family:monospace;">${escapeHtml(row.rollNumber || '—')}</td>
+                    <td style="padding:10px 12px;text-align:center;"><strong>${Number(row.hindiMarks || 0).toFixed(2)}</strong> <small style="color:#64748b;">(${Number(row.hindiWpm || 0).toFixed(0)} WPM)</small></td>
+                    <td style="padding:10px 12px;text-align:center;"><strong>${Number(row.englishMarks || 0).toFixed(2)}</strong> <small style="color:#64748b;">(${Number(row.englishWpm || 0).toFixed(0)} WPM)</small></td>
+                    <td style="padding:10px 12px;text-align:center;"><strong>${Number(row.wordEffMarks || 0).toFixed(2)}</strong> / 25</td>
+                    <td style="padding:10px 12px;text-align:center;"><strong>${Number(row.excelEffMarks || 0).toFixed(2)}</strong> / 25</td>
+                    <td style="padding:10px 12px;text-align:center;font-size:15px;font-weight:800;color:#1d4ed8;">${Number(row.totalMarksOutOf100 || 0).toFixed(2)} / 100</td>
+                    <td style="padding:10px 12px;text-align:center;">
+                      <span class="${row.overallQualified ? 'rssb-badge-ok' : 'rssb-badge-warn'}">${row.overallQualified ? '✓ QUALIFIED' : 'NOT QUALIFIED'}</span>
+                      ${row.fullRecord ? `<button type="button" class="secondary-button" data-daily-view-idx="${idx}" style="margin-left:6px;padding:3px 8px;font-size:11px;">View Card</button>` : ''}
+                    </td>
+                  </tr>
+                `
+              }).join('') : `
+                <tr>
+                  <td colspan="9" style="padding:28px;text-align:center;color:#64748b;">
+                    अभी आज के लाइव टेस्ट का प्रथम परिणाम दर्ज होना बाकी है। ऊपर <strong>"Start Daily Live Exam Now"</strong> पर क्लिक करके टेस्ट दें और <strong>Rank #1</strong> प्राप्त करें!
+                  </td>
+                </tr>
+              `}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  `
+}
+
+async function attachRssbDailyLiveHub() {
+  if (dailyLiveState.countdownTimer) {
+    clearInterval(dailyLiveState.countdownTimer)
+    dailyLiveState.countdownTimer = null
+  }
+
+  document.querySelector('#daily-live-retry-net')?.addEventListener('click', () => {
+    renderSection('rssb-daily-live')
+  })
+
+  if (!navigator.onLine) return
+
+  // Fetch latest config & leaderboard on open if not recently fetched
+  if (!dailyLiveState.config || !dailyLiveState.lastFetchedAt || (Date.now() - dailyLiveState.lastFetchedAt > 15000)) {
+    dailyLiveState.lastFetchedAt = Date.now()
+    fetchDailyLiveConfigFromGitHub().then(async (cfg) => {
+      dailyLiveState.config = cfg
+      dailyLiveState.leaderboard = await fetchLiveLeaderboardEntries(cfg)
+      if (currentSection === 'rssb-daily-live') {
+        const root = document.querySelector('#rssb-daily-live-root')
+        if (root) {
+          renderSection('rssb-daily-live')
+        }
+      }
+    })
+  }
+
+  // If waiting for 8:00 AM unlock, run live countdown timer
+  const cfg = dailyLiveState.config || getDefaultDailyLiveConfig()
+  const unlockInfo = isDailyLiveUnlockedNow(cfg)
+  if (!unlockInfo.unlocked) {
+    let rem = unlockInfo.secondsUntil8AM
+    dailyLiveState.countdownTimer = setInterval(() => {
+      rem = Math.max(0, rem - 1)
+      const el = document.querySelector('#daily-live-8am-countdown')
+      if (el) el.textContent = formatRssbClock(rem)
+      if (rem <= 0) {
+        clearInterval(dailyLiveState.countdownTimer)
+        dailyLiveState.countdownTimer = null
+        renderSection('rssb-daily-live')
+      }
+    }, 1000)
+  }
+
+  document.querySelector('#daily-live-sync-github-btn')?.addEventListener('click', async (e) => {
+    const btn = e.currentTarget
+    btn.textContent = '⏳ Syncing from GitHub...'
+    dailyLiveState.config = await fetchDailyLiveConfigFromGitHub()
+    dailyLiveState.leaderboard = await fetchLiveLeaderboardEntries(dailyLiveState.config)
+    dailyLiveState.lastFetchedAt = Date.now()
+    renderSection('rssb-daily-live')
+  })
+
+  document.querySelector('#daily-live-refresh-rank-btn')?.addEventListener('click', async (e) => {
+    const btn = e.currentTarget
+    btn.textContent = '⏳ Refreshing...'
+    dailyLiveState.leaderboard = await fetchLiveLeaderboardEntries(dailyLiveState.config || getDefaultDailyLiveConfig())
+    renderSection('rssb-daily-live')
+  })
+
+  document.querySelector('#daily-live-edit-name-btn')?.addEventListener('click', () => {
+    const nextName = prompt('Enter your Candidate Name (अभ्यर्थी का नाम — यही नाम Exam और Live Rank में दिखेगा):', getRssbCandidateName())
+    if (!nextName || !nextName.trim()) return
+    const nextRoll = prompt('Enter your Roll Number / Mobile ID:', getRssbCandidateRoll()) || getRssbCandidateRoll()
+    userProfile = {
+      ...(userProfile || {}),
+      id: userProfile?.id || `ag-${Date.now()}`,
+      name: nextName.trim(),
+      rollNumber: nextRoll.trim(),
+      mobile: nextRoll.trim(),
+      exam: userProfile?.exam || 'RSSB LDC'
+    }
+    syncUserProfileWithDisk(userProfile)
+    renderSection('rssb-daily-live')
+  })
+
+  document.querySelector('#daily-live-admin-gen-btn')?.addEventListener('click', () => {
+    openDailyLiveAdminGeneratorModal()
+  })
+
+  document.querySelectorAll('[data-daily-view-idx]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = Number(btn.dataset.dailyViewIdx)
+      const item = dailyLiveState.leaderboard?.[idx]
+      if (item?.fullRecord) openRssbSavedResultModal(item.fullRecord)
+    })
+  })
+
+  document.querySelector('#daily-live-start-exam-btn')?.addEventListener('click', () => {
+    if (!navigator.onLine) {
+      alert('Internet connection is required to start the Daily Live Test.')
+      renderSection('rssb-daily-live')
+      return
+    }
+    launchRssbDailyLiveExamSession(dailyLiveState.config || getDefaultDailyLiveConfig())
+  })
+}
+
+async function launchRssbDailyLiveExamSession(cfg) {
+  stopRssbExamTimer()
+  const hiEx = Number(cfg.hindiTyping?.exerciseNo) || 300
+  const enEx = Number(cfg.englishTyping?.exerciseNo) || 300
+  const eff1Mod = cfg.efficiency1?.module || 'word'
+  const eff1Lang = cfg.efficiency1?.language || 'hi'
+  const eff1No = Number(cfg.efficiency1?.fileNo) || 40
+  const eff2Mod = cfg.efficiency2?.module || 'excel'
+  const eff2Lang = cfg.efficiency2?.language || 'en'
+  const eff2No = Number(cfg.efficiency2?.fileNo) || 40
+
+  const spec = {
+    testNo: 81,
+    isDailyLive: true,
+    dailyTestDate: cfg.testDate || getTodayISTDateString(),
+    dailyTestId: cfg.testId || `DAILY-${cfg.testDate}`,
+    setCode: 'DAILY LIVE',
+    setTitle: cfg.title || `Daily Live Test (${cfg.testDate})`,
+    typingExNo: hiEx,
+    hindiTypingId: `hi-${String(hiEx).padStart(3, '0')}`,
+    englishTypingId: `en-${String(enEx).padStart(3, '0')}`,
+    effFileNo: eff1No,
+    eff1Module: eff1Mod,
+    eff1Lang: eff1Lang,
+    eff1FileId: efficiencyFileId(eff1Mod, eff1Lang, eff1No),
+    eff1Title: cfg.efficiency1?.title || `MS Word 2013 (${eff1Lang.toUpperCase()}) Efficiency #${eff1No}`,
+    eff1ShortTitle: `MS ${eff1Mod === 'word' ? 'Word' : 'Excel'} 2013 (${eff1Lang.toUpperCase()}) #${eff1No}`,
+    eff2Module: eff2Mod,
+    eff2Lang: eff2Lang,
+    eff2FileId: efficiencyFileId(eff2Mod, eff2Lang, eff2No),
+    eff2Title: cfg.efficiency2?.title || `MS Excel 2013 (${eff2Lang.toUpperCase()}) Efficiency #${eff2No}`,
+    eff2ShortTitle: `MS ${eff2Mod === 'word' ? 'Word' : 'Excel'} 2013 (${eff2Lang.toUpperCase()}) #${eff2No}`
+  }
+
+  rssbExamState.activeTestNo = spec.testNo
+  rssbExamState.stage = 'login'
+  rssbExamState.paperResults = {
+    hindiTyping: null,
+    englishTyping: null,
+    efficiency1: null,
+    efficiency2: null
+  }
+  renderRssbLoginScreen(spec)
+
+  if (cfg.hindiTyping?.customPassage && String(cfg.hindiTyping.customPassage).trim().length > 20) {
+    rssbExamState.hindiPassage = String(cfg.hindiTyping.customPassage).trim()
+  } else {
+    loadRssbTypingPassage('hi', hiEx).then(txt => { rssbExamState.hindiPassage = txt })
+  }
+
+  if (cfg.englishTyping?.customPassage && String(cfg.englishTyping.customPassage).trim().length > 20) {
+    rssbExamState.englishPassage = String(cfg.englishTyping.customPassage).trim()
+  } else {
+    loadRssbTypingPassage('en', enEx).then(txt => { rssbExamState.englishPassage = txt })
+  }
+}
+
+function openDailyLiveAdminGeneratorModal() {
+  document.querySelector('#ag-daily-admin-modal')?.remove()
+  const cfg = dailyLiveState.config || getDefaultDailyLiveConfig()
+  const overlay = document.createElement('div')
+  overlay.id = 'ag-daily-admin-modal'
+  overlay.className = 'rssb-modal-overlay'
+  overlay.innerHTML = `
+    <section class="rssb-entry-dialog" role="dialog" aria-modal="true" style="max-width:760px;">
+      <div class="rssb-entry-top-banner">
+        <span class="rssb-crest-icon">⚙️</span>
+        <div>
+          <small>ADMIN PANEL · GITHUB DAILY LIVE TEST PUBLISHER</small>
+          <h2>Prepare Daily Live Test JSON (public/daily-live/daily-exam.json)</h2>
+        </div>
+        <button type="button" class="rssb-modal-close-x" id="ag-da-close-x">×</button>
+      </div>
+      <div class="rssb-entry-body" style="padding:20px 24px;max-height:80vh;overflow-y:auto;">
+        <p style="margin:0 0 12px;font-size:13px;color:#334155;">
+          यहाँ से आप प्रतिदिन के <strong>चारों पेपर्स (Hindi Passage, English Passage, Word 2013 Efficiency, Excel 2013 Efficiency)</strong> और <strong>सुबह 08:00 बजे</strong> का समय सेट करके JSON कॉपी कर सकते हैं और सीधे अपने GitHub के <code>public/daily-live/daily-exam.json</code> में पेस्ट कर सकते हैं:
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px;">
+          <label style="font-size:12px;font-weight:700;">Test Date (YYYY-MM-DD or auto)<input id="da-date" type="text" value="${escapeHtml(cfg.testDate || getTodayISTDateString())}" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"></label>
+          <label style="font-size:12px;font-weight:700;">Unlock Time (IST)<input id="da-time" type="text" value="${escapeHtml(cfg.unlockTimeIST || '08:00')}" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"></label>
+          <label style="font-size:12px;font-weight:700;">Enforce 8:00 AM Lock<select id="da-lock" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"><option value="true" ${cfg.enforce8AMSchedule !== false ? 'selected' : ''}>Yes (Unlock at 8:00 AM)</option><option value="false" ${cfg.enforce8AMSchedule === false ? 'selected' : ''}>No (Unlock Immediately)</option></select></label>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px;">
+          <label style="font-size:12px;font-weight:700;">Paper 1: Hindi Exercise # (1-300)<input id="da-hi-no" type="number" min="1" max="300" value="${cfg.hindiTyping?.exerciseNo || 300}" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"></label>
+          <label style="font-size:12px;font-weight:700;">Paper 2: English Exercise # (1-300)<input id="da-en-no" type="number" min="1" max="300" value="${cfg.englishTyping?.exerciseNo || 300}" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;"></label>
+        </div>
+        <label style="font-size:12px;font-weight:700;display:block;margin-bottom:10px;">Optional Custom Hindi Passage (यदि खाली छोड़ेंगे तो Exercise # का पैसेज चलेगा):
+          <textarea id="da-hi-txt" rows="3" class="hindi-devlys-font" placeholder="यहाँ आज का नया हिन्दी पैसेज पेस्ट करें..." style="width:100%;padding:8px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;">${escapeHtml(cfg.hindiTyping?.customPassage || '')}</textarea>
+        </label>
+        <label style="font-size:12px;font-weight:700;display:block;margin-bottom:10px;">Optional Custom English Passage (Leave blank to use Exercise #):
+          <textarea id="da-en-txt" rows="3" placeholder="Paste today's custom English passage here..." style="width:100%;padding:8px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;">${escapeHtml(cfg.englishTyping?.customPassage || '')}</textarea>
+        </label>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px;">
+          <label style="font-size:12px;font-weight:700;">Paper 3 (MS Word 2013 Set # 1-40 &amp; Lang)
+            <div style="display:flex;gap:6px;margin-top:4px;">
+              <select id="da-w-lang" style="padding:7px;border:1px solid #cbd5e1;border-radius:6px;"><option value="hi" ${cfg.efficiency1?.language !== 'en' ? 'selected' : ''}>Hindi</option><option value="en" ${cfg.efficiency1?.language === 'en' ? 'selected' : ''}>English</option></select>
+              <input id="da-w-no" type="number" min="1" max="40" value="${cfg.efficiency1?.fileNo || 40}" style="flex:1;padding:7px;border:1px solid #cbd5e1;border-radius:6px;">
+            </div>
+          </label>
+          <label style="font-size:12px;font-weight:700;">Paper 4 (MS Excel 2013 Set # 1-40 &amp; Lang)
+            <div style="display:flex;gap:6px;margin-top:4px;">
+              <select id="da-x-lang" style="padding:7px;border:1px solid #cbd5e1;border-radius:6px;"><option value="en" ${cfg.efficiency2?.language !== 'hi' ? 'selected' : ''}>English</option><option value="hi" ${cfg.efficiency2?.language === 'hi' ? 'selected' : ''}>Hindi</option></select>
+              <input id="da-x-no" type="number" min="1" max="40" value="${cfg.efficiency2?.fileNo || 40}" style="flex:1;padding:7px;border:1px solid #cbd5e1;border-radius:6px;">
+            </div>
+          </label>
+        </div>
+        <label style="font-size:12px;font-weight:700;display:block;margin-bottom:14px;">Live Leaderboard Google Apps Script Web App URL (for global live rank sync across all students):
+          <input id="da-webhook" type="text" value="${escapeHtml(cfg.leaderboardWebhookUrl || '')}" placeholder="https://script.google.com/macros/s/.../exec" style="width:100%;padding:7px;margin-top:4px;border:1px solid #cbd5e1;border-radius:6px;">
+        </label>
+        <div style="display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
+          <button type="button" class="secondary-button" id="ag-da-close-btn">Close</button>
+          <button type="button" class="primary-button" id="ag-da-copy-btn">📋 Copy JSON for GitHub (daily-exam.json)</button>
+        </div>
+      </div>
+    </section>
+  `
+  document.body.appendChild(overlay)
+  const close = () => overlay.remove()
+  overlay.querySelector('#ag-da-close-x')?.addEventListener('click', close)
+  overlay.querySelector('#ag-da-close-btn')?.addEventListener('click', close)
+  overlay.querySelector('#ag-da-copy-btn')?.addEventListener('click', async () => {
+    const dVal = overlay.querySelector('#da-date').value.trim() || 'auto'
+    const newJson = {
+      testId: `DAILY-LDC-${dVal}`,
+      testDate: dVal,
+      title: `RSSB LDC Daily Live All-Rajasthan Test (${dVal})`,
+      unlockTimeIST: overlay.querySelector('#da-time').value.trim() || '08:00',
+      enforce8AMSchedule: overlay.querySelector('#da-lock').value === 'true',
+      hindiTyping: {
+        exerciseNo: Number(overlay.querySelector('#da-hi-no').value) || 300,
+        customPassage: overlay.querySelector('#da-hi-txt').value.trim()
+      },
+      englishTyping: {
+        exerciseNo: Number(overlay.querySelector('#da-en-no').value) || 300,
+        customPassage: overlay.querySelector('#da-en-txt').value.trim()
+      },
+      efficiency1: {
+        module: 'word',
+        language: overlay.querySelector('#da-w-lang').value,
+        fileNo: Number(overlay.querySelector('#da-w-no').value) || 40,
+        title: `MS Word 2013 Efficiency Set #${overlay.querySelector('#da-w-no').value}`
+      },
+      efficiency2: {
+        module: 'excel',
+        language: overlay.querySelector('#da-x-lang').value,
+        fileNo: Number(overlay.querySelector('#da-x-no').value) || 40,
+        title: `MS Excel 2013 Efficiency Set #${overlay.querySelector('#da-x-no').value}`
+      },
+      leaderboardWebhookUrl: overlay.querySelector('#da-webhook').value.trim()
+    }
+    dailyLiveState.config = newJson
+    const str = JSON.stringify(newJson, null, 2)
+    try { await navigator.clipboard.writeText(str) } catch {}
+    alert('Copied JSON to clipboard! Paste this into public/daily-live/daily-exam.json on GitHub.')
+    close()
+    renderSection('rssb-daily-live')
+  })
+}

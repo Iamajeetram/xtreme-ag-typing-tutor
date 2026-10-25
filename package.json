@@ -11,7 +11,8 @@
     "dev": "vite",
     "build": "vite build && node scripts/prepare-dist.cjs",
     "preview": "vite preview",
-    "dist:win": "npm run build && electron-builder --win --x64"
+    "dist:mac": "npm run build && electron-builder --mac --arm64 --publish never && node scripts/sign-mac.cjs",
+    "dist:win": "npm run build && electron-builder --win --x64 --publish never"
   },
   "devDependencies": {
     "electron": "^31.0.0",
@@ -21,23 +22,41 @@
   "build": {
     "appId": "com.xtremeag.typingtutor",
     "productName": "AG Typing Tutor",
+    "publish": null,
+    "asar": true,
     "directories": { "output": "release" },
     "files": [
+      "app_dist/**/*",
       "dist/**/*",
       "electron/**/*",
-      "src/assets/AG-Typing-Tutor-Icon-512.png",
+      "build/**/*",
+      "src/assets/**/*",
       "package.json"
     ],
+    "mac": {
+      "icon": "build/icon.png",
+      "category": "public.app-category.education",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "target": [
+        { "target": "dmg", "arch": ["arm64"] },
+        { "target": "zip", "arch": ["arm64"] }
+      ],
+      "artifactName": "AG-Typing-Tutor-Mac-${version}-${arch}.${ext}"
+    },
     "win": {
-      "icon": "src/assets/AG-Typing-Tutor-Icon-512.png",
+      "icon": "build/icon.ico",
+      "publisherName": "Xtreme AG Apps",
       "target": [
         { "target": "nsis", "arch": ["x64"] },
         { "target": "portable", "arch": ["x64"] }
       ]
     },
     "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
+      "include": "build/installer.nsh",
+      "oneClick": true,
+      "perMachine": true,
+      "allowElevation": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "AG Typing Tutor",

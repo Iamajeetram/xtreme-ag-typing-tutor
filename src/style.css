@@ -2,7 +2,8 @@
 /* AUTHENTIC HINDI DEVLYS & KRUTI DEV FONT BINDING */
 @font-face {
   font-family: "DevLys 010";
-  src: local("DevLys 010"), local("DevLys010"), local("Kruti Dev 010"), local("KrutiDev010");
+  src: local("DevLys 010"), local("DevLys010"), local("Kruti Dev 010"), local("KrutiDev010"), url("./assets/fonts/HindiDevanagari.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Kruti Dev 010";
@@ -5090,7 +5091,8 @@ body.learn-modal-open{overflow:hidden}
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  flex-wrap: nowrap;
+  gap: 16px;
   padding: 10px 20px;
   background: #1e293b;
   color: #ffffff;
@@ -5101,6 +5103,8 @@ body.learn-modal-open{overflow:hidden}
   display: flex;
   align-items: center;
   gap: 12px;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 .rssb-hall-badge {
   background: #2563eb;
@@ -5110,23 +5114,35 @@ body.learn-modal-open{overflow:hidden}
   padding: 4px 9px;
   border-radius: 6px;
   letter-spacing: 0.4px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .rssb-hall-brand strong {
   display: block;
-  font-size: 14.5px;
+  font-size: 14px;
   color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .rssb-hall-brand small {
   display: block;
   font-size: 11.5px;
   color: #cbd5e1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .rssb-hall-candidate-strip {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
   font-size: 12.5px;
+  white-space: nowrap;
 }
 .rssb-server-timer-box {
   background: #0f172a;
@@ -5889,4 +5905,136 @@ body.learn-modal-open{overflow:hidden}
 .excel-cell.is-selected-range {
   background-color: rgba(33, 115, 70, 0.08);
   outline: 1.5px solid #217346;
+}
+
+
+/* ==========================================================================
+   MS Office 2013 Classic Flat Metro Ribbon & Excel Multi-Cell Drag-Selection
+   ========================================================================== */
+.office-edition-2013 .word-titlebar {
+  background: #2b579a !important;
+  border-bottom: 1px solid #1e3f73 !important;
+  box-shadow: none !important;
+}
+.office-edition-2013.excel-shell .word-titlebar {
+  background: #217346 !important;
+  border-bottom: 1px solid #165131 !important;
+  box-shadow: none !important;
+}
+.office-edition-2013 .word-tabs {
+  background: #2b579a !important;
+  padding: 2px 10px 0 10px !important;
+  gap: 2px !important;
+  border-bottom: 1px solid #d4d4d4 !important;
+}
+.office-edition-2013.excel-shell .word-tabs {
+  background: #217346 !important;
+}
+.office-edition-2013 .word-tab {
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  font-family: "Segoe UI", Tahoma, sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 6px 14px !important;
+  border: 1px solid transparent !important;
+  border-bottom: none !important;
+}
+.office-edition-2013 .word-tab:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+.office-edition-2013 .word-tab.is-active {
+  background: #f3f3f3 !important;
+  color: #2b579a !important;
+  font-weight: 700 !important;
+  border-color: #d4d4d4 !important;
+  box-shadow: none !important;
+}
+.office-edition-2013.excel-shell .word-tab.is-active {
+  color: #217346 !important;
+}
+.office-edition-2013 .word-tab-file {
+  background: #19478a !important;
+  color: #ffffff !important;
+}
+.office-edition-2013.excel-shell .word-tab-file {
+  background: #145934 !important;
+  color: #ffffff !important;
+}
+.office-edition-2013 .word-ribbon {
+  background: #f3f3f3 !important;
+  border-bottom: 1px solid #d4d4d4 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.office-edition-2013 .word-ribbon-group {
+  border-right: 1px solid #d9d9d9 !important;
+  background: transparent !important;
+}
+.office-edition-2013 .word-ribbon-btn {
+  border-radius: 0 !important;
+}
+.office-edition-2013 .word-ribbon-btn:hover {
+  background: #d5e1f2 !important;
+  border-color: #a3bde3 !important;
+}
+.office-edition-2013.excel-shell .word-ribbon-btn:hover {
+  background: #cbe8d6 !important;
+  border-color: #8cc6a3 !important;
+}
+.office-edition-2013 .word-ribbon-btn.is-active {
+  background: #c2d5f2 !important;
+  border-color: #7da2ce !important;
+}
+.office-edition-2013.excel-shell .word-ribbon-btn.is-active {
+  background: #b5dfc5 !important;
+  border-color: #5ea87c !important;
+}
+.office-edition-2013 .word-statusbar {
+  background: #2b579a !important;
+  color: #ffffff !important;
+  border-top: none !important;
+}
+.office-edition-2013.excel-shell .word-statusbar {
+  background: #217346 !important;
+  color: #ffffff !important;
+}
+.office-edition-2013 .word-tell-me {
+  display: none !important;
+}
+
+/* Excel True Selection Mode vs Edit Mode */
+.excel-sheet-table td {
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.excel-cell[readonly] {
+  cursor: cell !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  caret-color: transparent !important;
+}
+.excel-cell.is-selected-range {
+  background-color: rgba(33, 115, 70, 0.14) !important;
+  outline: 1px solid rgba(33, 115, 70, 0.55) !important;
+}
+.excel-cell.is-primary-active-cell {
+  background-color: #ffffff !important;
+  outline: 2.2px solid #217346 !important;
+  outline-offset: -2px !important;
+  z-index: 3 !important;
+}
+.excel-cell.is-editing-cell {
+  background-color: #ffffff !important;
+  outline: 2.2px solid #1d4ed8 !important;
+  outline-offset: -2px !important;
+  cursor: text !important;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  caret-color: auto !important;
+  z-index: 4 !important;
 }

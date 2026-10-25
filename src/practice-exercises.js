@@ -1,5 +1,5 @@
 import { escapeHtml } from './text-utils.js'
-import { saveReportRecord } from './report-utils.js'
+import { saveReportRecord, calculateDetailedMetrics } from './report-utils.js'
 import { englishLearningData } from './learning-english.js'
 import { hindiLearningData } from './learning-hindi.js'
 
@@ -282,12 +282,9 @@ function runTypingTestModalSession(passageText, durationMinutes) {
     }
 
     const typed = textarea.value
-    const elapsedMin = Math.max((durationMinutes * 60 - timeLeftSec) / 60, 1/60)
-    let correctChars = 0
-    for (let i = 0; i < typed.length; i++) {
-      if (typed[i] === passageText[i]) correctChars++
-    }
-    const netWpm = Math.max(0, Math.round(((correctChars / 5) / elapsedMin)))
+    const elapsedSec = Math.max(1, durationMinutes * 60 - timeLeftSec)
+    const liveMetrics = calculateDetailedMetrics(typed, passageText, elapsedSec * 1000)
+    const netWpm = liveMetrics.netWpm
     updateSpeedometerNeedle(netWpm)
 
     if (typed.length >= passageText.length) {
@@ -342,17 +339,13 @@ function updateSpeedometerNeedle(wpm) {
 function finishTestAndShowReport(typedText, passageText, elapsedSec) {
   document.querySelector('#stylized-speedometer-panel')?.remove()
 
-  let correctCount = 0, errorCount = 0
-  for (let i = 0; i < typedText.length; i++) {
-    if (typedText[i] === passageText[i]) correctCount++
-    else errorCount++
-  }
-
-  const mins = Math.max(elapsedSec / 60, 1/60)
-  const totalWords = typedText.trim() ? typedText.trim().split(/\s+/).length : 0
-  const grossWpm = Math.round((typedText.length / 5) / mins)
-  const netWpm = Math.max(0, Math.round(((correctCount / 5) / mins)))
-  const accuracy = typedText.length > 0 ? Math.round((correctCount / typedText.length) * 100) : 100
+  const finalMetrics = calculateDetailedMetrics(typedText, passageText, Math.max(1, elapsedSec) * 1000)
+  const correctCount = finalMetrics.correct
+  const errorCount = finalMetrics.errors
+  const totalWords = finalMetrics.words
+  const grossWpm = finalMetrics.grossWpm
+  const netWpm = finalMetrics.netWpm
+  const accuracy = finalMetrics.accuracy
 
   saveReportRecord({
     date: new Date().toISOString(),

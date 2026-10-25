@@ -1,0 +1,29 @@
+{
+  "testId": "DAILY-LDC-LIVE",
+  "testDate": "auto",
+  "title": "RSSB LDC Daily Live All-Rajasthan Test (08:00 AM)",
+  "unlockTimeIST": "08:00",
+  "enforce8AMSchedule": true,
+  "hindiTyping": {
+    "exerciseNo": 300,
+    "customPassage": ""
+  },
+  "englishTyping": {
+    "exerciseNo": 300,
+    "customPassage": ""
+  },
+  "efficiency1": {
+    "module": "word",
+    "language": "hi",
+    "fileNo": 40,
+    "title": "MS Word 2013 Efficiency — Daily Live Set"
+  },
+  "efficiency2": {
+    "module": "excel",
+    "language": "en",
+    "fileNo": 40,
+    "title": "MS Excel 2013 Efficiency — Daily Live Set"
+  },
+  "leaderboardWebhookUrl": "",
+  "leaderboard": []
+}

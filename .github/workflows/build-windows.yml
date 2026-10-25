@@ -1,4 +1,4 @@
-name: Build Windows Installer (.exe)
+name: Build Windows (.exe) & Mac (.dmg) Installers
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -17,312 +16,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Setup Python & Generate Multi-Size App Icon
-        shell: bash
-        run: |
-          pip install pillow
-          mkdir -p build scripts electron
-          cat << 'EOICON' > scripts/make-icon.py
-          import os
-          from PIL import Image
-
-          candidates = [
-              "src/assets/AG-Typing-Tutor-App-Icon.png",
-              "src/assets/AG-Typing-Tutor-Icon-512.png"
-          ]
-          icon_src = None
-          for c in candidates:
-              if os.path.exists(c):
-                  icon_src = c
-                  break
-
-          if icon_src:
-              img = Image.open(icon_src).convert("RGBA")
-              img.save("build/icon.png", format="PNG")
-              img.save(
-                  "build/icon.ico",
-                  format="ICO",
-                  sizes=[(256, 256), (128, 128), (64, 64), (48, 48), (32, 32), (16, 16)]
-              )
-              print(f"Generated build/icon.ico from {icon_src}")
-          else:
-              print("No icon image found, skipping icon conversion")
-          EOICON
-          python scripts/make-icon.py
-
-      - name: Create NSIS Font Auto-Installer Script
-        shell: bash
-        run: |
-          mkdir -p build
-          cat << 'EONSH' > build/installer.nsh
-          !macro customInstall
-            DetailPrint "Registering Hindi DevLys Fonts..."
-            IfFileExists "$FONTS\DevLys 010.ttf" +3 0
-            IfFileExists "$INSTDIR\resources\fonts\DevLys 010.ttf" 0 +2
-              CopyFiles /SILENT "$INSTDIR\resources\fonts\*.ttf" "$FONTS"
-            System::Call "gdi32::AddFontResource(t '$FONTS\DevLys 010.ttf') i .r0"
-            SendMessage 65535 29 0 0
-          !macroend
-          EONSH
-
-      - name: Prepare Electron & Fast Startup Configs
-        shell: bash
-        run: |
-          cat << 'EOMAIN' > electron/main.cjs
-          const { app, BrowserWindow, shell } = require('electron');
-          const path = require('path');
-          const http = require('http');
-          const fs = require('fs');
-
-          app.disableHardwareAcceleration();
-          app.commandLine.appendSwitch('disable-gpu');
-          app.commandLine.appendSwitch('disable-software-rasterizer');
-
-          let mainWindow = null;
-          let localServer = null;
-
-          const MIME_TYPES = {
-            '.html': 'text/html; charset=utf-8',
-            '.js': 'application/javascript; charset=utf-8',
-            '.mjs': 'application/javascript; charset=utf-8',
-            '.css': 'text/css; charset=utf-8',
-            '.json': 'application/json; charset=utf-8',
-            '.png': 'image/png',
-            '.jpg': 'image/jpeg',
-            '.jpeg': 'image/jpeg',
-            '.gif': 'image/gif',
-            '.svg': 'image/svg+xml',
-            '.ico': 'image/x-icon',
-            '.woff': 'font/woff',
-            '.woff2': 'font/woff2',
-            '.ttf': 'font/ttf',
-            '.txt': 'text/plain; charset=utf-8'
-          };
-
-          function getSearchRoots() {
-            const appPath = app.getAppPath();
-            const resPath = process.resourcesPath || path.join(__dirname, '..', '..');
-            return [
-              path.join(__dirname, '..', 'app_dist'),
-              path.join(__dirname, '..', 'dist'),
-              path.join(appPath, 'app_dist'),
-              path.join(appPath, 'dist'),
-              path.join(resPath, 'app_dist'),
-              path.join(resPath, 'app', 'app_dist'),
-              path.join(resPath, 'app', 'dist'),
-              path.join(__dirname, '..'),
-              appPath
-            ];
-          }
-
-          function startStaticServer() {
-            const roots = getSearchRoots();
-            return new Promise((resolve, reject) => {
-              const server = http.createServer((req, res) => {
-                try {
-                  const parsedUrl = new URL(req.url || '/', 'http://127.0.0.1');
-                  let pathname = decodeURIComponent(parsedUrl.pathname);
-                  if (pathname === '/' || pathname === '') pathname = '/index.html';
-                  const safeRelPath = pathname.replace(/^[/\\]+/, '');
-
-                  let foundFile = null;
-                  for (const rootDir of roots) {
-                    const candidates = [
-                      path.join(rootDir, safeRelPath),
-                      path.join(rootDir, 'public', safeRelPath)
-                    ];
-                    for (const candidate of candidates) {
-                      if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) {
-                        foundFile = candidate;
-                        break;
-                      }
-                    }
-                    if (foundFile) break;
-                  }
-
-                  if (!foundFile) {
-                    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-                    res.end('File not found: ' + safeRelPath);
-                    return;
-                  }
-
-                  const ext = path.extname(foundFile).toLowerCase();
-                  const headers = {
-                    'Content-Type': MIME_TYPES[ext] || 'application/octet-stream',
-                    'Access-Control-Allow-Origin': '*'
-                  };
-                  if (ext === '.json') headers['Cache-Control'] = 'no-store, no-cache, must-revalidate';
-
-                  const fileBuffer = fs.readFileSync(foundFile);
-                  res.writeHead(200, headers);
-                  res.end(fileBuffer);
-                } catch (err) {
-                  res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
-                  res.end('Server error: ' + err.message);
-                }
-              });
-              server.listen(0, '127.0.0.1', () => resolve({ server, port: server.address().port }));
-              server.on('error', reject);
-            });
-          }
-
-          async function createWindow() {
-            const { server, port } = await startStaticServer();
-            localServer = server;
-
-            let iconPath = path.join(__dirname, '..', 'build', 'icon.png');
-            if (!fs.existsSync(iconPath)) {
-              iconPath = path.join(__dirname, '..', 'src', 'assets', 'AG-Typing-Tutor-Icon-512.png');
-            }
-
-            mainWindow = new BrowserWindow({
-              width: 1366,
-              height: 860,
-              minWidth: 1024,
-              minHeight: 700,
-              show: false,
-              backgroundColor: '#0f172a',
-              title: 'AG Typing Tutor — Xtreme AG Apps',
-              icon: iconPath,
-              autoHideMenuBar: true,
-              webPreferences: {
-                contextIsolation: true,
-                nodeIntegration: false,
-                spellcheck: false
-              }
-            });
-
-            await mainWindow.loadURL(`http://127.0.0.1:${port}/index.html`);
-
-            mainWindow.once('ready-to-show', () => {
-              mainWindow.maximize();
-              mainWindow.show();
-            });
-
-            mainWindow.webContents.setWindowOpenHandler(({ url }) => {
-              if ((url.startsWith('https://') || url.startsWith('http://')) && !url.startsWith('http://127.0.0.1')) {
-                shell.openExternal(url);
-                return { action: 'deny' };
-              }
-              return { action: 'allow' };
-            });
-          }
-
-          app.whenReady().then(createWindow);
-          app.on('window-all-closed', () => {
-            if (localServer) { try { localServer.close(); } catch (e) {} }
-            if (process.platform !== 'darwin') app.quit();
-          });
-          EOMAIN
-
-          cat << 'EOPREP' > scripts/prepare-dist.cjs
-          const fs = require('fs');
-          const path = require('path');
-          const rootDir = process.cwd();
-          const distDir = path.join(rootDir, 'dist');
-          const appDistDir = path.join(rootDir, 'app_dist');
-
-          function copyRecursiveSync(src, dest) {
-            if (!fs.existsSync(src)) return;
-            if (fs.statSync(src).isDirectory()) {
-              if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
-              for (const child of fs.readdirSync(src)) {
-                copyRecursiveSync(path.join(src, child), path.join(dest, child));
-              }
-            } else {
-              fs.mkdirSync(path.dirname(dest), { recursive: true });
-              fs.copyFileSync(src, dest);
-            }
-          }
-
-          const extraFolders = [
-            ['public/efficiency-bank', 'efficiency-bank'],
-            ['src/efficiency-bank', 'efficiency-bank'],
-            ['efficiency-bank', 'efficiency-bank'],
-            ['public/exercises', 'exercises'],
-            ['src/exercises', 'exercises'],
-            ['exercises', 'exercises']
-          ];
-
-          for (const [srcRel, destRel] of extraFolders) {
-            const srcPath = path.join(rootDir, srcRel);
-            if (fs.existsSync(srcPath)) copyRecursiveSync(srcPath, path.join(distDir, destRel));
-          }
-
-          copyRecursiveSync(distDir, appDistDir);
-          console.log('Successfully prepared app_dist and dist');
-          EOPREP
-
-          rm -f vite.config.ts vite.config.mjs vite.config.cjs
-          cat << 'EOVITE' > vite.config.js
-          import { defineConfig } from 'vite'
-          export default defineConfig({
-            base: './',
-            publicDir: 'public',
-            build: { outDir: 'dist', emptyOutDir: true, assetsInlineLimit: 0 }
-          })
-          EOVITE
-
-          cat << 'EOPKG' > package.json
-          {
-            "name": "ag-typing-tutor",
-            "productName": "AG Typing Tutor",
-            "version": "1.0.0",
-            "description": "AG Typing Tutor & RSSB LDC Exam Simulator by Xtreme AG Apps",
-            "author": "Xtreme AG Apps",
-            "private": true,
-            "type": "module",
-            "main": "electron/main.cjs",
-            "scripts": {
-              "dev": "vite",
-              "build": "vite build && node scripts/prepare-dist.cjs",
-              "dist:win": "npm run build && electron-builder --win --x64 --publish never"
-            },
-            "devDependencies": {
-              "electron": "^31.0.0",
-              "electron-builder": "^24.13.3",
-              "vite": "^5.4.0"
-            },
-            "build": {
-              "appId": "com.xtremeag.typingtutor",
-              "productName": "AG Typing Tutor",
-              "publish": null,
-              "asar": true,
-              "directories": { "output": "release" },
-              "files": [
-                "app_dist/**/*",
-                "dist/**/*",
-                "electron/**/*",
-                "build/**/*",
-                "src/assets/AG-Typing-Tutor-App-Icon.png",
-                "src/assets/AG-Typing-Tutor-Icon-512.png",
-                "package.json"
-              ],
-              "win": {
-                "icon": "build/icon.ico",
-                "publisherName": "Xtreme AG Apps",
-                "target": [
-                  { "target": "nsis", "arch": ["x64"] },
-                  { "target": "portable", "arch": ["x64"] }
-                ]
-              },
-              "nsis": {
-                "include": "build/installer.nsh",
-                "oneClick": true,
-                "perMachine": true,
-                "allowElevation": true,
-                "createDesktopShortcut": true,
-                "createStartMenuShortcut": true,
-                "shortcutName": "AG Typing Tutor",
-                "artifactName": "AG-Typing-Tutor-Setup-${version}.${ext}"
-              },
-              "portable": {
-                "artifactName": "AG-Typing-Tutor-Portable-${version}.${ext}"
-              }
-            }
-          }
-          EOPKG
 
       - name: Install Dependencies
         run: npm install
@@ -339,5 +32,35 @@ jobs:
           name: AG-Typing-Tutor-Windows-Installer
           path: |
             release/*.exe
+          if-no-files-found: error
+          retention-days: 30
+
+  build-mac:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Vite App & Package MacBook Installer (.dmg)
+        run: npm run dist:mac
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: false
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload MacBook Installer (.dmg) Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AG-Typing-Tutor-MacBook-Installer
+          path: |
+            release/*.dmg
+            release/*.zip
           if-no-files-found: error
           retention-days: 30
