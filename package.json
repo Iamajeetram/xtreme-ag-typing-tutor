@@ -1,7 +1,7 @@
 {
   "name": "ag-typing-tutor",
   "productName": "AG Typing Tutor",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "AG Typing Tutor & RSSB LDC Exam Simulator by Xtreme AG Apps",
   "author": "Xtreme AG Apps",
   "private": true,
@@ -11,8 +11,8 @@
     "dev": "vite",
     "build": "vite build && node scripts/prepare-dist.cjs",
     "preview": "vite preview",
-    "dist:mac": "npm run build && electron-builder --mac --x64 --arm64 --publish never && node scripts/sign-mac.cjs",
-    "dist:win": "npm run build && electron-builder --win --x64 --publish never"
+    "dist:mac": "npm run build && electron-builder --mac dmg zip --x64 --arm64 --publish never && node scripts/sign-mac.cjs",
+    "dist:win": "npm run build && electron-builder --win nsis portable --x64 --ia32 --publish never"
   },
   "devDependencies": {
     "electron": "^31.0.0",
@@ -24,7 +24,9 @@
     "productName": "AG Typing Tutor",
     "publish": null,
     "asar": true,
-    "directories": { "output": "release" },
+    "directories": {
+      "output": "release"
+    },
     "files": [
       "app_dist/**/*",
       "dist/**/*",
@@ -39,8 +41,20 @@
       "hardenedRuntime": false,
       "gatekeeperAssess": false,
       "target": [
-        { "target": "dmg", "arch": ["x64", "arm64"] },
-        { "target": "zip", "arch": ["x64", "arm64"] }
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
       ],
       "artifactName": "AG-Typing-Tutor-Mac-${version}-${arch}.${ext}"
     },
@@ -48,8 +62,20 @@
       "icon": "build/icon.ico",
       "publisherName": "Xtreme AG Apps",
       "target": [
-        { "target": "nsis", "arch": ["x64"] },
-        { "target": "portable", "arch": ["x64"] }
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
       ]
     },
     "nsis": {
@@ -60,10 +86,10 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "AG Typing Tutor",
-      "artifactName": "AG-Typing-Tutor-Setup-${version}.${ext}"
+      "artifactName": "AG-Typing-Tutor-Setup-${version}-${arch}.${ext}"
     },
     "portable": {
-      "artifactName": "AG-Typing-Tutor-Portable-${version}.${ext}"
+      "artifactName": "AG-Typing-Tutor-Portable-${version}-${arch}.${ext}"
     }
   }
 }

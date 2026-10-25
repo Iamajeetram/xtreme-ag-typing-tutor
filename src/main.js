@@ -8,8 +8,8 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.4.0';
-let APP_RUNTIME_INFO = { version: '1.4.0', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.4.1';
+let APP_RUNTIME_INFO = { version: '1.4.1', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 const GITHUB_REPO_CANDIDATES = [
@@ -44,23 +44,62 @@ function compareVersions(v1, v2) {
   return 0;
 }
 
+function detectRuntimePlatform() {
+  if (APP_RUNTIME_INFO.platform && APP_RUNTIME_INFO.platform !== 'web') {
+    return APP_RUNTIME_INFO.platform;
+  }
+  const ua = (navigator.userAgent || '') + ' ' + (navigator.platform || '');
+  if (/Mac/i.test(ua)) return 'darwin';
+  return 'win32';
+}
+
 function pickBestReleaseAsset(release) {
   const assets = Array.isArray(release?.assets) ? release.assets : [];
-  const plat = APP_RUNTIME_INFO.platform;
-  const arch = APP_RUNTIME_INFO.arch || 'arm64';
+  const plat = detectRuntimePlatform();
+  const arch = String(APP_RUNTIME_INFO.arch || '').toLowerCase();
 
-  if (plat === 'darwin' || /Mac/i.test(navigator.platform || '')) {
-    const archDmg = assets.find(a => a.name && a.name.endsWith('.dmg') && a.name.includes(arch));
-    if (archDmg) return archDmg;
-    const anyDmg = assets.find(a => a.name && a.name.endsWith('.dmg'));
-    if (anyDmg) return anyDmg;
+  if (plat === 'darwin') {
+    // STRICT MAC FILTER: Only allow .dmg files on macOS (NEVER return a Windows .exe!)
+    const dmgAssets = assets.filter(a => a && a.name && /\.dmg$/i.test(a.name));
+    if (dmgAssets.length === 0) return null;
+    if (arch === 'x64') {
+      return dmgAssets.find(a => /x64/i.test(a.name)) || dmgAssets.find(a => !/arm64/i.test(a.name)) || null;
+    }
+    // Default / arm64 Apple Silicon: prefer arm64.dmg, fallback to x64.dmg (via Rosetta)
+    return dmgAssets.find(a => /arm64/i.test(a.name)) || dmgAssets[0] || null;
   } else {
-    const setupExe = assets.find(a => a.name && a.name.endsWith('.exe') && /Setup/i.test(a.name));
-    if (setupExe) return setupExe;
-    const anyExe = assets.find(a => a.name && a.name.endsWith('.exe'));
-    if (anyExe) return anyExe;
+    // STRICT WINDOWS FILTER: Only allow .exe files on Windows (NEVER return a Mac .dmg!)
+    const exeAssets = assets.filter(a => a && a.name && /\.exe$/i.test(a.name));
+    if (exeAssets.length === 0) return null;
+    const is32Bit = arch === 'ia32' || arch === 'x86';
+    if (is32Bit) {
+      return (
+        exeAssets.find(a => /Setup/i.test(a.name) && /(ia32|x86|32)/i.test(a.name)) ||
+        exeAssets.find(a => /(ia32|x86|32)/i.test(a.name)) ||
+        null
+      );
+    }
+    return (
+      exeAssets.find(a => /Setup/i.test(a.name) && /x64/i.test(a.name)) ||
+      exeAssets.find(a => /Setup/i.test(a.name) && !/(ia32|x86)/i.test(a.name)) ||
+      exeAssets.find(a => /x64/i.test(a.name)) ||
+      exeAssets.find(a => !/(ia32|x86)/i.test(a.name)) ||
+      exeAssets[0] ||
+      null
+    );
   }
-  return assets[0] || null;
+}
+
+function categorizeReleaseAssets(release) {
+  const assets = Array.isArray(release?.assets) ? release.assets : [];
+  return {
+    macArm64: assets.find(a => a?.name && /\.dmg$/i.test(a.name) && /arm64/i.test(a.name)) || null,
+    macX64: assets.find(a => a?.name && /\.dmg$/i.test(a.name) && /x64/i.test(a.name)) || null,
+    winX64: assets.find(a => a?.name && /\.exe$/i.test(a.name) && /Setup/i.test(a.name) && /x64/i.test(a.name))
+      || assets.find(a => a?.name && /\.exe$/i.test(a.name) && /x64/i.test(a.name)) || null,
+    winIa32: assets.find(a => a?.name && /\.exe$/i.test(a.name) && /Setup/i.test(a.name) && /(ia32|x86)/i.test(a.name))
+      || assets.find(a => a?.name && /\.exe$/i.test(a.name) && /(ia32|x86)/i.test(a.name)) || null
+  };
 }
 
 async function checkAppUpdates(isManual = false) {
@@ -78,13 +117,22 @@ async function checkAppUpdates(isManual = false) {
     }
     if (!release) {
       if (isManual) {
-        alert(`You are using AG Typing Tutor v${APP_CURRENT_VERSION} (Latest Version).\n\nNote for Admin: Make sure your GitHub repository ('${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}') is set to PUBLIC (not Private 🔒) and GitHub Actions has finished publishing the Release.`);
+        alert(`You are using AG Typing Tutor v${APP_CURRENT_VERSION} (Latest Version).\n\nNote for Admin: Make sure your GitHub repository ('${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}') is set to PUBLIC and GitHub Actions has finished publishing the Release.`);
       }
       return;
     }
     const latestTag = release.tag_name || release.name || '';
     if (compareVersions(latestTag, APP_CURRENT_VERSION) > 0) {
-      showUpdateModal(release);
+      const bestAsset = pickBestReleaseAsset(release);
+      if (!bestAsset) {
+        // The release exists, but the installer for this OS (.dmg for Mac or .exe for Windows) hasn't finished uploading yet
+        if (isManual) {
+          const osLabel = detectRuntimePlatform() === 'darwin' ? 'macOS (.dmg)' : 'Windows (.exe)';
+          alert(`New release ${latestTag} was found, but the ${osLabel} installer is still being built by GitHub Actions. Please try again in 2-3 minutes.`);
+        }
+        return;
+      }
+      showUpdateModal(release, bestAsset);
     } else if (isManual) {
       alert(`Great! You are already using the latest version of AG Typing Tutor (v${APP_CURRENT_VERSION}).`);
     }
@@ -93,26 +141,38 @@ async function checkAppUpdates(isManual = false) {
   }
 }
 
-function showUpdateModal(release) {
+function showUpdateModal(release, matchedAsset = null) {
   document.querySelector('#ag-update-modal')?.remove();
   const latestTag = release.tag_name || release.name || 'Latest';
-  const bestAsset = pickBestReleaseAsset(release);
-  const downloadUrl = bestAsset?.browser_download_url || release.html_url;
-  const assetName = bestAsset?.name || 'Update Package';
+  const bestAsset = matchedAsset || pickBestReleaseAsset(release);
+  if (!bestAsset) return;
+  const downloadUrl = bestAsset.browser_download_url || release.html_url;
+  const assetName = bestAsset.name || 'Update Package';
+  const allBuilds = categorizeReleaseAssets(release);
+
+  const buildLinksHtml = [
+    allBuilds.macArm64 ? `<a href="${escapeHtml(allBuilds.macArm64.browser_download_url)}" target="_blank" style="font-size:11.5px; color:#2563eb; text-decoration:none; font-weight:600;">🍎 Mac Apple Silicon (.dmg arm64)</a>` : '',
+    allBuilds.macX64 ? `<a href="${escapeHtml(allBuilds.macX64.browser_download_url)}" target="_blank" style="font-size:11.5px; color:#2563eb; text-decoration:none; font-weight:600;">💻 Mac Intel (.dmg x64)</a>` : '',
+    allBuilds.winX64 ? `<a href="${escapeHtml(allBuilds.winX64.browser_download_url)}" target="_blank" style="font-size:11.5px; color:#2563eb; text-decoration:none; font-weight:600;">🪟 Windows 64-bit (.exe x64)</a>` : '',
+    allBuilds.winIa32 ? `<a href="${escapeHtml(allBuilds.winIa32.browser_download_url)}" target="_blank" style="font-size:11.5px; color:#2563eb; text-decoration:none; font-weight:600;">🖥️ Windows 32-bit (.exe ia32/x86)</a>` : ''
+  ].filter(Boolean).join(' &nbsp;·&nbsp; ');
 
   const modal = document.createElement('div');
   modal.id = 'ag-update-modal';
   modal.style.cssText = 'position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(15,23,42,0.82); display:flex; align-items:center; justify-content:center; z-index:999999; backdrop-filter:blur(5px); font-family:inherit;';
 
   modal.innerHTML = `
-    <div style="background:#ffffff; border-radius:22px; padding:32px; max-width:520px; width:92%; box-shadow:0 25px 60px rgba(0,0,0,0.35); text-align:center; border:1px solid #cbd5e1;">
+    <div style="background:#ffffff; border-radius:22px; padding:32px; max-width:540px; width:92%; box-shadow:0 25px 60px rgba(0,0,0,0.35); text-align:center; border:1px solid #cbd5e1;">
       <div style="font-size:46px; margin-bottom:8px;">🚀</div>
       <h2 style="font-size:22px; font-weight:800; color:#0f172a; margin:0 0 6px 0;">New Update Available (${escapeHtml(latestTag)})!</h2>
       <p style="font-size:13.5px; color:#64748b; margin:0 0 14px 0;">
-        Installed: <strong>v${escapeHtml(APP_CURRENT_VERSION)}</strong> &nbsp;→&nbsp; New: <strong>${escapeHtml(latestTag)}</strong> (${escapeHtml(assetName)})
+        Installed: <strong>v${escapeHtml(APP_CURRENT_VERSION)}</strong> &nbsp;→&nbsp; New: <strong>${escapeHtml(latestTag)}</strong><br/>
+        <span style="font-size:12px; color:#0f766e; font-weight:700;">Matched Package: ${escapeHtml(assetName)}</span>
       </p>
 
-      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px; font-size:12.5px; color:#334155; text-align:left; max-height:140px; overflow-y:auto; margin-bottom:18px; line-height:1.6; white-space:pre-wrap;">${escapeHtml(release.body || 'Includes latest exercise additions, RSSB LDC exam pattern improvements, and performance enhancements.')}</div>
+      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px; font-size:12.5px; color:#334155; text-align:left; max-height:130px; overflow-y:auto; margin-bottom:14px; line-height:1.6; white-space:pre-wrap;">${escapeHtml(release.body || 'Includes latest exercise additions, RSSB LDC exam pattern improvements, and performance enhancements.')}</div>
+
+      ${buildLinksHtml ? `<div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:8px 10px; margin-bottom:16px; line-height:1.7;">${buildLinksHtml}</div>` : ''}
 
       <div id="ag-update-progress-wrap" style="display:none; margin-bottom:18px; text-align:left;">
         <div style="display:flex; justify-content:space-between; font-size:12.5px; font-weight:700; color:#1e293b; margin-bottom:6px;">

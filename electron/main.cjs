@@ -104,8 +104,19 @@ function downloadFileWithRedirects(fileUrl, destPath, onProgress) {
 
 async function performInAppUpdate(downloadUrl, fileName) {
   try {
-    updateState = { state: 'downloading', percent: 1, message: 'Downloading update package...' };
     const safeName = path.basename(fileName || (process.platform === 'darwin' ? 'update.dmg' : 'update.exe'));
+
+    // Strict OS file-type guard so macOS NEVER downloads/opens .exe and Windows NEVER downloads/opens .dmg
+    if (process.platform === 'darwin' && !/\.dmg$/i.test(safeName)) {
+      updateState = { state: 'error', percent: 0, message: 'Blocked non-Mac update file (' + safeName + '). Expected .dmg for macOS.' };
+      return;
+    }
+    if (process.platform === 'win32' && !/\.exe$/i.test(safeName)) {
+      updateState = { state: 'error', percent: 0, message: 'Blocked non-Windows update file (' + safeName + '). Expected .exe for Windows.' };
+      return;
+    }
+
+    updateState = { state: 'downloading', percent: 1, message: 'Downloading update package...' };
     const destPath = path.join(os.tmpdir(), `ag-update-${Date.now()}-${safeName}`);
 
     await downloadFileWithRedirects(downloadUrl, destPath, (pct) => {
@@ -129,20 +140,31 @@ async function performInAppUpdate(downloadUrl, fileName) {
         execSync(`hdiutil attach "${destPath}" -mountpoint "${mountPoint}" -nobrowse -quiet`);
         const mountedApp = path.join(mountPoint, 'AG Typing Tutor.app');
         const targetApp = '/Applications/AG Typing Tutor.app';
+        const desktopApp = path.join(os.homedir(), 'Desktop', 'AG Typing Tutor.app');
         if (fs.existsSync(mountedApp)) {
-          execSync(`rm -rf "${targetApp}" && cp -R "${mountedApp}" "${targetApp}" && xattr -cr "${targetApp}"`);
+          execSync(`rm -rf "${targetApp}" && ditto "${mountedApp}" "${targetApp}" && xattr -cr "${targetApp}"`);
+          if (fs.existsSync(desktopApp)) {
+            try {
+              execSync(`rm -rf "${desktopApp}" && ditto "${mountedApp}" "${desktopApp}" && xattr -cr "${desktopApp}"`);
+            } catch {}
+          }
           execSync(`hdiutil detach "${mountPoint}" -quiet || true`);
           updateState = { state: 'done', percent: 100, message: 'Update installed! Restarting...' };
+          const launchTarget = fs.existsSync(desktopApp) ? desktopApp : targetApp;
           setTimeout(() => {
-            spawn('open', ['-n', targetApp], { detached: true, stdio: 'ignore' }).unref();
+            spawn('open', ['-n', launchTarget], { detached: true, stdio: 'ignore' }).unref();
             app.quit();
           }, 500);
           return;
         }
       } catch (macErr) {
         try { execSync(`hdiutil detach "${mountPoint}" -quiet || true`); } catch {}
-        shell.openPath(destPath);
-        updateState = { state: 'done', percent: 100, message: 'Opened Mac installer!' };
+        if (/\.dmg$/i.test(destPath)) {
+          shell.openPath(destPath);
+          updateState = { state: 'done', percent: 100, message: 'Opened Mac .dmg installer!' };
+        } else {
+          updateState = { state: 'error', percent: 0, message: 'Could not mount Mac .dmg installer.' };
+        }
         return;
       }
     } else {
