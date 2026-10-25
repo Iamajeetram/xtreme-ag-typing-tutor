@@ -1,9 +1,12 @@
-name: Build Windows (.exe) & Mac (.dmg) Installers
+name: Build Windows (.exe) & Mac (.dmg) + Auto-Release
 
 on:
   push:
     branches: [ main, master ]
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-windows:
@@ -26,6 +29,13 @@ jobs:
           CSC_IDENTITY_AUTO_DISCOVERY: false
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Read Version from package.json
+        id: pkg_ver
+        shell: bash
+        run: |
+          VER=$(node -p "require('./package.json').version")
+          echo "version=$VER" >> $GITHUB_OUTPUT
+
       - name: Upload Windows Installer (.exe) Artifact
         uses: actions/upload-artifact@v4
         with:
@@ -34,6 +44,19 @@ jobs:
             release/*.exe
           if-no-files-found: error
           retention-days: 30
+
+      - name: Auto-Publish Windows (.exe) to GitHub Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.pkg_ver.outputs.version }}
+          name: AG Typing Tutor v${{ steps.pkg_ver.outputs.version }}
+          body: "Official Windows (.exe) and MacBook (.dmg) Auto-Update Release v${{ steps.pkg_ver.outputs.version }}"
+          draft: false
+          prerelease: false
+          files: |
+            release/*.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build-mac:
     runs-on: macos-latest
@@ -52,8 +75,14 @@ jobs:
       - name: Build Vite App & Package MacBook Installer (.dmg)
         run: npm run dist:mac
         env:
-          CSC_IDENTITY_AUTO_DISCOVERY: false
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Read Version from package.json
+        id: pkg_ver
+        shell: bash
+        run: |
+          VER=$(node -p "require('./package.json').version")
+          echo "version=$VER" >> $GITHUB_OUTPUT
 
       - name: Upload MacBook Installer (.dmg) Artifact
         uses: actions/upload-artifact@v4
@@ -64,3 +93,16 @@ jobs:
             release/*.zip
           if-no-files-found: error
           retention-days: 30
+
+      - name: Auto-Publish MacBook (.dmg) to GitHub Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.pkg_ver.outputs.version }}
+          name: AG Typing Tutor v${{ steps.pkg_ver.outputs.version }}
+          body: "Official Windows (.exe) and MacBook (.dmg) Auto-Update Release v${{ steps.pkg_ver.outputs.version }}"
+          draft: false
+          prerelease: false
+          files: |
+            release/*.dmg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
