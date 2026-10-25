@@ -2046,12 +2046,79 @@ async function efficiencyFetchFile(moduleName, language, fileNo) {
     }
   }
 
-  // Fallback only if none of the paths exist
+  // Dynamic unique fallback per fileNo (1..40) if external JSON file was not found on disk
   const tpl = O19_FALLBACK_BANK[`${modLower}_${langLower}`] || O19_FALLBACK_BANK.word_en
   const clone = JSON.parse(JSON.stringify(tpl))
+  const n = Math.max(1, Number(fileNo) || 1)
   clone.metadata.file_id = fileId
-  clone.metadata.test_number = fileNo
+  clone.metadata.test_number = n
   clone._isFallback = true
+
+  if (modLower === 'word') {
+    const enOrgs = [
+      'Govt. Sen. Sec. School, Jaipur', 'District Collectorate Office, Jodhpur', 'Rajasthan High Court Registry, Jodhpur',
+      'Public Works Department (PWD), Udaipur', 'Medical & Health Directorate, Kota', 'State Treasury Office, Ajmer',
+      'Board of Secondary Education, Ajmer', 'Municipal Corporation, Bikaner', 'Irrigation & Water Resources Dept, Alwar',
+      'Transport & Road Safety Commissionerate, Sikar'
+    ]
+    const enSubjects = [
+      'Annual Debate & Literary Competition', 'Quarterly Digital File Audit & Verification', 'Biometric Attendance & Office Punctuality Order',
+      'District Infrastructure & Road Maintenance Review', 'Annual Medical Camp & Drug Inventory Inspection', 'Financial Year Closing & E-Bill Submission',
+      'Board Examination Center Security Protocol', 'Clean City & Solid Waste Management Drive', 'Canal Water Distribution & Monsoon Preparedness',
+      'E-Challan & Highway Safety Compliance Directive'
+    ]
+    const hiOrgs = [
+      'राजकीय उच्च माध्यमिक विद्यालय, जयपुर', 'जिला कलेक्ट्रेट कार्यालय, जोधपुर', 'सार्वजनिक निर्माण विभाग (PWD), उदयपुर',
+      'चिकित्सा एवं स्वास्थ्य निदेशालय, कोटा', 'राज्य कोषालय कार्यालय, अजमेर', 'माध्यमिक शिक्षा बोर्ड कार्यालय, अजमेर',
+      'नगर निगम मुख्यालय, बीकानेर', 'जल संसाधन एवं सिंचाई विभाग, अलवर', 'परिवहन एवं सड़क सुरक्षा विभाग, सीकर',
+      'पंचायती राज एवं ग्रामीण विकास विभाग, भरतपुर'
+    ]
+    const hiSubjects = [
+      'वाद-विवाद एवं खेलकूद प्रतियोगिता', 'त्रैमासिक डिजिटल पत्रावली अंकेक्षण एवं सत्यापन', 'बायोमेट्रिक उपस्थिति एवं कार्यालय समय-पालन आदेश',
+      'जिला स्तरीय सड़क निर्माण एवं मरम्मत समीक्षा', 'वार्षिक स्वास्थ्य शिविर एवं औषधि भंडार निरीक्षण', 'वित्तीय वर्ष समाप्ति एवं ई-बिल प्रस्तुतीकरण',
+      'बोर्ड परीक्षा केंद्र सुरक्षा एवं गोपनीयता निर्देश', 'स्वच्छ शहर एवं ठोस कचरा प्रबंधन अभियान', 'नहर जल वितरण एवं मानसून पूर्व तैयारी बैठक',
+      'ई-फाइलिं एवं जनसुनवाई प्रकरण निस्तारण निर्देश'
+    ]
+    const st = clone.metadata.document_structure || {}
+    if (langLower === 'hi') {
+      st.doc_type = n % 2 === 0 ? `कार्यालय आदेश (OFFICE ORDER #${n})` : `सूचना (NOTICE #${n})`
+      st.org_name = hiOrgs[(n - 1) % hiOrgs.length]
+      st.date_line = `दिनांक: ${(n % 28) + 1} नवम्बर 2026`
+      st.subject_line = hiSubjects[(n - 1) % hiSubjects.length]
+    } else {
+      st.doc_type = n % 2 === 0 ? `OFFICE ORDER #${n}` : `OFFICIAL NOTICE #${n}`
+      st.org_name = enOrgs[(n - 1) % enOrgs.length]
+      st.date_line = `Date: ${(n % 28) + 1}th November 2026`
+      st.subject_line = enSubjects[(n - 1) % enSubjects.length]
+    }
+    clone.metadata.document_structure = st
+  } else {
+    const depts = ['Judicial', 'Establishment', 'Accounts', 'Audit Cell', 'Records', 'Treasury', 'Revenue', 'IT Cell']
+    const names = [
+      ['Amit Kumar Sharma', 'Priya Verma', 'Rahul Meena', 'Neha Gupta', 'Vikram Singh Rathore'],
+      ['Suresh Choudhary', 'Kavita Sharma', 'Deepak Verma', 'Pooja Meena', 'Rajendra Prasad'],
+      ['Manish Khandelwal', 'Sunita Rathore', 'Ankit Garg', 'rekha Joshi', 'MahendraBishnoi'],
+      ['VikasPareek', 'Meenakshi Soni', 'Gaurav Jain', 'Aarti Kumawat', 'DineshGurjar']
+    ][(n - 1) % 4]
+    const baseSal = 24000 + (n * 500)
+    const ds = [
+      [`RAJASTHAN STATE TREASURY PAYROLL STATEMENT — SET #${String(n).padStart(2, '0')}`, '', '', '', '', '', '', ''],
+      ['Emp ID', 'Employee Name', 'Department', 'Basic Pay', 'DA Allowance', 'Gross Pay', 'Bonus (10%)', 'Category'],
+      [`E${100 + n * 5 + 1}`, names[0], depts[(n + 0) % depts.length], baseSal, Math.round(baseSal * 0.4), '', '', ''],
+      [`E${100 + n * 5 + 2}`, names[1], depts[(n + 1) % depts.length], baseSal + 6000, Math.round((baseSal + 6000) * 0.4), '', '', ''],
+      [`E${100 + n * 5 + 3}`, names[2], depts[(n + 2) % depts.length], baseSal - 2000, Math.round((baseSal - 2000) * 0.4), '', '', ''],
+      [`E${100 + n * 5 + 4}`, names[3], depts[(n + 3) % depts.length], baseSal + 10000, Math.round((baseSal + 10000) * 0.4), '', '', ''],
+      [`E${100 + n * 5 + 5}`, names[4], depts[(n + 4) % depts.length], baseSal + 3000, Math.round((baseSal + 3000) * 0.4), '', '', ''],
+      ['TOTAL (SUM)', '', '', '', '', '', '', ''],
+      ['AVERAGE', '', '', '', '', '', '', ''],
+      ['MAXIMUM (MAX)', '', '', '', '', '', '', ''],
+      ['MINIMUM (MIN)', '', '', '', '', '', '', ''],
+      ['COUNT (>=30000)', '', '', '', '', '', '', '']
+    ]
+    clone.metadata.master_dataset = ds
+    clone.questions.forEach(q => { q.dataset = ds })
+  }
+
   clone.questions.forEach((q, idx) => { q.id = `${fileId}-Q${String(idx + 1).padStart(2, '0')}` })
   return clone
 }
@@ -8539,7 +8606,7 @@ async function renderRssbEfficiencyStage(spec, effStageNumber) {
 
   const moduleName = isFirstEff ? spec.eff1Module : spec.eff2Module
   const lang = isFirstEff ? spec.eff1Lang : spec.eff2Lang
-  const fileNo = spec.effFileNo
+  const fileNo = isFirstEff ? (spec.eff1FileNo || spec.effFileNo) : (spec.eff2FileNo || spec.effFileNo)
   const pageId = moduleName === 'word' ? 'word-efficiency' : 'excel-efficiency'
   const paperLabel = isFirstEff
     ? `Paper 3 of 4: ${spec.eff1Title}`
@@ -9825,6 +9892,22 @@ async function launchRssbDailyLiveExamSession(cfg) {
   const eff2Lang = cfg.efficiency2?.language || 'en'
   const eff2No = Number(cfg.efficiency2?.fileNo) || 1
 
+  const eff1FileId = efficiencyFileId(eff1Mod, eff1Lang, eff1No)
+  const eff2FileId = efficiencyFileId(eff2Mod, eff2Lang, eff2No)
+
+  if (cfg.efficiency1?.fileData && typeof cfg.efficiency1.fileData === 'object') {
+    try {
+      const norm1 = normalizeEfficiencyJsonData(cfg.efficiency1.fileData, eff1Mod, eff1Lang, eff1No, eff1FileId)
+      O19_CUSTOM_UPLOADED_BANK.set(eff1FileId, norm1)
+    } catch (e) { console.warn('Daily live eff1 normalize error:', e) }
+  }
+  if (cfg.efficiency2?.fileData && typeof cfg.efficiency2.fileData === 'object') {
+    try {
+      const norm2 = normalizeEfficiencyJsonData(cfg.efficiency2.fileData, eff2Mod, eff2Lang, eff2No, eff2FileId)
+      O19_CUSTOM_UPLOADED_BANK.set(eff2FileId, norm2)
+    } catch (e) { console.warn('Daily live eff2 normalize error:', e) }
+  }
+
   const spec = {
     testNo: 81,
     isDailyLive: true,
@@ -9838,12 +9921,12 @@ async function launchRssbDailyLiveExamSession(cfg) {
     effFileNo: eff1No,
     eff1Module: eff1Mod,
     eff1Lang: eff1Lang,
-    eff1FileId: efficiencyFileId(eff1Mod, eff1Lang, eff1No),
+    eff1FileId,
     eff1Title: `MS Word 2013 (${eff1Lang === 'hi' ? 'Hindi' : 'English'}) Efficiency`,
     eff1ShortTitle: `MS ${eff1Mod === 'word' ? 'Word' : 'Excel'} 2013 (${eff1Lang === 'hi' ? 'Hindi' : 'English'})`,
     eff2Module: eff2Mod,
     eff2Lang: eff2Lang,
-    eff2FileId: efficiencyFileId(eff2Mod, eff2Lang, eff2No),
+    eff2FileId,
     eff2Title: `MS Excel 2013 (${eff2Lang === 'en' ? 'English' : 'Hindi'}) Efficiency`,
     eff2ShortTitle: `MS ${eff2Mod === 'word' ? 'Word' : 'Excel'} 2013 (${eff2Lang === 'en' ? 'English' : 'Hindi'})`
   }
