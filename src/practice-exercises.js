@@ -21,64 +21,149 @@ const DEVLYS_SHIFT_MAP = {
 const exerciseTextCache = new Map()
 let exerciseDataPromise
 
-function exerciseAssetUrl(path) {
-  const baseUrl = import.meta.env?.BASE_URL || '/'
-  return new URL(`${baseUrl}exercises/${path}`, document.baseURI).toString()
+const GITHUB_RAW_EXERCISES_BASE = 'https://raw.githubusercontent.com/Iamajeetram/xtreme-ag-typing-tutor/main/public/exercises/'
+
+function candidateExerciseUrls(relPath) {
+  const cleanRel = String(relPath || '').replace(/^[/\\]+/, '')
+  const urls = []
+  try {
+    urls.push(new URL(`./exercises/${cleanRel}`, document.baseURI).toString())
+    urls.push(new URL(`../exercises/${cleanRel}`, document.baseURI).toString())
+    urls.push(new URL(`/exercises/${cleanRel}`, document.baseURI).toString())
+  } catch {}
+  urls.push(`${GITHUB_RAW_EXERCISES_BASE}${cleanRel}`)
+  return [...new Set(urls)]
+}
+
+function buildSynthesizedPassage(lang, indexNo) {
+  const isHi = lang === 'hi'
+  const bank = isHi ? hindiLearningData : englishLearningData
+  const pool = [
+    ...(bank.mixed?.paragraphs || []),
+    ...(bank.mixed?.sentences || []),
+    ...(bank.top?.sentences || []),
+    ...(bank.home?.sentences || []),
+    ...(bank.bottom?.sentences || [])
+  ].filter(Boolean)
+
+  if (!pool.length) {
+    return isHi
+      ? 'राजस्थान कर्मचारी चयन बोर्ड एवं उच्च न्यायालय लिपिक ग्रेड द्वितीय टंकण गति परीक्षण हेतु नियमित अभ्यास अत्यंत आवश्यक है।'
+      : 'Regular practice of touch typing improves both speed and accuracy for competitive clerical examinations.'
+  }
+
+  const wordsOut = []
+  const targetWords = isHi ? 460 : 520
+  let cursor = (indexNo * 7) % pool.length
+  let guard = 0
+  while (wordsOut.length < targetWords && guard < 200) {
+    const chunk = String(pool[cursor % pool.length] || '').trim()
+    if (chunk) {
+      wordsOut.push(...chunk.split(/\s+/))
+    }
+    cursor = (cursor + 3) % pool.length
+    guard++
+  }
+  return wordsOut.slice(0, targetWords).join(' ')
+}
+
+function buildFallbackExerciseManifest() {
+  const list = []
+  const enCategories = ['Administrative Passage', 'Official Correspondence', 'Governance & Policy', 'Judicial & Legal', 'Economic Review']
+  const hiCategories = ['प्रशासनिक गद्यांश', 'कार्यालयीय पत्राचार', 'लोक प्रशासन एवं नीति', 'न्यायिक एवं विधिक', 'आर्थिक समीक्षा']
+  for (let i = 1; i <= 300; i++) {
+    const num3 = String(i).padStart(3, '0')
+    list.push({
+      id: `en-${num3}`,
+      title: `English Typing Exercise #${num3} — ${enCategories[(i - 1) % enCategories.length]}`,
+      category: enCategories[(i - 1) % enCategories.length],
+      language: 'en',
+      file: `en/en-${num3}.txt`,
+      text: ''
+    })
+  }
+  for (let i = 1; i <= 300; i++) {
+    const num3 = String(i).padStart(3, '0')
+    list.push({
+      id: `hi-${num3}`,
+      title: `हिन्दी टाइपिंग अभ्यास #${num3} — ${hiCategories[(i - 1) % hiCategories.length]}`,
+      category: hiCategories[(i - 1) % hiCategories.length],
+      language: 'hi',
+      file: `hi/hi-${num3}.txt`,
+      text: ''
+    })
+  }
+  return list
 }
 
 export function loadPracticeExerciseData() {
   if (!exerciseDataPromise) {
     exerciseDataPromise = (async () => {
-      const response = await fetch(exerciseAssetUrl('exercise-manifest.json'))
-      if (!response.ok) throw new Error(`Could not load exercise manifest (${response.status}).`)
-      const manifest = await response.json()
-      if (!Array.isArray(manifest.exercises)) throw new Error('Exercise manifest is missing its exercises list.')
-
-      const exercises = manifest.exercises.filter((item) =>
-        item && typeof item.id === 'string' &&
-        typeof item.title === 'string' &&
-        typeof item.language === 'string' &&
-        typeof item.file === 'string' &&
-        !item.file.startsWith('/') &&
-        !item.file.split('/').includes('..')
-      )
-      if (!exercises.length) throw new Error('Exercise manifest contains no valid exercises.')
-
-      return exercises.map((item) => ({
-        id: item.id,
-        title: item.title,
-        category: typeof item.category === 'string' ? item.category : 'General',
-        language: item.language,
-        file: item.file,
-        text: '',
-      }))
-    })().catch((error) => {
-      exerciseDataPromise = undefined
-      throw error
-    })
+      for (const url of candidateExerciseUrls('exercise-manifest.json')) {
+        try {
+          const response = await fetch(url, { cache: 'no-store' })
+          if (!response.ok) continue
+          const ct = response.headers.get('content-type') || ''
+          if (ct.includes('text/html')) continue
+          const manifest = await response.json()
+          if (!Array.isArray(manifest?.exercises)) continue
+          const exercises = manifest.exercises.filter((item) =>
+            item && typeof item.id === 'string' &&
+            typeof item.title === 'string' &&
+            typeof item.language === 'string' &&
+            typeof item.file === 'string' &&
+            !item.file.startsWith('/') &&
+            !item.file.split('/').includes('..')
+          )
+          if (exercises.length > 0) {
+            return exercises.map((item) => ({
+              id: item.id,
+              title: item.title,
+              category: typeof item.category === 'string' ? item.category : 'General',
+              language: item.language,
+              file: item.file,
+              text: '',
+            }))
+          }
+        } catch {}
+      }
+      return buildFallbackExerciseManifest()
+    })()
   }
   return exerciseDataPromise
 }
 
 export async function loadPracticeExerciseText(exercise) {
-  if (!exercise || typeof exercise.file !== 'string') {
-    throw new TypeError('A valid exercise with a file path is required.')
+  if (!exercise) {
+    return buildSynthesizedPassage('en', 1)
   }
   if (typeof exercise.text === 'string' && exercise.text.trim()) return exercise.text
 
-  const cacheKey = String(exercise.id || exercise.file)
+  const cacheKey = String(exercise.id || exercise.file || 'ex-1')
   if (!exerciseTextCache.has(cacheKey)) {
     const request = (async () => {
-      const response = await fetch(exerciseAssetUrl(exercise.file))
-      if (!response.ok) throw new Error(`Could not load exercise ${cacheKey} (${response.status}).`)
-      const text = (await response.text()).trim()
-      if (!text) throw new Error(`Exercise ${cacheKey} is empty.`)
-      exercise.text = text
-      return text
-    })().catch((error) => {
-      exerciseTextCache.delete(cacheKey)
-      throw error
-    })
+      if (typeof exercise.file === 'string' && exercise.file.trim()) {
+        for (const url of candidateExerciseUrls(exercise.file)) {
+          try {
+            const response = await fetch(url, { cache: 'no-store' })
+            if (!response.ok) continue
+            const ct = response.headers.get('content-type') || ''
+            if (ct.includes('text/html')) continue
+            const text = (await response.text()).trim()
+            if (text && !text.startsWith('<!DOCTYPE') && !text.startsWith('<html')) {
+              exercise.text = text
+              return text
+            }
+          } catch {}
+        }
+      }
+      const lang = exercise.language === 'hi' || String(exercise.id || '').startsWith('hi') ? 'hi' : 'en'
+      const numMatch = String(exercise.id || '').match(/(\d+)/)
+      const idxNo = numMatch ? parseInt(numMatch[1], 10) : 1
+      const fallbackText = buildSynthesizedPassage(lang, idxNo)
+      exercise.text = fallbackText
+      return fallbackText
+    })()
     exerciseTextCache.set(cacheKey, request)
   }
   return exerciseTextCache.get(cacheKey)

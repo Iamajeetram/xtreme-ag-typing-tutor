@@ -1,3 +1,5 @@
+let _cachedRawTarget = null;
+let _cachedTargetTokens = null;
 const REPORT_HISTORY_KEY = 'ag-typing-reports'
 
 export function readReportHistory() {
@@ -37,12 +39,17 @@ export function alignWordsWithResync(typed, target, lookahead = 8) {
     end: m.index + m[0].length,
     index: idx
   }))
-  const targetTokens = [...rawTarget.matchAll(/\S+/g)].map((m, idx) => ({
-    text: m[0],
-    start: m.index,
-    end: m.index + m[0].length,
-    index: idx
-  }))
+  if (_cachedRawTarget !== rawTarget || !_cachedTargetTokens) {
+    _cachedRawTarget = rawTarget
+    _cachedTargetTokens = [...rawTarget.matchAll(/\S+/g)].map((m, idx) => ({
+      text: m[0],
+      start: m.index,
+      end: m.index + m[0].length,
+      index: idx,
+      charLen: [...m[0]].length
+    }))
+  }
+  const targetTokens = _cachedTargetTokens
 
   const endsWithSpace = /\s$/.test(rawTyped)
   const alignedWords = targetTokens.map((t) => ({

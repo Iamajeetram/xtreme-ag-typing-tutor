@@ -1,5 +1,5 @@
-import handsGuideUrl from './hands-guide.png'
-import typeGuideUrl from './type.png'
+const handsGuideUrl = new URL('./hands-guide.png', import.meta.url).href
+const typeGuideUrl = new URL('./type.png', import.meta.url).href
 import { escapeHtml } from './text-utils.js'
 import { renderKeyboard } from './keyboard-visual.js'
 import { readLessonProgress, saveLessonResult, lessonCompletion } from './lesson-progress.js'
@@ -640,9 +640,9 @@ export function bindLessonActions(onRerender = () => {}) {
     hindiLayout.value = localStorage.getItem('ag-hindi-layout') || 'kruti-dev-010'
     hindiLayout.addEventListener('change', () => {
       localStorage.setItem('ag-hindi-layout', hindiLayout.value)
+      const kbEl = document.querySelector('#learn-keyboard'); if (kbEl) delete kbEl.dataset.initializedKeys;
       lastKeyboardKey = null
       update()
-      applyHindiKeyboardLabels()
       input.focus({ preventScroll: true })
     })
   }
@@ -833,8 +833,23 @@ export function bindLessonActions(onRerender = () => {}) {
     const keyToHighlight = nextChar === '\n' ? 'ENTER' : nextChar === ' ' ? ' ' : physicalKey
     const keyboard = document.querySelector('#learn-keyboard')
     if (keyboard && keyToHighlight !== lastKeyboardKey) {
-      keyboard.innerHTML = renderKeyboard(keyToHighlight)
-      applyHindiKeyboardLabels()
+      if (!keyboard.dataset.initializedKeys) {
+        keyboard.innerHTML = renderKeyboard(keyToHighlight)
+        applyHindiKeyboardLabels()
+        keyboard.dataset.initializedKeys = 'true'
+      } else {
+        const rawTargetKey = String(keyToHighlight ?? '')
+        const upperKey = rawTargetKey === ' ' ? 'SPACE' : rawTargetKey.toUpperCase()
+        const needShift = /^[A-Z~!@#$%^&*()_+{}|:"<>?]$/.test(rawTargetKey)
+        keyboard.querySelectorAll('.virtual-key.active').forEach(k => k.classList.remove('active'))
+        keyboard.querySelectorAll('.virtual-key').forEach(k => {
+          const dk = String(k.dataset.key || '')
+          const dkUpper = dk === ' ' ? 'SPACE' : dk.toUpperCase()
+          if (dkUpper === upperKey || (needShift && dkUpper === 'SHIFT')) {
+            k.classList.add('active')
+          }
+        })
+      }
       lastKeyboardKey = keyToHighlight
     }
     renderPassage(typed)
