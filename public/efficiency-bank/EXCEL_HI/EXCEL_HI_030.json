@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "excel",
+    "language": "hi",
+    "file_id": "EXCEL_HI_030",
+    "test_number": 30,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "master_dataset": [
+      [
+        "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Roll Code",
+        "Candidate Name",
+        "Subject Group",
+        "Theory Score",
+        "Practical Score",
+        "Total Score",
+        "Grace Pts (8%)",
+        "Division"
+      ],
+      [
+        "E1751",
+        "Hemant Paliwal",
+        "Civil Works (Jaipur)",
+        28000,
+        9800,
+        "",
+        "",
+        ""
+      ],
+      [
+        "E1752",
+        "Indदिरा Solanki",
+        "Canal Division (Jaipur)",
+        34500,
+        12075,
+        "",
+        "",
+        ""
+      ],
+      [
+        "E1753",
+        "JitendraGehlot",
+        "Transport Cell (Jaipur)",
+        24500,
+        8575,
+        "",
+        "",
+        ""
+      ],
+      [
+        "E1754",
+        "KiranBala",
+        "Mandi Board (Jaipur)",
+        39000,
+        13650,
+        "",
+        "",
+        ""
+      ],
+      [
+        "E1755",
+        "Lalit Kishore",
+        "Panchayat Wing (Jaipur)",
+        30500,
+        10675,
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOTAL (SUM)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "AVERAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MAXIMUM (MAX)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MINIMUM (MIN)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "COUNT (>=30000)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "questions": [
+    {
+      "id": "EXCEL_HI_030-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "font-color",
+      "title": "कॉलम हेडर पंक्ति (A2:H2) का Font Color बदलें, उसे Bold करें तथा Font Size 12 सेट करें।",
+      "instruction": "कॉलम हेडर पंक्ति (A2:H2) का Font Color बदलें, उसे Bold करें तथा Font Size 12 सेट करें।",
+      "tasks": [
+        "कॉलम हेडर पंक्ति (A2:H2) का Font Color बदलें, उसे Bold करें तथा Font Size 12 सेट करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A2:H2 को सिलेक्ट करें।",
+        "2. HOME -> Font Color, Bold और Font Size '12' चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A3:A7",
+      "expected_formula": "",
+      "expected_action": "justifyRight",
+      "title": "कॉलम A के ID कोड सेल्स (A3:A7) को Right Align और Underline करें।",
+      "instruction": "कॉलम A के ID कोड सेल्स (A3:A7) को Right Align और Underline करें।",
+      "tasks": [
+        "कॉलम A के ID कोड सेल्स (A3:A7) को Right Align और Underline करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A3:A7 सिलेक्ट करें।",
+        "2. HOME -> Align Right और Underline चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H12",
+      "expected_formula": "",
+      "expected_action": "border",
+      "title": "संपूर्ण वर्कशीट टेबल (A2:H12) पर 'All Borders' लागू करें।",
+      "instruction": "संपूर्ण वर्कशीट टेबल (A2:H12) पर 'All Borders' लागू करें।",
+      "tasks": [
+        "संपूर्ण वर्कशीट टेबल (A2:H12) पर 'All Borders' लागू करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A2:H12 सिलेक्ट करें।",
+        "2. HOME -> Borders -> All Borders चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "F3",
+      "expected_formula": "=SUM(D3:E3)",
+      "expected_action": "formula",
+      "title": "सेल F3 में D3 और E3 का कुल योग निकालने के लिए =SUM(D3:E3) फॉर्मूला लगाएँ।",
+      "instruction": "सेल F3 में D3 और E3 का कुल योग निकालने के लिए =SUM(D3:E3) फॉर्मूला लगाएँ।",
+      "tasks": [
+        "सेल F3 में D3 और E3 का कुल योग निकालने के लिए =SUM(D3:E3) फॉर्मूला लगाएँ।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल F3 पर क्लिक करें।",
+        "2. =SUM(D3:E3) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D8",
+      "expected_formula": "=SUM(D3:D7)",
+      "expected_action": "formula",
+      "title": "सेल D8 (TOTAL पंक्ति) में कॉलम D का कुल योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल D8 (TOTAL पंक्ति) में कॉलम D का कुल योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल D8 (TOTAL पंक्ति) में कॉलम D का कुल योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D8 पर क्लिक करें।",
+        "2. =SUM(D3:D7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E9",
+      "expected_formula": "=AVERAGE(E3:E7)",
+      "expected_action": "formula",
+      "title": "सेल E9 (AVERAGE पंक्ति) में कॉलम E का औसत मान =AVERAGE(E3:E7) फंक्शन से ज्ञात करें।",
+      "instruction": "सेल E9 (AVERAGE पंक्ति) में कॉलम E का औसत मान =AVERAGE(E3:E7) फंक्शन से ज्ञात करें।",
+      "tasks": [
+        "सेल E9 (AVERAGE पंक्ति) में कॉलम E का औसत मान =AVERAGE(E3:E7) फंक्शन से ज्ञात करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल E9 पर क्लिक करें।",
+        "2. =AVERAGE(E3:E7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E10",
+      "expected_formula": "=MAX(E3:E7)",
+      "expected_action": "formula",
+      "title": "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल E10 पर क्लिक करें।",
+        "2. =MAX(E3:E7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D11",
+      "expected_formula": "=MIN(D3:D7)",
+      "expected_action": "formula",
+      "title": "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D11 पर क्लिक करें।",
+        "2. =MIN(D3:D7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:E7",
+      "expected_formula": "",
+      "expected_action": "number-format",
+      "title": "रेंज D3:E7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।",
+      "instruction": "रेंज D3:E7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।",
+      "tasks": [
+        "रेंज D3:E7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. D3:E7 सिलेक्ट करें।",
+        "2. HOME -> Number -> Currency (₹) चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A1",
+      "expected_formula": "",
+      "expected_action": "merge",
+      "title": "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Underline तथा Font Color लागू करें।",
+      "instruction": "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Underline तथा Font Color लागू करें।",
+      "tasks": [
+        "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Underline तथा Font Color लागू करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल A1 पर क्लिक करें।",
+        "2. HOME -> Merge & Center, Underline और Font Color चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "G4",
+      "expected_formula": "=D4*8%",
+      "expected_action": "formula",
+      "title": "सेल G4 में D4 का 8% निकालने के लिए =D4*8% फॉर्मूला लगाएँ।",
+      "instruction": "सेल G4 में D4 का 8% निकालने के लिए =D4*8% फॉर्मूला लगाएँ।",
+      "tasks": [
+        "सेल G4 में D4 का 8% निकालने के लिए =D4*8% फॉर्मूला लगाएँ।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल G4 पर क्लिक करें।",
+        "2. =D4*8% लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "H5",
+      "expected_formula": "=IF(D5>=30000,\"Senior\",\"Junior\")",
+      "expected_action": "formula",
+      "title": "सेल H5 में IF फॉर्मूला लगाएँ: यदि D5 >= 30000 हो तो \"Senior\", अन्यथा \"Junior\" आए।",
+      "instruction": "सेल H5 में IF फॉर्मूला लगाएँ: यदि D5 >= 30000 हो तो \"Senior\", अन्यथा \"Junior\" आए।",
+      "tasks": [
+        "सेल H5 में IF फॉर्मूला लगाएँ: यदि D5 >= 30000 हो तो \"Senior\", अन्यथा \"Junior\" आए।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल H5 पर क्लिक करें।",
+        "2. =IF(D5>=30000,\"Senior\",\"Junior\") लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D12",
+      "expected_formula": "=COUNTIF(D3:D7,\">=30000\")",
+      "expected_action": "formula",
+      "title": "सेल D12 में =COUNTIF(D3:D7,\">=30000\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 30000 या अधिक हैं।",
+      "instruction": "सेल D12 में =COUNTIF(D3:D7,\">=30000\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 30000 या अधिक हैं।",
+      "tasks": [
+        "सेल D12 में =COUNTIF(D3:D7,\">=30000\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 30000 या अधिक हैं।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D12 पर क्लिक करें।",
+        "2. =COUNTIF(D3:D7,\">=30000\") लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:D7",
+      "expected_formula": "",
+      "expected_action": "conditional-format",
+      "title": "रेंज D3:D7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।",
+      "instruction": "रेंज D3:D7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।",
+      "tasks": [
+        "रेंज D3:D7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. D3:D7 सिलेक्ट करें।",
+        "2. HOME -> Conditional Formatting -> Greater Than चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_030-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "freeze-panes",
+      "title": "रेंज A2:H2 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।",
+      "instruction": "रेंज A2:H2 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।",
+      "tasks": [
+        "रेंज A2:H2 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।"
+      ],
+      "sheet_name": "Exam_Register",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "BOARD EXAMINATION DISTRICT CENTER MARKS REGISTER (JAIPUR — SET #430)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Roll Code",
+          "Candidate Name",
+          "Subject Group",
+          "Theory Score",
+          "Practical Score",
+          "Total Score",
+          "Grace Pts (8%)",
+          "Division"
+        ],
+        [
+          "E1751",
+          "Hemant Paliwal",
+          "Civil Works (Jaipur)",
+          28000,
+          9800,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1752",
+          "Indदिरा Solanki",
+          "Canal Division (Jaipur)",
+          34500,
+          12075,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1753",
+          "JitendraGehlot",
+          "Transport Cell (Jaipur)",
+          24500,
+          8575,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1754",
+          "KiranBala",
+          "Mandi Board (Jaipur)",
+          39000,
+          13650,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1755",
+          "Lalit Kishore",
+          "Panchayat Wing (Jaipur)",
+          30500,
+          10675,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30000)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A2:H2 सिलेक्ट करके Wrap Text दबाएँ।",
+        "2. VIEW टैब -> Freeze Panes पर क्लिक करें।"
+      ]
+    }
+  ]
+}

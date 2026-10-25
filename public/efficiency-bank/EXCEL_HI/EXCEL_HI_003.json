@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "excel",
+    "language": "hi",
+    "file_id": "EXCEL_HI_003",
+    "test_number": 3,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "master_dataset": [
+      [
+        "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Ward ID",
+        "Zonal Officer",
+        "Zone Name",
+        "House Tax",
+        "Commercial Tax",
+        "Total Tax",
+        "Penalty (10%)",
+        "Bracket"
+      ],
+      [
+        "M1616",
+        "Rajeshwari Rathore",
+        "Urban Planning (Jhalawar)",
+        26400,
+        11880,
+        "",
+        "",
+        ""
+      ],
+      [
+        "M1617",
+        "Bhanwar Lal Jat",
+        "Finance Cell (Jhalawar)",
+        32900,
+        14805,
+        "",
+        "",
+        ""
+      ],
+      [
+        "M1618",
+        "Chetan Prakash",
+        "Policy Unit (Jhalawar)",
+        22900,
+        10305,
+        "",
+        "",
+        ""
+      ],
+      [
+        "M1619",
+        "Divya Shekhawat",
+        "Social Welfare (Jhalawar)",
+        37400,
+        16830,
+        "",
+        "",
+        ""
+      ],
+      [
+        "M1620",
+        "Gopal Krishna",
+        "Co-operative (Jhalawar)",
+        28900,
+        13005,
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOTAL (SUM)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "AVERAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MAXIMUM (MAX)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MINIMUM (MIN)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "COUNT (>=28400)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "questions": [
+    {
+      "id": "EXCEL_HI_003-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E10",
+      "expected_formula": "=MAX(E3:E7)",
+      "expected_action": "formula",
+      "title": "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल E10 पर क्लिक करें।",
+        "2. =MAX(E3:E7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D11",
+      "expected_formula": "=MIN(D3:D7)",
+      "expected_action": "formula",
+      "title": "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D11 पर क्लिक करें।",
+        "2. =MIN(D3:D7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:F7",
+      "expected_formula": "",
+      "expected_action": "number-format",
+      "title": "रेंज D3:F7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।",
+      "instruction": "रेंज D3:F7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।",
+      "tasks": [
+        "रेंज D3:F7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. D3:F7 सिलेक्ट करें।",
+        "2. HOME -> Number -> Currency (₹) चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A1",
+      "expected_formula": "",
+      "expected_action": "merge",
+      "title": "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Underline तथा Font Color लागू करें।",
+      "instruction": "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Underline तथा Font Color लागू करें।",
+      "tasks": [
+        "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Underline तथा Font Color लागू करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल A1 पर क्लिक करें।",
+        "2. HOME -> Merge & Center, Underline और Font Color चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "G7",
+      "expected_formula": "=D7*10%",
+      "expected_action": "formula",
+      "title": "सेल G7 में D7 का 10% निकालने के लिए =D7*10% फॉर्मूला लगाएँ।",
+      "instruction": "सेल G7 में D7 का 10% निकालने के लिए =D7*10% फॉर्मूला लगाएँ।",
+      "tasks": [
+        "सेल G7 में D7 का 10% निकालने के लिए =D7*10% फॉर्मूला लगाएँ।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल G7 पर क्लिक करें।",
+        "2. =D7*10% लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "H3",
+      "expected_formula": "=IF(D3>=28400,\"Priority\",\"Standard\")",
+      "expected_action": "formula",
+      "title": "सेल H3 में IF फॉर्मूला लगाएँ: यदि D3 >= 28400 हो तो \"Priority\", अन्यथा \"Standard\" आए।",
+      "instruction": "सेल H3 में IF फॉर्मूला लगाएँ: यदि D3 >= 28400 हो तो \"Priority\", अन्यथा \"Standard\" आए।",
+      "tasks": [
+        "सेल H3 में IF फॉर्मूला लगाएँ: यदि D3 >= 28400 हो तो \"Priority\", अन्यथा \"Standard\" आए।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल H3 पर क्लिक करें।",
+        "2. =IF(D3>=28400,\"Priority\",\"Standard\") लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "center",
+      "title": "कॉलम हेडर पंक्ति (A2:H2) को Center Align करें तथा उस पर Fill Color और Underline लगाएँ।",
+      "instruction": "कॉलम हेडर पंक्ति (A2:H2) को Center Align करें तथा उस पर Fill Color और Underline लगाएँ।",
+      "tasks": [
+        "कॉलम हेडर पंक्ति (A2:H2) को Center Align करें तथा उस पर Fill Color और Underline लगाएँ।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A2:H2 को सिलेक्ट करें।",
+        "2. HOME -> Center, Fill Color और Underline चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A3:A7",
+      "expected_formula": "",
+      "expected_action": "center",
+      "title": "कॉलम A के ID कोड सेल्स (A3:A7) को Center Align और Bold करें।",
+      "instruction": "कॉलम A के ID कोड सेल्स (A3:A7) को Center Align और Bold करें।",
+      "tasks": [
+        "कॉलम A के ID कोड सेल्स (A3:A7) को Center Align और Bold करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A3:A7 सिलेक्ट करें।",
+        "2. HOME -> Center और Bold पर क्लिक करें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H12",
+      "expected_formula": "",
+      "expected_action": "border",
+      "title": "संपूर्ण वर्कशीट टेबल (A2:H12) पर 'All Borders' लागू करें।",
+      "instruction": "संपूर्ण वर्कशीट टेबल (A2:H12) पर 'All Borders' लागू करें।",
+      "tasks": [
+        "संपूर्ण वर्कशीट टेबल (A2:H12) पर 'All Borders' लागू करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A2:H12 सिलेक्ट करें।",
+        "2. HOME -> Borders -> All Borders चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "F6",
+      "expected_formula": "=SUM(D6:E6)",
+      "expected_action": "formula",
+      "title": "सेल F6 में D6 और E6 का कुल योग निकालने के लिए =SUM(D6:E6) फॉर्मूला लगाएँ।",
+      "instruction": "सेल F6 में D6 और E6 का कुल योग निकालने के लिए =SUM(D6:E6) फॉर्मूला लगाएँ।",
+      "tasks": [
+        "सेल F6 में D6 और E6 का कुल योग निकालने के लिए =SUM(D6:E6) फॉर्मूला लगाएँ।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल F6 पर क्लिक करें।",
+        "2. =SUM(D6:E6) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E8",
+      "expected_formula": "=SUM(E3:E7)",
+      "expected_action": "formula",
+      "title": "सेल E8 (TOTAL पंक्ति) में कॉलम E का कुल योग =SUM(E3:E7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल E8 (TOTAL पंक्ति) में कॉलम E का कुल योग =SUM(E3:E7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल E8 (TOTAL पंक्ति) में कॉलम E का कुल योग =SUM(E3:E7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल E8 पर क्लिक करें।",
+        "2. =SUM(E3:E7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D9",
+      "expected_formula": "=AVERAGE(D3:D7)",
+      "expected_action": "formula",
+      "title": "सेल D9 (AVERAGE पंक्ति) में कॉलम D का औसत मान =AVERAGE(D3:D7) फंक्शन से ज्ञात करें।",
+      "instruction": "सेल D9 (AVERAGE पंक्ति) में कॉलम D का औसत मान =AVERAGE(D3:D7) फंक्शन से ज्ञात करें।",
+      "tasks": [
+        "सेल D9 (AVERAGE पंक्ति) में कॉलम D का औसत मान =AVERAGE(D3:D7) फंक्शन से ज्ञात करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D9 पर क्लिक करें।",
+        "2. =AVERAGE(D3:D7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D12",
+      "expected_formula": "=COUNTIF(D3:D7,\">=28400\")",
+      "expected_action": "formula",
+      "title": "सेल D12 में =COUNTIF(D3:D7,\">=28400\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 28400 या अधिक हैं।",
+      "instruction": "सेल D12 में =COUNTIF(D3:D7,\">=28400\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 28400 या अधिक हैं।",
+      "tasks": [
+        "सेल D12 में =COUNTIF(D3:D7,\">=28400\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 28400 या अधिक हैं।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D12 पर क्लिक करें।",
+        "2. =COUNTIF(D3:D7,\">=28400\") लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E3:E7",
+      "expected_formula": "",
+      "expected_action": "conditional-format",
+      "title": "रेंज E3:E7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।",
+      "instruction": "रेंज E3:E7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।",
+      "tasks": [
+        "रेंज E3:E7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. E3:E7 सिलेक्ट करें।",
+        "2. HOME -> Conditional Formatting -> Greater Than चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_003-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "C2:C7",
+      "expected_formula": "",
+      "expected_action": "freeze-panes",
+      "title": "रेंज C2:C7 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।",
+      "instruction": "रेंज C2:C7 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।",
+      "tasks": [
+        "रेंज C2:C7 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।"
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JHALAWAR — SET #403)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (10%)",
+          "Bracket"
+        ],
+        [
+          "M1616",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jhalawar)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1617",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jhalawar)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1618",
+          "Chetan Prakash",
+          "Policy Unit (Jhalawar)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1619",
+          "Divya Shekhawat",
+          "Social Welfare (Jhalawar)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1620",
+          "Gopal Krishna",
+          "Co-operative (Jhalawar)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. C2:C7 सिलेक्ट करके Wrap Text दबाएँ।",
+        "2. VIEW टैब -> Freeze Panes पर क्लिक करें।"
+      ]
+    }
+  ]
+}

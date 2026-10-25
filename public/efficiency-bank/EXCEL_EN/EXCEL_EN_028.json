@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "excel",
+    "language": "en",
+    "file_id": "EXCEL_EN_028",
+    "test_number": 28,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "master_dataset": [
+      [
+        "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Feeder ID",
+        "Station Name",
+        "Circle Wing",
+        "Urban Billing",
+        "Rural Billing",
+        "Net Collection",
+        "Surcharge (15%)",
+        "Rating"
+      ],
+      [
+        "E1241",
+        "Harishankar Meena",
+        "Judicial Wing (Bharatpur)",
+        26400,
+        11880,
+        "",
+        "",
+        ""
+      ],
+      [
+        "E1242",
+        "Nirmala Devi",
+        "Establishment (Bharatpur)",
+        32900,
+        14805,
+        "",
+        "",
+        ""
+      ],
+      [
+        "E1243",
+        "Praveen Tailor",
+        "Accounts Cell (Bharatpur)",
+        22900,
+        10305,
+        "",
+        "",
+        ""
+      ],
+      [
+        "E1244",
+        "Swati Agarwal",
+        "Audit Branch (Bharatpur)",
+        37400,
+        16830,
+        "",
+        "",
+        ""
+      ],
+      [
+        "E1245",
+        "Lokesh Saini",
+        "Record Room (Bharatpur)",
+        28900,
+        13005,
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOTAL (SUM)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "AVERAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MAXIMUM (MAX)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MINIMUM (MIN)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "COUNT (>=28400)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "questions": [
+    {
+      "id": "EXCEL_EN_028-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:E7",
+      "expected_formula": "",
+      "expected_action": "number-format",
+      "title": "Format the numeric values in range D3:E7 as Currency (₹) from the Number group.",
+      "instruction": "Format the numeric values in range D3:E7 as Currency (₹) from the Number group.",
+      "tasks": [
+        "Format the numeric values in range D3:E7 as Currency (₹) from the Number group."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:E7.",
+        "2. Click HOME -> Number -> Currency (₹)."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A1",
+      "expected_formula": "",
+      "expected_action": "merge",
+      "title": "Apply 'Merge & Center', Underline, and change Font Color on the Report Title Banner in cell A1.",
+      "instruction": "Apply 'Merge & Center', Underline, and change Font Color on the Report Title Banner in cell A1.",
+      "tasks": [
+        "Apply 'Merge & Center', Underline, and change Font Color on the Report Title Banner in cell A1."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell A1.",
+        "2. Click HOME -> Merge & Center, Underline, and Font Color."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "G7",
+      "expected_formula": "=D7*15%",
+      "expected_action": "formula",
+      "title": "In cell G7, calculate 15% Surcharge on D7 using the formula =D7*15%.",
+      "instruction": "In cell G7, calculate 15% Surcharge on D7 using the formula =D7*15%.",
+      "tasks": [
+        "In cell G7, calculate 15% Surcharge on D7 using the formula =D7*15%."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell G7.",
+        "2. Type =D7*15% and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "H3",
+      "expected_formula": "=IF(D3>=28400,\"Priority\",\"Standard\")",
+      "expected_action": "formula",
+      "title": "In cell H3, use the IF formula: if D3 >= 28400, display \"Priority\", otherwise display \"Standard\".",
+      "instruction": "In cell H3, use the IF formula: if D3 >= 28400, display \"Priority\", otherwise display \"Standard\".",
+      "tasks": [
+        "In cell H3, use the IF formula: if D3 >= 28400, display \"Priority\", otherwise display \"Standard\"."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell H3.",
+        "2. Type =IF(D3>=28400,\"Priority\",\"Standard\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "bold",
+      "title": "Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color.",
+      "instruction": "Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color.",
+      "tasks": [
+        "Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select A2:H2.",
+        "2. Click HOME -> Bold (B) and Fill Color."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "B3:B7",
+      "expected_formula": "",
+      "expected_action": "italic",
+      "title": "Make the Names in Column B (B3:B7) Italic and change their Font Color.",
+      "instruction": "Make the Names in Column B (B3:B7) Italic and change their Font Color.",
+      "tasks": [
+        "Make the Names in Column B (B3:B7) Italic and change their Font Color."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select B3:B7.",
+        "2. Click HOME -> Italic and Font Color."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H12",
+      "expected_formula": "",
+      "expected_action": "border",
+      "title": "Apply 'All Borders' to the complete worksheet table including summary rows (A2:H12).",
+      "instruction": "Apply 'All Borders' to the complete worksheet table including summary rows (A2:H12).",
+      "tasks": [
+        "Apply 'All Borders' to the complete worksheet table including summary rows (A2:H12)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select A2:H12.",
+        "2. Click HOME -> Borders -> All Borders."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "F6",
+      "expected_formula": "=SUM(D6:E6)",
+      "expected_action": "formula",
+      "title": "In cell F6, calculate Net Collection by adding Urban Billing and Rural Billing using =SUM(D6:E6).",
+      "instruction": "In cell F6, calculate Net Collection by adding Urban Billing and Rural Billing using =SUM(D6:E6).",
+      "tasks": [
+        "In cell F6, calculate Net Collection by adding Urban Billing and Rural Billing using =SUM(D6:E6)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell F6.",
+        "2. Type =SUM(D6:E6) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D8",
+      "expected_formula": "=SUM(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7).",
+      "instruction": "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7).",
+      "tasks": [
+        "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D8.",
+        "2. Type =SUM(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E9",
+      "expected_formula": "=AVERAGE(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7).",
+      "instruction": "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7).",
+      "tasks": [
+        "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E9.",
+        "2. Type =AVERAGE(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D10",
+      "expected_formula": "=MAX(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7).",
+      "instruction": "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7).",
+      "tasks": [
+        "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D10.",
+        "2. Type =MAX(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E11",
+      "expected_formula": "=MIN(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7).",
+      "instruction": "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7).",
+      "tasks": [
+        "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E11.",
+        "2. Type =MIN(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D12",
+      "expected_formula": "=COUNTIF(D3:D7,\">=28400\")",
+      "expected_action": "formula",
+      "title": "In cell D12, count how many records in D3:D7 have Urban Billing >= 28400 using =COUNTIF(D3:D7,\">=28400\").",
+      "instruction": "In cell D12, count how many records in D3:D7 have Urban Billing >= 28400 using =COUNTIF(D3:D7,\">=28400\").",
+      "tasks": [
+        "In cell D12, count how many records in D3:D7 have Urban Billing >= 28400 using =COUNTIF(D3:D7,\">=28400\")."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D12.",
+        "2. Type =COUNTIF(D3:D7,\">=28400\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:D7",
+      "expected_formula": "",
+      "expected_action": "conditional-format",
+      "title": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7.",
+      "instruction": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7.",
+      "tasks": [
+        "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:D7.",
+        "2. Click HOME -> Conditional Formatting -> Highlight Cells Rules -> Greater Than."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_028-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "freeze-panes",
+      "title": "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab.",
+      "instruction": "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab.",
+      "tasks": [
+        "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (BHARATPUR — SET #328)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (15%)",
+          "Rating"
+        ],
+        [
+          "E1241",
+          "Harishankar Meena",
+          "Judicial Wing (Bharatpur)",
+          26400,
+          11880,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1242",
+          "Nirmala Devi",
+          "Establishment (Bharatpur)",
+          32900,
+          14805,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1243",
+          "Praveen Tailor",
+          "Accounts Cell (Bharatpur)",
+          22900,
+          10305,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1244",
+          "Swati Agarwal",
+          "Audit Branch (Bharatpur)",
+          37400,
+          16830,
+          "",
+          "",
+          ""
+        ],
+        [
+          "E1245",
+          "Lokesh Saini",
+          "Record Room (Bharatpur)",
+          28900,
+          13005,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=28400)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select A2:H2 and click HOME -> Wrap Text.",
+        "2. Go to VIEW tab -> Freeze Panes."
+      ]
+    }
+  ]
+}

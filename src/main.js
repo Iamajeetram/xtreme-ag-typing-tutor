@@ -8,8 +8,8 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.3.0';
-let APP_RUNTIME_INFO = { version: '1.3.0', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.4.0';
+let APP_RUNTIME_INFO = { version: '1.4.0', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 const GITHUB_REPO_CANDIDATES = [
@@ -2081,15 +2081,25 @@ async function efficiencyFetchFile(moduleName, language, fileNo) {
     ]
     const st = clone.metadata.document_structure || {}
     if (langLower === 'hi') {
-      st.doc_type = n % 2 === 0 ? `कार्यालय आदेश (OFFICE ORDER #${n})` : `सूचना (NOTICE #${n})`
+      st.doc_type = n % 2 === 0 ? `कार्यालय आदेश (OFFICE ORDER)` : `सूचना (OFFICIAL NOTICE)`
       st.org_name = hiOrgs[(n - 1) % hiOrgs.length]
       st.date_line = `दिनांक: ${(n % 28) + 1} नवम्बर 2026`
       st.subject_line = hiSubjects[(n - 1) % hiSubjects.length]
+      clone.questions.forEach(q => {
+        q.title = String(q.title || '').replace('सूचना (NOTICE)', st.doc_type).replace('राजकीय उच्च माध्यमिक विद्यालय, जयपुर', st.org_name).replace('दिनांक: 4 नवम्बर 2026', st.date_line).replace('वाद-विवाद एवं खेलकूद प्रतियोगिता', st.subject_line)
+        q.instruction = q.title
+        q.tasks = [q.title]
+      })
     } else {
-      st.doc_type = n % 2 === 0 ? `OFFICE ORDER #${n}` : `OFFICIAL NOTICE #${n}`
+      st.doc_type = n % 2 === 0 ? `OFFICE ORDER` : `OFFICIAL NOTICE`
       st.org_name = enOrgs[(n - 1) % enOrgs.length]
       st.date_line = `Date: ${(n % 28) + 1}th November 2026`
       st.subject_line = enSubjects[(n - 1) % enSubjects.length]
+      clone.questions.forEach(q => {
+        q.title = String(q.title || '').replace('NOTICE', st.doc_type).replace('Govt. Sen. Sec. School, Jaipur', st.org_name).replace('Date: 4th November 2026', st.date_line).replace('Debate Competition', st.subject_line)
+        q.instruction = q.title
+        q.tasks = [q.title]
+      })
     }
     clone.metadata.document_structure = st
   } else {
@@ -6449,6 +6459,12 @@ function efficiencyAttachExcel(tasks, question) {
         })
         break
       }
+      case 'excel-font-color':
+        applyToSelectedExcelCells(c => {
+          c.style.color = '#c00000'
+          c.dataset.fmtFontColor = '#c00000'
+        })
+        break
       case 'excel-fill': {
         const next = cell?.dataset.fmtFill !== 'true'
         applyToSelectedExcelCells(c => {
@@ -6824,11 +6840,17 @@ function efficiencyEvaluateQuestionDetailed(q, qNum, allQuestions = []) {
         break
       }
     }
-    // 9. Text Highlight vs Shading
+    // 9. Text Highlight vs Shading vs Font Color
     if (/\bhighlight\b|हाइलाइट/i.test(instr)) {
       checks.push({
         label: 'Text Highlight Color',
         passed: targetEl?.dataset?.fmtHighlight === 'true'
+      })
+    }
+    if (/font\s*color|text\s*color|फ़ॉन्ट\s*(?:का\s*)?रंग|अक्षरों\s*(?:का\s*)?रंग/i.test(instr)) {
+      checks.push({
+        label: 'Font Color (फ़ॉन्ट रंग)',
+        passed: Boolean(targetEl?.dataset?.fmtFontColor && targetEl.dataset.fmtFontColor !== '#201f1e')
       })
     }
     if (/\bshad(?:ing|e)\b|शेडिंग|पृष्ठभूमि/i.test(instr)) {
@@ -7040,9 +7062,17 @@ function efficiencyEvaluateQuestionDetailed(q, qNum, allQuestions = []) {
     if (/\bunderlin\w*|अंडरलाइन/i.test(instr)) {
       checks.push({ label: `Underline on ${rangeStr}`, passed: targetHasFmt('fmtUnderline', 'true') })
     }
-    // 5. Fill Color
+    // 5. Fill Color & Font Color & Font Size
     if ((/fill\s*color|fill|shading|रंग\s*भरें|शेडिंग/i.test(instr)) && !(/conditional\s*formatting|कंडीशनल/i.test(instr))) {
       checks.push({ label: `Fill Color on ${rangeStr}`, passed: targetHasFmt('fmtFill', 'true') })
+    }
+    if (/font\s*color|text\s*color|फ़ॉन्ट\s*(?:का\s*)?रंग|अक्षरों\s*(?:का\s*)?रंग/i.test(instr)) {
+      const hasCol = Boolean(firstCell?.dataset?.fmtFontColor) || rangeCells.some(c => Boolean(c.dataset?.fmtFontColor))
+      checks.push({ label: `Font Color on ${rangeStr}`, passed: hasCol })
+    }
+    const xlSizeMatch = instr.match(/(?:font\s*size|फ़ॉन्ट\s*(?:का\s*)?आकार)[^0-9]*(\d+)/i)
+    if (xlSizeMatch) {
+      checks.push({ label: `Font Size ${xlSizeMatch[1]} on ${rangeStr}`, passed: targetHasFmt('fmtSize', xlSizeMatch[1]) })
     }
     // 6. Merge & Center vs Center Align
     if (/merge\s*(?:&|and)?\s*center|मर्ज/i.test(instr)) {

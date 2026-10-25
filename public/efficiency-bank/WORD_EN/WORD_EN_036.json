@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "word",
+    "language": "en",
+    "file_id": "WORD_EN_036",
+    "test_number": 36,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "document_structure": {
+      "doc_type": "OFFICE ORDER",
+      "org_name": "Directorate of Treasuries & Accounts, Sawai Madhopur",
+      "date_line": "Date: 2 September 2026 (Ref No: RAJ/236)",
+      "subject_line": "Subject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)",
+      "para1": "All concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.",
+      "para2": "During the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.",
+      "para3": "Strict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.",
+      "events_list": "Key Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.",
+      "sign_role": "Joint Secretary to Government",
+      "sign_name": "Dr. Suresh Chandra Choudhary",
+      "table": [
+        [
+          "Sr. No.",
+          "Branch / Section Name",
+          "Allocated Files",
+          "Current Status"
+        ],
+        [
+          "01",
+          "Establishment Wing (Sawai Madhopur)",
+          "387",
+          "friday"
+        ],
+        [
+          "02",
+          "Accounts & Audit Cell",
+          "488",
+          "Verified"
+        ],
+        [
+          "03",
+          "Record & Dispatch Room",
+          "276",
+          "Completed"
+        ]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "WORD_EN_036-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "line-spacing",
+      "title": "Justify the First Paragraph and set its Line Spacing to 1.5 lines.",
+      "instruction": "Justify the First Paragraph and set its Line Spacing to 1.5 lines.",
+      "tasks": [
+        "Justify the First Paragraph and set its Line Spacing to 1.5 lines."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Click inside the First Paragraph.",
+        "2. Click Justify and select Line Spacing '1.5'."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "space-before",
+      "title": "Add 6 pt Space Before Paragraph to the First Paragraph and make it Italic.",
+      "instruction": "Add 6 pt Space Before Paragraph to the First Paragraph and make it Italic.",
+      "tasks": [
+        "Add 6 pt Space Before Paragraph to the First Paragraph and make it Italic."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Click inside the First Paragraph.",
+        "2. Set Spacing Before to '6 pt' and click Italic."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para2",
+      "expected_action": "indent",
+      "title": "Justify the Second Paragraph and apply a First-Line Indent of 0.75 inches.",
+      "instruction": "Justify the Second Paragraph and apply a First-Line Indent of 0.75 inches.",
+      "tasks": [
+        "Justify the Second Paragraph and apply a First-Line Indent of 0.75 inches."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Click inside the Second Paragraph.",
+        "2. Click Justify and First Line Indent (0.75\")."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para2",
+      "expected_action": "space-after",
+      "title": "Add 6 pt Space After Paragraph to the Second Paragraph and set Line Spacing to 1.5.",
+      "instruction": "Add 6 pt Space After Paragraph to the Second Paragraph and set Line Spacing to 1.5.",
+      "tasks": [
+        "Add 6 pt Space After Paragraph to the Second Paragraph and set Line Spacing to 1.5."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Click inside the Second Paragraph.",
+        "2. Set Spacing After to '6 pt' and Line Spacing to '1.5'."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para3",
+      "expected_action": "hanging-indent",
+      "title": "Justify the Third Paragraph and apply a Hanging Indent of 0.75 inches.",
+      "instruction": "Justify the Third Paragraph and apply a Hanging Indent of 0.75 inches.",
+      "tasks": [
+        "Justify the Third Paragraph and apply a Hanging Indent of 0.75 inches."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Click inside the Third Paragraph.",
+        "2. Click Justify and Hanging Indent (0.75\")."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "document",
+      "expected_action": "watermark",
+      "title": "Insert an Official Header & Page Number, and apply a 'CONFIDENTIAL' Watermark to the document.",
+      "instruction": "Insert an Official Header & Page Number, and apply a 'CONFIDENTIAL' Watermark to the document.",
+      "tasks": [
+        "Insert an Official Header & Page Number, and apply a 'CONFIDENTIAL' Watermark to the document."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Go to INSERT -> Header/Footer and Page Number.",
+        "2. Go to DESIGN -> Watermark (and Page Border)."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "events_list",
+      "expected_action": "numbering",
+      "title": "Apply a Numbered List and Bold formatting to the Key Action Points line ('Key Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.').",
+      "instruction": "Apply a Numbered List and Bold formatting to the Key Action Points line ('Key Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.').",
+      "tasks": [
+        "Apply a Numbered List and Bold formatting to the Key Action Points line ('Key Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.')."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Select the Key Action Points line.",
+        "2. Click Numbering and Bold (B)."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "sign_role",
+      "expected_action": "italic",
+      "title": "Right align the Signatory Designation ('Joint Secretary to Government') and Name ('Dr. Suresh Chandra Choudhary'), make them Italic and Underlined.",
+      "instruction": "Right align the Signatory Designation ('Joint Secretary to Government') and Name ('Dr. Suresh Chandra Choudhary'), make them Italic and Underlined.",
+      "tasks": [
+        "Right align the Signatory Designation ('Joint Secretary to Government') and Name ('Dr. Suresh Chandra Choudhary'), make them Italic and Underlined."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Select the signatory lines.",
+        "2. Click Align Right, Italic, and Underline."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "doc_type",
+      "expected_action": "justifyRight",
+      "title": "Right align the top heading 'OFFICE ORDER', make it Bold, and set its Font Family to 'Cambria'.",
+      "instruction": "Right align the top heading 'OFFICE ORDER', make it Bold, and set its Font Family to 'Cambria'.",
+      "tasks": [
+        "Right align the top heading 'OFFICE ORDER', make it Bold, and set its Font Family to 'Cambria'."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Select the first line.",
+        "2. Click Align Right, Bold (B), and choose Font 'Cambria'."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "org_name",
+      "expected_action": "shading",
+      "title": "Center align and Bold the Organization Name ('Directorate of Treasuries & Accounts, Sawai Madhopur') and apply Background Shading.",
+      "instruction": "Center align and Bold the Organization Name ('Directorate of Treasuries & Accounts, Sawai Madhopur') and apply Background Shading.",
+      "tasks": [
+        "Center align and Bold the Organization Name ('Directorate of Treasuries & Accounts, Sawai Madhopur') and apply Background Shading."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Select the second line.",
+        "2. Click Center align, Bold, and Shading."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "date_line",
+      "expected_action": "justifyRight",
+      "title": "Right align the Date line ('Date: 2 September 2026 (Ref No: RAJ/236)') and make it Italic.",
+      "instruction": "Right align the Date line ('Date: 2 September 2026 (Ref No: RAJ/236)') and make it Italic.",
+      "tasks": [
+        "Right align the Date line ('Date: 2 September 2026 (Ref No: RAJ/236)') and make it Italic."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Select the date line.",
+        "2. Click Align Right and Italic (I)."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "subject_line",
+      "expected_action": "center",
+      "title": "Center align and Underline the Subject line ('Subject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)') and set its Font Size to 12 pt.",
+      "instruction": "Center align and Underline the Subject line ('Subject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)') and set its Font Size to 12 pt.",
+      "tasks": [
+        "Center align and Underline the Subject line ('Subject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)') and set its Font Size to 12 pt."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Select the subject line.",
+        "2. Click Center align, Underline, and Font Size '12'."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "find-replace",
+      "title": "Use Find & Replace to replace all occurrences of the word 'friday' with 'monday' in the document.",
+      "instruction": "Use Find & Replace to replace all occurrences of the word 'friday' with 'monday' in the document.",
+      "tasks": [
+        "Use Find & Replace to replace all occurrences of the word 'friday' with 'monday' in the document."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Click HOME -> Replace.",
+        "2. Enter 'friday' in Find what and 'monday' in Replace with, then click OK."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "document",
+      "expected_action": "margins",
+      "title": "Set the document Page Margins to 'Moderate' and Page Orientation to 'Landscape'.",
+      "instruction": "Set the document Page Margins to 'Moderate' and Page Orientation to 'Landscape'.",
+      "tasks": [
+        "Set the document Page Margins to 'Moderate' and Page Orientation to 'Landscape'."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Go to PAGE LAYOUT -> Margins -> 'Moderate'.",
+        "2. Click Orientation -> 'Landscape'."
+      ]
+    },
+    {
+      "id": "WORD_EN_036-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "table",
+      "expected_action": "justifyRight",
+      "title": "In the Reference Table at the bottom, Right align the Table Header row, make it Bold, and apply Shading.",
+      "instruction": "In the Reference Table at the bottom, Right align the Table Header row, make it Bold, and apply Shading.",
+      "tasks": [
+        "In the Reference Table at the bottom, Right align the Table Header row, make it Bold, and apply Shading."
+      ],
+      "source_content": "OFFICE ORDER\nDirectorate of Treasuries & Accounts, Sawai Madhopur\nDate: 2 September 2026 (Ref No: RAJ/236)\nSubject: Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries (Phase-1)\nAll concerned branch officers and ministerial staff of Sawai Madhopur division are hereby informed that under 'Annual Door-to-Door Verification Camp for Social Security Pension Beneficiaries', a comprehensive verification drive will be conducted on 7 September in the central friday wing. Every section head must submit the verified statement (Code #336) on time.\nDuring the recent quarterly review at Sawai Madhopur, it was observed that certain units have not updated their daily dispatch schedules and friday movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Sawai Madhopur), 2. Budget Reconciliation #146, 3. Digital Indexing.\nJoint Secretary to Government\nDr. Suresh Chandra Choudhary",
+      "solution_steps": [
+        "1. Select the first row of the table.",
+        "2. Apply Align Right, Bold, and Shading."
+      ]
+    }
+  ]
+}

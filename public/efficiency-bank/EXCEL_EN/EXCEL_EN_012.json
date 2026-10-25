@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "excel",
+    "language": "en",
+    "file_id": "EXCEL_EN_012",
+    "test_number": 12,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "master_dataset": [
+      [
+        "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Feeder ID",
+        "Station Name",
+        "Circle Wing",
+        "Urban Billing",
+        "Rural Billing",
+        "Net Collection",
+        "Surcharge (10%)",
+        "Rating"
+      ],
+      [
+        "Z1161",
+        "Harishankar Meena",
+        "Judicial Wing (Nagaur)",
+        33600,
+        14112,
+        "",
+        "",
+        ""
+      ],
+      [
+        "Z1162",
+        "Nirmala Devi",
+        "Establishment (Nagaur)",
+        40100,
+        16842,
+        "",
+        "",
+        ""
+      ],
+      [
+        "Z1163",
+        "Praveen Tailor",
+        "Accounts Cell (Nagaur)",
+        30100,
+        12642,
+        "",
+        "",
+        ""
+      ],
+      [
+        "Z1164",
+        "Swati Agarwal",
+        "Audit Branch (Nagaur)",
+        44600,
+        18732,
+        "",
+        "",
+        ""
+      ],
+      [
+        "Z1165",
+        "Lokesh Saini",
+        "Record Room (Nagaur)",
+        36100,
+        15162,
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOTAL (SUM)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "AVERAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MAXIMUM (MAX)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MINIMUM (MIN)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "COUNT (>=35600)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "questions": [
+    {
+      "id": "EXCEL_EN_012-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "F5",
+      "expected_formula": "=SUM(D5:E5)",
+      "expected_action": "formula",
+      "title": "In cell F5, calculate Net Collection by adding Urban Billing and Rural Billing using =SUM(D5:E5).",
+      "instruction": "In cell F5, calculate Net Collection by adding Urban Billing and Rural Billing using =SUM(D5:E5).",
+      "tasks": [
+        "In cell F5, calculate Net Collection by adding Urban Billing and Rural Billing using =SUM(D5:E5)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell F5.",
+        "2. Type =SUM(D5:E5) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D8",
+      "expected_formula": "=SUM(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7).",
+      "instruction": "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7).",
+      "tasks": [
+        "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D8.",
+        "2. Type =SUM(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E9",
+      "expected_formula": "=AVERAGE(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7).",
+      "instruction": "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7).",
+      "tasks": [
+        "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E9.",
+        "2. Type =AVERAGE(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D10",
+      "expected_formula": "=MAX(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7).",
+      "instruction": "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7).",
+      "tasks": [
+        "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D10.",
+        "2. Type =MAX(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E11",
+      "expected_formula": "=MIN(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7).",
+      "instruction": "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7).",
+      "tasks": [
+        "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E11.",
+        "2. Type =MIN(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:E7",
+      "expected_formula": "",
+      "expected_action": "number-format",
+      "title": "Format the numeric values in range D3:E7 as Currency (₹) from the Number group.",
+      "instruction": "Format the numeric values in range D3:E7 as Currency (₹) from the Number group.",
+      "tasks": [
+        "Format the numeric values in range D3:E7 as Currency (₹) from the Number group."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:E7.",
+        "2. Click HOME -> Number -> Currency (₹)."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A1",
+      "expected_formula": "",
+      "expected_action": "merge",
+      "title": "Apply 'Merge & Center', Fill Color, and Italic to the Report Title Banner in cell A1.",
+      "instruction": "Apply 'Merge & Center', Fill Color, and Italic to the Report Title Banner in cell A1.",
+      "tasks": [
+        "Apply 'Merge & Center', Fill Color, and Italic to the Report Title Banner in cell A1."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell A1.",
+        "2. Click HOME -> Merge & Center, Fill Color, and Italic."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "G6",
+      "expected_formula": "=D6*10%",
+      "expected_action": "formula",
+      "title": "In cell G6, calculate 10% Surcharge on D6 using the formula =D6*10%.",
+      "instruction": "In cell G6, calculate 10% Surcharge on D6 using the formula =D6*10%.",
+      "tasks": [
+        "In cell G6, calculate 10% Surcharge on D6 using the formula =D6*10%."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell G6.",
+        "2. Type =D6*10% and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "H7",
+      "expected_formula": "=IF(D7>=35600,\"Grade-A\",\"Grade-B\")",
+      "expected_action": "formula",
+      "title": "In cell H7, use the IF formula: if D7 >= 35600, display \"Grade-A\", otherwise display \"Grade-B\".",
+      "instruction": "In cell H7, use the IF formula: if D7 >= 35600, display \"Grade-A\", otherwise display \"Grade-B\".",
+      "tasks": [
+        "In cell H7, use the IF formula: if D7 >= 35600, display \"Grade-A\", otherwise display \"Grade-B\"."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell H7.",
+        "2. Type =IF(D7>=35600,\"Grade-A\",\"Grade-B\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "bold",
+      "title": "Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color.",
+      "instruction": "Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color.",
+      "tasks": [
+        "Make the Column Header Row (Row 2: A2:H2) Bold and apply a light Fill Color."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select A2:H2.",
+        "2. Click HOME -> Bold (B) and Fill Color."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "B3:B7",
+      "expected_formula": "",
+      "expected_action": "italic",
+      "title": "Make the Names in Column B (B3:B7) Italic and change their Font Color.",
+      "instruction": "Make the Names in Column B (B3:B7) Italic and change their Font Color.",
+      "tasks": [
+        "Make the Names in Column B (B3:B7) Italic and change their Font Color."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select B3:B7.",
+        "2. Click HOME -> Italic and Font Color."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H7",
+      "expected_formula": "",
+      "expected_action": "border",
+      "title": "Apply 'All Borders' to the main data table range (A2:H7).",
+      "instruction": "Apply 'All Borders' to the main data table range (A2:H7).",
+      "tasks": [
+        "Apply 'All Borders' to the main data table range (A2:H7)."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select A2:H7.",
+        "2. Click HOME -> Borders -> All Borders."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D12",
+      "expected_formula": "=COUNTIF(D3:D7,\">=35600\")",
+      "expected_action": "formula",
+      "title": "In cell D12, count how many records in D3:D7 have Urban Billing >= 35600 using =COUNTIF(D3:D7,\">=35600\").",
+      "instruction": "In cell D12, count how many records in D3:D7 have Urban Billing >= 35600 using =COUNTIF(D3:D7,\">=35600\").",
+      "tasks": [
+        "In cell D12, count how many records in D3:D7 have Urban Billing >= 35600 using =COUNTIF(D3:D7,\">=35600\")."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D12.",
+        "2. Type =COUNTIF(D3:D7,\">=35600\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:D7",
+      "expected_formula": "",
+      "expected_action": "conditional-format",
+      "title": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7.",
+      "instruction": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7.",
+      "tasks": [
+        "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:D7.",
+        "2. Click HOME -> Conditional Formatting -> Highlight Cells Rules -> Greater Than."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_012-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "freeze-panes",
+      "title": "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab.",
+      "instruction": "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab.",
+      "tasks": [
+        "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab."
+      ],
+      "sheet_name": "Discom_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISCOM FEEDER ELECTRICITY LOAD & REVENUE SHEET (NAGAUR — SET #312)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feeder ID",
+          "Station Name",
+          "Circle Wing",
+          "Urban Billing",
+          "Rural Billing",
+          "Net Collection",
+          "Surcharge (10%)",
+          "Rating"
+        ],
+        [
+          "Z1161",
+          "Harishankar Meena",
+          "Judicial Wing (Nagaur)",
+          33600,
+          14112,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1162",
+          "Nirmala Devi",
+          "Establishment (Nagaur)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1163",
+          "Praveen Tailor",
+          "Accounts Cell (Nagaur)",
+          30100,
+          12642,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1164",
+          "Swati Agarwal",
+          "Audit Branch (Nagaur)",
+          44600,
+          18732,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1165",
+          "Lokesh Saini",
+          "Record Room (Nagaur)",
+          36100,
+          15162,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=35600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select A2:H2 and click HOME -> Wrap Text.",
+        "2. Go to VIEW tab -> Freeze Panes."
+      ]
+    }
+  ]
+}

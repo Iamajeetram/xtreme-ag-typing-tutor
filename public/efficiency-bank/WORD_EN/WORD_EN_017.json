@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "word",
+    "language": "en",
+    "file_id": "WORD_EN_017",
+    "test_number": 17,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "document_structure": {
+      "doc_type": "OFFICIAL PRESS RELEASE",
+      "org_name": "Office of the District Collector & District Magistrate, Jhalawar",
+      "date_line": "Date: 10 July 2025 (Ref No: RAJ/217)",
+      "subject_line": "Subject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)",
+      "para1": "All concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.",
+      "para2": "During the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.",
+      "para3": "Strict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.",
+      "events_list": "Key Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.",
+      "sign_role": "Assistant Commissioner (Establishment)",
+      "sign_name": "Lokesh Saini",
+      "table": [
+        [
+          "Sr. No.",
+          "Branch / Section Name",
+          "Allocated Files",
+          "Current Status"
+        ],
+        [
+          "01",
+          "Establishment Wing (Jhalawar)",
+          "349",
+          "records"
+        ],
+        [
+          "02",
+          "Accounts & Audit Cell",
+          "431",
+          "Verified"
+        ],
+        [
+          "03",
+          "Record & Dispatch Room",
+          "257",
+          "Completed"
+        ]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "WORD_EN_017-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para2",
+      "expected_action": "space-after",
+      "title": "Add 12 pt Space After Paragraph to the Second Paragraph and set Line Spacing to 2.5.",
+      "instruction": "Add 12 pt Space After Paragraph to the Second Paragraph and set Line Spacing to 2.5.",
+      "tasks": [
+        "Add 12 pt Space After Paragraph to the Second Paragraph and set Line Spacing to 2.5."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Click inside the Second Paragraph.",
+        "2. Set Spacing After to '12 pt' and Line Spacing to '2.5'."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para3",
+      "expected_action": "hanging-indent",
+      "title": "Justify the Third Paragraph and apply a Hanging Indent of 0.5 inches.",
+      "instruction": "Justify the Third Paragraph and apply a Hanging Indent of 0.5 inches.",
+      "tasks": [
+        "Justify the Third Paragraph and apply a Hanging Indent of 0.5 inches."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Click inside the Third Paragraph.",
+        "2. Click Justify and Hanging Indent (0.5\")."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "document",
+      "expected_action": "watermark",
+      "title": "Insert an Official Footer & Page Number, and apply a Page Border and 'CONFIDENTIAL' Watermark to the document.",
+      "instruction": "Insert an Official Footer & Page Number, and apply a Page Border and 'CONFIDENTIAL' Watermark to the document.",
+      "tasks": [
+        "Insert an Official Footer & Page Number, and apply a Page Border and 'CONFIDENTIAL' Watermark to the document."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Go to INSERT -> Header/Footer and Page Number.",
+        "2. Go to DESIGN -> Watermark (and Page Border)."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "events_list",
+      "expected_action": "change-case",
+      "title": "Convert the Key Action Points line ('Key Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.') to UPPERCASE and apply a Bulleted List.",
+      "instruction": "Convert the Key Action Points line ('Key Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.') to UPPERCASE and apply a Bulleted List.",
+      "tasks": [
+        "Convert the Key Action Points line ('Key Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.') to UPPERCASE and apply a Bulleted List."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Select the Key Action Points line.",
+        "2. Click Change Case -> UPPERCASE and click Bullets (•)."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "sign_role",
+      "expected_action": "center",
+      "title": "Center align the Signatory Designation ('Assistant Commissioner (Establishment)') and Name ('Lokesh Saini') and change their Font Color.",
+      "instruction": "Center align the Signatory Designation ('Assistant Commissioner (Establishment)') and Name ('Lokesh Saini') and change their Font Color.",
+      "tasks": [
+        "Center align the Signatory Designation ('Assistant Commissioner (Establishment)') and Name ('Lokesh Saini') and change their Font Color."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Select the signatory lines.",
+        "2. Click Center align and Font Color."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "doc_type",
+      "expected_action": "border",
+      "title": "Center align the top heading 'OFFICIAL PRESS RELEASE' and apply Background Shading and an Outside Border.",
+      "instruction": "Center align the top heading 'OFFICIAL PRESS RELEASE' and apply Background Shading and an Outside Border.",
+      "tasks": [
+        "Center align the top heading 'OFFICIAL PRESS RELEASE' and apply Background Shading and an Outside Border."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Select the first line.",
+        "2. Click Center align, Shading, and Outside Borders."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "org_name",
+      "expected_action": "font",
+      "title": "Make the Organization Name ('Office of the District Collector & District Magistrate, Jhalawar') Bold, Underlined, and set its Font Size to 18 pt.",
+      "instruction": "Make the Organization Name ('Office of the District Collector & District Magistrate, Jhalawar') Bold, Underlined, and set its Font Size to 18 pt.",
+      "tasks": [
+        "Make the Organization Name ('Office of the District Collector & District Magistrate, Jhalawar') Bold, Underlined, and set its Font Size to 18 pt."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Select the second line.",
+        "2. Click Bold, Underline, and Font Size '18'."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "date_line",
+      "expected_action": "center",
+      "title": "Center align the Date line ('Date: 10 July 2025 (Ref No: RAJ/217)'), make it Italic, and set Font Family to 'Arial'.",
+      "instruction": "Center align the Date line ('Date: 10 July 2025 (Ref No: RAJ/217)'), make it Italic, and set Font Family to 'Arial'.",
+      "tasks": [
+        "Center align the Date line ('Date: 10 July 2025 (Ref No: RAJ/217)'), make it Italic, and set Font Family to 'Arial'."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Select the date line.",
+        "2. Click Center align, Italic, and Font 'Arial'."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "subject_line",
+      "expected_action": "center",
+      "title": "Center align and Underline the Subject line ('Subject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)') and set its Font Size to 16 pt.",
+      "instruction": "Center align and Underline the Subject line ('Subject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)') and set its Font Size to 16 pt.",
+      "tasks": [
+        "Center align and Underline the Subject line ('Subject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)') and set its Font Size to 16 pt."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Select the subject line.",
+        "2. Click Center align, Underline, and Font Size '16'."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "line-spacing",
+      "title": "Justify the First Paragraph and set its Line Spacing to 2.0 lines.",
+      "instruction": "Justify the First Paragraph and set its Line Spacing to 2.0 lines.",
+      "tasks": [
+        "Justify the First Paragraph and set its Line Spacing to 2.0 lines."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Click inside the First Paragraph.",
+        "2. Click Justify and select Line Spacing '2.0'."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "indent",
+      "title": "Apply a First-Line Indent of 0.5 inches to the First Paragraph and set its font to 'Verdana'.",
+      "instruction": "Apply a First-Line Indent of 0.5 inches to the First Paragraph and set its font to 'Verdana'.",
+      "tasks": [
+        "Apply a First-Line Indent of 0.5 inches to the First Paragraph and set its font to 'Verdana'."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Click inside the First Paragraph.",
+        "2. Apply First Line Indent (0.5\") and Font 'Verdana'."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para2",
+      "expected_action": "indent",
+      "title": "Justify the Second Paragraph and apply a First-Line Indent of 0.5 inches.",
+      "instruction": "Justify the Second Paragraph and apply a First-Line Indent of 0.5 inches.",
+      "tasks": [
+        "Justify the Second Paragraph and apply a First-Line Indent of 0.5 inches."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Click inside the Second Paragraph.",
+        "2. Click Justify and First Line Indent (0.5\")."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "find-replace",
+      "title": "Use Find & Replace to replace all occurrences of the word 'records' with 'archives' in the document.",
+      "instruction": "Use Find & Replace to replace all occurrences of the word 'records' with 'archives' in the document.",
+      "tasks": [
+        "Use Find & Replace to replace all occurrences of the word 'records' with 'archives' in the document."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Click HOME -> Replace.",
+        "2. Enter 'records' in Find what and 'archives' in Replace with, then click OK."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "document",
+      "expected_action": "margins",
+      "title": "Set the document Page Margins to 'Narrow' and Page Orientation to 'Portrait'.",
+      "instruction": "Set the document Page Margins to 'Narrow' and Page Orientation to 'Portrait'.",
+      "tasks": [
+        "Set the document Page Margins to 'Narrow' and Page Orientation to 'Portrait'."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Go to PAGE LAYOUT -> Margins -> 'Narrow'.",
+        "2. Click Orientation -> 'Portrait'."
+      ]
+    },
+    {
+      "id": "WORD_EN_017-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "table",
+      "expected_action": "italic",
+      "title": "In the Reference Table at the bottom, make the Table Header row Italic, Underlined, and change its Font Color.",
+      "instruction": "In the Reference Table at the bottom, make the Table Header row Italic, Underlined, and change its Font Color.",
+      "tasks": [
+        "In the Reference Table at the bottom, make the Table Header row Italic, Underlined, and change its Font Color."
+      ],
+      "source_content": "OFFICIAL PRESS RELEASE\nOffice of the District Collector & District Magistrate, Jhalawar\nDate: 10 July 2025 (Ref No: RAJ/217)\nSubject: Scanning, Cataloging, and Digital Archiving of Historical Revenue Records (Phase-2)\nAll concerned branch officers and ministerial staff of Jhalawar division are hereby informed that under 'Scanning, Cataloging, and Digital Archiving of Historical Revenue Records', a comprehensive verification drive will be conducted on 15 July in the central records wing. Every section head must submit the verified statement (Code #317) on time.\nDuring the recent quarterly review at Jhalawar, it was observed that certain units have not updated their daily dispatch schedules and records movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Jhalawar), 2. Budget Reconciliation #127, 3. Digital Indexing.\nAssistant Commissioner (Establishment)\nLokesh Saini",
+      "solution_steps": [
+        "1. Select the first row of the table.",
+        "2. Apply Italic, Underline, and Font Color."
+      ]
+    }
+  ]
+}

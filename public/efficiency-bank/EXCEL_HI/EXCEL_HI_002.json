@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "excel",
+    "language": "hi",
+    "file_id": "EXCEL_HI_002",
+    "test_number": 2,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "master_dataset": [
+      [
+        "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Route ID",
+        "Depot Manager",
+        "Route Corridor",
+        "Express Fare",
+        "Ordinary Fare",
+        "Gross Fare",
+        "Incentive (8%)",
+        "Class"
+      ],
+      [
+        "Z1611",
+        "Manish Khandelwal",
+        "Civil Works (Nagaur)",
+        25600,
+        10752,
+        "",
+        "",
+        ""
+      ],
+      [
+        "Z1612",
+        "Sunita Rathore",
+        "Canal Division (Nagaur)",
+        32100,
+        13482,
+        "",
+        "",
+        ""
+      ],
+      [
+        "Z1613",
+        "Ankit Garg",
+        "Transport Cell (Nagaur)",
+        22100,
+        9282,
+        "",
+        "",
+        ""
+      ],
+      [
+        "Z1614",
+        "Rekha Joshi",
+        "Mandi Board (Nagaur)",
+        36600,
+        15372,
+        "",
+        "",
+        ""
+      ],
+      [
+        "Z1615",
+        "Mahendra Bishnoi",
+        "Panchayat Wing (Nagaur)",
+        28100,
+        11802,
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOTAL (SUM)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "AVERAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MAXIMUM (MAX)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MINIMUM (MIN)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "COUNT (>=27600)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "questions": [
+    {
+      "id": "EXCEL_HI_002-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E9",
+      "expected_formula": "=AVERAGE(E3:E7)",
+      "expected_action": "formula",
+      "title": "सेल E9 (AVERAGE पंक्ति) में कॉलम E का औसत मान =AVERAGE(E3:E7) फंक्शन से ज्ञात करें।",
+      "instruction": "सेल E9 (AVERAGE पंक्ति) में कॉलम E का औसत मान =AVERAGE(E3:E7) फंक्शन से ज्ञात करें।",
+      "tasks": [
+        "सेल E9 (AVERAGE पंक्ति) में कॉलम E का औसत मान =AVERAGE(E3:E7) फंक्शन से ज्ञात करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल E9 पर क्लिक करें।",
+        "2. =AVERAGE(E3:E7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E10",
+      "expected_formula": "=MAX(E3:E7)",
+      "expected_action": "formula",
+      "title": "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल E10 (MAXIMUM पंक्ति) में कॉलम E का अधिकतम मान =MAX(E3:E7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल E10 पर क्लिक करें।",
+        "2. =MAX(E3:E7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D11",
+      "expected_formula": "=MIN(D3:D7)",
+      "expected_action": "formula",
+      "title": "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल D11 (MINIMUM पंक्ति) में कॉलम D का न्यूनतम मान =MIN(D3:D7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D11 पर क्लिक करें।",
+        "2. =MIN(D3:D7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:E7",
+      "expected_formula": "",
+      "expected_action": "number-format",
+      "title": "रेंज D3:E7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।",
+      "instruction": "रेंज D3:E7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।",
+      "tasks": [
+        "रेंज D3:E7 की राशियों को Number ग्रुप से Currency (₹) फॉरमेट में बदलें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. D3:E7 सिलेक्ट करें।",
+        "2. HOME -> Number -> Currency (₹) चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A1",
+      "expected_formula": "",
+      "expected_action": "merge",
+      "title": "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Fill Color तथा Italic लागू करें।",
+      "instruction": "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Fill Color तथा Italic लागू करें।",
+      "tasks": [
+        "प्रथम पंक्ति के रिपोर्ट शीर्षक (Cell A1) पर 'Merge & Center', Fill Color तथा Italic लागू करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल A1 पर क्लिक करें।",
+        "2. HOME -> Merge & Center, Fill Color और Italic दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "G6",
+      "expected_formula": "=D6*8%",
+      "expected_action": "formula",
+      "title": "सेल G6 में D6 का 8% निकालने के लिए =D6*8% फॉर्मूला लगाएँ।",
+      "instruction": "सेल G6 में D6 का 8% निकालने के लिए =D6*8% फॉर्मूला लगाएँ।",
+      "tasks": [
+        "सेल G6 में D6 का 8% निकालने के लिए =D6*8% फॉर्मूला लगाएँ।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल G6 पर क्लिक करें।",
+        "2. =D6*8% लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "H7",
+      "expected_formula": "=IF(D7>=27600,\"Grade-A\",\"Grade-B\")",
+      "expected_action": "formula",
+      "title": "सेल H7 में IF फॉर्मूला लगाएँ: यदि D7 >= 27600 हो तो \"Grade-A\", अन्यथा \"Grade-B\" आए।",
+      "instruction": "सेल H7 में IF फॉर्मूला लगाएँ: यदि D7 >= 27600 हो तो \"Grade-A\", अन्यथा \"Grade-B\" आए।",
+      "tasks": [
+        "सेल H7 में IF फॉर्मूला लगाएँ: यदि D7 >= 27600 हो तो \"Grade-A\", अन्यथा \"Grade-B\" आए।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल H7 पर क्लिक करें।",
+        "2. =IF(D7>=27600,\"Grade-A\",\"Grade-B\") लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "font-color",
+      "title": "कॉलम हेडर पंक्ति (A2:H2) का Font Color बदलें, उसे Bold करें तथा Font Size 12 सेट करें।",
+      "instruction": "कॉलम हेडर पंक्ति (A2:H2) का Font Color बदलें, उसे Bold करें तथा Font Size 12 सेट करें।",
+      "tasks": [
+        "कॉलम हेडर पंक्ति (A2:H2) का Font Color बदलें, उसे Bold करें तथा Font Size 12 सेट करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A2:H2 को सिलेक्ट करें।",
+        "2. HOME -> Font Color, Bold और Font Size '12' चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A3:A7",
+      "expected_formula": "",
+      "expected_action": "justifyRight",
+      "title": "कॉलम A के ID कोड सेल्स (A3:A7) को Right Align और Underline करें।",
+      "instruction": "कॉलम A के ID कोड सेल्स (A3:A7) को Right Align और Underline करें।",
+      "tasks": [
+        "कॉलम A के ID कोड सेल्स (A3:A7) को Right Align और Underline करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A3:A7 सिलेक्ट करें।",
+        "2. HOME -> Align Right और Underline चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H7",
+      "expected_formula": "",
+      "expected_action": "border",
+      "title": "मुख्य डेटा टेबल रेंज (A2:H7) पर 'All Borders' लागू करें।",
+      "instruction": "मुख्य डेटा टेबल रेंज (A2:H7) पर 'All Borders' लागू करें।",
+      "tasks": [
+        "मुख्य डेटा टेबल रेंज (A2:H7) पर 'All Borders' लागू करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A2:H7 सिलेक्ट करें।",
+        "2. HOME -> Borders -> All Borders चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "F5",
+      "expected_formula": "=SUM(D5:E5)",
+      "expected_action": "formula",
+      "title": "सेल F5 में D5 और E5 का कुल योग निकालने के लिए =SUM(D5:E5) फॉर्मूला लगाएँ।",
+      "instruction": "सेल F5 में D5 और E5 का कुल योग निकालने के लिए =SUM(D5:E5) फॉर्मूला लगाएँ।",
+      "tasks": [
+        "सेल F5 में D5 और E5 का कुल योग निकालने के लिए =SUM(D5:E5) फॉर्मूला लगाएँ।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल F5 पर क्लिक करें।",
+        "2. =SUM(D5:E5) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D8",
+      "expected_formula": "=SUM(D3:D7)",
+      "expected_action": "formula",
+      "title": "सेल D8 (TOTAL पंक्ति) में कॉलम D का कुल योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "instruction": "सेल D8 (TOTAL पंक्ति) में कॉलम D का कुल योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।",
+      "tasks": [
+        "सेल D8 (TOTAL पंक्ति) में कॉलम D का कुल योग =SUM(D3:D7) फॉर्मूले से ज्ञात करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D8 पर क्लिक करें।",
+        "2. =SUM(D3:D7) लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D12",
+      "expected_formula": "=COUNTIF(D3:D7,\">=27600\")",
+      "expected_action": "formula",
+      "title": "सेल D12 में =COUNTIF(D3:D7,\">=27600\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 27600 या अधिक हैं।",
+      "instruction": "सेल D12 में =COUNTIF(D3:D7,\">=27600\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 27600 या अधिक हैं।",
+      "tasks": [
+        "सेल D12 में =COUNTIF(D3:D7,\">=27600\") का उपयोग करके ज्ञात करें कि कितनी प्रविष्टियाँ 27600 या अधिक हैं।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. सेल D12 पर क्लिक करें।",
+        "2. =COUNTIF(D3:D7,\">=27600\") लिखकर Enter दबाएँ।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:D7",
+      "expected_formula": "",
+      "expected_action": "conditional-format",
+      "title": "रेंज D3:D7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।",
+      "instruction": "रेंज D3:D7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।",
+      "tasks": [
+        "रेंज D3:D7 पर 'Conditional Formatting -> Highlight Cells Rules -> Greater Than' लागू करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. D3:D7 सिलेक्ट करें।",
+        "2. HOME -> Conditional Formatting -> Greater Than चुनें।"
+      ]
+    },
+    {
+      "id": "EXCEL_HI_002-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "freeze-panes",
+      "title": "रेंज A2:H2 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।",
+      "instruction": "रेंज A2:H2 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।",
+      "tasks": [
+        "रेंज A2:H2 पर 'Wrap Text' लगाएँ और VIEW टैब से 'Freeze Panes' सक्रिय करें।"
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (NAGAUR — SET #402)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (8%)",
+          "Class"
+        ],
+        [
+          "Z1611",
+          "Manish Khandelwal",
+          "Civil Works (Nagaur)",
+          25600,
+          10752,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1612",
+          "Sunita Rathore",
+          "Canal Division (Nagaur)",
+          32100,
+          13482,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1613",
+          "Ankit Garg",
+          "Transport Cell (Nagaur)",
+          22100,
+          9282,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1614",
+          "Rekha Joshi",
+          "Mandi Board (Nagaur)",
+          36600,
+          15372,
+          "",
+          "",
+          ""
+        ],
+        [
+          "Z1615",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Nagaur)",
+          28100,
+          11802,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=27600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. A2:H2 सिलेक्ट करके Wrap Text दबाएँ।",
+        "2. VIEW टैब -> Freeze Panes पर क्लिक करें।"
+      ]
+    }
+  ]
+}

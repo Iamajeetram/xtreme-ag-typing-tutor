@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "excel",
+    "language": "en",
+    "file_id": "EXCEL_EN_031",
+    "test_number": 31,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "master_dataset": [
+      [
+        "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Ward ID",
+        "Zonal Officer",
+        "Zone Name",
+        "House Tax",
+        "Commercial Tax",
+        "Total Tax",
+        "Penalty (5%)",
+        "Bracket"
+      ],
+      [
+        "M1256",
+        "Rajeshwari Rathore",
+        "Urban Planning (Jalore)",
+        28800,
+        11520,
+        "",
+        "",
+        ""
+      ],
+      [
+        "M1257",
+        "Bhanwar Lal Jat",
+        "Finance Cell (Jalore)",
+        35300,
+        14120,
+        "",
+        "",
+        ""
+      ],
+      [
+        "M1258",
+        "Chetan Prakash",
+        "Policy Unit (Jalore)",
+        25300,
+        10120,
+        "",
+        "",
+        ""
+      ],
+      [
+        "M1259",
+        "Divya Shekhawat",
+        "Social Welfare (Jalore)",
+        39800,
+        15920,
+        "",
+        "",
+        ""
+      ],
+      [
+        "M1260",
+        "Gopal Krishna",
+        "Co-operative (Jalore)",
+        31300,
+        12520,
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOTAL (SUM)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "AVERAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MAXIMUM (MAX)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MINIMUM (MIN)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "COUNT (>=30800)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "questions": [
+    {
+      "id": "EXCEL_EN_031-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "center",
+      "title": "Center align the Column Header Row (A2:H2) and apply both Fill Color and Underline.",
+      "instruction": "Center align the Column Header Row (A2:H2) and apply both Fill Color and Underline.",
+      "tasks": [
+        "Center align the Column Header Row (A2:H2) and apply both Fill Color and Underline."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select A2:H2.",
+        "2. Click HOME -> Center align, Fill Color, and Underline."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A3:A7",
+      "expected_formula": "",
+      "expected_action": "center",
+      "title": "Center align the ID codes in Column A (A3:A7) and make them Bold.",
+      "instruction": "Center align the ID codes in Column A (A3:A7) and make them Bold.",
+      "tasks": [
+        "Center align the ID codes in Column A (A3:A7) and make them Bold."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select A3:A7.",
+        "2. Click HOME -> Center align and Bold."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H12",
+      "expected_formula": "",
+      "expected_action": "border",
+      "title": "Apply 'All Borders' to the complete worksheet table including summary rows (A2:H12).",
+      "instruction": "Apply 'All Borders' to the complete worksheet table including summary rows (A2:H12).",
+      "tasks": [
+        "Apply 'All Borders' to the complete worksheet table including summary rows (A2:H12)."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select A2:H12.",
+        "2. Click HOME -> Borders -> All Borders."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "F4",
+      "expected_formula": "=SUM(D4:E4)",
+      "expected_action": "formula",
+      "title": "In cell F4, calculate Total Tax by adding House Tax and Commercial Tax using =SUM(D4:E4).",
+      "instruction": "In cell F4, calculate Total Tax by adding House Tax and Commercial Tax using =SUM(D4:E4).",
+      "tasks": [
+        "In cell F4, calculate Total Tax by adding House Tax and Commercial Tax using =SUM(D4:E4)."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell F4.",
+        "2. Type =SUM(D4:E4) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E8",
+      "expected_formula": "=SUM(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E8 (TOTAL row), calculate the total of column E using =SUM(E3:E7).",
+      "instruction": "In cell E8 (TOTAL row), calculate the total of column E using =SUM(E3:E7).",
+      "tasks": [
+        "In cell E8 (TOTAL row), calculate the total of column E using =SUM(E3:E7)."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E8.",
+        "2. Type =SUM(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D9",
+      "expected_formula": "=AVERAGE(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D9 (AVERAGE row), calculate the average of column D using =AVERAGE(D3:D7).",
+      "instruction": "In cell D9 (AVERAGE row), calculate the average of column D using =AVERAGE(D3:D7).",
+      "tasks": [
+        "In cell D9 (AVERAGE row), calculate the average of column D using =AVERAGE(D3:D7)."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D9.",
+        "2. Type =AVERAGE(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E10",
+      "expected_formula": "=MAX(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E10 (MAXIMUM row), find the highest value in column E using =MAX(E3:E7).",
+      "instruction": "In cell E10 (MAXIMUM row), find the highest value in column E using =MAX(E3:E7).",
+      "tasks": [
+        "In cell E10 (MAXIMUM row), find the highest value in column E using =MAX(E3:E7)."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E10.",
+        "2. Type =MAX(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D11",
+      "expected_formula": "=MIN(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D11 (MINIMUM row), find the lowest value in column D using =MIN(D3:D7).",
+      "instruction": "In cell D11 (MINIMUM row), find the lowest value in column D using =MIN(D3:D7).",
+      "tasks": [
+        "In cell D11 (MINIMUM row), find the lowest value in column D using =MIN(D3:D7)."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D11.",
+        "2. Type =MIN(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:F7",
+      "expected_formula": "",
+      "expected_action": "number-format",
+      "title": "Format the numeric values in range D3:F7 as Currency (₹) from the Number group.",
+      "instruction": "Format the numeric values in range D3:F7 as Currency (₹) from the Number group.",
+      "tasks": [
+        "Format the numeric values in range D3:F7 as Currency (₹) from the Number group."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:F7.",
+        "2. Click HOME -> Number -> Currency (₹)."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A1",
+      "expected_formula": "",
+      "expected_action": "merge",
+      "title": "Apply 'Merge & Center', Underline, and change Font Color on the Report Title Banner in cell A1.",
+      "instruction": "Apply 'Merge & Center', Underline, and change Font Color on the Report Title Banner in cell A1.",
+      "tasks": [
+        "Apply 'Merge & Center', Underline, and change Font Color on the Report Title Banner in cell A1."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell A1.",
+        "2. Click HOME -> Merge & Center, Underline, and Font Color."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "G5",
+      "expected_formula": "=D5*5%",
+      "expected_action": "formula",
+      "title": "In cell G5, calculate 5% Penalty on D5 using the formula =D5*5%.",
+      "instruction": "In cell G5, calculate 5% Penalty on D5 using the formula =D5*5%.",
+      "tasks": [
+        "In cell G5, calculate 5% Penalty on D5 using the formula =D5*5%."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell G5.",
+        "2. Type =D5*5% and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "H6",
+      "expected_formula": "=IF(D6>=30800,\"High\",\"Normal\")",
+      "expected_action": "formula",
+      "title": "In cell H6, use the IF formula: if D6 >= 30800, display \"High\", otherwise display \"Normal\".",
+      "instruction": "In cell H6, use the IF formula: if D6 >= 30800, display \"High\", otherwise display \"Normal\".",
+      "tasks": [
+        "In cell H6, use the IF formula: if D6 >= 30800, display \"High\", otherwise display \"Normal\"."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell H6.",
+        "2. Type =IF(D6>=30800,\"High\",\"Normal\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D12",
+      "expected_formula": "=COUNTIF(D3:D7,\">=30800\")",
+      "expected_action": "formula",
+      "title": "In cell D12, count how many records in D3:D7 have House Tax >= 30800 using =COUNTIF(D3:D7,\">=30800\").",
+      "instruction": "In cell D12, count how many records in D3:D7 have House Tax >= 30800 using =COUNTIF(D3:D7,\">=30800\").",
+      "tasks": [
+        "In cell D12, count how many records in D3:D7 have House Tax >= 30800 using =COUNTIF(D3:D7,\">=30800\")."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D12.",
+        "2. Type =COUNTIF(D3:D7,\">=30800\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E3:E7",
+      "expected_formula": "",
+      "expected_action": "conditional-format",
+      "title": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range E3:E7.",
+      "instruction": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range E3:E7.",
+      "tasks": [
+        "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range E3:E7."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select E3:E7.",
+        "2. Click HOME -> Conditional Formatting -> Highlight Cells Rules -> Greater Than."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_031-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "C2:C7",
+      "expected_formula": "",
+      "expected_action": "freeze-panes",
+      "title": "Apply 'Wrap Text' to C2:C7 and enable 'Freeze Panes' from the VIEW tab.",
+      "instruction": "Apply 'Wrap Text' to C2:C7 and enable 'Freeze Panes' from the VIEW tab.",
+      "tasks": [
+        "Apply 'Wrap Text' to C2:C7 and enable 'Freeze Panes' from the VIEW tab."
+      ],
+      "sheet_name": "Municipal_Tax",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "MUNICIPAL CORPORATION URBAN TAX ASSESSMENT SHEET (JALORE — SET #331)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ward ID",
+          "Zonal Officer",
+          "Zone Name",
+          "House Tax",
+          "Commercial Tax",
+          "Total Tax",
+          "Penalty (5%)",
+          "Bracket"
+        ],
+        [
+          "M1256",
+          "Rajeshwari Rathore",
+          "Urban Planning (Jalore)",
+          28800,
+          11520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1257",
+          "Bhanwar Lal Jat",
+          "Finance Cell (Jalore)",
+          35300,
+          14120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1258",
+          "Chetan Prakash",
+          "Policy Unit (Jalore)",
+          25300,
+          10120,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1259",
+          "Divya Shekhawat",
+          "Social Welfare (Jalore)",
+          39800,
+          15920,
+          "",
+          "",
+          ""
+        ],
+        [
+          "M1260",
+          "Gopal Krishna",
+          "Co-operative (Jalore)",
+          31300,
+          12520,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=30800)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select C2:C7 and click HOME -> Wrap Text.",
+        "2. Go to VIEW tab -> Freeze Panes."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "excel",
+    "language": "en",
+    "file_id": "EXCEL_EN_017",
+    "test_number": 17,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "master_dataset": [
+      [
+        "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Item Code",
+        "Medicine Name",
+        "Ward / Unit",
+        "Opening Stock",
+        "New Supply",
+        "Total Stock",
+        "Buffer Qty (5%)",
+        "Status"
+      ],
+      [
+        "R1186",
+        "Vikas Pareek",
+        "Treasury Unit (Tonk)",
+        37600,
+        15792,
+        "",
+        "",
+        ""
+      ],
+      [
+        "R1187",
+        "Meenakshi Soni",
+        "Revenue Cell (Tonk)",
+        44100,
+        18522,
+        "",
+        "",
+        ""
+      ],
+      [
+        "R1188",
+        "Gaurav Jain",
+        "IT & E-Gov (Tonk)",
+        34100,
+        14322,
+        "",
+        "",
+        ""
+      ],
+      [
+        "R1189",
+        "Aarti Kumawat",
+        "Education Wing (Tonk)",
+        48600,
+        20412,
+        "",
+        "",
+        ""
+      ],
+      [
+        "R1190",
+        "Dinesh Gurjar",
+        "Health Cell (Tonk)",
+        40100,
+        16842,
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOTAL (SUM)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "AVERAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MAXIMUM (MAX)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MINIMUM (MIN)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "COUNT (>=39600)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "questions": [
+    {
+      "id": "EXCEL_EN_017-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:F7",
+      "expected_formula": "",
+      "expected_action": "number-format",
+      "title": "Format the numeric values in range D3:F7 as Currency (₹) from the Number group.",
+      "instruction": "Format the numeric values in range D3:F7 as Currency (₹) from the Number group.",
+      "tasks": [
+        "Format the numeric values in range D3:F7 as Currency (₹) from the Number group."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:F7.",
+        "2. Click HOME -> Number -> Currency (₹)."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A1",
+      "expected_formula": "",
+      "expected_action": "merge",
+      "title": "Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold.",
+      "instruction": "Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold.",
+      "tasks": [
+        "Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell A1.",
+        "2. Click HOME -> Merge & Center and Bold."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "G6",
+      "expected_formula": "=D6*5%",
+      "expected_action": "formula",
+      "title": "In cell G6, calculate 5% Buffer Qty on D6 using the formula =D6*5%.",
+      "instruction": "In cell G6, calculate 5% Buffer Qty on D6 using the formula =D6*5%.",
+      "tasks": [
+        "In cell G6, calculate 5% Buffer Qty on D6 using the formula =D6*5%."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell G6.",
+        "2. Type =D6*5% and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "H7",
+      "expected_formula": "=IF(D7>=39600,\"Grade-A\",\"Grade-B\")",
+      "expected_action": "formula",
+      "title": "In cell H7, use the IF formula: if D7 >= 39600, display \"Grade-A\", otherwise display \"Grade-B\".",
+      "instruction": "In cell H7, use the IF formula: if D7 >= 39600, display \"Grade-A\", otherwise display \"Grade-B\".",
+      "tasks": [
+        "In cell H7, use the IF formula: if D7 >= 39600, display \"Grade-A\", otherwise display \"Grade-B\"."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell H7.",
+        "2. Type =IF(D7>=39600,\"Grade-A\",\"Grade-B\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "italic",
+      "title": "Make the Column Header Row (Row 2: A2:H2) Italic, Underlined, and Center aligned.",
+      "instruction": "Make the Column Header Row (Row 2: A2:H2) Italic, Underlined, and Center aligned.",
+      "tasks": [
+        "Make the Column Header Row (Row 2: A2:H2) Italic, Underlined, and Center aligned."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select A2:H2.",
+        "2. Click HOME -> Italic (I), Underline (U), and Center align."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "C3:C7",
+      "expected_formula": "",
+      "expected_action": "center",
+      "title": "Center align the Department/Unit cells in Column C (C3:C7) and apply a light Fill Color.",
+      "instruction": "Center align the Department/Unit cells in Column C (C3:C7) and apply a light Fill Color.",
+      "tasks": [
+        "Center align the Department/Unit cells in Column C (C3:C7) and apply a light Fill Color."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select C3:C7.",
+        "2. Click HOME -> Center align and Fill Color."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:E7",
+      "expected_formula": "",
+      "expected_action": "border",
+      "title": "Apply 'All Borders' and Right Alignment to the numeric columns (Opening Stock & New Supply: D3:E7).",
+      "instruction": "Apply 'All Borders' and Right Alignment to the numeric columns (Opening Stock & New Supply: D3:E7).",
+      "tasks": [
+        "Apply 'All Borders' and Right Alignment to the numeric columns (Opening Stock & New Supply: D3:E7)."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:E7.",
+        "2. Click HOME -> Borders -> All Borders and Align Right."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "F5",
+      "expected_formula": "=SUM(D5:E5)",
+      "expected_action": "formula",
+      "title": "In cell F5, calculate Total Stock by adding Opening Stock and New Supply using =SUM(D5:E5).",
+      "instruction": "In cell F5, calculate Total Stock by adding Opening Stock and New Supply using =SUM(D5:E5).",
+      "tasks": [
+        "In cell F5, calculate Total Stock by adding Opening Stock and New Supply using =SUM(D5:E5)."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell F5.",
+        "2. Type =SUM(D5:E5) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E8",
+      "expected_formula": "=SUM(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E8 (TOTAL row), calculate the total of column E using =SUM(E3:E7).",
+      "instruction": "In cell E8 (TOTAL row), calculate the total of column E using =SUM(E3:E7).",
+      "tasks": [
+        "In cell E8 (TOTAL row), calculate the total of column E using =SUM(E3:E7)."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E8.",
+        "2. Type =SUM(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D9",
+      "expected_formula": "=AVERAGE(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D9 (AVERAGE row), calculate the average of column D using =AVERAGE(D3:D7).",
+      "instruction": "In cell D9 (AVERAGE row), calculate the average of column D using =AVERAGE(D3:D7).",
+      "tasks": [
+        "In cell D9 (AVERAGE row), calculate the average of column D using =AVERAGE(D3:D7)."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D9.",
+        "2. Type =AVERAGE(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D10",
+      "expected_formula": "=MAX(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7).",
+      "instruction": "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7).",
+      "tasks": [
+        "In cell D10 (MAXIMUM row), find the highest value in column D using =MAX(D3:D7)."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D10.",
+        "2. Type =MAX(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E11",
+      "expected_formula": "=MIN(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7).",
+      "instruction": "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7).",
+      "tasks": [
+        "In cell E11 (MINIMUM row), find the lowest value in column E using =MIN(E3:E7)."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E11.",
+        "2. Type =MIN(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D12",
+      "expected_formula": "=COUNTIF(D3:D7,\">=39600\")",
+      "expected_action": "formula",
+      "title": "In cell D12, count how many records in D3:D7 have Opening Stock >= 39600 using =COUNTIF(D3:D7,\">=39600\").",
+      "instruction": "In cell D12, count how many records in D3:D7 have Opening Stock >= 39600 using =COUNTIF(D3:D7,\">=39600\").",
+      "tasks": [
+        "In cell D12, count how many records in D3:D7 have Opening Stock >= 39600 using =COUNTIF(D3:D7,\">=39600\")."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D12.",
+        "2. Type =COUNTIF(D3:D7,\">=39600\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E3:E7",
+      "expected_formula": "",
+      "expected_action": "conditional-format",
+      "title": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range E3:E7.",
+      "instruction": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range E3:E7.",
+      "tasks": [
+        "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range E3:E7."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select E3:E7.",
+        "2. Click HOME -> Conditional Formatting -> Highlight Cells Rules -> Greater Than."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_017-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "C2:C7",
+      "expected_formula": "",
+      "expected_action": "freeze-panes",
+      "title": "Apply 'Wrap Text' to C2:C7 and enable 'Freeze Panes' from the VIEW tab.",
+      "instruction": "Apply 'Wrap Text' to C2:C7 and enable 'Freeze Panes' from the VIEW tab.",
+      "tasks": [
+        "Apply 'Wrap Text' to C2:C7 and enable 'Freeze Panes' from the VIEW tab."
+      ],
+      "sheet_name": "Medicine_Stock",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "DISTRICT HOSPITAL MEDICINE & SURGICAL STOCK LEDGER (TONK — SET #317)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Item Code",
+          "Medicine Name",
+          "Ward / Unit",
+          "Opening Stock",
+          "New Supply",
+          "Total Stock",
+          "Buffer Qty (5%)",
+          "Status"
+        ],
+        [
+          "R1186",
+          "Vikas Pareek",
+          "Treasury Unit (Tonk)",
+          37600,
+          15792,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1187",
+          "Meenakshi Soni",
+          "Revenue Cell (Tonk)",
+          44100,
+          18522,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1188",
+          "Gaurav Jain",
+          "IT & E-Gov (Tonk)",
+          34100,
+          14322,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1189",
+          "Aarti Kumawat",
+          "Education Wing (Tonk)",
+          48600,
+          20412,
+          "",
+          "",
+          ""
+        ],
+        [
+          "R1190",
+          "Dinesh Gurjar",
+          "Health Cell (Tonk)",
+          40100,
+          16842,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=39600)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select C2:C7 and click HOME -> Wrap Text.",
+        "2. Go to VIEW tab -> Freeze Panes."
+      ]
+    }
+  ]
+}

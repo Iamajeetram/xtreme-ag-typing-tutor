@@ -1,0 +1,2288 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "excel",
+    "language": "en",
+    "file_id": "EXCEL_EN_014",
+    "test_number": 14,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "master_dataset": [
+      [
+        "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Route ID",
+        "Depot Manager",
+        "Route Corridor",
+        "Express Fare",
+        "Ordinary Fare",
+        "Gross Fare",
+        "Incentive (15%)",
+        "Class"
+      ],
+      [
+        "D1171",
+        "Manish Khandelwal",
+        "Civil Works (Churu)",
+        35200,
+        17600,
+        "",
+        "",
+        ""
+      ],
+      [
+        "D1172",
+        "Sunita Rathore",
+        "Canal Division (Churu)",
+        41700,
+        20850,
+        "",
+        "",
+        ""
+      ],
+      [
+        "D1173",
+        "Ankit Garg",
+        "Transport Cell (Churu)",
+        31700,
+        15850,
+        "",
+        "",
+        ""
+      ],
+      [
+        "D1174",
+        "Rekha Joshi",
+        "Mandi Board (Churu)",
+        46200,
+        23100,
+        "",
+        "",
+        ""
+      ],
+      [
+        "D1175",
+        "Mahendra Bishnoi",
+        "Panchayat Wing (Churu)",
+        37700,
+        18850,
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOTAL (SUM)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "AVERAGE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MAXIMUM (MAX)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "MINIMUM (MIN)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "COUNT (>=37200)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "questions": [
+    {
+      "id": "EXCEL_EN_014-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E9",
+      "expected_formula": "=AVERAGE(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7).",
+      "instruction": "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7).",
+      "tasks": [
+        "In cell E9 (AVERAGE row), calculate the average of column E using =AVERAGE(E3:E7)."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E9.",
+        "2. Type =AVERAGE(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "E10",
+      "expected_formula": "=MAX(E3:E7)",
+      "expected_action": "formula",
+      "title": "In cell E10 (MAXIMUM row), find the highest value in column E using =MAX(E3:E7).",
+      "instruction": "In cell E10 (MAXIMUM row), find the highest value in column E using =MAX(E3:E7).",
+      "tasks": [
+        "In cell E10 (MAXIMUM row), find the highest value in column E using =MAX(E3:E7)."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell E10.",
+        "2. Type =MAX(E3:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D11",
+      "expected_formula": "=MIN(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D11 (MINIMUM row), find the lowest value in column D using =MIN(D3:D7).",
+      "instruction": "In cell D11 (MINIMUM row), find the lowest value in column D using =MIN(D3:D7).",
+      "tasks": [
+        "In cell D11 (MINIMUM row), find the lowest value in column D using =MIN(D3:D7)."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D11.",
+        "2. Type =MIN(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:E7",
+      "expected_formula": "",
+      "expected_action": "number-format",
+      "title": "Format the numeric values in range D3:E7 as Currency (₹) from the Number group.",
+      "instruction": "Format the numeric values in range D3:E7 as Currency (₹) from the Number group.",
+      "tasks": [
+        "Format the numeric values in range D3:E7 as Currency (₹) from the Number group."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:E7.",
+        "2. Click HOME -> Number -> Currency (₹)."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A1",
+      "expected_formula": "",
+      "expected_action": "merge",
+      "title": "Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold.",
+      "instruction": "Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold.",
+      "tasks": [
+        "Select the Report Title Banner in cell A1 and apply 'Merge & Center' and Bold."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell A1.",
+        "2. Click HOME -> Merge & Center and Bold."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "G3",
+      "expected_formula": "=D3*15%",
+      "expected_action": "formula",
+      "title": "In cell G3, calculate 15% Incentive on D3 using the formula =D3*15%.",
+      "instruction": "In cell G3, calculate 15% Incentive on D3 using the formula =D3*15%.",
+      "tasks": [
+        "In cell G3, calculate 15% Incentive on D3 using the formula =D3*15%."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell G3.",
+        "2. Type =D3*15% and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "H4",
+      "expected_formula": "=IF(D4>=37200,\"Approved\",\"Review\")",
+      "expected_action": "formula",
+      "title": "In cell H4, use the IF formula: if D4 >= 37200, display \"Approved\", otherwise display \"Review\".",
+      "instruction": "In cell H4, use the IF formula: if D4 >= 37200, display \"Approved\", otherwise display \"Review\".",
+      "tasks": [
+        "In cell H4, use the IF formula: if D4 >= 37200, display \"Approved\", otherwise display \"Review\"."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell H4.",
+        "2. Type =IF(D4>=37200,\"Approved\",\"Review\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "font-color",
+      "title": "Change the Font Color of the Column Header Row (A2:H2), make it Bold, and set Font Size to 12.",
+      "instruction": "Change the Font Color of the Column Header Row (A2:H2), make it Bold, and set Font Size to 12.",
+      "tasks": [
+        "Change the Font Color of the Column Header Row (A2:H2), make it Bold, and set Font Size to 12."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select A2:H2.",
+        "2. Click HOME -> Font Color, Bold, and Font Size '12'."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A3:A7",
+      "expected_formula": "",
+      "expected_action": "justifyRight",
+      "title": "Right align the ID codes in Column A (A3:A7) and Underline them.",
+      "instruction": "Right align the ID codes in Column A (A3:A7) and Underline them.",
+      "tasks": [
+        "Right align the ID codes in Column A (A3:A7) and Underline them."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select A3:A7.",
+        "2. Click HOME -> Align Right and Underline."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:E7",
+      "expected_formula": "",
+      "expected_action": "border",
+      "title": "Apply 'All Borders' and Right Alignment to the numeric columns (Express Fare & Ordinary Fare: D3:E7).",
+      "instruction": "Apply 'All Borders' and Right Alignment to the numeric columns (Express Fare & Ordinary Fare: D3:E7).",
+      "tasks": [
+        "Apply 'All Borders' and Right Alignment to the numeric columns (Express Fare & Ordinary Fare: D3:E7)."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:E7.",
+        "2. Click HOME -> Borders -> All Borders and Align Right."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "F7",
+      "expected_formula": "=SUM(D7:E7)",
+      "expected_action": "formula",
+      "title": "In cell F7, calculate Gross Fare by adding Express Fare and Ordinary Fare using =SUM(D7:E7).",
+      "instruction": "In cell F7, calculate Gross Fare by adding Express Fare and Ordinary Fare using =SUM(D7:E7).",
+      "tasks": [
+        "In cell F7, calculate Gross Fare by adding Express Fare and Ordinary Fare using =SUM(D7:E7)."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell F7.",
+        "2. Type =SUM(D7:E7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D8",
+      "expected_formula": "=SUM(D3:D7)",
+      "expected_action": "formula",
+      "title": "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7).",
+      "instruction": "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7).",
+      "tasks": [
+        "In cell D8 (TOTAL row), calculate the total of column D using =SUM(D3:D7)."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D8.",
+        "2. Type =SUM(D3:D7) and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D12",
+      "expected_formula": "=COUNTIF(D3:D7,\">=37200\")",
+      "expected_action": "formula",
+      "title": "In cell D12, count how many records in D3:D7 have Express Fare >= 37200 using =COUNTIF(D3:D7,\">=37200\").",
+      "instruction": "In cell D12, count how many records in D3:D7 have Express Fare >= 37200 using =COUNTIF(D3:D7,\">=37200\").",
+      "tasks": [
+        "In cell D12, count how many records in D3:D7 have Express Fare >= 37200 using =COUNTIF(D3:D7,\">=37200\")."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Click cell D12.",
+        "2. Type =COUNTIF(D3:D7,\">=37200\") and press Enter."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "D3:D7",
+      "expected_formula": "",
+      "expected_action": "conditional-format",
+      "title": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7.",
+      "instruction": "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7.",
+      "tasks": [
+        "Apply Conditional Formatting ('Highlight Cells Rules -> Greater Than') to the range D3:D7."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Drag-select D3:D7.",
+        "2. Click HOME -> Conditional Formatting -> Highlight Cells Rules -> Greater Than."
+      ]
+    },
+    {
+      "id": "EXCEL_EN_014-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_excel",
+      "target_cells": "A2:H2",
+      "expected_formula": "",
+      "expected_action": "freeze-panes",
+      "title": "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab.",
+      "instruction": "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab.",
+      "tasks": [
+        "Apply 'Wrap Text' to A2:H2 and enable 'Freeze Panes' from the VIEW tab."
+      ],
+      "sheet_name": "Depot_Revenue",
+      "dataset_range": "A1:H12",
+      "dataset": [
+        [
+          "RSRTC ROADWAYS DEPOT ROUTE COLLECTION REGISTER (CHURU — SET #314)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Route ID",
+          "Depot Manager",
+          "Route Corridor",
+          "Express Fare",
+          "Ordinary Fare",
+          "Gross Fare",
+          "Incentive (15%)",
+          "Class"
+        ],
+        [
+          "D1171",
+          "Manish Khandelwal",
+          "Civil Works (Churu)",
+          35200,
+          17600,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1172",
+          "Sunita Rathore",
+          "Canal Division (Churu)",
+          41700,
+          20850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1173",
+          "Ankit Garg",
+          "Transport Cell (Churu)",
+          31700,
+          15850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1174",
+          "Rekha Joshi",
+          "Mandi Board (Churu)",
+          46200,
+          23100,
+          "",
+          "",
+          ""
+        ],
+        [
+          "D1175",
+          "Mahendra Bishnoi",
+          "Panchayat Wing (Churu)",
+          37700,
+          18850,
+          "",
+          "",
+          ""
+        ],
+        [
+          "TOTAL (SUM)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "AVERAGE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MAXIMUM (MAX)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MINIMUM (MIN)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "COUNT (>=37200)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "solution_steps": [
+        "1. Select A2:H2 and click HOME -> Wrap Text.",
+        "2. Go to VIEW tab -> Freeze Panes."
+      ]
+    }
+  ]
+}

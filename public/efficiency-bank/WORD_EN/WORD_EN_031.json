@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "project": "AG Typing Tutor",
+    "developer": "Xtreme AG Apps",
+    "exam_focus": "Rajasthan RSSB LDC & Rajasthan High Court LDC",
+    "module": "word",
+    "language": "en",
+    "file_id": "WORD_EN_031",
+    "test_number": 31,
+    "duration_minutes": 10,
+    "full_marks": 50,
+    "question_count": 15,
+    "difficulty_breakdown": {
+      "Easy": 3,
+      "Medium": 7,
+      "Hard": 5
+    },
+    "document_structure": {
+      "doc_type": "GAZETTE NOTIFICATION",
+      "org_name": "Municipal Corporation Administrative Wing, Kota",
+      "date_line": "Date: 24 November 2025 (Ref No: RAJ/231)",
+      "subject_line": "Subject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)",
+      "para1": "All concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.",
+      "para2": "During the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.",
+      "para3": "Strict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.",
+      "events_list": "Key Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.",
+      "sign_role": "Additional District Collector",
+      "sign_name": "Neeraj Kumar Verma",
+      "table": [
+        [
+          "Sr. No.",
+          "Branch / Section Name",
+          "Allocated Files",
+          "Current Status"
+        ],
+        [
+          "01",
+          "Establishment Wing (Kota)",
+          "377",
+          "monthly"
+        ],
+        [
+          "02",
+          "Accounts & Audit Cell",
+          "473",
+          "Verified"
+        ],
+        [
+          "03",
+          "Record & Dispatch Room",
+          "271",
+          "Completed"
+        ]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "WORD_EN_031-Q01",
+      "question_number": 1,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "events_list",
+      "expected_action": "bullets",
+      "title": "Apply a Bulleted List (•), Italic, and Yellow Highlight to the Key Action Points line ('Key Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.').",
+      "instruction": "Apply a Bulleted List (•), Italic, and Yellow Highlight to the Key Action Points line ('Key Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.').",
+      "tasks": [
+        "Apply a Bulleted List (•), Italic, and Yellow Highlight to the Key Action Points line ('Key Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.')."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Select the Key Action Points line.",
+        "2. Click Bullets (•), Italic, and Highlight."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q02",
+      "question_number": 2,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "sign_role",
+      "expected_action": "justifyRight",
+      "title": "Right align the Signatory Designation ('Additional District Collector') and Name ('Neeraj Kumar Verma') and make them Bold.",
+      "instruction": "Right align the Signatory Designation ('Additional District Collector') and Name ('Neeraj Kumar Verma') and make them Bold.",
+      "tasks": [
+        "Right align the Signatory Designation ('Additional District Collector') and Name ('Neeraj Kumar Verma') and make them Bold."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Select the signatory lines.",
+        "2. Click Align Right and Bold."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q03",
+      "question_number": 3,
+      "marks": 3.0,
+      "difficulty": "Easy",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "doc_type",
+      "expected_action": "font",
+      "title": "Make the top heading 'GAZETTE NOTIFICATION' Bold and Italic, and set its Font Size to 22 pt.",
+      "instruction": "Make the top heading 'GAZETTE NOTIFICATION' Bold and Italic, and set its Font Size to 22 pt.",
+      "tasks": [
+        "Make the top heading 'GAZETTE NOTIFICATION' Bold and Italic, and set its Font Size to 22 pt."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Select the first line.",
+        "2. Click Bold (B), Italic (I), and Font Size '22'."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q04",
+      "question_number": 4,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "org_name",
+      "expected_action": "shading",
+      "title": "Center align and Bold the Organization Name ('Municipal Corporation Administrative Wing, Kota') and apply Background Shading.",
+      "instruction": "Center align and Bold the Organization Name ('Municipal Corporation Administrative Wing, Kota') and apply Background Shading.",
+      "tasks": [
+        "Center align and Bold the Organization Name ('Municipal Corporation Administrative Wing, Kota') and apply Background Shading."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Select the second line.",
+        "2. Click Center align, Bold, and Shading."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q05",
+      "question_number": 5,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "date_line",
+      "expected_action": "justifyRight",
+      "title": "Right align the Date line ('Date: 24 November 2025 (Ref No: RAJ/231)') and make it Italic.",
+      "instruction": "Right align the Date line ('Date: 24 November 2025 (Ref No: RAJ/231)') and make it Italic.",
+      "tasks": [
+        "Right align the Date line ('Date: 24 November 2025 (Ref No: RAJ/231)') and make it Italic."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Select the date line.",
+        "2. Click Align Right and Italic (I)."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q06",
+      "question_number": 6,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "subject_line",
+      "expected_action": "center",
+      "title": "Center align and Underline the Subject line ('Subject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)') and set its Font Size to 14 pt.",
+      "instruction": "Center align and Underline the Subject line ('Subject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)') and set its Font Size to 14 pt.",
+      "tasks": [
+        "Center align and Underline the Subject line ('Subject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)') and set its Font Size to 14 pt."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Select the subject line.",
+        "2. Click Center align, Underline, and Font Size '14'."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q07",
+      "question_number": 7,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "line-spacing",
+      "title": "Justify the First Paragraph and set its Line Spacing to 2.5 lines.",
+      "instruction": "Justify the First Paragraph and set its Line Spacing to 2.5 lines.",
+      "tasks": [
+        "Justify the First Paragraph and set its Line Spacing to 2.5 lines."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Click inside the First Paragraph.",
+        "2. Click Justify and select Line Spacing '2.5'."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q08",
+      "question_number": 8,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "indent",
+      "title": "Apply a First-Line Indent of 1.0 inches to the First Paragraph and set its font to 'Verdana'.",
+      "instruction": "Apply a First-Line Indent of 1.0 inches to the First Paragraph and set its font to 'Verdana'.",
+      "tasks": [
+        "Apply a First-Line Indent of 1.0 inches to the First Paragraph and set its font to 'Verdana'."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Click inside the First Paragraph.",
+        "2. Apply First Line Indent (1.0\") and Font 'Verdana'."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q09",
+      "question_number": 9,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para2",
+      "expected_action": "indent",
+      "title": "Justify the Second Paragraph and apply a First-Line Indent of 1.0 inches.",
+      "instruction": "Justify the Second Paragraph and apply a First-Line Indent of 1.0 inches.",
+      "tasks": [
+        "Justify the Second Paragraph and apply a First-Line Indent of 1.0 inches."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Click inside the Second Paragraph.",
+        "2. Click Justify and First Line Indent (1.0\")."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q10",
+      "question_number": 10,
+      "marks": 3.5,
+      "difficulty": "Medium",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para2",
+      "expected_action": "border",
+      "title": "Apply light Background Shading and an Outside Border to the Second Paragraph.",
+      "instruction": "Apply light Background Shading and an Outside Border to the Second Paragraph.",
+      "tasks": [
+        "Apply light Background Shading and an Outside Border to the Second Paragraph."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Click inside the Second Paragraph.",
+        "2. Apply Shading and Outside Borders."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q11",
+      "question_number": 11,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para3",
+      "expected_action": "hanging-indent",
+      "title": "Justify the Third Paragraph and apply a Hanging Indent of 0.5 inches.",
+      "instruction": "Justify the Third Paragraph and apply a Hanging Indent of 0.5 inches.",
+      "tasks": [
+        "Justify the Third Paragraph and apply a Hanging Indent of 0.5 inches."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Click inside the Third Paragraph.",
+        "2. Click Justify and Hanging Indent (0.5\")."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q12",
+      "question_number": 12,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "document",
+      "expected_action": "watermark",
+      "title": "Insert an Official Footer & Page Number, and apply a Page Border and 'CONFIDENTIAL' Watermark to the document.",
+      "instruction": "Insert an Official Footer & Page Number, and apply a Page Border and 'CONFIDENTIAL' Watermark to the document.",
+      "tasks": [
+        "Insert an Official Footer & Page Number, and apply a Page Border and 'CONFIDENTIAL' Watermark to the document."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Go to INSERT -> Header/Footer and Page Number.",
+        "2. Go to DESIGN -> Watermark (and Page Border)."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q13",
+      "question_number": 13,
+      "marks": 3.5,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "para1",
+      "expected_action": "find-replace",
+      "title": "Use Find & Replace to replace all occurrences of the word 'monthly' with 'fortnightly' in the document.",
+      "instruction": "Use Find & Replace to replace all occurrences of the word 'monthly' with 'fortnightly' in the document.",
+      "tasks": [
+        "Use Find & Replace to replace all occurrences of the word 'monthly' with 'fortnightly' in the document."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Click HOME -> Replace.",
+        "2. Enter 'monthly' in Find what and 'fortnightly' in Replace with, then click OK."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q14",
+      "question_number": 14,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "document",
+      "expected_action": "margins",
+      "title": "Set the document Page Margins to 'Normal' and Page Orientation to 'Portrait'.",
+      "instruction": "Set the document Page Margins to 'Normal' and Page Orientation to 'Portrait'.",
+      "tasks": [
+        "Set the document Page Margins to 'Normal' and Page Orientation to 'Portrait'."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Go to PAGE LAYOUT -> Margins -> 'Normal'.",
+        "2. Click Orientation -> 'Portrait'."
+      ]
+    },
+    {
+      "id": "WORD_EN_031-Q15",
+      "question_number": 15,
+      "marks": 3.0,
+      "difficulty": "Hard",
+      "category": "rssb_hc_ldc_word",
+      "target_part": "table",
+      "expected_action": "center",
+      "title": "In the Reference Table at the bottom, make the Table Header row Bold, Center aligned, and apply Shading.",
+      "instruction": "In the Reference Table at the bottom, make the Table Header row Bold, Center aligned, and apply Shading.",
+      "tasks": [
+        "In the Reference Table at the bottom, make the Table Header row Bold, Center aligned, and apply Shading."
+      ],
+      "source_content": "GAZETTE NOTIFICATION\nMunicipal Corporation Administrative Wing, Kota\nDate: 24 November 2025 (Ref No: RAJ/231)\nSubject: Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates (Phase-4)\nAll concerned branch officers and ministerial staff of Kota division are hereby informed that under 'Compliance of Annual Statutory Audit Paragraphs and Budget Utilization Certificates', a comprehensive verification drive will be conducted on 9 November in the central monthly wing. Every section head must submit the verified statement (Code #331) on time.\nDuring the recent quarterly review at Kota, it was observed that certain units have not updated their daily dispatch schedules and monthly movement logs. Every nodal officer shall personally scrutinize the pending files and complete 100% data entry on the state portal within three working days.\nStrict adherence to official documentation standards, paragraph indentation, margin alignment, and archival indexing rules is mandatory across all subordinate offices. Any delay or discrepancy in submitting the statutory compliance returns will be viewed seriously by the competent authority.\nKey Action Points: 1. File Audit (Kota), 2. Budget Reconciliation #141, 3. Digital Indexing.\nAdditional District Collector\nNeeraj Kumar Verma",
+      "solution_steps": [
+        "1. Select the first row of the table.",
+        "2. Apply Bold, Center alignment, and Shading."
+      ]
+    }
+  ]
+}
