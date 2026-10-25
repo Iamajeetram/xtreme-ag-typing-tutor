@@ -6,4 +6,4 @@
 .learn-whatsapp-support:hover { transform:translateY(-1px); box-shadow:0 8px 22px rgba(37,211,102,.32); }
 .learn-whatsapp-support svg { width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
 .learn-whatsapp-support svg path:last-child { fill:currentColor; stroke:none; }
-@media(max-width:760px) { .learn-brand-logo { width:34px; height:34px; } .learn-whatsapp-support { width:42px; min-width:42px; padding:0; } .learn-whatsapp-support span { display:none; } .learn-whatsapp-support svg { width:23px; height:23px; } .learn-topbar-actions { gap:6px; } }
+@media(max-width:760px) { .learn-brand-logo { width:34px; height:34px; } .learn-whatsapp-support { width:42px; min-width:42px; padding:0; } .learn-whatsapp-support span { display:inline-block !important; } .learn-whatsapp-support svg { width:23px; height:23px; } .learn-topbar-actions { gap:6px; } }

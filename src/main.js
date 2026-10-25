@@ -8,8 +8,8 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.5.1';
-let APP_RUNTIME_INFO = { version: '1.5.1', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.5.2';
+let APP_RUNTIME_INFO = { version: '1.5.2', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 const GITHUB_REPO_CANDIDATES = [
@@ -208,7 +208,13 @@ function showUpdateModal(release, matchedAsset = null) {
     </div>
   `;
 
-  document.body.appendChild(modal);
+  document.body.appendChild(modal)
+  modal.querySelector('#typing-fullscreen-back')?.addEventListener('click', () => {
+    stopTypingTimer()
+    modal.remove()
+    document.querySelector('.practice-exercise-sidebar')?.classList.remove('is-hidden-during-test')
+    renderSection(selectedPracticeLanguage === 'hi' ? 'practice-hi' : 'practice-en')
+  });
 
   modal.querySelector('#ag-dismiss-update-btn')?.addEventListener('click', () => {
     modal.remove();
@@ -524,6 +530,22 @@ function applyDevLysKeystrokeToText(currentText, rawKey, shiftKey = false, targe
   return nextText;
 }
 
+function fastUpdateTextareaValue(inputEl, nextVal) {
+  if (!inputEl) return;
+  const oldVal = inputEl.value;
+  if (oldVal === nextVal) return;
+  let common = 0;
+  const minLen = Math.min(oldVal.length, nextVal.length);
+  while (common < minLen && oldVal.charCodeAt(common) === nextVal.charCodeAt(common)) {
+    common++;
+  }
+  try {
+    inputEl.setRangeText(nextVal.slice(common), common, oldVal.length, 'end');
+  } catch {
+    inputEl.value = nextVal;
+  }
+}
+
 function sanitizeTrailingAsciiInHindiBox(inputEl, targetPassage = '') {
   if (!inputEl) return;
   const rawVal = inputEl.value;
@@ -534,7 +556,7 @@ function sanitizeTrailingAsciiInHindiBox(inputEl, targetPassage = '') {
     const isShift = (lastChar !== lastChar.toLowerCase() && lastChar === lastChar.toUpperCase()) || '~!@#$%^&*()_+{}|:"<>?'.includes(lastChar);
     const converted = applyDevLysKeystrokeToText(prefix, lastChar, isShift, targetPassage);
     if (converted !== null) {
-      inputEl.value = converted;
+      fastUpdateTextareaValue(inputEl, converted);
     }
   }
 }
@@ -620,23 +642,49 @@ function calculateTypingStats(value, elapsedSeconds) {
 }
 
 let _liveTypingRafId = null;
+let _idleAlignTimerId = null;
+let _cachedPassageForTotalWords = '';
+let _cachedTotalWordsCount = 0;
 
-function buildActiveWordCharSpans(wordText, typedStr, status, isActiveUntyped) {
-  if (!practiceOptions.textHighlight) return escapeHtml(wordText);
-  const typedChars = [...String(typedStr || '')];
-  return [...wordText].map((char, offset) => {
-    let charClass = 'typing-char';
-    if (status === 'in-progress') {
-      if (offset < typedChars.length) {
-        charClass += typedChars[offset] === char ? ' correct' : ' incorrect';
-      } else if (offset === typedChars.length) {
-        charClass += ' current';
-      }
-    } else if (isActiveUntyped && offset === 0) {
-      charClass += ' current';
+function getTotalWordsCached(passage) {
+  if (passage !== _cachedPassageForTotalWords) {
+    _cachedPassageForTotalWords = passage;
+    _cachedTotalWordsCount = (String(passage || '').trim().match(/\S+/g) || []).length;
+  }
+  return _cachedTotalWordsCount;
+}
+
+function fastHighlightActiveWordOnly(rawVal) {
+  const target = document.querySelector('#typing-passage');
+  if (!target || !target._wordNodes || !target._wordsList) {
+    const wa = renderTypingPassage(rawVal);
+    updateTypingStats(wa);
+    return;
+  }
+  const activeIdx = target._prevActiveIdx;
+  if (activeIdx < 0 || activeIdx >= target._wordNodes.length) return;
+  const node = target._wordNodes[activeIdx];
+  const wordObj = target._wordsList[activeIdx];
+  if (!node || !wordObj) return;
+
+  const cleanVal = String(rawVal ?? '').replace(/\u200B/g, '');
+  const lastSpace = cleanVal.search(/\s+\S*$/);
+  const currentToken = lastSpace >= 0 ? cleanVal.slice(lastSpace).trimStart() : cleanVal.trimStart();
+
+  let nextClass = 'typing-word';
+  if (practiceOptions.wordHighlight || practiceOptions.textHighlight) {
+    if (!currentToken) {
+      nextClass += ' word-current-target';
+    } else if (wordObj.text.startsWith(currentToken)) {
+      nextClass += ' word-in-progress';
+    } else {
+      nextClass += ' word-incorrect';
     }
-    return `<span class="${charClass}">${escapeHtml(char)}</span>`;
-  }).join('');
+  }
+  if (target._wordStates[activeIdx] !== nextClass) {
+    node.className = nextClass;
+    target._wordStates[activeIdx] = nextClass;
+  }
 }
 
 function renderTypingPassage(value, precomputedWordAnalysis = null) {
@@ -647,7 +695,7 @@ function renderTypingPassage(value, precomputedWordAnalysis = null) {
 
   const optsSig = `${practiceOptions.wordHighlight ? 1 : 0}-${practiceOptions.textHighlight ? 1 : 0}`;
 
-  // Build initial word DOM nodes ONCE per passage (never destroy/recreate 5,000+ nodes on every keystroke!)
+  // Build initial word DOM nodes ONCE per passage (never destroy/recreate nodes on keystrokes!)
   if (target._renderedPassage !== typingPassage || target._renderedOpts !== optsSig || !target._wordNodes) {
     const wordByStart = new Map(wordAnalysis.words.map((w) => [w.start, w]));
     const tokens = [...typingPassage.matchAll(/\S+|\s+/g)];
@@ -674,18 +722,9 @@ function renderTypingPassage(value, precomputedWordAnalysis = null) {
   const wordNodes = target._wordNodes;
   const wordStates = target._wordStates;
   const words = wordAnalysis.words;
+  target._wordsList = words;
   const activeIdx = wordAnalysis.activeWordIndex;
-  const isHiPassage = /[\u0900-\u097F]/.test(typingPassage);
-
-  // Restore previous active word back to plain textContent if it had per-character spans
-  if (target._prevActiveIdx >= 0 && target._prevActiveIdx !== activeIdx && wordNodes[target._prevActiveIdx] && words[target._prevActiveIdx]) {
-    const prevNode = wordNodes[target._prevActiveIdx];
-    if (prevNode._hasCharSpans) {
-      prevNode.textContent = words[target._prevActiveIdx].text;
-      prevNode._hasCharSpans = false;
-    }
-    wordStates[target._prevActiveIdx] = '';
-  }
+  const activeChanged = (target._prevActiveIdx !== activeIdx);
 
   for (let i = 0; i < words.length; i++) {
     const w = words[i];
@@ -698,34 +737,29 @@ function renderTypingPassage(value, precomputedWordAnalysis = null) {
     if (practiceOptions.wordHighlight || practiceOptions.textHighlight) {
       if (status === 'correct') nextClass += ' word-correct';
       else if (status === 'wrong' || status === 'omitted') nextClass += ' word-incorrect';
-      else if (status === 'in-progress' || (isActiveUntyped && cleanValue.length > 0)) nextClass += ' word-in-progress';
-      else if (isActiveUntyped) nextClass += ' word-current-target';
+      else if (status === 'in-progress') {
+        nextClass += w.text.startsWith(w.typed || '') ? ' word-in-progress' : ' word-incorrect';
+      } else if (isActiveUntyped && cleanValue.length > 0) {
+        nextClass += ' word-current-target';
+      } else if (isActiveUntyped) {
+        nextClass += ' word-current-target';
+      }
     }
 
     if (wordStates[i] !== nextClass) {
       node.className = nextClass;
       wordStates[i] = nextClass;
-      if (node._hasCharSpans && i !== activeIdx) {
-        node.textContent = w.text;
-        node._hasCharSpans = false;
-      }
-    }
-
-    // For English active word in progress, optionally highlight typed chars inside ONLY this single word
-    if (!isHiPassage && practiceOptions.textHighlight && (status === 'in-progress' || (isActiveUntyped && cleanValue.length === 0))) {
-      node.innerHTML = buildActiveWordCharSpans(w.text, w.typed, status, isActiveUntyped);
-      node._hasCharSpans = true;
     }
   }
 
   target._prevActiveIdx = activeIdx;
 
-  // Smooth auto-scroll active word into view without layout thrashing
-  const activeNode = activeIdx >= 0 ? wordNodes[activeIdx] : null;
-  if (activeNode && target.scrollHeight > target.clientHeight) {
+  // Only check scroll when active word index actually changes (prevents layout reflow during typing)
+  if (activeChanged && activeIdx >= 0 && wordNodes[activeIdx]) {
+    const activeNode = wordNodes[activeIdx];
     const topPos = activeNode.offsetTop - target.offsetTop;
-    const desiredScroll = Math.max(0, topPos - target.clientHeight * 0.38);
-    if (Math.abs(target.scrollTop - desiredScroll) > 32) {
+    const desiredScroll = Math.max(0, topPos - 70);
+    if (Math.abs(target.scrollTop - desiredScroll) > 36) {
       target.scrollTop = desiredScroll;
     }
   }
@@ -743,10 +777,10 @@ function stopTypingTimer() {
 
 function countWords(value) { return (String(value || '').trim().match(/\S+/g) || []).length }
 
-function getSelectedNetWpm(stats, elapsedSeconds, typedText = typingInputValue, targetText = typingPassage) {
+function getSelectedNetWpm(stats, elapsedSeconds, typedText = typingInputValue, targetText = typingPassage, precomputedWordStats = null) {
   if (typingWpmMethod !== 'words') return Number(stats.netWpm ?? stats.wpm ?? 0)
   const minutes = Math.max(Number(elapsedSeconds || 0) / 60, 1 / 60)
-  const wordStats = analyzeWords(typedText, targetText)
+  const wordStats = precomputedWordStats || analyzeWords(typedText, targetText)
   return Math.round(wordStats.correctWords / minutes)
 }
 
@@ -915,7 +949,7 @@ function finishTypingTest() {
     document.body.appendChild(fallback)
     fallback.querySelector('#typing-fallback-close')?.addEventListener('click', () => fallback.remove())
     fallback.querySelector('#typing-fallback-print')?.addEventListener('click', () => window.print())
-    fallback.querySelector('#typing-fallback-practice')?.addEventListener('click', () => { fallback.remove(); document.querySelector('#typing-fullscreen')?.remove(); document.querySelector('.practice-exercise-sidebar')?.classList.remove('is-hidden-during-test'); renderSection('practice') })
+    fallback.querySelector('#typing-fallback-practice')?.addEventListener('click', () => { fallback.remove(); document.querySelector('#typing-fullscreen')?.remove(); document.querySelector('.practice-exercise-sidebar')?.classList.remove('is-hidden-during-test'); renderSection(selectedPracticeLanguage === 'hi' ? 'practice-hi' : 'practice-en') })
   }
   const status = document.querySelector('#typing-status')
   if (status) status.textContent = 'Test complete. Your detailed report is saved in My Performance.'
@@ -928,7 +962,7 @@ function showTypingReportPopup(result, stats) {
   overlay.className = 'typing-report-modal'
   overlay.innerHTML = `<section class="typing-report-dialog" role="dialog" aria-modal="true" aria-label="Typing test report"><header class="typing-report-modal-header"><div><span class="eyebrow">AG TYPING TUTOR BY XTREME AG APPS</span><h2>Typing test report</h2></div><div class="typing-report-toolbar"><button type="button" class="primary-button" id="typing-print"><span aria-hidden="true">▣</span> Print / Save PDF</button><button type="button" class="secondary-button" id="typing-export-csv">Export CSV</button><button type="button" class="secondary-button" id="typing-report-retry">↻ Retry this exercise</button><button type="button" class="secondary-button" id="typing-report-practice">⌂ Practice exercises</button><button type="button" class="secondary-button" id="typing-report-close">Return to practice</button></div></header><div class="typing-result report-watermark">${buildDetailedReportHTML(result, stats)}</div></section>`
   document.body.appendChild(overlay)
-  const close = () => { overlay.remove(); window.removeEventListener('keydown', onReportEscape); document.querySelector('#typing-fullscreen')?.remove(); document.querySelector('.practice-exercise-sidebar')?.classList.remove('is-hidden-during-test'); renderSection('practice') }
+  const close = () => { overlay.remove(); window.removeEventListener('keydown', onReportEscape); document.querySelector('#typing-fullscreen')?.remove(); document.querySelector('.practice-exercise-sidebar')?.classList.remove('is-hidden-during-test'); renderSection(selectedPracticeLanguage === 'hi' ? 'practice-hi' : 'practice-en') }
   overlay.querySelector('#typing-report-close')?.addEventListener('click', close)
   overlay.addEventListener('click', (event) => { if (event.target === overlay) close() })
   overlay.querySelector('#typing-print')?.addEventListener('click', () => { document.body.classList.add('printing-typing-report'); window.print() })
@@ -1014,11 +1048,11 @@ function updateTypingStats(precomputedWordAnalysis = null) {
   const correctWords = document.querySelector('#typing-correct-words')
   const totalWords = document.querySelector('#typing-total-words')
   if (correctWords) correctWords.textContent = String(wordStats.correctWords)
-  if (totalWords) totalWords.textContent = String((typingPassage.trim().match(/\S+/g) || []).length)
+  if (totalWords) totalWords.textContent = String(getTotalWordsCached(typingPassage))
   const gaugeNet = document.querySelector('#speedometer-net')
   const gaugeGross = document.querySelector('#speedometer-gross')
   const gaugeProgress = document.querySelector('#speedometer-progress')
-  const liveNetWpm = getSelectedNetWpm(stats, elapsed || 1)
+  const liveNetWpm = getSelectedNetWpm(stats, elapsed || 1, typingInputValue, typingPassage, wordStats)
   if (gaugeNet) gaugeNet.textContent = String(liveNetWpm)
   if (gaugeGross) gaugeGross.textContent = String(stats.grossWpm ?? stats.wpm ?? 0)
   if (gaugeProgress) { const pct = Math.max(0, Math.min(1, liveNetWpm / 60)); const length = 270.2; gaugeProgress.style.strokeDasharray = `${length * pct} ${length}` }
@@ -1036,7 +1070,7 @@ async function startTypingTest() {
   else {
     const parts = []
     let words = 0
-    const targetWords = Math.max(850, typingDuration * 35)
+    const targetWords = Math.max(180, (typingDuration || 1) * 70)
     const seenSentences = new Set()
     if (!selectedFirst.length) {
       if (status) status.textContent = 'Exercises are still loading. Please try again shortly.'
@@ -1115,7 +1149,7 @@ async function preparePracticePassageReady() {
   } else if (selectedFirst.length) {
     const parts = []
     let words = 0
-    const targetWords = Math.max(850, (typingDuration || 1) * 35)
+    const targetWords = Math.max(180, (typingDuration || 1) * 70)
     const seenSentences = new Set()
     try {
       for (const exercise of selectedFirst) {
@@ -1203,7 +1237,7 @@ function attachTypingEngine() {
         else typingDelayedBackspaces += 1
         if (input.value.endsWith('\u200Bि')) {
           event.preventDefault()
-          input.value = input.value.slice(0, -2)
+          fastUpdateTextareaValue(input, input.value.slice(0, -2))
           input.dispatchEvent(new Event('input', { bubbles: true }))
         }
       }
@@ -1211,14 +1245,14 @@ function attachTypingEngine() {
     }
     if (event.key === 'Delete') typingDeletePresses += 1
 
-    // Automatic Hindi DevLys 010 Remington Keymapping in Practice & Speed Test (0ms Direct Update)
+    // Automatic Hindi DevLys 010 Remington Keymapping in Practice & Speed Test (0ms Direct Range Update)
     const isHiMode = selectedPracticeLanguage === 'hi' || /[\u0900-\u097F]/.test(typingPassage || '')
     if (isHiMode && !event.ctrlKey && !event.metaKey && !event.altKey && event.key.length === 1 && event.key !== ' ') {
       const nextVal = applyDevLysKeystrokeToText(input.value, event.key, event.shiftKey, typingPassage)
       if (nextVal !== null) {
         event.preventDefault()
         input._devlysMapped = true
-        input.value = nextVal
+        fastUpdateTextareaValue(input, nextVal)
         input.dispatchEvent(new Event('input', { bubbles: true }))
         return
       }
@@ -1229,6 +1263,7 @@ function attachTypingEngine() {
     const started = typingKeyDownAt.get(key)
     if (started) { typingKeyHoldTotalMs += Math.max(0, Date.now() - started); typingKeyHoldSamples += 1; typingKeyDownAt.delete(key) }
   })
+  let _prevSpaceCount = 0
   input.addEventListener('input', () => {
     if (typingFinished || !typingPassage) return
     const isHiMode = selectedPracticeLanguage === 'hi' || /[\u0900-\u097F]/.test(typingPassage || '')
@@ -1236,7 +1271,8 @@ function attachTypingEngine() {
       sanitizeTrailingAsciiInHindiBox(input, typingPassage)
     }
     input._devlysMapped = false
-    typingInputValue = input.value.replace(/\u200B/g, '').slice(0, typingPassage.length)
+    const rawVal = input.value
+    typingInputValue = rawVal.indexOf('\u200B') >= 0 ? rawVal.replace(/\u200B/g, '').slice(0, typingPassage.length) : rawVal.slice(0, typingPassage.length)
     if (!typingStartedAt && typingInputValue.length) {
       typingStartedAt = Date.now()
       typingTimer = setInterval(() => {
@@ -1244,6 +1280,7 @@ function attachTypingEngine() {
         const maxAllowedSec = Math.max(1, Math.round((Number(typingDuration) || 10) * 60))
         const elapsedSeconds = Math.max(1, Math.min(maxAllowedSec, Math.floor((Date.now() - typingStartedAt) / 1000)))
         typingRemaining = Math.max(0, maxAllowedSec - elapsedSeconds)
+        const wa = renderTypingPassage(typingInputValue)
         if (elapsedSeconds % 5 === 0 && typingSpeedSamples.at(-1)?.second !== elapsedSeconds) {
           const snap = calculateTypingStats(typingInputValue, elapsedSeconds)
           const previousSample = typingSpeedSamples.at(-1)
@@ -1254,17 +1291,40 @@ function attachTypingEngine() {
           const intervalWpm = Math.round((intervalChars / 5) * (60 / intervalSeconds))
           typingSpeedSamples.push({ second: elapsedSeconds, chars: typingInputValue.length, netWpm: intervalWpm, accuracy: snap.accuracy })
         }
-        updateTypingStats()
+        updateTypingStats(wa)
         if (typingRemaining <= 0) finishTypingTest()
       }, 1000)
     }
     if (typingInputValue.length >= typingPassage.length) {
       if (_liveTypingRafId) { cancelAnimationFrame(_liveTypingRafId); _liveTypingRafId = null }
+      if (_idleAlignTimerId) { clearTimeout(_idleAlignTimerId); _idleAlignTimerId = null }
       const wa = renderTypingPassage(typingInputValue)
       updateTypingStats(wa)
       finishTypingTest()
       return
     }
+    // Check if word boundary (Space) changed; if not, do 0ms O(1) active-word check ONLY!
+    let spaceCount = 0
+    for (let i = 0; i < typingInputValue.length; i++) {
+      const c = typingInputValue.charCodeAt(i)
+      if (c === 32 || c === 10 || c === 9) spaceCount++
+    }
+    const isWordBoundary = (spaceCount !== _prevSpaceCount) || typingInputValue.endsWith(' ')
+    _prevSpaceCount = spaceCount
+
+    if (!isWordBoundary) {
+      fastHighlightActiveWordOnly(typingInputValue)
+      if (_idleAlignTimerId) clearTimeout(_idleAlignTimerId)
+      _idleAlignTimerId = setTimeout(() => {
+        _idleAlignTimerId = null
+        if (!typingFinished) {
+          const wa = renderTypingPassage(typingInputValue)
+          updateTypingStats(wa)
+        }
+      }, 220)
+      return
+    }
+
     if (!_liveTypingRafId) {
       _liveTypingRafId = requestAnimationFrame(() => {
         _liveTypingRafId = null
@@ -1436,7 +1496,26 @@ function buildOnlinePortalSidebarBtnHTML(isHi = false) {
   `;
 }
 
+function enforceWhatsAppNumberOnButtons() {
+  document.querySelectorAll('a[href*="wa.me"], .support-button, .learn-whatsapp-support, .ag-wa-pill-btn').forEach((el) => {
+    if (el.id === 'ag-whatsapp-support') return
+    const txt = (el.textContent || '').trim()
+    if (txt.includes('WhatsApp') && !txt.includes('7878025556')) {
+      const span = el.querySelector('span')
+      if (span) {
+        span.textContent = 'WhatsApp Support · 7878025556'
+        span.style.display = 'inline-block'
+      } else {
+        el.textContent = '💬 WhatsApp Support · 7878025556'
+      }
+    }
+  })
+}
+
 function ensureAgWhatsAppSupport() {
+  enforceWhatsAppNumberOnButtons()
+  setTimeout(enforceWhatsAppNumberOnButtons, 60)
+  setTimeout(enforceWhatsAppNumberOnButtons, 300)
   if (document.getElementById('ag-whatsapp-support')) return
   const link = document.createElement('a')
   link.id = 'ag-whatsapp-support'
@@ -1505,7 +1584,7 @@ function renderHome() {
           </div>
           <div class="topbar-actions topbar-only-three">
             ${themeButton()}
-            <a class="support-button topbar-pill-btn" href="https://wa.me/917878025556?text=Hello%20Xtreme%20AG%20Apps%2C%20I%20need%20support%20for%20AG%20Typing%20Tutor." target="_blank" rel="noreferrer">💬 WhatsApp Support · 7878025556</a>
+            <a class="ag-wa-pill-btn topbar-pill-btn" href="https://wa.me/917878025556?text=Hello%20Xtreme%20AG%20Apps%2C%20I%20need%20support%20for%20AG%20Typing%20Tutor." target="_blank" rel="noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg><span>WhatsApp Support · 7878025556</span></a>
             <button type="button" id="check-app-update-btn" class="topbar-update-pill-btn">🔄 Update</button>
           </div>
         </header>
@@ -1648,13 +1727,33 @@ function renderPracticeSidebar() {
 }
 
 function attachPracticeSidebar() {
-  document.querySelector('#practice-back-home')?.addEventListener('click', () => renderSection('home'))
-  document.querySelectorAll('[data-exercise-id]').forEach((button) => button.addEventListener('click', () => {
+  document.querySelector('#practice-back-home')?.addEventListener('click', (e) => {
+    e.preventDefault()
+    stopTypingTimer()
+    document.querySelector('#typing-fullscreen')?.remove()
+    renderSection('home')
+  })
+  document.querySelectorAll('[data-exercise-id]').forEach((button) => button.addEventListener('click', (e) => {
+    e.preventDefault()
+    const prevScroll = document.querySelector('.practice-exercise-list')?.scrollTop || 0
     selectedExerciseId = button.dataset.exerciseId
     customPassage = selectedExerciseId === 'custom-1' ? customPassage : ''
-    renderSection('practice')
+    typingPassage = ''
+    typingInputValue = ''
+    typingStartedAt = null
+    typingFinished = false
+    stopTypingTimer()
+    document.querySelector('#typing-fullscreen')?.remove()
+    const targetSec = selectedPracticeLanguage === 'hi' ? 'practice-hi' : 'practice-en'
+    renderSection(targetSec)
+    const listEl = document.querySelector('.practice-exercise-list')
+    if (listEl) listEl.scrollTop = prevScroll
+    setTimeout(() => {
+      document.querySelector('#typing-input')?.focus({ preventScroll: true })
+    }, 30)
   }))
-  document.querySelector('#practice-custom-top')?.addEventListener('click', () => {
+  document.querySelector('#practice-custom-top')?.addEventListener('click', (e) => {
+    e.preventDefault()
     const panel = document.querySelector('#custom-upload-panel')
     if (panel) panel.classList.toggle('custom-upload-open')
     if (panel?.classList.contains('custom-upload-open')) {
@@ -1679,7 +1778,7 @@ function openTypingFullscreen() {
   const modal = document.createElement('div')
   modal.id = 'typing-fullscreen'
   modal.className = 'typing-fullscreen'
-  modal.innerHTML = `<header class="typing-fullscreen-header"><div class="fullscreen-brand"><strong>AG Typing Tutor</strong><span id="fullscreen-exercise-title">${escapeHtml(customPassage ? 'Custom Upload · Exercise 1' : (practiceExerciseData.find(x => String(x.id) === String(selectedExerciseId))?.title || 'Typing Exercise'))}</span></div>
+  modal.innerHTML = `<header class="typing-fullscreen-header"><div class="fullscreen-brand"><div style="display:flex;align-items:center;gap:10px;"><button type="button" id="typing-fullscreen-back" class="secondary-button" style="padding:5px 11px;font-size:12.5px;font-weight:800;border-radius:8px;cursor:pointer;">← Back</button><strong>AG Typing Tutor</strong></div><span id="fullscreen-exercise-title">${escapeHtml(customPassage ? 'Custom Upload · Exercise 1' : (practiceExerciseData.find(x => String(x.id) === String(selectedExerciseId))?.title || 'Typing Exercise'))}</span></div>
     <div class="fullscreen-options">
       <label><input type="checkbox" data-practice-option="backspace" ${practiceOptions.backspace ? 'checked' : ''}> Allow Backspace</label>
       <label><input type="checkbox" data-practice-option="textHighlight" ${practiceOptions.textHighlight ? 'checked' : ''}> Text highlight</label>
@@ -1690,6 +1789,12 @@ function openTypingFullscreen() {
       <div class="typing-font-controls" role="group" aria-label="Passage font size"><span>Text size</span><button type="button" id="typing-font-decrease" aria-label="Decrease passage font size">A−</button><button type="button" id="typing-font-increase" aria-label="Increase passage font size">A+</button></div><label class="typing-method-control"><span>WPM method</span><select id="typing-wpm-method"><option value="standard" ${typingWpmMethod === 'standard' ? 'selected' : ''}>5-char standard</option><option value="words" ${typingWpmMethod === 'words' ? 'selected' : ''}>Word-based</option></select></label><label class="typing-target-control"><span>Target WPM</span><input id="typing-target-wpm" type="number" min="0" max="250" step="1" value="${typingTargetWpm}" aria-label="Target typing speed"></label><strong class="fullscreen-countdown" id="fullscreen-countdown">${Math.floor(typingRemaining / 60)}:${String(typingRemaining % 60).padStart(2, '0')}</strong></div></header>
       <main class="typing-fullscreen-main"><section class="typing-fullscreen-workarea"><div class="typing-fullscreen-dashboard"><div class="typing-main-column"><div id="typing-fullscreen-passage"></div><div id="typing-fullscreen-card"></div></div><aside class="typing-right-panel"><h3>Live performance</h3><div class="speedometer-card"><svg class="speedometer-svg" viewBox="0 0 220 135" role="img" aria-label="Live net typing speed"><path class="speedometer-track" d="M 34 116 A 86 86 0 0 1 206 116"/><path id="speedometer-progress" class="speedometer-progress" d="M 34 116 A 86 86 0 0 1 206 116"/><g class="speedometer-ticks"><text x="27" y="119">0</text><text x="43" y="77">10</text><text x="72" y="43">20</text><text x="120" y="29">30</text><text x="168" y="43">40</text><text x="197" y="77">50</text><text x="213" y="119">60+</text></g><g id="speedometer-needle" class="speedometer-needle"><line x1="120" y1="116" x2="120" y2="51"/><circle cx="120" cy="116" r="6"/></g><text id="speedometer-net" x="120" y="94" text-anchor="middle">0</text><text x="120" y="111" text-anchor="middle" class="speedometer-unit">NET WPM</text></svg><div class="speedometer-sub">Gross <strong id="speedometer-gross">0</strong> WPM</div><button type="button" class="secondary-button speedometer-toggle" id="speedometer-toggle">Hide speedometer</button></div><div id="typing-fullscreen-stats"></div><div id="typing-fullscreen-legend"></div></aside></div></section></main>`
   document.body.appendChild(modal)
+  modal.querySelector('#typing-fullscreen-back')?.addEventListener('click', () => {
+    stopTypingTimer()
+    modal.remove()
+    document.querySelector('.practice-exercise-sidebar')?.classList.remove('is-hidden-during-test')
+    renderSection(selectedPracticeLanguage === 'hi' ? 'practice-hi' : 'practice-en')
+  })
   let passageFontSize = 17
   const applyPassageFontSize = () => { const passage = modal.querySelector('#typing-passage'); if (passage) passage.style.fontSize = `${passageFontSize}px` }
   modal.querySelector('#typing-font-decrease')?.addEventListener('click', () => { passageFontSize = Math.max(13, passageFontSize - 1); applyPassageFontSize() })
@@ -1844,7 +1949,7 @@ function renderSection(page) {
             `).join('')}
           </div>
           <button class="primary-button typing-start" id="typing-start">${typingFinished ? 'Try Again' : 'Start Typing Test'} <span>→</span></button>
-          <p class="helper-text" id="typing-status">Select any exercise from the list, choose a duration and start the test.</p><div class="last-attempt-summary" id="last-attempt-summary">${(() => { const prev = getLastExerciseAttempt(customPassage ? 'custom-1' : selectedExerciseId); return prev ? `<strong>Last attempt:</strong> ${prev.netWpm ?? prev.wpm} net WPM · ${prev.accuracy}% accuracy · ${prev.errors} errors` : 'No previous attempt for this exercise yet.'; })()}</div>
+          <p class="helper-text" id="typing-status" style="font-weight:700;color:#1d4ed8;">Selected: ${escapeHtml(customPassage ? "Custom Upload · Exercise 1" : (practiceExerciseData.find((x) => String(x.id) === String(selectedExerciseId))?.title || "Exercise 1"))} — Type directly below or click Start Typing Test for fullscreen.</p><div class="last-attempt-summary" id="last-attempt-summary">${(() => { const prev = getLastExerciseAttempt(customPassage ? 'custom-1' : selectedExerciseId); return prev ? `<strong>Last attempt:</strong> ${prev.netWpm ?? prev.wpm} net WPM · ${prev.accuracy}% accuracy · ${prev.errors} errors` : 'No previous attempt for this exercise yet.'; })()}</div>
         </div>
         <div class="typing-stats" aria-live="polite">
           <div class="typing-stat"><span>Time left</span><strong id="typing-time">${typingDuration}:00</strong></div>
@@ -1995,15 +2100,14 @@ function renderSection(page) {
         </div>
       </aside>
 
-      <main class="main-area has-ag-bg-watermarks">
-        ${buildAgWatermarkGridHTML(8, "ag-bg-watermark-layer")}
+      <main class="main-area">
         <header class="topbar">
           <div>
             <button class="back-button" data-page="home">← Home</button>
             <h1>${section.title}</h1>
             <p>${section.description}</p>
           </div>
-          <div class="topbar-actions topbar-only-three">${themeButton()}<a class="support-button topbar-pill-btn" href="https://wa.me/917878025556?text=Hello%20Xtreme%20AG%20Apps%2C%20I%20need%20support%20for%20AG%20Typing%20Tutor." target="_blank" rel="noreferrer">💬 WhatsApp Support · 7878025556</a><button type="button" id="check-app-update-btn" class="topbar-update-pill-btn">🔄 Update</button></div>
+          <div class="topbar-actions topbar-only-three">${themeButton()}<a class="ag-wa-pill-btn topbar-pill-btn" href="https://wa.me/917878025556?text=Hello%20Xtreme%20AG%20Apps%2C%20I%20need%20support%20for%20AG%20Typing%20Tutor." target="_blank" rel="noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg><span>WhatsApp Support · 7878025556</span></a><button type="button" id="check-app-update-btn" class="topbar-update-pill-btn">🔄 Update</button></div>
         </header>
 
         <section class="section-page">
@@ -2046,7 +2150,7 @@ function attachSectionActions() {
   document.querySelectorAll('[data-profile-report-id]').forEach((button) => button.addEventListener('click', () => { const list = getTypingHistory(); const result = button.dataset.profileReportId ? list.find((item) => String(item.id || '') === button.dataset.profileReportId) : list[Number(button.dataset.profileReportIndex)]; const target = document.querySelector('#profile-saved-report'); if (!result || !target) return; const stats = { netWpm: result.netWpm ?? result.wpm ?? 0, grossWpm: result.grossWpm ?? result.wpm ?? 0, accuracy: result.accuracy ?? 0, errors: result.errors ?? 0, correct: result.correct ?? 0, typed: result.typed ?? 0, completion: result.completion ?? 0, errorRate: result.errorRate ?? 0 }; target.innerHTML = `<div class="typing-result saved-report">${buildDetailedReportHTML(result, stats)}</div>`; target.querySelector('#typing-result-print')?.addEventListener('click', () => window.print()); target.scrollIntoView({behavior:'smooth',block:'start'}) }))
   document.querySelector('#clear-game-history')?.addEventListener('click', () => { localStorage.removeItem('ag-typing-game-history'); renderSection('performance') })
   attachTypingEngine()
-    if (currentSection === 'practice') attachPracticeSidebar()
+    if (currentSection === 'practice' || currentSection === 'practice-en' || currentSection === 'practice-hi') attachPracticeSidebar()
   bindLessonActions(() => renderSection(currentSection))
   bindGameActions()
 
@@ -8674,7 +8778,7 @@ async function renderRssbTypingSpeedStage(spec, lang) {
       if (nextVal !== null) {
         event.preventDefault()
         inputEl._devlysMapped = true
-        inputEl.value = nextVal
+        fastUpdateTextareaValue(inputEl, nextVal)
         inputEl.dispatchEvent(new Event('input', { bubbles: true }))
       }
     } else if (event.key === ' ') {
@@ -8683,18 +8787,20 @@ async function renderRssbTypingSpeedStage(spec, lang) {
   })
 
   let rssbScrollRaf = null
-  inputEl?.addEventListener('input', () => {
+  inputEl?.addEventListener('input', (ev) => {
     if (isHi && !inputEl._devlysMapped) {
       sanitizeTrailingAsciiInHindiBox(inputEl, passage)
     }
     inputEl._devlysMapped = false
-    rssbExamState.typingBuffer = inputEl.value.replace(/\u200B/g, '')
-    if (!rssbScrollRaf && passageBox) {
+    const raw = inputEl.value
+    rssbExamState.typingBuffer = raw
+    // Only auto-scroll passage on word boundaries (Space) so typing characters has 0ms reflow
+    if ((ev?.data === ' ' || raw.endsWith(' ')) && !rssbScrollRaf && passageBox) {
       rssbScrollRaf = requestAnimationFrame(() => {
         rssbScrollRaf = null
         const ratio = Math.min(1, (inputEl?.value.length || 0) / Math.max(1, passage.length))
         const desired = Math.max(0, (passageBox.scrollHeight - passageBox.clientHeight) * ratio)
-        if (Math.abs(passageBox.scrollTop - desired) > 18) {
+        if (Math.abs(passageBox.scrollTop - desired) > 28) {
           passageBox.scrollTop = desired
         }
       })
@@ -8711,7 +8817,7 @@ async function renderRssbTypingSpeedStage(spec, lang) {
       exerciseId: isHi ? spec.hindiTypingId : spec.englishTypingId,
       exerciseNo: spec.typingExNo,
       passage,
-      typedText: inputEl ? inputEl.value : rssbExamState.typingBuffer,
+      typedText: (inputEl ? inputEl.value : rssbExamState.typingBuffer).replace(/\u200B/g, ''),
       elapsedSeconds: elapsed,
       keystrokes: rssbExamState.typingKeystrokes,
       blockedBackspaces: rssbExamState.blockedBackspaces,
@@ -9466,7 +9572,7 @@ loadPracticeExerciseData().then((exercises) => {
   if (currentSection === 'practice-en' || currentSection === 'practice-hi' || currentSection === 'practice') renderSection(currentSection)
 }).catch((error) => {
   console.error('Failed to load typing exercises:', error)
-  if (currentSection === 'practice') {
+  if (currentSection === 'practice' || currentSection === 'practice-en' || currentSection === 'practice-hi') {
     const status = document.querySelector('#typing-status')
     if (status) status.textContent = `Exercise list could not be loaded: ${error.message || error}`
   }

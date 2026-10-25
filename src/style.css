@@ -2290,7 +2290,7 @@ body.learn-modal-open{overflow:hidden}
 .practice-mode .practice-source-panel { display: none; }
 .practice-mode .practice-source-panel.custom-upload-open { display: block; }
 .practice-mode .duration-options { margin-top: 12px; }
-.practice-mode .typing-stats, .practice-mode .word-legend, .practice-mode .typing-test-card { display: none; }
+.practice-mode .typing-stats { display: grid; margin-top: 14px; } .practice-mode .word-legend { display: flex; margin: 10px 0; } .practice-mode .typing-test-card { display: block; margin-top: 12px; }
 .practice-custom-top { display: block; }
 .practice-exercise-item.attempted:not(.completed) .exercise-state { color: #1769d2; font-weight: 800; font-size: 10px; }
 .practice-exercise-item.completed .exercise-state { color: #16834a; font-weight: 900; }
@@ -6821,3 +6821,57 @@ html[data-theme="dark"] .exam-tile.premium-other-banner {
   background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%) !important;
   border-color: #334155 !important;
 }
+
+/* ==========================================================================
+   v1.5.2 — ZERO-LAG REAL-TIME TYPING CONTAINMENT & WHATSAPP NUMBER DISPLAY
+   ========================================================================== */
+.typing-input,
+#typing-input,
+#typing-passage,
+#learn-passage,
+#rssb-exam-typing-input,
+#rssb-exam-passage-box {
+  contain: layout style;
+  will-change: contents;
+  transform: translateZ(0);
+}
+
+.speedometer-progress,
+.speedometer-needle {
+  transition: none !important;
+}
+
+.speedometer-needle line {
+  filter: none !important;
+}
+
+.ag-wa-pill-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  padding: 8px 15px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(135deg, #16a34a 0%, #059669 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid #15803d !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25) !important;
+}
+
+.ag-wa-pill-btn:hover {
+  background: linear-gradient(135deg, #15803d 0%, #047857 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.ag-wa-pill-btn span,
+.learn-whatsapp-support span,
+.support-button span {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+

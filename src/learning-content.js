@@ -736,24 +736,34 @@ export function bindLessonActions(onRerender = () => {}) {
 
   let passageUnits = null
   let passageNodes = null
+  let lastRenderedLen = -1
+  let learnScrollRaf = null
   const renderPassage = typed => {
     const el = document.querySelector('#learn-passage')
     if (!el) return
-    if (!passageUnits || !passageNodes || el.dataset.renderedTarget !== target) {
+    const curLen = typed.length
+    const isFullInit = (!passageUnits || !passageNodes || el.dataset.renderedTarget !== target || lastRenderedLen < 0)
+    if (isFullInit) {
       passageUnits = splitIntoVisualSyllables(target)
       el.innerHTML = passageUnits.map(u => `<span>${escapeHtml(u.text === '\n' ? '↵' : u.text)}</span>`).join('')
       passageNodes = Array.from(el.children)
       el.dataset.renderedTarget = target
       el.scrollLeft = 0
+      lastRenderedLen = 0
     }
+
+    const minCharPos = isFullInit ? 0 : Math.max(0, Math.min(lastRenderedLen, curLen) - 2)
+    const maxCharPos = isFullInit ? target.length : Math.min(target.length, Math.max(lastRenderedLen, curLen) + 2)
 
     let currentNode = null
     for (let uIdx = 0; uIdx < passageUnits.length; uIdx++) {
       const unit = passageUnits[uIdx]
+      if (!isFullInit && (unit.end < minCharPos || unit.start > maxCharPos)) continue
       const node = passageNodes[uIdx]
       if (!node) continue
 
-      if (typed.length >= unit.end) {
+      let nextCls = ''
+      if (curLen >= unit.end) {
         let allCorrect = true
         for (let k = unit.start; k < unit.end; k++) {
           if (typed[k] !== target[k]) {
@@ -761,39 +771,51 @@ export function bindLessonActions(onRerender = () => {}) {
             break
           }
         }
-        node.className = allCorrect ? 'char-correct' : 'char-incorrect'
-      } else if (typed.length >= unit.start && typed.length < unit.end) {
+        nextCls = allCorrect ? 'char-correct' : 'char-incorrect'
+      } else if (curLen >= unit.start && curLen < unit.end) {
         let partialError = false
-        for (let k = unit.start; k < typed.length; k++) {
+        for (let k = unit.start; k < curLen; k++) {
           if (typed[k] !== target[k]) {
             partialError = true
             break
           }
         }
-        node.className = partialError ? 'char-incorrect char-current' : 'char-current'
+        nextCls = partialError ? 'char-incorrect char-current' : 'char-current'
         currentNode = node
-      } else {
-        node.className = ''
+      }
+      if (node.className !== nextCls) {
+        node.className = nextCls
       }
     }
+    lastRenderedLen = curLen
 
-    if (!currentNode && passageNodes.length > 0) {
-      currentNode = passageNodes[passageNodes.length - 1]
-    }
-    if (currentNode) {
-      const desired = currentNode.offsetLeft + currentNode.offsetWidth / 2 - el.clientWidth / 2
-      el.scrollLeft = Math.max(0, desired)
+    if (currentNode && !learnScrollRaf) {
+      const nodeToScroll = currentNode
+      learnScrollRaf = requestAnimationFrame(() => {
+        learnScrollRaf = null
+        const desired = nodeToScroll.offsetLeft + nodeToScroll.offsetWidth / 2 - el.clientWidth / 2
+        if (Math.abs(el.scrollLeft - Math.max(0, desired)) > 24) {
+          el.scrollLeft = Math.max(0, desired)
+        }
+      })
     }
   }
 
   let lastKeyboardKey = null
+  let learnStatsRaf = null
   const update = () => {
     const typed = input.value
-    const elapsed = sessionTotals.started
-      ? (sessionTotals.timerPaused ? sessionTotals.pausedAt - sessionTotals.startedAt : Date.now() - sessionTotals.startedAt)
-      : 0
+    // 1. Render character highlight in 0ms immediately!
+    renderPassage(typed)
+    if (learnStatsRaf) return
+    learnStatsRaf = requestAnimationFrame(() => {
+      learnStatsRaf = null
+      const typedNow = input.value
+      const elapsed = sessionTotals.started
+        ? (sessionTotals.timerPaused ? sessionTotals.pausedAt - sessionTotals.startedAt : Date.now() - sessionTotals.startedAt)
+        : 0
 
-    const currentLine = countLineStats(target, typed)
+    const currentLine = countLineStats(target, typedNow)
     const totalChars = sessionTotals.completedChars + currentLine.chars
     const totalCorrect = sessionTotals.completedCorrect + currentLine.correct
     const totalErrors = sessionTotals.completedErrors + currentLine.errors
@@ -815,7 +837,7 @@ export function bindLessonActions(onRerender = () => {}) {
       timeEl.textContent = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`
     }
 
-    const nextChar = target[typed.length] || ' '
+    const nextChar = target[typedNow.length] || ' '
     const physicalKey = resolvePhysicalKey(nextChar)
     const finger = fingerFor(nextChar)
     const marker = document.querySelector('#learn-finger-marker')
@@ -852,7 +874,7 @@ export function bindLessonActions(onRerender = () => {}) {
       }
       lastKeyboardKey = keyToHighlight
     }
-    renderPassage(typed)
+    })
   }
 
   document.querySelector('#learn-pause')?.addEventListener('click', () => {
@@ -917,6 +939,7 @@ export function bindLessonActions(onRerender = () => {}) {
       input.setAttribute('maxlength', String(target.length))
       passageUnits = null
       passageNodes = null
+      lastRenderedLen = -1
       lastKeyboardKey = null
       sound('complete')
     }
