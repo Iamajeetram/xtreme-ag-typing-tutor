@@ -1,13 +1,5 @@
-if (typeof document !== 'undefined') {
-  for (const cssHref of ['./src/style.css', './src/print.css', './style.css', './print.css']) {
-    if (!document.querySelector(`link[href="${cssHref}"]`) && cssHref.startsWith('./src/')) {
-      const l = document.createElement('link');
-      l.rel = 'stylesheet';
-      l.href = new URL(cssHref.replace('./src/', './'), import.meta.url).href;
-      document.head.appendChild(l);
-    }
-  }
-}
+import './style.css'
+import './print.css'
 import { calculateDetailedMetrics, formatDuration, getPerformanceBand, analyzeWords } from './report-utils.js'
 import { lessons, renderLessons, bindLessonActions } from './learning-content.js'
 import { renderGames, bindGameActions } from './typing-games.js'
@@ -16,8 +8,8 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.5.0';
-let APP_RUNTIME_INFO = { version: '1.5.0', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.5.1';
+let APP_RUNTIME_INFO = { version: '1.5.1', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 const GITHUB_REPO_CANDIDATES = [

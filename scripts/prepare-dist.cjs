@@ -25,7 +25,12 @@ const extraFolders = [
   ['src/exercises', 'exercises'],
   ['exercises', 'exercises'],
   ['public/daily-live', 'daily-live'],
-  ['src/daily-live', 'daily-live']
+  ['src/daily-live', 'daily-live'],
+  ['src/assets', 'assets'],
+  ['src/style.css', 'style.css'],
+  ['src/print.css', 'print.css'],
+  ['src/style.css', 'src/style.css'],
+  ['src/print.css', 'src/print.css']
 ];
 
 for (const [srcRel, destRel] of extraFolders) {
@@ -33,5 +38,15 @@ for (const [srcRel, destRel] of extraFolders) {
   if (fs.existsSync(srcPath)) copyRecursiveSync(srcPath, path.join(distDir, destRel));
 }
 
+// Ensure dist/index.html always has a fallback link to ./style.css and ./print.css
+const distIndex = path.join(distDir, 'index.html');
+if (fs.existsSync(distIndex)) {
+  let html = fs.readFileSync(distIndex, 'utf8');
+  if (!html.includes('href="./style.css"')) {
+    html = html.replace('</head>', '  <link rel="stylesheet" href="./style.css" />\n  <link rel="stylesheet" href="./print.css" />\n</head>');
+    fs.writeFileSync(distIndex, html, 'utf8');
+  }
+}
+
 copyRecursiveSync(distDir, appDistDir);
-console.log('Successfully prepared app_dist and dist');
+console.log('Successfully prepared app_dist and dist with guaranteed CSS');

@@ -1,5 +1,5 @@
-const handsGuideUrl = new URL('./hands-guide.png', import.meta.url).href
-const typeGuideUrl = new URL('./type.png', import.meta.url).href
+import handsGuideUrl from './hands-guide.png'
+import typeGuideUrl from './type.png'
 import { escapeHtml } from './text-utils.js'
 import { renderKeyboard } from './keyboard-visual.js'
 import { readLessonProgress, saveLessonResult, lessonCompletion } from './lesson-progress.js'
