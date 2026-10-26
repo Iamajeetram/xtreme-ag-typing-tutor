@@ -8,8 +8,8 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.5.3';
-let APP_RUNTIME_INFO = { version: '1.5.3', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.5.4';
+let APP_RUNTIME_INFO = { version: '1.5.4', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 const GITHUB_REPO_CANDIDATES = [

@@ -113,19 +113,58 @@ export function alignWordsWithResync(typed, target, lookahead = 8) {
       continue
     }
 
-    // 4. Look-ahead in targetTokens: Did the user skip 1 or more target words?
-    let skippedCount = 0
-    for (let k = 1; k <= lookahead && (j + k) < targetTokens.length; k++) {
-      if (inp.text === targetTokens[j + k].text) {
-        const nextInp = inputTokens[i + 1]?.text
-        const nextTgtAfterSkip = targetTokens[j + k + 1]?.text
-        const nextTgtNoSkip = targetTokens[j + 1]?.text
-        if (nextInp && nextInp === nextTgtNoSkip && inp.text !== nextTgtNoSkip) {
-          break
+    // Helper to check if a typed token is a likely typo of a target word (e.g., "and" for "an", "ecletic" for "eclectic")
+    const isLikelyWordTypo = (a, b) => {
+      if (!a || !b) return false
+      const la = a.toLowerCase().replace(/[.,!?;:'"()\[\]{}\-–—।]/g, '')
+      const lb = b.toLowerCase().replace(/[.,!?;:'"()\[\]{}\-–—।]/g, '')
+      if (!la || !lb) return false
+      if (la === lb) return true
+      if (la.startsWith(lb) || lb.startsWith(la)) {
+        if (Math.abs(la.length - lb.length) <= 2) return true
+      }
+      if (Math.abs(la.length - lb.length) > 2) return false
+      let diffs = 0
+      let ia = 0
+      let ib = 0
+      while (ia < la.length && ib < lb.length) {
+        if (la[ia] === lb[ib]) {
+          ia++
+          ib++
+        } else {
+          diffs++
+          if (diffs > 2) return false
+          if (la.length > lb.length) ia++
+          else if (lb.length > la.length) ib++
+          else { ia++; ib++ }
         }
-        if (k === 1 || (nextInp && nextInp === nextTgtAfterSkip) || inp.text.length >= 3) {
-          skippedCount = k
-          break
+      }
+      diffs += (la.length - ia) + (lb.length - ib)
+      return diffs <= 2
+    }
+
+    const nextInp = inputTokens[i + 1]?.text
+    const nextTgtNoSkip = targetTokens[j + 1]?.text
+    const nextWordMatchesInPlace = Boolean(
+      nextInp && nextTgtNoSkip && (nextInp === nextTgtNoSkip || isLikelyWordTypo(nextInp, nextTgtNoSkip))
+    )
+
+    // 4. Look-ahead in targetTokens: Did the user genuinely skip 1 or more target words?
+    // Never jump ahead if current word is a likely typo of target[j] (like "and" for "an") or if the next word matches target[j+1]!
+    let skippedCount = 0
+    if (!isLikelyWordTypo(inp.text, tgt.text) && !nextWordMatchesInPlace) {
+      for (let k = 1; k <= lookahead && (j + k) < targetTokens.length; k++) {
+        if (inp.text === targetTokens[j + k].text) {
+          const nextTgtAfterSkip = targetTokens[j + k + 1]?.text
+          const confirmedByNextWord = Boolean(
+            nextInp && nextTgtAfterSkip && (nextInp === nextTgtAfterSkip || isLikelyWordTypo(nextInp, nextTgtAfterSkip))
+          )
+          // For k === 1 (single skipped word), allow if confirmed by next word or if at very end of input and word is >= 4 chars
+          // For k >= 2 (multiple skipped words), ALWAYS require confirmation by the next word so common words ("and", "the", "of") never jump 7 words ahead!
+          if (confirmedByNextWord || (k === 1 && !nextInp && inp.text.length >= 4)) {
+            skippedCount = k
+            break
+          }
         }
       }
     }
@@ -143,12 +182,15 @@ export function alignWordsWithResync(typed, target, lookahead = 8) {
 
     // 5. Look-ahead in inputTokens: Did the user insert/repeat an extra word?
     let insertedCount = 0
-    for (let k = 1; k <= 2 && (i + k) < inputTokens.length; k++) {
-      if (inputTokens[i + k].text === tgt.text) {
-        const nextTgt = targetTokens[j + 1]?.text
-        if (inputTokens[i]?.text !== nextTgt) {
-          insertedCount = k
-          break
+    if (!nextWordMatchesInPlace) {
+      for (let k = 1; k <= 2 && (i + k) < inputTokens.length; k++) {
+        if (inputTokens[i + k].text === tgt.text) {
+          const nextTgt = targetTokens[j + 1]?.text
+          const nextInpAfterIns = inputTokens[i + k + 1]?.text
+          if (!nextTgt || !nextInpAfterIns || nextInpAfterIns === nextTgt || isLikelyWordTypo(nextInpAfterIns, nextTgt)) {
+            insertedCount = k
+            break
+          }
         }
       }
     }
