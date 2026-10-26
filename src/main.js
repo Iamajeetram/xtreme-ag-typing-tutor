@@ -8,8 +8,8 @@ import { loadPracticeExerciseData, loadPracticeExerciseText } from './practice-e
 /* ============================================================================
    IN-APP GITHUB AUTO-UPDATE CHECKER & 1-CLICK INSTALLER (WINDOWS + MAC)
    ============================================================================ */
-let APP_CURRENT_VERSION = '1.5.2';
-let APP_RUNTIME_INFO = { version: '1.5.2', platform: 'web', arch: 'x64', isElectron: false };
+let APP_CURRENT_VERSION = '1.5.3';
+let APP_RUNTIME_INFO = { version: '1.5.3', platform: 'web', arch: 'x64', isElectron: false };
 const GITHUB_REPO_OWNER = 'Iamajeetram';
 const GITHUB_REPO_NAME = 'xtreme-ag-typing-tutor';
 const GITHUB_REPO_CANDIDATES = [
@@ -591,14 +591,53 @@ let selectedPracticeCategory = 'All topics'
 let selectedPracticeLanguage = 'en'
 let customPassage = ''
 let selectedExerciseId = 'en-001'
-let practiceOptions = { backspace: true, textHighlight: true, wordHighlight: true, wpm: true, wordMeter: true, speedometer: true }
+let practiceOptions = {
+  backspace: true,
+  textHighlight: true,
+  wordHighlight: true,
+  wpm: true,
+  wordMeter: true,
+  speedometer: true,
+  autoScroll: localStorage.getItem('ag-practice-autoscroll') !== 'false'
+}
 let reviewWords = []
 let reviewTarget = ''
 let reviewAttempts = 0
-const getCompletedExercises = () => { try { return JSON.parse(localStorage.getItem('ag-practice-completed') || '[]') } catch { return [] } }
-const setExerciseCompleted = (id) => { const done = new Set(getCompletedExercises()); done.add(String(id)); localStorage.setItem('ag-practice-completed', JSON.stringify([...done])); }
-const getLastExerciseAttempt = (id) => getTypingHistory().find((item) => String(item.exerciseId || '') === String(id)) || null;
-const getAttemptedExercises = () => [...new Set(getTypingHistory().map((item) => String(item.exerciseId || '')).filter(Boolean))];
+
+// Clean up any accidental 0-character / 0-WPM submissions from history on startup
+;(function cleanupZeroTypedHistory() {
+  try {
+    const raw = JSON.parse(localStorage.getItem('ag-typing-reports') || '[]')
+    if (Array.isArray(raw)) {
+      const valid = raw.filter((item) => Number(item?.typed || 0) >= 5 || Number(item?.netWpm ?? item?.wpm ?? 0) > 0)
+      if (valid.length !== raw.length) {
+        localStorage.setItem('ag-typing-reports', JSON.stringify(valid))
+      }
+      if (!localStorage.getItem('ag-practice-completed-v2-migrated')) {
+        const realDone = [...new Set(valid.filter((item) => Number(item?.typed || 0) >= 40).map((item) => String(item.exerciseId || '')).filter(Boolean))]
+        localStorage.setItem('ag-practice-completed-v2', JSON.stringify(realDone))
+        localStorage.setItem('ag-practice-completed-v2-migrated', '1')
+      }
+    }
+  } catch {}
+})()
+
+const getCompletedExercises = () => {
+  try {
+    const saved = JSON.parse(localStorage.getItem('ag-practice-completed-v2') || '[]')
+    const fromHist = getTypingHistory().filter((item) => Number(item?.typed || 0) >= 40).map((item) => String(item.exerciseId || '')).filter(Boolean)
+    return [...new Set([...saved.map(String), ...fromHist])]
+  } catch {
+    return []
+  }
+}
+const setExerciseCompleted = (id) => {
+  const done = new Set(getCompletedExercises())
+  done.add(String(id))
+  localStorage.setItem('ag-practice-completed-v2', JSON.stringify([...done]))
+}
+const getLastExerciseAttempt = (id) => getTypingHistory().find((item) => String(item.exerciseId || '') === String(id) && Number(item?.typed || 0) >= 5) || null;
+const getAttemptedExercises = () => [...new Set(getTypingHistory().filter((item) => Number(item?.typed || 0) >= 5).map((item) => String(item.exerciseId || '')).filter(Boolean))];
 
 
 
@@ -754,13 +793,14 @@ function renderTypingPassage(value, precomputedWordAnalysis = null) {
 
   target._prevActiveIdx = activeIdx;
 
-  // Only check scroll when active word index actually changes (prevents layout reflow during typing)
-  if (activeChanged && activeIdx >= 0 && wordNodes[activeIdx]) {
-    const activeNode = wordNodes[activeIdx];
-    const topPos = activeNode.offsetTop - target.offsetTop;
-    const desiredScroll = Math.max(0, topPos - 70);
-    if (Math.abs(target.scrollTop - desiredScroll) > 36) {
-      target.scrollTop = desiredScroll;
+  // Early Lookahead Auto-Scroll (scrolls 4 words BEFORE reaching the end of the line when Auto scroll is enabled)
+  if (practiceOptions.autoScroll && activeChanged && activeIdx >= 0 && wordNodes[activeIdx]) {
+    const lookAheadIdx = Math.min(wordNodes.length - 1, activeIdx + 4);
+    const anchorNode = wordNodes[lookAheadIdx] || wordNodes[activeIdx];
+    const topPos = anchorNode.offsetTop;
+    const desiredScroll = Math.max(0, topPos - 54);
+    if (Math.abs(target.scrollTop - desiredScroll) > 10) {
+      target.scrollTo({ top: desiredScroll, behavior: 'smooth' });
     }
   }
 
@@ -934,8 +974,17 @@ function finishTypingTest() {
   result.averageWpmBefore = priorExerciseHistory.length ? Math.round(priorExerciseHistory.reduce((sum, item) => sum + Number(item.netWpm ?? item.wpm ?? 0), 0) / priorExerciseHistory.length) : 0
   const previousAttempt = getLastExerciseAttempt(result.exerciseId)
   result.previousAttempt = previousAttempt ? { netWpm: previousAttempt.netWpm ?? previousAttempt.wpm ?? 0, grossWpm: previousAttempt.grossWpm ?? previousAttempt.wpm ?? 0, accuracy: previousAttempt.accuracy ?? 0, errors: previousAttempt.errors ?? 0 } : null
+  if (typingInputValue.trim().length < 5) {
+    document.querySelector('#typing-fullscreen')?.remove()
+    document.querySelector('.practice-exercise-sidebar')?.classList.remove('is-hidden-during-test')
+    typingFinished = false
+    renderSection(selectedPracticeLanguage === 'hi' ? 'practice-hi' : 'practice-en')
+    return
+  }
   saveTypingResult(result)
-  if ((currentSection === 'practice-en' || currentSection === 'practice-hi' || currentSection === 'practice') && typingInputValue.length >= typingPassage.length) setExerciseCompleted(result.exerciseId)
+  if ((currentSection === 'practice-en' || currentSection === 'practice-hi' || currentSection === 'practice') && (typingInputValue.trim().length >= 40 || typingRemaining <= 0 || typingInputValue.length >= typingPassage.length)) {
+    setExerciseCompleted(result.exerciseId)
+  }
   const resultBox = document.querySelector('#typing-result')
   if (resultBox) { resultBox.hidden = true; resultBox.innerHTML = '' }
   try { showTypingReportPopup(result, stats) }
@@ -1762,7 +1811,7 @@ function attachPracticeSidebar() {
     }
   })
   document.querySelectorAll('[data-practice-option]').forEach((box) => box.addEventListener('change', () => {
-    practiceOptions[box.dataset.practiceOption] = box.checked
+    practiceOptions[box.dataset.practiceOption] = box.checked; if (box.dataset.practiceOption === 'autoScroll') localStorage.setItem('ag-practice-autoscroll', String(box.checked));
     document.querySelector('#typing-workspace')?.classList.toggle(`hide-${box.dataset.practiceOption}`, !box.checked)
     document.querySelector('#typing-passage')?.classList.toggle('disable-text-highlight', !practiceOptions.textHighlight)
     document.querySelector('#typing-passage')?.classList.toggle('disable-word-highlight', !practiceOptions.wordHighlight)
@@ -1785,7 +1834,8 @@ function openTypingFullscreen() {
       <label><input type="checkbox" data-practice-option="wordHighlight" ${practiceOptions.wordHighlight ? 'checked' : ''}> Word highlight</label>
       <label><input type="checkbox" data-practice-option="wpm" ${practiceOptions.wpm ? 'checked' : ''}> WPM meter</label>
       <label><input type="checkbox" data-practice-option="wordMeter" ${practiceOptions.wordMeter ? 'checked' : ''}> Word meter</label>
-            <label><input type="checkbox" data-practice-option="speedometer" ${practiceOptions.speedometer ? 'checked' : ''}> Speedometer</label>
+      <label><input type="checkbox" data-practice-option="speedometer" ${practiceOptions.speedometer ? 'checked' : ''}> Speedometer</label>
+      <label><input type="checkbox" data-practice-option="autoScroll" ${practiceOptions.autoScroll ? 'checked' : ''}> Auto scroll</label>
       <div class="typing-font-controls" role="group" aria-label="Passage font size"><span>Text size</span><button type="button" id="typing-font-decrease" aria-label="Decrease passage font size">A−</button><button type="button" id="typing-font-increase" aria-label="Increase passage font size">A+</button></div><label class="typing-method-control"><span>WPM method</span><select id="typing-wpm-method"><option value="standard" ${typingWpmMethod === 'standard' ? 'selected' : ''}>5-char standard</option><option value="words" ${typingWpmMethod === 'words' ? 'selected' : ''}>Word-based</option></select></label><label class="typing-target-control"><span>Target WPM</span><input id="typing-target-wpm" type="number" min="0" max="250" step="1" value="${typingTargetWpm}" aria-label="Target typing speed"></label><strong class="fullscreen-countdown" id="fullscreen-countdown">${Math.floor(typingRemaining / 60)}:${String(typingRemaining % 60).padStart(2, '0')}</strong></div></header>
       <main class="typing-fullscreen-main"><section class="typing-fullscreen-workarea"><div class="typing-fullscreen-dashboard"><div class="typing-main-column"><div id="typing-fullscreen-passage"></div><div id="typing-fullscreen-card"></div></div><aside class="typing-right-panel"><h3>Live performance</h3><div class="speedometer-card"><svg class="speedometer-svg" viewBox="0 0 220 135" role="img" aria-label="Live net typing speed"><path class="speedometer-track" d="M 34 116 A 86 86 0 0 1 206 116"/><path id="speedometer-progress" class="speedometer-progress" d="M 34 116 A 86 86 0 0 1 206 116"/><g class="speedometer-ticks"><text x="27" y="119">0</text><text x="43" y="77">10</text><text x="72" y="43">20</text><text x="120" y="29">30</text><text x="168" y="43">40</text><text x="197" y="77">50</text><text x="213" y="119">60+</text></g><g id="speedometer-needle" class="speedometer-needle"><line x1="120" y1="116" x2="120" y2="51"/><circle cx="120" cy="116" r="6"/></g><text id="speedometer-net" x="120" y="94" text-anchor="middle">0</text><text x="120" y="111" text-anchor="middle" class="speedometer-unit">NET WPM</text></svg><div class="speedometer-sub">Gross <strong id="speedometer-gross">0</strong> WPM</div><button type="button" class="secondary-button speedometer-toggle" id="speedometer-toggle">Hide speedometer</button></div><div id="typing-fullscreen-stats"></div><div id="typing-fullscreen-legend"></div></aside></div></section></main>`
   document.body.appendChild(modal)
@@ -1804,10 +1854,11 @@ function openTypingFullscreen() {
   document.querySelector('#typing-fullscreen-stats').appendChild(stats)
   if (legend) document.querySelector('#typing-fullscreen-legend').appendChild(legend)
   document.querySelector('#typing-fullscreen-card').appendChild(card)
+  setTimeout(() => document.querySelector('#typing-input')?.focus({ preventScroll: true }), 20)
   modal.querySelector('#typing-wpm-method')?.addEventListener('change', (event) => { typingWpmMethod = event.target.value === 'words' ? 'words' : 'standard'; localStorage.setItem('ag-typing-wpm-method', typingWpmMethod); updateTypingStats() })
   modal.querySelector('#typing-target-wpm')?.addEventListener('change', (event) => { typingTargetWpm = Math.max(0, Math.min(250, Number(event.target.value || 0))); event.target.value = String(typingTargetWpm); localStorage.setItem('ag-typing-target-wpm', String(typingTargetWpm)) })
   modal.querySelectorAll('[data-practice-option]').forEach((box) => box.addEventListener('change', () => {
-    practiceOptions[box.dataset.practiceOption] = box.checked
+    practiceOptions[box.dataset.practiceOption] = box.checked; if (box.dataset.practiceOption === 'autoScroll') localStorage.setItem('ag-practice-autoscroll', String(box.checked));
     const passage = document.querySelector('#typing-passage')
     passage?.classList.toggle('disable-text-highlight', !practiceOptions.textHighlight)
     passage?.classList.toggle('disable-word-highlight', !practiceOptions.wordHighlight)
@@ -1942,14 +1993,15 @@ function renderSection(page) {
             <label><input type="checkbox" data-practice-option="wpm" ${practiceOptions.wpm ? 'checked' : ''}> WPM meter</label>
             <label><input type="checkbox" data-practice-option="wordMeter" ${practiceOptions.wordMeter ? 'checked' : ''}> Word meter</label>
             <label><input type="checkbox" data-practice-option="speedometer" ${practiceOptions.speedometer ? 'checked' : ''}> Speedometer</label>
+            <label><input type="checkbox" data-practice-option="autoScroll" ${practiceOptions.autoScroll ? 'checked' : ''}> Auto scroll</label>
           </div>
           <div class="duration-options">
             ${[1, 3, 5, 10, 15, 30].map((minutes) => `
               <button class="duration-button ${typingDuration === minutes ? 'selected' : ''}" data-minutes="${minutes}">${minutes} min</button>
             `).join('')}
           </div>
-          <button class="primary-button typing-start" id="typing-start">${typingFinished ? 'Try Again' : 'Start Typing Test'} <span>→</span></button>
-          <p class="helper-text" id="typing-status" style="font-weight:700;color:#1d4ed8;">Selected: ${escapeHtml(customPassage ? "Custom Upload · Exercise 1" : (practiceExerciseData.find((x) => String(x.id) === String(selectedExerciseId))?.title || "Exercise 1"))} — Type directly below or click Start Typing Test for fullscreen.</p><div class="last-attempt-summary" id="last-attempt-summary">${(() => { const prev = getLastExerciseAttempt(customPassage ? 'custom-1' : selectedExerciseId); return prev ? `<strong>Last attempt:</strong> ${prev.netWpm ?? prev.wpm} net WPM · ${prev.accuracy}% accuracy · ${prev.errors} errors` : 'No previous attempt for this exercise yet.'; })()}</div>
+          <button class="primary-button typing-start" id="typing-start">Start Typing Test <span>→</span></button>
+          <p class="helper-text" id="typing-status" style="font-weight:700;color:#1d4ed8;">Selected: ${escapeHtml(customPassage ? "Custom Upload · Exercise 1" : (practiceExerciseData.find((x) => String(x.id) === String(selectedExerciseId))?.title || "Exercise 1"))} — Choose your duration above and click Start Typing Test.</p><div class="last-attempt-summary" id="last-attempt-summary">${(() => { const prev = getLastExerciseAttempt(customPassage ? 'custom-1' : selectedExerciseId); return prev ? `<strong>Last attempt:</strong> ${prev.netWpm ?? prev.wpm} net WPM · ${prev.accuracy}% accuracy · ${prev.errors} errors` : 'No previous attempt for this exercise yet.'; })()}</div>
         </div>
         <div class="typing-stats" aria-live="polite">
           <div class="typing-stat"><span>Time left</span><strong id="typing-time">${typingDuration}:00</strong></div>

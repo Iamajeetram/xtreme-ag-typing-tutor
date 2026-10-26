@@ -2290,7 +2290,7 @@ body.learn-modal-open{overflow:hidden}
 .practice-mode .practice-source-panel { display: none; }
 .practice-mode .practice-source-panel.custom-upload-open { display: block; }
 .practice-mode .duration-options { margin-top: 12px; }
-.practice-mode .typing-stats { display: grid; margin-top: 14px; } .practice-mode .word-legend { display: flex; margin: 10px 0; } .practice-mode .typing-test-card { display: block; margin-top: 12px; }
+.practice-mode .typing-stats, .practice-mode .word-legend, .practice-mode .typing-test-card { display: none; }
 .practice-custom-top { display: block; }
 .practice-exercise-item.attempted:not(.completed) .exercise-state { color: #1769d2; font-weight: 800; font-size: 10px; }
 .practice-exercise-item.completed .exercise-state { color: #16834a; font-weight: 900; }
@@ -6875,3 +6875,9 @@ html[data-theme="dark"] .exam-tile.premium-other-banner {
   opacity: 1 !important;
 }
 
+
+/* v1.5.3 — Relative offsetParent on #typing-passage for exact early lookahead auto-scroll */
+#typing-passage,
+.typing-passage {
+  position: relative !important;
+}
